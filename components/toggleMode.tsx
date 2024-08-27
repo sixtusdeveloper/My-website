@@ -26,11 +26,11 @@ const toggleMode = () => {
                 {
                 dark ? 
                     <SunIcon 
-                       className="hover:cursor-pointer text-primary hover:text-primary" 
+                       className="hover:cursor-pointer text-2xl rounded border text-primary hover:text-primary" 
                     />
                  : 
                     <MoonIcon 
-                       className="hover:cursor-pointer text-primary hover:text-primary" 
+                       className="hover:cursor-pointer text-2xl rounded border text-primary hover:text-primary" 
                     />
                  }
         </Button>

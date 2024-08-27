@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
           href="https://github.com/sixtusdeveloper"
           target="_blank"
           rel="noopener noreferrer"
-          className="border hover:transform hover:scale-110"
+          className="border hover:transform rounded hover:scale-110"
         >
           <span className="flex items-center justify-center w-10 h-10 bg-secondary rounded-full">
             <FaGithub size={20} />
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
           href="https://x.com/develites01"
           target="_blank"
           rel="noopener noreferrer"
-          className="border hover:transform hover:scale-110"
+          className="border hover:transform rounded hover:scale-110"
         >
           <span className="flex items-center justify-center w-10 h-10 bg-secondary rounded-full">
             <FaTwitter size={20} />
@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
           href="https://www.youtube.com/@Sixtusdev"
           target="_blank"
           rel="noopener noreferrer"
-          className="border hover:transform hover:scale-110"
+          className="border hover:transform rounded hover:scale-110"
         >
           <span className="flex items-center justify-center w-10 h-10 bg-secondary rounded-full">
             <FaYoutube size={20} />
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
           href="https://linkedin.com/in/sixtusushrey"
           target="_blank"
           rel="noopener noreferrer"
-          className="border hover:transform hover:scale-110"
+          className="border hover:transform rounded hover:scale-110"
         >
           <span className="flex items-center justify-center w-10 h-10 bg-secondary rounded-full">
             <FaLinkedin size={20} />
@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
           href="https://web.facebook.com/develitesacademy"
           target="_blank"
           rel="noopener noreferrer"
-          className="border hover:transform hover:scale-110"
+          className="border hover:transform rounded hover:scale-110"
         >
           <span className="flex items-center justify-center w-10 h-10 bg-secondary rounded-full">
             <FaFacebook size={20} />

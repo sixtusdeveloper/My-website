@@ -1,3 +1,5 @@
+import { Dialog } from "@headlessui/react";
+
 //============================= Home Page Navigation links ============================//
 export const navigation = [
     { name: 'About', href: '#about' },
@@ -23,9 +25,8 @@ export const navigation = [
         - **Use Cases:** We delve into practical applications of closures, such as data encapsulation and implementing private variables. Examples will show how closures can be utilized in real-world scenarios.
   
         - **Common Patterns:** The article discusses common patterns and best practices involving closures, including their role in asynchronous programming and handling callbacks.
-  
-        **Diagram:** ![Closure Diagram](URL_TO_YOUR_DIAGRAM_IMAGE)
       `,
+      diagramImageUrl: "/javascript-closure-diagram.png",
       imageUrl: "/blog01.avif",
     },
     {
@@ -41,9 +42,8 @@ export const navigation = [
         - **Introduction to Hooks:** A detailed explanation of React Hooks, including useState, useEffect, and custom hooks. We discuss how Hooks simplify state management and component logic compared to class-based components.
   
         - **Future of React:** Insights into upcoming features and advancements in React. This section explores how Hooks and other features will continue to influence React's development.
-  
-        **Diagram:** ![React Evolution Timeline](URL_TO_YOUR_DIAGRAM_IMAGE)
       `,
+      diagramImageUrl: "/react-evolution-timeline.jpg",
       imageUrl: "/blog02.avif",
     },
     {
@@ -59,9 +59,8 @@ export const navigation = [
         - **Overview of Flexbox:** A review of Flexbox, which simplifies the creation of one-dimensional layouts with flexible boxes. We explore its features and provide examples of common use cases.
   
         - **Comparison and Use Cases:** A detailed comparison between Grid and Flexbox, with visual examples and code comparisons to help you decide which layout tool to use for different scenarios.
-  
-        **Diagram:** ![Grid vs Flexbox Comparison](URL_TO_YOUR_DIAGRAM_IMAGE)
       `,
+      diagramImageUrl: "/css-grid-vs-flexbox.avif",
       imageUrl: "/blog03.avif",
     },
     {
@@ -77,9 +76,8 @@ export const navigation = [
         - **Optimization Techniques:** Practical techniques for improving website performance, including lazy loading, code splitting, and efficient caching strategies. The article provides actionable tips and code examples.
   
         - **Future Trends:** Insights into emerging trends and tools for web performance optimization, helping you stay ahead of the curve with the latest advancements.
-  
-        **Diagram:** ![Web Performance Metrics](URL_TO_YOUR_DIAGRAM_IMAGE)
       `,
+      diagramImageUrl: "/web-performance-metrics.png",
       imageUrl: "/blog04.avif",
     },
     {
@@ -95,9 +93,8 @@ export const navigation = [
         - **Redux:** A comprehensive exploration of Redux, including its core principles, usage patterns, and benefits. The section includes code examples and practical use cases.
   
         - **Context API:** An explanation of how the Context API fits into the state management landscape, with examples demonstrating its use for simpler state management scenarios.
-  
-        **Diagram:** ![Redux vs Context API](URL_TO_YOUR_DIAGRAM_IMAGE)
       `,
+      diagramImageUrl: "/redux-vs-context-api.png",
       imageUrl: "/blog05.avif",
     },
     {
@@ -113,9 +110,8 @@ export const navigation = [
         - **Benefits of TypeScript:** How static typing can catch errors early, improve code clarity, and enhance the development experience. We provide examples of TypeScript in action.
   
         - **Getting Started:** A guide to setting up TypeScript in your projects and understanding its key features. This section includes a basic setup guide and tips for new users.
-  
-        **Diagram:** ![TypeScript vs JavaScript](URL_TO_YOUR_DIAGRAM_IMAGE)
       `,
+      diagramImageUrl: "/typescript-vs-javascript.webp",
       imageUrl: "/blog06.avif",
     },
   ];

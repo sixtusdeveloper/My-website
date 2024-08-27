@@ -27,6 +27,7 @@ type BlogPost = {
   title: string;
   description: string;
   imageUrl: string;
+  diagramImageUrl: string;
 };
 
 const Blog = () => {
@@ -126,8 +127,17 @@ const Blog = () => {
                 height={300}
               />
               <p className="mt-4 text-sm leading-relaxed">
-                {selectedPost.description} (Full post content goes here...)
+                {selectedPost.description}
               </p>
+              <div className="py-8">
+                <Image 
+                src={selectedPost.diagramImageUrl}
+                alt="javascript closure diagram"
+                width={300}
+                height={200}
+                style={{ objectFit: 'contain' }}
+                />
+               </div>
             </div>
           </div>
         </div>
