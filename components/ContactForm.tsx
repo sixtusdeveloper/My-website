@@ -10,7 +10,7 @@ import CustomFormField from "./CustomFormField";
 import SubmitButton from "./SubmitButton";
 import { useState } from "react";
 import { ContactFormValidation } from "@/lib/validation";
-
+import { useRouter } from "next/navigation";
 export enum FormFieldType {
     INPUT = "input",
     TEXTAREA = "textarea",
@@ -21,6 +21,7 @@ export enum FormFieldType {
 
 
 const ContactForm = () => {
+    const router = useRouter();
     const [isLoading, setIsLoading] = useState(false);
     const form = useForm<z.infer<typeof ContactFormValidation>>({
         resolver: zodResolver(ContactFormValidation),
@@ -32,8 +33,27 @@ const ContactForm = () => {
         },
     })
 
-    function onSubmit(values: z.infer<typeof ContactFormValidation>) {
-        console.log(values)
+    async function onSubmit({ name, email, phone, message }: z.infer<typeof ContactFormValidation>) {
+        setIsLoading(true);
+       
+        try {
+            // const userData = {
+            //     name: name,
+            //     email: email,
+            //     phone: phone,
+            //     message: message,
+            // }
+
+            // const user = await createUser(userData);
+
+            // if (user) {
+            //     setIsLoading(false);
+            //     router.push("/success");
+            // }   
+            
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     return (
