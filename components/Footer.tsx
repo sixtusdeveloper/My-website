@@ -64,12 +64,12 @@ const Footer: React.FC = () => {
         </a>
       </div>
 
-      <div className="flex justify-center items-center py-2 mt-2">
-        <span className="w-full flex flex-col text-center text-xs p-2 tracking-wider">
-          Copyright&copy; 2024. developed by Sixtusdev | all rights reserved |
-          terms & conditions version 0.1.0.
-        </span>
-      </div>
+        <div className="flex justify-center items-center py-2 mt-2">
+            <span className="w-full flex flex-col text-center text-xs p-2 tracking-wider">
+                Copyright&copy; {new Date().getFullYear()} developed by Sixtusdev | all rights reserved |
+                terms & conditions version 0.1.0
+            </span>
+        </div>
     </footer>
   );
 };
