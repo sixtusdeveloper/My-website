@@ -11,6 +11,7 @@ import SubmitButton from "./SubmitButton";
 import { useState } from "react";
 import { ContactFormValidation } from "@/lib/validation";
 import { useRouter } from "next/navigation";
+import { createUser } from "@/lib/actions/user.action";
 export enum FormFieldType {
     INPUT = "input",
     TEXTAREA = "textarea",
@@ -37,23 +38,23 @@ const ContactForm = () => {
         setIsLoading(true);
        
         try {
-            // const userData = {
-            //     name: name,
-            //     email: email,
-            //     phone: phone,
-            //     message: message,
-            // }
+            const userData = {
+                name: name,
+                email: email,
+                phone: phone,
+                message: message,
+            }
 
-            // const user = await createUser(userData);
+            const newUser = await createUser(userData);
 
-            // if (user) {
-            //     setIsLoading(false);
-            //     router.push("/success");
-            // }   
+            if (newUser) {
+                router.push(`/users/${newUser.$id}/success`);
+            }   
             
         } catch (error) {
             console.log(error);
         }
+        setIsLoading(false);
     }
 
     return (
