@@ -74,29 +74,8 @@
   body {
     @apply bg-background text-foreground;
   }
+
   
-}
-
-/* =====  REACT PHONE NUMBER INPUT OVERRIDES */
-/* .input-phone {
-  @apply mt-2 h-11 rounded-md px-3 text-sm border bg-dark-400 placeholder:text-dark-600 border-dark-500 !important;
-} */
-
-.phone-input{
-  height: 100% !important;
-  position: relative !important;
-  border: none !important;
-  display: flex !important;
-  width: 100% !important;
-  /* &::placeholder {
-    color: #6B7280 !important;
-  } */
-
-
-}
-
-.Phone-input:focus{
-  outline: none !important;
 }
 
 .avatar-img {
@@ -115,3 +94,19 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+
+
+.button:hover {
+  color: #007bff; /* Change to your desired hover color */
+}
+

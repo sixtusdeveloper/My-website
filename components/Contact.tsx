@@ -84,70 +84,16 @@ const Contact = () => {
                   <FaPhoneAlt className="mr-2" /> +2349022048105
                 </p><br />
                 <p className="inline-flex items-center tracking-wider text-sm">
-                  <FaEnvelope className="mr-2" /> sixtusushrey@gmail.com
+                  <FaEnvelope className="mr-2" /> info@sixtusdev.net
+                </p>
+                <p className="inline-flex items-center tracking-wider text-sm">
+                  <FaEnvelope className="mr-2" /> support@sixtusdev.net
                 </p>
               </div>
             </div>
           </div>
-
-          {/* <form onSubmit={handleSubmit} className="p-4 justify-start items-start space-y-4 w-full">
-            <div>
-              <label htmlFor="fullName" className="block text-start py-2 text-sm font-medium">
-                Full Name
-              </label>
-              <input
-                type="text"
-                name="fullName"
-                id="fullName"
-                placeholder="Your full name"
-                value={formData.fullName}
-                onChange={handleChange}
-                className="text-sm w-full p-2 lg:p-3 rounded-lg border bg-secondary"
-              />
-              {errors.fullName && <p className="text-red-500 text-start text-sm mt-1">{errors.fullName}</p>}
-            </div>
-
-            <div>
-              <label htmlFor="email" className="block text-start py-2 text-sm font-medium">
-                Email Address
-              </label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Your email address"
-                value={formData.email}
-                onChange={handleChange}
-                className="text-sm w-full p-2 lg:p-3 rounded-lg border bg-secondary"
-              />
-              {errors.email && <p className="text-red-500 text-start text-sm mt-1">{errors.email}</p>}
-            </div>
-
-            <div>
-              <label htmlFor="message" className="block text-start py-2 text-sm font-medium">
-                Message
-              </label>
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Your message"
-                value={formData.message}
-                onChange={handleChange}
-                className="text-sm w-full p-2 lg:p-3 border rounded-lg bg-secondary"
-                rows={4}
-              ></textarea>
-              {errors.message && <p className="text-red-500 text-start text-sm mt-1">{errors.message}</p>}
-            </div>
-
-            <button
-              type="submit"
-              className="border cursor-pointer hover:bg-blue-800 rounded-lg bg-blue-600 text-white p-2 lg:p-3 w-full"
-            >
-              Send Message
-            </button>
-          </form> */}
           <div className="p-4 justify-start items-start space-y-4 w-full">
-
+            {/* Contact form component imported here */}
             <ContactForm />
           </div>
         </div>
