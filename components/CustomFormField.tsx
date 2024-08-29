@@ -12,11 +12,8 @@ import {
   } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Control, Form } from "react-hook-form";
-import { FormFieldType} from './ContactForm';
+import { FormFieldType } from './ContactForm';
 import { Switch } from '@headlessui/react';
-import 'react-phone-number-input/style.css'
-import PhoneInput from 'react-phone-number-input'
-import { E164Number } from 'libphonenumber-js';
 import { Textarea } from './ui/textarea';
 
 interface CustomProps {
@@ -44,21 +41,6 @@ const RenderField = ({ field, props }: { field: any; props: CustomProps}) => {
                     />
                 </FormControl>
                 
-            )
-        case FormFieldType.PHONE_INPUT:
-            return (
-                <FormControl>
-                    <PhoneInput 
-                      defaultCountry='US'
-                      onChange={field.onChange}
-                      value={field.value as E164Number | undefined}
-                      placeholder={placeholder}
-                      className='h-10 px-3 bg-secondary border rounded-md'
-                      international
-                      withCountryCallingCode
-
-                    />
-                </FormControl>
             )
         case FormFieldType.TEXTAREA:
             return (
