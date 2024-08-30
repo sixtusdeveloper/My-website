@@ -7,7 +7,7 @@ interface ModalProps {
     isOpen: boolean;
     onClose: () => void;
     message: string;
-    children?: React.ReactNode; // Make children optional
+    children?: React.ReactNode; 
 }
 
 const HeroModal: React.FC<ModalProps> = ({ isOpen, onClose, message, children }) => {
