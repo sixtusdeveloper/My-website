@@ -40,14 +40,14 @@ const Home = () => {
           )}
         </h3>
         <h1 className="text-3xl lg:text-4xl leading-relaxed tracking-wider font-bold lg:font-bolder">
-          I'm Sixtus, a passionate Software Engineer
+          I'm Sixtus, a Passionate Software Engineer
         </h1>
         <p className="py-8 tracking-wide leading-6 text-sm">
           Crafting elegant solutions with a focus on clean, efficient code and innovative design. 
           Welcome to my personal space where technology meets creativity.
         </p>
 
-        <div className="mt-8">
+        <div className="mt-6">
           <a 
             onClick={openModal} 
             className="bg-blue-600 hover:bg-blue-800 cursor-pointer text-white text-sm font-semibold tracking-wider rounded-full py-3 px-8 text-center"
