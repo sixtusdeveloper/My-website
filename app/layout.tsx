@@ -11,15 +11,18 @@ export const metadata: Metadata = {
   title: "Sixtusdev",
   description: "Explore the personal website of Sixtus, a skilled Software Engineer specializing in [React - Next.js, Typescript, MongoDB, and much more]. Discover innovative projects, technical insights, and a commitment to creating impactful, user-focused applications. Let's build something great together.",
   icons: {
-    icon: '/favicon.ico',
+    icon: '/favicon.ico', // Ensure you have a favicon in the public folder
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
-  themeColor: "#3371FF", // Directly set the theme color here
 };
+
+// Export viewport and themeColor separately
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
+export const themeColor = "#3371FF";
 
 export default function RootLayout({
   children,
