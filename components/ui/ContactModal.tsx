@@ -48,7 +48,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, message }) => {
                 </button>
                 <div className="flex flex-col items-center">
                     <AiOutlineCheckCircle className="text-green-500 text-4xl mb-4" /> {/* Success icon */}
-                    <p className="text-center text-lg font-semibold mb-4">{message}</p>
+                    <p className="text-center text-lg tracking-wide leading-7 font-semibold mb-4">{message}</p>
                     <button
                         onClick={onClose}
                         className="bg-blue-600 hover:bg-blue-800 text-white text-sm font-semibold rounded-full py-2 px-6"

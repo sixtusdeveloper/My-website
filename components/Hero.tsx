@@ -1,18 +1,22 @@
-// /components/Home.tsx
-
 'use client';
 
 import React, { useState } from "react";
 import { useUser } from "@clerk/nextjs";
 import HeroModal from "@/components/ui/HeroModal";
+import Loader from "@/components/ui/Loader";
 import { Button } from "@/components/ui/button"; // Assuming you have a Button component
 
 const Home = () => {
   const { user, isSignedIn } = useUser();
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false); // Add state for loader
 
   const openModal = () => {
-    setIsModalOpen(true);
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+      setIsModalOpen(true);
+    }, 2000); // Loader duration
   };
 
   const closeModal = () => {
@@ -44,9 +48,17 @@ const Home = () => {
         </p>
 
         <div className="mt-8">
-          <a onClick={openModal} className="bg-blue-600 hover:bg-blue-800 cursor-pointer text-white text-sm font-semibold tracking-wider rounded-full py-3 px-8 text-center">View My Work</a>
+          <a 
+            onClick={openModal} 
+            className="bg-blue-600 hover:bg-blue-800 cursor-pointer text-white text-sm font-semibold tracking-wider rounded-full py-3 px-8 text-center"
+          >
+            View My Work
+          </a>
         </div>
       </div>
+
+      {isLoading && <Loader />} {/* Show loader */}
+
       <HeroModal 
         isOpen={isModalOpen}
         onClose={closeModal}
@@ -72,6 +84,89 @@ const Home = () => {
 };
 
 export default Home;
+
+
+
+
+
+
+
+
+
+
+
+// 'use client';
+
+// import React, { useState } from "react";
+// import { useUser } from "@clerk/nextjs";
+// import HeroModal from "@/components/ui/HeroModal";
+// import { Button } from "@/components/ui/button"; // Assuming you have a Button component
+
+// const Home = () => {
+//   const { user, isSignedIn } = useUser();
+//   const [isModalOpen, setIsModalOpen] = useState(false);
+
+//   const openModal = () => {
+//     setIsModalOpen(true);
+//   };
+
+//   const closeModal = () => {
+//     setIsModalOpen(false);
+//   };
+
+//   const handleLeave = () => {
+//     window.location.href = 'https://www.sixtusfolio.com'; // Redirect to portfolio
+//   };
+
+//   return (
+//     <section id="portfolio" className="relative pt-6 lg:pt-10 flex items-center justify-center h-screen bg-secondary">
+//       <div className="relative z-10 p-8 max-w-2xl text-center">
+//         <h3 className="text-[1rem] py-6 font-bold tracking-wider sm:text-[1.2rem]">
+//           {isSignedIn && user ? (
+//             <>
+//               👋 Hey <span className="text-purple">{user.firstName}</span>
+//             </>
+//           ) : (
+//             "👋 Hey there!"
+//           )}
+//         </h3>
+//         <h1 className="text-3xl lg:text-4xl leading-relaxed tracking-wider font-bold lg:font-bolder">
+//           I'm Sixtus, a passionate Software Engineer
+//         </h1>
+//         <p className="py-8 tracking-wide leading-6 text-sm">
+//           Crafting elegant solutions with a focus on clean, efficient code and innovative design. 
+//           Welcome to my personal space where technology meets creativity.
+//         </p>
+
+//         <div className="mt-8">
+//           <a onClick={openModal} className="bg-blue-600 hover:bg-blue-800 cursor-pointer text-white text-sm font-semibold tracking-wider rounded-full py-3 px-8 text-center">View My Work</a>
+//         </div>
+//       </div>
+//       <HeroModal 
+//         isOpen={isModalOpen}
+//         onClose={closeModal}
+//         message="Are you sure you want to leave the site? You will be redirected to my portfolio."
+//       >
+//         <div className="flex gap-4 mt-4">
+//           <button
+//             onClick={handleLeave}
+//             className="bg-blue-600 hover:bg-blue-800 text-white py-2 px-4 rounded-full"
+//           >
+//             Leave
+//           </button>
+//           <button
+//             onClick={closeModal}
+//             className="bg-gray-600 hover:bg-gray-800 text-white py-2 px-4 rounded-full"
+//           >
+//             Cancel
+//           </button>
+//         </div>
+//       </HeroModal>
+//     </section>
+//   );
+// };
+
+// export default Home;
 
 
 
