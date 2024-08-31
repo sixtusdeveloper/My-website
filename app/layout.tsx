@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+// layout.tsx
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from '@/components/theme-provider'; 
@@ -7,28 +7,21 @@ import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Sixtusdev",
   description: "Explore the personal website of Sixtus, a skilled Software Engineer specializing in [React - Next.js, Typescript, MongoDB, and much more]. Discover innovative projects, technical insights, and a commitment to creating impactful, user-focused applications. Let's build something great together.",
   icons: {
     icon: '/favicon.ico', // Ensure you have a favicon in the public folder
   },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
+  themeColor: "#3371FF",
 };
 
-// Export viewport and themeColor separately
-export const viewport = {
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 1,
-};
-
-export const themeColor = "#3371FF";
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <ClerkProvider
       appearance={{
@@ -73,13 +66,6 @@ export default function RootLayout({
     </ClerkProvider>
   );
 }
-
-
-
-
-
-
-
 
 
 
