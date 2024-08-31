@@ -6,7 +6,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
-
+const publishableKey = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY as string;
 export const metadata = {
   title: "Sixtusdev",
   description: "Explore the personal website of Sixtus, a skilled Software Engineer specializing in [React - Next.js, Typescript, MongoDB, and much more]. Discover innovative projects, technical insights, and a commitment to creating impactful, user-focused applications. Let's build something great together.",
@@ -24,6 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <ClerkProvider
+      publishableKey={publishableKey}
       appearance={{
         variables: { 
           colorPrimary: "#3371FF", 
