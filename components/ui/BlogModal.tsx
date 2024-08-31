@@ -43,7 +43,7 @@ const HeroModal: React.FC<ModalProps> = ({ isOpen, onClose, message, children })
             <div className="bg-secondary border rounded-lg shadow-lg p-6 max-w-sm mx-auto relative">
                 <button
                     onClick={onClose}
-                    className="absolute top-2 right-2 text-gray-500 hover:text-red-500"
+                    className="absolute top-2 right-2 text-gray-500 hover:text-red-600"
                 >
                     ✕
                 </button>
