@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa"; // Importing phone and envelope icons
-import ContactForm from "./ContactForm";
+import ContactForm from "@/components/ContactForm";
 
 const Contact = () => {
   const [formData, setFormData] = useState({

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { blogPosts } from "@/data";
 import { FaLocationArrow } from "react-icons/fa";
-import BlogModal from "./ui/BlogModal"; // Import the BlogModal component
+import BlogModal from "@/components/ui/BlogModal"; // Import the BlogModal component
 
 // Truncate the Project title to a maximum length
 const MAX_TITLE_LENGTH = 50;

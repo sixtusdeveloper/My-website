@@ -12,9 +12,9 @@ import {
   } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Control, Form } from "react-hook-form";
-import { FormFieldType } from './ContactForm';
+import { FormFieldType } from '@/components/ContactForm';
 import { Switch } from '@headlessui/react';
-import { Textarea } from './ui/textarea';
+import { Textarea } from '@/components/ui/textarea';
 
 interface CustomProps {
     control: Control<any>,

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaCode, FaLaptopCode, FaProjectDiagram, FaUsers, FaLightbulb } from 'react-icons/fa';
 import Image from 'next/image';
-import "./auth-styles.css";
+import "@/auth-styles.css";
 import { SparklesCore } from './ui/sparkles'
 
 const Layout = ({ children }: { children: React.ReactNode }) => {

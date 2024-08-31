@@ -10,10 +10,10 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { useUser } from '@clerk/nextjs'; // Import useUser from Clerk
 import { Form } from "@/components/ui/form";
-import CustomFormField from "./CustomFormField";
-import SubmitButton from "./SubmitButton";
+import CustomFormField from "@/components/CustomFormField";
+import SubmitButton from "@/components/SubmitButton";
 import { ContactFormValidation } from "@/lib/validation";
-import Modal from "./ui/ContactModal"; // Import the Modal component
+import Modal from "@/components/ui/ContactModal"; // Import the Modal component
 
 export enum FormFieldType {
     INPUT = "input",

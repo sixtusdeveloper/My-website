@@ -4,9 +4,9 @@ import React, { useState, useEffect } from 'react';
 import { Dialog, DialogPanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { RedirectToSignIn, SignedIn, SignedOut, SignInButton, UserButton, useUser } from '@clerk/nextjs';
-import { Logo } from './NavbarLogo'; 
+import { Logo } from '@/components/NavbarLogo'; 
 import Image from 'next/image';
-import ToggleMode from './toggleMode';
+import ToggleMode from '@/components/toggleMode';
 
 interface NavbarProps {
   LogoImg?: string;
