@@ -83,7 +83,7 @@ const Blog = () => {
   };
 
   return (
-    <section id="blog" className="py-20 px-4 lg:px-10 bg-secondary">
+    <section id="blog" className="py-20 px-4 lg:px-8 bg-secondary">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold mb-8 text-center">Few Selection of my Blog</h2>
         <div className="grid gap-6 md:grid-cols-3">

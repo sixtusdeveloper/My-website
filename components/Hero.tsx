@@ -67,13 +67,13 @@ const Home = () => {
         <div className="flex gap-4 mt-4">
           <button
             onClick={handleLeave}
-            className="bg-blue-600 hover:bg-blue-800 text-white py-2 px-4 rounded-full"
+            className="bg-blue-600 hover:bg-blue-800 text-white py-2 px-8 rounded-full"
           >
             Leave
           </button>
           <button
             onClick={closeModal}
-            className="bg-gray-600 hover:bg-gray-800 text-white py-2 px-4 rounded-full"
+            className="bg-gray-600 hover:bg-gray-800 text-white py-2 px-8 rounded-full"
           >
             Cancel
           </button>
