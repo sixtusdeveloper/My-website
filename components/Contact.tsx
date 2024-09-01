@@ -63,7 +63,7 @@ const Contact = () => {
     <section id="contact" className="py-20 px-8 bg-secondary">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-8">Let’s Connect</h2>
-        <p className="mb-8 text-sm leading-relaxed tracking-wide">
+        <p className="mb-8 text-md leading-relaxed tracking-wide">
           Feel free to reach out for collaborations, job opportunities, or just to say hi!
         </p>
         <div className="flex flex-col lg:flex-row justify-between items-start gap-8">
@@ -78,16 +78,16 @@ const Contact = () => {
             />
             <div className="mt-2">
               <h3 className="text-md font-bold mt-4">Sixtus Aondoakaa</h3>
-              <p className="text-xs">Software Engineer</p>
+              <p className="text-sm">Software Engineer</p>
               <div className="mt-4">
                 <h4 className="py-2 font-bold tracking-wide">Contact me</h4>
-                <p className="inline-flex tracking-wide py-1 items-center text-xs">
+                <p className="inline-flex tracking-wide py-1 items-center text-sm">
                   <FaPhoneAlt className="mr-2" /> +2349022048105
                 </p><br />
-                <p className="inline-flex items-center tracking-wider text-xs">
+                <p className="inline-flex items-center tracking-wider text-sm">
                   <FaEnvelope className="mr-2" /> contact@sixtusdev.net
-                </p>
-                <p className="inline-flex items-center tracking-wider text-xs">
+                </p><br />
+                <p className="inline-flex items-center tracking-wider text-sm">
                   <FaEnvelope className="mr-2" /> info@sixtusdev.net
                 </p>
               </div>

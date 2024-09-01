@@ -25,20 +25,20 @@ const About = () => {
         </p>
         {isExpanded && (
           <>
-            <p className="text-sm tracking-wide leading-relaxed mb-4">
+            <p className="text-base tracking-wide leading-relaxed mb-4">
               The path has not always been smooth. The tech industry is dynamic and ever-evolving, and staying ahead requires more than just technical skills—it demands resilience and a commitment to continuous learning. I have faced and overcome numerous challenges, from mastering new frameworks to debugging intricate issues. Each obstacle has been a stepping stone, contributing to my growth as a software engineer.
             </p>
-            <p className="text-sm tracking-wide leading-relaxed mb-4">
+            <p className="text-base tracking-wide leading-relaxed mb-4">
               My journey is marked by a dedication to excellence and an insatiable curiosity. Whether it's developing complex systems or simplifying user interfaces, I approach each project with the same enthusiasm and meticulous attention to detail. I believe that technology should not only solve problems but also create seamless and delightful user experiences.
             </p>
-            <p className="text-sm tracking-wide leading-relaxed mb-4">
+            <p className="text-base tracking-wide leading-relaxed mb-4">
               Today, I am proud of the work I have accomplished and the professional growth I have achieved. I am excited about the future and eager to continue pushing the boundaries of what is possible in the tech world. Thank you for visiting my site, and I look forward to connecting with like-minded individuals and exploring new opportunities.
             </p>
           </>
         )}
         <button 
           onClick={handleToggle} 
-          className="text-blue-600 hover:no-underline tracking-wide text-md mt-4 button ring-1 py-2 px-8 rounded-full"
+          className="text-blue-600 hover:no-underline tracking-wide text-base mt-4 button ring-1 py-2 px-8 rounded-full"
         >
           {isExpanded ? "That's it from me" : "More to read"}
         </button>

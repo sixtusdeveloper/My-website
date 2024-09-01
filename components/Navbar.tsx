@@ -82,7 +82,7 @@ export default function Navbar({
                 <a
                   key={item.name}
                   href={`#${item.href.substring(1)}`}
-                  className={`text-sm font-medium leading-6 cursor-pointer tracking-wider ${activeSection === item.href.substring(1) ? 'text-blue-500' : 'text-default'} hover:text-primary`}
+                  className={`text-base font-medium leading-6 cursor-pointer tracking-wider ${activeSection === item.href.substring(1) ? 'text-blue-500' : 'text-default'} hover:text-primary`}
                   onClick={(e) => {
                     e.preventDefault();
                     handleClick(item.href);

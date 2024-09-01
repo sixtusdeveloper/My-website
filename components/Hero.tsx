@@ -42,7 +42,7 @@ const Home = () => {
         <h1 className="text-3xl lg:text-4xl leading-relaxed tracking-wider font-bold lg:font-bolder">
           I'm Sixtus, a Passionate Software Engineer
         </h1>
-        <p className="py-8 tracking-wide leading-6 text-sm">
+        <p className="py-8 tracking-wide leading-6 text-[16px]">
           Crafting elegant solutions with a focus on clean, efficient code and innovative design. 
           Welcome to my personal space where technology meets creativity.
         </p>
@@ -50,7 +50,7 @@ const Home = () => {
         <div className="mt-6">
           <a 
             onClick={openModal} 
-            className="bg-blue-600 hover:bg-blue-800 cursor-pointer text-white text-sm font-semibold tracking-wider rounded-full py-3 px-8 text-center"
+            className="bg-blue-600 hover:bg-blue-800 cursor-pointer text-white text-[16px] font-semibold tracking-wider rounded-full py-3 px-8 text-center"
           >
             View My Work
           </a>
