@@ -194,7 +194,7 @@ const Blog = () => {
                 height={300}
                 style={{ objectFit: 'cover' }}
               />
-              <p className="mt-4 text-sm leading-relaxed">
+              <p className="mt-4 text-base leading-relaxed">
                 {selectedPost.description}
               </p>
               <div className="py-8">
