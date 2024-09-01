@@ -16,6 +16,6 @@ export const Logo: React.FC<LogoProps> = ({ src, alt, title }) => (
       style={{ width: 'auto', height: 'auto' }}
       priority={true}
     />
-    <span className="tracking-wider font-medium text-sm">{title}</span>
+    <span className="tracking-wide font-medium text-base">{title}</span>
   </a>
 );
