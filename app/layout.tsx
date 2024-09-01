@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       appearance={{
         variables: { 
           colorPrimary: "#3371FF", 
-          fontSize: '16px' 
+          fontSize: '18px' 
         },
         elements: {
           button: {
