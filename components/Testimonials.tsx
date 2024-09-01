@@ -19,8 +19,8 @@ const Testimonials = () => {
                         style={{objectFit: 'cover'}}
                     />
                     <span className=" py-2 flex flex-col justify-start items-center">
-                        <span className="mt-2 text-base tracking-wide">Joseph Anderson</span>
-                        <span className="text-base tracking-wide">Database Admin</span>
+                        <span className="mt-2 text-[14px] tracking-wide">Joseph Anderson</span>
+                        <span className="text-[14px] tracking-wide">Database Admin</span>
                    </span>
                 </div>
             </blockquote>
@@ -36,8 +36,8 @@ const Testimonials = () => {
                         style={{objectFit: 'cover'}}
                     />
                     <span className=" py-2 flex flex-col justify-start items-center">
-                        <span className="mt-2 text-base tracking-wide">Emily Carter</span>
-                        <span className="text-base tracking-wide">Product Manager</span>
+                        <span className="mt-2 text-[14px] tracking-wide">Emily Carter</span>
+                        <span className="text-[14px] tracking-wide">Product Manager</span>
                    </span>
                 </div>
             </blockquote>
@@ -53,8 +53,8 @@ const Testimonials = () => {
                         style={{objectFit: 'cover'}}
                     />
                     <span className=" py-2 flex flex-col justify-start items-center">
-                        <span className="mt-2 text-base tracking-wide">Michael Smith</span>
-                        <span className="text-base tracking-wide">CTO</span>
+                        <span className="mt-2 text-[14px] tracking-wide">Michael Smith</span>
+                        <span className="text-[14px] tracking-wide">CTO</span>
                    </span>
                 </div>
             </blockquote>
