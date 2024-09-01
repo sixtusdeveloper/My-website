@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Testimonials = () => {
   return (
     <section id="testimonials" className="py-10 px-8 bg-secondary">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl tracking-wide font-bold mb-8">Kind words from Clients and Collaborators.</h2>
         <div className="grid gap-8 md:grid-cols-3">
             <blockquote className="mb-6">

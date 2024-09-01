@@ -112,7 +112,7 @@ export default function Navbar({
                     alt="Sixtusdev Logo" 
                     width={30} height={30} 
                   />
-                  <span className='text-white text-sm tracking-wider font-semibold'>Sixtusdev</span>
+                  <span className='text-white text-base tracking-wide font-semibold'>Sixtusdev</span>
                 </a>
                 <button
                   type="button"
