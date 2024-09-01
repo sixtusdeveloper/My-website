@@ -60,8 +60,8 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-10 bg-secondary">
-      <div className="max-w-4xl mx-auto text-center">
+    <section id="contact" className="py-20 px-8 bg-secondary">
+      <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-8">Let’s Connect</h2>
         <p className="mb-8 text-sm leading-relaxed tracking-wide">
           Feel free to reach out for collaborations, job opportunities, or just to say hi!
@@ -74,6 +74,7 @@ const Contact = () => {
               width={300}
               height={200}
               className="rounded-lg border"
+              style={{ width: "auto", height: "auto" }}
             />
             <div className="mt-2">
               <h3 className="text-md font-bold mt-4">Sixtus Aondoakaa</h3>
