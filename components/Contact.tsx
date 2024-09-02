@@ -60,13 +60,13 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-8 bg-secondary">
+    <section id="contact" className="py-20 px-4 lg:px-8 bg-secondary">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-8">Let’s Connect</h2>
         <p className="mb-8 text-md leading-relaxed tracking-wide">
           Feel free to reach out for collaborations, job opportunities, or just to say hi!
         </p>
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-8">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:gap-8 gap-2">
           <div className="p-4 lg:py-8 text-start relative lg:w-1/2">
             <Image
               src="/profile.jpg"
