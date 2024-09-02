@@ -1,13 +1,18 @@
 // components/Footer.tsx
 
-import React, { useState } from 'react';
+import React from 'react';
 import { FaGithub, FaTwitter, FaLinkedin, FaFacebook, FaYoutube } from 'react-icons/fa';
 import PrivacyPolicyModal from '@/components/PrivacyPolicyModal';
 import TermsOfServiceModal from '@/components/TermsOfServiceModal';
 
-const Footer: React.FC = () => {
-  const [isPrivacyModalOpen, setPrivacyModalOpen] = useState(false);
-  const [isTermsModalOpen, setTermsModalOpen] = useState(false);
+interface FooterProps {
+  onOpenPrivacyModal: () => void;
+  onOpenTermsModal: () => void;
+}
+
+const Footer: React.FC<FooterProps> = ({ onOpenPrivacyModal, onOpenTermsModal }) => {
+  const [isPrivacyModalOpen, setPrivacyModalOpen] = React.useState(false);
+  const [isTermsModalOpen, setTermsModalOpen] = React.useState(false);
 
   const handleOpenPrivacyModal = () => setPrivacyModalOpen(true);
   const handleClosePrivacyModal = () => setPrivacyModalOpen(false);
@@ -71,17 +76,17 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="flex justify-center space-x-4 py-2 mt-2">
-        <a href="#" onClick={handleOpenPrivacyModal} className="text-gray-600 hover:underline">
+        <a href="#" onClick={onOpenPrivacyModal} className="text-gray-600 hover:underline">
           Privacy Policy
         </a>
-        <a href="#" onClick={handleOpenTermsModal} className="text-gray-600 hover:underline">
+        <a href="#" onClick={onOpenTermsModal} className="text-gray-600 hover:underline">
           Terms of Service
         </a>
       </div>
 
       <div className="flex justify-center items-center py-2 mt-2">
         <span className="w-full flex flex-col text-center text-gray-600 text-xs p-2 tracking-wider">
-          Copyright&copy; {new Date().getFullYear()} developed by Sixtusdev | <a href="#" onClick={handleOpenTermsModal} className="text-gray-600 hover:underline">Terms and Conditions</a> | support@sixtusdev.net | version 0.1.0
+          Copyright&copy; {new Date().getFullYear()} developed by Sixtusdev | <a href="#" onClick={onOpenTermsModal} className="text-gray-600 hover:underline">Terms and Conditions</a> | support@sixtusdev.net | version 0.1.0
         </span>
       </div>
 
@@ -93,6 +98,7 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
+
 
 
 

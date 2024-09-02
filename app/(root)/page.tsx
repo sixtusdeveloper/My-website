@@ -1,3 +1,5 @@
+// pages/index.tsx
+
 'use client';
 
 import React from 'react';
@@ -37,6 +39,8 @@ export default function Home() {
             <Projects />
             <Contact />
             <Footer 
+              onOpenPrivacyModal={handleOpenPrivacyModal} 
+              onOpenTermsModal={handleOpenTermsModal} 
             />
             <ScrollIndicator />
           </div>
@@ -49,7 +53,6 @@ export default function Home() {
     </>
   );
 }
-
 
 
 
