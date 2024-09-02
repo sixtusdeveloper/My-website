@@ -17,8 +17,8 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" className="py-8 lg:py-10 px-8 bg-secondary">
-      <div className="max-w-2xl mx-auto text-center">
+    <section id="about" className="p-8 lg:py-10 bg-secondary">
+      <div className="max-w-2xl mt-8 lg:mt-2 mx-auto text-center">
         <h2 className="text-3xl tracking-wider font-bold mb-4">About Me</h2>
         <p className="text-base tracking-wide leading-relaxed mb-4">
           Hi, I’m Sixtus, a passionate software engineer dedicated to crafting scalable and innovative web solutions. My journey in tech began with a fascination for how technology shapes our world. Over the years, I have navigated the complexities of full-stack development, embracing both front-end and back-end technologies to build robust applications.
