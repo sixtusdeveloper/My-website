@@ -1,8 +1,7 @@
 // pages/index.tsx
-
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Hero from '@/components/Hero';
 import Footer from '@/components/Footer';
 import { SignedIn, SignedOut, RedirectToSignIn } from "@clerk/nextjs";
@@ -14,16 +13,27 @@ import Blog from '@/components/Blog';
 import Testimonials from '@/components/Testimonials';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
+import PrivacyPolicyModal from '@/components/PrivacyPolicyModal';
+import TermsOfServiceModal from '@/components/TermsOfServiceModal';
 
 export default function Home() {
+  const [isPrivacyModalOpen, setPrivacyModalOpen] = useState(false);
+  const [isTermsModalOpen, setTermsModalOpen] = useState(false);
+
   const handleOpenPrivacyModal = () => {
-    // Logic to open privacy modal
-    console.log("Privacy Modal opened");
+    setPrivacyModalOpen(true);
+  };
+
+  const handleClosePrivacyModal = () => {
+    setPrivacyModalOpen(false);
   };
 
   const handleOpenTermsModal = () => {
-    // Logic to open terms modal
-    console.log("Terms Modal opened");
+    setTermsModalOpen(true);
+  };
+
+  const handleCloseTermsModal = () => {
+    setTermsModalOpen(false);
   };
 
   return (
@@ -43,6 +53,10 @@ export default function Home() {
               onOpenTermsModal={handleOpenTermsModal} 
             />
             <ScrollIndicator />
+
+            {/* Render Modals */}
+            <PrivacyPolicyModal isOpen={isPrivacyModalOpen} onClose={handleClosePrivacyModal} />
+            <TermsOfServiceModal isOpen={isTermsModalOpen} onClose={handleCloseTermsModal} />
           </div>
         </main>
       </SignedIn>
@@ -53,7 +67,6 @@ export default function Home() {
     </>
   );
 }
-
 
 
 

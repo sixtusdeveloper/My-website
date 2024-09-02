@@ -1,9 +1,5 @@
-// components/Footer.tsx
-
 import React from 'react';
 import { FaGithub, FaTwitter, FaLinkedin, FaFacebook, FaYoutube } from 'react-icons/fa';
-import PrivacyPolicyModal from '@/components/PrivacyPolicyModal';
-import TermsOfServiceModal from '@/components/TermsOfServiceModal';
 
 interface FooterProps {
   onOpenPrivacyModal: () => void;
@@ -11,15 +7,6 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({ onOpenPrivacyModal, onOpenTermsModal }) => {
-  const [isPrivacyModalOpen, setPrivacyModalOpen] = React.useState(false);
-  const [isTermsModalOpen, setTermsModalOpen] = React.useState(false);
-
-  const handleOpenPrivacyModal = () => setPrivacyModalOpen(true);
-  const handleClosePrivacyModal = () => setPrivacyModalOpen(false);
-
-  const handleOpenTermsModal = () => setTermsModalOpen(true);
-  const handleCloseTermsModal = () => setTermsModalOpen(false);
-
   return (
     <footer className="bg-secondary border-t px-6 py-4">
       <div className="flex justify-center space-x-2">
@@ -89,10 +76,6 @@ const Footer: React.FC<FooterProps> = ({ onOpenPrivacyModal, onOpenTermsModal })
           Copyright&copy; {new Date().getFullYear()} developed by Sixtusdev | <a href="#" onClick={onOpenTermsModal} className="text-gray-600 hover:underline">Terms and Conditions</a> | support@sixtusdev.net | version 0.1.0
         </span>
       </div>
-
-      {/* Render modals */}
-      <PrivacyPolicyModal isOpen={isPrivacyModalOpen} onClose={handleClosePrivacyModal} />
-      <TermsOfServiceModal isOpen={isTermsModalOpen} onClose={handleCloseTermsModal} />
     </footer>
   );
 };
