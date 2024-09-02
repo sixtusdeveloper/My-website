@@ -83,10 +83,10 @@ const Blog = () => {
   };
 
   return (
-    <section id="blog" className="py-20 px-4 lg:px-8 bg-secondary">
-      <div className="max-w-5xl mx-auto">
+    <section id="blog" className="py-20 px-4 lg:px-4 bg-secondary">
+      <div className="lg:max-w-5xl max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-8 text-center">Few Selection of my Blog</h2>
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-2 lg:gap-6 md:grid-cols-3">
           {currentPosts.map((post) => (
             <article key={post.id} className="p-4 bg-secondary border rounded-lg shadow">
               <Image
@@ -98,7 +98,7 @@ const Blog = () => {
               />
               <div className="pt-2">
                 <h3 className="text-lg font-bold">{truncateTitle(post.title, MAX_TITLE_LENGTH)}</h3>
-                <p className="mt-2 text-sm leading-relaxed">{truncateDescription(post.description, MAX_DESCRIPTION_LENGTH)}</p>
+                <p className="mt-2 text-base leading-relaxed">{truncateDescription(post.description, MAX_DESCRIPTION_LENGTH)}</p>
                 <div className="flex mt-4 gap-4 justify-between items-center">
                   <button
                     onClick={() => openModal(post)}
