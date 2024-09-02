@@ -1,12 +1,13 @@
-import React from 'react';
-import { FaGithub, FaTwitter, FaLinkedin, FaFacebook, FaYoutube } from 'react-icons/fa';
+import React from "react";
+import {
+  FaGithub,
+  FaTwitter,
+  FaLinkedin,
+  FaFacebook,
+  FaYoutube,
+} from "react-icons/fa";
 
-interface FooterProps {
-  onOpenPrivacyModal: () => void;
-  onOpenTermsModal: () => void;
-}
-
-const Footer: React.FC<FooterProps> = ({ onOpenPrivacyModal, onOpenTermsModal }) => {
+const Footer: React.FC = () => {
   return (
     <footer className="bg-secondary border-t px-6 py-4">
       <div className="flex justify-center space-x-2">
@@ -30,6 +31,7 @@ const Footer: React.FC<FooterProps> = ({ onOpenPrivacyModal, onOpenTermsModal })
             <FaTwitter size={20} />
           </span>
         </a>
+
         <a
           href="https://www.youtube.com/@Sixtusdev"
           target="_blank"
@@ -62,20 +64,12 @@ const Footer: React.FC<FooterProps> = ({ onOpenPrivacyModal, onOpenTermsModal })
         </a>
       </div>
 
-      <div className="flex justify-center space-x-4 py-2 mt-2">
-        <a href="#" onClick={onOpenPrivacyModal} className="text-gray-600 hover:underline">
-          Privacy Policy
-        </a>
-        <a href="#" onClick={onOpenTermsModal} className="text-gray-600 hover:underline">
-          Terms of Service
-        </a>
-      </div>
-
-      <div className="flex justify-center items-center py-2 mt-2">
-        <span className="w-full flex flex-col text-center text-gray-600 text-xs p-2 tracking-wider">
-          Copyright&copy; {new Date().getFullYear()} developed by Sixtusdev | <a href="#" onClick={onOpenTermsModal} className="text-gray-600 hover:underline">Terms and Conditions</a> | support@sixtusdev.net | version 0.1.0
-        </span>
-      </div>
+        <div className="flex justify-center items-center py-2 mt-2">
+            <span className="w-full flex flex-col text-center text-gray-600 text-xs p-2 tracking-wider">
+                Copyright&copy; {new Date().getFullYear()} developed by Sixtusdev | all rights reserved |
+                support@sixtusdev.net | version 0.1.0
+            </span>
+        </div>
     </footer>
   );
 };
@@ -86,23 +80,15 @@ export default Footer;
 
 
 
+// import React from 'react';
+// import { FaGithub, FaTwitter, FaLinkedin, FaFacebook, FaYoutube } from 'react-icons/fa';
 
+// interface FooterProps {
+//   onOpenPrivacyModal: () => void;
+//   onOpenTermsModal: () => void;
+// }
 
-
-
-
-
-
-// import React from "react";
-// import {
-//   FaGithub,
-//   FaTwitter,
-//   FaLinkedin,
-//   FaFacebook,
-//   FaYoutube,
-// } from "react-icons/fa";
-
-// const Footer: React.FC = () => {
+// const Footer: React.FC<FooterProps> = ({ onOpenPrivacyModal, onOpenTermsModal }) => {
 //   return (
 //     <footer className="bg-secondary border-t px-6 py-4">
 //       <div className="flex justify-center space-x-2">
@@ -126,7 +112,6 @@ export default Footer;
 //             <FaTwitter size={20} />
 //           </span>
 //         </a>
-
 //         <a
 //           href="https://www.youtube.com/@Sixtusdev"
 //           target="_blank"
@@ -159,14 +144,23 @@ export default Footer;
 //         </a>
 //       </div>
 
-//         <div className="flex justify-center items-center py-2 mt-2">
-//             <span className="w-full flex flex-col text-center text-gray-600 text-xs p-2 tracking-wider">
-//                 Copyright&copy; {new Date().getFullYear()} developed by Sixtusdev | all rights reserved |
-//                 support@sixtusdev.net | version 0.1.0
-//             </span>
-//         </div>
+//       <div className="flex justify-center space-x-4 py-2 mt-2">
+//         <a href="#" onClick={onOpenPrivacyModal} className="text-gray-600 hover:underline">
+//           Privacy Policy
+//         </a>
+//         <a href="#" onClick={onOpenTermsModal} className="text-gray-600 hover:underline">
+//           Terms of Service
+//         </a>
+//       </div>
+
+//       <div className="flex justify-center items-center py-2 mt-2">
+//         <span className="w-full flex flex-col text-center text-gray-600 text-xs p-2 tracking-wider">
+//           Copyright&copy; {new Date().getFullYear()} developed by Sixtusdev | <a href="#" onClick={onOpenTermsModal} className="text-gray-600 hover:underline">Terms and Conditions</a> | support@sixtusdev.net | version 0.1.0
+//         </span>
+//       </div>
 //     </footer>
 //   );
 // };
 
 // export default Footer;
+

@@ -1,10 +1,9 @@
-// pages/index.tsx
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import Hero from '@/components/Hero';
 import Footer from '@/components/Footer';
-import { SignedIn, SignedOut, RedirectToSignIn } from "@clerk/nextjs";
+import { SignedIn, SignedOut, RedirectToSignIn, useUser } from "@clerk/nextjs";
 import NavBar from "@/components/Navbar";
 import { navigation } from '@/data';
 import ScrollIndicator from '@/components/ScrollIndicator';
@@ -13,28 +12,8 @@ import Blog from '@/components/Blog';
 import Testimonials from '@/components/Testimonials';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
-import PrivacyPolicyModal from '@/components/PrivacyPolicyModal';
-import TermsOfServiceModal from '@/components/TermsOfServiceModal';
 
 export default function Home() {
-  const [isPrivacyModalOpen, setPrivacyModalOpen] = useState(false);
-  const [isTermsModalOpen, setTermsModalOpen] = useState(false);
-
-  const handleOpenPrivacyModal = () => {
-    setPrivacyModalOpen(true);
-  };
-
-  const handleClosePrivacyModal = () => {
-    setPrivacyModalOpen(false);
-  };
-
-  const handleOpenTermsModal = () => {
-    setTermsModalOpen(true);
-  };
-
-  const handleCloseTermsModal = () => {
-    setTermsModalOpen(false);
-  };
 
   return (
     <>
@@ -48,15 +27,8 @@ export default function Home() {
             <Testimonials />
             <Projects />
             <Contact />
-            <Footer 
-              onOpenPrivacyModal={handleOpenPrivacyModal} 
-              onOpenTermsModal={handleOpenTermsModal} 
-            />
+            <Footer />
             <ScrollIndicator />
-
-            {/* Render Modals */}
-            <PrivacyPolicyModal isOpen={isPrivacyModalOpen} onClose={handleClosePrivacyModal} />
-            <TermsOfServiceModal isOpen={isTermsModalOpen} onClose={handleCloseTermsModal} />
           </div>
         </main>
       </SignedIn>
@@ -83,12 +55,13 @@ export default function Home() {
 
 
 
+// // pages/index.tsx
 // 'use client';
 
-// import React from 'react';
+// import React, { useState } from 'react';
 // import Hero from '@/components/Hero';
 // import Footer from '@/components/Footer';
-// import { SignedIn, SignedOut, RedirectToSignIn, useUser } from "@clerk/nextjs";
+// import { SignedIn, SignedOut, RedirectToSignIn } from "@clerk/nextjs";
 // import NavBar from "@/components/Navbar";
 // import { navigation } from '@/data';
 // import ScrollIndicator from '@/components/ScrollIndicator';
@@ -97,8 +70,28 @@ export default function Home() {
 // import Testimonials from '@/components/Testimonials';
 // import Projects from '@/components/Projects';
 // import Contact from '@/components/Contact';
+// import PrivacyPolicyModal from '@/components/PrivacyPolicyModal';
+// import TermsOfServiceModal from '@/components/TermsOfServiceModal';
 
 // export default function Home() {
+//   const [isPrivacyModalOpen, setPrivacyModalOpen] = useState(false);
+//   const [isTermsModalOpen, setTermsModalOpen] = useState(false);
+
+//   const handleOpenPrivacyModal = () => {
+//     setPrivacyModalOpen(true);
+//   };
+
+//   const handleClosePrivacyModal = () => {
+//     setPrivacyModalOpen(false);
+//   };
+
+//   const handleOpenTermsModal = () => {
+//     setTermsModalOpen(true);
+//   };
+
+//   const handleCloseTermsModal = () => {
+//     setTermsModalOpen(false);
+//   };
 
 //   return (
 //     <>
@@ -112,8 +105,15 @@ export default function Home() {
 //             <Testimonials />
 //             <Projects />
 //             <Contact />
-//             <Footer />
+//             <Footer 
+//               onOpenPrivacyModal={handleOpenPrivacyModal} 
+//               onOpenTermsModal={handleOpenTermsModal} 
+//             />
 //             <ScrollIndicator />
+
+//             {/* Render Modals */}
+//             <PrivacyPolicyModal isOpen={isPrivacyModalOpen} onClose={handleClosePrivacyModal} />
+//             <TermsOfServiceModal isOpen={isTermsModalOpen} onClose={handleCloseTermsModal} />
 //           </div>
 //         </main>
 //       </SignedIn>
@@ -124,3 +124,6 @@ export default function Home() {
 //     </>
 //   );
 // }
+
+
+
