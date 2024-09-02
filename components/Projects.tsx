@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-10 lg:px-8 bg-secondary">
+    <section id="projects" className="py-10 px-8 bg-secondary">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold mb-8 text-center">Personal Projects</h2>
         <div className="grid gap-8 md:grid-cols-2">
