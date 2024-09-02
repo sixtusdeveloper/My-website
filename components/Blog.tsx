@@ -78,7 +78,7 @@ const Blog = () => {
   };
 
   const handleBlogRedirect = () => {
-    window.open('https://www.devjourney.com', '_blank'); // Open the URL in a new tab
+    window.open('https://devjourney-virid.vercel.app/', '_blank'); // Open the URL in a new tab
     setIsModalOpen(false); // Close the modal
   };
 
