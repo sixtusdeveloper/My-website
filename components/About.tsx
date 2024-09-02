@@ -21,9 +21,9 @@ const About = () => {
     <section id="about" className="p-8 lg:py-10 bg-secondary">
       <div className="max-w-3xl mt-8 lg:mt-2 mx-auto text-center">
         <h2 className="text-3xl tracking-wider font-bold mb-4">About Me</h2>
-        <div className="flex justify-center items-center my-8 p-2 w-full relative">
+        <div className="flex justify-center items-center my-4 p-2 w-full relative">
           <Image 
-          src="/images/prfolfile-img.png" 
+          src="/profile-img.png" 
           alt="Profile image"
           width={200}
           height={200}
