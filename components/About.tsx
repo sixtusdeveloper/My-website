@@ -19,8 +19,7 @@ const About = () => {
 
   return (
     <section id="about" className="p-8 lg:py-10 bg-secondary">
-      <div className="max-w-3xl mt-8 lg:mt-2 mx-auto text-center">
-        <h2 className="text-3xl tracking-wider font-bold mb-4">About Me</h2>
+      <div className="max-w-3xl mt-8 lg:mt-2 mx-auto text-center"> 
         <div className="flex justify-center items-center my-4 p-2 w-full relative">
           <Image 
           src="/profile-img.png" 
@@ -30,8 +29,9 @@ const About = () => {
           className="profile_image relative rounded-full"
           />
         </div>
+        <h2 className="text-3xl tracking-wider font-bold mb-4">About Me</h2>
         <p className="text-base tracking-wide leading-relaxed mb-4">
-          Hi, I’m Sixtus, a passionate software engineer dedicated to crafting scalable and innovative web solutions. My journey in tech began with a fascination for how technology shapes our world. Over the years, I have navigated the complexities of full-stack development, embracing both front-end and back-end technologies to build robust applications.
+          Hi, I’m Sixtus Aondoakaa, a passionate Software Engineer dedicated to crafting scalable and innovative web solutions. My journey in tech began with a fascination for how technology shapes our world. Over the years, I have navigated the complexities of full-stack development, embracing both front-end and back-end technologies to build robust applications.
         </p>
         {isExpanded && (
           <>
