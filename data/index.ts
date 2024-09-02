@@ -14,7 +14,7 @@ export const navigation = [
   export const blogPosts = [
     {
       id: 1,
-      title: "Understanding JavaScript Closures",
+      title: "Understanding JavaScript Closures and Scope Chain in 2024",
       description: `
         **JavaScript closures** are a foundational concept in JavaScript that enable functions to access variables from an outer scope even after the outer function has finished executing. This feature is crucial for creating private variables and managing asynchronous code effectively.
   
