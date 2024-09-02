@@ -63,13 +63,18 @@ const Footer: React.FC = () => {
           </span>
         </a>
       </div>
+      <span className="flex justify-center items-center py-2 space-x-4">
+        <a href="/privacy_policy" target="_blank" className="text-gray-600 hover:underline">Privacy Policy</a>
+        <a href="/terms_condition" target="_blank" className="text-gray-600 hover:underline">Terms and conditions</a>       
+      </span>
 
-        <div className="flex justify-center items-center py-2 mt-2">
-            <span className="w-full flex flex-col text-center text-gray-600 text-xs p-2 tracking-wider">
-                Copyright&copy; {new Date().getFullYear()} developed by Sixtusdev | all rights reserved |
-                support@sixtusdev.net | version 0.1.0
-            </span>
-        </div>
+      <div className="flex justify-center items-center py-2">
+          <span className="w-full flex flex-col text-center text-gray-600 text-xs p-2 tracking-wider">
+              Copyright&copy; {new Date().getFullYear()} developed by Sixtusdev | all rights reserved |
+              support@sixtusdev.net | version 0.1.0
+          </span>
+          
+      </div>
     </footer>
   );
 };
