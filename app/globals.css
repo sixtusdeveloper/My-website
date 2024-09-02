@@ -138,7 +138,15 @@
   align-items: center;
   margin-bottom: 20px;
 }
+.profile_image {
+  width: 200px !important;
+  height: 200px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  position: relative !important;
+  padding: 10px;
 
+}
 .closeButton {
   background: none;
   border: none;
