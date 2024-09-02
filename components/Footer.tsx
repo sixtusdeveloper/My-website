@@ -64,12 +64,12 @@ const Footer: React.FC = () => {
         </a>
       </div>
       <span className="flex justify-center items-center py-6 space-x-4">
-        <a href="/pages/privacy_policy" target="_blank" className="text-gray-600 text-base hover:underline">Privacy Policy</a>
-        <a href="/pages/terms_condition" target="_blank" className="text-gray-600 text-base hover:underline">Terms and conditions</a>       
+        <a href="/pages/privacy_policy" target="_blank" className="text-gray-600 text-base hover:underline hover:text-blue-600">Privacy Policy</a>
+        <a href="/pages/terms_condition" target="_blank" className="text-gray-600 text-base hover:underline hover:text-blue-600">Terms and conditions</a>       
       </span>
 
       <div className="flex justify-center items-center py-2">
-          <span className="w-full flex flex-col text-center text-gray-600 text-xs p-2 tracking-wider">
+          <span className="w-full flex flex-col text-center text-gray-600 text-sm p-2 tracking-wider">
               Copyright&copy; {new Date().getFullYear()} developed by Sixtusdev | all rights reserved |
               support@sixtusdev.net | version 0.1.0
           </span>
