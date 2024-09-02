@@ -39,7 +39,7 @@ const Home = () => {
             "👋 Hi there!"
           )}
         </h3>
-        <h1 className="text-3xl lg:text-4xl leading-relaxed tracking-wider font-bolder lg:font-bolder">
+        <h1 className="text-3xl lg:text-4xl leading-relaxed tracking-wide font-bold lg:font-bold">
           I&apos;m Sixtus Aondoakaa, a Passionate Software Engineer Dedicated to Crafting Innovative Digital Solutions
         </h1>
         <p className="py-8 tracking-wide leading-6 text-[16px]">
