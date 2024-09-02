@@ -37,8 +37,6 @@ export default function Home() {
             <Projects />
             <Contact />
             <Footer 
-              onOpenPrivacyModal={handleOpenPrivacyModal} 
-              onOpenTermsModal={handleOpenTermsModal} 
             />
             <ScrollIndicator />
           </div>
