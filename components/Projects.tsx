@@ -9,14 +9,12 @@ const Projects = () => {
         <div className="grid gap-8 md:grid-cols-2">
           {/* Project 1 */}
           <div className="flex relative justify-center gap-4 p-4 bg-secondary border rounded-lg shadow">
-            <div className="text-start items-start relative px-4">
+            <div className="text-start items-start relative">
               <Image 
                 src="/project01.png"
                 alt="Open Source img"
-                width={150}
-                height={150}
-                className="overflow-hidden"
-                style={ { width: 'auto', height: 'auto' } }
+                width={200}
+                height={200}
               />
             </div>
             <div>
@@ -29,14 +27,12 @@ const Projects = () => {
           
           {/* Project 2 */}
           <div className="flex justify-center gap-4 p-4 bg-secondary border rounded-lg shadow">
-            <div className="text-start items-start relative px-4">
+            <div className="text-start items-start relative">
               <Image 
                 src="/project02.png"
                 alt="Web App img"
-                width={150}
-                height={150}
-                // className="overflow-hidden"
-                // style={ { width: 'auto', height: 'auto' } }
+                width={200}
+                height={200}
               />
             </div>
             <div>
@@ -49,14 +45,12 @@ const Projects = () => {
           
           {/* Project 3 */}
           <div className="flex justify-center gap-4 p-4 bg-secondary border rounded-lg shadow">
-            <div className="text-start items-start relative px-4">
+            <div className="text-start items-start relative">
               <Image 
                 src="/project03.png"
                 alt="Blog img"
-                width={150}
-                height={150}
-                // className="overflow-hidden"
-                // style={ { width: 'auto', height: 'auto' } }
+                width={200}
+                height={200}
               />
             </div>
             <div>
@@ -69,14 +63,12 @@ const Projects = () => {
           
           {/* Project 4 */}
           <div className="flex justify-center gap-4 p-4 bg-secondary border rounded-lg shadow">
-            <div className="text-start items-start relative px-4">
+            <div className="text-start items-start relative">
               <Image 
                 src="/project04.png"
                 alt="Ecormmerce img"
-                width={150}
-                height={150}
-                // className="overflow-hidden"
-                // style={ { width: 'auto', height: 'auto' } }
+                width={200}
+                height={200}
               />
             </div>
             <div>
