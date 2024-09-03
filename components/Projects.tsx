@@ -28,15 +28,15 @@ const Projects = () => {
           </div>
           
           {/* Project 2 */}
-          <div className="flex justify-center items-center gap-4 p-4 bg-secondary border rounded-lg shadow">
+          <div className="flex justify-center gap-4 p-4 bg-secondary border rounded-lg shadow">
             <div className="text-start items-start relative px-4">
               <Image 
                 src="/project02.png"
                 alt="Web App img"
                 width={150}
                 height={150}
-                className="overflow-hidden"
-                style={ { width: 'auto', height: 'auto' } }
+                // className="overflow-hidden"
+                // style={ { width: 'auto', height: 'auto' } }
               />
             </div>
             <div>
@@ -48,15 +48,15 @@ const Projects = () => {
           </div>
           
           {/* Project 3 */}
-          <div className="flex justify-center items-center gap-4 p-4 bg-secondary border rounded-lg shadow">
+          <div className="flex justify-center gap-4 p-4 bg-secondary border rounded-lg shadow">
             <div className="text-start items-start relative px-4">
               <Image 
                 src="/project03.png"
                 alt="Blog img"
                 width={150}
                 height={150}
-                className="overflow-hidden"
-                style={ { width: 'auto', height: 'auto' } }
+                // className="overflow-hidden"
+                // style={ { width: 'auto', height: 'auto' } }
               />
             </div>
             <div>
@@ -68,15 +68,15 @@ const Projects = () => {
           </div>
           
           {/* Project 4 */}
-          <div className="flex justify-center items-center gap-4 p-4 bg-secondary border rounded-lg shadow">
+          <div className="flex justify-center gap-4 p-4 bg-secondary border rounded-lg shadow">
             <div className="text-start items-start relative px-4">
               <Image 
                 src="/project04.png"
                 alt="Ecormmerce img"
                 width={150}
                 height={150}
-                className="overflow-hidden"
-                style={ { width: 'auto', height: 'auto' } }
+                // className="overflow-hidden"
+                // style={ { width: 'auto', height: 'auto' } }
               />
             </div>
             <div>
