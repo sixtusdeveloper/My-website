@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Projects = () => {
   return (
@@ -8,6 +9,14 @@ const Projects = () => {
         <div className="grid gap-8 md:grid-cols-2">
           {/* Project 1 */}
           <div className="p-4 bg-secondary border rounded-lg shadow">
+            <Image 
+              src="/project01.png"
+              alt="Open Source img"
+              width={40}
+              height={40}
+              className="overflow-hidden py-4"
+              style={ { width: 'auto', height: 'auto' } }
+            />
             <h3 className="text-xl font-bold">Open Source Contribution</h3>
             <p className="mt-2 text-base leading-relaxed">
               Actively contributed to the <span className="font-semibold">OptiFrame project</span>, an open-source initiative, by improving the codebase, refining the UI/UX design, and significantly enhancing the project's performance. My contributions helped in reducing load times by 20% and increasing user engagement.
@@ -16,6 +25,13 @@ const Projects = () => {
           
           {/* Project 2 */}
           <div className="p-4 bg-secondary border rounded-lg shadow">
+            <Image 
+              src="/project02.jpg"
+              alt="Web App img"
+              width={40}
+              height={40}
+              style={ { width: 'auto', height: 'auto' } }
+            />
             <h3 className="text-xl font-bold">Full-Stack Web Application</h3>
             <p className="mt-2 text-base leading-relaxed">
               Developed a full-stack web application called <span className="font-semibold">TaskMaster</span>, designed to streamline task management for teams. The app features real-time collaboration, task assignment, and progress tracking, built using React, Node.js, and MongoDB.
@@ -24,6 +40,13 @@ const Projects = () => {
           
           {/* Project 3 */}
           <div className="p-4 bg-secondary border rounded-lg shadow">
+            <Image 
+              src="/project03.png"
+              alt="Blog img"
+              width={40}
+              height={40}
+              style={ { width: 'auto', height: 'auto' } }
+            />
             <h3 className="text-xl font-bold">Personal Blog Platform</h3>
             <p className="mt-2 text-base leading-relaxed">
               Built a personal blog platform named <span className="font-semibold">DevJourney</span>, where I share articles on web development and programming. The platform supports markdown formatting, social media sharing, and SEO optimization. Developed using Next.js and Tailwind CSS.
@@ -32,6 +55,13 @@ const Projects = () => {
           
           {/* Project 4 */}
           <div className="p-4 bg-secondary border rounded-lg shadow">
+            <Image 
+              src="/project04.png"
+              alt="Ecormmerce img"
+              width={40}
+              height={40}
+              style={ { width: 'auto', height: 'auto' } }
+            />
             <h3 className="text-xl font-bold">E-Commerce Website</h3>
             <p className="mt-2 text-base leading-relaxed">
               Designed and developed an e-commerce website named <span className="font-semibold">ShopEasy</span>, featuring a user-friendly interface, secure payment integration, and advanced search functionality. Leveraged Shopify's API for product management and order processing.
