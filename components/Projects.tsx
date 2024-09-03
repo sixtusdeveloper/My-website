@@ -8,13 +8,13 @@ const Projects = () => {
         <h2 className="text-3xl font-bold mb-8 text-center">Personal Projects</h2>
         <div className="grid gap-8 md:grid-cols-2">
           {/* Project 1 */}
-          <div className="flex relative justify-center items-center gap-4 p-4 bg-secondary border rounded-lg shadow">
-            <div className="items-start relative">
+          <div className="flex relative justify-center gap-4 p-4 bg-secondary border rounded-lg shadow">
+            <div className="text-start items-start relative">
               <Image 
                 src="/project01.png"
                 alt="Open Source img"
-                width={40}
-                height={40}
+                width={60}
+                height={60}
                 className="overflow-hidden"
                 // style={ { width: 'auto', height: 'auto' } }
               />
