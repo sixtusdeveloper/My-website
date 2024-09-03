@@ -4,19 +4,21 @@ import Image from "next/image";
 const Projects = () => {
   return (
     <section id="projects" className="py-10 px-4 bg-secondary">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-8 text-center">Personal Projects</h2>
         <div className="grid gap-8 md:grid-cols-2">
           {/* Project 1 */}
-          <div className="flex justify-center items-center gap-4 p-4 bg-secondary border rounded-lg shadow">
-            <Image 
-              src="/project01.png"
-              alt="Open Source img"
-              width={40}
-              height={40}
-              className="overflow-hidden"
-              style={ { width: 'auto', height: 'auto' } }
-            />
+          <div className="flex relative justify-center items-center gap-4 p-4 bg-secondary border rounded-lg shadow">
+            <div className="items-start relative">
+              <Image 
+                src="/project01.png"
+                alt="Open Source img"
+                width={40}
+                height={40}
+                className="overflow-hidden"
+                // style={ { width: 'auto', height: 'auto' } }
+              />
+            </div>
             <div>
               <h3 className="text-xl font-bold">Open Source Contribution</h3>
               <p className="mt-2 text-base leading-relaxed">
@@ -27,14 +29,16 @@ const Projects = () => {
           
           {/* Project 2 */}
           <div className="flex justify-center items-center gap-4 p-4 bg-secondary border rounded-lg shadow">
-            <Image 
-              src="/project02.png"
-              alt="Web App img"
-              width={40}
-              height={40}
-              className="overflow-hidden"
-              style={ { width: 'auto', height: 'auto' } }
-            />
+            <div className="items-start relative">
+              <Image 
+                src="/project02.png"
+                alt="Web App img"
+                width={40}
+                height={40}
+                className="overflow-hidden"
+                style={ { width: 'auto', height: 'auto' } }
+              />
+            </div>
             <div>
               <h3 className="text-xl font-bold">Full-Stack Web Application</h3>
               <p className="mt-2 text-base leading-relaxed">
@@ -45,14 +49,16 @@ const Projects = () => {
           
           {/* Project 3 */}
           <div className="flex justify-center items-center gap-4 p-4 bg-secondary border rounded-lg shadow">
-            <Image 
-              src="/project03.png"
-              alt="Blog img"
-              width={40}
-              height={40}
-              className="overflow-hidden"
-              style={ { width: 'auto', height: 'auto' } }
-            />
+            <div className="items-start relative">
+              <Image 
+                src="/project03.png"
+                alt="Blog img"
+                width={40}
+                height={40}
+                className="overflow-hidden"
+                style={ { width: 'auto', height: 'auto' } }
+              />
+            </div>
             <div>
               <h3 className="text-xl font-bold">Personal Blog Platform</h3>
               <p className="mt-2 text-base leading-relaxed">
@@ -63,14 +69,16 @@ const Projects = () => {
           
           {/* Project 4 */}
           <div className="flex justify-center items-center gap-4 p-4 bg-secondary border rounded-lg shadow">
-            <Image 
-              src="/project04.png"
-              alt="Ecormmerce img"
-              width={40}
-              height={40}
-              className="overflow-hidden"
-              style={ { width: 'auto', height: 'auto' } }
-            />
+            <div className="items-start relative">
+              <Image 
+                src="/project04.png"
+                alt="Ecormmerce img"
+                width={40}
+                height={40}
+                className="overflow-hidden"
+                style={ { width: 'auto', height: 'auto' } }
+              />
+            </div>
             <div>
               <h3 className="text-xl font-bold">E-Commerce Website</h3>
               <p className="mt-2 text-base leading-relaxed">
