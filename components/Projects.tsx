@@ -8,7 +8,7 @@ const Projects = () => {
         <h2 className="text-3xl font-bold mb-8 text-center">Personal Projects</h2>
         <div className="grid gap-8 md:grid-cols-2">
           {/* Project 1 */}
-          <div className="flex relative justify-center gap-4 p-4 bg-secondary border rounded-lg shadow">
+          <div className="flex lg:flex-row flex-col-1 relative justify-center gap-4 p-4 bg-secondary border rounded-lg shadow">
             <div className="text-start items-start relative">
               <Image 
                 src="/project01.png"
@@ -26,7 +26,7 @@ const Projects = () => {
           </div>
           
           {/* Project 2 */}
-          <div className="flex justify-center gap-4 p-4 bg-secondary border rounded-lg shadow">
+          <div className="flex lg:flex-row flex-col-1 justify-center gap-4 p-4 bg-secondary border rounded-lg shadow">
             <div className="text-start items-start relative">
               <Image 
                 src="/project02.png"
@@ -44,7 +44,7 @@ const Projects = () => {
           </div>
           
           {/* Project 3 */}
-          <div className="flex justify-center gap-4 p-4 bg-secondary border rounded-lg shadow">
+          <div className="flex lg:flex-row flex-col-1 justify-center gap-4 p-4 bg-secondary border rounded-lg shadow">
             <div className="text-start items-start relative">
               <Image 
                 src="/project03.png"
@@ -62,7 +62,7 @@ const Projects = () => {
           </div>
           
           {/* Project 4 */}
-          <div className="flex justify-center gap-4 p-4 bg-secondary border rounded-lg shadow">
+          <div className="flex lg:flex-row flex-col-1  justify-center gap-4 p-4 bg-secondary border rounded-lg shadow">
             <div className="text-start items-start relative">
               <Image 
                 src="/project04.png"
