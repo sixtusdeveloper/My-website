@@ -145,6 +145,7 @@
   object-fit: cover !important;
   position: relative !important;
   padding: 10px;
+  overflow: hidden;
 
 }
 .closeButton {
