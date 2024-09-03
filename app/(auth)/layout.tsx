@@ -26,8 +26,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <Image
               src="/Logo-icon.png"
               alt="Sixtusdev Logo"
-              width={40}
-              height={40}
+              width={50}
+              height={50}
               className="mb-0 entry-logo"
               priority={true}
               style={{ width: 'auto', height: 'auto' }} // Maintain aspect ratio
@@ -41,8 +41,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     <Image 
                       src="/auth01.png"
                       alt="Laptop Code icon"
-                      width={30}
-                      height={30}
+                      width={50}
+                      height={50}
                       style={ { width: 'auto', height: 'auto' } }
                       className='overflow-hidden'
                     />
@@ -55,8 +55,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     <Image 
                       src="/auth02.png"
                       alt="Code icon"
-                      width={30}
-                      height={30}
+                      width={50}
+                      height={50}
                       style={ { width: 'auto', height: 'auto' } }
                       className='overflow-hidden'
                     />
@@ -69,8 +69,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     <Image 
                       src="/auth03.png"
                       alt="Project icon"
-                      width={30}
-                      height={30}
+                      width={50}
+                      height={50}
                       style={ { width: 'auto', height: 'auto' } }
                       className='overflow-hidden'
                     />
@@ -83,8 +83,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     <Image 
                       src="/auth04.png"
                       alt="Collaboration icon"
-                      width={30}
-                      height={30}
+                      width={50}
+                      height={50}
                       style={ { width: 'auto', height: 'auto' } }
                       className='overflow-hidden'
                     />
@@ -97,8 +97,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     <Image 
                       src="/auth05.png"
                       alt="Innovation icon"
-                      width={30}
-                      height={30}
+                      width={50}
+                      height={50}
                       style={ { width: 'auto', height: 'auto' } }
                       className='overflow-hidden'
                     />
