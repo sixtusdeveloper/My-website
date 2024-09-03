@@ -9,7 +9,7 @@ const Projects = () => {
         <div className="grid gap-8 md:grid-cols-2">
           {/* Project 1 */}
           <div className="flex lg:flex-row flex-col-1 relative justify-center gap-4 p-4 bg-secondary border rounded-lg shadow">
-            <div className="text-start items-start relative">
+            <div className="lg:text-start text-center lg:items-start items-center relative">
               <Image 
                 src="/project01.png"
                 alt="Open Source img"
@@ -27,7 +27,7 @@ const Projects = () => {
           
           {/* Project 2 */}
           <div className="flex lg:flex-row flex-col-1 justify-center gap-4 p-4 bg-secondary border rounded-lg shadow">
-            <div className="text-start items-start relative">
+            <div className="lg:text-start text-center lg:items-start items-center relative">
               <Image 
                 src="/project02.png"
                 alt="Web App img"
@@ -45,7 +45,7 @@ const Projects = () => {
           
           {/* Project 3 */}
           <div className="flex lg:flex-row flex-col-1 justify-center gap-4 p-4 bg-secondary border rounded-lg shadow">
-            <div className="text-start items-start relative">
+            <div className="lg:text-start text-center lg:items-start items-center relative">
               <Image 
                 src="/project03.png"
                 alt="Blog img"
@@ -62,8 +62,8 @@ const Projects = () => {
           </div>
           
           {/* Project 4 */}
-          <div className="flex lg:flex-row flex-col-1  justify-center gap-4 p-4 bg-secondary border rounded-lg shadow">
-            <div className="text-start items-start relative">
+          <div className="flex lg:flex-row flex-col justify-center gap-4 p-4 bg-secondary border rounded-lg shadow">
+            <div className="lg:text-start text-center lg:items-start items-center relative">
               <Image 
                 src="/project04.png"
                 alt="Ecormmerce img"
