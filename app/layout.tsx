@@ -54,8 +54,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "url": "https://sixtusdev.net",
               "description": "Sixtus Aondoakaa is a skilled software engineer specializing in React, Next.js, and more. Discover innovative projects and technical insights.",
               "sameAs": [
-                "https://www.linkedin.com/in/sixtus-aondoakaa",
-                "https://github.com/sixtusdev"
+                "https://www.linkedin.com/in/sixtusushrey/",
+                "https://github.com/sixtusdeveloper",
+                "https://x.com/dev_elites",
               ]
             }
             `}
