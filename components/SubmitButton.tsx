@@ -9,7 +9,7 @@ interface ButtonProps {
 
 const SubmitButton = ({ isLoading, className, children }: ButtonProps) => {
   return (
-    <Button type="submit" disabled={isLoading} className={className ?? 'w-full cursor-pointer bg-blue-600 text-white hover:bg-blue-800'}>
+    <Button type="submit" disabled={isLoading} className={className ?? 'w-full px-4 py-3 cursor-pointer bg-blue-600 text-white hover:bg-blue-800'}>
        {isLoading ? 
        (
         <div className="flex justify-center items-center">
