@@ -139,8 +139,8 @@
   margin-bottom: 20px;
 }
 .profile_image {
-  width: 260px !important;
-  height: 260px !important;
+  width: 200px !important;
+  height: 200px !important;
   border-radius: 50% !important;
   object-fit: cover !important;
   position: relative !important;
