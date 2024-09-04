@@ -10,8 +10,8 @@ import ScrollIndicator from '@/components/ScrollIndicator';
 import  Clients from "@/components/PortfolioClients";
 // import About from '@/components/About';
 // import Blog from '@/components/Blog';
-import Testimonials from '@/components/Testimonials';
-import Projects from '@/components/Projects';
+
+import Projects from '@/components/PortfolioProjects';
 
 export default function Home() {
 

@@ -1,4 +1,6 @@
 import { Dialog } from "@headlessui/react";
+import React from "react";
+
 
 //============================= Home Page Navigation links ============================//
 export const navigation = [
@@ -180,5 +182,353 @@ export const testimonials = [
     imageUrl: "/profile02.jpeg",
     fallbackImageUrl: "/fullback.png",
     rating: 4,
+  },
+];
+
+//============================  data/experienceData.js ============================//
+
+export const experiences = [
+  {
+    date: "March 2023 - Present",
+    title: "Software Engineer",
+    img: "/profile.jpg",
+    organization: "Upwork",
+    type: "Remote",
+    nature: "Contract",
+    location: "United Kingdom",
+    description: "Designing and implementing software applications and APIs for clients across diverse industries.",
+    fullDesc: "Designing and implementing software applications and APIs for clients across diverse industries, including e-commerce, healthcare, and education. Collaborating with cross-functional teams to deliver high-quality products and services, leveraging agile methodologies and best practices. Conducting code reviews, implementing automated testing, and optimizing application performance to ensure scalability and reliability. Contributing to the design and architecture of web applications, APIs, and databases, utilizing modern technologies such as React, TypeScript, Node.js, MongoDB, and TypeScript.",
+    technologies: ["React", "TypeScript", "Node.js", "PHP", "SQL", "Express", "Docker", "AWS", "Stripe", "OAuth", "RESTful APIs", "WebSockets", "Shadcn", "Framer-motion", "GitLab CI/CD", "Google Analytics", "Google Optimize", "Slack", "Microsoft Teams", "Zoom", "Google Meet", "Discord", "Figma", "Aceternity UI", "Tailwindcss", "Appwrite", "Clerk"],
+  },  
+  {
+    date: "June 2024 - Present",
+    title: "Software Engineer",
+    img: "/profile.jpg",
+    organization: "SkilledUp Life",
+    type: "Remote",
+    nature: "Volunteer",
+    location: "Ontario, Canada",  
+    description: "Assisted in developing enterprise ready software solutions for clients across various industries",
+    fullDesc: "Assisted in developing enterprise-ready software solutions for clients across various industries, including e-commerce, healthcare, and education. Collaborated with cross-functional teams to deliver high-quality products and services, leveraging agile methodologies and best practices. Conducted code reviews, implemented automated testing, and optimized application performance to ensure scalability and reliability. Contributed to the design and architecture of web applications, APIs, and databases, utilizing modern technologies such as React, Next.js, Node.js, MongoDB, Clerk, Appwrite and TypeScript.",
+    technologies: ["React", "Next.js", "Node.js", "MongoDB", "PHP", "SQL", "Express", "TypeScript", "Tailwind CSS", "Firebase", "Clerk", "Appwrite", "Vercel", "AWS", "Aceternity UI", "Chakra", "RESTful APIs", "GraphQL", "WebSockets", "GitLab CI/CD", "OAuth",  "Google Analytics", "Google Tag Manager", "Google Optimize", "Hotjar", "Figma", "Adobe XD", "Sketch", "InVision", "Jira", "Trello", "Slack", "Microsoft Teams", "Zoom", "Google Meet", "Discord", "Notion", "Google Workspace", "Microsoft Office", "Adobe Creative Cloud", "Canva", "Stripe", "tawk to"],
+  },
+  {
+    date: "Feb 2020 - Feb 2023",
+    title: "Full-stack Developer",
+    img: "/profile.jpg",
+    organization: "Upwork",
+    type: "Remote",
+    nature: "Contract",
+    location: "United Kingdom",
+    description: "Worked on web applications and APIs for clients across various industries",
+    fullDesc: "Assisted in developing software solutions for clients across various industries, including e-commerce, healthcare, and education. Collaborated with cross-functional teams to deliver high-quality products and services, leveraging agile methodologies and best practices. Conducted code reviews, implemented automated testing, and optimized application performance to ensure scalability and reliability. Contributed to the design and architecture of web applications, APIs, and databases, utilizing modern technologies such as React, Next.js, Node.js, MongoDB, Clerk, Appwrite, Stripe, TypeScript and many more...",
+    technologies: ["React", "Next.js", "Node.js", "MongoDB", "Express", "TypeScript", "Tailwind CSS", "Firebase", "Clerk", "Appwrite", "Vercel", "AWS", "Aceternity UI", "Chakra", "RESTful APIs", "GraphQL", "WebSockets", "GitLab CI/CD", "OAuth",  "Google Analytics", "Google Tag Manager", "Google Optimize", "Hotjar", "Figma", "Adobe XD", "Sketch", "InVision", "Jira", "Trello", "Slack", "Microsoft Teams", "Zoom", "Google Meet", "Discord", "Notion", "Google Workspace", "Microsoft Office", "Adobe Creative Cloud", "Canva"],
+  },
+  {
+    date: "Jan 2022 - Aug 2023",
+    title: "Software Specialist",
+    img: "/profile.jpg",
+    organization: "Freelancer",
+    type: "Remote",
+    nature: "Contract",
+    location: "Stockholm County, Sweden",
+    description: "Contributed to the development and maintenance of software solutions for clients across diverse industries",
+    fullDesc: "Assisted in performing software development tasks, including coding, testing, debugging, and maintenance. Collaborated with team members to design and implement software solutions that met client requirements and specifications. Utilized agile methodologies to deliver high-quality products within project timelines. Conducted code reviews, identified bugs and issues, and implemented fixes to ensure optimal performance. Developed web applications, APIs, and databases using modern technologies such as React, Node.js, MongoDB and TypeScript.",
+    technologies: ["React", "Next.js", "Node.js", "MongoDB", "TypeScript", "Tailwind CSS", "Firebase", "Aceternity UI", "Vercel", "AWS", "Docker", "Kubernetes", "Jenkins", "GitLab CI/CD", "OAuth", "JWT", "RESTful APIs", "GraphQL", "WebSockets", "PWA", "SEO", "Google Analytics", "Google Tag Manager", "Google Optimize", "Hotjar", "Figma", "Adobe XD", "Sketch", "InVision", "Zeplin", "Jira", "Trello", "Slack", "Microsoft Teams", "Zoom", "Google Meet", "Discord", "Notion", "Asana", "Monday.com", "Airtable", "Google Workspace", "Microsoft Office", "Adobe Creative Cloud", "Canva", "Trello", "Slack", "Microsoft Teams", "Zoom", "Google Meet", "Discord", "Notion", "Asana", "Monday.com", "Airtable", "Google Workspace", "Microsoft Office", "Adobe Creative Cloud", "Canva"],
+  },
+];
+
+//==================================  Education data ==============================//
+export const education = [
+  {
+    degree: "Advanced Diploma in Software Engineering",
+    institution: "AltSchool Africa",
+    date: "2023 - 2024",
+    type: "Full-time",
+    description: "Specialized in Software engineering - Mean stack, Mern stack, and more...",
+    status: "Graduated - Awaiting Certification",
+    img: '/cert06.png'
+  },
+  {
+    degree: "Diploma in DevOps Engineering",
+    institution: "Alison Institute",
+    date: "2021 - 2022",
+    type: "Full-time",
+    description: "Specialized in DevOps engineering - Kubernetes, Docker, Google-cloud CI/CD pipelines and automation...",
+    status: "Graduated - Certified",
+    img: '/cert01.jpg'
+  },
+  {
+    degree: "Diploma in Software Project Management", 
+    institution: "Alison Institute",  
+    date: "2019 - 2020",
+    type: "Full-time",
+    description: "Specialized in software development project management - Agile, Scrum, Kanban, and more...",
+    status: "Graduated - Certified",
+    img: '/cert02.png'
+  },
+];
+
+//================================= Services data  ================================//
+export const services: Service[] = [
+  {
+    id: 1,
+    title: "User Registration and Authentication",
+    desc: "Secure and efficient user registration and authentication solutions utilizing modern technologies.",
+    detailedDesc: {
+      paragraphs: [
+        "Implement robust authentication systems leveraging industry-standard protocols such as OAuth and JWT to ensure secure and seamless user onboarding.",
+        "My solutions encompass email verification, multi-factor authentication, and social media logins, providing a comprehensive approach to user security and convenience.",
+        "Custom user management dashboards and integrations with leading platforms like Firebase, Appwrite, Auth0, or bespoke backends are included."
+      ],
+      images: [
+        {
+          src: "/authentication02.jpg",
+          alt: "User Management Dashboard"
+        },
+        {
+          src: "/authentication.jpg",
+          alt: "Multi-Factor Authentication"
+        }
+      ],
+      textDesc: [
+        "In an era where cyber threats are ever-present, implementing robust security measures is crucial. OAuth, a widely recognized standard for secure access delegation, ensures that sensitive credentials are not exposed. By utilizing access tokens, OAuth minimizes the risk of unauthorized access.",
+        "JWTs (JSON Web Tokens) provide a secure mechanism for transmitting information, with built-in data integrity and authenticity through digital signatures. This enhances security and mitigates data tampering risks.",
+        "Adopting OAuth and JWT protocols helps safeguard user data and fosters trust by enhancing security and protecting privacy."
+      ],
+      icons: [
+        {
+          src: "/OAuth01.png",
+          alt: "OAuth Icon"
+        },
+        {
+          src: "/OAuth02.png",  
+          alt: "JWT Icon"
+        }
+      ],
+    },
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
+  },
+  {
+    id: 2,
+    title: "Content Creation and Publishing",
+    desc: "Advanced platforms for creating and publishing dynamic content with ease.",
+    detailedDesc: {
+      paragraphs: [
+        "Design and develop content creation platforms that empower users to create, edit, and publish content effortlessly.",
+        "Specializing in WYSIWYG editors, markdown editors, and custom CMS solutions tailored for scalability and user-friendliness.",
+        "Whether it's a blogging platform, a publication site, or a comprehensive CMS, my solutions are designed to enhance usability and scalability."
+      ],
+      images: [
+        {
+          src: "/content03.jpg",
+          alt: "Content Creation Platform"
+        },
+        {
+          src: "/content.jpg",
+          alt: "WYSIWYG Editor"
+        }
+      ],
+      textDesc: [
+        "Create intuitive interfaces that support rich text formatting, image embedding, and media integration for a seamless content creation experience.",
+        "Implement features like version control, draft management, and live previews to streamline content publishing and enhance user engagement.",
+        "Provide customizable templates and themes to improve content presentation and overall user interaction."
+      ],
+    },
+    className: "md:col-span-2",
+    thumbnail: "/exp2.svg",
+  },
+  {
+    id: 3,
+    title: "Personalized Content Discovery",
+    desc: "Advanced algorithms and AI-driven recommendations for tailored content discovery.",
+    detailedDesc: {
+      paragraphs: [
+        "Utilize advanced algorithms and AI to deliver personalized content recommendations based on user behavior, preferences, and interactions.",
+        "Develop recommendation engines that enhance user engagement by suggesting relevant articles, videos, and media tailored to individual tastes.",
+        "Enhance user engagement by helping them discover new and exciting content tailored to their preferences."
+      ],
+      images: [
+        {
+          src: "/content.jpg",
+          alt: "Content Discovery"
+        },
+        {
+          src: "/AI.png",
+          alt: "AI Recommendation Engine"
+        }
+      ],
+      textDesc: [
+        "Leverage machine learning models to analyze user preferences and predict relevant content, enhancing the discovery experience.",
+        "Integrate real-time data processing for up-to-date recommendations based on user activity and interactions.",
+        "Design user-friendly interfaces that facilitate seamless content discovery and interaction."
+      ],
+    },
+    className: "md:col-span-2",
+    thumbnail: "/exp3.svg",
+  },
+  {
+    id: 4,
+    title: "Social Interactions",
+    desc: "Enhance user engagement with advanced social interaction features.",
+    detailedDesc: {
+      paragraphs: [
+        "Integrate features such as comments, likes, and shares to foster community building and user engagement.",
+        "Create scalable solutions for real-time comment systems, content moderation, and social media integration.",
+        "Ensure seamless connectivity and interaction among users to enhance their overall experience."
+      ],
+      images: [
+        {
+          src: "/socials01.png",
+          alt: "Social Interactions"
+        },
+        {
+          src: "/images.jpg", 
+          alt: "Comment System"
+        }
+      ],
+      textDesc: [
+        "Implement interactive features like comments, likes, and shares to boost user participation and community engagement.",
+        "Provide real-time updates and notifications to keep users engaged and informed about ongoing interactions.",
+        "Incorporate moderation tools to effectively manage and filter user-generated content."
+      ],
+    },
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
+  }
+];
+
+//=============================  Project data ====================================//
+export const projects = [
+  {
+    id: 1,
+    title: "3D Solar System Planets to Explore",
+    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    img: "/project01.avif",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "/ui.earth.com",
+    category: "Fullstack",
+    githubLink: "",
+  },
+  {
+    id: 2,
+    title: "Yoom - Video Conferencing App",
+    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    img: "/project02.avif",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    link: "/ui.yoom.com",
+    category: "Fullstack",
+    githubLink: "",
+  },
+  {
+    id: 3,
+    title: "A Real-time Chat Editor with Live collaborative features",
+    des: "Enhance your team's productivity with Chatter Editor. Collaborate on documents in real-time with ease.",
+    img: "/project03.avif",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    link: "https://chattereditor.vercel.app/",
+    category: "Frontend",
+    githubLink: "https://github.com/sixtusdeveloper/Chatter-editor",
+  },
+  {
+    id: 4,
+    title: "A Frontend Portfolio App",
+    des: "Showcase your projects and skills with this elegant portfolio app. Impress potential clients and employers.",
+    img: "/project04.avif",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://frontend-portfolio-app.vercel.app/",
+    category: "Frontend",
+    githubLink: "https://github.com/sixtusdeveloper/Frontend-portfolio-app/",
+  },
+  {
+    id: 5,
+    title: "Animated Apple Iphone 3D Website",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    img: "/project05.avif",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "/ui.apple.com",
+    category: "Fullstack",
+    githubLink: "",
+  },
+  {
+    id: 6,
+    title: "Animated Apple Iphone 3D Website",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    img: "/project06.avif",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "/ui.apple.com",
+    category: "Fullstack",
+    githubLink: "",
+  },
+  {
+    id: 7,
+    title: "Food Delivery Website",
+    des: "Order your favorite meals with ease using this food delivery website. Discover new cuisines and flavors.",
+    img: "/project07.avif",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://restaurant-website-jet-kappa.vercel.app/",
+    category: "Frontend",
+    githubLink: "https://github.com/sixtusdeveloper/Restaurant-website/",
+  },
+  {
+    id: 8,
+    title: "Animated Apple Iphone 3D Website",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    img: "/project08.avif",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "/ui.apple.com",
+    category: "Fullstack",
+    githubLink: "",
+  },
+  {
+    id: 9,
+    title: "Animated Apple Iphone 3D Website",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    img: "/project09.avif",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "/ui.apple.com",
+    category: "Fullstack",
+    githubLink: "",
+  },
+  {
+    id: 10,
+    title: "A Social media real-time chat application",
+    des: "Connect with friends and family using this social media chat application. Share updates and stay connected.",
+    img: "/project10.avif",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://frontend-chatbook-app.vercel.app/",
+    category: "Frontend",
+    githubLink: "https://github.com/sixtusdeveloper/Frontend-chatbook-app/",
+  },
+  {
+    id: 11,
+    title: "A Frontend personal portfolio website",
+    des: "Showcase your projects and skills with this elegant portfolio website. Impress potential clients and employers.",
+    img: "/project11.avif",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://frontend-portfolio-website-liart.vercel.app/",
+    cetegory: "Frontend",
+    githubLink: "https://github.com/sixtusdeveloper/Frontend-portfolio-website/",
+  },
+  {
+    id: 12,
+    title: "A Photo Image Loader App",
+    des: "A Photo Image Loader App that loads images from an API and displays them in a grid layout.",
+    img: "/project12.avif",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://image-loader-plt1a1zou-sixtus-projects.vercel.app/",
+    category: "Frontend",
+    githubLink: "https://github.com/sixtusdeveloper/Image-Loader-App/",
+  },
+  {
+    id: 13,
+    title: "A Frontend Login System App",
+    des: "Secure your applications with this user-friendly login system app. Protect user data and enhance security.",
+    img: "/project13.avif",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://login-system-app-vz4r.vercel.app/",
+    category: "Frontend",
+    githubLink: "https://github.com/sixtusdeveloper/Login-System-App/",
   },
 ];
