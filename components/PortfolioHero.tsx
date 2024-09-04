@@ -50,7 +50,7 @@ const Hero = () => {
 
 
   return (
-    <div className="pb-2 pt-36" id="Hero">
+    <div className="bg-secondary pb-2 pt-36" id="Hero">
       {/* <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"

@@ -55,7 +55,7 @@ const Projects = () => {
 
 
   return (
-    <div className="relative md:pt-10 mx-auto max-w-7xl px-6 lg:px-10 pb-20" id="Projects">
+    <div className="relative bg-secondary md:pt-10 mx-auto max-w-7xl px-6 lg:px-10 pb-20" id="Projects">
       {/* Loader Overlay */}
       {isLoading && <Loader />} {/* Show loader */}
 

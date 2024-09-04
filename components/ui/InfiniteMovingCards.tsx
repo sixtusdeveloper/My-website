@@ -123,7 +123,7 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <div className="absolute top-4 right-4 text-white text-3xl">
+              <div className="absolute top-4 right-4 text-3xl">
                 <FaQuoteLeft />
               </div>
               <div className="flex justify-between items-center gap-4 mb-4 md:mb-6">
@@ -148,7 +148,7 @@ export const InfiniteMovingCards = ({
                     />
                   </div>
                   <div className="text-sm leading-6">
-                    <p className="font-semibold text-gray-200">
+                    <p className="font-semibold">
                       <a href="#" className="hover:text-gray-400">
                         {item.name}
                       </a>
