@@ -1,14 +1,15 @@
 'use client';
 
 import React from 'react';
-import Hero from '@/components/Hero';
+import Hero from '@/components/PortfolioHero';
 import Footer from '@/components/Footer';
 import { SignedIn, SignedOut, RedirectToSignIn, useUser } from "@clerk/nextjs";
 import NavBar from "@/components/Navbar";
 import { portfolioNavLinks  } from '@/data';
 import ScrollIndicator from '@/components/ScrollIndicator';
-import About from '@/components/About';
-import Blog from '@/components/Blog';
+import  Clients from "@/components/PortfolioClients";
+// import About from '@/components/About';
+// import Blog from '@/components/Blog';
 import Testimonials from '@/components/Testimonials';
 import Projects from '@/components/Projects';
 
@@ -21,9 +22,9 @@ export default function Home() {
           <div className="max-w-7xl w-screen">
             <NavBar navigation={portfolioNavLinks } />
             <Hero />
-            <About />
-            <Blog />
-            <Testimonials />
+            {/* <About /> */}
+            {/* <Blog /> */}
+            <Clients />
             <Projects />
             <Footer />
             <ScrollIndicator />
