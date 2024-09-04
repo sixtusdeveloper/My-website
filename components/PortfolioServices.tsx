@@ -74,7 +74,7 @@ const Services = () => {
             key={index}
             borderRadius="1.75rem"
             duration={Math.floor(Math.random() * 10000) + 10000}
-            className="flex-1 text-white border-neutral-200 dark:border-slate-800"
+            className="flex-1 border bg-secondary"
             onClick={() => openModal(service)}
           >
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
@@ -86,7 +86,7 @@ const Services = () => {
               />
               <div className="lg:ms-5">
                 <h1 className="text-start text-xl md:text-2xl font-bold">{service.title}</h1>
-                <p className="text-sm text-start text-white-100 tracking-wide leading-6 mt-3 font-semibold">{truncateDescription(service.desc, MAX_DESCRIPTION_LENGTH)}&nbsp;<span className="text-purple text-sm text-end font-medium tracking-wide">Read more</span></p>
+                <p className="text-sm text-start tracking-wide leading-6 mt-3 font-semibold">{truncateDescription(service.desc, MAX_DESCRIPTION_LENGTH)}&nbsp;<span className="text-purple text-sm text-end font-medium tracking-wide">Read more</span></p>
               </div>
             </div>
           </Button>
@@ -97,7 +97,7 @@ const Services = () => {
       {isLoading && <Loader />} {/* Show loader */}
 
       <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <div ref={modalRef} className="p-6 max-h-[80vh] overflow-y-auto no-scrollbar relative">
+        <div ref={modalRef} className="p-6 max-h-[80vh] overflow-y-auto bg-secondary no-scrollbar relative">
           {selectedService && (
             <>
               <Image 
