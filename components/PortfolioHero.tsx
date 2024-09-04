@@ -12,6 +12,7 @@ import HireMeModal from "@/components/ui/HireMeModal";
 import ReadMoreModal from "@/components/ui/ReadMoreModal"; 
 import Image from "next/image";
 import { log } from "console";
+import Loader from "./ui/Loader";
 
 const Hero = () => {
   const { user, isSignedIn } = useUser();
@@ -50,7 +51,7 @@ const Hero = () => {
 
   return (
     <div className="pb-2 pt-36" id="Hero">
-      <div>
+      {/* <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
           fill="white"
@@ -60,11 +61,11 @@ const Hero = () => {
           fill="purple"
         />
         <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
-      </div>
+      </div> */}
 
-      <div className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.2] absolute flex items-center justify-center top-0 left-0">
+      {/* <div className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.2] absolute flex items-center justify-center top-0 left-0">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-      </div>
+      </div> */}
 
       <div className="flex justify-center relative my-16 lg:my-20 z-10">
         <div className="max-w-[90vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
@@ -83,7 +84,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <h3 className="text-[1rem] font-bold tracking-wider text-white sm:text-[1.2rem]">
+          <h3 className="text-[1rem] font-bold tracking-wider sm:text-[1.2rem]">
             {isSignedIn && user ? (
               <>
                 👋 Hey <span className="text-purple">{user.firstName}</span>
@@ -93,7 +94,7 @@ const Hero = () => {
             )}
           </h3>
 
-          <h1 className="text-[2.8rem] font-bold lg:font-bolder tracking-wide lg:tracking-wider text-center text-white lg:text-[3rem]">
+          <h1 className="text-[2.8rem] font-bold lg:font-bolder tracking-wide lg:tracking-wider text-center lg:text-[3rem]">
             Welcome to my <span className="text-purple">Portfolio</span>
           </h1>
           <p className="text-center md:tracking-wide leading-7 sm:tracking-wide my-4 text-[14px] lg:px-6 px-4 mb-8">
@@ -129,15 +130,11 @@ const Hero = () => {
       </div>
 
       {/* Loading Overlay */}
-      {isLoading && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="animate-spin rounded-full h-32 w-32 border-t-4 border-gray-100"></div>
-        </div>
-      )}
+      {isLoading && <Loader />} {/* Show loader */}
 
       {/* Loading Overlay for Read More */}
       {isReadMoreLoading && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-secondary bg-opacity-50">
           <div className="animate-spin rounded-full h-32 w-32 border-t-4 border-gray-100"></div>
         </div>
       )}
@@ -148,7 +145,7 @@ const Hero = () => {
           <h2 className="text-2xl font-bold text-purple tracking-wide text-center mb-4">
             Hire Me
           </h2>
-          <p className="text-center text-sm p-4 mb-8 tracking-wide text-gray-200 leading-6">
+          <p className="text-center text-sm p-4 mb-8 tracking-wide leading-6">
             Thank you for considering me for your project! I'm eager to work
             with you and bring your ideas to life. Below you can preview my CV:
           </p>
@@ -158,8 +155,8 @@ const Hero = () => {
             <Image
               src="/my-resume.jpg"
               alt="CV Preview"
-              width={600}
-              height={800}
+              width={500}
+              height={600}
               className="rounded-lg shadow-md object-contain"
               style={{ width: "auto", height: "auto" }}
             />

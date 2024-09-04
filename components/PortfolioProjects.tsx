@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import Image from "next/image";
+import Loader from "@/components/ui/Loader";
 
 
 
@@ -56,13 +57,9 @@ const Projects = () => {
   return (
     <div className="relative md:pt-10 mx-auto max-w-7xl px-6 lg:px-10 pb-20" id="Projects">
       {/* Loader Overlay */}
-      {isLoading && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="animate-spin rounded-full h-32 w-32 border-t-4 border-gray-100"></div>
-        </div>
-      )}
+      {isLoading && <Loader />} {/* Show loader */}
 
-      <h1 className="text-white font-bold text-center text-[2.4rem] leading-snug tracking-wider">
+      <h1 className="font-bold text-center text-[2.4rem] leading-snug tracking-wider">
         My&nbsp;<span className="text-purple">Recent Projects</span>
       </h1>
 
@@ -100,9 +97,9 @@ const Projects = () => {
       <div className="flex flex-wrap justify-center py-8 lg:py-10 gap-10 mt-4">
         {currentProjects.map(({ id, title, des, img, githubLink, iconLists, link }) => (
           <div
-            className="relative my-8 group overflow-hidden rounded-3xl bg-[#13162D] shadow-lg transition-transform transform hover:scale-105"
+            className="relative my-8 group overflow-hidden rounded-3xl shadow-lg transition-transform transform hover:scale-105"
             key={id}
-            style={{ width: "430px", height: "400px" }}
+            style={{ width: "300px", height: "300px" }}
           >
             <Image
               src={img}
@@ -114,7 +111,7 @@ const Projects = () => {
             />
             <div className="p-4 my-1">
               <h1 className="font-bold text-xl truncate">{truncateTitle(title, MAX_TITLE_LENGTH)}</h1>
-              <p className="text-gray-400 mt-2 text-sm line-clamp-2">{truncateDescription(des,  MAX_DESCRIPTION_LENGTH)}</p>
+              <p className="mt-2 text-sm line-clamp-2">{truncateDescription(des,  MAX_DESCRIPTION_LENGTH)}</p>
               <div className="relative rounded-full py-1 my-1 text-sm leading-6 text-blue-200 bg-black-00/10 hover:ring-gray-900/20">
                 Curious of the magic behind?{" "}
                 <a href={githubLink} target="_blank" className="font-semibold text-purple cursor-pointer">
@@ -128,7 +125,7 @@ const Projects = () => {
                   {iconLists.map((icon, index) => (
                     <div
                       key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                      className="border border-white/[.2] rounded-full bg-secondary lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                       style={{
                          transform: `translateX(-${5 * index + 2}px)`,
                        }}

@@ -8,6 +8,7 @@ import NavBar from "@/components/Navbar";
 import { portfolioNavLinks  } from '@/data';
 import ScrollIndicator from '@/components/ScrollIndicator';
 import  Clients from "@/components/PortfolioClients";
+import  Services from "@/components/PortfolioServices";
 // import ClientComponenies from "@/components/PortfolioClientComponenies";
 import Projects from '@/components/PortfolioProjects';
 
@@ -24,7 +25,7 @@ export default function Home() {
           <div className="max-w-7xl w-screen">
             <NavBar navigation={portfolioNavLinks } />
             <Hero />
-            {/* <About /> */}
+            <Services />
             {/* <Blog /> */}
             <Clients />
             {/* <ClientComponenies /> */}
