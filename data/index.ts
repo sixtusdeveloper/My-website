@@ -10,6 +10,14 @@ export const navigation = [
     { name: 'Contact', href: '#contact' },
   ];
   
+export const portfolioNavLinks = [
+    { name: 'Services', href: '#services' },
+    { name: 'Experience', href: '#experience' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Approach', href: '#approach' },
+    { name: 'Client', href: '#clients' },
+  ];
+  
 
   export const blogPosts = [
     {
