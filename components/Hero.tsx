@@ -24,7 +24,7 @@ const Home = () => {
   };
 
   const handleLeave = () => {
-    window.open('https://www.sixtusdev.net/portfolio'); // Redirect to portfolio
+    window.open('https://www.sixtusdev.net/pages/portfolio'); // Redirect to portfolio
   };
 
   return (
