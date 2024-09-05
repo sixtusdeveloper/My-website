@@ -43,7 +43,7 @@ const Collaboration = ({
               width={150}
               height={100}
               style={{ width: 'auto', height: 'auto' }}
-              className="col-span-2 max-h-45 w-full object-contain lg:col-span-1"
+              className="col-span-2 max-h-45 w-full object-contain lg:col-span-1 collaborator-logo"
             />
             <Image
               alt="Upwork Logo"
@@ -51,7 +51,7 @@ const Collaboration = ({
               width={150}
               height={100}
               style={{ width: 'auto', height: 'auto' }}
-              className="col-span-2 max-h-45 w-full object-contain lg:col-span-1"
+              className="col-span-2 max-h-45 w-full object-contain lg:col-span-1 collaborator-logo"
             />
             <Image
               alt="Altschool Logo"
@@ -59,7 +59,7 @@ const Collaboration = ({
               width={150}
               height={100}
               style={{ width: 'auto', height: 'auto' }}
-              className="col-span-2 max-h-45 w-full object-contain lg:col-span-1"
+              className="col-span-2 max-h-45 w-full object-contain lg:col-span-1 collaborator-logo"
             />
             <Image
               alt="Freelancer Logo"
@@ -67,7 +67,7 @@ const Collaboration = ({
               width={150}
               height={100}
               style={{ width: 'auto', height: 'auto' }}
-              className="col-span-2 max-h-45 w-full object-contain sm:col-start-2 lg:col-span-1"
+              className="col-span-2 max-h-45 w-full object-contain sm:col-start-2 lg:col-span-1 collaborator-logo"
             />
             <Image
               alt="Skilledup Life Logo"
@@ -75,7 +75,7 @@ const Collaboration = ({
               width={150}
               height={100}
               style={{ width: 'auto', height: 'auto' }}
-              className="col-span-2 col-start-2 max-h-45 w-full object-contain sm:col-start-auto lg:col-span-1"
+              className="col-span-2 col-start-2 max-h-45 w-full object-contain sm:col-start-auto lg:col-span-1 collaborator-logo"
             />
           </div>
           <div className="hidden sm:mt-8 sm:flex sm:justify-center">

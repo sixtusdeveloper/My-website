@@ -9,7 +9,7 @@ import { portfolioNavLinks  } from '@/data';
 import ScrollIndicator from '@/components/ScrollIndicator';
 import  Clients from "@/components/PortfolioClients";
 import  Services from "@/components/PortfolioServices";
-// import ClientComponenies from "@/components/PortfolioClientComponenies";
+import ClientComponenies from '@/components/PortfolioClientComponies';
 import Projects from '@/components/PortfolioProjects';
 
 // import About from '@/components/About';
@@ -28,7 +28,7 @@ export default function Home() {
             <Services />
             {/* <Blog /> */}
             <Clients />
-            {/* <ClientComponenies /> */}
+            <ClientComponenies />
             <Projects />
             <Footer />
             <ScrollIndicator />
