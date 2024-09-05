@@ -4,7 +4,6 @@
 import Link from "next/link";
 import BackDropButton from "@/components/ui/BackDropButton";
 import MagicButton from "@/components/ui/MagicButton";
-import { Spotlight } from "@/components/ui/Spotlight";
 import { GoArrowRight } from "react-icons/go";
 import { useUser } from "@clerk/nextjs";
 import { useState } from "react";
@@ -124,16 +123,16 @@ const Hero = () => {
       {/* Modal for Hire Me */}
       <HireMeModal isOpen={isModalOpen} onClose={handleModalToggle}>
         <div className="p-4 bg-secondary max-h-[80vh] overflow-auto no-scrollbar">
-          <h2 className="text-2xl font-bold tracking-wide text-center p-2">
+          <h2 className="text-2xl font-bold tracking-wide text-center">
             Hire Me
           </h2>
-          <p className="text-center text-base p-4 mb-3 tracking-wide leading-6">
+          <p className="text-center text-base p-6 tracking-wide leading-6">
             Thank you for considering me for your project! I'm eager to work
             with you and bring your ideas to life. Below you can preview my CV:
           </p>
 
           {/* CV Preview */}
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center my-2">
             <Image
               src="/my-resume.jpg"
               alt="CV Preview"
@@ -158,6 +157,9 @@ const Hero = () => {
           className="rounded-full mx-auto profile_img object-cover overflow-hidden"
           style={{ width: 'auto', height: 'auto' }}
           />
+          <h2 className="text-xl font-bold tracking-wide text-center p-2">
+            Sixtus Aondoakaa
+          </h2>
         </div>
       </ReadMoreModal>
     </div>
