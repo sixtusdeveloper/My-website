@@ -14,8 +14,8 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
   const [downloadStatus, setDownloadStatus] = useState<{
     [key: string]: string;
   }>({
-    pdf: "Download CV (PDF)",
-    docx: "Download CV (Docx)"
+    pdf: "Download PDF",
+    docx: "Download Docx"
   });
 
   useEffect(() => {
