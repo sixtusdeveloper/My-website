@@ -10,6 +10,7 @@ import ScrollIndicator from '@/components/ScrollIndicator';
 import  Clients from "@/components/PortfolioClients";
 import  Services from "@/components/PortfolioServices";
 import ClientComponenies from '@/components/PortfolioClientComponies';
+import Experience from '@/components/PortfolioExperiences';
 import Projects from '@/components/PortfolioProjects';
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
             <NavBar navigation={portfolioNavLinks } />
             <Hero />
             <Services />
+            <Experience />
             <Clients />
             <ClientComponenies />
             <Projects />

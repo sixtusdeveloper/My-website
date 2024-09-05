@@ -324,11 +324,11 @@ const Experience = () => {
                     </div>
                   </div>
                   <div className="relative py-4">
-                    <h4 className="text-white-100 font-bold tracking-wider text-lg my-4">Job description</h4> 
-                    <p className="text-sm text-medium text-white-100 leading-7 tracking-wide">{selectedWorkExperience.fullDesc}</p>
+                    <h4 className="font-bold tracking-wider text-lg my-4">Job description</h4> 
+                    <p className="text-sm text-medium leading-7 tracking-wide">{selectedWorkExperience.fullDesc}</p>
                   </div>
                   <div className="py-4 relative overflow-hidden">
-                    <h4 className="text-white-100 font-bold tracking-wider text-lg my-4">Technologies used</h4>
+                    <h4 className="font-bold tracking-wider text-lg my-4">Technologies used</h4>
                     <ul className="flex flex-wrap gap-4">
                       {selectedWorkExperience.technologies.map((tech, index) => (
                         <li
