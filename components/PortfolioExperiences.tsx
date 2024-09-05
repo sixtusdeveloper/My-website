@@ -6,6 +6,7 @@ import { Spotlight } from "@/components/ui/Spotlight";
 import Modal from "@/components/ui/ExpiModal";
 import Image from 'next/image';
 import { AiOutlineDownload } from 'react-icons/ai';
+import Loader from "@/components/ui/Loader";
 
 
 // Truncate the course to a maximum length
@@ -106,24 +107,9 @@ const Experience = () => {
       className="relative bg-secondary :pt-10 mx-auto max-w-6xl px-4 lg:px-8 pb-20"
       ref={sectionRef} // Reference to the experience section
     >
-      <div className="relative">
-        <Spotlight
-          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
-          fill="white"
-        />
-        <Spotlight
-          className="top-10 left-full h-[80vh] w-[50vw]"
-          fill="purple"
-        />
-        <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
-      </div>
-
-      <div className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.2] absolute flex items-center justify-center top-0 left-0">
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-      </div>
 
       <div className="my-8 relative text-center">
-        <h2 className="text-white font-bold text-center text-[2.4rem] leading-snug tracking-wider mb-8">
+        <h2 className="font-bold text-center text-[2.4rem] leading-snug tracking-wider mb-8">
           My <span className="text-purple">Experience</span>
         </h2>
         <div className="flex justify-center space-x-4 mb-8">
@@ -132,7 +118,7 @@ const Experience = () => {
             className={`px-4 py-2 rounded-md cursor-pointer ${
               selectedSection === "work"
                 ? "bg-blue-800 text-white"
-                : "bg-transparent ring-1 text-gray-400"
+                : "bg-transparent ring-1"
             }`}
           >
             Work Experience
@@ -142,7 +128,7 @@ const Experience = () => {
             className={`px-4 py-2 rounded-md cursor-pointer ${
               selectedSection === "education"
                 ? "bg-blue-800 text-white"
-                : "bg-transparent ring-1 text-gray-400"
+                : "bg-transparent ring-1"
             }`}
           >
             Education
@@ -160,8 +146,8 @@ const Experience = () => {
               }`}
             >
               <div className="timeline-icon"></div>
-              <div className="bg-black-200 border border-gray-800 p-6 rounded-lg shadow-lg">
-                <h3 className="text-lg font-bold tracking-wide text-white">
+              <div className="bg-black-200 border p-6 rounded-lg shadow-lg">
+                <h3 className="text-lg font-bold tracking-wide">
                   {experience.title}
                 </h3>
                 <p className="inline-flex space-x-2">
@@ -172,9 +158,9 @@ const Experience = () => {
                     </span>
                   </span>
                 </p>
-                <p className="flex py-1 text-sm text-gray-100">{experience.nature}</p>
+                <p className="flex py-1 text-sm">{experience.nature}</p>
                 <time
-                  className="block text-xs mb-2 text-gray-400 tracking-wide"
+                  className="block text-xs mb-2 tracking-wide"
                   suppressHydrationWarning
                 >
                   {experience.date}
@@ -182,12 +168,12 @@ const Experience = () => {
                 <p className="text-white-100 text-sm tracking-wide">
                   {experience.location}
                 </p>
-                <div className="text-gray-400 text-sm leading-6">
+                <div className="text-sm leading-6">
                   {truncateDescription(experience.description, MAX_DESCRIPTION_LENGTH)}&nbsp;
                   <a
                     href="#"
                     onClick={() => openModal(experience)}
-                    className="font-medium tracking-wider cursor-pointer text-sm text-purple hover:text-blue-100"
+                    className="font-medium tracking-wider cursor-pointer text-sm text-blue-600"
                   >
                     <span aria-hidden="true" className="absolute inset-0" />
                     Read more{" "}
@@ -250,28 +236,26 @@ const Experience = () => {
           className="p-6 max-h-[80vh] overflow-y-auto no-scrollbar relative bg-black-800 border border-gray-900 rounded-lg shadow-lg"
         >
           {isLoading ? (
-            <div className="flex justify-center items-center">
-              <div className="w-12 h-12 border-4 border-t-4 border-purple rounded-full animate-spin"></div>
-              <p className="ml-4 text-white tracking-wide">Loading...</p>
-            </div>
+            <Loader /> 
+           
           ) : (
             <div>
               {selectedEducation && (
                 <>
-                  <h3 className="text-white font-bold tracking-wide text-xl mb-4">
+                  <h3 className="font-bold tracking-wide text-xl mb-4">
                     {selectedEducation?.degree}
                   </h3>
                   <p className="mb-4">
-                    <span className="font-medium text-gray-400 text-sm tracking-wide">Institution:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedEducation?.institution}</span>
+                    <span className="font-medium text-sm tracking-wide">Institution:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedEducation?.institution}</span>
                   </p>
                   <p className="mb-4">
-                    <span className="font-medium text-gray-400 text-sm tracking-wide">Type:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedEducation?.type}</span>
+                    <span className="font-medium text-sm tracking-wide">Type:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedEducation?.type}</span>
                   </p>
                   <p className="mb-4">
-                    <span className="font-medium text-gray-400 text-sm tracking-wide">Status:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedEducation?.status}</span>
+                    <span className="font-medium text-sm tracking-wide">Status:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedEducation?.status}</span>
                   </p>
                   <p className="mb-4">
-                    <span className="font-medium text-gray-400 text-sm tracking-wide">Date:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedEducation?.date}</span>
+                    <span className="font-medium text-sm tracking-wide">Date:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedEducation?.date}</span>
                   </p>
                   <p className="mb-6 text-sm text-medium text-white-100 leading-6 tracking-wide">{selectedEducation?.description}</p>
                   <div className=" relative flex justify-center text-center w-full mb-4">
@@ -307,23 +291,23 @@ const Experience = () => {
                 <>
                   <div className="flex justify-between gap-8 space-x-6">
                     <div>
-                      <h3 className="text-white font-bold tracking-wide text-xl mb-4">
+                      <h3 className="font-bold tracking-wide text-xl mb-4">
                         {selectedWorkExperience.title}
                       </h3>
                       <p className="mb-4">
-                        <span className="font-medium text-gray-400 text-sm tracking-wide">Organization:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedWorkExperience.organization}</span>
+                        <span className="font-medium text-sm tracking-wide">Organization:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedWorkExperience.organization}</span>
                       </p>
                       <p className="mb-4">
-                        <span className="font-medium text-gray-400 text-sm tracking-wide">Type:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedWorkExperience.type}</span>
+                        <span className="font-medium text-sm tracking-wide">Type:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedWorkExperience.type}</span>
                       </p>
                       <p className="mb-4">
-                        <span className="font-medium text-gray-400 text-sm tracking-wide">Nature:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedWorkExperience.nature}</span>
+                        <span className="font-medium text-sm tracking-wide">Nature:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedWorkExperience.nature}</span>
                       </p>
                       <p className="mb-4">
-                        <span className="font-medium text-gray-400 text-sm tracking-wide">Location:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedWorkExperience.location}</span>
+                        <span className="font-medium text-sm tracking-wide">Location:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedWorkExperience.location}</span>
                       </p>
                       <p className="mb-4">
-                        <span className="font-medium text-gray-400 text-sm tracking-wide">Date:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedWorkExperience.date}</span>
+                        <span className="font-medium text-sm tracking-wide">Date:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedWorkExperience.date}</span>
                       </p>
                       
                     </div>
@@ -349,7 +333,7 @@ const Experience = () => {
                       {selectedWorkExperience.technologies.map((tech, index) => (
                         <li
                           key={index}
-                          className="px-3 py-2 border border-gray-800 rounded-lg bg-transparent text-sm text-gray-400 leading-6 tracking-wide"
+                          className="px-3 py-2 border rounded-lg bg-transparent text-sm leading-6 tracking-wide"
                         >
                           {tech}
                         </li>
@@ -364,12 +348,7 @@ const Experience = () => {
       </Modal>
  
       {/* Loading animation */}
-      {isLoading && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="animate-spin rounded-full h-32 w-32 border-t-4 border-gray-100"></div>
-        </div>
-        
-      )}
+      {isLoading && <Loader />} {/* Show loader */}
     </section>
   );
 };
