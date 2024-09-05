@@ -239,7 +239,7 @@ const Experience = () => {
         <Modal isOpen={isModalOpen} onClose={closeModal}>
           <div
             ref={modalRef}
-            className="p-8 m-8 max-h-[80vh] overflow-y-auto no-scrollbar relative bg-secondary border rounded-lg shadow-lg"
+            className="p-4 max-h-[80vh] overflow-y-auto no-scrollbar relative"
           >
             {isLoading ? (
               <Loader /> 
