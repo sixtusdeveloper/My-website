@@ -38,8 +38,8 @@ const Collaboration = ({
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
             {/* Company Logos */}
             <Image
-              alt="Chatter Logo"
-              src={CompanyImgOne || "/client01.png"}
+              alt="Kropmann Logo"
+              src={CompanyImgOne || "/kropmann-logo.png"}
               width={150}
               height={100}
               style={{ width: 'auto', height: 'auto' }}
@@ -65,8 +65,8 @@ const Collaboration = ({
               <Image
                 alt="Freelancer Logo"
                 src={CompanyImgFour || "/freelancer-logo.png"}
-                width={150}
-                height={100}
+                width={250}
+                height={250}
                 style={{ width: 'auto', height: 'auto' }}
                 className="col-span-2 max-h-45 w-full object-contain sm:col-start-2 lg:col-span-1 collaborator-logo"
               />
