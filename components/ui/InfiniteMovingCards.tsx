@@ -111,11 +111,11 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[90vw] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-800 p-4 md:p-10 md:w-[50vw]"
-            style={{
-              background: "rgb(4,7,29)",
-              backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-            }}
+            className="w-[90vw] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 p-4 md:p-10 md:w-[50vw]"
+            // style={{
+            //   background: "rgb(4,7,29)",
+            //   backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+            // }}
             key={idx}
           >
             <blockquote>
@@ -123,7 +123,7 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <div className="absolute top-4 right-4 text-white text-3xl">
+              <div className="absolute top-4 right-4 text-3xl">
                 <FaQuoteLeft />
               </div>
               <div className="flex justify-between items-center gap-4 mb-4 md:mb-6">
