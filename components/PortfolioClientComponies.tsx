@@ -61,14 +61,17 @@ const Collaboration = ({
               style={{ width: 'auto', height: 'auto' }}
               className="col-span-2 max-h-45 w-full object-contain lg:col-span-1 collaborator-logo"
             />
-            <Image
-              alt="Freelancer Logo"
-              src={CompanyImgFour || "/freelancer-logo.png"}
-              width={150}
-              height={100}
-              style={{ width: 'auto', height: 'auto' }}
-              className="col-span-2 max-h-45 w-full object-contain sm:col-start-2 lg:col-span-1 collaborator-logo"
-            />
+            <span className="flex justify-center items-center gap-1">
+              <Image
+                alt="Freelancer Logo"
+                src={CompanyImgFour || "/freelancer-logo.png"}
+                width={150}
+                height={100}
+                style={{ width: 'auto', height: 'auto' }}
+                className="col-span-2 max-h-45 w-full object-contain sm:col-start-2 lg:col-span-1 collaborator-logo"
+              />
+              <span className="text-xl font-bold tracking-wide">freelancer</span>
+            </span>
             <Image
               alt="Skilledup Life Logo"
               src={CompanyImgFive || "/skilledup-life-logo.png"}
