@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import {
   motion,
@@ -8,7 +9,7 @@ import {
   useTransform,
 } from "framer-motion";
 import { useRef } from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/cn";
 
 export function Button({
   borderRadius = "1.75rem",
@@ -32,7 +33,7 @@ export function Button({
   return (
     <Component
       className={cn(
-        "bg-transparent relative text-xl  h-16 w-40 p-[1px] overflow-hidden ",
+        "bg-transparent relative text-xl p-[1px] overflow-hidden md:col-span-2",
         containerClassName
       )}
       style={{
@@ -56,7 +57,7 @@ export function Button({
 
       <div
         className={cn(
-          "relative bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased",
+          "relative bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl flex items-center justify-center w-full h-full text-sm antialiased",
           className
         )}
         style={{
@@ -148,8 +149,6 @@ export const MovingBorder = ({
 
 
 
-
-
 // "use client";
 // import React from "react";
 // import {
@@ -160,7 +159,7 @@ export const MovingBorder = ({
 //   useTransform,
 // } from "framer-motion";
 // import { useRef } from "react";
-// import { cn } from "@/utils/cn";
+// import { cn } from "@/lib/utils";
 
 // export function Button({
 //   borderRadius = "1.75rem",
@@ -184,7 +183,7 @@ export const MovingBorder = ({
 //   return (
 //     <Component
 //       className={cn(
-//         "bg-transparent relative text-xl p-[1px] overflow-hidden md:col-span-2",
+//         "bg-transparent relative text-xl  h-16 w-40 p-[1px] overflow-hidden ",
 //         containerClassName
 //       )}
 //       style={{
@@ -208,7 +207,7 @@ export const MovingBorder = ({
 
 //       <div
 //         className={cn(
-//           "relative bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl flex items-center justify-center w-full h-full text-sm antialiased",
+//           "relative bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased",
 //           className
 //         )}
 //         style={{
@@ -289,3 +288,14 @@ export const MovingBorder = ({
 //     </>
 //   );
 // };
+
+
+
+
+
+
+
+
+
+
+
