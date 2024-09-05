@@ -67,8 +67,8 @@ const Collaboration = ({
               <Image
                 alt="Freelancer Logo"
                 src={CompanyImgFour || "/freelancer-logo.png"}
-                width={250}
-                height={250}
+                width={150}
+                height={150}
                 style={{ width: 'auto', height: 'auto' }}
                 className="col-span-2 max-h-45 w-full object-contain sm:col-start-2 lg:col-span-1 collaborator-logo"
               />
@@ -78,8 +78,8 @@ const Collaboration = ({
               <Image
                 alt="Freelancer Logo"
                 src={CompanyImgFive || "/drinksng-logo.png"}
-                width={250}
-                height={250}
+                width={150}
+                height={150}
                 style={{ width: 'auto', height: 'auto' }}
                 className="col-span-2 max-h-45 w-full object-contain sm:col-start-2 lg:col-span-1 collaborator-logo"
               />
