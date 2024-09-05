@@ -192,12 +192,12 @@ const Experience = () => {
               >
                 <div className="timeline-icon"></div>
 
-                <div className="bg-black-200 border border-gray-800 p-6 rounded-lg shadow-lg">
-                  <h3 className="text-lg font-bold tracking-wider mb-1 text-white">
+                <div className="bg-black-200 border p-6 rounded-lg shadow-lg">
+                  <h3 className="text-lg font-bold tracking-wider mb-1">
                     {truncateCourse(edu.degree, MAX_COURSE_LENGTH)}
                   </h3>
                   <p className="inline-flex space-x-2">
-                    <span className="text-sm tracking-wide text-white">
+                    <span className="text-sm tracking-wide">
                       {edu.institution}&nbsp;-&nbsp;
                       <span className="text-sm tracking-wide text-purple">{edu.type}</span>
                     </span>
@@ -206,17 +206,17 @@ const Experience = () => {
                     {edu.status} 
                   </p>
                   <time
-                    className="block text-xs mb-1 text-gray-400"
+                    className="block text-xs mb-1"
                     suppressHydrationWarning
                   >
                     {edu.date} 
                   </time>
-                  <div className="text-gray-400 text-sm leading-6">
+                  <div className="text-sm leading-6">
                     {truncateDescription(edu.description, MAX_DESCRIPTION_LENGTH)}&nbsp;
                     <a
                       href="#"
                       onClick={() => openModal(edu)}
-                      className="font-medium tracking-wider cursor-pointer text-sm text-purple hover:text-blue-100"
+                      className="font-medium tracking-wider cursor-pointer text-sm text-blue-600"
                     >
                       <span aria-hidden="true" className="absolute inset-0" />
                       View credentials{" "}
@@ -233,7 +233,7 @@ const Experience = () => {
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <div
           ref={modalRef}
-          className="p-6 max-h-[80vh] overflow-y-auto no-scrollbar relative bg-black-800 border border-gray-900 rounded-lg shadow-lg"
+          className="p-6 max-h-[80vh] overflow-y-auto no-scrollbar relative bg-black-800 border rounded-lg shadow-lg"
         >
           {isLoading ? (
             <Loader /> 
@@ -246,18 +246,18 @@ const Experience = () => {
                     {selectedEducation?.degree}
                   </h3>
                   <p className="mb-4">
-                    <span className="font-medium text-sm tracking-wide">Institution:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedEducation?.institution}</span>
+                    <span className="font-medium text-sm tracking-wide">Institution:</span>&nbsp;<span className="text-sm tracking-wide">{selectedEducation?.institution}</span>
                   </p>
                   <p className="mb-4">
-                    <span className="font-medium text-sm tracking-wide">Type:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedEducation?.type}</span>
+                    <span className="font-medium text-sm tracking-wide">Type:</span>&nbsp;<span className="text-sm tracking-wide">{selectedEducation?.type}</span>
                   </p>
                   <p className="mb-4">
-                    <span className="font-medium text-sm tracking-wide">Status:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedEducation?.status}</span>
+                    <span className="font-medium text-sm tracking-wide">Status:</span>&nbsp;<span className="text-sm tracking-wide">{selectedEducation?.status}</span>
                   </p>
                   <p className="mb-4">
-                    <span className="font-medium text-sm tracking-wide">Date:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedEducation?.date}</span>
+                    <span className="font-medium text-sm tracking-wide">Date:</span>&nbsp;<span className="text-sm tracking-wide">{selectedEducation?.date}</span>
                   </p>
-                  <p className="mb-6 text-sm text-medium text-white-100 leading-6 tracking-wide">{selectedEducation?.description}</p>
+                  <p className="mb-6 text-sm text-medium leading-6 tracking-wide">{selectedEducation?.description}</p>
                   <div className=" relative flex justify-center text-center w-full mb-4">
                     <Image
                       src={selectedEducation?.img || "/cert.png"}
@@ -295,19 +295,19 @@ const Experience = () => {
                         {selectedWorkExperience.title}
                       </h3>
                       <p className="mb-4">
-                        <span className="font-medium text-sm tracking-wide">Organization:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedWorkExperience.organization}</span>
+                        <span className="font-medium text-sm tracking-wide">Organization:</span>&nbsp;<span className="text-sm tracking-wide">{selectedWorkExperience.organization}</span>
                       </p>
                       <p className="mb-4">
-                        <span className="font-medium text-sm tracking-wide">Type:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedWorkExperience.type}</span>
+                        <span className="font-medium text-sm tracking-wide">Type:</span>&nbsp;<span className="text-sm tracking-wide">{selectedWorkExperience.type}</span>
                       </p>
                       <p className="mb-4">
-                        <span className="font-medium text-sm tracking-wide">Nature:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedWorkExperience.nature}</span>
+                        <span className="font-medium text-sm tracking-wide">Nature:</span>&nbsp;<span className="text-sm tracking-wide">{selectedWorkExperience.nature}</span>
                       </p>
                       <p className="mb-4">
-                        <span className="font-medium text-sm tracking-wide">Location:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedWorkExperience.location}</span>
+                        <span className="font-medium text-sm tracking-wide">Location:</span>&nbsp;<span className="text-sm tracking-wide">{selectedWorkExperience.location}</span>
                       </p>
                       <p className="mb-4">
-                        <span className="font-medium text-sm tracking-wide">Date:</span>&nbsp;<span className="text-sm text-white-100 tracking-wide">{selectedWorkExperience.date}</span>
+                        <span className="font-medium text-sm tracking-wide">Date:</span>&nbsp;<span className="text-sm tracking-wide">{selectedWorkExperience.date}</span>
                       </p>
                       
                     </div>
