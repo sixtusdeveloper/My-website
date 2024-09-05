@@ -10,14 +10,12 @@ const Collaboration = ({
   CompanyImgThree,
   CompanyImgFour,
   CompanyImgFive,
-  CompanyImgSix,
 }: {
   CompanyImgOne?: string;
   CompanyImgTwo?: string;
   CompanyImgThree?: string;
   CompanyImgFour?: string;
   CompanyImgFive?: string;
-  CompanyImgSix?: string;
 }) => {
   // State to control modal visibility
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -74,20 +72,9 @@ const Collaboration = ({
               />
               <span className="text-xl font-bold tracking-wide">freelancer</span>
             </span>
-            <span className="flex justify-center items-center gap-1">
-              <Image
-                alt="Freelancer Logo"
-                src={CompanyImgFive || "/drinksng-logo.png"}
-                width={150}
-                height={150}
-                style={{ width: 'auto', height: 'auto' }}
-                className="col-span-2 max-h-45 w-full object-contain sm:col-start-2 lg:col-span-1 collaborator-logo"
-              />
-              <span className="text-xl font-bold tracking-wide">drinks.ng</span>
-            </span>
             <Image
               alt="Skilledup Life Logo"
-              src={CompanyImgSix || "/skilledup-life-logo.png"}
+              src={CompanyImgFive || "/skilledup-life-logo.png"}
               width={150}
               height={100}
               style={{ width: 'auto', height: 'auto' }}
