@@ -97,7 +97,7 @@ const Hero = () => {
           <h1 className="text-[2.8rem] font-bold lg:font-bolder tracking-wide lg:tracking-wider text-center lg:text-[3rem]">
             Welcome to my <span className="text-purple">Portfolio</span>
           </h1>
-          <p className="text-center md:tracking-wide leading-7 sm:tracking-wide my-4 text-[14px] lg:px-6 px-4 mb-8">
+          <p className="py-8 tracking-wide leading-6 text-[16px]">
             Hello, I'm Sixtus Aondoakaa, a dedicated software engineer with a
             passion for crafting efficient and scalable solutions. Here, you'll
             find a showcase of my work, ranging from innovative web applications

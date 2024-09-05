@@ -68,9 +68,7 @@
 
 @layer base {
   * {
-    /* @apply border-border; */
-    
-    @apply border-border !scroll-smooth;
+    @apply border-border;
     
   }
   body {
@@ -79,12 +77,6 @@
 
   
 }
-/* 
-@layer utilities {
-  .border-border {
-    border-color: var(--your-border-color);
-  }
-} */
 
 .avatar-img {
   width: 40px !important;
