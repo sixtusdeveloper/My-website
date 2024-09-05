@@ -152,20 +152,25 @@ const Experience = () => {
                     {experience.title}
                   </h3>
                   <p className="inline-flex space-x-2">
-                    <span className="text-sm text-white-200 tracking-wide">
+                    <span className="text-sm tracking-wide">
                       {experience.organization}&nbsp;-&nbsp;
-                      <span className="text-sm text-purple">
+                      <span className="text-sm">
                         {experience.type}
                       </span>
                     </span>
                   </p>
-                  <p className="flex py-1 text-sm">{experience.nature}</p>
-                  <time
-                    className="block text-xs mb-2 tracking-wide"
-                    suppressHydrationWarning
-                  >
-                    {experience.date}
-                  </time>
+                  <p className="flex py-1 text-sm">
+                    <span>{experience.nature}</span>
+                    <span>
+                      <time
+                        className="block text-xs mb-2 tracking-wide"
+                        suppressHydrationWarning
+                      >
+                        {experience.date}
+                      </time>
+                    </span>
+                  </p>
+                 
                   <p className="text-white-100 text-sm tracking-wide">
                     {experience.location}
                   </p>
