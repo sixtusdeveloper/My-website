@@ -8,7 +8,7 @@ const Projects = () => {
         <h2 className="text-3xl font-bold mb-8 text-center">Personal Projects</h2>
         <div className="grid gap-8 md:grid-cols-2">
           {/* Project 1 */}
-          <div className="flex relative justify-center gap-4 p-4 bg-secondary border-[1.75rem] rounded-lg shadow">
+          <div className="flex relative justify-center gap-4 p-4 bg-secondary border rounded-[1.75rem] shadow">
             <div className="lg:text-start text-center lg:items-start items-center relative">
               <Image 
                 src="/project01.png"
