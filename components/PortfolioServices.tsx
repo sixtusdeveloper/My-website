@@ -82,7 +82,7 @@ const Services = () => {
               <Image 
                 src={service.thumbnail} 
                 alt={service.thumbnail} 
-                width={250} height={250} 
+                width={200} height={200} 
                 className="lg:w-32 md:w-20 w-16" 
               />
               <div className="lg:ms-5">
