@@ -153,8 +153,8 @@ const Hero = () => {
           <Image 
           src="/profile-img.png"
           alt="Sixtus Aondoakaa"
-          width={100}
-          height={100}
+          width={200}
+          height={200}
           className="rounded-full mx-auto profile-img object-cover overflow-hidden"
           style={{ width: 'auto', height: 'auto' }}
           />

@@ -27,7 +27,7 @@ const ReadMoreModal: React.FC<ReadMoreModalProps> = ({ isOpen, onClose, children
             className="absolute inset-0 bg-secondary bg-opacity-75 backdrop-filter backdrop-blur-md"
             onClick={onClose}
         />
-        <div className="relative bg-secondary my-8 border shadow-lg rounded-lg max-w-3xl w-full p-6">
+        <div className="relative bg-secondary my-8 border shadow-lg rounded-lg max-w-xl w-full p-6">
             <button
                 onClick={onClose}
                 className="absolute top-2 z-40 right-2 p-2 cursor-pointer rounded-full bg-secondary"
