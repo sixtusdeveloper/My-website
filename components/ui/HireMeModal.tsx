@@ -52,7 +52,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
         setTimeout(() => {
           setDownloadStatus(prevStatus => ({
             ...prevStatus,
-            [fileType]: fileType === 'pdf' ? "Download CV (PDF)" : "Download CV (Docx)"
+            [fileType]: fileType === 'pdf' ? "Download PDF" : "Download Docx"
           }));
         }, 5000);
       })
@@ -60,7 +60,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
         console.error("Failed to download the file");
         setDownloadStatus(prevStatus => ({
           ...prevStatus,
-          [fileType]: fileType === 'pdf' ? "Download CV (PDF)" : "Download CV (Docx)"
+          [fileType]: fileType === 'pdf' ? "Download PDF" : "Download Docx"
         }));
       });
   };
@@ -84,7 +84,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
       <div className="relative bg-secondary border my-8 shadow-lg rounded-lg max-w-3xl w-full p-6">
         <button
           onClick={onClose}
-          className="absolute top-2 z-40 right-2 p-2 cursor-pointer border rounded-full bg-secondary"
+          className="absolute top-6 z-40 right-4 p-2 cursor-pointer border rounded-full bg-secondary"
         >
           <IoClose size={18} />
         </button>
