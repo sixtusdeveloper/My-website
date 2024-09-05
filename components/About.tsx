@@ -47,18 +47,11 @@ const About = () => {
             </p>
           </>
         )}
-        {/* <button 
-          onClick={handleToggle} 
-          className="text-blue-600 hover:no-underline tracking-wide text-base mt-4 button ring-1 py-2 px-8 rounded-full"
-        >
-          {isExpanded ? "That's it from me" : "More to read"}
-        </button> */}
         <a 
             onClick={handleToggle}  
           >
             <MagicButton
-              title= {isExpanded ? "That's it from me" : "More to read"}
-              // title="View My Work"
+              title= {isExpanded ? "Less to read" : "More to read"}
               otherClasses="text-[1.4rem] flex justify-center rounded-full items-center text-base mt-4 text-center"
             />
           </a>
