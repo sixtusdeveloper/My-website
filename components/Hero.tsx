@@ -5,6 +5,7 @@ import { useUser } from "@clerk/nextjs";
 import HeroModal from "@/components/ui/HeroModal";
 import Loader from "@/components/ui/Loader";
 import { Button } from "@/components/ui/button"; // Assuming you have a Button component
+import MagicButton from "@/components/ui/MagicButton";
 
 const Home = () => {
   const { user, isSignedIn } = useUser();
@@ -50,9 +51,11 @@ const Home = () => {
         <div className="mt-6">
           <a 
             onClick={openModal} 
-            className="bg-blue-600 hover:bg-blue-800 cursor-pointer text-white text-base font-semibold tracking-wider rounded-full py-3 px-8 text-center"
           >
-            View My Work
+            <MagicButton
+              title="View My Work"
+              otherClasses="text-[1.4rem] flex justify-center items-center text-center"
+            />
           </a>
         </div>
       </div>
