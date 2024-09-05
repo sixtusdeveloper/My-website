@@ -149,13 +149,13 @@ const Hero = () => {
       
       {/* Modal for Read More */}
       <ReadMoreModal isOpen={isReadMoreModalOpen} onClose={handleReadMoreModalToggle}>
-        <div className="p-6 max-h-[80vh] overflow-auto no-scrollbar">
+        <div className="p-4 max-h-[80vh] overflow-auto no-scrollbar">
           <Image 
           src="/profile-img.png"
           alt="Sixtus Aondoakaa"
           width={200}
           height={200}
-          className="rounded-full mx-auto profile-img object-cover overflow-hidden"
+          className="rounded-full mx-auto profile_img object-cover overflow-hidden"
           style={{ width: 'auto', height: 'auto' }}
           />
         </div>
