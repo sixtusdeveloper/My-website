@@ -159,11 +159,11 @@ const Experience = () => {
                       </span>
                     </span>
                   </p>
-                  <p className="flex py-1 text-base">
-                    <span>{experience.nature}</span>
-                    <span>
+                  <p className="flex justify-center items-center gap-2 ">
+                    <span className="text-sm">{experience.nature} - </span>
+                    <span className="ml-1">
                       <time
-                        className="block text-base mb-2 tracking-wide"
+                        className="block text-sm mb-1 tracking-wide"
                         suppressHydrationWarning
                       >
                         {experience.date}
