@@ -54,7 +54,7 @@ const Home = () => {
           >
             <MagicButton
               title="View My Work"
-              otherClasses="text-[1.4rem] flex justify-center items-center text-center"
+              otherClasses="text-[1.4rem] flex justify-center rounded-full items-center text-center"
             />
           </a>
         </div>

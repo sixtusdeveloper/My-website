@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from 'next/image';
+import MagicButton from "@/components/ui/MagicButton";
 
 const About = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -46,12 +47,21 @@ const About = () => {
             </p>
           </>
         )}
-        <button 
+        {/* <button 
           onClick={handleToggle} 
           className="text-blue-600 hover:no-underline tracking-wide text-base mt-4 button ring-1 py-2 px-8 rounded-full"
         >
           {isExpanded ? "That's it from me" : "More to read"}
-        </button>
+        </button> */}
+        <a 
+            onClick={handleToggle}  
+          >
+            <MagicButton
+              title= {isExpanded ? "That's it from me" : "More to read"}
+              // title="View My Work"
+              otherClasses="text-[1.4rem] flex justify-center rounded-full items-center text-base mt-4 text-center"
+            />
+          </a>
       </div>
     </section>
   );
