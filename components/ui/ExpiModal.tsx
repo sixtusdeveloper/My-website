@@ -26,7 +26,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
       <div className="relative bg-black-200 border shadow-lg rounded-lg max-w-3xl w-full p-6">
         <button
           onClick={onClose}
-          className="absolute top-2 right-2 p-2 cursor-pointer rounded-full border hover:text-red"
+          className="absolute z-40 top-2 right-2 p-2 cursor-pointer rounded-full border hover:text-red"
         >
           <IoClose size={18} />
         </button>
