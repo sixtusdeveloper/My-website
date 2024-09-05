@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { AiOutlineQuestionCircle } from 'react-icons/ai';
+import { IoClose } from 'react-icons/io5';
 
 interface ModalProps {
     isOpen: boolean;
@@ -38,17 +39,17 @@ const HeroModal: React.FC<ModalProps> = ({ isOpen, onClose, message, children })
         <div 
             ref={modalRef}
             onClick={handleOverlayClick}
-            className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50" // Darker overlay effect
+            className="fixed inset-0 bg-secondary bg-opacity-75 flex items-center justify-center z-50" // Darker overlay effect
         >
-            <div className="bg-secondary border rounded-lg shadow-lg p-6 max-w-sm mx-auto relative">
+            <div className="bg-secondary border rounded-lg shadow-lg p-4 max-w-3xl mx-auto relative">
                 <button
                     onClick={onClose}
-                    className="absolute top-2 right-2 text-gray-500 hover:text-red-500"
+                    className="absolute top-2 right-2 hover:text-red-600"
                 >
-                    ✕
+                    <IoClose size={18} />
                 </button>
                 <div className="flex flex-col items-center">
-                    <AiOutlineQuestionCircle className="text-yellow-500 text-4xl mb-4" /> {/* Question icon */}
+                    <AiOutlineQuestionCircle className="text-yellow-600 text-4xl mb-4" /> {/* Question icon */}
                     <p className="text-center tracking-wide leading-6 text-lg font-semibold mb-4">{message}</p>
                     {children} {/* Render the buttons passed as children */}
                 </div>

@@ -114,22 +114,20 @@ const Hero = () => {
       </div>
 
       {/* Loading Overlay */}
-      {isLoading && <Loader />} {/* Show loader */}
+      {isLoading && <Loader />} 
 
       {/* Loading Overlay for Read More */}
       {isReadMoreLoading && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-secondary bg-opacity-50">
-          <div className="animate-spin rounded-full h-32 w-32 border-t-4 border-gray-100"></div>
-        </div>
+        <Loader />
       )}
 
       {/* Modal for Hire Me */}
       <HireMeModal isOpen={isModalOpen} onClose={handleModalToggle}>
-        <div className="p-8 max-h-[80vh] overflow-auto no-scrollbar">
-          <h2 className="text-2xl font-bold text-purple tracking-wide text-center mb-4">
+        <div className="p-6 max-h-[80vh] overflow-auto no-scrollbar">
+          <h2 className="text-2xl font-bold tracking-wide text-center p-2">
             Hire Me
           </h2>
-          <p className="text-center text-sm p-4 mb-8 tracking-wide leading-6">
+          <p className="text-center text-base p-4 mb-3 tracking-wide leading-6">
             Thank you for considering me for your project! I'm eager to work
             with you and bring your ideas to life. Below you can preview my CV:
           </p>
@@ -141,7 +139,7 @@ const Hero = () => {
               alt="CV Preview"
               width={500}
               height={600}
-              className="rounded-lg shadow-md object-contain"
+              className="rounded-lg shadow-md object-cover"
               style={{ width: "auto", height: "auto" }}
             />
           </div>
@@ -151,13 +149,13 @@ const Hero = () => {
       
       {/* Modal for Read More */}
       <ReadMoreModal isOpen={isReadMoreModalOpen} onClose={handleReadMoreModalToggle}>
-        <div className="px-8 max-h-[80vh] overflow-auto no-scrollbar">
+        <div className="p-6 max-h-[80vh] overflow-auto no-scrollbar">
           <Image 
           src="/profile.jpg"
           alt="Sixtus Aondoakaa"
-          width={150}
-          height={150}
-          className="rounded-full mx-auto overflow-hidden"
+          width={100}
+          height={100}
+          className="rounded-full mx-auto profile-img object-cover overflow-hidden"
           style={{ width: 'auto', height: 'auto' }}
           />
         </div>

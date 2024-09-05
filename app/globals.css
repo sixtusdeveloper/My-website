@@ -148,6 +148,16 @@
   overflow: hidden;
 
 }
+.profile_img {
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  position: relative !important;
+  padding: 10px;
+  overflow: hidden;
+
+}
 .closeButton {
   background: none;
   border: none;
