@@ -12,10 +12,6 @@ import  Services from "@/components/PortfolioServices";
 import ClientComponenies from '@/components/PortfolioClientComponies';
 import Projects from '@/components/PortfolioProjects';
 
-// import About from '@/components/About';
-// import Blog from '@/components/Blog';
-
-
 export default function Home() {
 
   return (
@@ -26,7 +22,6 @@ export default function Home() {
             <NavBar navigation={portfolioNavLinks } />
             <Hero />
             <Services />
-            {/* <Blog /> */}
             <Clients />
             <ClientComponenies />
             <Projects />

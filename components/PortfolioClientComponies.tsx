@@ -26,7 +26,7 @@ const Collaboration = ({
   };
 
   return (
-    <div className="relative mx-auto max-w-7xl px-6 lg:px-8 py-10 lg:py-16">
+    <div className="relative mx-auto max-w-7xl bg-secondary px-6 lg:px-8 py-10 lg:py-16">
       <h1 className="font-bold text-center text-[2.4rem] leading-snug tracking-wider">
         Trusted <span className="text-purple">by Companies</span>
       </h1>
@@ -79,7 +79,7 @@ const Collaboration = ({
             />
           </div>
           <div className="hidden sm:mt-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-4 my-1 text-sm leading-6 text-blue-300 ring-1 bg-black-300/10 hover:ring-gray-900/20">
+            <div className="relative rounded-full px-4 my-1 text-sm leading-6 text-blue-400 border">
               Over 35 companies use my solutions to better their business.{" "}
               <a href="#" onClick={toggleModal} className="font-semibold text-purple cursor-pointer">
                 <span aria-hidden="true" className="absolute inset-0" />
@@ -93,10 +93,10 @@ const Collaboration = ({
 
       {/* Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-85">
-          <div className="relative bg-gray-900 border border-gray-800 rounded-lg p-8 max-w-lg mx-auto animate-fadeIn">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-secondary bg-opacity-85">
+          <div className="relative bg-secondary border rounded-lg p-8 max-w-lg mx-auto animate-fadeIn">
             <button
-              className="absolute top-3 right-3 text-gray-400 hover:text-white-100"
+              className="absolute top-3 right-3 hover:text-white-100"
               onClick={toggleModal}
             >
               &#10005;
@@ -110,7 +110,7 @@ const Collaboration = ({
               objectFit="cover"
               style={{ width: 'auto', height: 'auto' }}
             />
-            <p className="text-center text-md text-gray-300 mt-4">
+            <p className="text-center text-sm mt-4">
               Customer&apos;s stories not yet uploaded, check back later.
             </p>
           </div>

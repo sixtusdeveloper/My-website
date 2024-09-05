@@ -85,10 +85,10 @@ export const InfiniteMovingCards = ({
     const hasHalfStar = rating % 1 >= 0.5;
 
     for (let i = 0; i < fullStars; i++) {
-      stars.push(<FaStar key={`full-${i}`} className="text-yellow-400 text-lg" />);
+      stars.push(<FaStar key={`full-${i}`} className="text-yellow-500 text-lg" />);
     }
     if (hasHalfStar) {
-      stars.push(<FaStarHalfAlt key="half" className="text-yellow-400 text-lg" />);
+      stars.push(<FaStarHalfAlt key="half" className="text-yellow-500 text-lg" />);
     }
     return stars;
   };
@@ -112,10 +112,6 @@ export const InfiniteMovingCards = ({
         {items.map((item, idx) => (
           <li
             className="w-[90vw] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 p-4 md:p-10 md:w-[50vw]"
-            // style={{
-            //   background: "rgb(4,7,29)",
-            //   backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-            // }}
             key={idx}
           >
             <blockquote>
@@ -127,7 +123,7 @@ export const InfiniteMovingCards = ({
                 <FaQuoteLeft />
               </div>
               <div className="flex justify-between items-center gap-4 mb-4 md:mb-6">
-                <span className="flex items-center gap-1 text-yellow-400 text-lg">
+                <span className="flex items-center gap-1 text-yellow-500 text-lg">
                   {renderStars(item.rating)}
                 </span>
               </div>
@@ -148,12 +144,12 @@ export const InfiniteMovingCards = ({
                     />
                   </div>
                   <div className="text-sm leading-6">
-                    <p className="font-semibold text-gray-200">
-                      <a href="#" className="hover:text-gray-400">
+                    <p className="font-semibold">
+                      <a href="#">
                         {item.name}
                       </a>
                     </p>
-                    <p className="text-gray-500">
+                    <p className="text-sm">
                       {item.title}
                     </p>
                   </div>
