@@ -118,7 +118,7 @@ const Hero = () => {
               <BackDropButton
                 title="Read More"
                 icon={
-                  <GoArrowRight className="text-purple forced-colors:purple text-lg" />
+                  <GoArrowRight className="text-lg" />
                 }
                 position="right"
                 otherClasses=" md:ring-none cursor-pointer flex justify-center items-center text-center tracking-wider text-purple border-gray-200 rounded-lg hover:border-black-200"
