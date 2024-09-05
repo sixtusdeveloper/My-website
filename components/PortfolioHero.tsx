@@ -138,7 +138,7 @@ const Hero = () => {
               src="/my-resume.jpg"
               alt="CV Preview"
               width={500}
-              height={500}
+              height={600}
               className="rounded-lg shadow-md object-cover"
               style={{ width: "auto", height: "auto" }}
             />
@@ -151,7 +151,7 @@ const Hero = () => {
       <ReadMoreModal isOpen={isReadMoreModalOpen} onClose={handleReadMoreModalToggle}>
         <div className="p-6 max-h-[80vh] overflow-auto no-scrollbar">
           <Image 
-          src="/profile.jpg"
+          src="/profile-img.png"
           alt="Sixtus Aondoakaa"
           width={100}
           height={100}
