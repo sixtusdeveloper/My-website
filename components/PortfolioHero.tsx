@@ -138,7 +138,7 @@ const Hero = () => {
               src="/my-resume.jpg"
               alt="CV Preview"
               width={500}
-              height={600}
+              height={500}
               className="rounded-lg shadow-md object-cover"
               style={{ width: "auto", height: "auto" }}
             />
