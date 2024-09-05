@@ -123,7 +123,7 @@ const Hero = () => {
 
       {/* Modal for Hire Me */}
       <HireMeModal isOpen={isModalOpen} onClose={handleModalToggle}>
-        <div className="p-6 bg-secondary max-h-[80vh] my-6 overflow-auto no-scrollbar">
+        <div className="p-4 bg-secondary max-h-[80vh] overflow-auto no-scrollbar">
           <h2 className="text-2xl font-bold tracking-wide text-center p-2">
             Hire Me
           </h2>
