@@ -11,7 +11,7 @@ import  Clients from "@/components/PortfolioClients";
 import  Services from "@/components/PortfolioServices";
 import ClientComponenies from '@/components/PortfolioClientComponies';
 import Experience from '@/components/PortfolioExperiences';
-import Approach from '@/components/PortfolioApproach';
+// import Approach from '@/components/PortfolioApproach';
 import Projects from '@/components/PortfolioProjects';
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
             <Clients />
             <ClientComponenies />
             <Projects />
-            <Approach />
+            {/* <Approach /> */}
             <Footer />
             <ScrollIndicator />
           </div>
