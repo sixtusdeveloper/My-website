@@ -98,7 +98,7 @@ const Projects = () => {
         <div className="flex items-center flex-col lg:flex-nowrap lg:flex-row justify-center gap-8 p-4 lg:py-8 mt-4">
           {currentProjects.map(({ id, title, des, img, githubLink, iconLists, link }) => (
             <div
-              className="relative my-8 group overflow-hidden rounded-3xl shadow-lg transition-transform transform hover:scale-105"
+              className="relative my-8 group overflow-hidden border rounded-3xl shadow-lg transition-transform transform hover:scale-105"
               key={id}
               style={{ width: "auto", height: "auto" }}
             >
