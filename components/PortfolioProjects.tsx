@@ -113,10 +113,9 @@ const Projects = () => {
               <div className="px-4 my-1">
                 <h1 className="font-bold text-xl truncate">{truncateTitle(title, MAX_TITLE_LENGTH)}</h1>
                 <p className="mt-2 text-sm line-clamp-2">{truncateDescription(des,  MAX_DESCRIPTION_LENGTH)}</p>
-                <div className="inline-flex items-center gap-2 relative rounded-full py-1 text-sm bg-transparent">
+                <div className="inline-flex items-center gap-2 relative rounded-full border py-1 text-sm bg-transparent">
                   <p className="text-sm">Curious of the magic behind?{" "}</p>
                   <a href={githubLink} target="_blank" className="font-semibold text-blue-600 cursor-pointer">
-                    <span aria-hidden="true" className="absolute inset-0" />
                     Check codebase{" "}
                     <span aria-hidden="true">&rarr;</span>
                   </a>
@@ -126,7 +125,7 @@ const Projects = () => {
                     {iconLists.map((icon, index) => (
                       <div
                         key={index}
-                        className="border rounded-full bg-gray-300 w-8 h-8 flex justify-center items-center"
+                        className="border rounded-full bg-mutedblue w-8 h-8 flex justify-center items-center"
                         style={{
                           transform: `translateX(-${index * 8}px)`, // Adjusted the X-axis translation to make them touch slightly
                           zIndex: iconLists.length - index, // Making sure the stacking is proper
