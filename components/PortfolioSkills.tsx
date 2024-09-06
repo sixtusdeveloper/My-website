@@ -178,42 +178,35 @@ const PortfolioSkills = () => {
 
           {/* Certifications Section */}
           <div className="py-8">
-            <h3 className="text-2xl font-semibold mb-4">Verified Certifications</h3>
-            <div className='skill-category bg-secondary border p-6 rounded-lg'>
-              <ul className="list-none space-y-4">
-              <li className="flex items-center space-x-2">
-                <SiBookstack className="text-blue-700" size={20} />&nbsp;<span>Alison Institute - IT Management (Software & Databases)</span>
-              </li>
-              <p><span>Certified - </span>&nbsp;2022 - 2023</p>
-              
-              </ul>
-            </div>
-            <div className='skill-category bg-secondary border p-6 rounded-lg'>
-              <ul className="list-none space-y-4">
-              <li className="flex items-center space-x-2">
-                <SiBookstack className="text-blue-700" size={20} />&nbsp;<span>Alison Institute - IT Management (Software & Databases)</span>
-              </li>
-              <p><span>Certified - </span>&nbsp;2022 - 2023</p>
-              
-              </ul>
-            </div>
-            <div className='skill-category bg-secondary border p-6 rounded-lg'>
-              <ul className="list-none space-y-4">
-              <li className="flex items-center space-x-2">
-                <SiBookstack className="text-blue-700" size={20} />&nbsp;<span>Alison Institute - IT Management (Software & Databases)</span>
-              </li>
-              <p><span>Certified - </span>&nbsp;2022 - 2023</p>
-              
-              </ul>
-            </div>
-            <div className='skill-category bg-secondary border p-6 rounded-lg'>
-              <ul className="list-none space-y-4">
-              <li className="flex items-center space-x-2">
-                <SiBookstack className="text-blue-700" size={20} />&nbsp;<span>Alison Institute - IT Management (Software & Databases)</span>
-              </li>
-              <p><span>Certified - </span>&nbsp;2022 - 2023</p>
-              
-              </ul>
+            <h3 className="text-2xl my-6 font-bold text-center text-[2.4rem] leading-snug tracking-wider">Verified Certifications</h3>
+            <div className='w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10'>
+              <div className='skill-category bg-secondary border p-6 rounded-lg'>
+                <ul className="list-none space-y-4">
+                <li className="flex items-center space-x-2">
+                  <SiBookstack className="text-blue-700" size={20} />&nbsp;<span>Alison Institute - IT Management (Software & Databases)</span>
+                </li>
+                <p><span>Certified - </span>&nbsp;2022 - 2023</p>
+                
+                </ul>
+              </div>
+              <div className='skill-category bg-secondary border p-6 rounded-lg'>
+                <ul className="list-none space-y-4">
+                <li className="flex items-center space-x-2">
+                  <SiBookstack className="text-blue-700" size={20} />&nbsp;<span>Alison Institute - IT Management (Software & Databases)</span>
+                </li>
+                <p><span>Certified - </span>&nbsp;2022 - 2023</p>
+                
+                </ul>
+              </div>
+              <div className='skill-category bg-secondary border p-6 rounded-lg'>
+                <ul className="list-none space-y-4">
+                <li className="flex items-center space-x-2">
+                  <SiBookstack className="text-blue-700" size={20} />&nbsp;<span>Alison Institute - IT Management (Software & Databases)</span>
+                </li>
+                <p><span>Certified - </span>&nbsp;2022 - 2023</p>
+                
+                </ul>
+              </div>
             </div>
           </div>
         </div>
