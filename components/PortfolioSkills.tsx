@@ -2,7 +2,8 @@ import React from 'react'
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaDocker, FaAws, FaGitAlt, FaGithub } from 'react-icons/fa';
 import { SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiFlask, SiPython, SiKubernetes, SiPostman, 
   SiVisualstudiocode, SiNextdotjs, SiTypescript, SiDjango, SiAppwrite, SiClerk, SiVuedotjs, SiSentry, 
-  SiFramer, SiFirebase, SiPhp, SiGnubash } from 'react-icons/si';
+  SiFramer, SiFirebase, SiPhp, SiGnubash, SiGooglecloud, SiMicrosoftazure, SiFreecodecamp, SiUdemy, 
+  SiBookstack, SiLinkedin, SiUdacity } from 'react-icons/si';
 import { AiFillApi } from "react-icons/ai"; 
 import { FiBox } from "react-icons/fi"; 
 import { FaJava } from "react-icons/fa";
@@ -148,18 +149,37 @@ const PortfolioSkills = () => {
               <li className="flex items-center space-x-2">
                 <FaAws className="text-yellow-500" /> <span>AWS Certified Developer</span>
               </li>
+              <li className="flex items-center space-x-2">
+                <SiGooglecloud className="text-blue-500" /> <span>Google Cloud Professional</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiMicrosoftazure className="text-blue-700" /> <span>Microsoft Azure Fundamentals</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiFreecodecamp className="text-green-500" /> <span>FreeCodeCamp - Responsive Web Design</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiUdemy className="text-purple-600" /> <span>Udemy - Full-stack Developer</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiBookstack className="text-gray-600" /> <span>Alison Institute - IT Management (Software & Databases)</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiBookstack className="text-gray-600" /> <span>Great Learning - Full-stack Developer</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiLinkedin className="text-blue-700" /> <span>LinkedIn - Full-stack Developer</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiUdacity className="text-purple-600" /> <span>Udacity - Machine Learning</span>
+              </li>
             </ul>
           </div>
 
           {/* Certifications Section */}
           <div className="skill-category bg-secondary border p-6 rounded-lg">
-            <h3 className="text-2xl font-semibold mb-4">Certifications</h3>
-            <ul className="list-disc list-inside space-y-2">
-              <li>AWS Certified Practicioner</li>
-              <li>Google Cloud Professional</li>
-              <li>Microsoft Azure Fundamentals</li>
-              <li>Responsive Web Design</li>
-              <li>Full-stack Developer</li>
+            <h3 className="text-2xl font-semibold mb-4">Verified Certifications</h3>
+            <ul className="list-none space-y-4">
               <li>IT Management - Software & Databases</li>
             </ul>
           </div>
