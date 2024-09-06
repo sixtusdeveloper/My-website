@@ -19,7 +19,7 @@ export const portfolioNavLinks = [
     { name: 'Approach', href: '#approach' },
     { name: 'Clients', href: '#clients' },
   ]; 
-//=======================  Blog Posts ==========================//
+//======================= Blog Posts ==========================//
   export const blogPosts = [
     {
       id: 1,
@@ -125,7 +125,7 @@ export const portfolioNavLinks = [
     },
   ];
   
-  //=============================  Testimonials Section Data =======================//
+  //============================= Testimonials Section Data =======================//
 export const testimonials = [
   {
     quote: "Sixtus’s portfolio has been instrumental in showcasing our projects. The design and functionality he implemented have enhanced our online presence and effectively communicated our brand message. His attention to detail and responsiveness have truly made a difference.",
@@ -183,7 +183,7 @@ export const testimonials = [
   },
 ];
 
-//============================  data/experienceData.js ============================//
+//============================ data/experienceData.js ============================//
 
 export const experiences = [
   {
@@ -196,7 +196,7 @@ export const experiences = [
     location: "United Kingdom",
     description: "Designing and implementing software applications and APIs for clients across diverse industries.",
     fullDesc: "Designing and implementing software applications and APIs for clients across diverse industries, including e-commerce, healthcare, and education. Collaborating with cross-functional teams to deliver high-quality products and services, leveraging agile methodologies and best practices. Conducting code reviews, implementing automated testing, and optimizing application performance to ensure scalability and reliability. Contributing to the design and architecture of web applications, APIs, and databases, utilizing modern technologies such as React, TypeScript, Node.js, MongoDB, and TypeScript.",
-    technologies: ["React", "TypeScript", "Node.js", "PHP", "SQL", "Express", "Docker", "AWS", "Stripe", "OAuth", "RESTful APIs", "WebSockets", "Shadcn", "Framer-motion", "GitLab CI/CD", "Google Analytics", "Google Optimize", "Slack", "Microsoft Teams", "Zoom", "Google Meet", "Discord", "Figma", "Aceternity UI", "Tailwindcss", "Appwrite", "Clerk"],
+    technologies: ["React", "TypeScript", "NextJs", "Node.js", "PHP", "SQL", "Express", "Docker", "AWS", "Stripe", "OAuth", "RESTful APIs", "WebSockets", "Shadcn", "Framer-motion", "GitLab CI/CD", "Google Analytics", "Google Optimize", "Slack", "Microsoft Teams", "Zoom", "Google Meet", "Discord", "Figma", "Aceternity UI", "Tailwindcss", "Appwrite", "Clerk"],
   },  
   {
     date: "June 2024 - Present",
@@ -236,7 +236,7 @@ export const experiences = [
   },
 ];
 
-//==================================  Education data ==============================//
+//================================== Education data ==============================//
 export const education = [
   {
     degree: "Advanced Diploma in Software Engineering",
@@ -397,7 +397,7 @@ export const services: Service[] = [
   }
 ];
 
-//=============================  Project data ====================================//
+//============================= Project data ====================================//
 export const projects = [
   {
     id: 1,
