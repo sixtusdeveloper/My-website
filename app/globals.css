@@ -158,7 +158,7 @@
   overflow: hidden;
 }
 .project-img{
-  width: 100% !important;
+  width: 300 !important;
   height: 200px !important;
   object-fit: cover !important; 
   border-top-left-radius: 8px !important;
