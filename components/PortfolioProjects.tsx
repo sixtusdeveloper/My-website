@@ -159,13 +159,13 @@ const Projects = () => {
         </div>
 
         {/* Pagination */}
-        <div className="flex justify-center mt-8">
+        <div className="flex justify-center mt-4">
           {Array.from({ length: totalPages }, (_, index) => index + 1).map(
             (pageNumber) => (
               <button
                 key={pageNumber}
                 onClick={() => paginate(pageNumber)}
-                className={`px-4 py-2 mx-2 rounded-md cursor-pointer transition-all duration-300 ${
+                className={`px-4 py-1 mx-1 rounded-md cursor-pointer transition-all duration-300 ${
                   currentPage === pageNumber
                     ? "bg-blue-800 text-white"
                     : "bg-transparent border"
