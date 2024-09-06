@@ -13,6 +13,7 @@ import ClientComponenies from '@/components/PortfolioClientComponies';
 import Experience from '@/components/PortfolioExperiences';
 // import Approach from '@/components/PortfolioApproach';
 import Projects from '@/components/PortfolioProjects';
+import ReachOut from '@/components/PortfolioReachOut';
 
 export default function Home() {
 
@@ -29,6 +30,7 @@ export default function Home() {
             <ClientComponenies />
             <Projects />
             {/* <Approach /> */}
+            <ReachOut />
             <Footer />
             <ScrollIndicator />
           </div>
