@@ -513,7 +513,7 @@ export const projects = [
     id: 12,
     title: "A Photo Image Loader App",
     des: "A Photo Image Loader App that loads images from an API and displays them in a grid layout.",
-    img: "/project12.avif",
+    img: "/project14.avif",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://image-loader-plt1a1zou-sixtus-projects.vercel.app/",
     category: "Frontend",
