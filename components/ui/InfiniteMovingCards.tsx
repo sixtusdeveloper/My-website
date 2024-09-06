@@ -111,7 +111,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[90vw] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 p-4 md:p-10 md:w-[50vw]"
+            className="w-[80vw] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 p-4 lg:p-10 md:w-[45vw]"
             key={idx}
           >
             <blockquote>
@@ -123,7 +123,7 @@ export const InfiniteMovingCards = ({
                 <FaQuoteLeft />
               </div>
               <div className="flex justify-between items-center gap-4 mb-4 md:mb-6">
-                <span className="flex items-center gap-1 text-yellow-500 text-lg">
+                <span className="flex items-center gap-1 text-yellow-600 text-lg">
                   {renderStars(item.rating)}
                 </span>
               </div>
@@ -143,8 +143,8 @@ export const InfiniteMovingCards = ({
                       height={40}
                     />
                   </div>
-                  <div className="text-sm leading-6">
-                    <p className="font-semibold">
+                  <div className="text-base">
+                    <p className="font-semibold text-base">
                       <a href="#">
                         {item.name}
                       </a>
