@@ -9,12 +9,12 @@ import { FaJava } from "react-icons/fa";
 
 const PortfolioSkills = () => {
   return (
-    <section id="skills" className="bg-secondary relative md:pt-10 px-6 lg:px-14 pb-20">
+    <section id="skills" className="bg-secondary relative md:pt-10 px-6 lg:px-10 pb-20">
       <div className="mx-auto max-w-5xl relative">
         <h2 className="font-bold text-center text-[2.4rem] leading-snug tracking-wider">Skills & Tools</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Frontend Section */}
-          <div className="skill-category bg-secondary p-6 rounded-lg shadow-md">
+          <div className="skill-category bg-secondary p-6 rounded-lg border">
             <h3 className="text-2xl font-semibold mb-4">Frontend</h3>
             <ul className="list-none space-y-4">
               <li className="flex items-center space-x-2">
@@ -54,7 +54,7 @@ const PortfolioSkills = () => {
           </div>
 
           {/* Backend Section */}
-          <div className="skill-category bg-secondary p-6 rounded-lg shadow-md">
+          <div className="skill-category bg-secondary p-6 rounded-lg border">
             <h3 className="text-2xl font-semibold mb-4">Backend</h3>
             <ul className="list-none space-y-4">
               <li className="flex items-center space-x-2">
@@ -79,7 +79,7 @@ const PortfolioSkills = () => {
           </div>
 
           {/* Databases Section */}
-          <div className="skill-category bg-secondary p-6 rounded-lg shadow-md">
+          <div className="skill-category bg-secondary p-6 rounded-lg border">
             <h3 className="text-2xl font-semibold mb-4">Databases</h3>
             <ul className="list-none space-y-4">
               <li className="flex items-center space-x-2">
@@ -104,7 +104,7 @@ const PortfolioSkills = () => {
           </div>
 
           {/* DevOps Section */}
-          <div className="skill-category bg-secondary p-6 rounded-lg shadow-md">
+          <div className="skill-category bg-secondary p-6 rounded-lg border">
             <h3 className="text-2xl font-semibold mb-4">DevOps</h3>
             <ul className="list-none space-y-4">
               <li className="flex items-center space-x-2">
@@ -117,7 +117,7 @@ const PortfolioSkills = () => {
           </div>
 
           {/* Tools Section */}
-          <div className="skill-category bg-secondary border p-6 rounded-lg shadow-md">
+          <div className="skill-category bg-secondary border p-6 rounded-lg">
             <h3 className="text-2xl font-semibold mb-4">Version Control & Tools</h3>
             <ul className="list-none space-y-4">
               <li className="flex items-center space-x-2">
@@ -136,7 +136,7 @@ const PortfolioSkills = () => {
           </div>
 
           {/* Certifications Section */}
-          <div className="skill-category bg-secondary border p-6 rounded-lg shadow-md">
+          <div className="skill-category bg-secondary border p-6 rounded-lg">
             <h3 className="text-2xl font-semibold mb-4">Certifications</h3>
             <ul className="list-none space-y-4">
               <li className="flex items-center space-x-2">
@@ -146,7 +146,7 @@ const PortfolioSkills = () => {
           </div>
 
           {/* Certifications Section */}
-          <div className="skill-category bg-secondary border p-6 rounded-lg shadow-md">
+          <div className="skill-category bg-secondary border p-6 rounded-lg">
             <h3 className="text-2xl font-semibold mb-4">Certifications</h3>
             <ul className="list-disc list-inside space-y-2">
               <li>AWS Certified Practicioner</li>
