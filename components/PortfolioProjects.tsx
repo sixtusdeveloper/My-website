@@ -122,22 +122,23 @@ const Projects = () => {
                   </a>
                 </div>
                 <div className="flex items-center justify-between mt-4">
-                  <div className="flex space-x-2">
+                  <div className="relative"> {/* Add relative here */}
                     {iconLists.map((icon, index) => (
                       <div
                         key={index}
-                        className="border rounded-full bg-secondary lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                        className="absolute border rounded-full bg-secondary lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                         style={{
-                          transform: `translateX(-${5 * index + 2}px)`,
+                          transform: `translateY(${5 * index}px)`, // Adjust Y-axis translation
+                          zIndex: iconLists.length - index, // Ensure proper stacking order
                         }}
                       >
                         <Image 
-                        src={icon} 
-                        alt="icon" 
-                        width={8}
-                        height={8}
-                        className="p-2" 
-                        style={{ width: 'auto', height: 'auto' }}
+                          src={icon} 
+                          alt="icon" 
+                          width={8}
+                          height={8}
+                          className="p-2" 
+                          style={{ width: 'auto', height: 'auto' }}
                         />
                       </div>
                     ))}
@@ -152,6 +153,7 @@ const Projects = () => {
                     Check Live Site <FaLocationArrow className="ml-2" />
                   </a>
                 </div>
+
               </div>
             </div>
           ))}
