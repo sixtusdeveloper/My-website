@@ -8,7 +8,6 @@ const PortfolioSkills = () => {
 
         {/* Skills Grid  */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
           {/* Frontend Section */}
           <div className="skill-category bg-secondary p-6 rounded-lg shadow-md">
             <h3 className="text-2xl font-semibold mb-4">Frontend</h3>
