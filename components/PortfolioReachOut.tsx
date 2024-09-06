@@ -5,7 +5,7 @@ import Image from "next/image";
 const ReachOut = () => {
   return (
     <div className="bg-secondary relative lg:pt-10 mx-auto w-full px-6 lg:px-16 pb-20" id="ReachOut">
-      <div className="max-w-4xl mx-auto relative">
+      <div className="max-w-2xl mx-auto relative">
         <h1 className="font-bold text-center text-[2.4rem] leading-snug tracking-wider">
           Ready to take your <span className="text-purple">digital presence</span> to the next level?
         </h1>
