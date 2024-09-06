@@ -115,7 +115,7 @@ const Projects = () => {
                 <p className="mt-2 text-sm line-clamp-2">{truncateDescription(des,  MAX_DESCRIPTION_LENGTH)}</p>
                 <div className="inline-flex items-center w-full gap-2 relative rounded-full border px-2 py-1 text-sm bg-transparent">
                   <span className="text-sm">Check the magic behind?{" "}</span>
-                  <a href={githubLink} target="_blank" className="font-semibold text-blue-600 cursor-pointer">
+                  <a href={githubLink} target="_blank" className="font-semibold text-blue-500 hover:text-blue-300 cursor-pointer">
                     View codebase{" "}
                     <span aria-hidden="true">&rarr;</span>
                   </a>
