@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
@@ -6,7 +6,7 @@ import { CanvasRevealEffect } from "@/components/ui/CanvasRevealEffect";
 
 const Approach = () => {
   return (
-    <section className="w-full py-20 bg-secondary" id="Approach">
+    <section className="w-full py-20 bg-secondary" id="approach">
       <h1 className="font-bold text-center text-[2.4rem] leading-snug tracking-wider">
         My
         <span className="text-purple">&nbsp;Approach</span>

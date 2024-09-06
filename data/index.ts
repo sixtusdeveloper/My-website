@@ -18,9 +18,8 @@ export const portfolioNavLinks = [
     { name: 'Projects', href: '#projects' },
     { name: 'Approach', href: '#approach' },
     { name: 'Clients', href: '#clients' },
-  ];
-  
-
+  ]; 
+//=======================  Blog Posts ==========================//
   export const blogPosts = [
     {
       id: 1,
@@ -126,7 +125,6 @@ export const portfolioNavLinks = [
     },
   ];
   
-
   //=============================  Testimonials Section Data =======================//
 export const testimonials = [
   {

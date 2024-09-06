@@ -49,7 +49,7 @@ const Hero = () => {
 
 
   return (
-    <div className="bg-secondary pb-2 pt-36" id="Hero">
+    <div className="bg-secondary pb-2 pt-36" id="hero">
       <div className="flex justify-center relative my-16 lg:my-20 z-10">
         <div className="max-w-[90vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
