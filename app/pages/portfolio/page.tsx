@@ -11,7 +11,7 @@ import Clients from "@/components/PortfolioClients";
 import Services from "@/components/PortfolioServices";
 import ClientComponenies from '@/components/PortfolioClientComponies';
 import Experience from '@/components/PortfolioExperiences';
-// import Approach from '@/components/PortfolioApproach';
+import Skills from '@/components/PortfolioSkills';
 import Projects from '@/components/PortfolioProjects';
 import ReachOut from '@/components/PortfolioReachOut';
 
@@ -29,7 +29,7 @@ export default function Home() {
             <Clients />
             <ClientComponenies />
             <Projects />
-            {/* <Approach /> */}
+            <Skills />
             <ReachOut />
             <Footer />
             <ScrollIndicator />
