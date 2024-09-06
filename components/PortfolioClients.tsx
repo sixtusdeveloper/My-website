@@ -6,7 +6,7 @@ import React from "react";
 const Clients = () => {
   return (
     <div className="py-8 bg-secondary" id="clients">
-      <h1 className="font-bold text-center text-[2.4rem] leading-snug tracking-wider">
+      <h1 className="font-bold text-center p-8 lg:p-4 text-[2.4rem] leading-snug tracking-wider">
        Kind words from  
         <span className="text-purple">&nbsp;Satisfied&nbsp;Clients</span>
       </h1>
