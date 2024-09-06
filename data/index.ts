@@ -196,7 +196,7 @@ export const experiences = [
     location: "United Kingdom",
     description: "Designing and implementing software applications and APIs for clients across diverse industries.",
     fullDesc: "Designing and implementing software applications and APIs for clients across diverse industries, including e-commerce, healthcare, and education. Collaborating with cross-functional teams to deliver high-quality products and services, leveraging agile methodologies and best practices. Conducting code reviews, implementing automated testing, and optimizing application performance to ensure scalability and reliability. Contributing to the design and architecture of web applications, APIs, and databases, utilizing modern technologies such as React, TypeScript, Node.js, MongoDB, and TypeScript.",
-    technologies: ["React", "TypeScript", "NextJs", "Node.js", "PHP", "SQL", "Express", "Docker", "AWS", "Stripe", "OAuth", "RESTful APIs", "WebSockets", "Shadcn", "Framer-motion", "GitLab CI/CD", "Google Analytics", "Google Optimize", "Slack", "Microsoft Teams", "Zoom", "Google Meet", "Discord", "Figma", "Aceternity UI", "Tailwindcss", "Appwrite", "Clerk"],
+    technologies: ["React", "TypeScript", "Next.js", "Node.js", "PHP", "SQL", "Express", "Docker", "AWS", "Stripe", "OAuth", "RESTful APIs", "WebSockets", "Shadcn", "Framer-motion", "GitLab CI/CD", "Google Analytics", "Google Optimize", "Slack", "Microsoft Teams", "Zoom", "Google Meet", "Discord", "Figma", "Aceternity UI", "Tailwindcss", "Appwrite", "Clerk"],
   },  
   {
     date: "June 2024 - Present",
