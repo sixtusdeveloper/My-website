@@ -50,7 +50,7 @@ const Hero = () => {
 
   return (
     <div className="bg-secondary pb-2 pt-36" id="hero">
-      <div className="flex justify-center relative my-16 lg:my-20 z-10">
+      <div className="flex justify-center relative my-16 lg:px-10 px-8 lg:my-20 z-10">
         <div className="max-w-[90vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-blue-400 border">
@@ -77,7 +77,7 @@ const Hero = () => {
             )}
           </h3>
 
-          <h1 className="text-[2.8rem] font-bold lg:font-bolder tracking-wide lg:tracking-wider text-center lg:text-[3rem]">
+          <h1 className="text-[2.5rem] font-bold lg:font-bolder tracking-wide lg:tracking-wider text-center lg:text-[3rem]">
             Welcome to my <span className="text-purple">Portfolio</span>
           </h1>
           <p className="py-8 text-center tracking-wide leading-6 text-[16px]">
