@@ -55,10 +55,10 @@ const Projects = () => {
 
 
   return (
-    <div className="relative bg-secondary w-full mx-auto md:pt-8 px-6 lg:px-8 pb-16" id="projects">
+    <div className="relative bg-secondary w-full mx-auto md:pt-8 px-6 lg:px-8 pb-10" id="projects">
       <div className="mx-auto max-w-6xl relative">
         {/* Loader Overlay */}
-        {isLoading && <Loader />} {/* Show loader */}
+        {isLoading && <Loader />}
 
         <h1 className="font-bold text-center lg:text-[2.4rem] text-2xl leading-snug tracking-wider">
           My&nbsp;<span className="text-purple">Recent Projects</span>
@@ -95,7 +95,7 @@ const Projects = () => {
         </div>
 
         {/* Project Cards */}
-        <div className="flex items-center flex-col lg:flex-nowrap lg:flex-row justify-center gap-8 p-8 lg:py-10 mt-4">
+        <div className="flex items-center flex-col lg:flex-nowrap lg:flex-row justify-center gap-8 p-4 lg:py-8 mt-4">
           {currentProjects.map(({ id, title, des, img, githubLink, iconLists, link }) => (
             <div
               className="relative my-8 group overflow-hidden rounded-3xl shadow-lg transition-transform transform hover:scale-105"
@@ -113,10 +113,10 @@ const Projects = () => {
               <div className="px-4 my-1">
                 <h1 className="font-bold text-xl truncate">{truncateTitle(title, MAX_TITLE_LENGTH)}</h1>
                 <p className="mt-2 text-sm line-clamp-2">{truncateDescription(des,  MAX_DESCRIPTION_LENGTH)}</p>
-                <div className="inline-flex items-center gap-2 relative rounded-full border py-1 text-sm bg-transparent">
-                  <p className="text-sm">Curious of the magic behind?{" "}</p>
+                <div className="inline-flex gap-2 relative rounded-full border py-1 text-sm bg-transparent">
+                  <p className="text-sm">The magic behind?{" "}</p>
                   <a href={githubLink} target="_blank" className="font-semibold text-blue-600 cursor-pointer">
-                    Check codebase{" "}
+                    codebase{" "}
                     <span aria-hidden="true">&rarr;</span>
                   </a>
                 </div>
