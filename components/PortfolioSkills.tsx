@@ -162,10 +162,10 @@ const PortfolioSkills = () => {
                 <SiUdemy className="text-purple-600" /> <span>Udemy - Full-stack Developer</span>
               </li>
               <li className="flex items-center space-x-2">
-                <SiBookstack className="text-gray-600" /> <span>Alison Institute - IT Management (Software & Databases)</span>
+                <SiBookstack className="text-blue-700" /> <span>Alison Institute - IT Management (Software & Databases)</span>
               </li>
               <li className="flex items-center space-x-2">
-                <SiBookstack className="text-gray-600" /> <span>Great Learning - Full-stack Developer</span>
+                <SiBookstack className="text-green-600" /> <span>Great Learning - Full-stack Developer</span>
               </li>
               <li className="flex items-center space-x-2">
                 <SiLinkedin className="text-blue-700" /> <span>LinkedIn - Full-stack Developer</span>
