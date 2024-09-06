@@ -2,7 +2,7 @@ import React from 'react'
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaDocker, FaAws, FaGitAlt, FaGithub } from 'react-icons/fa';
 import { SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiFlask, SiPython, SiKubernetes, SiPostman, 
   SiVisualstudiocode, SiNextdotjs, SiTypescript, SiDjango, SiAppwrite, SiClerk, SiVuedotjs, SiSentry, 
-  SiFramer, SiFirebase } from 'react-icons/si';
+  SiFramer, SiFirebase, SiPhp, SiGnubash } from 'react-icons/si';
 import { AiFillApi } from "react-icons/ai"; 
 import { FiBox } from "react-icons/fi"; 
 import { FaJava } from "react-icons/fa";
@@ -11,7 +11,7 @@ const PortfolioSkills = () => {
   return (
     <section id="skills" className="bg-secondary relative md:pt-10 px-6 lg:px-10 pb-20">
       <div className="mx-auto max-w-5xl relative">
-        <h2 className="font-bold text-center text-[2.4rem] leading-snug tracking-wider">Skills & Tools</h2>
+        <h2 className="my-8 font-bold text-center text-[2.4rem] leading-snug tracking-wider">Skills & Tools</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Frontend Section */}
           <div className="skill-category bg-secondary p-6 rounded-lg border">
@@ -75,6 +75,9 @@ const PortfolioSkills = () => {
               <li className="flex items-center space-x-2">
                 <FaJava className="text-red-600" size={20} />&nbsp;<span>Java</span>
               </li>
+              <li className="flex items-center space-x-2">
+                <SiPhp className="text-purple-800" /> <span>PHP</span>
+              </li>
             </ul>
           </div>
 
@@ -131,6 +134,9 @@ const PortfolioSkills = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <SiVisualstudiocode className="text-blue-500" size={20} />&nbsp;<span>VS Code</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiGnubash className="text-green-600" /> <span>Bash</span>
               </li>
             </ul>
           </div>
