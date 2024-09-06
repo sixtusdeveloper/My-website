@@ -55,7 +55,7 @@ const Projects = () => {
 
 
   return (
-    <div className="relative bg-secondary w-full mx-auto md:pt-10 px-6 lg:px-10 pb-20" id="projects">
+    <div className="relative bg-secondary w-full mx-auto md:pt-8 px-6 lg:px-8 pb-16" id="projects">
       <div className="mx-auto max-w-6xl relative">
         {/* Loader Overlay */}
         {isLoading && <Loader />} {/* Show loader */}
@@ -65,7 +65,7 @@ const Projects = () => {
         </h1>
 
         {/* Category Buttons */}
-        <div className="flex justify-center mt-6 mb-8">
+        <div className="flex justify-center my-4">
           <button
             onClick={() => {
               setSelectedCategory("Frontend");
@@ -150,7 +150,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="flex items-center cursor-pointer text-blue-500 hover:text-blue-300 transition-colors duration-300"
                   >
-                    Check Live Site <FaLocationArrow className="ml-2" />
+                    Live Site <FaLocationArrow className="ml-2" />
                   </a>
                 </div>
               </div>
