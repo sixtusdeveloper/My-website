@@ -161,8 +161,8 @@
   width: 100% !important;
   height: 200px !important;
   object-fit: cover !important; 
-  border-top-left-radius: 10px !important;
-  border-top-right-radius: 10px !important;
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
   overflow: hidden !important;
 }
 .closeButton {
