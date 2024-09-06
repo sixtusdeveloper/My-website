@@ -53,7 +53,7 @@ const Hero = () => {
       <div className="flex justify-center relative my-16 lg:px-10 px-8 lg:my-20 z-10">
         <div className="max-w-[90vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-blue-400 border">
+            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-blue-500 hover:text-blue-600 border">
               Engineering excellence in every line of code.{" "}
               <a
                 href="https://github.com/sixtusdeveloper/My-portfolio/"

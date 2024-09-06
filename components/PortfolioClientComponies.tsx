@@ -90,7 +90,7 @@ const Collaboration = ({
             </span>
           </div>
           <div className="hidden sm:mt-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-4 my-1 text-sm leading-6 text-blue-400 border">
+            <div className="relative rounded-full px-4 my-1 text-sm leading-6 text-blue-500 hover:text-blue-600 border">
               Over 35 companies use my solutions to better their business.{" "}
               <a href="#" onClick={toggleModal} className="font-semibold text-purple cursor-pointer">
                 <span aria-hidden="true" className="absolute inset-0" />

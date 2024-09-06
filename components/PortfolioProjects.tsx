@@ -116,7 +116,7 @@ const Projects = () => {
                 <div className="inline-flex items-center w-full gap-2 relative rounded-full border px-2 py-1 text-sm bg-transparent">
                   <span className="text-sm">Check the magic behind?{" "}</span>
                   <a href={githubLink} target="_blank" className="font-semibold text-blue-600 cursor-pointer">
-                    view codebase{" "}
+                    View codebase{" "}
                     <span aria-hidden="true">&rarr;</span>
                   </a>
                 </div>
