@@ -59,7 +59,7 @@ const Projects = () => {
       {/* Loader Overlay */}
       {isLoading && <Loader />} {/* Show loader */}
 
-      <h1 className="font-bold text-center text-[2.4rem] leading-snug tracking-wider">
+      <h1 className="font-bold text-center lg:text-[2.4rem] text-2xl leading-snug tracking-wider">
         My&nbsp;<span className="text-purple">Recent Projects</span>
       </h1>
 
@@ -94,7 +94,7 @@ const Projects = () => {
       </div>
 
       {/* Project Cards */}
-      <div className="flex flex-wrap justify-center py-8 lg:py-10 gap-10 mt-4">
+      <div className="grid gap-2 lg:gap-6 md:grid-cols-3 py-8 lg:py-10 mt-4">
         {currentProjects.map(({ id, title, des, img, githubLink, iconLists, link }) => (
           <div
             className="relative my-8 group overflow-hidden rounded-3xl shadow-lg transition-transform transform hover:scale-105"
@@ -104,17 +104,17 @@ const Projects = () => {
             <Image
               src={img}
               alt={title}
-              width={400}
-              height={400}
+              width={300}
+              height={300}
               className="w-full h-3/5 object-cover transition-opacity duration-300 group-hover:opacity-75 project-img"
               // style={{ width: 'auto', height: 'auto' }}
             />
             <div className="p-4 my-1">
               <h1 className="font-bold text-xl truncate">{truncateTitle(title, MAX_TITLE_LENGTH)}</h1>
               <p className="mt-2 text-sm line-clamp-2">{truncateDescription(des,  MAX_DESCRIPTION_LENGTH)}</p>
-              <div className="relative rounded-full py-1 my-1 text-sm leading-6 text-blue-200 bg-black-00/10 hover:ring-gray-900/20">
+              <div className="relative rounded-full py-1 my-1 text-sm leading-6 bg-secondary">
                 Curious of the magic behind?{" "}
-                <a href={githubLink} target="_blank" className="font-semibold text-purple cursor-pointer">
+                <a href={githubLink} target="_blank" className="font-semibold text-blue-600 cursor-pointer">
                   <span aria-hidden="true" className="absolute inset-0" />
                   Check project codebase{" "}
                   <span aria-hidden="true">&rarr;</span>
@@ -125,7 +125,7 @@ const Projects = () => {
                   {iconLists.map((icon, index) => (
                     <div
                       key={index}
-                      className="border border-white/[.2] rounded-full bg-secondary lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                      className="border rounded-full bg-secondary lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                       style={{
                          transform: `translateX(-${5 * index + 2}px)`,
                        }}
