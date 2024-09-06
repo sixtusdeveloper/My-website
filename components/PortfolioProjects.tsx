@@ -126,7 +126,7 @@ const Projects = () => {
                     {iconLists.map((icon, index) => (
                       <div
                         key={index}
-                        className="border rounded-full bg-secondary lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                        className="border rounded-full bg-white w-8 h-8 flex justify-center items-center"
                         style={{
                           transform: `translateX(-${index * 8}px)`, // Adjusted the X-axis translation to make them touch slightly
                           zIndex: iconLists.length - index, // Making sure the stacking is proper
