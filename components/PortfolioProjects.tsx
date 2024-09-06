@@ -113,8 +113,8 @@ const Projects = () => {
               <div className="p-4 my-1">
                 <h1 className="font-bold text-xl truncate">{truncateTitle(title, MAX_TITLE_LENGTH)}</h1>
                 <p className="mt-2 text-sm line-clamp-2">{truncateDescription(des,  MAX_DESCRIPTION_LENGTH)}</p>
-                <div className="relative rounded-full py-1 my-1 text-sm leading-6 bg-secondary">
-                  Curious of the magic behind?{" "}
+                <div className="flex justify-center items-center gap-2 relative rounded-full py-1 my-1 text-sm bg-transparent">
+                  <p className="text-sm">Curious of the magic behind?{" "}</p>
                   <a href={githubLink} target="_blank" className="font-semibold text-blue-600 cursor-pointer">
                     <span aria-hidden="true" className="absolute inset-0" />
                     Check codebase{" "}
