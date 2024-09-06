@@ -95,7 +95,7 @@ const Projects = () => {
         </div>
 
         {/* Project Cards */}
-        <div className="flex items-center flex-col lg:flex-nowrap lg:flex-row justify-center gap-8 py-8 lg:py-10 mt-4">
+        <div className="flex items-center flex-col lg:flex-nowrap lg:flex-row justify-center gap-8 p-8 lg:py-10 mt-4">
           {currentProjects.map(({ id, title, des, img, githubLink, iconLists, link }) => (
             <div
               className="relative my-8 group overflow-hidden rounded-3xl shadow-lg transition-transform transform hover:scale-105"
