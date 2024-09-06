@@ -119,7 +119,7 @@ const Experience = () => {
               className={`px-4 py-2 rounded-md cursor-pointer ${
                 selectedSection === "work"
                   ? "bg-blue-800 text-white"
-                  : "bg-transparent ring-1"
+                  : "bg-transparent border"
               }`}
             >
               Work Experience
@@ -129,7 +129,7 @@ const Experience = () => {
               className={`px-4 py-2 rounded-md cursor-pointer ${
                 selectedSection === "education"
                   ? "bg-blue-800 text-white"
-                  : "bg-transparent ring-1"
+                  : "bg-transparent border"
               }`}
             >
               Education
