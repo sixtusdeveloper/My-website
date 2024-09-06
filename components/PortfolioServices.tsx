@@ -103,7 +103,7 @@ const Services = () => {
               <>
                 <Image 
                 src={selectedService.thumbnail} 
-                width={300} height={300} 
+                width={200} height={200} 
                 alt={selectedService.title} 
                 className="w-20 h-20 mb-4 modal-top-img" 
                 style={{ width: 'auto', height: 'auto' }}
@@ -120,7 +120,7 @@ const Services = () => {
                       <Image 
                       key={idx} 
                       src={image.src} 
-                      width={250} 
+                      width={200} 
                       height={200}
                       alt={image.alt} 
                       className="w-full h-auto object-cover rounded-lg shadow-md modal-img" 
