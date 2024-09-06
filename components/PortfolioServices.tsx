@@ -64,8 +64,8 @@ const Services = () => {
   }, [isModalOpen]);
 
   return (
-    <section id="services" className="bg-secondary relative md:pt-10 px-6 lg:px-16 pb-20">
-      <div className='mx-auto max-w-6xl relative'>
+    <section id="services" className="bg-secondary relative md:pt-10 px-6 lg:px-14 pb-20">
+      <div className='mx-auto max-w-5xl relative'>
         <h1 className="font-bold text-center text-[2.4rem] leading-snug tracking-wider">
           My&nbsp;<span className="text-purple">Services</span>
         </h1>
