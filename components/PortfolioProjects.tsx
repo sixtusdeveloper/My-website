@@ -74,7 +74,7 @@ const Projects = () => {
             className={`px-4 py-2 mx-2 rounded-md tracking-wide cursor-pointer transition-all duration-300 ${
               selectedCategory === "Frontend"
                 ? "bg-blue-800 text-white"
-                : "bg-gray-900 text-white border border-gray-800 hover:bg-blue-600 hover:border-blue-600"
+                : "bg-secondary border"
             }`}
           >
             Frontend Projects
@@ -87,7 +87,7 @@ const Projects = () => {
             className={`px-4 py-2 mx-2 rounded-md tracking-wide transition-all duration-300 ${
               selectedCategory === "Fullstack"
                 ? "bg-blue-800 text-white"
-                : "bg-gray-900 text-white border border-gray-800 hover:bg-blue-600 hover:border-blue-600"
+                : "bg-secondary border"
             }`}
           >
             Fullstack Projects
@@ -168,7 +168,7 @@ const Projects = () => {
                 className={`px-4 py-2 mx-2 rounded-md cursor-pointer transition-all duration-300 ${
                   currentPage === pageNumber
                     ? "bg-blue-800 text-white"
-                    : "bg-gray-900 text-white border border-gray-800 hover:bg-blue-600 hover:border-blue-600"
+                    : "bg-secondary border"
                 }`}
               >
                 {pageNumber}
