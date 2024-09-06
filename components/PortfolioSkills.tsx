@@ -147,41 +147,74 @@ const PortfolioSkills = () => {
             <h3 className="text-2xl font-semibold mb-4">Certifications</h3>
             <ul className="list-none space-y-4">
               <li className="flex items-center space-x-2">
-                <FaAws className="text-yellow-500" /> <span>AWS Certified Developer</span>
+                <FaAws className="text-yellow-500" size={20} />&nbsp;<span>AWS Certified Developer</span>
               </li>
               <li className="flex items-center space-x-2">
-                <SiGooglecloud className="text-blue-500" /> <span>Google Cloud Professional</span>
+                <SiGooglecloud className="text-blue-500" size={20} />&nbsp;<span>Google Cloud Professional</span>
               </li>
               <li className="flex items-center space-x-2">
-                <SiMicrosoftazure className="text-blue-700" /> <span>Microsoft Azure Fundamentals</span>
+                <SiMicrosoftazure className="text-blue-700" size={20} />&nbsp;<span>Microsoft Azure Fundamentals</span>
               </li>
               <li className="flex items-center space-x-2">
-                <SiFreecodecamp className="text-green-500" /> <span>FreeCodeCamp - Responsive Web Design</span>
+                <SiFreecodecamp className="text-green-500" size={20} />&nbsp;<span>FreeCodeCamp - Responsive Web Design</span>
               </li>
               <li className="flex items-center space-x-2">
-                <SiUdemy className="text-purple-600" /> <span>Udemy - Full-stack Developer</span>
+                <SiUdemy className="text-purple-600" size={20} />&nbsp;<span>Udemy - Full-stack Developer</span>
               </li>
               <li className="flex items-center space-x-2">
-                <SiBookstack className="text-blue-700" /> <span>Alison Institute - IT Management (Software & Databases)</span>
+                <SiBookstack className="text-blue-700" size={20} />&nbsp;<span>Alison Institute - IT Management (Software & Databases)</span>
               </li>
               <li className="flex items-center space-x-2">
-                <SiBookstack className="text-green-600" /> <span>Great Learning - Full-stack Developer</span>
+                <SiBookstack className="text-green-600" size={20} />&nbsp;<span>Great Learning - Full-stack Developer</span>
               </li>
               <li className="flex items-center space-x-2">
-                <SiLinkedin className="text-blue-700" /> <span>LinkedIn - Full-stack Developer</span>
+                <SiLinkedin className="text-blue-700" size={20} />&nbsp;<span>LinkedIn - Full-stack Developer</span>
               </li>
               <li className="flex items-center space-x-2">
-                <SiUdacity className="text-purple-600" /> <span>Udacity - Machine Learning</span>
+                <SiUdacity className="text-purple-600" size={20} />&nbsp;<span>Udacity - Machine Learning</span>
               </li>
             </ul>
           </div>
 
           {/* Certifications Section */}
-          <div className="skill-category bg-secondary border p-6 rounded-lg">
+          <div className="py-8">
             <h3 className="text-2xl font-semibold mb-4">Verified Certifications</h3>
-            <ul className="list-none space-y-4">
-              <li>IT Management - Software & Databases</li>
-            </ul>
+            <div className='skill-category bg-secondary border p-6 rounded-lg'>
+              <ul className="list-none space-y-4">
+              <li className="flex items-center space-x-2">
+                <SiBookstack className="text-blue-700" size={20} />&nbsp;<span>Alison Institute - IT Management (Software & Databases)</span>
+              </li>
+              <p><span>Certified - </span>&nbsp;2022 - 2023</p>
+              
+              </ul>
+            </div>
+            <div className='skill-category bg-secondary border p-6 rounded-lg'>
+              <ul className="list-none space-y-4">
+              <li className="flex items-center space-x-2">
+                <SiBookstack className="text-blue-700" size={20} />&nbsp;<span>Alison Institute - IT Management (Software & Databases)</span>
+              </li>
+              <p><span>Certified - </span>&nbsp;2022 - 2023</p>
+              
+              </ul>
+            </div>
+            <div className='skill-category bg-secondary border p-6 rounded-lg'>
+              <ul className="list-none space-y-4">
+              <li className="flex items-center space-x-2">
+                <SiBookstack className="text-blue-700" size={20} />&nbsp;<span>Alison Institute - IT Management (Software & Databases)</span>
+              </li>
+              <p><span>Certified - </span>&nbsp;2022 - 2023</p>
+              
+              </ul>
+            </div>
+            <div className='skill-category bg-secondary border p-6 rounded-lg'>
+              <ul className="list-none space-y-4">
+              <li className="flex items-center space-x-2">
+                <SiBookstack className="text-blue-700" size={20} />&nbsp;<span>Alison Institute - IT Management (Software & Databases)</span>
+              </li>
+              <p><span>Certified - </span>&nbsp;2022 - 2023</p>
+              
+              </ul>
+            </div>
           </div>
         </div>
       </div>
