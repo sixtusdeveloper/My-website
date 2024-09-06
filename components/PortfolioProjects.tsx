@@ -28,7 +28,7 @@ const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false); // Add loading state
 
-  const projectsPerPage = 2;
+  const projectsPerPage = 3;
 
   const filteredProjects = projects.filter(
     (project) => project.category === selectedCategory
@@ -55,7 +55,7 @@ const Projects = () => {
 
 
   return (
-    <div className="relative bg-secondary md:pt-10 mx-auto max-w-7xl px-6 lg:px-10 pb-20" id="Projects">
+    <div className="relative bg-secondary md:pt-10 mx-auto max-w-6xl px-6 lg:px-10 pb-20" id="Projects">
       {/* Loader Overlay */}
       {isLoading && <Loader />} {/* Show loader */}
 
@@ -99,13 +99,13 @@ const Projects = () => {
           <div
             className="relative my-8 group overflow-hidden rounded-3xl shadow-lg transition-transform transform hover:scale-105"
             key={id}
-            style={{ width: "300px", height: "300px" }}
+            style={{ width: "300px", height: "200px" }}
           >
             <Image
               src={img}
               alt={title}
               width={300}
-              height={300}
+              height={200}
               className="w-full h-3/5 object-cover transition-opacity duration-300 group-hover:opacity-75 project-img"
               // style={{ width: 'auto', height: 'auto' }}
             />

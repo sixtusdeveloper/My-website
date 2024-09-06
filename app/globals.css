@@ -156,7 +156,14 @@
   position: relative !important;
   padding: 10px;
   overflow: hidden;
-
+}
+.project-img{
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover !important; 
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  overflow: hidden !important;
 }
 .closeButton {
   background: none;

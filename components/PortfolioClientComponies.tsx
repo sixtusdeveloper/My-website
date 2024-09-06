@@ -37,31 +37,37 @@ const Collaboration = ({
           </h3>
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
             {/* Company Logos */}
-            <Image
-              alt="Kropmann Logo"
-              src={CompanyImgOne || "/kropmann-logo.png"}
-              width={150}
-              height={100}
-              style={{ width: 'auto', height: 'auto' }}
-              className="col-span-2 max-h-45 w-full object-contain lg:col-span-1 collaborator-logo"
-            />
-            <Image
-              alt="Upwork Logo"
-              src={CompanyImgTwo || "/upwork-logo.png"}
-              width={150}
-              height={100}
-              style={{ width: 'auto', height: 'auto' }}
-              className="col-span-2 max-h-45 w-full object-contain lg:col-span-1 collaborator-logo"
-            />
-            <Image
-              alt="Altschool Logo"
-              src={CompanyImgThree || "/altschool-logo.png"}
-              width={150}
-              height={100}
-              style={{ width: 'auto', height: 'auto' }}
-              className="col-span-2 max-h-45 w-full object-contain lg:col-span-1 collaborator-logo"
-            />
-            <span className="flex justify-center items-center gap-1">
+            <span>
+              <Image
+                alt="Kropmann Logo"
+                src={CompanyImgOne || "/kropmann-logo.png"}
+                width={150}
+                height={100}
+                style={{ width: 'auto', height: 'auto' }}
+                className="col-span-2 max-h-45 w-full object-contain lg:col-span-1 collaborator-logo"
+              />
+            </span>
+            <span>
+              <Image
+                alt="Upwork Logo"
+                src={CompanyImgTwo || "/upwork-logo.png"}
+                width={150}
+                height={100}
+                style={{ width: 'auto', height: 'auto' }}
+                className="col-span-2 max-h-45 w-full object-contain lg:col-span-1 collaborator-logo"
+              />
+            </span>
+            <span>
+              <Image
+                alt="Altschool Logo"
+                src={CompanyImgThree || "/altschool-logo.png"}
+                width={150}
+                height={100}
+                style={{ width: 'auto', height: 'auto' }}
+                className="col-span-2 max-h-45 w-full object-contain lg:col-span-1 collaborator-logo"
+              />
+            </span>
+            <span className="flex justify-center items-center">
               <Image
                 alt="Freelancer Logo"
                 src={CompanyImgFour || "/freelancer-logo.png"}
@@ -70,16 +76,18 @@ const Collaboration = ({
                 style={{ width: 'auto', height: 'auto' }}
                 className="col-span-2 max-h-45 w-full object-contain sm:col-start-2 lg:col-span-1 collaborator-logo"
               />
-              <span className="text-xl font-bold tracking-wide">freelancer</span>
+              <span className="text-xl font-bold ml-1 tracking-wide">freelancer</span>
             </span>
-            <Image
-              alt="Skilledup Life Logo"
-              src={CompanyImgFive || "/skilledup-life-logo.png"}
-              width={150}
-              height={100}
-              style={{ width: 'auto', height: 'auto' }}
-              className="col-span-2 col-start-2 max-h-45 w-full object-contain sm:col-start-auto lg:col-span-1 collaborator-logo"
-            />
+            <span>
+              <Image
+                alt="Skilledup Life Logo"
+                src={CompanyImgFive || "/skilledup-life-logo.png"}
+                width={150}
+                height={100}
+                style={{ width: 'auto', height: 'auto' }}
+                className="col-span-2 col-start-2 max-h-45 w-full object-contain sm:col-start-auto lg:col-span-1 collaborator-logo"
+              />
+            </span>
           </div>
           <div className="hidden sm:mt-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-4 my-1 text-sm leading-6 text-blue-400 border">

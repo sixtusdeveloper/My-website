@@ -159,7 +159,7 @@ const Experience = () => {
                       </span>
                     </span>
                   </p>
-                  <p className="text-base">
+                  <p className="text-base inline-flex">
                     <span className="text-base">{experience.nature} - </span>
                     <span className="ml-1">
                       <time
