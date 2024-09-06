@@ -117,7 +117,7 @@ const Projects = () => {
                   Curious of the magic behind?{" "}
                   <a href={githubLink} target="_blank" className="font-semibold text-blue-600 cursor-pointer">
                     <span aria-hidden="true" className="absolute inset-0" />
-                    Check project codebase{" "}
+                    Check codebase{" "}
                     <span aria-hidden="true">&rarr;</span>
                   </a>
                 </div>
@@ -128,8 +128,8 @@ const Projects = () => {
                         key={index}
                         className="border rounded-full bg-secondary lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                         style={{
-                          transform: `translateX(-${index * 8}px)`, // Adjust the X-axis translation to make them touch slightly
-                          zIndex: iconLists.length - index, // Make sure the stacking is proper
+                          transform: `translateX(-${index * 8}px)`, // Adjusted the X-axis translation to make them touch slightly
+                          zIndex: iconLists.length - index, // Making sure the stacking is proper
                         }}
                       >
                         <Image 
