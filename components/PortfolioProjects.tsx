@@ -56,7 +56,7 @@ const Projects = () => {
 
   return (
     <div className="relative bg-secondary w-full mx-auto md:pt-10 px-6 lg:px-10 pb-20" id="projects">
-      <div className="mx-auto max-w-6xl relative">
+      <div className="mx-auto max-w-5xl relative">
         {/* Loader Overlay */}
         {isLoading && <Loader />} {/* Show loader */}
 
@@ -122,14 +122,14 @@ const Projects = () => {
                   </a>
                 </div>
                 <div className="flex items-center justify-between mt-4">
-                  <div className="relative"> {/* Add relative here */}
+                  <div className="relative flex">
                     {iconLists.map((icon, index) => (
                       <div
                         key={index}
-                        className="absolute border rounded-full bg-secondary lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                        className="border rounded-full bg-secondary lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                         style={{
-                          transform: `translateY(${5 * index}px)`, // Adjust Y-axis translation
-                          zIndex: iconLists.length - index, // Ensure proper stacking order
+                          transform: `translateX(-${index * 8}px)`, // Adjust the X-axis translation to make them touch slightly
+                          zIndex: iconLists.length - index, // Make sure the stacking is proper
                         }}
                       >
                         <Image 
@@ -153,7 +153,6 @@ const Projects = () => {
                     Check Live Site <FaLocationArrow className="ml-2" />
                   </a>
                 </div>
-
               </div>
             </div>
           ))}
