@@ -2,9 +2,9 @@ import React from 'react'
 
 const PortfolioSkills = () => {
   return (
-    <section id="skills" className="skills-section bg-secondary py-12">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-8">Skills & Tools</h2>
+    <section id="skills" className="bg-secondary relative md:pt-10 px-6 lg:px-14 pb-20">
+      <div className="mx-auto max-w-5xl relative">
+        <h2 className="font-bold text-center text-[2.4rem] leading-snug tracking-wider">Skills & Tools</h2>
 
         {/* Skills Grid  */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -18,6 +18,7 @@ const PortfolioSkills = () => {
               <li>React</li>
               <li>Tailwind CSS</li>
               <li>Next.js</li>
+              <li>TypeScript</li>
             </ul>
           </div>
 
@@ -28,9 +29,10 @@ const PortfolioSkills = () => {
               <li>Node.js</li>
               <li>Express.js</li>
               <li>Python</li>
-              <li>Flask</li>
+              <li>Django</li>
               <li>RESTful APIs</li>
               <li>GraphQL</li>
+              <li>Java</li>
             </ul>
           </div>
 
@@ -73,9 +75,12 @@ const PortfolioSkills = () => {
           <div className="skill-category bg-secondary p-6 rounded-lg shadow-md">
             <h3 className="text-2xl font-semibold mb-4">Certifications</h3>
             <ul className="list-disc list-inside space-y-2">
-              <li>AWS Certified Developer</li>
+              <li>AWS Certified Practioner</li>
               <li>Google Cloud Professional</li>
               <li>Microsoft Azure Fundamentals</li>
+              <li>Responsive Web Developer</li>
+              <li>IT Management - Software & Databases</li>
+              <li>Full-stack Developer</li>
             </ul>
           </div>
         </div>
