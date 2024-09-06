@@ -81,7 +81,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
         className="absolute inset-0 my-8 bg-secondary bg-opacity-75 backdrop-filter backdrop-blur-md"
         onClick={onClose}
       />
-      <div className="relative bg-secondary border my-8 shadow-lg rounded-lg max-w-3xl w-full p-6">
+      <div className="relative bg-secondary border shadow-lg rounded-lg max-w-3xl w-full p-6">
         <button
           onClick={onClose}
           className="absolute top-6 z-40 right-4 p-2 cursor-pointer border rounded-full bg-secondary"
