@@ -171,17 +171,20 @@ const Blog = () => {
         </div>
       )}
       {/* Read More Modal */}
+     {/* Read More Modal */}
       {selectedPost && !isLoading && (
         <div
           onClick={handleModalClick}
           className="fixed inset-0 bg-black bg-opacity-75 p-6 flex justify-center items-center z-50"
           style={{ pointerEvents: 'auto' }}
         >
-          <div className="bg-secondary border rounded-lg shadow-lg max-w-2xl w-full max-h-[90vh] relative">
-            {/* Close Button */}
+          <div className="bg-secondary border rounded-lg shadow-lg max-w-2xl w-full max-h-[90vh] relative overflow-y-auto no-scrollbar">
+            
+            {/* Adjusted Close Button */}
             <button
               onClick={closeModal}
-              className="fixed top-4 right-4 z-10 text-gray-500 hover:text-red-500 text-2xl"
+              className="absolute top-4 right-4 z-50 text-gray-500 hover:text-red-500 text-2xl"
+              style={{ position: 'sticky' }} // Make the button sticky relative to the modal
             >
               <IoClose size={18} />
             </button>
@@ -213,6 +216,7 @@ const Blog = () => {
           </div>
         </div>
       )}
+
     </section>
   );
 };
