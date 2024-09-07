@@ -69,7 +69,7 @@ const Services = () => {
         <h1 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider">
           My&nbsp;<span className="text-purple">Services</span>
         </h1>
-        <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
+        <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-8">
           {services.map((service, index) => (
             <Button
               key={index}
