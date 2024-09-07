@@ -403,8 +403,8 @@ p {
 }
 
 .certs-img{
-  width: 60 !important;
-  height: 60 !important;
+  width: 80px !important;
+  /* height: 80px !important; */
   object-fit: cover !important;
   border-radius: 8px !important;
   overflow: hidden !important;
