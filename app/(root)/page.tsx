@@ -9,7 +9,7 @@ import { navigation } from '@/data';
 import ScrollIndicator from '@/components/ScrollIndicator';
 import About from '@/components/About';
 import Blog from '@/components/Blog';
-import Testimonials from '@/components/Testimonials';
+import Testimonials from '@/components/PortfolioClients';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
 
