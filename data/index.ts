@@ -282,7 +282,7 @@ export const services: Service[] = [
       ],
       images: [
         {
-          src: "/authentication02.jpg",
+          src: "/authentication02.png",
           alt: "User Management Dashboard"
         },
         {
