@@ -65,7 +65,9 @@ export default function Navbar({
         <header className={`fixed inset-x-0 top-0 z-50 transition-colors border-b bg-secondary duration-500 ${scrolling ? 'border-b' : 'bg-transparent'}`}>
           <nav aria-label="Global" className="flex items-center justify-between p-4 lg:px-8">
             <div className="flex lg:flex-1">
-              <Logo src={LogoImg} alt="Sixtusdev Logo" title={title} />
+              <a href="/">
+                <Logo src={LogoImg} alt="Sixtusdev Logo" title={title} />
+              </a>
             </div>
             <div className="flex lg:hidden">
               <button
