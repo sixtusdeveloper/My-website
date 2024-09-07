@@ -7,7 +7,6 @@ import { SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiFlask, SiPython, SiK
 import { AiFillApi } from "react-icons/ai"; 
 import { FiBox } from "react-icons/fi"; 
 import { FaJava } from "react-icons/fa";
-// import PortfolioCertifications from '@/components/PortfolioCertifications';
 
 const PortfolioSkills = () => {
   return (
