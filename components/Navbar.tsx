@@ -67,8 +67,6 @@ export default function Navbar({
             <div className="flex lg:flex-1">
               <Logo src={LogoImg} alt="Sixtusdev Logo" title={title} />
             </div>
-            {/* Toggle Menu */}
-            <ToggleMode />
             <div className="flex lg:hidden">
               <button
                 type="button"
