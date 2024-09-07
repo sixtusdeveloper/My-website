@@ -5,6 +5,7 @@ import Image from "next/image";
 import { blogPosts } from "@/data";
 import { FaLocationArrow } from "react-icons/fa";
 import BlogModal from "@/components/ui/BlogModal"; // Import the BlogModal component
+import { IoClose } from "react-icons/io5";
 
 // Truncate the Project title to a maximum length
 const MAX_TITLE_LENGTH = 50;
@@ -169,7 +170,6 @@ const Blog = () => {
           <div className="animate-spin rounded-full border-t-4 border-blue-500 h-16 w-16"></div>
         </div>
       )}
-
       {/* Read More Modal */}
       {selectedPost && !isLoading && (
         <div
@@ -177,13 +177,16 @@ const Blog = () => {
           className="fixed inset-0 bg-black bg-opacity-75 p-6 flex justify-center items-center z-50"
           style={{ pointerEvents: 'auto' }}
         >
-          <div className="bg-secondary border rounded-lg shadow-lg max-w-2xl w-full max-h-[90vh] relative overflow-y-auto no-scrollbar">
+          <div className="bg-secondary border rounded-lg shadow-lg max-w-2xl w-full max-h-[90vh] relative">
+            {/* Close Button */}
             <button
               onClick={closeModal}
-              className="absolute top-4 right-4 text-gray-500 hover:text-red-500 text-2xl"
+              className="fixed top-4 right-4 z-10 text-gray-500 hover:text-red-500 text-2xl"
             >
-              &times;
+              <IoClose size={18} />
             </button>
+            
+            {/* Modal Content */}
             <div className="p-6 h-full overflow-y-auto no-scrollbar" style={{ scrollbarWidth: 'thin', scrollBehavior: 'smooth' }}>
               <h3 className="text-2xl font-bold mb-4">{selectedPost.title}</h3>
               <Image
