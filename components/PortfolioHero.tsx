@@ -10,7 +10,6 @@ import { useState } from "react";
 import HireMeModal from "@/components/ui/HireMeModal";
 import ReadMoreModal from "@/components/ui/ReadMoreModal"; 
 import Image from "next/image";
-import { log } from "console";
 import Loader from "./ui/Loader";
 
 const Hero = () => {
@@ -77,7 +76,7 @@ const Hero = () => {
             )}
           </h3>
 
-          <h1 className="text-[2.5rem] font-bold lg:font-bolder tracking-wide lg:tracking-wider text-center lg:text-[3rem]">
+          <h1 className="text-[2.4rem] font-bold lg:font-bolder tracking-wide lg:tracking-wider text-center lg:text-[3rem]">
             Welcome to my <span className="text-purple">Portfolio</span>
           </h1>
           <p className="py-8 text-center tracking-wide leading-6 text-[16px]">
@@ -160,7 +159,7 @@ const Hero = () => {
           <h2 className="text-xl font-bold tracking-wide text-center">
             Sixtus Aondoakaa
           </h2>
-          <h4 className="text-lg font-semibold tracking-wide text-center p-1">
+          <h4 className="text-base font-semibold tracking-wide text-center">
             Software Engineer
           </h4>
         </div>
