@@ -182,7 +182,7 @@ const Blog = () => {
             {/* Adjusted Close Button - Positioned at top-right */}
             <button
               onClick={closeModal}
-              className="absolute top-4 right-4 z-50 bg-secondary border rounded-full hover:text-red-500 text-2xl"
+              className="absolute top-4 right-4 z-50 p-1 bg-secondary border rounded-full hover:text-red-500 text-2xl"
               style={{ position: 'absolute' }}  
             >
               <IoClose size={18} />
