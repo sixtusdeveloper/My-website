@@ -29,9 +29,9 @@ const About = () => {
           height={200}
           className="profile_image relative rounded-full"
           />
-          <h3 className="text-lg font-medium tracking-wide py-1">Sixtus Aondoakaa</h3>
-          <h4 className="text-base font-medium tracking-wide">Software Engineer</h4>
         </div>
+        <h3 className="text-lg font-medium tracking-wide py-1">Sixtus Aondoakaa</h3>
+        <h4 className="text-base font-medium tracking-wide">Software Engineer</h4>
         <h2 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider mb-4">About Me</h2>
         <p className="text-base tracking-wide leading-relaxed mb-4">
           Hi, I’m Sixtus Aondoakaa, a passionate Software Engineer, DevOps Engineer and a tech Educator dedicated to crafting scalable and innovative web solutions. My journey in tech began with a fascination for how technology shapes our world. Over the years, I have navigated the complexities of full-stack development, embracing both front-end and back-end technologies to build robust applications.
