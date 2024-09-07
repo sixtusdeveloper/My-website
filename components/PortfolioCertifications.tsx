@@ -113,7 +113,7 @@ const Certifications = () => {
               className="flex-1 border bg-secondary"
               onClick={() => openModal(certification)}
             >
-                <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
+                <div className="flex lg:flex-row flex-col lg:items-center p-3 py-4 md:p-5 lg:p-6 gap-2">
                     
                     <Image
                         src={certification.imageUrl}
@@ -125,7 +125,7 @@ const Certifications = () => {
                     
                     <div className="lg:ms-5">
                         <h2 className="text-start text-xl md:text-2xl font-bold">{certification.title}</h2>
-                        <p className="text-base font-semibold mt-2">{certification.institution}&nbsp;-&nbsp;{certification.year}</p>
+                        <p className="text-base font-semibold mt-1">{certification.institution}&nbsp;-&nbsp;{certification.year}</p>
                         <p className="text-base text-start tracking-wide leading-6 mt-3 font-semibold">
                             {truncateDescription(certification.desc ?? '', MAX_DESCRIPTION_LENGTH)}&nbsp;
                             <span className="text-blue-600 text-sm text-end font-medium tracking-wide">
