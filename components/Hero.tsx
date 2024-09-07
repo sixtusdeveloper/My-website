@@ -25,7 +25,7 @@ const Home = () => {
   };
 
   const handleLeave = () => {
-    window.open('https://portfolio-update-notice.vercel.app/', '_blank'); // Redirect to portfolio
+    window.location.href = 'https://www.sixtusdev.net/pages/portfolio'; // Redirect to portfolio
   };
 
   return (
