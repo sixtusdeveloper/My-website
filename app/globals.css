@@ -387,3 +387,17 @@ p {
   filter: grayscale(0%); /* Remove grayscale on hover */
   opacity: 1; /* Increase opacity for better contrast */
 }
+
+/* Hide scrollbar but keep content scrollable */
+.scrollable-content {
+  overflow: auto;
+}
+
+.scrollable-content::-webkit-scrollbar {
+  width: 0;
+}
+
+.scrollable-content {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,10 +1,9 @@
+'use client';
+
 import React, { useState } from 'react';
 import { FaGraduationCap } from 'react-icons/fa';
 import { AiOutlineLoading3Quarters } from 'react-icons/ai';
-import Modal from 'react-modal';
 import { certificationsData, Certification } from '@/data/certificationsData'; // Import data
-
-Modal.setAppElement('#__next'); // Required for accessibility in Next.js
 
 const PortfolioCertifications = () => {
   const [currentPage, setCurrentPage] = useState<number>(1);
@@ -71,7 +70,10 @@ const PortfolioCertifications = () => {
                 <a
                   href="#"
                   className="text-blue-600 underline mt-4 inline-block"
-                  onClick={() => handleViewCredential(cert.certUrl)}
+                  onClick={(e) => {
+                    e.preventDefault(); // Prevent default anchor behavior
+                    handleViewCredential(cert.certUrl);
+                  }}
                 >
                   View Credential
                 </a>
@@ -83,14 +85,14 @@ const PortfolioCertifications = () => {
         {/* Pagination controls */}
         <div className="flex justify-center mt-8 space-x-4">
           <button
-            className="px-4 py-2 bg-transparent border rounded-lg"
+            className={`px-4 py-2 border rounded-lg ${currentPage === 1 ? 'bg-gray-300' : 'bg-transparent'}`}
             onClick={handlePreviousPage}
             disabled={currentPage === 1}
           >
             Previous
           </button>
           <button
-            className="px-4 py-2 bg-transparent border rounded-lg"
+            className={`px-4 py-2 border rounded-lg ${currentPage === totalPages ? 'bg-gray-300' : 'bg-transparent'}`}
             onClick={handleNextPage}
             disabled={currentPage === totalPages}
           >
@@ -99,41 +101,40 @@ const PortfolioCertifications = () => {
         </div>
       </div>
 
-      {/* Modal for viewing the certificate */}
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        className="bg-secondary p-6 max-w-3xl mx-auto mt-20 rounded-lg shadow-lg relative"
-        overlayClassName="fixed inset-0 bg-black bg-opacity-50"
-      >
-        {isLoading ? (
-          <div className="flex justify-center items-center h-full">
-            <AiOutlineLoading3Quarters size={50} className="animate-spin" />
-          </div>
-        ) : (
-          certToView && (
-            <>
-              <h3 className="text-xl font-bold mb-4">Certification</h3>
-              <embed src={certToView} type="application/pdf" width="100%" height="400px" />
-              <div className="flex justify-between mt-4">
-                <button
-                  onClick={closeModal}
-                  className="px-4 py-2 bg-red-500 text-white rounded-lg"
-                >
-                  Close
-                </button>
-                <a
-                  href={certToView}
-                  download
-                  className="px-4 py-2 bg-blue-500 text-white rounded-lg"
-                >
-                  Download
-                </a>
+      {/* Custom Modal for viewing the certificate */}
+      {modalIsOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-secondary p-6 max-w-3xl mx-auto rounded-lg shadow-lg relative overflow-hidden">
+            {isLoading ? (
+              <div className="flex justify-center items-center h-full">
+                <AiOutlineLoading3Quarters size={50} className="animate-spin" />
               </div>
-            </>
-          )
-        )}
-      </Modal>
+            ) : (
+              certToView && (
+                <div className="h-[80vh] overflow-auto">
+                  <h3 className="text-xl font-bold mb-4">Certification</h3>
+                  <embed src={certToView} type="application/pdf" width="100%" height="400px" />
+                  <div className="flex justify-between mt-4">
+                    <button
+                      onClick={closeModal}
+                      className="px-4 py-2 bg-red-500 text-white rounded-lg"
+                    >
+                      Close
+                    </button>
+                    <a
+                      href={certToView}
+                      download
+                      className="px-4 py-2 bg-blue-600 text-white rounded-lg"
+                    >
+                      Download
+                    </a>
+                  </div>
+                </div>
+              )
+            )}
+          </div>
+        </div>
+      )}
     </section>
   );
 };
