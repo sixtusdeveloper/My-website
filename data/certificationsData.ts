@@ -40,7 +40,7 @@ export const certificationsData: Certification[] = [
     institution: 'Udemy',
     year: '2024 - 2024',
     desc: 'This certification demonstrates a comprehensive understanding of both front-end and back-end web development. It covers core technologies such as HTML, CSS, JavaScript, and modern frameworks like React for front-end, as well as server-side technologies like Node.js, Express, and databases (SQL/NoSQL). The certification also includes knowledge of RESTful APIs, version control (Git), and deployment practices, enabling individuals to build and maintain fully functional, scalable web applications.',
-    certUrl: '/certificates/full-stack-web-development.pdf',
+    certUrl: '/certificates/cert.png',
     imageUrl: '/certificates/full-stack-web-development-logo.png', // Image URL
   },
 ];

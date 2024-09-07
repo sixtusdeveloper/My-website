@@ -113,7 +113,7 @@ const Certifications = () => {
               className="flex-1 border bg-secondary"
               onClick={() => openModal(certification)}
             >
-                <div className="flex lg:flex-row flex-col lg:items-center p-2 py-4 md:p-4 lg:p-4 gap-2">
+                <div className="flex lg:flex-row flex-col lg:items-center p-4 py-4 md:p-4 lg:p-4 gap-2">
                     
                     <Image
                         src={certification.imageUrl}
@@ -144,14 +144,14 @@ const Certifications = () => {
           <button
             onClick={() => handlePageChange('previous')}
             disabled={currentPage === 1}
-            className={`px-4 py-2 rounded-md ${currentPage === 1 ? 'bg-transparent' : 'bg-blue-600 hover:bg-blue-800 text-white'} focus:outline-none`}
+            className={`px-4 py-2 rounded-md ${currentPage === 1 ? 'bg-transparent border' : 'bg-blue-600 hover:bg-blue-800 text-white'} focus:outline-none`}
           >
             Previous
           </button>
           <button
             onClick={() => handlePageChange('next')}
             disabled={currentPage === totalPages}
-            className={`px-4 py-2 rounded-md ${currentPage === totalPages ? 'bg-transparent' : 'bg-blue-600 hover:bg-blue-800 text-white'} focus:outline-none`}
+            className={`px-4 py-2 rounded-md ${currentPage === totalPages ? 'bg-transparent border' : 'bg-blue-600 hover:bg-blue-800 text-white'} focus:outline-none`}
           >
             Next
           </button>
