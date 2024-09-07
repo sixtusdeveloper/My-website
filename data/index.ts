@@ -16,6 +16,7 @@ export const portfolioNavLinks = [
     { name: 'Services', href: '#services' },
     { name: 'Experience', href: '#experience' },
     { name: 'Skills', href: '#skills' },
+    { name: 'Certifications', href: '#certifications' },
     { name: 'Projects', href: '#projects' },
     { name: 'Clients', href: '#clients' },
   ]; 
