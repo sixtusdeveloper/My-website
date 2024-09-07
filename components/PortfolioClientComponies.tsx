@@ -76,7 +76,7 @@ const Collaboration = ({
                 style={{ width: 'auto', height: 'auto' }}
                 className="col-span-2 max-h-45 w-full object-contain sm:col-start-2 lg:col-span-1 collaborator-logo"
               />
-              <span className="text-xl font-bold ml-1 tracking-wide">freelancer</span>
+              <span className="text-sm lg:text-xl font-bold ml-8 lg:ml-2">freelancer</span>
             </span>
             <span>
               <Image
