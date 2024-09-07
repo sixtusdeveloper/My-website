@@ -5,6 +5,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import Image from "next/image";
 import Loader from "@/components/ui/Loader";
+import { FiArrowRight } from 'react-icons/fi'; // Feather Icons
 
 
 
@@ -113,13 +114,11 @@ const Projects = () => {
               <div className="p-4 my-1">
                 <h1 className="font-bold text-xl truncate">{truncateTitle(title, MAX_TITLE_LENGTH)}</h1>
                 <p className="mt-2 text-sm line-clamp-2">{truncateDescription(des,  MAX_DESCRIPTION_LENGTH)}</p>
-                {/* <div className="inline-flex items-center w-full space-x-2 relative rounded-full border px-2 py-1 text-sm bg-transparent">
-                  <span className="text-sm">Check the magic behind?{" "}</span>
-                  <a href={githubLink} target="_blank" className="font-semibold text-blue-500 hover:text-blue-300 cursor-pointer">
-                    View codebase{" "}
-                    <span aria-hidden="true">&rarr;</span>
-                  </a>
-                </div> */}
+               
+                <a href={githubLink} target="_blank" className="inline-flex items-center w-full relative font-semibold  px-2 py-1 text-sm text-blue-500 hover:text-blue-300 cursor-pointer">
+                  Project codebase <FiArrowRight className="ml-2" />
+                </a>
+                
                 <div className="flex items-center justify-between mt-4">
                   <div className="relative flex">
                     {iconLists.map((icon, index) => (
