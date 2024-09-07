@@ -61,7 +61,7 @@ const Projects = () => {
         {/* Loader Overlay */}
         {isLoading && <Loader />}
 
-        <h1 className="font-bold text-center lg:text-[2.4rem] text-2xl leading-snug tracking-wider">
+        <h1 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider">
           My&nbsp;<span className="text-purple">Recent Projects</span>
         </h1>
 

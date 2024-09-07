@@ -109,7 +109,7 @@ const Experience = () => {
       <div className="bg-secondary max-w-5xl mx-auto relative">
 
         <div className="my-8 relative text-center">
-          <h2 className="font-bold text-center text-[2.4rem] leading-snug tracking-wider mb-8">
+          <h2 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider mb-8">
             My Experience
           </h2>
           <div className="flex justify-center space-x-4 mb-8">

@@ -101,7 +101,7 @@ const Certifications = () => {
   return (
     <section id="certifications" className="bg-secondary relative md:pt-10 px-6 lg:px-14 pb-20">
       <div className='mx-auto max-w-5xl relative'>
-        <h1 className="font-bold text-center text-[2.4rem] leading-snug tracking-wider">
+        <h1 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider">
           My&nbsp;<span className="text-purple">Certifications</span>
         </h1>
         <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
@@ -113,7 +113,7 @@ const Certifications = () => {
               className="flex-1 border bg-secondary"
               onClick={() => openModal(certification)}
             >
-                <div className="flex lg:flex-row flex-col lg:items-center p-4 py-4 md:p-4 lg:p-4 gap-2">
+                <div className="flex lg:flex-row flex-col lg:items-center px-4 py-4 md:p-4 lg:p-4 gap-2">
                     
                     <Image
                         src={certification.imageUrl}

@@ -6,7 +6,7 @@ const ReachOut = () => {
   return (
     <div className="bg-secondary relative lg:pt-10 mx-auto w-full px-6 lg:px-16 pb-20" id="ReachOut">
       <div className="max-w-2xl mx-auto relative">
-        <h1 className="font-bold text-center text-[2.4rem] leading-snug tracking-wider">
+        <h1 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider">
           Ready to take your <span className="text-purple">Digital Presence</span> to the Next Level?
         </h1>
         <p className='lg:mt-6 my-5 text-center text-md'>

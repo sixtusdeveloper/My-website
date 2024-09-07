@@ -27,7 +27,7 @@ const Collaboration = ({
 
   return (
     <div className="relative mx-auto max-w-7xl bg-secondary px-6 lg:px-8 py-10 lg:py-16">
-      <h1 className="font-bold text-center text-[2.4rem] leading-snug tracking-wider">
+      <h1 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider">
         Trusted <span className="text-purple">by Companies</span>
       </h1>
       <div className="bg-black-100 py-14 sm:py-12">

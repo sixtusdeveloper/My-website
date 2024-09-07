@@ -67,6 +67,8 @@ export default function Navbar({
             <div className="flex lg:flex-1">
               <Logo src={LogoImg} alt="Sixtusdev Logo" title={title} />
             </div>
+            {/* Toggle Menu */}
+            <ToggleMode />
             <div className="flex lg:hidden">
               <button
                 type="button"
@@ -116,9 +118,9 @@ export default function Navbar({
                   <span className='text-white text-base leading-6 tracking-wide font-medium'>Sixtusdev</span>
                 </a>
                 {/* Toggle mode for dark and light mode */}
-                <div className='px-4'>
-                  <ToggleMode />
-                </div>
+              
+                <ToggleMode />
+                
                 <button
                   type="button"
                   onClick={() => setMobileMenuOpen(false)}
@@ -145,8 +147,6 @@ export default function Navbar({
                       </a>
                     ))}
                   </div>
-                  {/* Toggle mode for dark and light mode  */}
-                  <ToggleMode />
                   <div className="py-3">
                     <div className="flex items-center gap-2">
                       <UserButton />

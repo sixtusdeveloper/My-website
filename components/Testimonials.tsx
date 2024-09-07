@@ -5,7 +5,7 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className="py-10 px-8 bg-secondary">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl tracking-wide font-bold mb-8">Kind words from Clients and Collaborators.</h2>
+        <h2 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider mb-8">Kind words from Clients and Collaborators.</h2>
         <div className="grid gap-8 md:grid-cols-3">
             <blockquote className="mb-6">
                 <p className="italic text-base leading-relaxed tracking-wide">"Sixtus is a fantastic developer who always delivers on time. His attention to detail and problem-solving skills are top-notch!"</p>

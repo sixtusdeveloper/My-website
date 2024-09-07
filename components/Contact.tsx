@@ -62,7 +62,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 px-4 lg:px-8 bg-secondary">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8">Let’s Connect</h2>
+        <h2 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider mb-8">Let’s Connect</h2>
         <p className="mb-8 text-md leading-relaxed tracking-wide">
           Feel free to reach out for collaborations, job opportunities, or just to say hi!
         </p>
