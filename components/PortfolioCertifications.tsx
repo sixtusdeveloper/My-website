@@ -183,7 +183,7 @@ const Certifications = () => {
                         src={selectedCertification.imageUrl}
                         alt={selectedCertification.title}
                         className="rounded-md w-full relative"
-                        width={500}
+                        width={600}
                         height={300}
                         objectFit="cover"
                         style={{ width: 'auto', height: 'auto' }}
