@@ -89,7 +89,7 @@ const ContactForm = () => {
                     fieldType={FormFieldType.INPUT}
                     control={form.control}
                     name="name"
-                    label="Fullname"
+                    label="Full name"
                     placeholder="John Doe"
                 />
                 <CustomFormField 
