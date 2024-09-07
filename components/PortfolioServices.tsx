@@ -87,7 +87,12 @@ const Services = () => {
                 />
                 <div className="lg:ms-5">
                   <h1 className="text-start text-xl md:text-2xl font-bold">{service.title}</h1>
-                  <p className="text-base text-start tracking-wide leading-6 mt-3 font-semibold">{truncateDescription(service.desc, MAX_DESCRIPTION_LENGTH)}&nbsp;<span className="text-blue-600 text-sm text-end font-medium tracking-wide">Read more</span></p>
+                  <p className="text-base text-start tracking-wide leading-6 mt-3 font-semibold">
+                    {truncateDescription(service.desc, MAX_DESCRIPTION_LENGTH)}&nbsp;
+                    <span className="text-blue-600 text-sm text-end font-medium tracking-wide">
+                      Read more
+                    </span>
+                  </p>
                 </div>
               </div>
             </Button>
