@@ -106,7 +106,7 @@ const Experience = () => {
       className="relative bg-secondary w-full pt-8 lg:pt-10 px-4 lg:px-8 pb-20"
       ref={sectionRef} // Reference to the experience section
     >
-      <div className="bg-secondary max-w-5xl mx-auto relative">
+      <div className="bg-secondary max-w-full lg:max-w-5xl mx-auto relative">
 
         <div className="my-8 relative text-center">
           <h2 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider mb-8">
