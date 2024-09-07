@@ -89,7 +89,7 @@ const Blog = () => {
         <h2 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider mb-8">Few Selection of my Blog</h2>
         <div className="grid gap-2 lg:gap-6 md:grid-cols-3">
           {currentPosts.map((post) => (
-            <article key={post.id} className="p-4 bg-secondary border rounded-lg shadow">
+            <article key={post.id} className="p-4 bg-secondary border rounded-lg">
               <Image
                 src={post.imageUrl}
                 alt={post.title}

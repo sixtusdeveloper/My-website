@@ -146,7 +146,7 @@ const Experience = () => {
                 }`}
               >
                 <div className="timeline-icon"></div>
-                <div className="bg-secondary border p-6 rounded-lg shadow-lg">
+                <div className="bg-secondary border p-6 rounded-lg">
                   <h3 className="text-lg font-bold tracking-wide">
                     {experience.title}
                   </h3>
@@ -196,7 +196,7 @@ const Experience = () => {
                 >
                   <div className="timeline-icon"></div>
 
-                  <div className="bg-secondary border p-6 rounded-lg shadow-lg">
+                  <div className="bg-secondary border p-6 rounded-lg">
                     <h3 className="text-lg font-bold tracking-wider mb-1">
                       {truncateCourse(edu.degree, MAX_COURSE_LENGTH)}
                     </h3>
@@ -276,7 +276,7 @@ const Experience = () => {
                     <div className="mt-6 flex items-center justify-center">
                       <button
                         onClick={handleDownload}
-                        className={`px-4 py-2 flex items-center cursor-pointer justify-center space-x-2 rounded-md shadow-md ${
+                        className={`px-4 py-2 flex items-center cursor-pointer justify-center space-x-2 rounded-md${
                           downloadStatus === "downloaded"
                             ? "bg-green-500 text-white"
                             : "bg-blue-600 text-white hover:bg-blue-700"
