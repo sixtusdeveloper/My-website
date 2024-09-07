@@ -200,13 +200,13 @@ const Experience = () => {
                     <h3 className="text-lg font-bold tracking-wider mb-1">
                       {truncateCourse(edu.degree, MAX_COURSE_LENGTH)}
                     </h3>
-                    <p className="inline-flex space-x-2">
+                    <p className="inline-flex space-x-2 mb-4">
                       <span className="text-sm tracking-wide">
                         {edu.institution}&nbsp;-&nbsp;
                         <span className="text-base tracking-wide text-purple">{edu.type}</span>
                       </span>
                     </p>
-                    <p className="text-white-200 text-base py-1">
+                    <p className="text-white-200 text-base py-1 mb-4">
                       {edu.status} 
                     </p>
                     <time
