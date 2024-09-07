@@ -40,7 +40,7 @@ const Home = () => {
             "👋 Hi there!"
           )}
         </h3>
-        <h1 className="text-[2.4rem] font-bold lg:font-bolder tracking-wide lg:tracking-wider text-center lg:text-[3rem]">
+        <h1 className="text-[2.4rem] lg:text-[3rem] tracking-wide font-bold">
           I&apos;m Sixtus, a Passionate Software Engineer Crafting Innovative Solutions
         </h1>
         <p className="py-8 tracking-wide leading-6 text-[16px]">
