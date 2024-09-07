@@ -7,6 +7,7 @@ import { SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiFlask, SiPython, SiK
 import { AiFillApi } from "react-icons/ai"; 
 import { FiBox } from "react-icons/fi"; 
 import { FaJava } from "react-icons/fa";
+import PortfolioCertifications from '@/components/PortfolioCertifications';
 
 const PortfolioSkills = () => {
   return (
@@ -199,32 +200,7 @@ const PortfolioSkills = () => {
               </div>
             </div>
           </div> */}
-          <div className="py-8">
-            <h3 className="text-2xl my-6 font-bold text-center text-[2.4rem] leading-snug tracking-wider">
-              Verified Certifications
-            </h3>
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
-              <div className="skill-category bg-secondary border p-6 rounded-lg">
-                <ul className="list-none space-y-4">
-                  <li className="flex items-center space-x-2">
-                    <SiBookstack className="text-blue-700" size={20} />
-                    <span>Alison Institute - IT Management (Software & Databases)</span>
-                  </li>
-                  <p><span>Certified - </span>2022 - 2023</p>
-                </ul>
-              </div>
-              <div className="skill-category bg-secondary border p-6 rounded-lg">
-                <ul className="list-none space-y-4">
-                  <li className="flex items-center space-x-2">
-                    <SiBookstack className="text-blue-700" size={20} />
-                    <span>Google Cloud Professional</span>
-                  </li>
-                  <p><span>Certified - </span>2023</p>
-                </ul>
-              </div>
-            </div>
-          </div>
-
+          <PortfolioCertifications />
         </div>
       </div>
     </section>
