@@ -38,7 +38,7 @@ const ReadMoreModal: React.FC<ReadMoreModalProps> = ({ isOpen, onClose, children
                 {children} 
                 
                 <p className="text-center text-base tracking-wide leading-6">
-                    You are about to leave my portfolio site and visit my personal website. 
+                    You are about to leave my portfolio site to visit my personal website. 
                     If you wish to explore further, click continue, or cancel to stay here.
                 </p>
                 <div className="flex justify-center mt-6 space-x-4">
