@@ -102,6 +102,7 @@ export default function Navbar({
               </SignedIn>
             </div>
           </nav>
+          {/* Mobile Navigation */}
           <Dialog open={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)} className="lg:hidden">
             <div className="fixed inset-0 z-40" />
             <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -115,7 +116,9 @@ export default function Navbar({
                   <span className='text-white text-base leading-6 tracking-wide font-medium'>Sixtusdev</span>
                 </a>
                 {/* Toggle mode for dark and light mode */}
-                <ToggleMode />
+                <div className='px-4'>
+                  <ToggleMode />
+                </div>
                 <button
                   type="button"
                   onClick={() => setMobileMenuOpen(false)}
