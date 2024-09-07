@@ -14,6 +14,7 @@ import Experience from '@/components/PortfolioExperiences';
 import Skills from '@/components/PortfolioSkills';
 import Projects from '@/components/PortfolioProjects';
 import ReachOut from '@/components/PortfolioReachOut';
+import PortfolioCertifications from '@/components/PortfolioCertifications';
 
 export default function Home() {
 
@@ -30,6 +31,7 @@ export default function Home() {
             <ClientComponenies />
             <Projects />
             <Skills />
+            <PortfolioCertifications />
             <ReachOut />
             <Footer />
             <ScrollIndicator />

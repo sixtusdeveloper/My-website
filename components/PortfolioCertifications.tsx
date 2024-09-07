@@ -6,6 +6,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Modal from '@/components/ui/CertsModal'; // Update the import path if necessary
 import { certificationsData, Certification } from '@/data/certificationsData'; // Import Certification type
 import Image from 'next/image';
+import { Button } from '@/components/ui/MovingBorder';
 import Loader from '@/components/ui/Loader';
 import { AiOutlineDownload } from 'react-icons/ai';
 
@@ -101,9 +102,11 @@ const Certifications = () => {
         </h1>
         <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
           {paginatedCertifications.map((certification, index) => (
-            <button
+            <Button
               key={index}
-              className="flex flex-col border bg-secondary rounded-lg p-6"
+              borderRadius="1.75rem"
+              duration={Math.floor(Math.random() * 10000) + 10000}
+              className="flex-1 border bg-secondary"
               onClick={() => openModal(certification)}
             >
               <Image
@@ -117,7 +120,7 @@ const Certifications = () => {
               <p className="text-base font-semibold mt-2">{certification.institution}</p>
               <p className="text-sm mt-1">{certification.year}</p>
               <p className="text-blue-600 text-sm mt-2">View Details</p>
-            </button>
+            </Button>
           ))}
         </div>
 
