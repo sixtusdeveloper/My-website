@@ -95,7 +95,7 @@ const Projects = () => {
           </button>
         </div>
 
-        {/* Project Cards */}
+        {/* Project Cards
         <div className="flex items-center flex-col lg:flex-nowrap lg:flex-row justify-center gap-8 p-4 lg:py-8 mt-4">
           {currentProjects.map(({ id, title, des, img, githubLink, iconLists, link }) => (
             <div
@@ -154,7 +154,71 @@ const Projects = () => {
               </div>
             </div>
           ))}
+        </div> */}
+
+        {/* Project Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4 lg:py-8 mt-4">
+          {currentProjects.map(({ id, title, des, img, githubLink, iconLists, link }) => (
+            <div
+              className="relative group overflow-hidden border rounded-3xl shadow-lg transition-transform transform hover:scale-105"
+              key={id}
+              style={{ width: "100%", height: "100%" }}
+            >
+              <Image
+                src={img}
+                alt={title}
+                width={300}
+                height={200}
+                className="w-full h-48 object-cover transition-opacity duration-300 group-hover:opacity-75"
+              />
+              <div className="p-4">
+                <h1 className="font-bold text-xl truncate">{truncateTitle(title, MAX_TITLE_LENGTH)}</h1>
+                <p className="mt-2 text-sm line-clamp-2">{truncateDescription(des, MAX_DESCRIPTION_LENGTH)}</p>
+
+                <a
+                  href={githubLink}
+                  target="_blank"
+                  className="inline-flex items-center w-full font-semibold px-2 py-1 text-sm text-blue-500 hover:text-blue-300 cursor-pointer"
+                >
+                  Project codebase <FiArrowRight className="ml-2" />
+                </a>
+
+                <div className="flex items-center justify-between mt-4">
+                  <div className="relative flex">
+                    {iconLists.map((icon, index) => (
+                      <div
+                        key={index}
+                        className="border rounded-full bg-secondary w-8 h-8 flex justify-center items-center"
+                        style={{
+                          transform: `translateX(-${index * 8}px)`,
+                          zIndex: iconLists.length - index,
+                        }}
+                      >
+                        <Image
+                          src={icon}
+                          alt="icon"
+                          width={8}
+                          height={8}
+                          className="p-2"
+                          style={{ width: 'auto', height: 'auto' }}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                  <a
+                    onClick={() => handleLinkClick(link)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center cursor-pointer text-blue-500 hover:text-blue-300 transition-colors duration-300"
+                  >
+                    Live Site <FaLocationArrow className="ml-2" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
+
 
         {/* Pagination */}
         <div className="flex justify-center mt-4">
