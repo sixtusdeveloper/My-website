@@ -244,7 +244,7 @@ export const education = [
     institution: "AltSchool Africa",
     date: "2023 - 2024",
     type: "Full-time",
-    description: "Specialized in Software engineering - Mean stack, Mern stack, and more...",
+    description: "Specialized in Software Engineering - MEAN stack, MERN stack, and more...",
     status: "Graduated - Awaiting Certification",
     img: '/certifications/cert06.png'
   },

@@ -9,7 +9,7 @@ import Loader from "@/components/ui/Loader";
 
 
 // Truncate the course to a maximum length
-const MAX_COURSE_LENGTH = 35;
+const MAX_COURSE_LENGTH = 30;
 const truncateCourse = (text: string, maxLength: number): string => {
   if (text.length <= maxLength) return text;
   return `${text.slice(0, maxLength)}...`;
