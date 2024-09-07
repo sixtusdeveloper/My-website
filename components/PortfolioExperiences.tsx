@@ -2,7 +2,6 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { experiences, education } from "@/data";
-import { Spotlight } from "@/components/ui/Spotlight";
 import Modal from "@/components/ui/ExpiModal";
 import Image from 'next/image';
 import { AiOutlineDownload } from 'react-icons/ai';

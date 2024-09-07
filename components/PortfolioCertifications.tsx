@@ -1,142 +1,196 @@
+// components/Certifications.tsx
+
 'use client';
 
-import React, { useState } from 'react';
-import { FaGraduationCap } from 'react-icons/fa';
-import { AiOutlineLoading3Quarters } from 'react-icons/ai';
-import { certificationsData, Certification } from '@/data/certificationsData'; // Import data
+import React, { useState, useRef, useEffect } from 'react';
+import Modal from '@/components/ui/CertsModal'; // Update the import path if necessary
+import { certificationsData, Certification } from '@/data/certificationsData'; // Import Certification type
+import Image from 'next/image';
+import Loader from '@/components/ui/Loader';
+import { AiOutlineDownload } from 'react-icons/ai';
 
-const PortfolioCertifications = () => {
-  const [currentPage, setCurrentPage] = useState<number>(1);
-  const [certToView, setCertToView] = useState<string | null>(null); // Cert to view can be string or null
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
+const MAX_DESCRIPTION_LENGTH = 40;
+const truncateDescription = (text: string, maxLength: number): string => {
+  if (text.length <= maxLength) return text;
+  return `${text.slice(0, maxLength)}...`;
+};
 
-  const itemsPerPage = 2;
-  const totalPages = Math.ceil(certificationsData.length / itemsPerPage);
+const ITEMS_PER_PAGE = 4; // Number of items per page
 
-  // Function to handle modal opening with loading state
-  const handleViewCredential = (certUrl: string) => {
-    setIsLoading(true);
-    setCertToView(certUrl);
+const Certifications = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedCertification, setSelectedCertification] = useState<Certification | null>(null);
+  const [isLoading, setIsLoading] = useState(false); // State for full-page loader
+  const [downloadStatus, setDownloadStatus] = useState<'idle' | 'downloading' | 'downloaded'>('idle'); // Download state
+  const [currentPage, setCurrentPage] = useState(1); // Current page state
+  const modalRef = useRef<HTMLDivElement | null>(null);
+  const scrollPosition = useRef(0);
 
+  const openModal = (certification: Certification) => {
+    setIsLoading(true); // Show the full-page loader
+    setSelectedCertification(certification);
+
+    // Simulate a delay for the loading state
     setTimeout(() => {
-      setIsLoading(false);
-      setModalIsOpen(true);
-    }, 2000);
+      scrollPosition.current = window.scrollY;
+      setIsModalOpen(true);
+      setIsLoading(false); // Hide the full-page loader
+    }, 2000); // Adjust the delay as needed
   };
 
-  // Function to close the modal
   const closeModal = () => {
-    setModalIsOpen(false);
-    setCertToView(null); // Reset certToView on close
+    setIsModalOpen(false);
+    setSelectedCertification(null);
+    setDownloadStatus('idle'); // Reset download status
+
+    window.scrollTo({
+      top: scrollPosition.current,
+      behavior: 'smooth',
+    });
   };
 
-  // Pagination functions
-  const handleNextPage = () => {
-    if (currentPage < totalPages) {
-      setCurrentPage(currentPage + 1);
+  const handleDownload = () => {
+    if (selectedCertification?.certUrl) {
+      setDownloadStatus('downloading'); // Set status to downloading
+      const link = document.createElement('a');
+      link.href = selectedCertification.certUrl;
+      link.download = `${selectedCertification.title}-certificate.pdf`;
+      link.click();
+
+      setTimeout(() => {
+        setDownloadStatus('downloaded'); // Set status to downloaded after a delay
+        setTimeout(() => {
+          setDownloadStatus('idle'); // Reset status to idle after another delay
+        }, 2000); // Adjust this delay as needed
+      }, 2000); // Simulate download time
     }
   };
 
-  const handlePreviousPage = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-    }
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
   };
 
-  const currentCertifications = certificationsData.slice(
-    (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage
-  );
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
+        closeModal();
+      }
+    };
+
+    if (isModalOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isModalOpen]);
+
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const endIndex = startIndex + ITEMS_PER_PAGE;
+  const paginatedCertifications = certificationsData.slice(startIndex, endIndex);
+  const totalPages = Math.ceil(certificationsData.length / ITEMS_PER_PAGE);
 
   return (
-    <section id="certifications" className="py-10 px-4 bg-secondary">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-center">Verified Certifications</h2>
-        
-        {/* Display certifications with pagination */}
-        <div className="grid gap-8 md:grid-cols-2">
-          {currentCertifications.map((cert: Certification, index: number) => (
-            <div key={index} className="flex relative justify-center gap-4 p-4 bg-secondary border rounded-[1.75rem] shadow">
-              <div className="lg:text-start text-center lg:items-start items-center relative">
-                <FaGraduationCap size={60} className="text-blue-600" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">{cert.title}</h3>
-                <p className="mt-2 text-base leading-relaxed">
-                  <span className="font-semibold">Institution:</span> {cert.institution} <br />
-                  <span className="font-semibold">Year:</span> {cert.year}
-                </p>
-                <a
-                  href="#"
-                  className="text-blue-600 underline mt-4 inline-block"
-                  onClick={(e) => {
-                    e.preventDefault(); // Prevent default anchor behavior
-                    handleViewCredential(cert.certUrl);
-                  }}
-                >
-                  View Credential
-                </a>
-              </div>
-            </div>
+    <section id="certifications" className="bg-secondary relative md:pt-10 px-6 lg:px-14 pb-20">
+      <div className='mx-auto max-w-5xl relative'>
+        <h1 className="font-bold text-center text-[2.4rem] leading-snug tracking-wider">
+          My&nbsp;<span className="text-purple">Certifications</span>
+        </h1>
+        <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
+          {paginatedCertifications.map((certification, index) => (
+            <button
+              key={index}
+              className="flex flex-col border bg-secondary rounded-lg p-6"
+              onClick={() => openModal(certification)}
+            >
+              <Image
+                src={certification.imageUrl}
+                alt={certification.title}
+                width={200}
+                height={200}
+                className="w-full h-32 object-cover rounded-lg mb-4"
+              />
+              <h2 className="text-xl font-bold">{certification.title}</h2>
+              <p className="text-base font-semibold mt-2">{certification.institution}</p>
+              <p className="text-sm mt-1">{certification.year}</p>
+              <p className="text-blue-600 text-sm mt-2">View Details</p>
+            </button>
           ))}
         </div>
 
         {/* Pagination controls */}
-        <div className="flex justify-center mt-8 space-x-4">
-          <button
-            className={`px-4 py-2 border rounded-lg ${currentPage === 1 ? 'bg-secondary' : 'bg-transparent'}`}
-            onClick={handlePreviousPage}
-            disabled={currentPage === 1}
-          >
-            Previous
-          </button>
-          <button
-            className={`px-4 py-2 border rounded-lg ${currentPage === totalPages ? 'bg-secondary' : 'bg-transparent'}`}
-            onClick={handleNextPage}
-            disabled={currentPage === totalPages}
-          >
-            Next
-          </button>
+        <div className="flex justify-center mt-8 space-x-2">
+          {Array.from({ length: totalPages }, (_, index) => (
+            <button
+              key={index}
+              onClick={() => handlePageChange(index + 1)}
+              className={`px-4 py-2 rounded-md ${
+                currentPage === index + 1 ? 'bg-purple-600 text-white' : 'bg-gray-200'
+              }`}
+            >
+              {index + 1}
+            </button>
+          ))}
         </div>
-      </div>
 
-      {/* Custom Modal for viewing the certificate */}
-      {modalIsOpen && (
-        <div className="fixed inset-0 bg-secondary bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-secondary p-6 max-w-3xl mx-auto rounded-lg shadow-lg relative overflow-hidden">
+        {/* Full-page loader overlay */}
+        {isLoading && <Loader />} {/* Show loader */}
+
+        <Modal isOpen={isModalOpen} onClose={closeModal}>
+          <div ref={modalRef} className="p-4 max-h-[80vh] overflow-y-auto no-scrollbar relative">
             {isLoading ? (
-              <div className="flex justify-center items-center h-full">
-                <AiOutlineLoading3Quarters size={30} className="animate-spin" />
-              </div>
+              <Loader />
             ) : (
-              certToView && (
-                <div className="h-[80vh] overflow-auto">
-                  <h3 className="text-xl font-bold mb-4">Certification</h3>
-                  <embed src={certToView} type="application/pdf" width="100%" height="400px" />
-                  <div className="flex justify-between mt-4">
-                    <button
-                      onClick={closeModal}
-                      className="px-4 py-2 bg-red-600 rounded-lg"
-                    >
-                      Close
-                    </button>
-                    <a
-                      href={certToView}
-                      download
-                      className="px-4 py-2 bg-blue-600 rounded-lg"
-                    >
-                      Download
-                    </a>
-                  </div>
-                </div>
-              )
+              <div>
+                {selectedCertification && (
+                  <>
+                    <h3 className="font-bold tracking-wide text-xl mb-4">
+                      {selectedCertification.title}
+                    </h3>
+                    <p className="mb-4">
+                      <span className="font-medium text-base tracking-wide">Institution:</span>&nbsp;<span className="text-sm tracking-wide">{selectedCertification.institution}</span>
+                    </p>
+                    <p className="mb-4">
+                      <span className="font-medium text-base tracking-wide">Year:</span>&nbsp;<span className="text-base tracking-wide">{selectedCertification.year}</span>
+                    </p>
+                    <div className="relative flex justify-center text-center w-full mb-4">
+                      <Image
+                        src={selectedCertification.imageUrl}
+                        alt={selectedCertification.title}
+                        className="rounded-md w-full relative"
+                        width={600}
+                        height={300}
+                        objectFit="cover"
+                        style={{ width: 'auto', height: 'auto' }}
+                      />
+                    </div>
+                    <div className="mt-6 flex items-center justify-center">
+                      <button
+                        onClick={handleDownload}
+                        className={`px-4 py-2 flex items-center cursor-pointer justify-center space-x-2 rounded-md shadow-md ${
+                          downloadStatus === "downloaded"
+                            ? "bg-green-500 text-white"
+                            : "bg-blue-600 text-white hover:bg-blue-700"
+                        } focus:outline-none`}
+                      >
+                        <AiOutlineDownload className="mr-2" />
+                        {downloadStatus === "idle" && "Download Certificate"}
+                        {downloadStatus === "downloading" && "Downloading..."}
+                        {downloadStatus === "downloaded" && "Downloaded"}
+                      </button>
+                    </div>
+                  </>
+                )}
+              </div>
             )}
           </div>
-        </div>
-      )}
+        </Modal>
+      </div>
     </section>
   );
 };
 
-export default PortfolioCertifications;
+export default Certifications;
