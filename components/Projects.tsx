@@ -6,9 +6,9 @@ const Projects = () => {
     <section id="projects" className="py-10 px-4 bg-secondary">
       <div className="max-w-6xl mx-auto">
         <h2 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider mb-8">Personal Projects</h2>
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-10 md:grid-cols-2">
           {/* Project 1 */}
-          <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10 p-4 bg-secondary border rounded-[1.75rem] shadow">
+          <div className="flex relative justify-center gap-4 p-4 bg-secondary border rounded-[1.75rem] shadow">
             <div className="lg:text-start text-center lg:items-start items-center relative">
               <Image 
                 src="/project01.png"
