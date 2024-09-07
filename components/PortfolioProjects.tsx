@@ -96,7 +96,7 @@ const Projects = () => {
         </div>
 
         {/* Project Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-8 p-4 lg:py-8 mt-4">
+        <div className="grid gap-2 lg:gap-6 md:grid-cols-3 p-4 lg:py-8 mt-4">
           {currentProjects.map(({ id, title, des, img, githubLink, iconLists, link }) => (
             <div
               className="relative group overflow-hidden border rounded-3xl shadow-lg transition-transform transform hover:scale-105"
