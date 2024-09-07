@@ -200,9 +200,10 @@ const PortfolioSkills = () => {
               </div>
             </div>
           </div> */}
-          <PortfolioCertifications />
         </div>
       </div>
+      {/* Verified Certiications */}
+      <PortfolioCertifications />
     </section>
 
   )

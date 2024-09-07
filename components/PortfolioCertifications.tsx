@@ -85,14 +85,14 @@ const PortfolioCertifications = () => {
         {/* Pagination controls */}
         <div className="flex justify-center mt-8 space-x-4">
           <button
-            className={`px-4 py-2 border rounded-lg ${currentPage === 1 ? 'bg-gray-300' : 'bg-transparent'}`}
+            className={`px-4 py-2 border rounded-lg ${currentPage === 1 ? 'bg-secondary' : 'bg-transparent'}`}
             onClick={handlePreviousPage}
             disabled={currentPage === 1}
           >
             Previous
           </button>
           <button
-            className={`px-4 py-2 border rounded-lg ${currentPage === totalPages ? 'bg-gray-300' : 'bg-transparent'}`}
+            className={`px-4 py-2 border rounded-lg ${currentPage === totalPages ? 'bg-secondary' : 'bg-transparent'}`}
             onClick={handleNextPage}
             disabled={currentPage === totalPages}
           >
@@ -103,11 +103,11 @@ const PortfolioCertifications = () => {
 
       {/* Custom Modal for viewing the certificate */}
       {modalIsOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-secondary bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-secondary p-6 max-w-3xl mx-auto rounded-lg shadow-lg relative overflow-hidden">
             {isLoading ? (
               <div className="flex justify-center items-center h-full">
-                <AiOutlineLoading3Quarters size={50} className="animate-spin" />
+                <AiOutlineLoading3Quarters size={30} className="animate-spin" />
               </div>
             ) : (
               certToView && (
@@ -117,14 +117,14 @@ const PortfolioCertifications = () => {
                   <div className="flex justify-between mt-4">
                     <button
                       onClick={closeModal}
-                      className="px-4 py-2 bg-red-500 text-white rounded-lg"
+                      className="px-4 py-2 bg-red-600 rounded-lg"
                     >
                       Close
                     </button>
                     <a
                       href={certToView}
                       download
-                      className="px-4 py-2 bg-blue-600 text-white rounded-lg"
+                      className="px-4 py-2 bg-blue-600 rounded-lg"
                     >
                       Download
                     </a>
