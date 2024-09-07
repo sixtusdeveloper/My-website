@@ -14,27 +14,48 @@ export const certificationsData: Certification[] = [
     institution: 'Google Cloud',
     year: '2021 - 2022',
     certUrl: '/certificates/google-cloud-professional.pdf',
-    imageUrl: '/certificates/google-cloud-professional.png', // Image URL
+    imageUrl: '/certificates/cert-logo.png', // Image URL
   },
   {
     title: 'Microsoft Azure Fundamentals',
     institution: 'Microsoft',
     year: '2022 - 2023',
     certUrl: '/certificates/microsoft-azure-fundamentals.pdf',
-    imageUrl: '/certificates/microsoft-azure-fundamentals.png', // Image URL
+    imageUrl: '/certificates/cert-logo.png', // Image URL
   },
   {
     title: 'FreeCodeCamp - Responsive Web Design',
     institution: 'FreeCodeCamp',
     year: '2020 - 2021',
     certUrl: '/certificates/freecodecamp-web-design.pdf',
-    imageUrl: '/certificates/freecodecamp-web-design.png', // Image URL
+    imageUrl: '/certificates/cert-logo.png', // Image URL
   },
   {
     title: 'Udemy - Full-stack Developer',
     institution: 'Udemy',
     year: '2021 - 2022',
     certUrl: '/certificates/udemy-fullstack-developer.pdf',
-    imageUrl: '/certificates/udemy-fullstack-developer.png', // Image URL
+    imageUrl: '/certificates/cert-logo.png', // Image URL
+  },
+  {
+    title: 'Udemy - Full-stack Developer',
+    institution: 'Udemy',
+    year: '2021 - 2022',
+    certUrl: '/certificates/udemy-fullstack-developer.pdf',
+    imageUrl: '/certificates/cert-logo.png', // Image URL
+  },
+  {
+    title: 'Udemy - Full-stack Developer',
+    institution: 'Udemy',
+    year: '2021 - 2022',
+    certUrl: '/certificates/udemy-fullstack-developer.pdf',
+    imageUrl: '/certificates/cert-logo.png', // Image URL
+  },
+  {
+    title: 'Udemy - Full-stack Developer',
+    institution: 'Udemy',
+    year: '2021 - 2022',
+    certUrl: '/certificates/udemy-fullstack-developer.pdf',
+    imageUrl: '/certificates/cert-logo.png', // Image URL
   },
 ];
