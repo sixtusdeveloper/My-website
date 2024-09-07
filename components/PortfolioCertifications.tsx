@@ -118,14 +118,16 @@ const Certifications = () => {
                     <Image
                         src={certification.imageUrl}
                         alt={certification.title}
-                        width={80}
-                        height={80}
-                        className="w-full border p-1 h-32 relative overflow-hidden object-cover rounded-lg mb-4"
+                        width={60}
+                        height={60}
+                        style={{ width: 'auto', height: 'auto' }}
+                        className="w-full p-1 h-32 relative overflow-hidden object-cover rounded-full mb-4"
                     />
                     
                     <div className="lg:ms-5">
                         <h2 className="text-start text-xl md:text-2xl font-bold">{certification.title}</h2>
-                        <p className="text-base font-semibold mt-1">{certification.institution}&nbsp;-&nbsp;{certification.year}</p>
+                        <p className="text-base text-start font-semibold mt-1">{certification.institution}</p>
+                        <p className="text-base text-start font-semibold mt-1">{certification.year}</p>
                         <p className="text-base text-start tracking-wide leading-6 mt-3 font-semibold">
                             {truncateDescription(certification.desc ?? '', MAX_DESCRIPTION_LENGTH)}&nbsp;
                             <span className="text-blue-600 text-sm text-end font-medium tracking-wide">

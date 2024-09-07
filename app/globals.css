@@ -401,3 +401,11 @@ p {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.certs-img{
+  width: 60 !important;
+  height: 60 !important;
+  object-fit: cover !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
