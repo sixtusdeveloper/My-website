@@ -31,7 +31,6 @@ const About = () => {
           />
           <h3 className="text-lg font-medium tracking-wide py-1">Sixtus Aondoakaa</h3>
           <h4 className="text-base font-medium tracking-wide">Software Engineer</h4>
-
         </div>
         <h2 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider mb-4">About Me</h2>
         <p className="text-base tracking-wide leading-relaxed mb-4">
