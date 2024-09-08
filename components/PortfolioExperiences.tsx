@@ -200,13 +200,13 @@ const Experience = () => {
                     <h3 className="text-lg font-bold tracking-wider mb-1">
                       {truncateCourse(edu.degree, MAX_COURSE_LENGTH)}
                     </h3>
-                    <p className="inline-flex space-x-2 mb-4">
+                    <p className="inline-flex space-x-2 py-1 mb-0">
                       <span className="text-sm tracking-wide">
                         {edu.institution}&nbsp;-&nbsp;
                         <span className="text-base tracking-wide text-purple">{edu.type}</span>
                       </span>
                     </p>
-                    <p className="text-white-200 text-base py-1 mb-4">
+                    <p className="text-white-200 text-base py-1 mb-0">
                       {edu.status} 
                     </p>
                     <time
@@ -337,7 +337,7 @@ const Experience = () => {
                         {selectedWorkExperience.technologies.map((tech, index) => (
                           <li
                             key={index}
-                            className="px-3 py-2 border rounded-lg bg-transparent text-base leading-6 tracking-wide"
+                            className="px-3 py-2 border rounded-lg bg-transparent text-sm leading-6 tracking-wide"
                           >
                             {tech}
                           </li>
