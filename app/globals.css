@@ -200,6 +200,14 @@ p {
   }
 }
 
+.modal-img{
+  width: 250 !important;
+  height: 250 !important;
+  object-fit: cover !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+} 
+
 
 @keyframes fadeIn {
   from {

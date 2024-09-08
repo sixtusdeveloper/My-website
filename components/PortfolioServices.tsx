@@ -83,7 +83,7 @@ const Services = () => {
                   src={service.thumbnail} 
                   alt={service.thumbnail} 
                   width={200} height={200} 
-                  className="lg:w-32 md:w-20 w-16" 
+                  className="lg:w-32 md:w-20 w-16 services-img" 
                 />
                 <div className="lg:ms-5">
                   <h1 className="text-start text-xl md:text-2xl font-bold">{service.title}</h1>
@@ -128,7 +128,7 @@ const Services = () => {
                       width={200} 
                       height={200}
                       alt={image.alt} 
-                      className="w-full h-auto object-cover rounded-lg shadow-md modal-img" 
+                      className="w-full h-auto object-cover rounded-lg shadow-sm modal-img" 
                       />
                     ))}
                   </div>
