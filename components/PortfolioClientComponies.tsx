@@ -104,7 +104,7 @@ const Collaboration = ({
 
       {/* Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-secondary bg-opacity-85">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-85">
           <div className="relative bg-secondary border rounded-lg p-8 max-w-lg mx-auto animate-fadeIn">
             <button
               className="absolute top-3 right-3 hover:text-white-100"

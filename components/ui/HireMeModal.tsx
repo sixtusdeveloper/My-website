@@ -78,7 +78,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">
       <div
-        className="absolute inset-0 bg-secondary bg-opacity-75 backdrop-filter backdrop-blur-md"
+        className="absolute inset-0 bg-black bg-opacity-75 backdrop-filter backdrop-blur-md"
         onClick={onClose}
       />
       <div className="relative bg-secondary border shadow-lg rounded-lg mx-auto max-w-3xl w-full p-6">
