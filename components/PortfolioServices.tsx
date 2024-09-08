@@ -125,10 +125,10 @@ const Services = () => {
                       <Image 
                       key={idx} 
                       src={image.src} 
-                      width={200} 
-                      height={250}
+                      width={300} 
+                      height={200}
                       alt={image.alt} 
-                      className="w-full h-auto object-cover rounded-lg shadow-md modal-img" 
+                      className="w-full h-auto object-cover rounded-lg shadow-sm modal-img" 
                       />
                     ))}
                   </div>

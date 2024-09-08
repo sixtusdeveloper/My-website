@@ -201,8 +201,8 @@ p {
 }
 
 .modal-img{
-  width: 250px !important;
-  height: 250px !important;
+  width: 300px !important;
+  height: 200px !important;
   object-fit: cover !important;
   border-radius: 8px !important;
   overflow: hidden !important;
