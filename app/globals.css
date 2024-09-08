@@ -203,7 +203,7 @@ p {
 .modal-img{
   width: 300px !important;
   height: 200px !important;
-  object-fit: cover !important;
+  object-fit: contain !important;
   border-radius: 8px !important;
   overflow: hidden !important;
 } 
