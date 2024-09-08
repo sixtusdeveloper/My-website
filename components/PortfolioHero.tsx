@@ -10,7 +10,7 @@ import { useState } from "react";
 import HireMeModal from "@/components/ui/HireMeModal";
 import ReadMoreModal from "@/components/ui/ReadMoreModal"; 
 import Image from "next/image";
-import Loader from "./ui/Loader";
+import Loader from "@/components/ui/Loader";
 
 const Hero = () => {
   const { user, isSignedIn } = useUser();

@@ -43,7 +43,7 @@ const ReadMoreModal: React.FC<ReadMoreModalProps> = ({ isOpen, onClose, children
                 </p>
                 <div className="flex justify-center mt-6 space-x-4">
                     <a
-                        href="https://www.sixtusdev.net/"
+                        href="https://www.sixtusdev.net/#about"
                         rel="noopener noreferrer"
                         className="py-2 px-4 flex items-center text-base rounded-lg bg-blue-600 text-white hover:bg-blue-800 transition duration-300 ease-in-out"
                         >
