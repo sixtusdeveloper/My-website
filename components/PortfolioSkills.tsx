@@ -3,7 +3,8 @@ import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaDocker, FaAws, FaG
 import { SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiFlask, SiPython, SiKubernetes, SiPostman, 
   SiVisualstudiocode, SiNextdotjs, SiTypescript, SiDjango, SiAppwrite, SiClerk, SiVuedotjs, SiSentry, 
   SiFramer, SiFirebase, SiPhp, SiGnubash, SiGooglecloud, SiMicrosoftazure, SiFreecodecamp, SiUdemy, 
-  SiBookstack, SiLinkedin, SiUdacity } from 'react-icons/si';
+  SiBookstack, SiLinkedin, SiUdacity, 
+  SiStripe} from 'react-icons/si';
 import { AiFillApi } from "react-icons/ai"; 
 import { FiBox } from "react-icons/fi"; 
 import { FaJava } from "react-icons/fa";
@@ -79,6 +80,9 @@ const PortfolioSkills = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <SiPhp className="text-purple-800" /> <span>PHP</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiStripe className="text-indigo-600" size={20} />&nbsp;<span>Stripe</span>
               </li>
             </ul>
           </div>
