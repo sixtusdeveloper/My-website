@@ -264,7 +264,7 @@ const Experience = () => {
                     <p className="mb-6 text-sm text-medium leading-6 tracking-wide">{selectedEducation?.description}</p>
                     <div className=" relative flex justify-center text-center w-full mb-4">
                       <Image
-                        src={selectedEducation?.img || "/cert.png"}
+                        src={selectedEducation?.img || "/certificates/cert.png"}
                         alt={selectedEducation?.degree || "Certificate Image"}
                         className="rounded-md w-full relative"
                         width={600}
@@ -279,7 +279,7 @@ const Experience = () => {
                         className={`px-4 py-2 flex items-center cursor-pointer justify-center space-x-2 rounded-md${
                           downloadStatus === "downloaded"
                             ? "bg-green-500 text-white"
-                            : "bg-blue-600 text-white hover:bg-blue-700"
+                            : "bg-blue-600 text-white hover:bg-blue-800"
                         } focus:outline-none`}
                       >
                         <AiOutlineDownload className="mr-2" />

@@ -246,7 +246,7 @@ export const education = [
     type: "Full-time",
     description: "Specialized in Software Engineering - MEAN stack, MERN stack, and more...",
     status: "Graduated - Awaiting Certification",
-    img: '/certifications/cert06.png'
+    img: '/certificates/cert06.png'
   },
   {
     degree: "Diploma in DevOps Engineering",
@@ -255,7 +255,7 @@ export const education = [
     type: "Full-time",
     description: "Specialized in DevOps engineering - Kubernetes, Docker, Google-cloud CI/CD pipelines and automation...",
     status: "Graduated - Certified",
-    img: '/certifications/cert01.jpg'
+    img: '/certificates/cert01.jpg'
   },
   {
     degree: "Diploma in Software Project Management", 
@@ -264,7 +264,7 @@ export const education = [
     type: "Full-time",
     description: "Specialized in software development project management - Agile, Scrum, Kanban, and more...",
     status: "Graduated - Certified",
-    img: '/certifications/cert02.png'
+    img: '/certificates/cert02.png'
   },
 ];
 
