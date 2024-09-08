@@ -325,7 +325,7 @@ export const services: Service[] = [
           alt: "Content Creation Platform"
         },
         {
-          src: "/content.jpg",
+          src: "/creation.jpg",
           alt: "WYSIWYG Editor"
         }
       ],
