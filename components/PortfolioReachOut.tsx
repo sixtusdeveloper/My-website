@@ -14,7 +14,7 @@ const ReachOut = () => {
         </p>
         
         <div className="flex justify-center items-center space-x-8 mt-8">
-          <a href="mailto:sixtusushrey@gmail.com?subject=Let's%20connect!" className="flex items-center space-x-2">
+          <a href="mailto:sixtusushrey@gmail.com?subject=Let's%20connect!" className="flex items-center cursor-pointer space-x-2 border p-2 rounded-md">
               <Image 
                   src="/Gmail.png"
                   alt="Mail" 
@@ -27,7 +27,7 @@ const ReachOut = () => {
           {/* Vertical Divider */}
           <div className="border-l h-8"></div>
           
-          <a href="https://wa.me/+2349022048105" target="_blank" className="text-white-100 flex items-center space-x-2 hover:text-purple">
+          <a href="https://wa.me/+2349022048105" target="_blank" className="flex items-center space-x-2 cursor-pointer border p-2 rounded-md">
               <Image 
                   src="/whatsapp-icon.png" 
                   alt="WhatsApp" 
