@@ -55,7 +55,7 @@ const Hero = () => {
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-blue-500 hover:text-blue-600 border">
               Engineering excellence in every line of code.{" "}
               <a
-                href="https://github.com/sixtusdeveloper/My-website/tree/master/app/pages/portfolio/"
+                href="https://github.com/sixtusdeveloper/My-website/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold text-purple cursor-pointer"
