@@ -102,7 +102,7 @@ const Certifications = () => {
     <section id="certifications" className="bg-secondary relative md:pt-10 px-6 lg:px-14 pb-20">
       <div className='mx-auto max-w-5xl relative'>
         <h1 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider">
-          My&nbsp;<span className="text-purple">Certifications</span>
+          My Verified Certifications
         </h1>
         <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-8">
           {paginatedCertifications.map((certification, index) => (
