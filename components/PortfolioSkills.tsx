@@ -18,7 +18,7 @@ const PortfolioSkills = () => {
           {/* Frontend Section */}
           <div className="skill-category bg-secondary p-6 rounded-lg border">
             <h3 className="text-2xl font-semibold mb-4">Frontend</h3>
-            <ul className="flex flex-wrap gap-4 list-none items-center">
+            <ul className="flex flex-wrap gap-8 list-none items-center">
               <li className="flex items-center space-x-2">
                 <FaHtml5 className="text-orange-600" size={20} />&nbsp;<span>HTML</span>
               </li>
