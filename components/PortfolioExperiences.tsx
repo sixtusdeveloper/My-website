@@ -203,14 +203,14 @@ const Experience = () => {
                     <p className="inline-flex space-x-2 py-1 mb-0">
                       <span className="text-sm tracking-wide">
                         {edu.institution}&nbsp;-&nbsp;
-                        <span className="text-base tracking-wide text-purple">{edu.type}</span>
+                        <span className="text-sm tracking-wide text-purple">{edu.type}</span>
                       </span>
                     </p>
-                    <p className="text-white-200 text-base py-1 mb-0">
+                    <p className="text-white-200 text-sm py-1 mb-0">
                       {edu.status} 
                     </p>
                     <time
-                      className="block text-base mb-1"
+                      className="block text-sm mb-1"
                       suppressHydrationWarning
                     >
                       {edu.date} 
