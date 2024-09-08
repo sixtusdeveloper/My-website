@@ -293,7 +293,7 @@ const Experience = () => {
                   
                 {selectedWorkExperience && (
                   <>
-                    <div className="flex flex-col justify-center flex-wrap lg:flex-nowrap md:flex-row md:justify-between gap-8 space-x-6">
+                    <div className="flex flex-col justify-center flex-wrap lg:flex-nowrap md:flex-row md:justify-between gap-4 md:gap-6 lg:gap-8 space-x-2 md:space-x-6">
                       <div>
                         <h3 className="font-bold tracking-wide text-xl mb-4">
                           {selectedWorkExperience.title}
