@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { AiOutlineCheckCircle } from 'react-icons/ai'; // Import success icon from React Icons
+import { IoClose } from 'react-icons/io5';
 
 interface ModalProps {
     isOpen: boolean;
@@ -39,12 +40,12 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, message }) => {
             onClick={handleOverlayClick}
             className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50" // Darker overlay effect
         >
-            <div className="bg-secondary border rounded-lg shadow-lg p-6 max-w-sm mx-auto relative">
+            <div className="bg-secondary border rounded-lg shadow-lg p-6 w-full max-w-sm mx-auto relative">
                 <button
                     onClick={onClose}
                     className="absolute top-2 right-2 text-gray-500 hover:text-red-500"
                 >
-                    ✕
+                    <IoClose size={18} />
                 </button>
                 <div className="flex flex-col items-center">
                     <AiOutlineCheckCircle className="text-green-500 text-4xl mb-4" /> {/* Success icon */}
