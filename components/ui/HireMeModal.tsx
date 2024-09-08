@@ -66,11 +66,11 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
   };
 
   const handleDownloadPDFClick = () => {
-    downloadFile("/My-Resume.pdf", "My-Resume.pdf", 'pdf');
+    downloadFile("/certificates/My-Resume.pdf", "My-Resume.pdf", 'pdf');
   };
 
   const handleDownloadDOCXClick = () => {
-    downloadFile("/My-Resume.docx", "My-Resume.docx", 'docx');
+    downloadFile("/certificates/My-Resume.docx", "My-Resume.docx", 'docx');
   };
 
   if (!isOpen) return null;
