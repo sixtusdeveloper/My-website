@@ -18,7 +18,7 @@ const PortfolioSkills = () => {
           {/* Frontend Section */}
           <div className="skill-category bg-secondary p-6 rounded-lg border">
             <h3 className="text-2xl font-semibold mb-4">Frontend</h3>
-            <ul className="flex flex-wrap gap-4 list-none space-y-4">
+            <ul className="flex flex-wrap gap-4 list-none items-center">
               <li className="flex items-center space-x-2">
                 <FaHtml5 className="text-orange-600" size={20} />&nbsp;<span>HTML</span>
               </li>
@@ -58,7 +58,7 @@ const PortfolioSkills = () => {
           {/* Backend Section */}
           <div className="skill-category bg-secondary p-6 rounded-lg border">
             <h3 className="text-2xl font-semibold mb-4">Backend</h3>
-            <ul className="flex flex-wrap gap-4 list-none space-y-4">
+            <ul className="flex flex-wrap gap-4 list-none items-center">
               <li className="flex items-center space-x-2">
                 <FaNodeJs className="text-green-500" size={20} />&nbsp;<span>Node.js</span>
               </li>
@@ -86,7 +86,7 @@ const PortfolioSkills = () => {
           {/* Databases Section */}
           <div className="skill-category bg-secondary p-6 rounded-lg border">
             <h3 className="text-2xl font-semibold mb-4">Databases</h3>
-            <ul className="flex flex-wrap gap-4 list-none space-y-4">
+            <ul className="flex flex-wrap gap-4 list-none items-center">
               <li className="flex items-center space-x-2">
                 <SiMongodb className="text-green-500" size={20} />&nbsp;<span>MongoDB</span>
               </li>
@@ -124,7 +124,7 @@ const PortfolioSkills = () => {
           {/* Tools Section */}
           <div className="skill-category bg-secondary border p-6 rounded-lg">
             <h3 className="text-2xl font-semibold mb-4">Version Control & Tools</h3>
-            <ul className="flex flex-wrap gap-4 list-none space-y-4">
+            <ul className="flex flex-wrap items-center gap-4 list-none">
               <li className="flex items-center space-x-2">
                 <FaGitAlt className="text-orange-600" size={20} />&nbsp;<span>Git</span>
               </li>
