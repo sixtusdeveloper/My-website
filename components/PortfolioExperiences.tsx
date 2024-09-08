@@ -150,8 +150,8 @@ const Experience = () => {
                   <h3 className="text-lg font-bold tracking-wide">
                     {experience.title}
                   </h3>
-                  <p className="inline-flex space-x-2">
-                    <span className="text-base tracking-wide">
+                  <p className="inline-flex space-x-2 py-1 mb-0">
+                    <span className="text-sm tracking-wide">
                       {experience.organization}&nbsp;-&nbsp;
                       <span className="text-sm">
                         {experience.type}
@@ -159,7 +159,7 @@ const Experience = () => {
                     </span>
                   </p>
                   <span className="flex gap-2 items-center">
-                    <span className="text-base">{experience.nature}&nbsp;&#45;&nbsp;</span>
+                    <span className="text-sm">{experience.nature}&nbsp;&#45;&nbsp;</span>
                     <time
                       className="text-sm tracking-wide"
                       suppressHydrationWarning
@@ -169,10 +169,10 @@ const Experience = () => {
                     
                   </span>
                  
-                  <p className="text-base tracking-wide">
+                  <p className="text-sm tracking-wide py-1 mb-0">
                     {experience.location}
                   </p>
-                  <div className="text-base leading-6">
+                  <div className="text-base leading-6 tracking-wide">
                     {truncateDescription(experience.description, MAX_DESCRIPTION_LENGTH)}&nbsp;
                     <a
                       href="#"
