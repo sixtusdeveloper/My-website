@@ -379,7 +379,7 @@ export const services: Service[] = [
       ],
       images: [
         {
-          src: "/socials02.jpg",
+          src: "/interaction02.jpg",
           alt: "Social Interactions"
         },
         {
