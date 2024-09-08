@@ -126,9 +126,9 @@ const Services = () => {
                       key={idx} 
                       src={image.src} 
                       width={200} 
-                      height={200}
+                      height={250}
                       alt={image.alt} 
-                      className="w-full h-auto object-cover rounded-lg shadow-sm modal-img" 
+                      className="w-full h-auto object-cover rounded-lg shadow-md modal-img" 
                       />
                     ))}
                   </div>
