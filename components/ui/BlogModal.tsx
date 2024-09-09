@@ -44,7 +44,7 @@ const HeroModal: React.FC<ModalProps> = ({ isOpen, onClose, message, children })
             <div className="bg-secondary border rounded-lg shadow-lg p-6 w-full max-w-sm mx-auto relative">
                 <button
                     onClick={onClose}
-                    className="absolute top-2 right-2 border rounded-full p-1 background-secondary hover:text-red-600"
+                    className="absolute top-2 right-2 z-40 border rounded-full p-2 cursor-pointer bg-secondary hover:text-red-600"
                 >
                     <IoClose size={18} />
                 </button>

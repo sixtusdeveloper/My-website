@@ -2,6 +2,7 @@
 
 import React from 'react';
 import styles from '@/styles/Modal.module.css';
+import { IoClose } from 'react-icons/io5';
 
 interface ModalProps {
   isOpen: boolean;
@@ -19,7 +20,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
         <div className={styles.header}>
           <h2>{title}</h2>
           <button className={styles.closeButton} onClick={onClose}>
-            &times;
+            <IoClose size={18} />
           </button>
         </div>
         <div className={styles.content}>

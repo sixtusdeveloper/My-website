@@ -43,7 +43,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, message }) => {
             <div className="bg-secondary border rounded-lg shadow-lg p-6 w-full max-w-sm mx-auto relative">
                 <button
                     onClick={onClose}
-                    className="absolute top-2 right-2 text-gray-500 hover:text-red-500"
+                    className="absolute top-2 right-2 p-2 z-40 cursor-pointer border rounded-full bg-secondary hover:text-red-600"
                 >
                     <IoClose size={18} />
                 </button>
@@ -52,7 +52,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, message }) => {
                     <p className="text-center text-lg tracking-wide leading-7 font-semibold mb-4">{message}</p>
                     <button
                         onClick={onClose}
-                        className="bg-blue-600 hover:bg-blue-800 text-white text-base font-semibold rounded-full py-2 px-6"
+                        className="bg-blue-600 hover:bg-blue-800 text-white text-base font-semibold rounded-full py-2 px-8"
                     >
                         OK
                     </button>
