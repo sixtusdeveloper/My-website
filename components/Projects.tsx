@@ -37,7 +37,7 @@ const Projects = () => {
             </div>
             <div>
               <h3 className="text-xl font-bold">Full-Stack Web Application</h3>
-              <p className="py-4 px-2 leading-6 mb-0 text-[14px]">
+              <p className="py-4 leading-6 mb-0 text-[14px]">
                 Developed a full-stack web application called <span className="font-semibold">TaskMaster</span>, designed to streamline task management for teams. The app features real-time collaboration, task assignment, and progress tracking, built using React, Node.js, and MongoDB.
               </p>
             </div>
@@ -55,7 +55,7 @@ const Projects = () => {
             </div>
             <div>
               <h3 className="text-xl font-bold">Personal Blog Platform</h3>
-              <p className="py-4 px-2 leading-6 mb-0 text-[14px]">
+              <p className="py-4 leading-6 mb-0 text-[14px]">
                 Built a personal blog platform named <span className="font-semibold">DevJourney</span>, where I share articles on web development and programming. The platform supports markdown formatting, social media sharing, and SEO optimization. Developed using Next.js and Tailwind CSS.
               </p>
             </div>
@@ -73,7 +73,7 @@ const Projects = () => {
             </div>
             <div>
               <h3 className="text-xl font-bold">E-Commerce Website</h3>
-              <p className="py-4 px-2 leading-6 mb-0 text-[14px]">
+              <p className="py-4 leading-6 mb-0 text-[14px]">
                 Designed and developed an e-commerce website named <span className="font-semibold">ShopEasy</span>, featuring a user-friendly interface, secure payment integration, and advanced search functionality. Leveraged Shopify's API for product management and order processing.
               </p>
             </div>
