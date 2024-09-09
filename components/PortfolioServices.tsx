@@ -117,7 +117,7 @@ const Services = () => {
                   <h3 className="text-start py-6 text-xl md:text-2xl font-bold">{selectedService.title}</h3>
                   {/* Detailed paragraphs */}
                   {selectedService.detailedDesc.paragraphs.map((paragraph, idx) => (
-                    <p key={idx} className="text-start text-base mt-3 leading-7 tracking-wide font-normal">{paragraph}</p>
+                    <p key={idx} className="text-start text-base mt-3 leading-7 tracking-wide font-medium">{paragraph}</p>
                   ))}
                   {/* Render images */}
                   <div className="grid grid-cols-2 sm:grid-cols-2 py-8 gap-4 mt-6">
@@ -134,7 +134,7 @@ const Services = () => {
                   </div>
                   {/* Text1 paragraphs */}
                   {selectedService.detailedDesc.textDesc.map((text, idx) => (
-                    <p key={idx} className="text-start text-base mt-3 leading-7 tracking-wide font-normal">{text}</p>
+                    <p key={idx} className="text-start text-base mt-3 leading-7 tracking-wide font-medium">{text}</p>
                   ))}
                 </div>
               </>

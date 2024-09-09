@@ -250,7 +250,7 @@ const Experience = () => {
                       {selectedEducation?.degree}
                     </h3>
                     <p className="mb-4">
-                      <span className="font-medium text-base tracking-wide">Institution:</span>&nbsp;<span className="text-sm tracking-wide">{selectedEducation?.institution}</span>
+                      <span className="font-medium text-base tracking-wide">Institution:</span>&nbsp;<span className="text-base tracking-wide">{selectedEducation?.institution}</span>
                     </p>
                     <p className="mb-4">
                       <span className="font-medium text-base tracking-wide">Type:</span>&nbsp;<span className="text-base tracking-wide">{selectedEducation?.type}</span>
@@ -261,7 +261,7 @@ const Experience = () => {
                     <p className="mb-4">
                       <span className="font-medium text-base tracking-wide">Date:</span>&nbsp;<span className="text-base tracking-wide">{selectedEducation?.date}</span>
                     </p>
-                    <p className="mb-6 text-sm text-medium leading-6 tracking-wide">{selectedEducation?.description}</p>
+                    <p className="mb-6 text-base text-medium leading-6 tracking-wide">{selectedEducation?.description}</p>
                     <div className=" relative flex justify-center text-center w-full mb-4">
                       <Image
                         src={selectedEducation?.img || "/certificates/cert.png"}
@@ -332,12 +332,12 @@ const Experience = () => {
                       <p className="text-base text-medium leading-7 tracking-wide">{selectedWorkExperience.fullDesc}</p>
                     </div>
                     <div className="py-4 relative overflow-hidden">
-                      <h4 className="font-bold tracking-wider text-lg my-4">Technologies used</h4>
+                      <h4 className="font-bold tracking-wider text-lg my-4">Technologies</h4>
                       <ul className="flex flex-wrap gap-4">
                         {selectedWorkExperience.technologies.map((tech, index) => (
                           <li
                             key={index}
-                            className="px-3 py-2 border rounded-lg bg-transparent text-sm leading-6 tracking-wide"
+                            className="px-3 py-2 border rounded-lg bg-transparent text-base leading-6 tracking-wide"
                           >
                             {tech}
                           </li>

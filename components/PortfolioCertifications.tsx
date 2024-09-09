@@ -180,13 +180,13 @@ const Certifications = () => {
                       {selectedCertification.title}
                     </h3>
                     <p className="mb-4">
-                      <span className="font-medium text-base tracking-wide">Institution:</span>&nbsp;<span className="text-sm tracking-wide">{selectedCertification.institution}</span>
+                      <span className="font-medium text-base tracking-wide">Institution:</span>&nbsp;<span className="text-base tracking-wide">{selectedCertification.institution}</span>
                     </p>
                     <p className="mb-4">
                       <span className="font-medium text-base tracking-wide">Year:</span>&nbsp;<span className="text-base">{selectedCertification.year}</span>
                     </p>
                     <p className="mb-4">
-                      <span className="font-medium text-base tracking-wide">Description:</span>&nbsp;<span className="text-sm tracking-wide">{selectedCertification.desc}</span>
+                      <span className="font-medium text-base tracking-wide">Description:</span>&nbsp;<span className="text-base tracking-wide">{selectedCertification.desc}</span>
                     </p>
                     <div className="relative flex justify-center text-center w-full mb-4">
                       <Image
