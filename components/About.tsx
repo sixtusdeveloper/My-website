@@ -70,7 +70,7 @@ const About = () => {
           <h4 className="text-base tracking-wide">Software Engineer</h4>
 
           {/* Social Follow Buttons */}
-          <div className="flex justify-center gap-4 mt-4">
+          <div className="flex md:flex-nowrap flex-wrap items-center justify-center gap-4 mt-4">
             {/* Twitter Follow Button */}
             <div className={`flex items-center space-x-2 py-2 px-4 rounded-md ${isTwitterFollowed ? 'bg-blue-500' : 'bg-blue-400'} transition`}>
               <FaTwitter />
