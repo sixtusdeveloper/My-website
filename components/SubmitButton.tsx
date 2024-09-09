@@ -13,7 +13,7 @@ const SubmitButton = ({ isLoading, className, children }: ButtonProps) => {
        {isLoading ? 
        (
         <div className="flex justify-center items-center">
-          <div className="w-6 h-6 border-t-2 border-b-2 border-green-600 rounded-full animate-spin"></div>
+          <div className="w-6 h-6 border-t-2 border-b-2 border-gray-300 rounded-full animate-spin"></div>
           <span className="ml-2">Loading...</span>
         </div>
        )
