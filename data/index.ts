@@ -7,7 +7,7 @@ export const navigation = [
     { name: 'About', href: '#about' },
     { name: 'Portfolio', href: '#portfolio' },
     { name: 'Blog', href: '#blog' },
-    { name: 'Testimonials', href: '#testimonials' },
+    { name: 'Testimonials', href: '#clients' },
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
   ];
