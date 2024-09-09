@@ -19,7 +19,7 @@ const Projects = () => {
             </div>
             <div>
               <h3 className="text-xl font-bold">Open Source Contribution</h3>
-              <p className="py-4 px-2 leading-6 mb-0 text-[14px]">
+              <p className="py-4 leading-6 mb-0 text-[14px]">
                 Actively contributed to the <span className="font-semibold">OptiFrame project</span>, an open-source initiative, by improving the codebase, refining the UI/UX design, and significantly enhancing the project's performance. My contributions helped in reducing load times by 20% and increasing user engagement.
               </p>
             </div>
