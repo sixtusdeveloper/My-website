@@ -85,7 +85,7 @@ const About = () => {
             </div>
 
             {/* GitHub Follow Button */}
-            <div className={`flex items-center space-x-2 py-2 px-4 rounded-md ${isGithubFollowed ? 'bg-blue-500 text-white hover:bg-blue-800' : 'bg-transparent'} transition`}>
+            <div className={`flex items-center space-x-2 py-2 px-4 rounded-md ${isGithubFollowed ? 'bg-blue-500 text-white hover:bg-blue-800' : 'bg-transparent border'} transition`}>
               <FaGithub />
               <a 
                 href="https://github.com/sixtusdeveloper"
