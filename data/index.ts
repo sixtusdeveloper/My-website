@@ -273,7 +273,7 @@ export const education = [
     type: "Full-time",
     description: "Specialized in Sciences - Physics, Chemistry, Biology, Mathematics, and more...",
     status: "Graduated - Certified",
-    img: '/certificates/cert07.png'
+    img: '/certificates/cert.png'
   },
   {
     degree: "First School Leaving Certificate (FSLC)", 
