@@ -3,8 +3,7 @@
 import React, { useState } from "react";
 import { useUser } from "@clerk/nextjs";
 import HeroModal from "@/components/ui/HeroModal";
-import Loader from "@/components/ui/Loader";
-import { Button } from "@/components/ui/button"; // Assuming you have a Button component
+import Loader from "@/components/ui/Loader"; 
 import MagicButton from "@/components/ui/MagicButton";
 
 const Home = () => {
@@ -29,7 +28,7 @@ const Home = () => {
   };
 
   return (
-    <section id="portfolio" className="relative py-10 flex items-center justify-center bg-secondary">
+    <section id="portfolio" className="relative py-8 md:py-10 flex items-center justify-center bg-secondary">
       <div className="relative p-4 lg:p-8 mt-20 max-w-3xl lg:max-w-3xl text-center">
         <h3 className="text-[1rem] py-6 font-bold tracking-wider sm:text-[1.2rem]">
           {isSignedIn && user ? (
@@ -48,7 +47,7 @@ const Home = () => {
           Welcome to my personal space where technology meets creativity.
         </p>
 
-        <div className="mt-6">
+        <div className="mt-4">
           <a 
             onClick={openModal} 
           >
