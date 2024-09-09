@@ -266,6 +266,24 @@ export const education = [
     status: "Graduated - Certified",
     img: '/certificates/cert02.png'
   },
+  {
+    degree: "SSCE Certificate in Sciences", 
+    institution: "Chris the King College (CKC)",  
+    date: "2011 - 2016",
+    type: "Full-time",
+    description: "Specialized in Sciences - Physics, Chemistry, Biology, Mathematics, and more...",
+    status: "Graduated - Certified",
+    img: '/certificates/cert07.png'
+  },
+  {
+    degree: "First School Leaving Certificate (FSLC)", 
+    institution: "Unity Nursery and Primary School",  
+    date: "2001 - 2010",
+    type: "Full-time",
+    description: "Specialized in Sciences - Computer Science, Physical Health Education, , Quantitative Reasoning, Verbal Reasoning and more...",
+    status: "Graduated - Certified",
+    img: '/certificates/cert.png'
+  },
 ];
 
 //================================= Services data  ================================//
