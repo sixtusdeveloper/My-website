@@ -75,7 +75,7 @@ const About = () => {
             <div className={`flex items-center space-x-2 py-2 px-4 rounded-md ${isTwitterFollowed ? 'bg-blue-500' : 'bg-blue-400'} transition`}>
               <FaTwitter />
               <a 
-                href="https://twitter.com/yourTwitterHandle?ref_src=twsrc%5Etfw"
+                href="https://twitter.com/develites01?ref_src=twsrc%5Etfw"
                 className="twitter-follow-button"
                 data-show-count="false"
                 data-size="large"
@@ -85,10 +85,10 @@ const About = () => {
             </div>
 
             {/* GitHub Follow Button */}
-            <div className={`flex items-center space-x-2 py-2 px-4 rounded-md ${isGithubFollowed ? 'bg-gray-800' : 'bg-gray-600'} transition`}>
+            <div className={`flex items-center space-x-2 py-2 px-4 rounded-md ${isGithubFollowed ? 'bg-blue-500 text-white hover:bg-blue-800' : 'bg-transparent'} transition`}>
               <FaGithub />
               <a 
-                href="https://github.com/yourGithubHandle"
+                href="https://github.com/sixtusdeveloper"
                 target="_blank"
                 className="btn-github-follow"
                 rel="noopener noreferrer"
