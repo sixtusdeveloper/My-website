@@ -72,7 +72,7 @@ const About = () => {
           {/* Social Follow Buttons */}
           <div className="flex md:flex-nowrap flex-wrap items-center justify-center gap-4 mt-4">
             {/* Twitter Follow Button */}
-            <div className={`flex items-center space-x-2 py-2 px-4 rounded-md ${isTwitterFollowed ? 'bg-blue-500' : 'bg-blue-400'} transition`}>
+            <div className={`flex items-center space-x-2 py-2 px-4 rounded-md ${isTwitterFollowed ? 'bg-secondary border' : 'bg-transparent border'} transition`}>
               <FaTwitter />
               <a 
                 href="https://twitter.com/develites01?ref_src=twsrc%5Etfw"
@@ -85,7 +85,7 @@ const About = () => {
             </div>
 
             {/* GitHub Follow Button */}
-            <div className={`flex items-center space-x-2 py-2 px-4 rounded-md ${isGithubFollowed ? 'bg-blue-500 text-white hover:bg-blue-800' : 'bg-transparent border'} transition`}>
+            <div className={`flex items-center space-x-2 py-2 px-4 rounded-md ${isGithubFollowed ? 'bg-secondary border' : 'bg-transparent border'} transition`}>
               <FaGithub />
               <a 
                 href="https://github.com/sixtusdeveloper"
@@ -103,15 +103,16 @@ const About = () => {
         <p className="text-base tracking-wide leading-relaxed mb-4">
           Hi, I’m Sixtus Aondoakaa, a passionate Software Engineer, DevOps Engineer and a tech Educator dedicated to crafting scalable and innovative web solutions. My journey in tech began with a fascination for how technology shapes our world. Over the years, I have navigated the complexities of full-stack development, embracing both front-end and back-end technologies to build robust applications.
         </p>
-
         {isExpanded && (
           <>
-            {/* Expanded content */}
             <p className="text-base tracking-wide leading-relaxed mb-4">
-              The path has not always been smooth. The tech industry is dynamic and ever-evolving, and staying ahead requires more than just technical skills—it demands resilience and a commitment to continuous learning.
+              The path has not always been smooth. The tech industry is dynamic and ever-evolving, and staying ahead requires more than just technical skills—it demands resilience and a commitment to continuous learning. I have faced and overcome numerous challenges, from mastering new frameworks to debugging intricate issues. Each obstacle has been a stepping stone, contributing to my growth as a software engineer.
             </p>
             <p className="text-base tracking-wide leading-relaxed mb-4">
-              My journey is marked by a dedication to excellence and an insatiable curiosity. Whether it's developing complex systems or simplifying user interfaces, I approach each project with the same enthusiasm and meticulous attention to detail.
+              My journey is marked by a dedication to excellence and an insatiable curiosity. Whether it's developing complex systems or simplifying user interfaces, I approach each project with the same enthusiasm and meticulous attention to detail. I believe that technology should not only solve problems but also create seamless and delightful user experiences.
+            </p>
+            <p className="text-base tracking-wide leading-relaxed mb-4">
+              Today, I am proud of the work I have accomplished and the professional growth I have achieved. I am excited about the future and eager to continue pushing the boundaries of what is possible in the tech world. Thank you for visiting my site, and I look forward to connecting with like-minded individuals and exploring new opportunities.
             </p>
           </>
         )}
