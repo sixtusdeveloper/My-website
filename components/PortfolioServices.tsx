@@ -103,7 +103,7 @@ const Services = () => {
         {isLoading && <Loader />} {/* Show loader */}
 
         <Modal isOpen={isModalOpen} onClose={closeModal}>
-          <div ref={modalRef} className="p-6 max-h-[80vh] overflow-y-auto bg-secondary no-scrollbar relative">
+          <div ref={modalRef} className="p-4 max-h-[80vh] overflow-y-auto bg-secondary no-scrollbar relative">
             {selectedService && (
               <>
                 <Image 
@@ -117,10 +117,10 @@ const Services = () => {
                   <h3 className="text-start py-6 text-xl md:text-2xl font-bold">{selectedService.title}</h3>
                   {/* Detailed paragraphs */}
                   {selectedService.detailedDesc.paragraphs.map((paragraph, idx) => (
-                    <p key={idx} className="text-start text-base mt-3 leading-7 tracking-wide font-medium">{paragraph}</p>
+                    <p key={idx} className="text-start text-base mt-3 leading-7 font-medium">{paragraph}</p>
                   ))}
                   {/* Render images */}
-                  <div className="grid grid-cols-2 sm:grid-cols-2 py-8 gap-4 mt-6">
+                  <div className="grid grid-cols-2 sm:grid-cols-2 py-8 gap-4 mt-4">
                     {selectedService.detailedDesc.images.map((image, idx) => (
                       <Image 
                       key={idx} 
@@ -134,7 +134,7 @@ const Services = () => {
                   </div>
                   {/* Text1 paragraphs */}
                   {selectedService.detailedDesc.textDesc.map((text, idx) => (
-                    <p key={idx} className="text-start text-base mt-3 leading-7 tracking-wide font-medium">{text}</p>
+                    <p key={idx} className="text-start text-base mt-3 leading-7 font-medium">{text}</p>
                   ))}
                 </div>
               </>
