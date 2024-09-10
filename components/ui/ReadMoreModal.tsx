@@ -37,7 +37,7 @@ const ReadMoreModal: React.FC<ReadMoreModalProps> = ({ isOpen, onClose, children
             <div className="px-8 max-h-[80vh] overflow-auto no-scrollbar">
                 {children} 
                 
-                <p className="text-center text-base tracking-wide leading-6">
+                <p className="text-center text-base leading-6">
                     You are about to leave my portfolio site to visit my personal website. 
                     If you wish to explore further, click continue, or cancel to stay here.
                 </p>

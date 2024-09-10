@@ -66,8 +66,8 @@ const About = () => {
           />
         </div>
         <div className="mb-10 p-2">
-          <h3 className="text-lg lg:text-xl font-medium tracking-wide">Sixtus Aondoakaa</h3>
-          <h4 className="text-base tracking-wide">Software Engineer</h4>
+          <h3 className="text-lg lg:text-xl font-medium">Sixtus Aondoakaa</h3>
+          <h4 className="text-base">Software Engineer</h4>
 
           {/* Social Follow Buttons */}
           <div className="flex md:flex-nowrap flex-wrap items-center justify-center gap-4 mt-4">
@@ -100,18 +100,18 @@ const About = () => {
         </div>
 
         <h2 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider mb-4">About Me</h2>
-        <p className="text-base tracking-wide leading-relaxed mb-4">
+        <p className="text-base leading-relaxed mb-4">
           Hi, I’m Sixtus Aondoakaa, a passionate Software Engineer, DevOps Engineer and a tech Educator dedicated to crafting scalable and innovative web solutions. My journey in tech began with a fascination for how technology shapes our world. Over the years, I have navigated the complexities of full-stack development, embracing both front-end and back-end technologies to build robust applications.
         </p>
         {isExpanded && (
           <>
-            <p className="text-base tracking-wide leading-relaxed mb-4">
+            <p className="text-base leading-relaxed mb-4">
               The path has not always been smooth. The tech industry is dynamic and ever-evolving, and staying ahead requires more than just technical skills—it demands resilience and a commitment to continuous learning. I have faced and overcome numerous challenges, from mastering new frameworks to debugging intricate issues. Each obstacle has been a stepping stone, contributing to my growth as a software engineer.
             </p>
-            <p className="text-base tracking-wide leading-relaxed mb-4">
+            <p className="text-base leading-relaxed mb-4">
               My journey is marked by a dedication to excellence and an insatiable curiosity. Whether it's developing complex systems or simplifying user interfaces, I approach each project with the same enthusiasm and meticulous attention to detail. I believe that technology should not only solve problems but also create seamless and delightful user experiences.
             </p>
-            <p className="text-base tracking-wide leading-relaxed mb-4">
+            <p className="text-base leading-relaxed mb-4">
               Today, I am proud of the work I have accomplished and the professional growth I have achieved. I am excited about the future and eager to continue pushing the boundaries of what is possible in the tech world. Thank you for visiting my site, and I look forward to connecting with like-minded individuals and exploring new opportunities.
             </p>
           </>
