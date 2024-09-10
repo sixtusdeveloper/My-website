@@ -84,7 +84,7 @@ export default function Navbar({
                 <a
                   key={item.name}
                   href={`#${item.href.substring(1)}`}
-                  className={`text-base font-medium cursor-pointer tracking-wide ${activeSection === item.href.substring(1) ? 'text-blue-500' : 'text-default'} hover:text-primary`}
+                  className={`text-base font-medium cursor-pointer ${activeSection === item.href.substring(1) ? 'text-blue-500' : 'text-default'} hover:text-primary`}
                   onClick={(e) => {
                     e.preventDefault();
                     handleClick(item.href);
@@ -115,7 +115,7 @@ export default function Navbar({
                     alt="Sixtusdev Logo" 
                     width={30} height={30} 
                   />
-                  <span className='text-white text-base leading-6 tracking-wide font-medium'>Sixtusdev</span>
+                  <span className='text-white text-base leading-6 font-medium'>Sixtusdev</span>
                 </a>
                 {/* Toggle mode for dark and light mode */}
               
@@ -137,7 +137,7 @@ export default function Navbar({
                       <a
                         key={item.name}
                         href={`#${item.href.substring(1)}`}
-                        className="-mx-3 block rounded-lg px-3 py-2 text-white text-base font-medium tracking-wide leading-7 hover:text-blue-600"
+                        className="-mx-3 block rounded-lg px-3 py-2 text-white text-base font-medium leading-7 hover:text-blue-600"
                         onClick={() => {
                           handleClick(item.href);
                           setMobileMenuOpen(false);
