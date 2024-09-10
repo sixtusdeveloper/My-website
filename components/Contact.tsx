@@ -80,25 +80,16 @@ const Contact = () => {
               <h3 className="text-lg font-bold mt-4">Sixtus Aondoakaa</h3>
               <p className="text-base">Software Engineer</p>
               <div className="mt-4">
-                <h4 className="py-2 text-lg font-bold">Contact me</h4>
+                <h4 className="py-2 text-lg font-bold">Contact Me</h4>
                 <div className="inline-flex py-1 items-center">
-                  <Image src="/phone.png" alt="" width={20} height={20} className="mr-2" /><p className="text-base py-1 mb-0">+2349022048105</p> 
+                  <Image src="/phone.png" alt="" width={20} height={20} className="mr-2" /><p className="text-base py-1 mb-0">+234&nbsp;902&nbsp;2048&nbsp;105</p> 
                 </div><br />
                 <div className="inline-flex items-center">
-                  <Image src="/mail.png" alt="" width={20} height={20} className="mr-2" /><p className="text-base py-1 mb-0">contact@sixtusdev.net</p>
+                  <Image src="/mail.png" alt="" width={20} height={20} className="mr-2" /><p className="text-base tracking-wide py-1 mb-0">contact@sixtusdev.net</p>
                 </div><br />
                 <div className="inline-flex items-center">
-                  <Image src="/mail.png" alt="" width={20} height={20} className="mr-2" /><p className="text-base py-1 mb-0">info@sixtusdev.net</p>
+                  <Image src="/mail.png" alt="" width={20} height={20} className="mr-2" /><p className="text-base tracking-wide py-1 mb-0">info@sixtusdev.net</p>
                 </div>
-                {/* <p className="inline-flex tracking-wide py-1 items-center text-sm">
-                  <FaPhoneAlt className="mr-2" /> +2349022048105
-                </p><br />
-                <p className="inline-flex items-center text-sm">
-                  <FaEnvelope className="mr-2" /> contact@sixtusdev.net
-                </p><br />
-                <p className="inline-flex items-center text-sm">
-                  <FaEnvelope className="mr-2" /> info@sixtusdev.net
-                </p> */}
               </div>
             </div>
           </div>

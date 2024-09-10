@@ -14,14 +14,14 @@ const ReachOut = () => {
         </p>
         
         <div className="flex justify-center items-center space-x-8 mt-8">
-          <a href="mailto:sixtusushrey@gmail.com?subject=Let's%20connect!" className="flex items-center cursor-pointer space-x-2 border p-2 rounded-md">
+          <a href="mailto:contact@sixtusdev.net?subject=Let's%20connect!" className="flex items-center cursor-pointer space-x-2 border p-2 rounded-md">
               <Image 
                   src="/Gmail.png"
                   alt="Mail" 
                   width={28} 
                   height={28} 
               />
-              <span className="text-base tracking-wide">Email</span>
+              <span className="text-base tracking-wide">Email me</span>
           </a>
           
           {/* Vertical Divider */}
@@ -33,7 +33,7 @@ const ReachOut = () => {
                   alt="WhatsApp" 
                   width={28} 
                   height={28} />
-              <span className="text-base tracking-wide">WhatsApp</span>
+              <span className="text-base tracking-wide">Chat me</span>
           </a>
         </div>
         
