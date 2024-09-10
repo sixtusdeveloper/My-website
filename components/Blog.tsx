@@ -177,7 +177,7 @@ const Blog = () => {
           className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
           style={{ pointerEvents: 'auto' }}
         >
-          <div className="bg-secondary border p-6 rounded-lg mt-8 shadow-lg max-w-2xl w-full max-h-[90vh] relative overflow-y-auto no-scrollbar">
+          <div className="bg-secondary border p-2 rounded-lg mt-8 shadow-lg max-w-2xl w-full max-h-[90vh] relative overflow-y-auto no-scrollbar">
             
             {/* Adjusted Close Button - Positioned at top-right */}
             <button
@@ -189,7 +189,7 @@ const Blog = () => {
             </button>
             
             {/* Modal Content */}
-            <div className="p-6 h-full overflow-y-auto no-scrollbar" style={{ scrollbarWidth: 'thin', scrollBehavior: 'smooth' }}>
+            <div className="p-4 h-full overflow-y-auto no-scrollbar" style={{ scrollbarWidth: 'thin', scrollBehavior: 'smooth' }}>
               <h3 className="text-2xl font-bold mb-4">{selectedPost.title}</h3>
               <Image
                 src={selectedPost.imageUrl}
