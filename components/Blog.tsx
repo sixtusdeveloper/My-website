@@ -174,10 +174,10 @@ const Blog = () => {
       {selectedPost && !isLoading && (
         <div
           onClick={handleModalClick}
-          className="fixed inset-0 bg-black bg-opacity-75 p-6 flex justify-center items-center z-50"
+          className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
           style={{ pointerEvents: 'auto' }}
         >
-          <div className="bg-secondary border rounded-lg shadow-lg max-w-2xl w-full max-h-[90vh] relative overflow-y-auto no-scrollbar">
+          <div className="bg-secondary border p-6 rounded-lg mt-8 shadow-lg max-w-2xl w-full max-h-[90vh] relative overflow-y-auto no-scrollbar">
             
             {/* Adjusted Close Button - Positioned at top-right */}
             <button
