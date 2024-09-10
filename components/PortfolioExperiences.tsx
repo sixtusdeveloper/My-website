@@ -147,11 +147,11 @@ const Experience = () => {
               >
                 <div className="timeline-icon"></div>
                 <div className="bg-secondary border p-6 rounded-lg">
-                  <h3 className="text-lg font-bold tracking-wide">
+                  <h3 className="text-lg font-bold">
                     {experience.title}
                   </h3>
                   <p className="inline-flex space-x-2 py-1 mb-0">
-                    <span className="text-sm tracking-wide">
+                    <span className="text-sm">
                       {experience.organization}&nbsp;-&nbsp;
                       <span className="text-sm">
                         {experience.type}
@@ -161,7 +161,7 @@ const Experience = () => {
                   <span className="flex gap-2 items-center">
                     <span className="text-sm">{experience.nature}&nbsp;&#45;&nbsp;</span>
                     <time
-                      className="text-sm tracking-wide"
+                      className="text-sm"
                       suppressHydrationWarning
                     >
                       {experience.date}
@@ -169,15 +169,15 @@ const Experience = () => {
                     
                   </span>
                  
-                  <p className="text-sm tracking-wide py-1 mb-0">
+                  <p className="text-sm py-1 mb-0">
                     {experience.location}
                   </p>
-                  <div className="text-base leading-6 tracking-wide">
+                  <div className="text-base leading-6">
                     {truncateDescription(experience.description, MAX_DESCRIPTION_LENGTH)}&nbsp;
                     <a
                       href="#"
                       onClick={() => openModal(experience)}
-                      className="font-medium tracking-wider cursor-pointer text-base text-blue-600"
+                      className="font-medium cursor-pointer text-base text-blue-600"
                     >
                       <span aria-hidden="true" className="absolute inset-0" />
                       Read more{" "}
@@ -197,13 +197,13 @@ const Experience = () => {
                   <div className="timeline-icon"></div>
 
                   <div className="bg-secondary border p-6 rounded-lg">
-                    <h3 className="text-lg font-bold tracking-wider mb-1">
+                    <h3 className="text-lg font-bold mb-1">
                       {truncateCourse(edu.degree, MAX_COURSE_LENGTH)}
                     </h3>
                     <p className="inline-flex space-x-2 py-1 mb-0">
-                      <span className="text-sm tracking-wide">
+                      <span className="text-sm">
                         {edu.institution}&nbsp;-&nbsp;
-                        <span className="text-sm tracking-wide text-purple">{edu.type}</span>
+                        <span className="text-sm text-purple">{edu.type}</span>
                       </span>
                     </p>
                     <p className="text-white-200 text-sm py-1 mb-0">
@@ -220,7 +220,7 @@ const Experience = () => {
                       <a
                         href="#"
                         onClick={() => openModal(edu)}
-                        className="font-medium tracking-wider cursor-pointer text-base text-blue-600"
+                        className="font-medium cursor-pointer text-base text-blue-600"
                       >
                         <span aria-hidden="true" className="absolute inset-0" />
                         View credentials{" "}
@@ -246,22 +246,22 @@ const Experience = () => {
               <div>
                 {selectedEducation && (
                   <>
-                    <h3 className="font-bold tracking-wide text-xl mb-4">
+                    <h3 className="font-bold text-xl mb-4">
                       {selectedEducation?.degree}
                     </h3>
                     <p className="mb-4">
-                      <span className="font-medium text-base tracking-wide">Institution:</span>&nbsp;<span className="text-base tracking-wide">{selectedEducation?.institution}</span>
+                      <span className="font-medium text-base">Institution:</span>&nbsp;<span className="text-base">{selectedEducation?.institution}</span>
                     </p>
                     <p className="mb-4">
-                      <span className="font-medium text-base tracking-wide">Type:</span>&nbsp;<span className="text-base tracking-wide">{selectedEducation?.type}</span>
+                      <span className="font-medium text-base">Type:</span>&nbsp;<span className="text-base">{selectedEducation?.type}</span>
                     </p>
                     <p className="mb-4">
-                      <span className="font-medium text-base tracking-wide">Status:</span>&nbsp;<span className="text-base tracking-wide">{selectedEducation?.status}</span>
+                      <span className="font-medium text-base">Status:</span>&nbsp;<span className="text-base">{selectedEducation?.status}</span>
                     </p>
                     <p className="mb-4">
-                      <span className="font-medium text-base tracking-wide">Date:</span>&nbsp;<span className="text-base tracking-wide">{selectedEducation?.date}</span>
+                      <span className="font-medium text-base">Date:</span>&nbsp;<span className="text-base">{selectedEducation?.date}</span>
                     </p>
-                    <p className="mb-6 text-base text-medium leading-6 tracking-wide">{selectedEducation?.description}</p>
+                    <p className="mb-6 text-base text-medium leading-6">{selectedEducation?.description}</p>
                     <div className=" relative flex justify-center text-center w-full mb-4">
                       <Image
                         src={selectedEducation?.img || "/certificates/cert.png"}
@@ -295,23 +295,23 @@ const Experience = () => {
                   <>
                     <div className="flex flex-col justify-center flex-wrap lg:flex-nowrap md:flex-row md:justify-between gap-4 md:gap-6 lg:gap-8 space-x-2 md:space-x-6">
                       <div>
-                        <h3 className="font-bold tracking-wide text-xl mb-4">
+                        <h3 className="font-bold text-xl mb-4">
                           {selectedWorkExperience.title}
                         </h3>
                         <p className="mb-4">
-                          <span className="font-medium text-base tracking-wide">Organization:</span>&nbsp;<span className="text-base tracking-wide">{selectedWorkExperience.organization}</span>
+                          <span className="font-medium text-base">Organization:</span>&nbsp;<span className="text-base">{selectedWorkExperience.organization}</span>
                         </p>
                         <p className="mb-4">
-                          <span className="font-medium text-base tracking-wide">Type:</span>&nbsp;<span className="text-base tracking-wide">{selectedWorkExperience.type}</span>
+                          <span className="font-medium text-base">Type:</span>&nbsp;<span className="text-base">{selectedWorkExperience.type}</span>
                         </p>
                         <p className="mb-4">
-                          <span className="font-medium text-base tracking-wide">Nature:</span>&nbsp;<span className="text-base tracking-wide">{selectedWorkExperience.nature}</span>
+                          <span className="font-medium text-base">Nature:</span>&nbsp;<span className="text-base">{selectedWorkExperience.nature}</span>
                         </p>
                         <p className="mb-4">
-                          <span className="font-medium text-base tracking-wide">Location:</span>&nbsp;<span className="text-base tracking-wide">{selectedWorkExperience.location}</span>
+                          <span className="font-medium text-base">Location:</span>&nbsp;<span className="text-base">{selectedWorkExperience.location}</span>
                         </p>
                         <p className="mb-4">
-                          <span className="font-medium text-base tracking-wide">Date:</span>&nbsp;<span className="text-base tracking-wide">{selectedWorkExperience.date}</span>
+                          <span className="font-medium text-base">Date:</span>&nbsp;<span className="text-base">{selectedWorkExperience.date}</span>
                         </p>
                         
                       </div>
@@ -329,15 +329,15 @@ const Experience = () => {
                     </div>
                     <div className="relative py-4">
                       <h4 className="font-bold tracking-wider text-lg my-4">Job description</h4> 
-                      <p className="text-base text-medium leading-7 tracking-wide">{selectedWorkExperience.fullDesc}</p>
+                      <p className="text-base text-medium leading-7">{selectedWorkExperience.fullDesc}</p>
                     </div>
                     <div className="py-4 relative overflow-hidden">
-                      <h4 className="font-bold tracking-wider text-lg my-4">Technologies</h4>
+                      <h4 className="font-bold text-lg my-4">Technologies</h4>
                       <ul className="flex flex-wrap gap-4">
                         {selectedWorkExperience.technologies.map((tech, index) => (
                           <li
                             key={index}
-                            className="px-3 py-2 border rounded-lg bg-transparent text-base leading-6 tracking-wide"
+                            className="px-3 py-2 border rounded-lg bg-transparent text-base leading-6"
                           >
                             {tech}
                           </li>

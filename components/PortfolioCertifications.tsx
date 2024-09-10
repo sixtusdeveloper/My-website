@@ -127,9 +127,9 @@ const Certifications = () => {
                     <div className="lg:ms-5">
                         <h2 className="text-start text-xl md:text-2xl font-bold">{certification.title}</h2>
                         <p className="text-base text-start font-semibold mt-1">{certification.institution}&nbsp;-&nbsp;{certification.year}</p>
-                        <p className="text-base text-start tracking-wide leading-6 mt-3 font-semibold">
+                        <p className="text-base text-start leading-6 mt-3 font-semibold">
                             {truncateDescription(certification.desc ?? '', MAX_DESCRIPTION_LENGTH)}&nbsp;
-                            <span className="text-blue-600 text-sm text-end font-medium tracking-wide">
+                            <span className="text-blue-600 text-sm text-end font-medium">
                             View credentials
                             </span>
                         </p>
@@ -176,17 +176,17 @@ const Certifications = () => {
                         style={{ width: 'auto', height: 'auto' }}
                         className="w-full p-1 h-12 certs-img relative overflow-hidden object-cover rounded-full mb-4"
                     />
-                    <h3 className="font-bold tracking-wide text-xl mb-4">
+                    <h3 className="font-bold text-xl mb-4">
                       {selectedCertification.title}
                     </h3>
                     <p className="mb-4">
-                      <span className="font-medium text-base tracking-wide">Institution:</span>&nbsp;<span className="text-base tracking-wide">{selectedCertification.institution}</span>
+                      <span className="font-medium text-base">Institution:</span>&nbsp;<span className="text-base">{selectedCertification.institution}</span>
                     </p>
                     <p className="mb-4">
-                      <span className="font-medium text-base tracking-wide">Year:</span>&nbsp;<span className="text-base">{selectedCertification.year}</span>
+                      <span className="font-medium text-base">Year:</span>&nbsp;<span className="text-base">{selectedCertification.year}</span>
                     </p>
                     <p className="mb-4">
-                      <span className="font-medium text-base tracking-wide">Description:</span>&nbsp;<span className="text-base tracking-wide">{selectedCertification.desc}</span>
+                      <span className="font-medium text-base">Description:</span>&nbsp;<span className="text-base">{selectedCertification.desc}</span>
                     </p>
                     <div className="relative flex justify-center text-center w-full mb-4">
                       <Image
