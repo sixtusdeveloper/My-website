@@ -69,9 +69,9 @@ const Footer: React.FC = () => {
       </span>
 
       <div className="flex justify-center items-center py-2">
-          <span className="w-full flex flex-col text-center text-sm p-2 tracking-wider">
+          <span className="w-full flex flex-col text-center text-sm p-2">
               Copyright&copy; {new Date().getFullYear()} developed by Sixtusdev | all rights reserved |
-              support@sixtusdev.net | version 0.1.0
+              sixtusushrey@gmail.com | version 0.1.0
           </span>
           
       </div>

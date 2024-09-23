@@ -14,7 +14,7 @@ const ReachOut = () => {
         </p>
         
         <div className="flex justify-center items-center space-x-8 mt-8">
-          <a href="mailto:contact@sixtusdev.net?subject=Let's%20connect!" className="flex items-center cursor-pointer space-x-2 border p-2 rounded-md">
+          <a href="mailto:sixtusdev50@gmail.com?subject=Let's%20connect!" className="flex items-center cursor-pointer space-x-2 border p-2 rounded-md">
               <Image 
                   src="/Gmail.png"
                   alt="Mail" 

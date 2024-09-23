@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import {
     FormControl,
     FormDescription,
@@ -13,7 +12,6 @@ import {
 import { Input } from "@/components/ui/input";
 import { Control, Form } from "react-hook-form";
 import { FormFieldType } from '@/components/ContactForm';
-import { Switch } from '@headlessui/react';
 import { Textarea } from '@/components/ui/textarea';
 
 interface CustomProps {
