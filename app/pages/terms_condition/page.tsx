@@ -65,7 +65,7 @@ const TermsCondition: React.FC = () => {
                 
                 <h2 className="text-lg font-bold mt-4">Contact Me</h2>
                 <p>
-                    If you have any questions or concerns about this Privacy Policy, please contact me at <a href="mailto:sixtusdev50@gmail.com" className="text-blue-600 hover:underline">contact@sixtusdev.net</a>.
+                    If you have any questions or concerns about this Privacy Policy, please contact me at <a href="mailto:sixtusdev50@gmail.com" className="text-blue-600 hover:underline">sixtusdev50@gmail.com</a>.
                 </p>
             </div>
         </main>    

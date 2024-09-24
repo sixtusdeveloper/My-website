@@ -115,8 +115,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   style={ { width: 'auto', height: 'auto' } }
                   className='overflow-hidden'
                 />
-                 <a href="https://www.sixtusdev.net/pages/privacy_policy" className="ml-2 sm:ml-5 text-sm sm:text-base text-gray-200 no-underline hover:text-green">
-                  Privacy Policy
+                 <a href="https://www.sixtusdev.net/pages/privacy_policy" className="ml-2 sm:ml-5 text-sm sm:text-base text-gray-200 hover:underline no-underline hover:text-green-600">
+                  Privacy policy - Read more about the privacy policy of this application.
                   </a>
               </li>
               <li className="flex items-center py-2 sm:py-4">
@@ -128,8 +128,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   style={ { width: 'auto', height: 'auto' } }
                   className='overflow-hidden'
                 />
-                 <a href="https://www.sixtusdev.net/pages/terms_condition" className="ml-2 sm:ml-5 text-sm sm:text-base text-gray-200 no-underline hover:text-green">
-                  Terms and Condition
+                 <a href="https://www.sixtusdev.net/pages/terms_condition" className="ml-2 sm:ml-5 text-sm sm:text-base text-gray-200 no-underline hover:underline hover:text-green-600">
+                  Terms and Condition - Read more about the terms and condition of this application.
                   </a>
               </li>
           </ul>
