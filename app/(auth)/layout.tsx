@@ -106,6 +106,32 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   Innovating through continuous learning and creative problem-solving
                   </span>
               </li>
+              <li className="flex items-center py-2 sm:py-4">
+                <Image 
+                  src="/privacy-policy.png"
+                  alt="Privacy policy icon"
+                  width={40}
+                  height={40}
+                  style={ { width: 'auto', height: 'auto' } }
+                  className='overflow-hidden'
+                />
+                 <a href="https://www.sixtusdev.net/pages/privacy_policy" className="ml-2 sm:ml-5 text-sm sm:text-base text-gray-200 no-underline hover:text-green">
+                  Privacy Policy
+                  </a>
+              </li>
+              <li className="flex items-center py-2 sm:py-4">
+                <Image 
+                  src="/terms-condition.png"
+                  alt="terms and condition icon"
+                  width={40}
+                  height={40}
+                  style={ { width: 'auto', height: 'auto' } }
+                  className='overflow-hidden'
+                />
+                 <a href="https://www.sixtusdev.net/pages/terms_condition" className="ml-2 sm:ml-5 text-sm sm:text-base text-gray-200 no-underline hover:text-green">
+                  Terms and Condition
+                  </a>
+              </li>
           </ul>
 
         </div>
