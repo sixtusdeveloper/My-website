@@ -137,7 +137,7 @@ export default function Navbar({
                       <a
                         key={item.name}
                         href={`#${item.href.substring(1)}`}
-                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:text-blue-600"
+                        className="-mx-3 block text-white rounded-lg px-3 py-2 text-base font-medium leading-7 hover:text-blue-600"
                         onClick={() => {
                           handleClick(item.href);
                           setMobileMenuOpen(false);
