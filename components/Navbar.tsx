@@ -62,7 +62,7 @@ export default function Navbar({
   return (
     <>
       <SignedIn>
-        <header className={`fixed inset-x-0 top-0 z-50 transition-colors border-b bg-secondary duration-500 ${scrolling ? 'border-b' : 'bg-transparent'}`}>
+        <header className={`fixed inset-x-0 top-0 z-50 transition-colors border-b border-b-gray-400 dark:border-b-gray-300 bg-secondary duration-500 ${scrolling ? 'border-b' : 'bg-transparent'}`}>
           <nav aria-label="Global" className="flex items-center justify-between p-4 lg:px-8">
             <div className="flex lg:flex-1">
               <a href="/">
@@ -84,7 +84,7 @@ export default function Navbar({
                 <a
                   key={item.name}
                   href={`#${item.href.substring(1)}`}
-                  className={`text-base font-medium cursor-pointer ${activeSection === item.href.substring(1) ? 'text-blue-500' : 'text-default'} hover:text-primary`}
+                  className={`text-base text-white font-medium cursor-pointer ${activeSection === item.href.substring(1) ? 'text-blue-500' : 'text-default'} hover:text-primary`}
                   onClick={(e) => {
                     e.preventDefault();
                     handleClick(item.href);

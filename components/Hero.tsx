@@ -46,7 +46,7 @@ const Home = () => {
           )}
         </h3>
 
-        <h1 className="text-[2rem] lg:text-[3rem] font-bold leading-tight font-sans">
+        <h1 className="text-[2rem] lg:text-[3rem] font-bold leading-tight font-poppins">
           I&apos;m Sixtus, a Passionate Software Engineer Crafting Innovative Solutions
         </h1>
 
@@ -59,7 +59,7 @@ const Home = () => {
           <a onClick={openModal}>
             <MagicButton
               title="View My Work"
-              otherClasses="text-[1.4rem] flex justify-center rounded-full items-center text-center"
+              otherClasses="text-[1.4rem] bg-dark dark:bg-black flex justify-center rounded-full items-center text-center"
             />
           </a>
         </div>
