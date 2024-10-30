@@ -31,7 +31,7 @@ const Home = () => {
     <section 
       id="portfolio" 
       className="relative h-screen w-full bg-cover bg-center bg-no-repeat flex items-center justify-center"
-      style={{ backgroundImage: 'url("/images/creation.jpg")' }} // Adjust with your image path
+      style={{ backgroundImage: 'url("/content03.jpg")' }} // Adjust with your image path
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-50" />
