@@ -46,7 +46,7 @@ const Home = () => {
           )}
         </h3>
 
-        <h1 className="text-[2rem] lg:text-[3rem] font-bold leading-tight">
+        <h1 className="text-[2rem] lg:text-[3rem] font-bold leading-tight font-sans">
           I&apos;m Sixtus, a Passionate Software Engineer Crafting Innovative Solutions
         </h1>
 

@@ -65,8 +65,25 @@
     scroll-behavior: smooth;
   }
 
+  @layer base {
+    * {
+      @apply border-border;
+    }
+  
+    body {
+      @apply bg-background text-foreground;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700; /* Bold for headings */
+    }
+  }
+  
 
-@layer base {
+
+/* @layer base {
   * {
     @apply border-border;
     
@@ -75,7 +92,7 @@
     @apply bg-background text-foreground;
   }
   
-}
+} */
 
 .avatar-img {
   width: 40px !important;
