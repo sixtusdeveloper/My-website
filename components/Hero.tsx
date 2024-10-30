@@ -34,7 +34,7 @@ const Home = () => {
       style={{ backgroundImage: 'url("/content03.jpg")' }} // Adjust with your image path
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50" />
+      <div className="absolute inset-0 bg-black bg-opacity-80" />
 
       {/* Content */}
       <div className="relative z-10 p-4 lg:p-8 mt-20 max-w-3xl text-center text-white">
