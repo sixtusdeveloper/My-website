@@ -246,7 +246,7 @@ export const education = [
     type: "Full-time",
     description: "Specialized in Software Engineering - MEAN stack, MERN stack, and more...",
     status: "Graduated - Awaiting Certification",
-    img: '/certificates/cert06.png'
+    img: '/certificates/altschool-software-engineering-cert.jpg'
   },
   {
     degree: "Diploma in DevOps Engineering",
