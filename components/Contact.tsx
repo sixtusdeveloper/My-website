@@ -84,7 +84,7 @@ const Contact = () => {
                   <Image src="/phone.png" alt="" width={20} height={20} className="mr-2" /><p className="text-base py-1 mb-0">+234&nbsp;902&nbsp;2048&nbsp;105</p> 
                 </div><br />
                 <div className="inline-flex items-center">
-                  <Image src="/mail.png" alt="" width={20} height={20} className="mr-2" /><p className="text-base tracking-wide py-1 mb-0">sixtusdev50@gmail.com</p>
+                  <Image src="/mail.png" alt="" width={20} height={20} className="mr-2" /><p className="text-base tracking-wide py-1 mb-0">contact@sixtusdev.net</p>
                 </div>
               </div>
             </div>
