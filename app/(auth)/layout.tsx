@@ -35,8 +35,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <span className="text-white font-medium tracking-wide text-xl">Sixtusdev</span>
           </div>
 
-          <ul className="mt-5 space-y-4 p-2 lg:p-8">
-              <li className="flex items-center py-2 sm:py-4">
+          <ul className="mt-5 space-y-2 p-2 lg:p-8">
+              <li className="flex items-center py-1 sm:py-2">
                   {/* <FaLaptopCode className="text-blue-600 text-xl sm:text-2xl" /> */}
                   <Image 
                     src="/auth01.png"
@@ -46,11 +46,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     style={ { width: 'auto', height: 'auto' } }
                     className='overflow-hidden'
                   />
-                  <span className="ml-2 sm:ml-5 text-sm sm:text-base text-gray-200">
+                  <span className="ml-2 sm:ml-2 text-sm sm:text-sm text-gray-200">
                   Crafting seamless and responsive user experiences on the web
                   </span>
               </li>
-              <li className="flex items-center py-2 sm:py-4">
+              <li className="flex items-center py-1 sm:py-2">
                   {/* <FaCode className="text-blue-600 text-xl sm:text-2xl" /> */}
                   <Image 
                     src="/auth02.png"
@@ -60,11 +60,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     style={ { width: 'auto', height: 'auto' } }
                     className='overflow-hidden'
                   />
-                  <span className="ml-2 sm:ml-5 text-sm sm:text-base text-gray-200">
+                  <span className="ml-2 sm:ml-2 text-sm sm:text-sm text-gray-200">
                   Engineering robust and scalable software solutions
                   </span>
               </li>
-              <li className="flex items-center py-2 sm:py-4">
+              <li className="flex items-center py-1 sm:py-2">
                   {/* <FaProjectDiagram className="text-blue-600 text-xl sm:text-2xl" /> */}
                   <Image 
                     src="/auth03.png"
@@ -74,11 +74,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     style={ { width: 'auto', height: 'auto' } }
                     className='overflow-hidden'
                   />
-                  <span className="ml-2 sm:ml-5 text-sm sm:text-base text-gray-200">
+                  <span className="ml-2 sm:ml-2 text-sm sm:text-sm text-gray-200">
                   Managing full-cycle software projects from inception to delivery
                   </span>
               </li>
-              <li className="flex items-center py-2 sm:py-4">
+              <li className="flex items-center py-1 sm:py-2">
                   {/* <FaUsers className="text-blue-600 text-xl sm:text-2xl" /> */}
                   <Image 
                     src="/auth04.png"
@@ -88,11 +88,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     style={ { width: 'auto', height: 'auto' } }
                     className='overflow-hidden'
                   />
-                  <span className="ml-2 sm:ml-5 text-sm sm:text-base text-gray-200">
+                  <span className="ml-2 sm:ml-2 text-sm sm:text-sm text-gray-200">
                   Collaborating with teams to deliver impactful digital solutions
                   </span>
               </li>
-              <li className="flex items-center py-2 sm:py-4">
+              <li className="flex items-center py-1 sm:py-2">
                   {/* <FaLightbulb className="text-blue-600 text-xl sm:text-2xl" /> */}
                   <Image 
                     src="/auth05.png"
@@ -102,11 +102,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     style={ { width: 'auto', height: 'auto' } }
                     className='overflow-hidden'
                   />
-                  <span className="ml-2 sm:ml-5 text-sm sm:text-base text-gray-200">
+                  <span className="ml-2 sm:ml-2 text-sm sm:text-sm text-gray-200">
                   Innovating through continuous learning and creative problem-solving
                   </span>
               </li>
-              <li className="flex items-center py-2 sm:py-4">
+              <li className="flex items-center py-1 sm:py-2">
                 <Image 
                   src="/privacy-policy.png"
                   alt="Privacy policy icon"
@@ -115,11 +115,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   style={ { width: 'auto', height: 'auto' } }
                   className='overflow-hidden'
                 />
-                 <a href="https://www.sixtusdev.net/pages/privacy_policy" className="ml-2 sm:ml-5 text-sm sm:text-base text-gray-200 hover:underline no-underline hover:text-green-600">
+                 <a href="https://www.sixtusdev.net/pages/privacy_policy" className="ml-2 sm:ml-2 text-sm sm:text-sm text-gray-200 hover:underline no-underline hover:text-green-600">
                   Privacy policy - Read more about the privacy policy of this application.
                   </a>
               </li>
-              <li className="flex items-center py-2 sm:py-4">
+              <li className="flex items-center py-1 sm:py-2">
                 <Image 
                   src="/terms-condition.png"
                   alt="terms and condition icon"
@@ -128,7 +128,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   style={ { width: 'auto', height: 'auto' } }
                   className='overflow-hidden'
                 />
-                 <a href="https://www.sixtusdev.net/pages/terms_condition" className="ml-2 sm:ml-5 text-sm sm:text-base text-gray-200 no-underline hover:underline hover:text-green-600">
+                 <a href="https://www.sixtusdev.net/pages/terms_condition" className="ml-2 sm:ml-2 text-sm sm:text-sm text-gray-200 no-underline hover:underline hover:text-green-600">
                   Terms and Condition - Read more about the terms and condition of this application.
                   </a>
               </li>
