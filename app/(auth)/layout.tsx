@@ -46,7 +46,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     style={ { width: 'auto', height: 'auto' } }
                     className='overflow-hidden'
                   />
-                  <span className="ml-2 sm:ml-2 text-sm sm:text-sm text-gray-200">
+                  <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
                   Crafting seamless and responsive user experiences on the web
                   </span>
               </li>
@@ -60,7 +60,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     style={ { width: 'auto', height: 'auto' } }
                     className='overflow-hidden'
                   />
-                  <span className="ml-2 sm:ml-2 text-sm sm:text-sm text-gray-200">
+                  <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
                   Engineering robust and scalable software solutions
                   </span>
               </li>
@@ -74,7 +74,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     style={ { width: 'auto', height: 'auto' } }
                     className='overflow-hidden'
                   />
-                  <span className="ml-2 sm:ml-2 text-sm sm:text-sm text-gray-200">
+                  <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
                   Managing full-cycle software projects from inception to delivery
                   </span>
               </li>
@@ -88,7 +88,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     style={ { width: 'auto', height: 'auto' } }
                     className='overflow-hidden'
                   />
-                  <span className="ml-2 sm:ml-2 text-sm sm:text-sm text-gray-200">
+                  <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
                   Collaborating with teams to deliver impactful digital solutions
                   </span>
               </li>
@@ -102,7 +102,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     style={ { width: 'auto', height: 'auto' } }
                     className='overflow-hidden'
                   />
-                  <span className="ml-2 sm:ml-2 text-sm sm:text-sm text-gray-200">
+                  <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
                   Innovating through continuous learning and creative problem-solving
                   </span>
               </li>
@@ -110,12 +110,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 <Image 
                   src="/privacy-policy.png"
                   alt="Privacy policy icon"
-                  width={40}
-                  height={40}
+                  width={25}
+                  height={25}
                   style={ { width: 'auto', height: 'auto' } }
                   className='overflow-hidden'
                 />
-                 <a href="https://www.sixtusdev.net/pages/privacy_policy" className="ml-2 sm:ml-2 text-sm sm:text-sm text-gray-200 hover:underline no-underline hover:text-green-600">
+                 <a href="https://www.sixtusdev.net/pages/privacy_policy" className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200 hover:underline no-underline hover:text-green-600">
                   Privacy policy - Read more about the privacy policy of this application.
                   </a>
               </li>
@@ -128,7 +128,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   style={ { width: 'auto', height: 'auto' } }
                   className='overflow-hidden'
                 />
-                 <a href="https://www.sixtusdev.net/pages/terms_condition" className="ml-2 sm:ml-2 text-sm sm:text-sm text-gray-200 no-underline hover:underline hover:text-green-600">
+                 <a href="https://www.sixtusdev.net/pages/terms_condition" className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200 no-underline hover:underline hover:text-green-600">
                   Terms and Condition - Read more about the terms and condition of this application.
                   </a>
               </li>
