@@ -7,7 +7,6 @@ import { SparklesCore } from './ui/sparkles'
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <main className="auth-page relative min-h-screen h-full bg-black dark:bg-black-100 bg-grid dark:bg-grid-white/[0.03] bg-grid-black/[0.2] overflow-y-auto">
-
         <div className="w-full absolute inset-0 h-screen">
             <SparklesCore
                 id="tsparticlesfullpage"
@@ -37,7 +36,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
           <ul className="mt-5 space-y-2 p-2 lg:p-8">
               <li className="flex items-center py-1 sm:py-2">
-                {/* <FaLaptopCode className="text-blue-600 text-xl sm:text-2xl" /> */}
                 <Image 
                   src="/auth01.png"
                   alt="Laptop Code icon"
@@ -51,7 +49,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 </span>
               </li>
               <li className="flex items-center py-1 sm:py-2">
-                {/* <FaCode className="text-blue-600 text-xl sm:text-2xl" /> */}
                 <Image 
                   src="/auth02.png"
                   alt="Code icon"
@@ -65,7 +62,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 </span>
               </li>
               <li className="flex items-center py-1 sm:py-2">
-                {/* <FaProjectDiagram className="text-blue-600 text-xl sm:text-2xl" /> */}
                 <Image 
                   src="/auth03.png"
                   alt="Project icon"
@@ -79,7 +75,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 </span>
               </li>
               <li className="flex items-center py-1 sm:py-2">
-                {/* <FaUsers className="text-blue-600 text-xl sm:text-2xl" /> */}
                 <Image 
                   src="/auth04.png"
                   alt="Collaboration icon"
@@ -93,7 +88,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 </span>
               </li>
               <li className="flex items-center py-1 sm:py-2">
-                {/* <FaLightbulb className="text-blue-600 text-xl sm:text-2xl" /> */}
                 <Image 
                   src="/auth05.png"
                   alt="Innovation icon"

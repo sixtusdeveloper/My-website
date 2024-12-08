@@ -18,24 +18,21 @@ import PortfolioCertifications from '@/components/PortfolioCertifications';
 export default function Home() {
 
   return (
-    <>
-      <main className="relative bg-secondary-foreground flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
-        <div className="max-w-7xl w-screen">
-          <NavBar navigation={portfolioNavLinks } />
-          <Hero />
-          <Services />
-          <Experience />
-          <Clients />
-          <ClientComponenies />
-          <Projects />
-          <Skills />
-          <PortfolioCertifications />
-          <ReachOut />
-          <Footer />
-          <ScrollIndicator />
-        </div>
-      </main>
-     
-    </>
+    <main className="relative bg-secondary-foreground flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
+      <div className="max-w-7xl w-screen">
+        <NavBar navigation={portfolioNavLinks } />
+        <Hero />
+        <Services />
+        <Experience />
+        <Clients />
+        <ClientComponenies />
+        <Projects />
+        <Skills />
+        <PortfolioCertifications />
+        <ReachOut />
+        <Footer />
+        <ScrollIndicator />
+      </div>
+    </main>
   );
 }
