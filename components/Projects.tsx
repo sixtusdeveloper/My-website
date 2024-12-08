@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-10 px-4 bg-secondary">
-      <div className="max-w-5xl mx-auto">
+    <section id="projects" className="py-10 px-8 bg-secondary">
+      <div className="max-w-6xl mx-auto">
         <h2 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider mb-8">Personal Projects</h2>
         <div className="grid gap-4 md:gap-6 lg:gap-8 md:grid-cols-2">
           {/* Project 1 */}

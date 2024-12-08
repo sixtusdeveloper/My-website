@@ -37,74 +37,74 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
           <ul className="mt-5 space-y-2 p-2 lg:p-8">
               <li className="flex items-center py-1 sm:py-2">
-                  {/* <FaLaptopCode className="text-blue-600 text-xl sm:text-2xl" /> */}
-                  <Image 
-                    src="/auth01.png"
-                    alt="Laptop Code icon"
-                    width={25}
-                    height={25}
-                    style={ { width: 'auto', height: 'auto' } }
-                    className='overflow-hidden'
-                  />
-                  <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
-                  Crafting seamless and responsive user experiences on the web
-                  </span>
+                {/* <FaLaptopCode className="text-blue-600 text-xl sm:text-2xl" /> */}
+                <Image 
+                  src="/auth01.png"
+                  alt="Laptop Code icon"
+                  width={25}
+                  height={25}
+                  style={ { width: 'auto', height: 'auto' } }
+                  className='overflow-hidden'
+                />
+                <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
+                Crafting seamless and responsive user experiences on the web
+                </span>
               </li>
               <li className="flex items-center py-1 sm:py-2">
-                  {/* <FaCode className="text-blue-600 text-xl sm:text-2xl" /> */}
-                  <Image 
-                    src="/auth02.png"
-                    alt="Code icon"
-                    width={25}
-                    height={25}
-                    style={ { width: 'auto', height: 'auto' } }
-                    className='overflow-hidden'
-                  />
-                  <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
-                  Engineering robust and scalable software solutions
-                  </span>
+                {/* <FaCode className="text-blue-600 text-xl sm:text-2xl" /> */}
+                <Image 
+                  src="/auth02.png"
+                  alt="Code icon"
+                  width={25}
+                  height={25}
+                  style={ { width: 'auto', height: 'auto' } }
+                  className='overflow-hidden'
+                />
+                <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
+                Engineering robust and scalable software solutions
+                </span>
               </li>
               <li className="flex items-center py-1 sm:py-2">
-                  {/* <FaProjectDiagram className="text-blue-600 text-xl sm:text-2xl" /> */}
-                  <Image 
-                    src="/auth03.png"
-                    alt="Project icon"
-                    width={25}
-                    height={25}
-                    style={ { width: 'auto', height: 'auto' } }
-                    className='overflow-hidden'
-                  />
-                  <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
-                  Managing full-cycle software projects from inception to delivery
-                  </span>
+                {/* <FaProjectDiagram className="text-blue-600 text-xl sm:text-2xl" /> */}
+                <Image 
+                  src="/auth03.png"
+                  alt="Project icon"
+                  width={25}
+                  height={25}
+                  style={ { width: 'auto', height: 'auto' } }
+                  className='overflow-hidden'
+                />
+                <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
+                Managing full-cycle software projects from inception to delivery
+                </span>
               </li>
               <li className="flex items-center py-1 sm:py-2">
-                  {/* <FaUsers className="text-blue-600 text-xl sm:text-2xl" /> */}
-                  <Image 
-                    src="/auth04.png"
-                    alt="Collaboration icon"
-                    width={25}
-                    height={25}
-                    style={ { width: 'auto', height: 'auto' } }
-                    className='overflow-hidden'
-                  />
-                  <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
-                  Collaborating with teams to deliver impactful digital solutions
-                  </span>
+                {/* <FaUsers className="text-blue-600 text-xl sm:text-2xl" /> */}
+                <Image 
+                  src="/auth04.png"
+                  alt="Collaboration icon"
+                  width={25}
+                  height={25}
+                  style={ { width: 'auto', height: 'auto' } }
+                  className='overflow-hidden'
+                />
+                <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
+                Collaborating with teams to deliver impactful digital solutions
+                </span>
               </li>
               <li className="flex items-center py-1 sm:py-2">
-                  {/* <FaLightbulb className="text-blue-600 text-xl sm:text-2xl" /> */}
-                  <Image 
-                    src="/auth05.png"
-                    alt="Innovation icon"
-                    width={25}
-                    height={25}
-                    style={ { width: 'auto', height: 'auto' } }
-                    className='overflow-hidden'
-                  />
-                  <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
-                  Innovating through continuous learning and creative problem-solving
-                  </span>
+                {/* <FaLightbulb className="text-blue-600 text-xl sm:text-2xl" /> */}
+                <Image 
+                  src="/auth05.png"
+                  alt="Innovation icon"
+                  width={25}
+                  height={25}
+                  style={ { width: 'auto', height: 'auto' } }
+                  className='overflow-hidden'
+                />
+                <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
+                Innovating through continuous learning and creative problem-solving
+                </span>
               </li>
               <li className="flex items-center py-1 sm:py-2">
                 <Image 
