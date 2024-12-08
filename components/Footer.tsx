@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
       <div className="flex justify-center items-center py-2">
           <span className="w-full flex flex-col text-center text-sm p-2">
               Copyright&copy; {new Date().getFullYear()} developed by Sixtusdev | all rights reserved |
-              sixtusushrey@gmail.com | version 0.1.0
+              contact@sixtusdev.net | version 0.1.0
           </span>
           
       </div>
