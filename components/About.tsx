@@ -75,7 +75,7 @@ const About = () => {
             <div className={`flex items-center space-x-2 py-2 px-4 rounded-md ${isTwitterFollowed ? 'bg-secondary border' : 'bg-transparent border'} transition`}>
               <FaTwitter />
               <a 
-                href="https://x.com/sixtusdev"
+                href="https://twitter.com/sixtusdev?ref_src=twsrc%5Etfw"
                 className="twitter-follow-button"
                 data-show-count="false"
                 data-size="large"
