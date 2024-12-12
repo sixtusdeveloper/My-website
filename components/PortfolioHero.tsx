@@ -77,7 +77,7 @@ const Hero = () => {
           </h3>
 
           <h1 className="text-[2rem] font-bold lg:font-bolder tracking-wide text-center lg:text-[3rem]">
-          <strong>Welcome to my <span className="text-purple-600">Portfolio</span></strong>
+          <strong>Welcome to <span className="text-purple-500">my Portfolio</span></strong>
           </h1>
           <p className="py-8 text-center leading-6 text-[16px]">
             Hello, I'm Sixtus Aondoakaa, a dedicated software engineer with a
