@@ -142,15 +142,15 @@ export default function Navbar({
           <div className="fixed inset-0 z-40" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="/" className="flex items-center gap-2">
+              <a href="/" className="flex items-center gap-1">
                 <Image
                   src="/Logo-icon.png"
                   alt="Sixtusdev Logo"
                   width={30}
                   height={30}
                 />
-                <span className="text-white text-base leading-6 font-medium">
-                  Sixtusdev
+                <span className='hidden sm:block self-center mx-1 py-1 px-3 bg-gradient-to-r from-indigo-600 via-blue-500 to-pink-800 rounded-lg text-white'>
+                  {title}
                 </span>
               </a>
               <ToggleMode />
