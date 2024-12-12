@@ -29,7 +29,7 @@ const Home = () => {
 
   return (
     <section id="portfolio" className="relative py-8 md:py-10 flex items-center justify-center bg-secondary">
-      <div className="relative p-4 lg:p-8 mt-20 max-w-3xl lg:max-w-3xl text-center">
+      <div className="relative p-4 lg:py-8 mt-20 max-w-3xl lg:max-w-4xl text-center">
         <h3 className="text-[1rem] py-6 font-bold tracking-wide sm:text-[1.2rem]">
           {isSignedIn && user ? (
             <>
@@ -40,9 +40,9 @@ const Home = () => {
           )}
         </h3>
         <h1 className="text-[2rem] lg:text-[3rem] font-bolder">
-        <strong>I&apos;m <span className="text-purple-600">Sixtus</span>, a Passionate <strong className="text-purple-600">Software Engineer</strong> Crafting Innovative Solutions</strong>
+        <strong>I&apos;m <span className="text-purple-500">Sixtus</span>, a Passionate <strong className="text-purple-600">Software Engineer</strong> Crafting Innovative Solutions</strong>
         </h1>
-        <p className="py-8 leading-6 text-[16px]">
+        <p className="py-8 leading-6 text-[1rem]">
           Crafting elegant solutions with a focus on clean, efficient code and innovative design. 
           Welcome to my personal space where technology meets creativity.
         </p>
