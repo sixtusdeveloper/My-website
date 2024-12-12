@@ -40,11 +40,14 @@ const Home = () => {
           )}
         </h3>
         <h1 className="text-[2rem] lg:text-[3rem] font-bolder">
-        <strong>I&apos;m <span className="text-purple-500">Sixtus</span>, a Passionate <strong className="text-purple-600">Software Engineer</strong> Crafting Innovative Solutions</strong>
+        <strong>I&apos;m <span className="text-purple-500">Sixtus</span>, a Passionate <strong className="text-purple-500">Software Engineer</strong> Crafting Innovative Solutions</strong>
         </h1>
         <p className="py-8 leading-6 text-[1rem]">
-          Crafting elegant solutions with a focus on clean, efficient code and innovative design. 
-          Welcome to my personal space where technology meets creativity.
+          {/* Crafting elegant solutions with a focus on clean, efficient code and innovative design. 
+          Welcome to my personal space where technology meets creativity. */}
+          Here is my space, where technology, creativity, and innovation converge. 
+          I craft elegant solutions through clean code, innovative design, and engaging tech content.
+           Whether building applications or sharing insights, this is where ideas come to life.
         </p>
 
         <div className="mt-4">

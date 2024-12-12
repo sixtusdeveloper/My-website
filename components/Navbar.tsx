@@ -98,7 +98,7 @@ export default function Navbar({
                 href={`#${item.href.substring(1)}`}
                 className={`text-base font-medium cursor-pointer ${
                   activeSection === item.href.substring(1)
-                    ? 'text-blue-500'
+                    ? 'text-purple-600'
                     : 'text-default'
                 } hover:text-primary`}
                 onClick={(e) => {
