@@ -39,8 +39,8 @@ const Home = () => {
             "👋 Hi there!"
           )}
         </h3>
-        <h1 className="text-xl lg:text-2xl font-bolder">
-          I&apos;m <strong className="text-purple-600">Sixtus</strong>, a Passionate <strong className="text-purple-600">Software Engineer</strong> Crafting Innovative Solutions
+        <h1 className="text-[2rem] lg:text-[3rem] font-bolder">
+        <strong>I&apos;m <span className="text-purple-600">Sixtus</span>, a Passionate <strong className="text-purple-600">Software Engineer</strong> Crafting Innovative Solutions</strong>
         </h1>
         <p className="py-8 leading-6 text-[16px]">
           Crafting elegant solutions with a focus on clean, efficient code and innovative design. 

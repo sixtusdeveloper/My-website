@@ -76,11 +76,11 @@ const Hero = () => {
             )}
           </h3>
 
-          <h1 className="text-xl font-bold lg:font-bolder tracking-wide text-center lg:text-2xl">
-            Welcome to my <span className="text-purple">Portfolio</span>
+          <h1 className="text-[2rem] font-bold lg:font-bolder tracking-wide text-center lg:text-[3rem]">
+          <strong>Welcome to my <span className="text-purple-600">Portfolio</span></strong>
           </h1>
           <p className="py-8 text-center leading-6 text-[16px]">
-            Hello, I'm <strong className="text-purple-600">Sixtus Aondoakaa</strong>, a dedicated software engineer with a
+            Hello, I'm Sixtus Aondoakaa, a dedicated software engineer with a
             passion for crafting efficient and scalable solutions. Here, you'll
             find a showcase of my work, ranging from innovative web applications
             to complex backend systems. Whether you're a potential employer,
