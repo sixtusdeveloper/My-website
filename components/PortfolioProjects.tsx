@@ -61,8 +61,8 @@ const Projects = () => {
         {/* Loader Overlay */}
         {isLoading && <Loader />}
 
-        <h1 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider">
-          My&nbsp;<span className="text-purple">Recent Projects</span>
+        <h1 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide">
+          <strong>My&nbsp;<span className="text-purple-500">Recent Projects</span></strong>
         </h1>
 
         {/* Category Buttons */}

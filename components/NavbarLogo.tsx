@@ -7,7 +7,7 @@ interface LogoProps {
 }
 
 export const Logo: React.FC<LogoProps> = ({ src, alt, title }) => (
-  <a href="/" className="-m-1.5 p-1.5 flex justify-center items-center gap-1">
+  <a href="/" className="-m-1.5 p-1.5 flex justify-center items-center">
     <Image
       src={src || "/Logo-icon.png"}
       alt={alt}

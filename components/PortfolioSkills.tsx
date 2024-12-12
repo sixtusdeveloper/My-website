@@ -14,7 +14,7 @@ const PortfolioSkills = () => {
     
     <section id="skills" className="bg-secondary relative md:pt-10 px-6 lg:px-10 pb-20">
       <div className="mx-auto max-w-5xl relative">
-        <h2 className="py-10 font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider">Skills & Tools</h2>
+        <h2 className="py-10 font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide"><strong>My Current <span className='text-purple-500'>Skills & Tools</span></strong></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Frontend Section */}
           <div className="skill-category bg-secondary p-6 rounded-lg border">

@@ -86,7 +86,7 @@ const Blog = () => {
   return (
     <section id="blog" className="py-20 px-4 lg:px-4 bg-secondary">
       <div className="lg:max-w-6xl max-w-6xl mx-auto">
-        <h2 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider mb-8">Few Selection of my Blog</h2>
+        <h2 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-8"><strong>Few Selection of <span className="text-purple-500">My Blog</span></strong></h2>
         <div className="grid gap-2 lg:gap-6 md:grid-cols-3">
           {currentPosts.map((post) => (
             <article key={post.id} className="p-4 bg-secondary border rounded-lg">

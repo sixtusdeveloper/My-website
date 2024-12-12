@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-10 px-4 lg:px-8 bg-secondary">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider mb-8">Personal Projects</h2>
+        <h2 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-8"><strong>Some of my <span className="text-purple-500">Personal Projects</span></strong></h2>
         <div className="grid gap-4 md:gap-6 lg:gap-8 md:grid-cols-2">
           {/* Project 1 */}
           <div className="flex relative justify-center gap-4 p-4 bg-secondary border rounded-[1.75rem]">
