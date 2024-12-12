@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
           </span>
         </a>
         <a
-          href="https://x.com/develites01"
+          href="https://x.com/sixtusdev"
           target="_blank"
           rel="noopener noreferrer"
           className="border hover:transform rounded hover:scale-110"
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
         </a>
 
         <a
-          href="https://www.youtube.com/@Sixtusdev"
+          href="https://www.youtube.com/@sixtusdev"
           target="_blank"
           rel="noopener noreferrer"
           className="border hover:transform rounded hover:scale-110"
