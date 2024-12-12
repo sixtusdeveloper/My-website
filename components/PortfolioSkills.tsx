@@ -12,7 +12,7 @@ import { FaJava } from "react-icons/fa";
 const PortfolioSkills = () => {
   return (
     
-    <section id="skills" className="bg-secondary relative md:pt-10 px-6 lg:px-10 pb-20">
+    <section id="skills" className="bg-secondary relative md:pt-10 px-6 lg:px-8 pb-20">
       <div className="mx-auto max-w-5xl relative">
         <h2 className="py-10 font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide"><strong>My Current <span className='text-purple-500'>Skills & Tools</span></strong></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
