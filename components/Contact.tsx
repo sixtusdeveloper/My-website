@@ -61,7 +61,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 px-4 lg:px-8 bg-secondary">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider mb-8">Let’s Connect</h2>
+        <h2 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-8"><strong>Let’s <span className='text-purple-500'>Connect</span></strong></h2>
         <p className="mb-8 text-md leading-relaxed tracking-wide">
           Feel free to reach out for collaborations, job opportunities, or just to say hi!
         </p>
@@ -79,7 +79,7 @@ const Contact = () => {
               <h3 className="text-lg font-bold mt-4">Sixtus Aondoakaa</h3>
               <p className="text-base">Software Engineer</p>
               <div className="mt-4">
-                <h4 className="py-2 text-lg font-bold">Contact Me</h4>
+                <h4 className="py-2 text-lg font-bold"><strong>Contact Me</strong></h4>
                 <div className="inline-flex py-1 items-center">
                   <Image src="/phone.png" alt="" width={20} height={20} className="mr-2" /><p className="text-base py-1 mb-0">+234&nbsp;902&nbsp;2048&nbsp;105</p> 
                 </div><br />
