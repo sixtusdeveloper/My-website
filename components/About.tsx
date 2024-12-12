@@ -80,7 +80,7 @@ const About = () => {
                 data-show-count="false"
                 data-size="large"
               >
-                Follow @yourTwitterHandle
+                Follow @sixtusdev
               </a>
             </div>
 
