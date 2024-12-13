@@ -12,8 +12,8 @@ import { FaJava } from "react-icons/fa";
 const PortfolioSkills = () => {
   return (
     
-    <section id="skills" className="bg-secondary relative md:pt-10 px-6 lg:px-8 pb-20">
-      <div className="mx-auto max-w-5xl relative">
+    <section id="skills" className="bg-secondary relative md:pt-10 px-6 lg:px-10 pb-20">
+      <div className="mx-auto max-w-6xl relative">
         <h2 className="py-10 font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide"><strong>My Current <span className='bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent'>Skills & Tools</span></strong></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Frontend Section */}

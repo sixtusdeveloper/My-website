@@ -64,8 +64,8 @@ const Services = () => {
   }, [isModalOpen]);
 
   return (
-    <section id="services" className="bg-secondary relative md:pt-10 px-6 lg:px-8 pb-20">
-      <div className='mx-auto max-w-5xl relative'>
+    <section id="services" className="bg-secondary relative md:pt-10 px-6 lg:px-10 pb-20">
+      <div className='mx-auto max-w-6xl relative'>
         <h1 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide">
           <strong>My&nbsp;<span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">Services</span></strong>
         </h1>

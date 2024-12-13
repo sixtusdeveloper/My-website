@@ -33,7 +33,7 @@ const Home = () => {
         <h3 className="text-[1rem] py-6 font-bold tracking-wide sm:text-[1.2rem]">
           {isSignedIn && user ? (
             <>
-              👋 Hi <span className="text-purple">{user.firstName}</span>
+              👋 Hi <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">{user.firstName}</span>
             </>
           ) : (
             "👋 Hi there!"
@@ -59,11 +59,6 @@ const Home = () => {
           </a>
         </div>
       </div>
-
-      {/* <div className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-600 bg-clip-text text-transparent text-lg font-bold">
-        Professional Gradient Text
-      </div> */}
-
 
       {isLoading && <Loader />} {/* Show loader */}
 
