@@ -6,6 +6,7 @@ import HeroModal from "@/components/ui/HeroModal";
 import MagicButton from "@/components/ui/MagicButton";
 import Loader from "@/components/ui/Loader"; 
 import { Button } from '@/components/ui/button';
+import BlogModal from "@/components/ui/BlogModal"; // Import the BlogModal component
 
 const Home = () => {
   const { user, isSignedIn } = useUser();
@@ -82,6 +83,35 @@ const Home = () => {
           </a>
         </div>
       </div>
+
+            {/* Loader for Blog Modal */}
+            {isBlogLoading && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
+          <div className="animate-spin rounded-full border-t-4 border-blue-500 h-16 w-16"></div>
+        </div>
+      )}
+
+      {/* Blog Modal */}
+      <BlogModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        message="You are about to visit my full blog website. Do you want to continue?"
+      >
+        <div className="flex justify-center gap-4 p-4">
+          <button
+            onClick={handleBlogRedirect}
+            className="mt-4 px-4 py-2 bg-blue-500 tracking-wide text-sm text-white rounded hover:bg-blue-600"
+          >
+            Yes, Visit Blog
+          </button>
+          <button
+            onClick={() => setIsModalOpen(false)}
+            className="mt-4 px-4 py-2 text-sm tracking-wide bg-gray-500 text-white rounded hover:bg-gray-600"
+          >
+            Cancel
+          </button>
+        </div>
+      </BlogModal>
 
       {isLoading && <Loader />} {/* Show loader */}
 
