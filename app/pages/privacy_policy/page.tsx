@@ -69,8 +69,8 @@ const PrivacyPolicy: React.FC = () => {
                 </p>
 
                 <div className="flex items-center gap-4 py-4">
-                    <p className="text-sm text-gray-600 mt-8">You may as well read the terms and conditions of this application <a href="https://www.sixtusdev.net/pages/terms_condition" className="text-blue-600 hover:underline">Terms and Conditions</a></p>
-                    <p className="text-sm text-gray-600 mt-8">Go back to website <a href="https://www.sixtusdev.net/" className="text-blue-600 hover:underline">Home Page</a></p>
+                    <p className="text-base text-gray-600 mt-8">You may as well read the terms and conditions of this application <a href="https://www.sixtusdev.net/pages/terms_condition" className="text-blue-600 hover:underline">Terms and Conditions</a></p>
+                    <p className="text-base text-gray-600 mt-8">Go back to website <a href="https://www.sixtusdev.net/" className="text-blue-600 hover:underline">Home Page</a></p>
                 </div>
             </div>
         </main>
