@@ -15,28 +15,37 @@ const ReachOut = () => {
         
         <div className="flex justify-center items-center space-x-8 mt-8">
           <a href="mailto:contact@sixtusdev.net?subject=Let's%20connect!">
-            <button className="relative flex items-center cursor-pointer space-x-2 p-2 rounded-md border-none">
-              <span className="absolute inset-0 rounded-md bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-800 animate-spin-slow"></span>
-              <span className="relative z-10 flex items-center">
-                <Image src="/Gmail.png" alt="Mail" width={28} height={28} />
-                <span className="text-base tracking-wide">Email me</span>
-              </span>
+            <button className="relative p-[2px] rounded-md bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-800">
+              <div className="flex items-center space-x-2 bg-white dark:bg-black rounded-md px-4 py-2">
+                <Image 
+                  src="/Gmail.png"
+                  alt="Mail" 
+                  width={28} 
+                  height={28} 
+                />
+                <span className="text-base tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-800 font-bold">Email me</span>
+              </div>
             </button>
           </a>
-
-          {/* Vertical Gradient Divider */}
-          <div className="h-8 w-[2px] bg-gradient-to-b from-indigo-600 via-blue-500 to-purple-800"></div>
-
+          
+          {/* Vertical Divider */}
+          <div className="border-l-[2px] h-8 bg-gradient-to-b from-indigo-600 via-blue-500 to-purple-800 bg-clip-border"></div>
+          
           <a href="https://wa.me/+2349022048105" target="_blank">
-            <button className="relative flex items-center cursor-pointer space-x-2 p-2 rounded-md border-none">
-              <span className="absolute inset-0 rounded-md bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-800 animate-spin-slow"></span>
-              <span className="relative z-10 flex items-center">
-                <Image src="/whatsapp-icon.png" alt="WhatsApp" width={28} height={28} />
-                <span className="text-base tracking-wide">Chat me</span>
-              </span>
+            <button className="relative p-[2px] rounded-md bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-800">
+              <div className="flex items-center space-x-2 bg-white dark:bg-black rounded-md px-4 py-2">
+                <Image 
+                  src="/whatsapp-icon.png" 
+                  alt="WhatsApp" 
+                  width={28} 
+                  height={28} 
+                />
+                <span className="text-base tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-800 font-bold">Chat me</span>
+              </div>
             </button>
           </a>
         </div>
+
   
         {/* Appreciation */}
         <div className="flex flex-col items-center mt-8 py-10">
