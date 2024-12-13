@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Dialog, DialogPanel } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Bars3Icon, XMarkIcon, UserIcon } from '@heroicons/react/24/outline';
 import {
   SignedIn,
   SignedOut,
@@ -126,7 +126,7 @@ export default function Navbar({
             <SignedOut>
               <SignInButton>
                 <button className="text-base font-medium px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600">
-                  Sign In
+                 <UserIcon className="h-6 w-6 text-gray-400" /> Sign In
                 </button>
               </SignInButton>
             </SignedOut>
@@ -149,7 +149,7 @@ export default function Navbar({
                   width={30}
                   height={30}
                 />
-                <span className='hidden sm:block self-center mx-1 py-1 px-3 bg-gradient-to-r from-indigo-600 via-blue-500 to-pink-800 rounded-lg text-white'>
+                <span className='hidden sm:block self-center mx-1 py-1 px-3 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-800 rounded-lg text-white'>
                   {title}
                 </span>
               </a>

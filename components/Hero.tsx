@@ -48,7 +48,7 @@ const Home = () => {
            Whether building applications or sharing insights, this is where ideas come to life.
         </p>
 
-        <div className="mt-4">
+        <div className="mt-2">
           <a 
             onClick={openModal} 
           >
@@ -59,6 +59,11 @@ const Home = () => {
           </a>
         </div>
       </div>
+
+      <div className="bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-800 bg-clip-text text-transparent text-lg font-bold">
+        Professional Gradient Text
+      </div>
+
 
       {isLoading && <Loader />} {/* Show loader */}
 

@@ -72,7 +72,7 @@ const Hero = () => {
                 👋 Hey <span className="text-purple">{user.firstName}</span>
               </>
             ) : (
-              "👋 Hey there!"
+              "👋 Hi there!"
             )}
           </h3>
 
