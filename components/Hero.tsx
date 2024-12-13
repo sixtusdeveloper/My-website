@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { useUser } from "@clerk/nextjs";
 import HeroModal from "@/components/ui/HeroModal";
+import MagicButton from "@/components/ui/MagicButton";
 import Loader from "@/components/ui/Loader"; 
 import { Button } from '@/components/ui/button';
 
@@ -10,6 +11,7 @@ const Home = () => {
   const { user, isSignedIn } = useUser();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false); // Add state for loader
+  const [isBlogLoading, setIsBlogLoading] = useState<boolean>(false); // State for blog loading
 
   const openModal = () => {
     setIsLoading(true);
@@ -25,6 +27,21 @@ const Home = () => {
 
   const handleLeave = () => {
     window.location.href = 'https://www.sixtusdev.net/pages/portfolio'; // Redirect to portfolio
+  };
+
+  // Logic for "Visit my Blog" button
+  const handleBlogClick = () => {
+    setIsBlogLoading(true); // Start loading
+
+    setTimeout(() => {
+      setIsBlogLoading(false); // Stop loading
+      setIsModalOpen(true); // Open the modal
+    }, 1000); // 1 second delay for demonstration
+  };
+
+  const handleBlogRedirect = () => {
+    window.open('https://project-update-notice.vercel.app/', '_blank'); // Open the URL in a new tab
+    setIsModalOpen(false); // Close the modal
   };
 
   return (
@@ -48,13 +65,20 @@ const Home = () => {
            Whether building applications or sharing insights, this is where ideas come to life.
         </p>
 
-        <div className="mt-0">
+        <div className="flex flex-row justify-center items-center mb-2 space-x-4 md:space-y-0 md:space-x-4">
           <a 
             onClick={openModal} 
           >
             <Button className="h-12 px-4 py-3 cursor-pointer text-base rounded-md hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
               View My Work
             </Button>
+          </a>
+
+          <a onClick={handleBlogClick} >
+            <MagicButton
+              title={isBlogLoading ? "Loading..." : "Visit my Blog"}
+              otherClasses="text-[1.4rem] flex justify-center rounded-full items-center text-base mt-4 text-center"
+            />
           </a>
         </div>
       </div>
