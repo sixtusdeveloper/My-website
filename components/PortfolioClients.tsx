@@ -9,7 +9,7 @@ const Clients = () => {
       <h1 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-widerp-8 lg:p-4">
         <strong>
          Kind words from 
-         <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent">&nbsp;Satisfied Clients</span>
+         <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">&nbsp;Satisfied Clients</span>
         </strong> 
       </h1>
       <div className="flex flex-col items-center mt-8 lg:mt-10">

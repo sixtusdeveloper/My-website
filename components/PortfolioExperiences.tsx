@@ -110,7 +110,7 @@ const Experience = () => {
 
         <div className="my-8 relative text-center">
           <h2 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-8">
-            <strong>My <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent">Experience</span></strong> 
+            <strong>My <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">Experience</span></strong> 
           </h2>
           <div className="flex justify-center space-x-4 mb-8">
             <button

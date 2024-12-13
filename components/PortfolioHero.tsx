@@ -77,7 +77,7 @@ const Hero = () => {
           </h3>
 
           <h1 className="text-[2rem] font-bold lg:font-bolder tracking-wide text-center lg:text-[3rem]">
-          <strong>Welcome to <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent">My Portfolio</span></strong>
+          <strong>Welcome to <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">My Portfolio</span></strong>
           </h1>
           <p className="py-8 text-center leading-6 text-[16px]">
             Hello, I'm Sixtus Aondoakaa, a dedicated software engineer with a
