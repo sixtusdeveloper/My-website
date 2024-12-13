@@ -70,7 +70,9 @@ const PrivacyPolicy: React.FC = () => {
 
                 <div className="flex items-center gap-4 py-4">
                     <p className="text-base text-gray-600 mt-8">You may as well read the terms and conditions of this application <a href="https://www.sixtusdev.net/pages/terms_condition" className="text-blue-600 hover:underline">Terms and Conditions</a></p>
+                    
                     <div className="border-l-[2px] h-8 bg-gradient-to-b from-indigo-600 via-blue-500 to-purple-800 bg-clip-border"></div>
+
                     <p className="text-base text-gray-600 mt-8">Go back to website <a href="https://www.sixtusdev.net/" className="text-blue-600 hover:underline">Home Page</a></p>
                 </div>
             </div>
