@@ -31,8 +31,6 @@ const ReachOut = () => {
           {/* Vertical Divider with Border Gradient */}
           <div className="border-l-[2px] h-8 bg-gradient-to-b from-indigo-600 via-blue-500 to-purple-800 bg-clip-border"></div>
 
-
-          
           <a href="https://wa.me/+2349022048105" target="_blank">
             <button className="relative p-[2px] rounded-md bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-800">
               <div className="flex items-center space-x-2 bg-transparent rounded-md px-2 py-2">
