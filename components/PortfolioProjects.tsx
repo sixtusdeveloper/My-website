@@ -74,7 +74,7 @@ const Projects = () => {
             }}
             className={`px-4 py-2 mx-2 rounded-md tracking-wide cursor-pointer transition-all duration-300 ${
               selectedCategory === "Frontend"
-                ? "bg-blue-800 text-white"
+                ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
                 : "bg-transparent border"
             }`}
           >
@@ -87,7 +87,7 @@ const Projects = () => {
             }}
             className={`px-4 py-2 mx-2 rounded-md tracking-wide transition-all duration-300 ${
               selectedCategory === "Fullstack"
-                ? "bg-blue-800 text-white"
+                ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
                 : "bg-transparent border"
             }`}
           >
@@ -168,7 +168,7 @@ const Projects = () => {
                 onClick={() => paginate(pageNumber)}
                 className={`px-4 py-1 mx-1 rounded-md cursor-pointer transition-all duration-300 ${
                   currentPage === pageNumber
-                    ? "bg-blue-800 text-white"
+                    ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
                     : "bg-transparent border"
                 }`}
               >

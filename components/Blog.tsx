@@ -126,7 +126,7 @@ const Blog = () => {
               key={index + 1}
               onClick={() => paginate(index + 1)}
               className={`mx-1 px-4 py-1 border rounded ${
-                currentPage === index + 1 ? "bg-blue-500 text-white" : "bg-secondary"
+                currentPage === index + 1 ? "hover:bg-indego-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white" : "bg-secondary"
               }`}
             >
               {index + 1}

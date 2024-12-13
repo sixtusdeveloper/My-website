@@ -117,7 +117,7 @@ const Experience = () => {
               onClick={() => setSelectedSection("work")}
               className={`px-4 py-2 rounded-md cursor-pointer ${
                 selectedSection === "work"
-                  ? "bg-blue-800 text-white"
+                  ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
                   : "bg-transparent border"
               }`}
             >
@@ -127,7 +127,7 @@ const Experience = () => {
               onClick={() => setSelectedSection("education")}
               className={`px-4 py-2 rounded-md cursor-pointer ${
                 selectedSection === "education"
-                  ? "bg-blue-800 text-white"
+                  ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
                   : "bg-transparent border"
               }`}
             >
