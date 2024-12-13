@@ -116,7 +116,7 @@ export default function Navbar({
             <SignedIn>
               <div className="flex items-center gap-4">
                 {user && (
-                  <span className="hidden lg:block text-sm font-semibold">
+                  <span className="hidden lg:block text-sm font-semibold bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
                     {user.firstName}
                   </span>
                 )}
@@ -185,7 +185,15 @@ export default function Navbar({
                 </div>
                 <div className="py-3">
                   <SignedIn>
-                    <UserButton />
+                    <div className="flex items-center gap-4">
+                      <UserButton />
+
+                      {user && (
+                        <span className="hidden lg:block text-sm font-semibold bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+                          {user.firstName}
+                        </span>
+                      )}
+                    </div>
                   </SignedIn>
                   <SignedOut>
                     <SignInButton>

@@ -158,10 +158,10 @@ const Hero = () => {
           className="rounded-full mx-auto profile_img object-cover overflow-hidden"
           style={{ width: 'auto', height: 'auto' }}
           />
-          <h2 className="text-lg lg:text-xl mb-4 font-semibold tracking-wide text-center">
+          <h2 className="text-lg lg:text-xl mb-1 font-semibold tracking-wide text-center">
             Sixtus Aondoakaa
           </h2>
-          <h4 className="text-base tracking-wide text-center">
+          <h4 className="text-base font-semibold bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent text-center">
             Software Engineer
           </h4>
         </div>
