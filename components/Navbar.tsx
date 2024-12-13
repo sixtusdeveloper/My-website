@@ -98,7 +98,7 @@ export default function Navbar({
                 href={`#${item.href.substring(1)}`}
                 className={`text-base tracking-wide font-semibold cursor-pointer ${
                   activeSection === item.href.substring(1)
-                    ? 'text-purple-500'
+                    ? 'bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-600 bg-clip-text text-transparent'
                     : 'text-default'
                 } hover:text-primary`}
                 onClick={(e) => {
@@ -125,8 +125,8 @@ export default function Navbar({
             </SignedIn>
             <SignedOut>
               <SignInButton>
-                <button className="text-base font-medium px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600">
-                 <UserIcon className="h-6 w-6 text-gray-400" /> Sign In
+                <button className="inline-flex text-base font-medium px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600">
+                 <UserIcon className="mr-1 h-6 w-6 text-white" /> Sign In
                 </button>
               </SignInButton>
             </SignedOut>
@@ -149,7 +149,7 @@ export default function Navbar({
                   width={30}
                   height={30}
                 />
-                <span className='hidden sm:block self-center mx-1 py-1 px-3 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-800 rounded-lg text-white'>
+                <span className='hidden sm:block self-center mx-1 py-1 px-3 bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 rounded-lg text-white'>
                   {title}
                 </span>
               </a>
@@ -189,9 +189,9 @@ export default function Navbar({
                   </SignedIn>
                   <SignedOut>
                     <SignInButton>
-                      <button className="text-base font-medium px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600 w-full">
-                        Sign In
-                      </button>
+                    <button className="inline-flex text-base font-medium px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600">
+                      <UserIcon className="mr-1 h-6 w-6 text-white" /> Sign In
+                    </button>
                     </SignInButton>
                   </SignedOut>
                 </div>

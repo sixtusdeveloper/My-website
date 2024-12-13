@@ -67,7 +67,7 @@ const Services = () => {
     <section id="services" className="bg-secondary relative md:pt-10 px-6 lg:px-8 pb-20">
       <div className='mx-auto max-w-5xl relative'>
         <h1 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide">
-          <strong>My&nbsp;<span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-600 bg-clip-text text-transparent">Services</span></strong>
+          <strong>My&nbsp;<span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent">Services</span></strong>
         </h1>
         <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-8">
           {services.map((service, index) => (

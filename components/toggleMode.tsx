@@ -21,16 +21,17 @@ const toggleMode = () => {
     return (
         <Button 
             variant="secondary" 
-            size="icon" 
+            size="icon"
+            className='hover:cursor-pointer rounded-full border-2 border-blue-600' 
             onClick={() => setTheme(dark ? 'light' : 'dark')}>
                 {
                 dark ? 
                     <SunIcon 
-                       className="hover:cursor-pointer text-2xl rounded border text-primary hover:text-primary" 
+                       className="hover:cursor-pointer text-2xl rounded-full border text-primary hover:text-primary" 
                     />
                  : 
                     <MoonIcon 
-                       className="hover:cursor-pointer text-2xl rounded border text-primary hover:text-primary" 
+                       className="hover:cursor-pointer text-2xl rounded-full border text-primary hover:text-primary" 
                     />
                  }
         </Button>
