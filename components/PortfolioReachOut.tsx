@@ -16,29 +16,30 @@ const ReachOut = () => {
         <div className="flex justify-center items-center space-x-8 mt-8">
           <a href="mailto:contact@sixtusdev.net?subject=Let's%20connect!">
             <button className="relative p-[2px] rounded-md bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-800">
-              <div className="flex items-center space-x-2 bg-white dark:bg-black rounded-md px-4 py-2">
+              <div className="flex items-center space-x-2 bg-transparent rounded-md px-4 py-2">
                 <Image 
                   src="/Gmail.png"
                   alt="Mail" 
-                  width={28} 
-                  height={28} 
+                  width={20} 
+                  height={20} 
                 />
                 <span className="text-base tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-800 font-bold">Email me</span>
               </div>
             </button>
           </a>
-          
-          {/* Vertical Divider */}
+        
+          {/* Vertical Divider with Border Gradient */}
           <div className="border-l-[2px] h-8 bg-gradient-to-b from-indigo-600 via-blue-500 to-purple-800 bg-clip-border"></div>
+
           
           <a href="https://wa.me/+2349022048105" target="_blank">
             <button className="relative p-[2px] rounded-md bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-800">
-              <div className="flex items-center space-x-2 bg-white dark:bg-black rounded-md px-4 py-2">
+              <div className="flex items-center space-x-2 bg-transparent rounded-md px-4 py-2">
                 <Image 
                   src="/whatsapp-icon.png" 
                   alt="WhatsApp" 
-                  width={28} 
-                  height={28} 
+                  width={20} 
+                  height={20} 
                 />
                 <span className="text-base tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-800 font-bold">Chat me</span>
               </div>

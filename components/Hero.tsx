@@ -5,6 +5,7 @@ import { useUser } from "@clerk/nextjs";
 import HeroModal from "@/components/ui/HeroModal";
 import Loader from "@/components/ui/Loader"; 
 import MagicButton from "@/components/ui/MagicButton";
+import { Button } from '@/components/ui/button';
 
 const Home = () => {
   const { user, isSignedIn } = useUser();
@@ -39,23 +40,26 @@ const Home = () => {
             "👋 Hi there!"
           )}
         </h3>
-        <h1 className="text-[2rem] lg:text-[3rem] font-bolder">
+        <h1 className="text-[2rem] lg:text-[3rem] font-extrabold">
         <strong>I&apos;m <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">Sixtus</span>, a Passionate <strong className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">Software Engineer</strong> Crafting Innovative Solutions</strong>
         </h1>
-        <p className="p-8 leading-6 text-[1rem]">
+        <p className="p-4 lg:p-8 leading-6 text-[1rem]">
           Here is my space, where technology, creativity, and innovation converge. 
           I craft elegant solutions through clean code, innovative design, and engaging tech content.
            Whether building applications or sharing insights, this is where ideas come to life.
         </p>
 
-        <div className="mt-2">
+        <div className="mt-1">
           <a 
             onClick={openModal} 
           >
-            <MagicButton
+            {/* <MagicButton
               title="View My Work"
               otherClasses="text-[1.4rem] flex justify-center rounded-full items-center text-center"
-            />
+            /> */}
+            <Button className="h-12 px-4 py-3 cursor-pointer text-base rounded-md hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
+              View My Work
+            </Button>
           </a>
         </div>
       </div>

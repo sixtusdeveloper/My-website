@@ -32,7 +32,6 @@ export const certificationsData: Certification[] = [
     year: '2022 - 2022',
     desc: 'This certification demonstrates proficiency in creating responsive web designs. It includes skills in HTML, CSS, Flexbox, and Grid, ensuring websites function effectively across various devices and screen sizes, and adheres to modern web design principles.',
     certUrl: '/certificates/cert03.png',
-    // certUrl: '/certificates/responsive-web-design.pdf',
     imageUrl: '/certificates/responsive-web-design-logo.png', // Image URL
   },
   {

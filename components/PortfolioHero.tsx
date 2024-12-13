@@ -52,7 +52,7 @@ const Hero = () => {
       <div className="flex justify-center relative my-16 lg:px-10 px-8 lg:my-20 z-10">
         <div className="max-w-[90vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 hover:text-purple-600 border bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+            <div className="relative rounded-full px-3 py-1 text-sm leading-6 hover:text-indigo-600 border bg-gradient-to-r from-indigo-800 via-blue-500 to-purple-800 bg-clip-text text-transparent">
               Engineering excellence in every line of code.{" "}
               <a
                 href="https://github.com/sixtusdeveloper/My-website/"
@@ -76,10 +76,13 @@ const Hero = () => {
             )}
           </h3>
 
-          <h1 className="text-[2rem] font-bold lg:font-bolder tracking-wide text-center lg:text-[3rem]">
-          <strong>Welcome to <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">My Portfolio</span></strong>
+          <h1 className="text-[2rem] font-extrabold tracking-wide text-center lg:text-[3rem]">
+            <strong>
+              Explore <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">Innovation and Creativity</span> in My Portfolio
+            </strong>
           </h1>
-          <p className="py-8 text-center leading-6 text-[16px]">
+
+          <p className="py-4 text-center leading-6 text-[16px]">
             Hello, I'm Sixtus Aondoakaa, a dedicated software engineer with a
             passion for crafting efficient and scalable solutions. Here, you'll
             find a showcase of my work, ranging from innovative web applications

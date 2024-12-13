@@ -130,7 +130,7 @@ const Certifications = () => {
                         <p className="text-base text-start leading-6 mt-3 font-semibold">
                             {truncateDescription(certification.desc ?? '', MAX_DESCRIPTION_LENGTH)}&nbsp;
                             <span className="text-blue-600 text-sm text-end font-medium">
-                            View credentials
+                            View Credentials
                             </span>
                         </p>
                     </div>

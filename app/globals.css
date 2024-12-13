@@ -72,7 +72,7 @@
   
     body {
       @apply bg-background text-foreground;
-      font-family: 'Poppins', sans-serif !important;
+      font-family: 'Arial', sans-serif !important;
     }
   
     h1, h2, h3, h4, h5, h6 {
@@ -81,18 +81,6 @@
     }
   }
   
-
-
-/* @layer base {
-  * {
-    @apply border-border;
-    
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-  
-} */
 
 .avatar-img {
   width: 40px !important;
