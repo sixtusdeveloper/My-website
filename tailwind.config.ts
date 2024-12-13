@@ -137,6 +137,7 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         spotlight: "spotlight 2s ease .75s 1 forwards",
         shimmer: "shimmer 2s linear infinite",
+        "spin-slow": 'spin 5s linear infinite',
         first: "moveVertical 30s ease infinite",
         second: "moveInCircle 20s reverse infinite",
         third: "moveInCircle 40s linear infinite",

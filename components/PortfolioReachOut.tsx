@@ -14,29 +14,31 @@ const ReachOut = () => {
         </p>
         
         <div className="flex justify-center items-center space-x-8 mt-8">
-          <a href="mailto:sixtusdev50@gmail.com?subject=Let's%20connect!" className="flex items-center cursor-pointer space-x-2 border p-2 rounded-md">
-              <Image 
-                  src="/Gmail.png"
-                  alt="Mail" 
-                  width={28} 
-                  height={28} 
-              />
-              <span className="text-base tracking-wide">Email me</span>
+          <a href="mailto:contact@sixtusdev.net?subject=Let's%20connect!">
+            <button className="relative flex items-center cursor-pointer space-x-2 p-2 rounded-md border-none">
+              <span className="absolute inset-0 rounded-md bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-800 animate-spin-slow"></span>
+              <span className="relative z-10 flex items-center">
+                <Image src="/Gmail.png" alt="Mail" width={28} height={28} />
+                <span className="text-base tracking-wide">Email me</span>
+              </span>
+            </button>
           </a>
-          
-          {/* Vertical Divider */}
-          <div className="border-l h-8"></div>
-          
-          <a href="https://wa.me/+2349022048105" target="_blank" className="flex items-center space-x-2 cursor-pointer border p-2 rounded-md">
-              <Image 
-                  src="/whatsapp-icon.png" 
-                  alt="WhatsApp" 
-                  width={28} 
-                  height={28} />
-              <span className="text-base tracking-wide">Chat me</span>
+
+          {/* Vertical Gradient Divider */}
+          <div className="h-8 w-[2px] bg-gradient-to-b from-indigo-600 via-blue-500 to-purple-800"></div>
+
+          <a href="https://wa.me/+2349022048105" target="_blank">
+            <button className="relative flex items-center cursor-pointer space-x-2 p-2 rounded-md border-none">
+              <span className="absolute inset-0 rounded-md bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-800 animate-spin-slow"></span>
+              <span className="relative z-10 flex items-center">
+                <Image src="/whatsapp-icon.png" alt="WhatsApp" width={28} height={28} />
+                <span className="text-base tracking-wide">Chat me</span>
+              </span>
+            </button>
           </a>
         </div>
-        
+  
+        {/* Appreciation */}
         <div className="flex flex-col items-center mt-8 py-10">
             <Image 
               src="/thankyou.png" 
