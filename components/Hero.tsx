@@ -40,7 +40,7 @@ const Home = () => {
           )}
         </h3>
         <h1 className="text-[2rem] lg:text-[3rem] font-bolder">
-        <strong>I&apos;m <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-600 bg-clip-text text-transparent">Sixtus</span>, a Passionate <strong className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent">Software Engineer</strong> Crafting Innovative Solutions</strong>
+        <strong>I&apos;m <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent">Sixtus</span>, a Passionate <strong className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent">Software Engineer</strong> Crafting Innovative Solutions</strong>
         </h1>
         <p className="p-8 leading-6 text-[1rem]">
           Here is my space, where technology, creativity, and innovation converge. 

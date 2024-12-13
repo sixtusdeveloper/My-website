@@ -99,7 +99,7 @@ const About = () => {
           </div>
         </div>
 
-        <h2 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-4"><strong>Few words <span className="text-purple-500">About Me</span></strong> </h2>
+        <h2 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-4"><strong>Few words <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent">About Me</span></strong> </h2>
         <p className="text-base leading-relaxed mb-4">
           Hi, I’m Sixtus Aondoakaa, a passionate Software Engineer, DevOps Engineer and a tech Educator dedicated to crafting scalable and innovative web solutions. My journey in tech began with a fascination for how technology shapes our world. Over the years, I have navigated the complexities of full-stack development, embracing both front-end and back-end technologies to build robust applications.
         </p>
