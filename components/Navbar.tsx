@@ -96,7 +96,7 @@ export default function Navbar({
               <a
                 key={item.name}
                 href={`#${item.href.substring(1)}`}
-                className={`text-base tracking-wide font-semibold cursor-pointer ${
+                className={`text-base hover:text-purple-800 tracking-wide font-semibold cursor-pointer ${
                   activeSection === item.href.substring(1)
                     ? 'bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent'
                     : 'text-default'
