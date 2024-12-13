@@ -62,7 +62,7 @@ const Projects = () => {
         {isLoading && <Loader />}
 
         <h1 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide">
-          <strong>My&nbsp;<span className="text-purple-500">Recent Projects</span></strong>
+          <strong>My&nbsp;<span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-600 bg-clip-text text-transparent">Recent Projects</span></strong>
         </h1>
 
         {/* Category Buttons */}
