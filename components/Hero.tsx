@@ -49,15 +49,11 @@ const Home = () => {
            Whether building applications or sharing insights, this is where ideas come to life.
         </p>
 
-        <div className="mt-1">
+        <div className="mt-0">
           <a 
             onClick={openModal} 
           >
-            {/* <MagicButton
-              title="View My Work"
-              otherClasses="text-[1.4rem] flex justify-center rounded-full items-center text-center"
-            /> */}
-            <Button className="h-12 px-4 py-3 cursor-pointer text-base rounded-md hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
+            <Button className="h-12 px-4 py-3 cursor-pointer text-base rounded-lg hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
               View My Work
             </Button>
           </a>
