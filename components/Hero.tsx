@@ -60,9 +60,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-600 bg-clip-text text-transparent text-lg font-bold">
+      {/* <div className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-600 bg-clip-text text-transparent text-lg font-bold">
         Professional Gradient Text
-      </div>
+      </div> */}
 
 
       {isLoading && <Loader />} {/* Show loader */}
