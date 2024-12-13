@@ -69,7 +69,7 @@ const Hero = () => {
           <h3 className="text-[1rem] font-bold tracking-wider sm:text-[1.2rem]">
             {isSignedIn && user ? (
               <>
-                👋 Hey <span className="text-purple">{user.firstName}</span>
+                👋 Hey <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-600 bg-clip-text text-transparent text-lg font-bold">{user.firstName}</span>
               </>
             ) : (
               "👋 Hi there!"
@@ -77,7 +77,7 @@ const Hero = () => {
           </h3>
 
           <h1 className="text-[2rem] font-bold lg:font-bolder tracking-wide text-center lg:text-[3rem]">
-          <strong>Welcome to <span className="text-purple-500">My Portfolio</span></strong>
+          <strong>Welcome to <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-600 bg-clip-text text-transparent text-lg font-bold">My Portfolio</span></strong>
           </h1>
           <p className="py-8 text-center leading-6 text-[16px]">
             Hello, I'm Sixtus Aondoakaa, a dedicated software engineer with a

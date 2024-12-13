@@ -40,7 +40,7 @@ const Home = () => {
           )}
         </h3>
         <h1 className="text-[2rem] lg:text-[3rem] font-bolder">
-        <strong>I&apos;m <span className="text-purple-500">Sixtus</span>, a Passionate <strong className="text-purple-500">Software Engineer</strong> Crafting Innovative Solutions</strong>
+        <strong>I&apos;m <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-600 bg-clip-text text-transparent text-lg font-bold">Sixtus</span>, a Passionate <strong className="text-purple-500">Software Engineer</strong> Crafting Innovative Solutions</strong>
         </h1>
         <p className="p-8 leading-6 text-[1rem]">
           Here is my space, where technology, creativity, and innovation converge. 
@@ -60,7 +60,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-800 bg-clip-text text-transparent text-lg font-bold">
+      <div className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-600 bg-clip-text text-transparent text-lg font-bold">
         Professional Gradient Text
       </div>
 
