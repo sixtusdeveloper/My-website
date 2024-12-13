@@ -77,7 +77,7 @@ const Home = () => {
           <a onClick={handleBlogClick} >
             <MagicButton
               title={isBlogLoading ? "Loading..." : "Visit my Blog"}
-              otherClasses="text-[1.4rem] flex justify-center rounded-full items-center text-base mt-4 text-center"
+              otherClasses="text-[1.4rem] flex justify-center rounded-full items-center text-base text-center"
             />
           </a>
         </div>
