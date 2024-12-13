@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { useUser } from "@clerk/nextjs";
 import HeroModal from "@/components/ui/HeroModal";
 import Loader from "@/components/ui/Loader"; 
-import MagicButton from "@/components/ui/MagicButton";
 import { Button } from '@/components/ui/button';
 
 const Home = () => {
@@ -43,7 +42,7 @@ const Home = () => {
         <h1 className="text-[2rem] lg:text-[3rem] font-extrabold">
         <strong>I&apos;m <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">Sixtus</span>, a Passionate <strong className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">Software Engineer</strong> Crafting Innovative Solutions</strong>
         </h1>
-        <p className="p-4 lg:p-8 leading-6 text-[1rem]">
+        <p className="p-4 lg:px-8 lg:pt-8 leading-6 text-[1rem]">
           Here is my space, where technology, creativity, and innovation converge. 
           I craft elegant solutions through clean code, innovative design, and engaging tech content.
            Whether building applications or sharing insights, this is where ideas come to life.

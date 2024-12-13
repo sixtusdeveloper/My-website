@@ -2,7 +2,7 @@
 'use client';
 
 import Link from "next/link";
-import BackDropButton from "@/components/ui/BackDropButton";
+import { Button } from '@/components/ui/button';
 import MagicButton from "@/components/ui/MagicButton";
 import { GoArrowRight } from "react-icons/go";
 import { useUser } from "@clerk/nextjs";
@@ -92,21 +92,20 @@ const Hero = () => {
             something amazing together!
           </p>
           <div className="flex flex-row justify-center items-center mb-2 space-x-4 md:space-y-0 md:space-x-4">
-            <a onClick={handleHireMeClick}>
-              <MagicButton
-                title="Hire Me"
-                otherClasses="text-[1.4rem] flex justify-center items-center text-center"
-              />
-            </a>
             
-            <a onClick={handleReadMoreClick}>
-              <BackDropButton
+            <a onClick={handleHireMeClick}>
+              <Button
+                className="h-12 px-4 py-3 cursor-pointer text-base rounded-md hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white" 
+              >Hire Me
+              </Button>
+            </a>
+            <a onClick={handleReadMoreClick} >
+              <MagicButton
                 title="Read More"
                 icon={
                   <GoArrowRight className="text-lg" />
                 }
-                position="right"
-                otherClasses=" md:ring-none cursor-pointer flex justify-center items-center text-center tracking-wider text-purple border-gray-200 rounded-lg hover:border-black-200"
+                otherClasses="text-[1.4rem] flex justify-center items-center text-center"
               />
             </a>
           
