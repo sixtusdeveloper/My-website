@@ -4,7 +4,7 @@ import { SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiFlask, SiPython, SiK
   SiVisualstudiocode, SiNextdotjs, SiTypescript, SiDjango, SiAppwrite, SiClerk, SiVuedotjs, SiSentry, 
   SiFramer, SiFirebase, SiPhp, SiGnubash, SiGooglecloud, SiMicrosoftazure, SiFreecodecamp, SiUdemy, 
   SiBookstack, SiLinkedin, SiUdacity, 
-  SiStripe, SiGraphql, SiJsonwebtokens, SiInsomnia, SiWebrtc, SiEclipseide, SiXampp, SiPycharm, SiJupyter, SiSublimetext } from 'react-icons/si';
+  SiStripe, SiGraphql, SiJsonwebtokens, SiInsomnia, SiWebrtc, SiEclipseide, SiXampp, SiPycharm, SiJupyter, SiSublimetext, SiExpress } from 'react-icons/si';
 import { AiFillApi } from "react-icons/ai"; 
 import { FiBox } from "react-icons/fi"; 
 import { FaJava, FaServer, FaFeather } from "react-icons/fa";
@@ -81,6 +81,10 @@ const PortfolioSkills = () => {
               <li className="flex items-center space-x-2">
                 <FaJava className="text-red-600" size={20} />&nbsp;<span>Java</span>
               </li>
+              <li className="flex items-center space-x-2">
+                <SiExpress className="text-gray-800" size={20} />&nbsp;<span>Express.js</span>
+              </li>
+
               <li className="flex items-center space-x-2">
                 <SiPhp className="text-purple-800" /> <span>PHP</span>
               </li>
@@ -199,6 +203,9 @@ const PortfolioSkills = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <SiStripe className="text-indigo-600" size={20} />&nbsp;<span>Stripe</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiSentry className="text-red-500" size={20} />&nbsp;<span>Sentry</span>
               </li>
             </ul>
           </div>
