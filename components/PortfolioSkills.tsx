@@ -181,6 +181,9 @@ const PortfolioSkills = () => {
               <li className="flex items-center space-x-2">
               <FaServer className="text-green-600" size={20} />&nbsp;<span>RESTful API</span>
               </li>
+              <li className="flex items-center space-x-2">
+                <SiStripe className="text-indigo-600" size={20} />&nbsp;<span>Stripe</span>
+              </li>
             </ul>
           </div>
 
