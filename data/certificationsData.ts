@@ -42,4 +42,20 @@ export const certificationsData: Certification[] = [
     certUrl: '/certificates/cert.png',
     imageUrl: '/certificates/full-stack-web-development-logo.png', // Image URL
   },
+  {
+    title: 'Cyber Security', 
+    institution: 'Udemy',
+    year: '2024 - 2024',
+    desc: 'This certification provides a comprehensive understanding of cybersecurity principles and practices. It covers topics such as network security, cryptography, risk management, and security policies, preparing individuals to identify and mitigate security  threats in various IT environments.',
+    certUrl: '/certificates/cert.png',
+    imageUrl: '/certificates/full-stack-web-development-logo.png', // Image URL
+  },
+  {
+    title: 'CISSP - Certified Information Systems Security Professional',
+    institution: 'Udemy',
+    year: '2024 - 2024',
+    desc: 'This certification is a globally recognized standard for IT security professionals. It covers a wide range of cybersecurity topics, including security and risk management, asset security, security engineering, communication and network security, identity and access management, security assessment and testing, security operations, and software development security. CISSP certification demonstrates expertise in designing, implementing, and managing a best-in-class cybersecurity program.',
+    certUrl: '/certificates/cert.png',
+    imageUrl: '/certificates/full-stack-web-development-logo.png', // Image URL
+  },
 ];
