@@ -204,8 +204,8 @@ const Certifications = () => {
                         onClick={handleDownload}
                         className={`px-4 py-2 flex items-center cursor-pointer justify-center space-x-2 rounded-md shadow-md ${
                           downloadStatus === "downloaded"
-                            ? "bg-green-500 text-white"
-                            : "bg-blue-600 text-white hover:bg-blue-700"
+                            ? "bg-gradient-to-r from-green-500 via-indigo-600 to-green-600 text-white"
+                            : "bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-md text-white text-sm tracking-wide hover:bg-indigo-600"
                         } focus:outline-none`}
                       >
                         <AiOutlineDownload className="mr-2" />
