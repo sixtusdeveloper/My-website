@@ -177,7 +177,7 @@ const Experience = () => {
                     <a
                       href="#"
                       onClick={() => openModal(experience)}
-                      className="font-medium cursor-pointer text-base text-blue-600"
+                      className="font-medium cursor-pointer text-base bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:text-indigo-600"
                     >
                       <span aria-hidden="true" className="absolute inset-0" />
                       Read more{" "}
@@ -220,7 +220,7 @@ const Experience = () => {
                       <a
                         href="#"
                         onClick={() => openModal(edu)}
-                        className="font-medium cursor-pointer text-base text-blue-600"
+                        className="font-medium cursor-pointer text-base bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:text-indigo-600"
                       >
                         <span aria-hidden="true" className="absolute inset-0" />
                         View credentials{" "}
@@ -276,10 +276,10 @@ const Experience = () => {
                     <div className="mt-6 flex items-center justify-center">
                       <button
                         onClick={handleDownload}
-                        className={`px-4 py-2 flex items-center cursor-pointer bg-blue-600 text-white hover:bg-blue-800 justify-center space-x-2 rounded-md${
+                        className={`px-4 py-2 flex items-center cursor-pointer bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:text-indigo-600 justify-center space-x-2 rounded-md${
                           downloadStatus === "downloaded"
                             ? "bg-green-500 text-white rounded-md"
-                            : "bg-blue-600 text-white hover:bg-blue-800 rounded-md"
+                            : "bg-indigo-600 text-white rounded-md"
                         } focus:outline-none`}
                       >
                         <AiOutlineDownload className="mr-2" />
