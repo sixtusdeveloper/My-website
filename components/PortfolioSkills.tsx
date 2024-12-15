@@ -4,7 +4,7 @@ import { SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiFlask, SiPython, SiK
   SiVisualstudiocode, SiNextdotjs, SiTypescript, SiDjango, SiAppwrite, SiClerk, SiVuedotjs, SiSentry, 
   SiFramer, SiFirebase, SiPhp, SiGnubash, SiGooglecloud, SiMicrosoftazure, SiFreecodecamp, SiUdemy, 
   SiBookstack, SiLinkedin, SiUdacity, 
-  SiStripe, SiGraphql, SiJsonwebtokens, SiInsomnia, SiWebrtc } from 'react-icons/si';
+  SiStripe, SiGraphql, SiJsonwebtokens, SiInsomnia, SiWebrtc, SiEclipseide, SiXampp, SiPycharm, SiJupyter, SiSublimetext } from 'react-icons/si';
 import { AiFillApi } from "react-icons/ai"; 
 import { FiBox } from "react-icons/fi"; 
 import { FaJava, FaServer, FaFeather } from "react-icons/fa";
@@ -148,10 +148,26 @@ const PortfolioSkills = () => {
                 <SiVisualstudiocode className="text-blue-500" size={20} />&nbsp;<span>VS Code</span>
               </li>
               <li className="flex items-center space-x-2">
-                <SiGnubash className="text-green-600" /> <span>Bash</span>
+                <SiGnubash className="text-green-600" />&nbsp;<span>Bash</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiEclipseide className="text-purple-500" size={20} />&nbsp;<span>Eclipse IDE</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiXampp className="text-orange-500" size={20} />&nbsp;<span>XAMPP</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiPycharm className="text-green-500" size={20} />&nbsp;<span>PyCharm</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiJupyter className="text-orange-600" size={20} />&nbsp;<span>Jupyter Notebook</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiSublimetext className="text-yellow-600" size={20} />&nbsp;<span>Sublime Text</span>
               </li>
             </ul>
           </div>
+
 
           {/* APIs Section */}
           <div className="skill-category bg-secondary border p-6 rounded-lg">
