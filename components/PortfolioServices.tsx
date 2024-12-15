@@ -10,7 +10,7 @@ import Loader from '@/components/ui/Loader';
 
 
 // Truncate the Description to a maximum length
-const MAX_DESCRIPTION_LENGTH = 50;
+const MAX_DESCRIPTION_LENGTH = 55;
 const truncateDescription = (text: string, maxLength: number): string => {
   if (text.length <= maxLength) return text;
   return `${text.slice(0, maxLength)}...`;
