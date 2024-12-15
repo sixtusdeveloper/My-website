@@ -4,7 +4,7 @@ import { SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiFlask, SiPython, SiK
   SiVisualstudiocode, SiNextdotjs, SiTypescript, SiDjango, SiAppwrite, SiClerk, SiVuedotjs, SiSentry, 
   SiFramer, SiFirebase, SiPhp, SiGnubash, SiGooglecloud, SiMicrosoftazure, SiFreecodecamp, SiUdemy, 
   SiBookstack, SiLinkedin, SiUdacity, 
-  SiStripe} from 'react-icons/si';
+  SiStripe, SiGraphql, SiJsonwebtokens, SiInsomnia, SiWebrtc} from 'react-icons/si';
 import { AiFillApi } from "react-icons/ai"; 
 import { FiBox } from "react-icons/fi"; 
 import { FaJava } from "react-icons/fa";
@@ -147,8 +147,39 @@ const PortfolioSkills = () => {
             </ul>
           </div>
 
-          {/* Certifications Section */}
+          {/* APIs Section */}
           <div className="skill-category bg-secondary border p-6 rounded-lg">
+            <h3 className="text-2xl font-semibold mb-4">Some of my Frequently Used APIs</h3>
+            <ul className="flex flex-wrap items-center gap-4 list-none">
+              <li className="flex items-center space-x-2">
+                <SiJsonwebtokens className="text-red-500" size={20} />&nbsp;<span>JWT</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiInsomnia className="text-purple-500" size={20} />&nbsp;<span>Insomnia</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiWebrtc className="text-blue-600" size={20} />&nbsp;<span>Websocket</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiGraphql className="text-pink-600" size={20} />&nbsp;<span>GraphQL</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <FaAws className="text-orange-400" size={20} />&nbsp;<span>AWS</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiGooglecloud className="text-blue-400" size={20} />&nbsp;<span>Google Cloud</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiMicrosoftazure className="text-blue-600" size={20} />&nbsp;<span>Azure</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="text-gray-600 font-semibold">RESTful API</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Certifications Section */}
+          <div className="skill-category bg-secondary border p-6 rounded-lg col-span-1 md:col-span-2 md:row-span-1">
             <h3 className="text-2xl font-semibold mb-4">Certifications</h3>
             <ul className="list-none space-y-4">
               <li className="flex items-center space-x-2">
