@@ -185,7 +185,7 @@ const PortfolioSkills = () => {
           </div>
 
           {/* Certifications Section */}
-          <div className="skill-category bg-secondary border p-6 rounded-lg col-span-1 md:col-span-2 md:row-span-1">
+          <div className="skill-category bg-secondary border p-6 rounded-lg col-span-1 lg:col-span-3 lg:row-span-1">
             <h3 className="text-2xl font-semibold mb-4">Certifications</h3>
             <ul className="list-none space-y-4">
               <li className="flex items-center space-x-2">
