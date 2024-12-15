@@ -148,9 +148,15 @@ const Projects = () => {
                     onClick={() => handleLinkClick(link)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center cursor-pointer text-blue-500 hover:text-blue-300 transition-colors duration-300"
+                    // className="flex items-center cursor-pointer text-blue-500 hover:text-blue-300 transition-colors duration-300"
                   >
-                    Live Site <FaLocationArrow className="ml-2" />
+                    <button 
+                      type="button"              
+                      className="py-2 px-3 bg-gradient-to-r from-indigo-600 via-green-500 to-pink-800 rounded-md text-white flex items-center cursor-pointer text-sm tracking-wide"
+                    >
+                      Live Site <FaLocationArrow className="ml-2" />
+                    </button>
+                  
                   </a>
                 </div>
               </div>
