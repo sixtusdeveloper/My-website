@@ -276,7 +276,7 @@ const Experience = () => {
                     <div className="mt-6 flex items-center justify-center">
                       <button
                         onClick={handleDownload}
-                        className={`px-4 py-2 flex items-center bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white text-base cursor-pointer justify-center space-x-2 rounded-md${
+                        className={`px-4 py-2 flex items-center bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white text-base cursor-pointer justify-center space-x-2 rounded-md ${
                           downloadStatus === "downloaded"
                             ? "bg-gradient-to-r from-green-500 via-indigo-600 to-green-800"
                             : "bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600"
