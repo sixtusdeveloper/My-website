@@ -156,7 +156,7 @@ const PortfolioSkills = () => {
           {/* APIs Section */}
           <div className="skill-category bg-secondary border p-6 rounded-lg">
             <h3 className="text-2xl font-semibold mb-4">Some of my Frequently Used APIs</h3>
-            <ul className="flex flex-wrap items-center gap-4 list-none">
+            <ul className="flex flex-wrap lg:flex-nowrap items-center gap-4 list-none">
               <li className="flex items-center space-x-2">
                 <SiJsonwebtokens className="text-red-500" size={20} />&nbsp;<span>JWT</span>
               </li>
