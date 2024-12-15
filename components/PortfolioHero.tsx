@@ -160,7 +160,7 @@ const Hero = () => {
           />
           <h2 className="text-lg lg:text-xl mb-1 font-semibold tracking-wide text-center">
             Sixtus Aondoakaa
-          </h2>
+          </h2> 
           <h4 className="text-base font-semibold text-center">
             Software Engineer
           </h4>
