@@ -254,7 +254,7 @@ export const education = [
   {
     degree: "Advanced Diploma in Software Engineering",
     institution: "AltSchool Africa",
-    date: "2023 - 2024",
+    date: "August 2023 - August 2024",
     type: "Full-time",
     description: "Specialized in Software Engineering - MEAN stack, MERN stack, and more...",
     status: "Graduated - Certified",
