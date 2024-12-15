@@ -82,7 +82,7 @@ const PortfolioSkills = () => {
                 <FaJava className="text-red-600" size={20} />&nbsp;<span>Java</span>
               </li>
               <li className="flex items-center space-x-2">
-                <SiExpress className="text-gray-800" size={20} />&nbsp;<span>Express.js</span>
+                <SiExpress className="bg-gradient-to-b from-indigo-600 via-blue-500 to-purple-800" size={20} />&nbsp;<span>Express.js</span>
               </li>
 
               <li className="flex items-center space-x-2">
