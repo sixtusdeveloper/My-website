@@ -280,7 +280,7 @@ export const education = [
   },
   {
     degree: "SSCE Certificate in Sciences", 
-    institution: "Chris the King College (CKC)",  
+    institution: "Christ the King College (CKC)",  
     date: "2011 - 2016",
     type: "Full-time",
     description: "Specialized in Sciences - Physics, Chemistry, Biology, Mathematics, and more...",
