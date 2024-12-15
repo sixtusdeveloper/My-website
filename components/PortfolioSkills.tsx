@@ -84,9 +84,8 @@ const PortfolioSkills = () => {
               <li className="flex items-center space-x-2">
                 <SiExpress className="bg-gradient-to-b from-indigo-600 via-blue-500 to-purple-800" size={20} />&nbsp;<span>Express.js</span>
               </li>
-
               <li className="flex items-center space-x-2">
-                <SiPhp className="text-purple-800" /> <span>PHP</span>
+                <SiPhp className="text-purple-800" size={20} /> <span>PHP</span>
               </li>
               <li className="flex items-center space-x-2">
                 <SiStripe className="text-indigo-600" size={20} />&nbsp;<span>Stripe</span>
