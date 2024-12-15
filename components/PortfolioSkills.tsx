@@ -7,7 +7,7 @@ import { SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiFlask, SiPython, SiK
   SiStripe, SiGraphql, SiJsonwebtokens, SiInsomnia, SiWebrtc} from 'react-icons/si';
 import { AiFillApi } from "react-icons/ai"; 
 import { FiBox } from "react-icons/fi"; 
-import { FaJava } from "react-icons/fa";
+import { FaJava, FaServer  } from "react-icons/fa";
 
 const PortfolioSkills = () => {
   return (
@@ -122,6 +122,9 @@ const PortfolioSkills = () => {
               <li className="flex items-center space-x-2">
                 <SiKubernetes className="text-blue-500" size={20} />&nbsp;<span>Kubernetes</span>
               </li>
+              <li className="flex items-center space-x-2">
+                <FaAws className="text-orange-400" size={20} />&nbsp;<span>AWS</span>
+              </li>
             </ul>
           </div>
 
@@ -173,7 +176,7 @@ const PortfolioSkills = () => {
                 <SiMicrosoftazure className="text-blue-600" size={20} />&nbsp;<span>Azure</span>
               </li>
               <li className="flex items-center space-x-2">
-                <span className="text-gray-600 font-semibold">RESTful API</span>
+              <FaServer className="text-green-600" size={20} />&nbsp;<span>RESTful API</span>
               </li>
             </ul>
           </div>
