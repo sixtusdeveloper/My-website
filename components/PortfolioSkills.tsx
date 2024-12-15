@@ -214,31 +214,31 @@ const PortfolioSkills = () => {
           <div className="skill-category bg-secondary border p-6 rounded-lg col-span-1 lg:col-span-3 lg:row-span-1">
             <h3 className="text-2xl font-semibold mb-4">Certifications</h3>
             <ul className="flex flex-wrap items-center gap-4 list-none">
-              <li className="flex items-center space-x-2">
+              <li className="flex items-center space-x-4">
                 <FaAws className="text-yellow-500" size={20} />&nbsp;<span>AWS Certified Developer</span>
               </li>
-              <li className="flex items-center space-x-2">
+              <li className="flex items-center space-x-4">
                 <SiGooglecloud className="text-blue-500" size={20} />&nbsp;<span>Google Cloud Professional</span>
               </li>
-              <li className="flex items-center space-x-2">
+              <li className="flex items-center space-x-4">
                 <SiMicrosoftazure className="text-blue-700" size={20} />&nbsp;<span>Microsoft Azure Fundamentals</span>
               </li>
-              <li className="flex items-center space-x-2">
+              <li className="flex items-center space-x-4">
                 <SiFreecodecamp className="text-green-500" size={20} />&nbsp;<span>FreeCodeCamp - Responsive Web Design</span>
               </li>
-              <li className="flex items-center space-x-2">
+              <li className="flex items-center space-x-4">
                 <SiUdemy className="text-purple-600" size={20} />&nbsp;<span>Udemy - Full-stack Developer</span>
               </li>
-              <li className="flex items-center space-x-2">
+              <li className="flex items-center space-x-4">
                 <SiBookstack className="text-blue-700" size={20} />&nbsp;<span>Alison Institute - IT Management (Software & Databases)</span>
               </li>
-              <li className="flex items-center space-x-2">
+              <li className="flex items-center space-x-4">
                 <SiBookstack className="text-green-600" size={20} />&nbsp;<span>Great Learning - Full-stack Developer</span>
               </li>
-              <li className="flex items-center space-x-2">
+              <li className="flex items-center space-x-4">
                 <SiLinkedin className="text-blue-700" size={20} />&nbsp;<span>LinkedIn - Full-stack Developer</span>
               </li>
-              <li className="flex items-center space-x-2">
+              <li className="flex items-center space-x-4">
                 <SiUdacity className="text-purple-600" size={20} />&nbsp;<span>Udacity - Machine Learning</span>
               </li>
             </ul>
