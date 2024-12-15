@@ -189,7 +189,7 @@ export default function Navbar({
                       <UserButton />
 
                       {user && (
-                        <span className="hidden lg:block text-sm font-semibold bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+                        <span className="text-sm font-semibold bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
                           {user.firstName}
                         </span>
                       )}

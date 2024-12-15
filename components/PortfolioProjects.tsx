@@ -117,7 +117,7 @@ const Projects = () => {
                 <a
                   href={githubLink}
                   target="_blank"
-                  className="inline-flex items-center w-full font-semibold px-2 py-1 text-sm text-blue-500 hover:text-blue-600 cursor-pointer"
+                  className="inline-flex items-center font-semibold py-2 px-3 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-md text-white text-sm tracking-wide hover:text-blue-600 cursor-pointer"
                 >
                   Project codebase <FiArrowRight className="ml-2" />
                 </a>
@@ -148,7 +148,6 @@ const Projects = () => {
                     onClick={() => handleLinkClick(link)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    // className="flex items-center cursor-pointer text-blue-500 hover:text-blue-300 transition-colors duration-300"
                   >
                     <button 
                       type="button"              

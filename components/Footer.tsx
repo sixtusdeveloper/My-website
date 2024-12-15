@@ -64,8 +64,8 @@ const Footer: React.FC = () => {
         </a>
       </div>
       <span className="flex justify-center items-center py-6 space-x-4">
-        <a href="/pages/privacy_policy" className="text-base hover:underline hover:text-blue-600">Privacy Policy</a>
-        <a href="/pages/terms_condition" className="text-base hover:underline hover:text-blue-600">Terms and conditions</a>       
+        <a href="/pages/privacy_policy" className="text-base hover:underline hover:text-blue-600 bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent">Privacy Policy</a>
+        <a href="/pages/terms_condition" className="text-base hover:underline hover:text-blue-600 bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent">Terms and conditions</a>       
       </span>
 
       <div className="flex justify-center items-center py-2">
