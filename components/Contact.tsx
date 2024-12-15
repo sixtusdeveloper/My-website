@@ -77,7 +77,7 @@ const Contact = () => {
             />
             <div className="mt-2">
               <h3 className="text-lg font-bold mt-4">Sixtus Aondoakaa</h3>
-              <p className="text-base bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent">Software Engineer</p>
+              <h4 className="text-base">Software Engineer</h4>
               <div className="mt-4">
                 <h4 className="py-2 text-lg font-bold"><strong>Contact Me</strong></h4>
                 <div className="inline-flex py-1 items-center">
