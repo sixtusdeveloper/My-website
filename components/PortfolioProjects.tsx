@@ -117,7 +117,7 @@ const Projects = () => {
                 <a
                   href={githubLink}
                   target="_blank"
-                  className="inline-flex items-center atfont-semibold py-2 px-3 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-md text-white text-sm tracking-wide hover:text-blue-600 cursor-pointer"
+                  className="inline-flex items-center atfont-semibold py-2 px-3 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-md text-white text-sm tracking-wide cursor-pointer"
                 >
                   Project codebase <FiArrowRight className="ml-2" />
                 </a>
