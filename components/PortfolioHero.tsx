@@ -161,9 +161,9 @@ const Hero = () => {
           <h2 className="text-lg lg:text-xl mb-1 font-semibold tracking-wide text-center">
             Sixtus Aondoakaa
           </h2>
-          <h4 className="text-base font-semibold bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent text-center">
+          <p className="text-base font-semibold bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent text-center">
             Software Engineer
-          </h4>
+          </p>
         </div>
       </ReadMoreModal>
     </div>

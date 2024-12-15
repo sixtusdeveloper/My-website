@@ -101,7 +101,7 @@ const Home = () => {
         <div className="flex justify-center gap-4 p-4 mt-4">
           <button
             onClick={handleBlogRedirect}
-            className="bg-blue-600 hover:bg-blue-800 text-white py-2 px-4 rounded-full"
+            className="bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-600 text-white py-2 px-4 rounded-full"
           >
             Yes, Visit Blog
           </button>
@@ -125,7 +125,7 @@ const Home = () => {
         <div className="flex gap-4 mt-4">
           <button
             onClick={handleHeroRedirect}
-            className="bg-blue-600 hover:bg-blue-800 text-white py-2 px-8 rounded-full"
+            className="bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-800 text-white py-2 px-8 rounded-full"
           >
             Leave
           </button>

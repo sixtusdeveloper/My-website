@@ -45,13 +45,13 @@ const ReadMoreModal: React.FC<ReadMoreModalProps> = ({ isOpen, onClose, children
                     <a
                         href="https://www.sixtusdev.net/#about"
                         rel="noopener noreferrer"
-                        className="py-2 px-4 flex items-center text-base rounded-lg bg-blue-600 text-white hover:bg-blue-800 transition duration-300 ease-in-out"
+                        className="py-2 px-4 flex items-center text-base rounded-lg bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white hover:bg-indigo-600 transition duration-300 ease-in-out"
                         >
                         Continue
                     </a>
                     <button
                         onClick={onClose}
-                        className="py-2 px-4 flex cursor-pointer items-center text-base rounded-lg bg-red-600 text-white hover:bg-red-800 transition duration-300 ease-in-out"
+                        className="py-2 px-4 flex cursor-pointer items-center text-base rounded-lg bg-gradient-to-r from-indigo-600 via-green-500 to-pink-800 text-white tracking-wide hover:bg-red-800 transition duration-300 ease-in-out"
                         >
                         Cancel
                     </button>
