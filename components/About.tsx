@@ -67,7 +67,7 @@ const About = () => {
         </div>
         <div className="mb-10 p-2">
           <h3 className="text-lg lg:text-xl font-medium">Sixtus Aondoakaa</h3>
-          <h4 className="text-base bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent">Software Engineer</h4>
+          <p className="text-base bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent">Software Engineer</p>
 
           {/* Social Follow Buttons */}
           <div className="flex md:flex-nowrap flex-wrap items-center justify-center gap-4 mt-4">
