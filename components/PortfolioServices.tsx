@@ -10,7 +10,7 @@ import Loader from '@/components/ui/Loader';
 
 
 // Truncate the Description to a maximum length
-const MAX_DESCRIPTION_LENGTH = 40;
+const MAX_DESCRIPTION_LENGTH = 50;
 const truncateDescription = (text: string, maxLength: number): string => {
   if (text.length <= maxLength) return text;
   return `${text.slice(0, maxLength)}...`;
@@ -87,9 +87,9 @@ const Services = () => {
                 />
                 <div className="lg:ms-5">
                   <h1 className="text-start text-xl md:text-2xl font-bold">{service.title}</h1>
-                  <p className="text-base text-start leading-6 mt-3 font-semibold">
+                  <p className="text-base text-start leading-6 mt-2 font-semibold">
                     {truncateDescription(service.desc, MAX_DESCRIPTION_LENGTH)}&nbsp;
-                    <span className="text-blue-600 text-sm text-end font-medium">
+                    <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:text-indigo-600 text-sm text-end font-medium">
                       Read more
                     </span>
                   </p>
