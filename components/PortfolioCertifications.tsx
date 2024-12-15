@@ -102,7 +102,7 @@ const Certifications = () => {
     <section id="certifications" className="bg-secondary relative md:pt-10 px-6 lg:px-10 pb-20">
       <div className='mx-auto max-w-6xl relative'>
         <h1 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide">
-          <strong>My <span className='bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent'>Verified Certifications</span></strong>
+          <strong>My Currently <span className='bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent'>Verified Certifications</span></strong>
         </h1>
         <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-8">
           {paginatedCertifications.map((certification, index) => (
