@@ -34,7 +34,7 @@ const ReadMoreModal: React.FC<ReadMoreModalProps> = ({ isOpen, onClose, children
                 >
                 <IoClose size={18} />
             </button>
-            <div className="px-8 max-h-[80vh] overflow-auto no-scrollbar">
+            <div className="px-2 lg:px-8 max-h-[80vh] overflow-auto no-scrollbar">
                 {children} 
                 
                 <p className="text-center text-base leading-6">
