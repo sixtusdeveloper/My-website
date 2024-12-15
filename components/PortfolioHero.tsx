@@ -125,7 +125,7 @@ const Hero = () => {
       <HireMeModal isOpen={isModalOpen} onClose={handleModalToggle}>
         <div className="p-4 bg-secondary max-h-[80vh] overflow-auto no-scrollbar">
           <h2 className="text-2xl font-bold tracking-wide text-center">
-            Hire Me
+            Hire Me Let's Work Together
           </h2>
           <p className="text-center text-base px-6 py-2 leading-6">
             Thank you for considering me for your project! I'm eager to work
