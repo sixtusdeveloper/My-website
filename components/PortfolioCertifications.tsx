@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/MovingBorder';
 import Loader from '@/components/ui/Loader';
 import { AiOutlineDownload } from 'react-icons/ai';
 
-const MAX_DESCRIPTION_LENGTH = 40;
+const MAX_DESCRIPTION_LENGTH = 60;
 const truncateDescription = (text: string, maxLength: number): string => {
   if (text.length <= maxLength) return text;
   return `${text.slice(0, maxLength)}...`;
@@ -126,10 +126,10 @@ const Certifications = () => {
                     
                     <div className="lg:ms-5">
                         <h2 className="text-start text-xl md:text-2xl font-bold">{certification.title}</h2>
-                        <p className="text-base text-start font-semibold mt-1">{certification.institution}&nbsp;-&nbsp;{certification.year}</p>
-                        <p className="text-base text-start leading-6 mt-3 font-semibold">
+                        <p className="text-base text-start font-semibold">{certification.institution}&nbsp;-&nbsp;{certification.year}</p>
+                        <p className="text-base text-start leading-6 mt-1 font-semibold">
                             {truncateDescription(certification.desc ?? '', MAX_DESCRIPTION_LENGTH)}&nbsp;
-                            <span className="text-blue-600 text-sm text-end font-medium">
+                            <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent text-sm text-end font-medium">
                             View Credentials
                             </span>
                         </p>
