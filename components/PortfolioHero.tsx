@@ -95,7 +95,7 @@ const Hero = () => {
             
             <a onClick={handleHireMeClick}>
               <Button
-                className="h-12 px-6 lg:px-8 py-3 tracking-wide cursor-pointer text-base rounded-md hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white" 
+                className="h-12 px-8 lg:px-8 py-3 tracking-wide cursor-pointer text-base rounded-md hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white" 
               >Hire Me
               </Button>
             </a>
