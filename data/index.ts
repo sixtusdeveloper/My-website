@@ -265,7 +265,7 @@ export const education = [
     institution: "Alison Institute",
     date: "2021 - 2022",
     type: "Full-time",
-    description: "Specialized in DevOps engineering - Kubernetes, Docker, Google-cloud CI/CD pipelines and automation...",
+    description: "Specialized in DevOps engineering - Kubernetes, Docker, Google-cloud CI/CD pipelines and automation.",
     status: "Graduated - Certified",
     img: '/certificates/cert01.jpg'
   },
