@@ -36,10 +36,10 @@ const PortfolioSkills = () => {
                 <SiTailwindcss className="text-blue-400" size={20} />&nbsp;<span>Tailwind CSS</span>
               </li>
               <li className="flex items-center space-x-2">
-                <SiBootstrap className="text-purple-600" size={20} />&nbsp;<span>Bootstrap</span>
+                <SiBootstrap className="bg-gradient-to-b from-purple-600 via-blue-500 to-purple-800" size={20} />&nbsp;<span>Bootstrap</span>
               </li>
               <li className="flex items-center space-x-2">
-                <SiNextdotjs className="text-green-500" size={20} />&nbsp;<span>Next.js</span>
+                <SiNextdotjs className="bg-gradient-to-b from-green-500 via-blue-500 to-green-600" size={20} />&nbsp;<span>Next.js</span>
               </li>
               <li className="flex items-center space-x-2">
                 <SiTypescript className="text-blue-500" size={20} />&nbsp;<span>TypeScript</span>
