@@ -4,7 +4,7 @@ import { SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiFlask, SiPython, SiK
   SiVisualstudiocode, SiNextdotjs, SiTypescript, SiDjango, SiAppwrite, SiClerk, SiVuedotjs, SiSentry, 
   SiFramer, SiFirebase, SiPhp, SiGnubash, SiGooglecloud, SiMicrosoftazure, SiFreecodecamp, SiUdemy, 
   SiBookstack, SiLinkedin, SiUdacity, 
-  SiStripe, SiGraphql, SiJsonwebtokens, SiInsomnia, SiWebrtc, SiEclipseide, SiXampp, SiPycharm, SiJupyter, SiSublimetext, SiExpress } from 'react-icons/si';
+  SiStripe, SiGraphql, SiJsonwebtokens, SiInsomnia, SiWebrtc, SiEclipseide, SiXampp, SiPycharm, SiJupyter, SiSublimetext, SiExpress, SiBootstrap } from 'react-icons/si';
 import { AiFillApi } from "react-icons/ai"; 
 import { FiBox } from "react-icons/fi"; 
 import { FaJava, FaServer, FaFeather } from "react-icons/fa";
@@ -34,6 +34,9 @@ const PortfolioSkills = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <SiTailwindcss className="text-blue-400" size={20} />&nbsp;<span>Tailwind CSS</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiBootstrap className="text-purple-600" size={20} />&nbsp;<span>Bootstrap</span>
               </li>
               <li className="flex items-center space-x-2">
                 <SiNextdotjs className="text-green-500" size={20} />&nbsp;<span>Next.js</span>
