@@ -4,10 +4,10 @@ import { SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiFlask, SiPython, SiK
   SiVisualstudiocode, SiNextdotjs, SiTypescript, SiDjango, SiAppwrite, SiClerk, SiVuedotjs, SiSentry, 
   SiFramer, SiFirebase, SiPhp, SiGnubash, SiGooglecloud, SiMicrosoftazure, SiFreecodecamp, SiUdemy, 
   SiBookstack, SiLinkedin, SiUdacity, 
-  SiStripe, SiGraphql, SiJsonwebtokens, SiInsomnia, SiWebrtc} from 'react-icons/si';
+  SiStripe, SiGraphql, SiJsonwebtokens, SiInsomnia, SiWebrtc } from 'react-icons/si';
 import { AiFillApi } from "react-icons/ai"; 
 import { FiBox } from "react-icons/fi"; 
-import { FaJava, FaServer  } from "react-icons/fa";
+import { FaJava, FaServer, FaFeather } from "react-icons/fa";
 
 const PortfolioSkills = () => {
   return (
@@ -52,6 +52,9 @@ const PortfolioSkills = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <SiVuedotjs className="text-green-500" size={20} />&nbsp;<span>Vue.js</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <FaFeather className="text-indigo-500" size={20} />&nbsp;<span>Flowbite</span>
               </li>
             </ul>
           </div>
