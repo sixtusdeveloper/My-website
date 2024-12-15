@@ -144,14 +144,14 @@ const Certifications = () => {
           <button
             onClick={() => handlePageChange('previous')}
             disabled={currentPage === 1}
-            className={`px-4 py-2 rounded-md ${currentPage === 1 ? 'bg-transparent border' : 'bg-blue-600 hover:bg-blue-800 text-white'} focus:outline-none`}
+            className={`px-4 py-2 rounded-md ${currentPage === 1 ? 'bg-transparent border' : 'bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-md text-white text-sm tracking-wide block'} focus:outline-none`}
           >
             Previous
           </button>
           <button
             onClick={() => handlePageChange('next')}
             disabled={currentPage === totalPages}
-            className={`px-4 py-2 rounded-md ${currentPage === totalPages ? 'bg-transparent border' : 'bg-blue-600 hover:bg-blue-800 text-white'} focus:outline-none`}
+            className={`px-4 py-2 rounded-md ${currentPage === totalPages ? 'bg-transparent border' : 'bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-md text-white text-sm tracking-wide block'} focus:outline-none`}
           >
             Next
           </button>
