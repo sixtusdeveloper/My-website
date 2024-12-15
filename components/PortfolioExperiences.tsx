@@ -276,10 +276,10 @@ const Experience = () => {
                     <div className="mt-6 flex items-center justify-center">
                       <button
                         onClick={handleDownload}
-                        className={`px-4 py-2 flex items-center cursor-pointer bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:text-indigo-600 justify-center space-x-2 rounded-md${
+                        className={`px-4 py-2 flex items-center cursor-pointer justify-center space-x-2 rounded-md${
                           downloadStatus === "downloaded"
-                            ? "bg-green-500 text-white rounded-md"
-                            : "bg-indigo-600 text-white rounded-md"
+                            ? "bg-gradient-to-r from-green-500 via-indigo-600 to-green-600 text-white rounded-md"
+                            : "bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white rounded-md"
                         } focus:outline-none`}
                       >
                         <AiOutlineDownload className="mr-2" />
