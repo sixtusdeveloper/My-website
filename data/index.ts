@@ -194,7 +194,7 @@ export const experiences = [
     organization: "Youtube",
     type: "Remote",
     nature: "Self Employed",
-    location: "Online",
+    location: "Online and Locally",
     description: "Creating educational content on software development and programming.",
     fullDesc: "Creating educational content on software development and programming, with a focus on web development, front-end and back-end technologies, and best practices. Developing tutorials, courses, and live streams to help learners build practical skills and advance their careers. Covering a wide range of topics, including JavaScript, React, Node.js, TypeScript, and more. Engaging with the community through live Q&A sessions, code reviews, and collaboration on open-source projects.",
     technologies: ["JavaScript", "React", "Node.js", "TypeScript", "HTML", "CSS", "Git", "GitHub", "VS Code", "Figma", "Adobe XD", "Netlify", "Vercel", "Heroku", "Firebase", "MongoDB", "SQL", "RESTful APIs", "GraphQL", "WebSockets", "PWA", "SEO", "Google Analytics", "Google Tag Manager", "Google Optimize", "Hotjar", "Figma", "Adobe XD", "Sketch", "InVision", "Jira", "Trello", "Slack", "Microsoft Teams", "Zoom", "Google Meet", "Discord", "Notion", "Google Workspace", "Microsoft Office", "Adobe Creative Cloud", "Canva"],

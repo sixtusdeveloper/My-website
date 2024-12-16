@@ -9,14 +9,14 @@ import Loader from "@/components/ui/Loader";
 
 
 // Truncate the course to a maximum length
-const MAX_COURSE_LENGTH = 30;
+const MAX_COURSE_LENGTH = 40;
 const truncateCourse = (text: string, maxLength: number): string => {
   if (text.length <= maxLength) return text;
   return `${text.slice(0, maxLength)}...`;
 };
 
 // Truncate the Description to a maximum length
-const MAX_DESCRIPTION_LENGTH = 60;
+const MAX_DESCRIPTION_LENGTH = 70;
 const truncateDescription = (text: string, maxLength: number): string => {
   if (text.length <= maxLength) return text;
   return `${text.slice(0, maxLength)}...`;
@@ -158,7 +158,7 @@ const Experience = () => {
                       </span>
                     </span>
                   </p>
-                  <span className="flex gap-2 items-center">
+                  <span className="flex flex-wrap gap-2 items-center">
                     <span className="text-sm">{experience.nature}&nbsp;&#45;&nbsp;</span>
                     <time
                       className="text-sm"
