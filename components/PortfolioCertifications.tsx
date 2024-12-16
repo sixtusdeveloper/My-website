@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/MovingBorder';
 import Loader from '@/components/ui/Loader';
 import { AiOutlineDownload } from 'react-icons/ai';
 
-const MAX_DESCRIPTION_LENGTH = 70;
+const MAX_DESCRIPTION_LENGTH = 75;
 const truncateDescription = (text: string, maxLength: number): string => {
   if (text.length <= maxLength) return text;
   return `${text.slice(0, maxLength)}...`;
