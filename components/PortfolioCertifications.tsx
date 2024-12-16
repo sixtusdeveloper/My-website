@@ -126,8 +126,8 @@ const Certifications = () => {
                     
                     <div className="lg:ms-5">
                         <h2 className="text-start text-xl md:text-2xl font-bold">{certification.title}</h2>
-                        <p className="text-base text-start font-semibold">{certification.institution}&nbsp;-&nbsp;{certification.year}</p>
-                        <p className="text-base text-start leading-6 mt-1 font-semibold">
+                        <p className="text-base py-1 text-start font-semibold">{certification.institution}&nbsp;-&nbsp;{certification.year}</p>
+                        <p className="text-base text-start leading-6 font-semibold">
                             {truncateDescription(certification.desc ?? '', MAX_DESCRIPTION_LENGTH)}&nbsp;
                             <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent text-sm text-end font-medium">
                             View Credentials

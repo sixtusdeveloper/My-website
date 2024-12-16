@@ -146,7 +146,7 @@ const Experience = () => {
                 }`}
               >
                 <div className="timeline-icon"></div>
-                <div className="bg-secondary border p-6 rounded-lg">
+                <div className="bg-secondary border p-4 rounded-lg">
                   <h3 className="text-lg font-bold">
                     {experience.title}
                   </h3>
@@ -196,7 +196,7 @@ const Experience = () => {
                 >
                   <div className="timeline-icon"></div>
 
-                  <div className="bg-secondary border p-6 rounded-lg">
+                  <div className="bg-secondary border p-4 rounded-lg">
                     <h3 className="text-lg font-bold mb-1">
                       {truncateCourse(edu.degree, MAX_COURSE_LENGTH)}
                     </h3>
