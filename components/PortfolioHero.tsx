@@ -91,7 +91,7 @@ const Hero = () => {
             my projects and see how I turn ideas into reality. Let's create
             something amazing together!
           </p>
-          <div className="flex flex-row justify-center items-center my-2 space-x-4 md:space-y-0 md:space-x-4">
+          <div className="flex flex-row justify-center items-center my-3 space-x-4 md:space-y-0 md:space-x-4">
             
             <a onClick={handleHireMeClick}>
               <Button
