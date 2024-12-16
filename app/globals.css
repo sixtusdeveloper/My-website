@@ -189,15 +189,6 @@
   padding-right: 10px; /* Padding for better readability */
 }
 
-h2 {
-  font-size: 24px;
-  margin-bottom: 16px;
-  /* color: #222;  */
-}
-
-p {
-  margin-bottom: 14px;
-}
 
 @media (min-width: 768px) {
   .modal {
