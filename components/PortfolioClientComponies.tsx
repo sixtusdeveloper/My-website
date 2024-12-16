@@ -55,8 +55,8 @@ const Collaboration = ({
               <Image
                 alt="Kropmann Logo"
                 src={CompanyImgOne || "/kropmann-logo.png"}
-                width={150}
-                height={100}
+                width={200}
+                height={200}
                 style={{ width: 'auto', height: 'auto' }}
                 className="col-span-2 max-h-45 w-full object-contain lg:col-span-1 collaborator-logo"
               />
@@ -65,8 +65,8 @@ const Collaboration = ({
               <Image
                 alt="Upwork Logo"
                 src={CompanyImgTwo || "/upwork-logo.png"}
-                width={150}
-                height={100}
+                width={200}
+                height={200}
                 style={{ width: 'auto', height: 'auto' }}
                 className="col-span-2 max-h-45 w-full object-contain lg:col-span-1 collaborator-logo"
               />
@@ -75,8 +75,8 @@ const Collaboration = ({
               <Image
                 alt="Altschool Logo"
                 src={CompanyImgThree || "/altschool-logo.png"}
-                width={150}
-                height={100}
+                width={200}
+                height={200}
                 style={{ width: 'auto', height: 'auto' }}
                 className="col-span-2 max-h-45 w-full object-contain lg:col-span-1 collaborator-logo"
               />
@@ -85,8 +85,8 @@ const Collaboration = ({
               <Image
                 alt="Freelancer Logo"
                 src={CompanyImgFour || "/freelancer-logo.png"}
-                width={150}
-                height={150}
+                width={200}
+                height={200}
                 style={{ width: 'auto', height: 'auto' }}
                 className="col-span-2 max-h-45 w-full object-contain sm:col-start-2 lg:col-span-1 collaborator-logo"
               />

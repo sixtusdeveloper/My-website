@@ -380,11 +380,11 @@
 }
 
 /* Apply grayscale filter to the logo */
-.collaborator-logo {
+/* .collaborator-logo {
   filter: grayscale(100%);
-  opacity: 0.8; /* Adjust opacity for better visibility */
+  opacity: 0.8; 
   transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
+} */
 
 /* Optional: Add hover effect to remove grayscale on hover */
 .collaborator-logo:hover {
