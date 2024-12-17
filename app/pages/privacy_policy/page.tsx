@@ -2,10 +2,10 @@ import React from "react";
 
 const PrivacyPolicy: React.FC = () => {
     return (
-        <main className="bg-secondary p-8">
-            <div className="container relative mx-auto lg:px-10 p-6">
+        <main className="bg-secondary p-2 lg:p-8">
+            <div className="container relative mx-auto lg:px-10 p-2">
                 <h1 className="text-2xl font-bold mb-4">Privacy Policy</h1>
-                <p className="text-sm text-gray-600">Last updated: December 14, 2024</p>
+                <p className="text-sm">Last updated: December 14, 2024</p>
                 <h2 className="text-lg font-bold mt-4">Introduction</h2>
                 <p>
                     I value your privacy and am committed to protecting your personal information. This Privacy Policy outlines how I collect, use, and safeguard your data when you use my website and services.
@@ -65,15 +65,15 @@ const PrivacyPolicy: React.FC = () => {
                 
                 <h2 className="text-lg font-bold mt-4">Contact Me</h2>
                 <p>
-                    If you have any questions or concerns about this Privacy Policy, please contact me at <a href="mailto:contact@sixtusdev.net" className="text-blue-600 hover:underline">contact@sixtusdev.net</a>.
+                    If you have any questions or concerns about this Privacy Policy, please contact me at <a href="mailto:contact@sixtusdev.net" className="hover:text-blue-600 bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:underline">contact@sixtusdev.net</a>.
                 </p>
 
                 <div className="flex items-center gap-4 py-4">
-                    <p className="text-base text-gray-600 mt-8">You may as well read the terms and conditions of this application <a href="https://www.sixtusdev.net/pages/terms_condition" className="text-blue-600 hover:underline">Terms and Conditions</a></p>
+                    <p className="text-base mt-8">You may as well read the terms and conditions of this application <a href="https://www.sixtusdev.net/pages/terms_condition" className="hover:text-blue-600 bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:underline">Terms and Conditions</a></p>
 
-                    <div className="h-8 w-[2px] bg-gradient-to-b from-indigo-600 via-blue-500 to-purple-800"></div>
+                    &nbsp;|&nbsp;
 
-                    <p className="text-base text-gray-600 mt-8">Go back to website <a href="https://www.sixtusdev.net/" className="text-blue-600 hover:underline">Home Page</a></p>
+                    <p className="text-base mt-8">Go back to website <a href="https://www.sixtusdev.net/" className="hover:text-blue-600 bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:underline">Home Page</a></p>
                 </div>
             </div>
         </main>

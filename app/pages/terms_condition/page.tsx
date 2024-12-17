@@ -2,10 +2,10 @@ import React from "react";
 
 const TermsCondition: React.FC = () => {
     return (
-        <main className="bg-secondary p-8">
-            <div className="container mx-auto lg:px-10 p-6">
+        <main className="bg-secondary lg:p-8 p-2">
+            <div className="container mx-auto lg:px-10 p-2">
                 <h1 className="text-2xl font-bold mb-4">Terms and Conditions</h1>
-                <p className="text-sm text-gray-600">Last updated: December 14, 2024</p>
+                <p className="text-sm">Last updated: December 14, 2024</p>
                 <h2 className="text-lg font-bold mt-4">Introduction</h2>
                 <p>
                     I value your privacy and am committed to protecting your personal information. This Privacy Policy outlines how I collect, use, and safeguard your data when you use my website and services.
@@ -65,15 +65,15 @@ const TermsCondition: React.FC = () => {
                 
                 <h2 className="text-lg font-bold mt-4">Contact Me</h2>
                 <p>
-                    If you have any questions or concerns about this Privacy Policy, please contact me at <a href="mailto:contact@sixtusdev.net" className="text-blue-600 hover:underline">contact@sixtusdev.net</a>.
+                    If you have any questions or concerns about this Privacy Policy, please contact me at <a href="mailto:contact@sixtusdev.net" className="hover:text-blue-600 bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:underline">contact@sixtusdev.net</a>.
                 </p>
 
                 <div className="flex items-center gap-4 py-4">
-                    <p className="text-base text-gray-600 mt-8">You may as well read the Privacy Policy of this application <a href="https://www.sixtusdev.net/pages/privacy_policy" className="text-blue-600 hover:underline">Privacy Policy</a></p>
+                    <p className="text-base mt-8">You may as well read the Privacy Policy of this application <a href="https://www.sixtusdev.net/pages/privacy_policy" className="hover:text-blue-600 bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:underline">Privacy Policy</a></p>
 
-                    <div className="h-8 w-[2px] bg-gradient-to-b from-indigo-600 via-blue-500 to-purple-800"></div>
+                    &nbsp;|&nbsp;
 
-                    <p className="text-base text-gray-600 mt-8">Go back to website <a href="https://www.sixtusdev.net/" className="text-blue-600 hover:underline">Home Page</a></p>
+                    <p className="text-base mt-8">Go back to website <a href="https://www.sixtusdev.net/" className="hover:text-blue-600 bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:underline">Home Page</a></p>
                 </div>
             </div>
         </main>    
