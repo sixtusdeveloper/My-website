@@ -5,7 +5,7 @@ const PrivacyPolicy: React.FC = () => {
         <main className="bg-secondary p-2 lg:p-8">
             <div className="container relative mx-auto lg:px-10 p-2">
                 <h1 className="text-2xl font-bold mb-4">Privacy Policy</h1>
-                <p className="text-sm">Last updated: December 14, 2024</p>
+                <p className="text-sm">Last updated: December 17, 2024</p>
                 <h2 className="text-lg font-bold mt-4">Introduction</h2>
                 <p>
                     I value your privacy and am committed to protecting your personal information. This Privacy Policy outlines how I collect, use, and safeguard your data when you use my website and services.
