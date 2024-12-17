@@ -68,10 +68,10 @@ const TermsCondition: React.FC = () => {
                     If you have any questions or concerns about this Privacy Policy, please contact me at <a href="mailto:contact@sixtusdev.net" className="hover:text-blue-600 bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:underline">contact@sixtusdev.net</a>.
                 </p>
 
-                <div className="flex items-center justify-between flex-wrap py-4">
+                <div className="flex items-center flex-wrap py-4">
                     <p className="text-base mt-8">You may as well read the Privacy Policy of this application <a href="https://www.sixtusdev.net/pages/privacy_policy" className="hover:text-blue-600 bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:underline">Privacy Policy</a></p>
 
-                    <div className="h-8 w-[2px] bg-gradient-to-b from-indigo-600 via-blue-500 to-purple-800"></div>
+                    <div className="h-4 w-[2px] mx-2 bg-gradient-to-b from-indigo-600 via-blue-500 to-purple-800"></div>
 
                     <p className="text-base mt-8">Go back to website <a href="https://www.sixtusdev.net/" className="hover:text-blue-600 bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:underline">Home Page</a></p>
                 </div>
