@@ -71,7 +71,7 @@ const TermsCondition: React.FC = () => {
                 <div className="flex items-center flex-wrap py-4">
                     <p className="text-base mt-8">You may as well read the Privacy Policy of this application <a href="https://www.sixtusdev.net/pages/privacy_policy" className="hover:text-blue-600 bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:underline">Privacy Policy</a></p>
 
-                    <p className="text-base mt-8">&nbsp;OR go back to website <a href="https://www.sixtusdev.net/" className="hover:text-blue-600 bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:underline">Home Page</a></p>
+                    <p className="text-base mt-8">&nbsp;OR go back to the website <a href="https://www.sixtusdev.net/" className="hover:text-blue-600 bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:underline">Home Page</a></p>
                 </div>
             </div>
         </main>    
