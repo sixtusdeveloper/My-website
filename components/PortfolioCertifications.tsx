@@ -121,7 +121,7 @@ const Certifications = () => {
                         width={100}
                         height={100}
                         style={{ width: 'auto', height: 'auto' }}
-                        className="w-full p-1 h-12 certs-img relative overflow-hidden object-cover rounded-full mb-4"
+                        className="w-full h-12 certs-img relative overflow-hidden object-cover rounded-full mb-1"
                     />
                     
                     <div className="lg:ms-5">

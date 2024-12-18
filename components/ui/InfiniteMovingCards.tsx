@@ -144,7 +144,7 @@ export const InfiniteMovingCards = ({
                     />
                   </div>
                   <div className="text-base">
-                    <p className="font-semibold mb-2 text-base">
+                    <p className="font-semibold mb-1 text-base">
                       <a href="#">
                         {item.name}
                       </a>

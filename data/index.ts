@@ -134,7 +134,7 @@ export const testimonials = [
     name: "Michael Benjamin",
     title: "Marketing Director at Creative Solutions",
     imageUrl: "/user07.jpg",
-    fallbackImageUrl: "/fullback.png",
+    fallbackImageUrl: "/fallback.png",
     rating: 5,
   },
   {
@@ -161,7 +161,7 @@ export const testimonials = [
     name: "James Markson",
     title: "Data Analyst at Tech Oil",
     imageUrl: "/user05.jpg",
-    fallbackImageUrl: "/fullback.png",
+    fallbackImageUrl: "/fallback.png",
     rating: 4,
   },
   {
@@ -170,7 +170,7 @@ export const testimonials = [
     name: "Daniel Donald",
     title: "Project Manager at Innovate Inc.",
     imageUrl: "/user01.jpg",
-    fallbackImageUrl: "/fullback.png",
+    fallbackImageUrl: "/fallback.png",
     rating: 5,
   },
   {
@@ -179,7 +179,7 @@ export const testimonials = [
     name: "Aondofa Jameson",
     title:"C.O.O at Fintech Innovations",
     imageUrl: "/profile02.jpeg",
-    fallbackImageUrl: "/fullback.png",
+    fallbackImageUrl: "/fallback.png",
     rating: 4,
   },
 ];
