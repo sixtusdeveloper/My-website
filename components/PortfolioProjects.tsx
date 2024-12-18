@@ -112,7 +112,7 @@ const Projects = () => {
               />
               <div className="p-4">
                 <h1 className="font-bold text-xl truncate">{truncateTitle(title, MAX_TITLE_LENGTH)}</h1>
-                <p className="mt-2 text-sm line-clamp-2">{truncateDescription(des, MAX_DESCRIPTION_LENGTH)}</p>
+                <p className="mt-2 mb-1 text-sm line-clamp-2">{truncateDescription(des, MAX_DESCRIPTION_LENGTH)}</p>
 
                 <a
                   href={githubLink}
