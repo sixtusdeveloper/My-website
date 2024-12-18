@@ -150,7 +150,7 @@ export const testimonials = [
     quote: "Sixtus’s expertise in front-end development brought a fresh perspective to our project. His ability to integrate advanced features seamlessly into our existing setup was impressive. The final product exceeded our expectations and has been well-received by users.",
     fullQuote: "Sixtus’s expertise in front-end development brought a fresh perspective to our project. His ability to integrate advanced features seamlessly into our existing setup was impressive. The final product exceeded our expectations and has been well-received by users. We look forward to future projects with him.",
     name: "Freedom Amos",
-    title: "Senior Front-End Developer at TechSavvy",
+    title: "Senior Front-End Developer at Tech Savvy",
     imageUrl: "/user06.jpg",
     fallbackImageUrl: "/fallback.png",
     rating: 5,
