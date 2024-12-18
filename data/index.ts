@@ -152,7 +152,7 @@ export const testimonials = [
     name: "Freedom Amos",
     title: "Senior Front-End Developer at TechSavvy",
     imageUrl: "/user06.jpg",
-    fallbackImageUrl: "/fullback.png",
+    fallbackImageUrl: "/fallback.png",
     rating: 5,
   },
   {
@@ -176,7 +176,7 @@ export const testimonials = [
   {
     quote: "The level of professionalism and creativity Sixtus brings to his work is remarkable. His solutions have improved our systems' performance and user engagement. Sixtus is a valuable asset to any team and we look forward to collaborating with him again.",
     fullQuote: "The level of professionalism and creativity Sixtus brings to his work is remarkable. His solutions have improved our systems' performance and user engagement. Sixtus is a valuable asset to any team and we look forward to collaborating with him again. His attention to detail and commitment to excellence are truly commendable.",
-    name: "Andofa Jameson",
+    name: "Aondofa Jameson",
     title:"C.O.O at Fintech Innovations",
     imageUrl: "/profile02.jpeg",
     fallbackImageUrl: "/fullback.png",
