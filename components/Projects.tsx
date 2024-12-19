@@ -11,7 +11,7 @@ const Projects = () => {
           <div className="flex relative justify-center gap-4 p-4 bg-secondary border rounded-[1.75rem]">
             <div className="lg:text-start text-center lg:items-start items-center relative">
               <Image 
-                src="/project01.png"
+                src="/open-source-icon.png"
                 alt="Open Source img"
                 width={200}
                 height={200}
@@ -29,7 +29,7 @@ const Projects = () => {
           <div className="flex justify-center gap-4 p-4 bg-secondary border rounded-[1.75rem]">
             <div className="lg:text-start text-center lg:items-start items-center relative">
               <Image 
-                src="/project02.png"
+                src="/app-icon.png"
                 alt="Web App img"
                 width={200}
                 height={200}
@@ -47,7 +47,7 @@ const Projects = () => {
           <div className="flex justify-center gap-4 p-4 bg-secondary border rounded-[1.75rem]">
             <div className="lg:text-start text-center lg:items-start items-center relative">
               <Image 
-                src="/project03.png"
+                src="/blog-icon.png"
                 alt="Blog img"
                 width={200}
                 height={200}
@@ -65,7 +65,7 @@ const Projects = () => {
           <div className="flex justify-center gap-4 p-4 bg-secondary border rounded-[1.75rem]">
             <div className="lg:text-start text-center lg:items-start items-center relative">
               <Image 
-                src="/project04.png"
+                src="/eccomerce-icon.png"
                 alt="Ecormmerce img"
                 width={200}
                 height={200}
