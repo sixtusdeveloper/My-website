@@ -136,7 +136,7 @@ const PortfolioSkills = () => {
             </ul>
           </div>
 
-          {/* Tools Section */}
+          {/* Version control and Tools Section */}
           <div className="skill-category bg-secondary border p-6 rounded-lg">
             <h3 className="text-2xl font-semibold mb-4">Version Control & Tools</h3>
             <ul className="flex flex-wrap items-center gap-4 list-none">
@@ -144,7 +144,7 @@ const PortfolioSkills = () => {
                 <FaGitAlt className="text-orange-600" size={20} />&nbsp;<span>Git</span>
               </li>
               <li className="flex items-center space-x-2">
-                <FaGithub className="text-blue-500" size={20} />&nbsp;<span>GitHub</span>
+                <FaGithub  className="text-gray-800 dark:text-gray-200" size={20} />&nbsp;<span>GitHub</span>
               </li>
               <li className="flex items-center space-x-2">
                 <SiPostman className="text-orange-500" size={20} />&nbsp;<span>Postman</span>
