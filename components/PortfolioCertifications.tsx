@@ -120,7 +120,7 @@ const Certifications = () => {
                         alt={certification.title}
                         width={100}
                         height={100}
-                        style={{ width: 'auto', height: 'auto' }}
+                        // style={{ width: '100', height: '100' }}
                         className="w-full h-12 certs-img relative overflow-hidden object-cover rounded-full mb-1"
                     />
                     
