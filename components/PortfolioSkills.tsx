@@ -1,13 +1,12 @@
 import React from 'react'
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaDocker, FaAws, FaGitAlt, FaGithub } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaDocker, FaAws, FaGitAlt, FaGithub,  FaJava, FaServer, FaFeather } from 'react-icons/fa';
 import { SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiFlask, SiPython, SiKubernetes, SiPostman, 
   SiVisualstudiocode, SiNextdotjs, SiTypescript, SiDjango, SiAppwrite, SiClerk, SiVuedotjs, SiSentry, 
   SiFramer, SiFirebase, SiPhp, SiGnubash, SiGooglecloud, SiMicrosoftazure, SiFreecodecamp, SiUdemy, 
   SiBookstack, SiLinkedin, SiUdacity, 
-  SiStripe, SiGraphql, SiJsonwebtokens, SiInsomnia, SiWebrtc, SiEclipseide, SiXampp, SiPycharm, SiJupyter, SiSublimetext, SiExpress, SiBootstrap } from 'react-icons/si';
+  SiStripe, SiGraphql, SiJsonwebtokens, SiInsomnia, SiWebrtc, SiEclipseide, SiXampp, SiPycharm, SiJupyter, SiSublimetext, SiExpress, SiBootstrap, SiVercel, SiNetlify, SiGithub, SiHostinger, SiRender } from 'react-icons/si';
 import { AiFillApi } from "react-icons/ai"; 
 import { FiBox } from "react-icons/fi"; 
-import { FaJava, FaServer, FaFeather } from "react-icons/fa";
 
 const PortfolioSkills = () => {
   return (
@@ -213,7 +212,7 @@ const PortfolioSkills = () => {
           </div>
 
           {/* Certifications Section */}
-          <div className="skill-category bg-secondary border p-6 rounded-lg col-span-1 lg:col-span-3 lg:row-span-1">
+          <div className="skill-category bg-secondary border p-6 rounded-lg col-span-1 lg:col-span-2 lg:row-span-1">
             <h3 className="text-2xl font-semibold mb-4">Certifications</h3>
             <ul className="flex flex-wrap items-center gap-4 list-none">
               <li className="flex items-center space-x-4">
@@ -245,9 +244,41 @@ const PortfolioSkills = () => {
               </li>
             </ul>
           </div>
+
+          {/* Hosting services */}
+          <div className="skill-category bg-secondary border p-6 rounded-lg">
+            <h3 className="text-2xl font-semibold mb-4">My Hosting Services</h3>
+            <ul className="flex flex-wrap items-center gap-4 list-none">
+              <li className="flex items-center space-x-2">
+                <FaAws className="text-orange-400" size={20} />&nbsp;<span>AWS (Amazon Web Services) - Comprehensive hosting solutions, including static sites, dynamic applications, and databases.</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiGooglecloud className="text-blue-400" size={20} />&nbsp;<span>Google Cloud Platform - Scalable hosting for applications, static websites, and machine learning models.</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiMicrosoftazure className="text-blue-600" size={20} />&nbsp;<span>Microsoft Azure - Enterprise-level hosting with support for a wide range of applications.</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiVercel className="text-black" size={20} />&nbsp;<span>Vercel - Optimized for frontend frameworks and static site hosting with serverless functions.</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiNetlify className="text-teal-500" size={20} />&nbsp;<span>Netlify - Simplified static site hosting with CI/CD, forms, and serverless functions.</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiGithub className="text-gray-800" size={20} />&nbsp;<span>GitHub Pages - Free hosting for static websites directly from your GitHub repository.</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiHostinger className="text-purple-500" size={20} />&nbsp;<span>Hostinger - Affordable shared hosting with advanced management tools.</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiRender className="text-blue-600" size={20} />&nbsp;<span>Render - Easy deployment for web services, static sites, and APIs.</span>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
-      {/* Verified Certiications */}
+      
     </section>
   )
 }
