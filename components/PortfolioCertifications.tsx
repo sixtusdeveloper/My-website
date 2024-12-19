@@ -113,7 +113,7 @@ const Certifications = () => {
               className="flex-1 border bg-secondary"
               onClick={() => openModal(certification)}
             >
-                <div className="flex lg:flex-row flex-col lg:items-center px-4 py-4 md:p-4 lg:p-4 gap-2">
+                <div className="flex lg:flex-row flex-col lg:items-center px-2 py-4 md:p-4 lg:p-4 gap-2">
                     
                     <Image
                         src={certification.imageUrl}
