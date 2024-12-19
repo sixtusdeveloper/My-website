@@ -118,13 +118,13 @@ const Certifications = () => {
                     <Image
                         src={certification.imageUrl}
                         alt={certification.title}
-                        width={100}
-                        height={100}
+                        width={90}
+                        height={90}
                         // style={{ width: '100', height: '100' }}
                         className="w-full h-12 certs-img relative overflow-hidden object-cover rounded-full mb-1"
                     />
                     
-                    <div className="lg:ms-5">
+                    <div className="lg:ms-4">
                         <h2 className="text-start text-xl md:text-2xl font-bold">{certification.title}</h2>
                         <p className="text-base py-1 text-start font-semibold">{certification.institution}&nbsp;-&nbsp;{certification.year}</p>
                         <p className="text-base text-start leading-6 font-semibold">
