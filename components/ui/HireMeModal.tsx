@@ -92,14 +92,14 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
         <div className="flex justify-center mt-6 space-x-4">
           <button
             onClick={handleDownloadPDFClick}
-            className="py-2 px-4 flex items-center text-base rounded-lg bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white tracking-wide hover:bg-indigo-600 transition duration-300 ease-in-out"
+            className="py-2 px-4 flex items-center text-xs md:text-sm lg:text-base rounded-lg bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white tracking-wide hover:bg-indigo-600 transition duration-300 ease-in-out"
           >
             <AiOutlineDownload className="mr-2" />
             {downloadStatus.pdf}
           </button>
           <button
             onClick={handleDownloadDOCXClick}
-            className="py-2 px-4 cursor-pointer flex text-sm items-center rounded-lg bg-gradient-to-r from-green-500 via-indigo-600 to-green-600 text-white tracking-wide hover:bg-green-800 transition duration-300 ease-in-out"
+            className="py-2 px-4 cursor-pointer flex text-xs md:text-sm lg:text-base items-center rounded-lg bg-gradient-to-r from-green-500 via-indigo-600 to-green-600 text-white tracking-wide hover:bg-green-800 transition duration-300 ease-in-out"
           >
             <AiOutlineDownload className="mr-2" />
             {downloadStatus.docx}
