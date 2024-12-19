@@ -225,13 +225,13 @@ const PortfolioSkills = () => {
                 <SiMicrosoftazure className="text-blue-600" size={20} />&nbsp;<span>Microsoft Azure - Enterprise-level hosting with support for a wide range of applications.</span>
               </li>
               <li className="flex items-center space-x-2">
-                <SiVercel className="text-black dark:text-gray-500" size={20} />&nbsp;<span>Vercel - Optimized for frontend frameworks and static site hosting with serverless functions.</span>
+                <SiVercel className="text-black dark:text-gray-200" size={20} />&nbsp;<span>Vercel - Optimized for frontend frameworks and static site hosting with serverless functions.</span>
               </li>
               <li className="flex items-center space-x-2">
                 <SiNetlify className="text-teal-500" size={20} />&nbsp;<span>Netlify - Simplified static site hosting with CI/CD, forms, and serverless functions.</span>
               </li>
               <li className="flex items-center space-x-2">
-                <SiGithub className="text-gray-800 dark:text-gray-500" size={20} />&nbsp;<span>GitHub Pages - Free hosting for static websites directly from your GitHub repository.</span>
+                <SiGithub className="text-gray-800 dark:text-gray-200" size={20} />&nbsp;<span>GitHub Pages - Free hosting for static websites directly from your GitHub repository.</span>
               </li>
               <li className="flex items-center space-x-2">
                 <SiHostinger className="text-purple-500" size={20} />&nbsp;<span>Hostinger - Affordable shared hosting with advanced management tools.</span>
