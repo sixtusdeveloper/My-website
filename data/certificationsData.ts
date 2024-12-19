@@ -16,7 +16,7 @@ export const certificationsData: Certification[] = [
     year: '2022 - 2022',
     desc: 'This certification demonstrates a foundational understanding of AWS Cloud services, their core principles, and their benefits. It covers basic cloud concepts, AWS services, security, and architecture, preparing individuals for more advanced AWS certifications.',
     certUrl: '/certificates/cert04.png',
-    imageUrl: '/certificates/aws-cloud-practitioner-logo.png', // Image URL
+    imageUrl: '/certificates/cloud.webp', // Image URL
   },
   {
     title: 'IT Management - Software and Databases',
