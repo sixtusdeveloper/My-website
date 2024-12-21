@@ -214,7 +214,7 @@ const PortfolioSkills = () => {
           {/* Hosting services */}
           <div className="skill-category bg-secondary border p-6 rounded-lg col-span-1 lg:col-span-3 lg:row-span-1">
             <h3 className="text-2xl font-semibold mb-4">My Hosting Services</h3>
-            <ul className="flex items-center gap-4 list-none">
+            <ul className="flex flex-wrap items-center gap-4 list-none">
               <li className="flex items-center space-x-2">
                 <FaAws className="text-orange-400" size={20} />&nbsp;<span>AWS (Amazon Web Services) - Comprehensive hosting solutions, including static sites, dynamic applications, and databases.</span>
               </li>
@@ -248,7 +248,7 @@ const PortfolioSkills = () => {
           {/* Certifications Section */}
           <div className="skill-category bg-secondary border p-6 rounded-lg col-span-1 lg:col-span-3 lg:row-span-1">
             <h3 className="text-2xl font-semibold mb-4">My Certifications</h3>
-            <ul className="flex items-center gap-4 list-none">
+            <ul className="flex flex-wrap items-center gap-4 list-none">
               <li className="flex items-center space-x-4">
                 <FaAws className="text-yellow-500" size={20} />&nbsp;<span>AWS Certified Developer</span>
               </li>
