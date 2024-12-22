@@ -278,7 +278,6 @@ const PortfolioSkills = () => {
               </li>
             </ul>
           </div>
-
         </div>
       </div>
       
