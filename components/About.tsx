@@ -127,13 +127,14 @@ const About = () => {
         {/* YouTube Video */}
         <div className="flex justify-center items-center w-full mx-auto mt-8 lg:mt-10 relative">
           <iframe 
-            // width="560" height="315" 
-            width="660" height="415" 
+            width="560" height="315" 
             src="https://www.youtube.com/embed/XsWgiTAAroo?si=uHrixApnEXuTtlb5" 
             title="YouTube video player" 
             style={{
               border: "none",
               margin: "10px auto",
+              width: 100 + "%",
+              position: "relative",
               borderRadius: "8px",
               boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"
             }} 
