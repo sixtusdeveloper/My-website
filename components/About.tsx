@@ -124,12 +124,17 @@ const About = () => {
           />
         </a>
       </div>
-      <div className="max-w-3xl mx-auto mt-8">
+      <div className="flex items-center mx-auto mt-8">
         <iframe 
           width="560" height="315" 
           src="https://www.youtube.com/embed/XsWgiTAAroo?si=uHrixApnEXuTtlb5" 
           title="YouTube video player" 
-          style={{ border: "none" }} 
+          style={{
+            border: "none",
+            margin: "10px",
+            borderRadius: "8px",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"
+          }} 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
           referrerPolicy="strict-origin-when-cross-origin" 
           allowFullScreen>
