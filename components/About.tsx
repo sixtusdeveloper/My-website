@@ -123,6 +123,8 @@ const About = () => {
             otherClasses="text-[1.4rem] flex justify-center rounded-full items-center text-base mt-4 text-center"
           />
         </a>
+        
+        {/* YouTube Video */}
         <div className="flex justify-center items-center w-full mx-auto mt-8 relative">
           <iframe 
             width="560" height="315" 
