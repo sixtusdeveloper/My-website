@@ -118,9 +118,9 @@ const Certifications = () => {
                     <Image
                         src={certification.imageUrl}
                         alt={certification.title}
-                        width={90}
-                        height={90}
-                        // style={{ width: '100', height: '100' }}
+                        width={80}
+                        height={80}
+                        style={{ width: 'auto', height: 'autp' }}
                         className="w-full h-12 certs-img relative overflow-hidden object-cover rounded-full mb-1"
                     />
                     
