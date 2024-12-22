@@ -125,14 +125,15 @@ const About = () => {
         </a>
         
         {/* YouTube Video */}
-        <div className="flex justify-center items-center w-full mx-auto mt-8 relative">
+        <div className="flex justify-center items-center w-full mx-auto mt-8 lg:mt-10 relative">
           <iframe 
-            width="560" height="315" 
+            // width="560" height="315" 
+            width="660" height="415" 
             src="https://www.youtube.com/embed/XsWgiTAAroo?si=uHrixApnEXuTtlb5" 
             title="YouTube video player" 
             style={{
               border: "none",
-              margin: "1rem 0 auto",
+              margin: "10px auto",
               borderRadius: "8px",
               boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"
             }} 
