@@ -124,6 +124,17 @@ const About = () => {
           />
         </a>
       </div>
+      <div className="max-w-3xl mx-auto mt-8">
+        <iframe 
+          width="560" height="315" 
+          src="https://www.youtube.com/embed/XsWgiTAAroo?si=uHrixApnEXuTtlb5" 
+          title="YouTube video player" 
+          style={{ border: "none" }} 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerPolicy="strict-origin-when-cross-origin" 
+          allowFullScreen>
+        </iframe>
+      </div>
     </section>
   );
 };
