@@ -133,8 +133,6 @@ const About = () => {
             style={{
               border: "none",
               margin: "10px auto",
-              width: 100 + "%",
-              position: "relative",
               borderRadius: "8px",
               boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"
             }} 
