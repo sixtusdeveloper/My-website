@@ -215,31 +215,31 @@ const PortfolioSkills = () => {
           <div className="skill-category bg-secondary border p-6 rounded-lg col-span-1 lg:col-span-3 lg:row-span-1">
             <h3 className="text-2xl font-semibold mb-4">My Hosting Services</h3>
             <ul className="flex flex-wrap items-center gap-4 list-none">
-              <li className="flex items-center space-x-2 lg:space-x-4">
+              <li className="flex items-center space-x-4">
                 <FaAws className="text-orange-400" size={20} /><span>AWS (Amazon Web Services) - Comprehensive hosting solutions, including static sites, dynamic applications, and databases.</span>
               </li>
-              <li className="flex items-center space-x-2 lg:space-x-4">
-                <SiGooglecloud className="text-blue-400 items-start" size={20} /><span>Google Cloud Platform - Scalable hosting for applications, static websites, and machine learning models.</span>
+              <li className="flex items-center space-x-4">
+                <SiGooglecloud className="text-blue-400" size={20} /><span>Google Cloud Platform - Scalable hosting for applications, static websites, and machine learning models.</span>
               </li>
-              <li className="flex items-center space-x-2 lg:space-x-4">
+              <li className="flex items-center space-x-4">
                 <SiMicrosoftazure className="text-blue-600" size={20} /><span>Microsoft Azure - Enterprise-level hosting with support for a wide range of applications.</span>
               </li>
-              <li className="flex items-center space-x-2 lg:space-x-4">
+              <li className="flex items-center space-x-4">
                 <SiVercel className="text-black dark:text-gray-200" size={20} /><span>Vercel - Optimized for frontend frameworks and static site hosting with serverless functions.</span>
               </li>
-              <li className="flex items-center space-x-2 lg:space-x-4">
+              <li className="flex items-center space-x-4">
                 <SiNetlify className="text-teal-500" size={20} /><span>Netlify - Simplified static site hosting with CI/CD, forms, and serverless functions.</span>
               </li>
-              <li className="flex items-center space-x-2 lg:space-x-4">
+              <li className="flex items-center space-x-4">
                 <SiGithub className="text-gray-800 dark:text-gray-200" size={20} /><span>GitHub Pages - Free hosting for static websites directly from your GitHub repository.</span>
               </li>
-              <li className="flex items-center space-x-2 lg:space-x-4">
+              <li className="flex items-center space-x-4">
                 <SiHostinger className="text-purple-500" size={20} /><span>Hostinger - Affordable shared hosting with advanced management tools.</span>
               </li>
-              <li className="flex items-center space-x-2 lg:space-x-4">
+              <li className="flex items-center space-x-4">
                 <SiRender className="text-blue-600" size={20} /><span>Render - Easy deployment for web services, static sites, and APIs.</span>
               </li>
-              <li className="flex items-center space-x-2 lg:space-x-4">
+              <li className="flex items-center space-x-4">
                 <FaDocker className="text-blue-600" size={20} /><span>Docker Cloud - Optimized for containerized applications</span>
               </li>
             </ul>
