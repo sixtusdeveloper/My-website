@@ -118,10 +118,10 @@ const Certifications = () => {
                     <Image
                         src={certification.imageUrl}
                         alt={certification.title}
-                        width={80}
-                        height={80}
-                        style={{ width: 'auto', height: 'autp' }}
-                        className="w-full py-2 certs-img relative overflow-hidden object-cover rounded-full mb-1"
+                        width={200} height={200} 
+                        className="lg:w-32 md:w-20 w-16 services-img"
+                        // style={{ width: 'auto', height: 'autp' }}
+                        // className="w-full py-2 certs-img relative overflow-hidden object-cover rounded-full mb-1"
                     />
                     
                     <div className="lg:ms-4">
