@@ -126,20 +126,22 @@ const About = () => {
         
         {/* YouTube Video */}
         <div className="flex justify-center items-center w-full mx-auto mt-8 lg:mt-10 relative">
-          <iframe 
-            width="560" height="315" 
-            src="https://www.youtube.com/embed/XsWgiTAAroo?si=uHrixApnEXuTtlb5" 
-            title="YouTube video player" 
-            style={{
-              border: "none",
-              margin: "10px auto",
-              borderRadius: "8px",
-              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"
-            }} 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerPolicy="strict-origin-when-cross-origin" 
-            allowFullScreen>
-          </iframe>
+          <div className="border rounded-lg overflow-hidden shadow-lg">
+            <iframe 
+              width="560" height="315" 
+              src="https://www.youtube.com/embed/XsWgiTAAroo?si=uHrixApnEXuTtlb5" 
+              title="YouTube video player" 
+              style={{
+                border: "none",
+                margin: "10px auto",
+                borderRadius: "8px",
+                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"
+              }} 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin" 
+              allowFullScreen>
+            </iframe>
+          </div>
         </div>
       </div>
     </section>
