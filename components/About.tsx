@@ -126,7 +126,7 @@ const About = () => {
         
         {/* YouTube Video */}
         <div className="flex justify-center items-center w-full mx-auto mt-8 lg:mt-10 relative">
-          <div className="border mt-2 mx-auto relative rounded-lg px-2 overflow-hidden shadow-lg">
+          <div className="border items-center mt-2 mx-auto relative rounded-lg p-2 shadow-lg">
             <iframe 
               width="560" height="315" 
               src="https://www.youtube.com/embed/XsWgiTAAroo?si=uHrixApnEXuTtlb5" 
@@ -134,6 +134,7 @@ const About = () => {
               style={{
                 border: "none",
                 margin: "0 auto",
+                textAlign: "center",
                 position: "relative",
                 borderRadius: "8px",
                 boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"
