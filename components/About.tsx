@@ -126,7 +126,7 @@ const About = () => {
         
         {/* YouTube Video */}
         <div className="flex justify-center items-center w-full mx-auto mt-8 lg:mt-10 relative">
-          <div className="border rounded-lg p-2 overflow-hidden shadow-lg">
+          <div className="border rounded-lg px-2 overflow-hidden shadow-lg">
             <iframe 
               width="560" height="315" 
               src="https://www.youtube.com/embed/XsWgiTAAroo?si=uHrixApnEXuTtlb5" 
