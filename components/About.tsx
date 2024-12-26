@@ -103,23 +103,22 @@ const About = () => {
           {/* Social Follow Buttons on mobile */}
           <div className="flex md:hidden items-center justify-center gap-4 mt-4">
             {/* Twitter Follow Button */}
-            <div className={`flex items-center space-x-2 py-2 px-4 rounded-full ${isTwitterFollowed ? 'bg-secondary border' : 'bg-transparent border'} transition`}>
+            <div className={`flex items-center space-x-2 p-2 rounded-full ${isTwitterFollowed ? 'bg-secondary border' : 'bg-transparent border'} transition`}>
               <a 
                 href="https://twitter.com/sixtusdev?ref_src=twsrc%5Etfw"
-                className="twitter-follow-button"
-                data-show-count="false"
-                data-size="large"
+                className="relative"
+      
               >
                 <FaTwitter />
               </a>
             </div>
 
             {/* GitHub Follow Button */}
-            <div className={`flex items-center space-x-2 py-2 px-4 rounded-full ${isGithubFollowed ? 'bg-secondary border' : 'bg-transparent border'} transition`}>
+            <div className={`flex items-center space-x-2 p-2 rounded-full ${isGithubFollowed ? 'bg-secondary border' : 'bg-transparent border'} transition`}>
               <a 
                 href="https://github.com/sixtusdeveloper"
                 target="_blank"
-                className="btn-github-follow"
+                className="relative"
                 rel="noopener noreferrer"
               >
                 <FaGithub />
