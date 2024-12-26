@@ -60,9 +60,9 @@ const About = () => {
           <Image 
             src="/profile-img.png" 
             alt="Profile image"
-            width={300}
-            height={300}
-            className="profile_image relative rounded-md border border-secondary"
+            width={250}
+            height={250}
+            className="profile_image relative rounded-full border-4 border:bg-gradient-to-b from-indigo-600 via-blue-500 to-purple-800"
           />
         </div>
         <div className="mb-10 p-2">
