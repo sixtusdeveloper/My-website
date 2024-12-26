@@ -156,8 +156,8 @@ const Hero = () => {
               alt="Sixtus Aondoakaa"
               width={200}
               height={200}
-              className="rounded-full mx-auto profile_img object-cover overflow-hidden"
-              style={{ width: 'auto', height: 'auto' }}
+              className="rounded-full mx-auto profile_img"
+              // style={{ width: 'auto', height: 'auto' }}
             />
           </div>
           <h2 className="text-lg lg:text-xl mb-1 font-semibold tracking-wide text-center">
