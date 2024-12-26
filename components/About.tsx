@@ -71,8 +71,8 @@ const About = () => {
           <h3 className="text-lg lg:text-xl font-medium">Sixtus Aondoakaa</h3>
           <h4 className="text-base">Software Engineer</h4>
 
-          {/* Social Follow Buttons */}
-          <div className="flex md:flex-nowrap flex-wrap items-center justify-center gap-4 mt-4">
+          {/* Social Follow Buttons on larger devices */}
+          <div className="hidden md:flex items-center justify-center gap-4 mt-4">
             {/* Twitter Follow Button */}
             <div className={`flex items-center space-x-2 py-2 px-4 rounded-md ${isTwitterFollowed ? 'bg-secondary border' : 'bg-transparent border'} transition`}>
               <FaTwitter />
@@ -99,24 +99,23 @@ const About = () => {
               </a>
             </div>
           </div>
-          {/* Mobile device */}
-          <div className="flex md:flex-nowrap flex-wrap items-center justify-center gap-4 mt-4">
+
+          {/* Social Follow Buttons on mobile */}
+          <div className="flex md:hidden items-center justify-center gap-4 mt-4">
             {/* Twitter Follow Button */}
             <div className={`flex items-center space-x-2 py-2 px-4 rounded-full ${isTwitterFollowed ? 'bg-secondary border' : 'bg-transparent border'} transition`}>
-             
               <a 
                 href="https://twitter.com/sixtusdev?ref_src=twsrc%5Etfw"
                 className="twitter-follow-button"
                 data-show-count="false"
                 data-size="large"
               >
-                 <FaTwitter />
+                <FaTwitter />
               </a>
             </div>
 
             {/* GitHub Follow Button */}
             <div className={`flex items-center space-x-2 py-2 px-4 rounded-full ${isGithubFollowed ? 'bg-secondary border' : 'bg-transparent border'} transition`}>
-             
               <a 
                 href="https://github.com/sixtusdeveloper"
                 target="_blank"
@@ -128,7 +127,6 @@ const About = () => {
             </div>
           </div>
         </div>
-
         <h2 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-4"><strong>Few words <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">About Me</span></strong> </h2>
         <p className="text-base leading-relaxed mb-4">
           Hi, I’m Sixtus Aondoakaa, a passionate Software Engineer, DevOps Engineer and a tech Educator dedicated to crafting scalable and innovative web solutions. My journey in tech began with a fascination for how technology shapes our world. Over the years, I have navigated the complexities of full-stack development, embracing both front-end and back-end technologies to build robust applications.
