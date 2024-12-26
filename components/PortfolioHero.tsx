@@ -150,14 +150,16 @@ const Hero = () => {
       {/* Modal for Read More */}
       <ReadMoreModal isOpen={isReadMoreModalOpen} onClose={handleReadMoreModalToggle}>
         <div className="p-4 max-h-[80vh] overflow-auto no-scrollbar">
-          <Image 
-          src="/profile-img.png"
-          alt="Sixtus Aondoakaa"
-          width={200}
-          height={200}
-          className="rounded-full mx-auto profile_img object-cover overflow-hidden"
-          style={{ width: 'auto', height: 'auto' }}
-          />
+          <div className="rounded-full bg-gradient-to-b from-purple-600 via-blue-500 to-purple-800 p-[4px]">
+            <Image 
+              src="/profile-img.png"
+              alt="Sixtus Aondoakaa"
+              width={200}
+              height={200}
+              className="rounded-full mx-auto profile_img object-cover overflow-hidden"
+              style={{ width: 'auto', height: 'auto' }}
+            />
+          </div>
           <h2 className="text-lg lg:text-xl mb-1 font-semibold tracking-wide text-center">
             Sixtus Aondoakaa
           </h2> 
