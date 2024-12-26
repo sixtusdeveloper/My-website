@@ -150,9 +150,7 @@
   border-radius: 50% !important;
   object-fit: cover !important;
   position: relative !important;
-  padding: 10px;
   overflow: hidden;
-
 }
 .profile_img {
   width: 200px !important;
