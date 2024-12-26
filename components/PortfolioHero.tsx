@@ -150,7 +150,7 @@ const Hero = () => {
       {/* Modal for Read More */}
       <ReadMoreModal isOpen={isReadMoreModalOpen} onClose={handleReadMoreModalToggle}>
         <div className="p-4 max-h-[80vh] overflow-auto no-scrollbar">
-          <div className="rounded-full bg-gradient-to-b from-purple-600 via-blue-500 to-purple-800 p-[4px]">
+          <div className="rounded-full bg-gradient-to-b from-purple-600 via-blue-500 to-purple-800 p-2 mx-auto">
             <Image 
               src="/profile-img.png"
               alt="Sixtus Aondoakaa"
