@@ -57,13 +57,15 @@ const About = () => {
     <section id="about" className="p-8 lg:py-10 bg-secondary">
       <div className="max-w-3xl mt-8 lg:mt-2 mx-auto text-center"> 
         <div className="flex justify-center items-center p-2 w-full relative">
+        <div className="rounded-full bg-gradient-to-b from-purple-600 via-blue-500 to-purple-800 p-[4px]">
           <Image 
             src="/profile-img.png" 
             alt="Profile image"
             width={250}
             height={250}
-            className="profile_image relative rounded-full border-4 border:bg-gradient-to-b from-indigo-600 via-blue-500 to-purple-800"
+            className="rounded-full bg-white"
           />
+        </div>
         </div>
         <div className="mb-10 p-2">
           <h3 className="text-lg lg:text-xl font-medium">Sixtus Aondoakaa</h3>
