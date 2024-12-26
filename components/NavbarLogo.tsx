@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import LogoIconImg from '/public/Logo-icon.png';
+import LogoIconImg from '@/public/Logo-icon.png';
+
 interface LogoProps {
   src?: string;
   alt: string;
