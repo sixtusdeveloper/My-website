@@ -143,10 +143,11 @@
   align-items: center;
   margin-bottom: 20px;
 }
+
 .profile_image {
-  width: 200px !important;
-  height: 200px !important;
-  border-radius: 50% !important;
+  width: 300px !important;
+  height: 300px !important;
+  /* border-radius: 50% !important; */
   object-fit: cover !important;
   position: relative !important;
   padding: 10px;
@@ -163,7 +164,7 @@
   overflow: hidden;
 }
 .project-img{
-  width: 300 !important;
+  width: 300px !important;
   height: 200px !important;
   object-fit: cover !important; 
   border-top-left-radius: 8px !important;

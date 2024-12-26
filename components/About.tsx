@@ -60,9 +60,9 @@ const About = () => {
           <Image 
             src="/profile-img.png" 
             alt="Profile image"
-            width={200}
-            height={200}
-            className="profile_image relative rounded-full"
+            width={300}
+            height={300}
+            className="profile_image relative rounded-md border border-secondary"
           />
         </div>
         <div className="mb-10 p-2">
