@@ -99,6 +99,34 @@ const About = () => {
               </a>
             </div>
           </div>
+          {/* Mobile device */}
+          <div className="flex md:flex-nowrap flex-wrap items-center justify-center gap-4 mt-4">
+            {/* Twitter Follow Button */}
+            <div className={`flex items-center space-x-2 py-2 px-4 rounded-full ${isTwitterFollowed ? 'bg-secondary border' : 'bg-transparent border'} transition`}>
+             
+              <a 
+                href="https://twitter.com/sixtusdev?ref_src=twsrc%5Etfw"
+                className="twitter-follow-button"
+                data-show-count="false"
+                data-size="large"
+              >
+                 <FaTwitter />
+              </a>
+            </div>
+
+            {/* GitHub Follow Button */}
+            <div className={`flex items-center space-x-2 py-2 px-4 rounded-full ${isGithubFollowed ? 'bg-secondary border' : 'bg-transparent border'} transition`}>
+             
+              <a 
+                href="https://github.com/sixtusdeveloper"
+                target="_blank"
+                className="btn-github-follow"
+                rel="noopener noreferrer"
+              >
+                <FaGithub />
+              </a>
+            </div>
+          </div>
         </div>
 
         <h2 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-4"><strong>Few words <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">About Me</span></strong> </h2>
