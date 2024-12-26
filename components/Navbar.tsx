@@ -143,7 +143,7 @@ export default function Navbar({
             <div className="flex items-center justify-between">
               <a href="/" className="flex items-center">
                 <Image
-                  src="/Logo-icon.png"
+                  src="/Logo.png"
                   alt="Sixtusdev Logo"
                   width={30}
                   height={30}
