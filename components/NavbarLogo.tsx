@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import LogoIconImg from '@/public/Logo-icon.png';
 
 interface LogoProps {
   src?: string;
@@ -10,7 +9,7 @@ interface LogoProps {
 export const Logo: React.FC<LogoProps> = ({ src, alt, title }) => (
   <a href="/" className="-m-1.5 p-1.5 flex justify-center items-center">
     <Image
-      src={src || LogoIconImg}
+      src={src || '/Logo-icon.png'}
       alt={alt}
       width={30}
       height={30}
