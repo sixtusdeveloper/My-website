@@ -24,7 +24,6 @@ interface NavbarProps {
 export default function Navbar({
   LogoImg,
   title = 'Sixtusdev', // Default title if none provided
-  LogoImgDark,
   navigation,
 }: NavbarProps) {
   const { user } = useUser();
@@ -78,7 +77,7 @@ export default function Navbar({
         >
           <div className="flex lg:flex-1">
             <a href="/">
-              <Logo src={LogoImg} alt="Sixtusdev Logo" title={title} />
+              <Logo src={LogoImg} alt="Logo" title={title} />
             </a>
           </div>
           <div className="flex lg:hidden">
