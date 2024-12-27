@@ -57,7 +57,7 @@ const About = () => {
     <section id="about" className="p-8 lg:py-10 bg-secondary">
       <div className="max-w-3xl mt-8 lg:mt-2 mx-auto text-center"> 
         <div className="flex justify-center items-center p-2 w-full relative">
-          <div className="rounded-lg bg-gradient-to-b from-purple-600 via-blue-500 to-purple-800 p-[4px]">
+          <div className="rounded-lg bg-gradient-to-b from-purple-600 via-blue-500 to-purple-800 p-[2px]">
             <Image 
               src="/profile-img.png" 
               alt="Profile image"
