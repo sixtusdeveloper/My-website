@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
           </span>
         </a>
         <a
-          href="https://web.facebook.com/develitesacademy"
+          href="https://web.facebook.com/sixtusushrey"
           target="_blank"
           rel="noopener noreferrer"
           className="border hover:transform rounded-full hover:scale-110"
