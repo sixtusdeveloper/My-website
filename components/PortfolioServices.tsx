@@ -67,7 +67,7 @@ const Services = () => {
         <h1 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide">
           <strong>My&nbsp;<span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">Services</span></strong>
         </h1>
-        <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-8">
+        <div className="w-full mt-12 grid md:grid-cols-4 grid-cols-1 gap-8">
           {services.map((service, index) => (
             <Button
               key={index}
