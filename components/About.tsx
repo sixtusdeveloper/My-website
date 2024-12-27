@@ -153,29 +153,7 @@ const About = () => {
       </div>
 
       {/* YouTube Video */}
-      <div className="flex justify-center items-center w-full mx-auto mt-8 lg:mt-10 relative">
-        <div className="relative w-full" style={{ maxWidth: "560px" }}>
-          <div className="aspect-w-16 aspect-h-9">
-            <iframe 
-              src="https://www.youtube.com/embed/XsWgiTAAroo?si=uHrixApnEXuTtlb5" 
-              title="YouTube video player" 
-              className="absolute top-0 left-0 w-full h-full"
-              style={{
-                border: "none",
-                borderRadius: "8px",
-                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"
-              }} 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerPolicy="strict-origin-when-cross-origin" 
-              allowFullScreen>
-            </iframe>
-          </div>
-        </div>
-      </div>
-
-
-      {/* YouTube Video */}
-      {/* <div className="flex justify-center items-center w-full mx-auto mt-8 lg:mt-10 relative">
+      <div className="hidden md:flex justify-center items-center w-full mx-auto mt-8 lg:mt-10 relative">
         <div className="border items-center mt-2 mx-auto overflow-hidden relative rounded-lg p-2 shadow-lg">
           <iframe 
             width="560" height="315" 
@@ -194,7 +172,7 @@ const About = () => {
             allowFullScreen>
           </iframe>
         </div>
-      </div> */}
+      </div>
     </section>
   );
 };
