@@ -72,7 +72,7 @@ const Home = () => {
         <div className="flex flex-row justify-center items-center my-3 space-x-4 md:space-y-0 md:space-x-4">
           <a onClick={openHeroModal}>
             <Button className="h-12 px-4 py-3 cursor-pointer text-base rounded-md hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
-              View My Portfolio
+              Visit My Portfolio
             </Button>
           </a>
 
