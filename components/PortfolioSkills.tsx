@@ -4,7 +4,7 @@ import { SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiFlask, SiPython, SiK
   SiVisualstudiocode, SiNextdotjs, SiTypescript, SiDjango, SiAppwrite, SiClerk, SiVuedotjs, SiSentry, 
   SiFramer, SiFirebase, SiPhp, SiGnubash, SiGooglecloud, SiMicrosoftazure, SiFreecodecamp, SiUdemy, 
   SiBookstack, SiLinkedin, SiUdacity, 
-  SiStripe, SiGraphql, SiJsonwebtokens, SiInsomnia, SiWebrtc, SiEclipseide, SiXampp, SiPycharm, SiJupyter, SiSublimetext, SiExpress, SiBootstrap, SiVercel, SiNetlify, SiGithub, SiHostinger, SiRender } from 'react-icons/si';
+  SiStripe, SiGraphql, SiJsonwebtokens, SiInsomnia, SiWebrtc, SiEclipseide, SiXampp, SiPycharm, SiJupyter, SiSublimetext, SiExpress, SiBootstrap, SiVercel, SiNetlify, SiGithub, SiSanity, SiHostinger, SiRender, SiWebstorm } from 'react-icons/si';
 import { AiFillApi } from "react-icons/ai"; 
 import { FiBox } from "react-icons/fi"; 
 
@@ -78,6 +78,9 @@ const PortfolioSkills = () => {
                 <SiDjango className="text-green-600" size={20} />&nbsp;<span>Django</span>
               </li>
               <li className="flex items-center space-x-2">
+                <SiSanity className="text-green-600" size={20} />&nbsp;<span>Sanity</span>
+              </li>
+              <li className="flex items-center space-x-2">
                 <SiSentry className="text-red-500" size={20} />&nbsp;<span>Sentry</span>
               </li>
               <li className="flex items-center space-x-2">
@@ -91,6 +94,9 @@ const PortfolioSkills = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <SiStripe className="text-indigo-600" size={20} />&nbsp;<span>Stripe</span>
+              </li>
+              <li className="flex items-center space-x-2">
+              <SiNextdotjs className="text-black" size={20} />&nbsp;<span>NextAuth</span>
               </li>
             </ul>
           </div>
@@ -169,6 +175,9 @@ const PortfolioSkills = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <SiSublimetext className="text-yellow-600" size={20} />&nbsp;<span>Sublime Text</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiWebstorm className="text-blue-500" size={20} />&nbsp;<span>WebStorm</span>
               </li>
             </ul>
           </div>
