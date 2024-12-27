@@ -65,8 +65,8 @@ const Contact = () => {
         <p className="mb-8 text-md leading-relaxed tracking-wide">
           Feel free to reach out for collaborations, job opportunities, or just to say hi!
         </p>
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:gap-8 gap-2">
-          <div className="p-4 lg:py-8 text-start relative lg:w-1/2">
+        <div className="flex flex-col md:flex-row justify-between items-start md:gap-6 lg:gap-8 gap-2">
+          <div className="p-4 md:py-8 text-start relative md:w-1/2">
             <Image
               src="/profile.jpg"
               alt="profile image"
