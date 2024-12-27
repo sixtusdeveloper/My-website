@@ -104,7 +104,7 @@ const Certifications = () => {
         <h1 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide">
           <strong>My Currently <span className='bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent'>Verified Certifications</span></strong>
         </h1>
-        <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-8">
+        <div className="w-full mt-12 grid md:grid-cols-4 grid-cols-1 md:gap-4 gap-8">
           {paginatedCertifications.map((certification, index) => (
             <Button
               key={index}
@@ -124,7 +124,7 @@ const Certifications = () => {
                         // className="w-full py-2 certs-img relative overflow-hidden object-cover rounded-full mb-1"
                     />
                     
-                    <div className="lg:ms-4">
+                    <div className="lg:ms-5">
                         <h2 className="text-start text-xl md:text-2xl font-bold">{certification.title}</h2>
                         <p className="text-base py-1 text-start font-semibold">{certification.institution}&nbsp;-&nbsp;{certification.year}</p>
                         <p className="text-base text-start leading-6 font-semibold">
