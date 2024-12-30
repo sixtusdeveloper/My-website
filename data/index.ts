@@ -571,4 +571,14 @@ export const projects = [
     category: "Frontend",
     githubLink: "https://github.com/sixtusdeveloper/Personal-brand-website",
   },
+  {
+    id: 15,
+    title: "A Housing Estate application using Angular",
+    des: "Explore the latest housing estates with this web application. Discover your dream home with ease.",
+    img: "/housing-application.jpg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://angular-housing-website.vercel.app/",
+    category: "Frontend",
+    githubLink: "https://github.com/sixtusdeveloper/Angular-housing-website",
+  },
 ];
