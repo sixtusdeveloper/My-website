@@ -6,7 +6,7 @@ import { SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiFlask, SiPython, SiK
   SiBookstack, SiLinkedin, SiUdacity, 
   SiStripe, SiGraphql, SiJsonwebtokens, SiInsomnia, SiWebrtc, SiEclipseide, SiXampp, SiPycharm, 
   SiJupyter, SiSublimetext, SiExpress, SiBootstrap, SiVercel, SiNetlify, SiGithub, SiSanity,
-   SiHostinger, SiRender, SiWebstorm, SiSpringboot, SiAngular } from 'react-icons/si';
+   SiHostinger, SiRender, SiWebstorm, SiSpringboot, SiAngular, SiIntellijidea } from 'react-icons/si';
 import { AiFillApi } from "react-icons/ai"; 
 import { FiBox } from "react-icons/fi"; 
 
@@ -187,6 +187,9 @@ const PortfolioSkills = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <SiWebstorm className="text-blue-500" size={20} />&nbsp;<span>WebStorm</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiIntellijidea className="text-purple-600" size={20} />&nbsp;<span>IntelliJ IDEA</span>
               </li>
             </ul>
           </div>
