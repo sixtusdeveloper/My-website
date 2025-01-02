@@ -462,7 +462,7 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Microsoft - Home Page",
+    title: "Microsoft - The Official Microsoft Home Page",
     des: "Experience the latest Microsoft products and services with this interactive home page. Stay up-to-date with the latest tech trends.",
     img: "/microsoft-home.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
@@ -482,7 +482,7 @@ export const projects = [
   },
   {
     id: 6,
-    title: "A Frontend Portfolio App",
+    title: "Sixtusdev - A Web Designer Portfolio Website",
     des: "Showcase your projects and skills with this elegant portfolio app. Impress potential clients and employers.",
     img: "/project04.avif",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
