@@ -432,7 +432,7 @@ export const services: Service[] = [
 export const projects = [
   {
     id: 1,
-    title: "A Housing Estate application using Angular",
+    title: "Yahut - A Housing Estate application using Angular",
     des: "Explore the latest housing estates with this web application. Discover your dream home with ease.",
     img: "/housing-application.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
@@ -442,7 +442,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: "A Frontend Portfolio Website",
+    title: "Sixtudev - A Frontend Portfolio Website",
     des: "A Frontend Portfolio Website showcasing my projects and skills. Impress potential clients and employers.",
     img: "/project18.avif",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
@@ -452,7 +452,7 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Milliseco - Landing Page",
+    title: "Milliseco - A Luxurious Wrist Watch Landing Page",
     des: "Create a lasting impression with this elegant landing page. Showcase your products and services with style.",
     img: "/landing-page.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
@@ -472,7 +472,7 @@ export const projects = [
   },
   {
     id: 5,
-    title: "A Real-time Chat Editor with Live collaborative features",
+    title: "Chatter - A Real-time Chat Editor with Live collaborative features",
     des: "Enhance your team's productivity with Chatter Editor. Collaborate on documents in real-time with ease.",
     img: "/project03.avif",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
