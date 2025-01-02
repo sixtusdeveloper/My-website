@@ -103,6 +103,9 @@ const PortfolioSkills = () => {
               <li className="flex items-center space-x-2">
               <SiNextdotjs className="text-black" size={20} />&nbsp;<span>NextAuth</span>
               </li>
+              <li className="flex items-center space-x-2">
+                <SiSpringboot className="text-green-500" size={20} />&nbsp;<span>Spring Boot</span>
+              </li>
             </ul>
           </div>
 
@@ -128,9 +131,7 @@ const PortfolioSkills = () => {
               <li className="flex items-center space-x-2">
                 <SiFirebase className="text-yellow-600" size={20} />&nbsp;<span>Firebase</span>
               </li>
-              <li className="flex items-center space-x-2">
-                <SiSpringboot className="text-green-500" size={20} />&nbsp;<span>Spring Boot</span>
-              </li>
+              
             </ul>
           </div>
 
