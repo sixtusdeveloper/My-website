@@ -512,7 +512,7 @@ export const projects = [
   },
   {
     id: 10,
-    title: "Food Delivery Website",
+    title: "FofyCafe - An Online Food Delivery Website",
     des: "Order your favorite meals with ease using this food delivery website. Discover new cuisines and flavors.",
     img: "/project07.avif",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
@@ -542,7 +542,7 @@ export const projects = [
   },
   {
     id: 13,
-    title: "A Social media real-time chat application",
+    title: "Chatbook - A Social media frontend website",
     des: "Connect with friends and family using this social media chat application. Share updates and stay connected.",
     img: "/project16.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
@@ -552,7 +552,7 @@ export const projects = [
   },
   {
     id: 14,
-    title: "A Frontend personal portfolio website",
+    title: "Sixtusdev - A Frontend personal portfolio website",
     des: "Showcase your projects and skills with this elegant portfolio website. Impress potential clients and employers.",
     img: "/project11.avif",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
