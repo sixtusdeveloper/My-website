@@ -4,7 +4,9 @@ import { SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiFlask, SiPython, SiK
   SiVisualstudiocode, SiNextdotjs, SiTypescript, SiDjango, SiAppwrite, SiClerk, SiVuedotjs, SiSentry, 
   SiFramer, SiFirebase, SiPhp, SiGnubash, SiGooglecloud, SiMicrosoftazure, SiFreecodecamp, SiUdemy, 
   SiBookstack, SiLinkedin, SiUdacity, 
-  SiStripe, SiGraphql, SiJsonwebtokens, SiInsomnia, SiWebrtc, SiEclipseide, SiXampp, SiPycharm, SiJupyter, SiSublimetext, SiExpress, SiBootstrap, SiVercel, SiNetlify, SiGithub, SiSanity, SiHostinger, SiRender, SiWebstorm } from 'react-icons/si';
+  SiStripe, SiGraphql, SiJsonwebtokens, SiInsomnia, SiWebrtc, SiEclipseide, SiXampp, SiPycharm, 
+  SiJupyter, SiSublimetext, SiExpress, SiBootstrap, SiVercel, SiNetlify, SiGithub, SiSanity,
+   SiHostinger, SiRender, SiWebstorm, SiSpringboot, SiAngular } from 'react-icons/si';
 import { AiFillApi } from "react-icons/ai"; 
 import { FiBox } from "react-icons/fi"; 
 
@@ -57,6 +59,9 @@ const PortfolioSkills = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <FaFeather className="text-indigo-500" size={20} />&nbsp;<span>Flowbite</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiAngular className="text-red-600" size={20} />&nbsp;<span>Angular</span>
               </li>
             </ul>
           </div>
@@ -122,6 +127,9 @@ const PortfolioSkills = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <SiFirebase className="text-yellow-600" size={20} />&nbsp;<span>Firebase</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiSpringboot className="text-green-500" size={20} />&nbsp;<span>Spring Boot</span>
               </li>
             </ul>
           </div>
