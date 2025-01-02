@@ -583,9 +583,9 @@ export const projects = [
 
   {
     id: 17,
-    title: "A Personal Brand Website",
+    title: "Sixtusdev - A Personal Logo design Website",
     des: "Create a lasting impression with this personal brand website. Showcase your skills and achievements.",
-    img: "/project17.jpg",
+    img: "/project18.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://personal-brand-two.vercel.app/",
     category: "Frontend",
