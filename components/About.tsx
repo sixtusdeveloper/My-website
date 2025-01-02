@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from 'next/image';
 import MagicButton from "@/components/ui/MagicButton";
-import { FaTwitter, FaGithub } from 'react-icons/fa'; // Import icons
+import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa'; // Import icons
 
 const About = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -57,7 +57,7 @@ const About = () => {
     <section id="about" className="p-8 lg:py-10 bg-secondary">
       <div className="max-w-3xl mt-8 lg:mt-2 mx-auto text-center"> 
         <div className="flex justify-center items-center p-2 w-full relative">
-          <div className="rounded-lg bg-gradient-to-b from-purple-600 via-blue-500 to-purple-800 p-[2px]">
+          <div className="rounded-lg bg-gradient-to-b from-purple-600 via-blue-500 to-purple-800 p-[1px]">
             <Image 
               src="/profile-img.png" 
               alt="Profile image"
@@ -122,6 +122,20 @@ const About = () => {
                 rel="noopener noreferrer"
               >
                 <FaGithub />
+              </a>
+            </div>
+
+            {/* Linked Follow Button */}
+            <div className="flex items-center space-x-2 p-2 rounded-full transition">
+              <a
+                href="https://linkedin.com/in/sixtusushrey"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border hover:transform rounded-full hover:scale-110"
+              >
+                <span className="flex items-center justify-center w-10 h-10 bg-secondary rounded-full">
+                  <FaLinkedin size={20} />
+                </span>
               </a>
             </div>
           </div>
