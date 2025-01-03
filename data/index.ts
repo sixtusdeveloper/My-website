@@ -512,7 +512,7 @@ export const projects = [
   },
   {
     id: 10,
-    title: "FofyCafe - An Online Food Delivery Website",
+    title: "FodyCafe - An Online Food Delivery Website",
     des: "Order your favorite meals with ease using this food delivery website. Discover new cuisines and flavors.",
     img: "/project07.avif",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
