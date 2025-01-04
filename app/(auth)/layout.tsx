@@ -31,7 +31,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               priority={true}
               style={{ width: 'auto', height: 'auto' }} // Maintain aspect ratio
             />
-            <span className="text-white font-medium tracking-wide text-xl">Sixtusdev</span>
+            <span className='self-center mx-1 py-1 px-3 bg-gradient-to-r from-indigo-800 via-blue-500 to-purple-800 rounded-lg text-white text-base'>Sixtusdev</span>
           </div>
 
           <ul className="mt-5 space-y-2 p-2 lg:p-8">
