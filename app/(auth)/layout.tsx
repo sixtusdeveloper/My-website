@@ -21,7 +21,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
       <div className="flex flex-col lg:flex-row min-h-screen h-full w-full">
         <div className="w-full lg:w-1/2 flex flex-col items-center justify-center md:py-6 p-6 sm:p-10 text-white z-10">
-          <div className="flex justify-start items-center gap-1">
+          
+          <a href="/" className="flex justify-start items-center gap-1">
             <Image
               src="/Logo.png"
               alt="Sixtusdev Logo"
@@ -32,7 +33,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               style={{ width: 'auto', height: 'auto' }} // Maintain aspect ratio
             />
             <span className='self-center mx-1 py-1 px-3 bg-gradient-to-r from-indigo-800 via-blue-500 to-purple-800 rounded-lg text-white text-base'>Sixtusdev</span>
-          </div>
+          </a>
 
           <ul className="mt-5 space-y-2 p-2 lg:p-8">
               <li className="flex items-center py-1 sm:py-2">
