@@ -23,7 +23,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <div className="w-full lg:w-1/2 flex flex-col items-center justify-center md:py-6 p-6 sm:p-10 text-white z-10">
           <div className="flex justify-start items-center gap-1">
             <Image
-              src="/Logo-icon.png"
+              src="/Logo.png"
               alt="Sixtusdev Logo"
               width={30}
               height={30}
