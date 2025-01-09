@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
@@ -49,7 +49,7 @@ const Blog = () => {
   const openModal = (post: BlogPost) => {
     setIsLoading(true); // Start loading
     setSelectedPost(post);
-    document.body.style.overflow = 'hidden'; // Prevent body scroll when modal is open
+    document.body.style.overflow = "hidden"; // Prevent body scroll when modal is open
 
     // Simulate loading delay
     setTimeout(() => {
@@ -59,7 +59,7 @@ const Blog = () => {
 
   const closeModal = () => {
     setSelectedPost(null);
-    document.body.style.overflow = ''; // Re-enable body scroll when modal is closed
+    document.body.style.overflow = ""; // Re-enable body scroll when modal is closed
   };
 
   const handleModalClick = (e: React.MouseEvent) => {
@@ -79,17 +79,30 @@ const Blog = () => {
   };
 
   const handleBlogRedirect = () => {
-    window.open('https://project-update-notice.vercel.app/', '_blank'); // Open the URL in a new tab
+    window.open(
+      "https://devjourney-blog-9spv960fu-sixtus-projects.vercel.app/",
+      "_blank"
+    ); // Open the URL in a new tab
     setIsModalOpen(false); // Close the modal
   };
 
   return (
     <section id="blog" className="py-20 px-4 lg:px-4 bg-secondary">
       <div className="lg:max-w-6xl max-w-6xl mx-auto">
-        <h2 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-8"><strong>Few Selection of <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">My Blog</span></strong></h2>
+        <h2 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-8">
+          <strong>
+            Few Selection of{" "}
+            <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+              My Blog
+            </span>
+          </strong>
+        </h2>
         <div className="grid gap-2 lg:gap-6 md:grid-cols-3">
           {currentPosts.map((post) => (
-            <article key={post.id} className="p-4 bg-secondary border rounded-lg">
+            <article
+              key={post.id}
+              className="p-4 bg-secondary border rounded-lg"
+            >
               <Image
                 src={post.imageUrl}
                 alt={post.title}
@@ -98,12 +111,19 @@ const Blog = () => {
                 height={200}
               />
               <div className="pt-2">
-                <h3 className="text-lg font-bold">{truncateTitle(post.title, MAX_TITLE_LENGTH)}</h3>
-                <p className="mt-2 text-base leading-relaxed">{truncateDescription(post.description, MAX_DESCRIPTION_LENGTH)}</p>
+                <h3 className="text-lg font-bold">
+                  {truncateTitle(post.title, MAX_TITLE_LENGTH)}
+                </h3>
+                <p className="mt-2 text-base leading-relaxed">
+                  {truncateDescription(
+                    post.description,
+                    MAX_DESCRIPTION_LENGTH
+                  )}
+                </p>
                 <div className="flex mt-4 gap-4 justify-between items-center">
                   <button
                     onClick={() => openModal(post)}
-                    className="py-2 px-3 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-md text-white text-sm tracking-wide block"
+                    className="py-2 px-3 text-center bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-md text-white text-sm tracking-wide block"
                   >
                     Read More
                   </button>
@@ -126,7 +146,9 @@ const Blog = () => {
               key={index + 1}
               onClick={() => paginate(index + 1)}
               className={`mx-1 px-4 py-1 border rounded ${
-                currentPage === index + 1 ? "hover:bg-indego-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white" : "bg-secondary"
+                currentPage === index + 1
+                  ? "hover:bg-indego-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
+                  : "bg-secondary"
               }`}
             >
               {index + 1}
@@ -175,21 +197,23 @@ const Blog = () => {
         <div
           onClick={handleModalClick}
           className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
-          style={{ pointerEvents: 'auto' }}
+          style={{ pointerEvents: "auto" }}
         >
           <div className="bg-secondary border p-2 rounded-lg mt-8 shadow-lg max-w-2xl w-full max-h-[90vh] relative overflow-y-auto no-scrollbar">
-            
             {/* Adjusted Close Button - Positioned at top-right */}
             <button
               onClick={closeModal}
               className="absolute top-4 right-4 z-50 p-1 bg-secondary border rounded-full hover:text-red-500 text-2xl"
-              style={{ position: 'absolute' }}  
+              style={{ position: "absolute" }}
             >
               <IoClose size={18} />
             </button>
-            
+
             {/* Modal Content */}
-            <div className="p-4 h-full overflow-y-auto no-scrollbar" style={{ scrollbarWidth: 'thin', scrollBehavior: 'smooth' }}>
+            <div
+              className="p-4 h-full overflow-y-auto no-scrollbar"
+              style={{ scrollbarWidth: "thin", scrollBehavior: "smooth" }}
+            >
               <h3 className="text-2xl font-bold mb-4">{selectedPost.title}</h3>
               <Image
                 src={selectedPost.imageUrl}
@@ -197,18 +221,22 @@ const Blog = () => {
                 className="w-full h-64 object-cover rounded-lg"
                 width={500}
                 height={300}
-                style={{ objectFit: 'cover' }}
+                style={{ objectFit: "cover" }}
               />
               <p className="mt-4 text-base leading-relaxed">
                 {selectedPost.description}
               </p>
               <div className="py-8">
-                <Image 
+                <Image
                   src={selectedPost.diagramImageUrl}
                   alt="javascript closure diagram"
                   width={300}
                   height={200}
-                  style={{ objectFit: 'contain', width: 'auto', height: 'auto' }} 
+                  style={{
+                    objectFit: "contain",
+                    width: "auto",
+                    height: "auto",
+                  }}
                 />
               </div>
             </div>
@@ -220,11 +248,3 @@ const Blog = () => {
 };
 
 export default Blog;
-
-
-
-
-
-
-
-
