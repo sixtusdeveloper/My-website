@@ -492,16 +492,6 @@ export const projects = [
   },
   {
     id: 7,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/project05.avif",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://project-update-notice.vercel.app/",
-    category: "Fullstack",
-    githubLink: "",
-  },
-  {
-    id: 8,
     title: "DevJourney - A fullstack blog application for developers and tech enthusiasts",
     des: "Share your coding journey with the world using this blog application. Connect with like-minded developers and tech enthusiasts.",
     img: "/project19.jpg",
@@ -510,6 +500,17 @@ export const projects = [
     category: "Fullstack",
     githubLink: "https://github.com/sixtusdeveloper/Devjourney-blog-application",
   },
+  {
+    id: 8,
+    title: "Animated Apple Iphone 3D Website",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    img: "/project05.avif",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://project-update-notice.vercel.app/",
+    category: "Fullstack",
+    githubLink: "",
+  },
+ 
   {
     id: 10,
     title: "FodyCafe - An Online Food Delivery Website",
