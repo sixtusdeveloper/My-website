@@ -502,13 +502,13 @@ export const projects = [
   },
   {
     id: 8,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/project06.avif",
+    title: "DevJourney - A fullstack blog application for developers and tech enthusiasts",
+    des: "Share your coding journey with the world using this blog application. Connect with like-minded developers and tech enthusiasts.",
+    img: "/project19.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://project-update-notice.vercel.app/",
+    link: "https://devjourney-blog-khaki.vercel.app/",
     category: "Fullstack",
-    githubLink: "",
+    githubLink: "https://github.com/sixtusdeveloper/Devjourney-blog-application",
   },
   {
     id: 10,
