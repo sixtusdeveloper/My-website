@@ -492,7 +492,7 @@ export const projects = [
   },
   {
     id: 7,
-    title: "DevJourney - A fullstack blog application for developers and tech enthusiasts",
+    title: "DevJourney - A full-stack blog application for developers and tech enthusiasts",
     des: "Share your coding journey with the world using this blog application. Connect with like-minded developers and tech enthusiasts.",
     img: "/project19.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
