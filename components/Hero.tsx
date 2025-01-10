@@ -42,10 +42,7 @@ const Home = () => {
   };
 
   const handleBlogRedirect = () => {
-    window.open(
-      "https://devjourney-blog-9spv960fu-sixtus-projects.vercel.app/",
-      "_blank"
-    ); // Open the URL in a new tab
+    window.open("https://devjourney-blog-khaki.vercel.app/", "_blank"); // Open the URL in a new tab
     setIsBlogModalOpen(false); // Close the BlogModal
   };
 
