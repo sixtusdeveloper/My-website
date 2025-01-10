@@ -79,8 +79,8 @@ const Projects = () => {
                 optimization. Developed using Next.js and Tailwind CSS.
               </p>
               <a
-                href="/https://devjourney-blog-khaki.vercel.app/"
-                className="text-blue-500 hover:underline"
+                href="https://devjourney-blog-khaki.vercel.app/"
+                className="text-blue-500 hover:no-underline"
                 target="_blank"
               >
                 See it for yourself &#8594;
