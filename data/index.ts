@@ -477,7 +477,7 @@ export const projects = [
     img: "/project03.avif",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "https://chattereditor.vercel.app/",
-    category: "Frontend",
+    category: "Fullstack",
     githubLink: "https://github.com/sixtusdeveloper/Chatter-editor",
   },
   {
