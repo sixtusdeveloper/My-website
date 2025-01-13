@@ -1,11 +1,4 @@
 import React from "react";
-import {
-  FaCode,
-  FaLaptopCode,
-  FaProjectDiagram,
-  FaUsers,
-  FaLightbulb,
-} from "react-icons/fa";
 import Image from "next/image";
 import "./auth-styles.css";
 import { SparklesCore } from "./ui/sparkles";
@@ -38,7 +31,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               style={{ width: "auto", height: "auto" }} // Maintain aspect ratio
             />
             {/* <span className='self-center mx-1 py-1 px-3 bg-gradient-to-r from-indigo-800 via-blue-500 to-purple-800 rounded-lg text-white text-base'>Sixtusdev</span> */}
-            <span className="text-base font-semibold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+            <span className="self-center text-base font-semibold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
               Sixtusdev
             </span>
           </a>
