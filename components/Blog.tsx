@@ -120,13 +120,13 @@ const Blog = () => {
                 <div className="flex mt-4 gap-4 justify-between items-center">
                   <button
                     onClick={() => openModal(post)}
-                    className="py-2 px-3 text-center bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-md text-white text-sm tracking-wide block"
+                    className="py-2 px-3 text-center bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-lg text-white text-sm tracking-wide block"
                   >
                     Read More
                   </button>
                   <button
                     onClick={handleBlogClick} // Trigger the blog modal
-                    className="py-2 px-3 bg-gradient-to-r from-indigo-600 via-green-500 to-pink-800 rounded-md text-white flex items-center cursor-pointer text-sm tracking-wide"
+                    className="py-2 px-3 bg-gradient-to-r from-indigo-600 via-green-500 to-pink-800 rounded-lg text-white flex items-center cursor-pointer text-sm tracking-wide"
                   >
                     Visit my Blog <FaLocationArrow className="ml-1" />
                   </button>

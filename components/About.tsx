@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
 import React, { useState, useEffect } from "react";
-import Image from 'next/image';
+import Image from "next/image";
 import MagicButton from "@/components/ui/MagicButton";
-import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa'; // Import icons
+import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa"; // Import icons
 
 const About = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -12,9 +12,9 @@ const About = () => {
 
   // Handle page refresh or initial load for follow buttons
   useEffect(() => {
-    const twitterFollowed = localStorage.getItem('isTwitterFollowed');
-    const githubFollowed = localStorage.getItem('isGithubFollowed');
-    
+    const twitterFollowed = localStorage.getItem("isTwitterFollowed");
+    const githubFollowed = localStorage.getItem("isGithubFollowed");
+
     if (twitterFollowed) setIsTwitterFollowed(JSON.parse(twitterFollowed));
     if (githubFollowed) setIsGithubFollowed(JSON.parse(githubFollowed));
 
@@ -28,7 +28,7 @@ const About = () => {
       window.twttr.widgets.load();
     } else {
       // Load the Twitter widget script if not already loaded
-      const script = document.createElement('script');
+      const script = document.createElement("script");
       script.src = "https://platform.twitter.com/widgets.js";
       script.async = true;
       script.charset = "utf-8";
@@ -38,28 +38,28 @@ const About = () => {
 
   // Toggle expand for "Read More"
   const handleToggle = () => {
-    setIsExpanded(prev => !prev);
+    setIsExpanded((prev) => !prev);
   };
 
   // Handle Twitter follow button click (Now functional via Twitter widget)
   const handleTwitterFollow = () => {
     setIsTwitterFollowed(true);
-    localStorage.setItem('isTwitterFollowed', JSON.stringify(true));
+    localStorage.setItem("isTwitterFollowed", JSON.stringify(true));
   };
 
   // Handle GitHub follow button click (Now functional via GitHub link)
   const handleGithubFollow = () => {
     setIsGithubFollowed(true);
-    localStorage.setItem('isGithubFollowed', JSON.stringify(true));
+    localStorage.setItem("isGithubFollowed", JSON.stringify(true));
   };
 
   return (
     <section id="about" className="p-8 lg:py-10 bg-secondary">
-      <div className="max-w-3xl mt-8 lg:mt-2 mx-auto text-center"> 
+      <div className="max-w-3xl mt-8 lg:mt-2 mx-auto text-center">
         <div className="flex justify-center items-center p-2 w-full relative">
           <div className="rounded-lg bg-gradient-to-b from-purple-600 via-blue-500 to-purple-800 p-[1px]">
-            <Image 
-              src="/profile-img.png" 
+            <Image
+              src="/profile-img.png"
               alt="Profile image"
               width={300}
               height={300}
@@ -74,9 +74,15 @@ const About = () => {
           {/* Social Follow Buttons on larger devices */}
           <div className="hidden md:flex items-center justify-center gap-4 mt-4">
             {/* Twitter Follow Button */}
-            <div className={`flex items-center space-x-2 py-2 px-4 rounded-md ${isTwitterFollowed ? 'bg-secondary border' : 'bg-transparent border'} transition`}>
+            <div
+              className={`flex items-center space-x-2 py-2 px-4 rounded-lg ${
+                isTwitterFollowed
+                  ? "bg-secondary border"
+                  : "bg-transparent border"
+              } transition`}
+            >
               <FaTwitter />
-              <a 
+              <a
                 href="https://twitter.com/sixtusdev?ref_src=twsrc%5Etfw"
                 className="twitter-follow-button"
                 data-show-count="false"
@@ -87,9 +93,15 @@ const About = () => {
             </div>
 
             {/* GitHub Follow Button */}
-            <div className={`flex items-center space-x-2 py-2 px-4 rounded-md ${isGithubFollowed ? 'bg-secondary border' : 'bg-transparent border'} transition`}>
+            <div
+              className={`flex items-center space-x-2 py-2 px-4 rounded-lg ${
+                isGithubFollowed
+                  ? "bg-secondary border"
+                  : "bg-transparent border"
+              } transition`}
+            >
               <FaGithub />
-              <a 
+              <a
                 href="https://github.com/sixtusdeveloper"
                 target="_blank"
                 className="btn-github-follow"
@@ -103,19 +115,30 @@ const About = () => {
           {/* Social Follow Buttons on mobile */}
           <div className="flex md:hidden items-center justify-center gap-4 mt-4">
             {/* Twitter Follow Button */}
-            <div className={`flex items-center space-x-2 p-2 rounded-full ${isTwitterFollowed ? 'bg-secondary border' : 'bg-transparent border'} transition`}>
-              <a 
+            <div
+              className={`flex items-center space-x-2 p-2 rounded-full ${
+                isTwitterFollowed
+                  ? "bg-secondary border"
+                  : "bg-transparent border"
+              } transition`}
+            >
+              <a
                 href="https://twitter.com/sixtusdev?ref_src=twsrc%5Etfw"
                 className="relative"
-      
               >
                 <FaTwitter />
               </a>
             </div>
 
             {/* GitHub Follow Button */}
-            <div className={`flex items-center space-x-2 p-2 rounded-full ${isGithubFollowed ? 'bg-secondary border' : 'bg-transparent border'} transition`}>
-              <a 
+            <div
+              className={`flex items-center space-x-2 p-2 rounded-full ${
+                isGithubFollowed
+                  ? "bg-secondary border"
+                  : "bg-transparent border"
+              } transition`}
+            >
+              <a
                 href="https://github.com/sixtusdeveloper"
                 target="_blank"
                 className="relative"
@@ -140,20 +163,48 @@ const About = () => {
             </div>
           </div>
         </div>
-        <h2 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-4"><strong>Few words <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">About Me</span></strong> </h2>
+        <h2 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-4">
+          <strong>
+            Few words{" "}
+            <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+              About Me
+            </span>
+          </strong>{" "}
+        </h2>
         <p className="text-base leading-relaxed mb-4">
-          Hi, I’m Sixtus Aondoakaa, a passionate Software Engineer, DevOps Engineer and a tech Educator dedicated to crafting scalable and innovative web solutions. My journey in tech began with a fascination for how technology shapes our world. Over the years, I have navigated the complexities of full-stack development, embracing both front-end and back-end technologies to build robust applications.
+          Hi, I’m Sixtus Aondoakaa, a passionate Software Engineer, DevOps
+          Engineer and a tech Educator dedicated to crafting scalable and
+          innovative web solutions. My journey in tech began with a fascination
+          for how technology shapes our world. Over the years, I have navigated
+          the complexities of full-stack development, embracing both front-end
+          and back-end technologies to build robust applications.
         </p>
         {isExpanded && (
           <>
             <p className="text-base leading-relaxed mb-4">
-              The path has not always been smooth. The tech industry is dynamic and ever-evolving, and staying ahead requires more than just technical skills—it demands resilience and a commitment to continuous learning. I have faced and overcome numerous challenges, from mastering new frameworks to debugging intricate issues. Each obstacle has been a stepping stone, contributing to my growth as a software engineer.
+              The path has not always been smooth. The tech industry is dynamic
+              and ever-evolving, and staying ahead requires more than just
+              technical skills—it demands resilience and a commitment to
+              continuous learning. I have faced and overcome numerous
+              challenges, from mastering new frameworks to debugging intricate
+              issues. Each obstacle has been a stepping stone, contributing to
+              my growth as a software engineer.
             </p>
             <p className="text-base leading-relaxed mb-4">
-              My journey is marked by a dedication to excellence and an insatiable curiosity. Whether it's developing complex systems or simplifying user interfaces, I approach each project with the same enthusiasm and meticulous attention to detail. I believe that technology should not only solve problems but also create seamless and delightful user experiences.
+              My journey is marked by a dedication to excellence and an
+              insatiable curiosity. Whether it's developing complex systems or
+              simplifying user interfaces, I approach each project with the same
+              enthusiasm and meticulous attention to detail. I believe that
+              technology should not only solve problems but also create seamless
+              and delightful user experiences.
             </p>
             <p className="text-base leading-relaxed mb-4">
-              Today, I am proud of the work I have accomplished and the professional growth I have achieved. I am excited about the future and eager to continue pushing the boundaries of what is possible in the tech world. Thank you for visiting my site, and I look forward to connecting with like-minded individuals and exploring new opportunities.
+              Today, I am proud of the work I have accomplished and the
+              professional growth I have achieved. I am excited about the future
+              and eager to continue pushing the boundaries of what is possible
+              in the tech world. Thank you for visiting my site, and I look
+              forward to connecting with like-minded individuals and exploring
+              new opportunities.
             </p>
           </>
         )}
@@ -169,22 +220,23 @@ const About = () => {
       {/* YouTube Video */}
       <div className="hidden md:flex justify-center items-center w-full mx-auto mt-8 lg:mt-10 relative">
         <div className="border items-center mt-2 mx-auto overflow-hidden relative rounded-lg p-2 shadow-lg">
-          <iframe 
-            width="560" height="315" 
-            src="https://www.youtube.com/embed/XsWgiTAAroo?si=uHrixApnEXuTtlb5" 
-            title="YouTube video player" 
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/XsWgiTAAroo?si=uHrixApnEXuTtlb5"
+            title="YouTube video player"
             style={{
               border: "none",
               margin: "0 auto",
               textAlign: "center",
               position: "relative",
               borderRadius: "8px",
-              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"
-            }} 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerPolicy="strict-origin-when-cross-origin" 
-            allowFullScreen>
-          </iframe>
+              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+            }}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
         </div>
       </div>
     </section>
@@ -192,7 +244,3 @@ const About = () => {
 };
 
 export default About;
-
-
-
-

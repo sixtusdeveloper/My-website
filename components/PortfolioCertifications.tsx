@@ -168,7 +168,7 @@ const Certifications = () => {
           <button
             onClick={() => handlePageChange("previous")}
             disabled={currentPage === 1}
-            className={`px-4 py-2 rounded-lg ${
+            className={`px-4 py-2 rounded ${
               currentPage === 1
                 ? "bg-transparent border"
                 : "bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-lg text-white text-sm tracking-wide block"
@@ -179,7 +179,7 @@ const Certifications = () => {
           <button
             onClick={() => handlePageChange("next")}
             disabled={currentPage === totalPages}
-            className={`px-4 py-2 rounded-md ${
+            className={`px-4 py-2 rounded ${
               currentPage === totalPages
                 ? "bg-transparent border"
                 : "bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-lg text-white text-sm tracking-wide block"

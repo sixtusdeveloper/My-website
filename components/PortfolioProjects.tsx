@@ -179,7 +179,7 @@ const Projects = () => {
               <button
                 key={pageNumber}
                 onClick={() => paginate(pageNumber)}
-                className={`px-4 py-1 mx-1 rounded-lg cursor-pointer transition-all duration-300 ${
+                className={`px-4 py-1 mx-1 rounded cursor-pointer transition-all duration-300 ${
                   currentPage === pageNumber
                     ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
                     : "bg-transparent border"
