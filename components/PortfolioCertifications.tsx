@@ -145,10 +145,10 @@ const Certifications = () => {
                   <h2 className="text-start text-xl md:text-2xl font-bold">
                     {certification.title}
                   </h2>
-                  <p className="text-base py-1 text-start font-semibold">
+                  <p className="text-base py-1 text-start leading-6 font-medium">
                     {certification.institution}&nbsp;-&nbsp;{certification.year}
                   </p>
-                  <p className="text-base text-start leading-6 font-semibold">
+                  <p className="text-base text-start leading-6 font-normal">
                     {truncateDescription(
                       certification.desc ?? "",
                       MAX_DESCRIPTION_LENGTH

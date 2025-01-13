@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import React, { useState, useRef, useEffect } from 'react';
-import Modal from '@/components/ui/ServicesModal';
-import { services } from '@/data';
-import { Button } from '@/components/ui/MovingBorder';
-import Image from 'next/image';
-import Loader from '@/components/ui/Loader';
+import React, { useState, useRef, useEffect } from "react";
+import Modal from "@/components/ui/ServicesModal";
+import { services } from "@/data";
+import { Button } from "@/components/ui/MovingBorder";
+import Image from "next/image";
+import Loader from "@/components/ui/Loader";
 
 // Truncate the Description to a maximum length
 const MAX_DESCRIPTION_LENGTH = 80;
@@ -39,33 +39,44 @@ const Services = () => {
 
     window.scrollTo({
       top: scrollPosition.current,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
+      if (
+        modalRef.current &&
+        !modalRef.current.contains(event.target as Node)
+      ) {
         closeModal();
       }
     };
 
     if (isModalOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener("mousedown", handleClickOutside);
     } else {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isModalOpen]);
 
   return (
-    <section id="services" className="bg-secondary relative md:pt-10 px-6 lg:px-10 pb-20">
-      <div className='mx-auto max-w-6xl relative'>
+    <section
+      id="services"
+      className="bg-secondary relative md:pt-10 px-6 lg:px-10 pb-20"
+    >
+      <div className="mx-auto max-w-6xl relative">
         <h1 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide">
-          <strong>My&nbsp;<span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">Services</span></strong>
+          <strong>
+            My&nbsp;
+            <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+              Services
+            </span>
+          </strong>
         </h1>
         <div className="w-full mt-12 grid md:grid-cols-4 grid-cols-1 md:gap-4 gap-8">
           {services.map((service, index) => (
@@ -77,16 +88,20 @@ const Services = () => {
               onClick={() => openModal(service)}
             >
               <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
-                <Image 
-                  src={service.thumbnail} 
-                  alt={service.thumbnail} 
-                  width={200} height={200} 
-                  className="lg:w-32 md:w-20 w-16 services-img" 
+                <Image
+                  src={service.thumbnail}
+                  alt={service.thumbnail}
+                  width={200}
+                  height={200}
+                  className="lg:w-32 md:w-20 w-16 services-img"
                 />
                 <div className="lg:ms-5">
-                  <h1 className="text-start text-xl md:text-2xl font-bold">{service.title}</h1>
-                  <p className="text-base text-start leading-6 mt-1 font-semibold">
-                    {truncateDescription(service.desc, MAX_DESCRIPTION_LENGTH)}&nbsp;
+                  <h1 className="text-start text-xl md:text-2xl font-bold">
+                    {service.title}
+                  </h1>
+                  <p className="text-base text-start leading-6 mt-1">
+                    {truncateDescription(service.desc, MAX_DESCRIPTION_LENGTH)}
+                    &nbsp;
                     <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:text-indigo-600 text-sm text-end font-medium">
                       Read more
                     </span>
@@ -96,43 +111,59 @@ const Services = () => {
             </Button>
           ))}
         </div>
-
         {/* Full-page loader overlay */}
         {isLoading && <Loader />} {/* Show loader */}
-
         <Modal isOpen={isModalOpen} onClose={closeModal}>
-          <div ref={modalRef} className="p-4 max-h-[80vh] overflow-y-auto bg-secondary no-scrollbar relative">
+          <div
+            ref={modalRef}
+            className="p-4 max-h-[80vh] overflow-y-auto bg-secondary no-scrollbar relative"
+          >
             {selectedService && (
               <>
-                <Image 
-                src={selectedService.thumbnail} 
-                width={200} height={200} 
-                alt={selectedService.title} 
-                className="w-20 h-20 mb-4 modal-top-img" 
-                style={{ width: 'auto', height: 'auto' }}
+                <Image
+                  src={selectedService.thumbnail}
+                  width={200}
+                  height={200}
+                  alt={selectedService.title}
+                  className="w-20 h-20 mb-4 modal-top-img"
+                  style={{ width: "auto", height: "auto" }}
                 />
                 <div className="lg:ms-5">
-                  <h3 className="text-start py-6 text-xl md:text-2xl font-bold">{selectedService.title}</h3>
+                  <h3 className="text-start py-6 text-xl md:text-2xl font-bold">
+                    {selectedService.title}
+                  </h3>
                   {/* Detailed paragraphs */}
-                  {selectedService.detailedDesc.paragraphs.map((paragraph, idx) => (
-                    <p key={idx} className="text-start text-base mt-3 leading-7 font-medium">{paragraph}</p>
-                  ))}
+                  {selectedService.detailedDesc.paragraphs.map(
+                    (paragraph, idx) => (
+                      <p
+                        key={idx}
+                        className="text-start text-base mt-3 leading-7 font-medium"
+                      >
+                        {paragraph}
+                      </p>
+                    )
+                  )}
                   {/* Render images */}
                   <div className="grid grid-cols-2 sm:grid-cols-2 py-8 gap-4 mt-4">
                     {selectedService.detailedDesc.images.map((image, idx) => (
-                      <Image 
-                      key={idx} 
-                      src={image.src} 
-                      width={300} 
-                      height={200}
-                      alt={image.alt} 
-                      className="w-full h-auto object-cover rounded-lg shadow-sm modal-img" 
+                      <Image
+                        key={idx}
+                        src={image.src}
+                        width={300}
+                        height={200}
+                        alt={image.alt}
+                        className="w-full h-auto object-cover rounded-lg shadow-sm modal-img"
                       />
                     ))}
                   </div>
                   {/* Text1 paragraphs */}
                   {selectedService.detailedDesc.textDesc.map((text, idx) => (
-                    <p key={idx} className="text-start text-base mt-3 leading-7 font-medium">{text}</p>
+                    <p
+                      key={idx}
+                      className="text-start text-base mt-3 leading-7 font-medium"
+                    >
+                      {text}
+                    </p>
                   ))}
                 </div>
               </>
@@ -145,6 +176,3 @@ const Services = () => {
 };
 
 export default Services;
-
-
-
