@@ -1,12 +1,11 @@
-'use client';
+"use client";
 
 import React, { useState, useRef, useEffect } from "react";
 import { experiences, education } from "@/data";
 import Modal from "@/components/ui/ExpiModal";
-import Image from 'next/image';
-import { AiOutlineDownload } from 'react-icons/ai';
+import Image from "next/image";
+import { AiOutlineDownload } from "react-icons/ai";
 import Loader from "@/components/ui/Loader";
-
 
 // Truncate the course to a maximum length
 const MAX_COURSE_LENGTH = 40;
@@ -24,12 +23,16 @@ const truncateDescription = (text: string, maxLength: number): string => {
 
 // Pagination
 const Experience = () => {
-  const [selectedWorkExperience, setSelectedWorkExperience] = useState<WorkExperienceItem | null>(null);
+  const [selectedWorkExperience, setSelectedWorkExperience] =
+    useState<WorkExperienceItem | null>(null);
   const [selectedSection, setSelectedSection] = useState("work");
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedEducation, setSelectedEducation] = useState<EducationItem | null>(null);
+  const [selectedEducation, setSelectedEducation] =
+    useState<EducationItem | null>(null);
   const [isLoading, setIsLoading] = useState(false); // Loading state
-  const [downloadStatus, setDownloadStatus] = useState<"idle" | "downloading" | "downloaded">("idle"); // Download state
+  const [downloadStatus, setDownloadStatus] = useState<
+    "idle" | "downloading" | "downloaded"
+  >("idle"); // Download state
   const modalRef = useRef<HTMLDivElement | null>(null);
   const sectionRef = useRef<HTMLDivElement | null>(null); // Reference to the experience section
   const scrollPosition = useRef(0); // Store the scroll position
@@ -37,13 +40,13 @@ const Experience = () => {
   const openModal = (item: EducationItem | WorkExperienceItem) => {
     scrollPosition.current = window.scrollY; // Capture the current scroll position
     setIsLoading(true); // Start loading
-  
-    if ('degree' in item) {
+
+    if ("degree" in item) {
       setSelectedEducation(item);
     } else {
       setSelectedWorkExperience(item);
     }
-  
+
     setTimeout(() => {
       setIsLoading(false);
       setIsModalOpen(true);
@@ -55,7 +58,7 @@ const Experience = () => {
     setSelectedEducation(null);
     setSelectedWorkExperience(null);
     setDownloadStatus("idle");
-  
+
     if (sectionRef.current) {
       window.scrollTo({
         top: scrollPosition.current,
@@ -63,15 +66,18 @@ const Experience = () => {
       });
     }
   };
-  
+
   // Close modal if user clicks outside of it
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
+      if (
+        modalRef.current &&
+        !modalRef.current.contains(event.target as Node)
+      ) {
         closeModal();
       }
     };
-    
+
     if (isModalOpen) {
       document.addEventListener("mousedown", handleClickOutside);
     } else {
@@ -86,11 +92,11 @@ const Experience = () => {
   const handleDownload = () => {
     if (selectedEducation?.img) {
       setDownloadStatus("downloading"); // Set status to downloading
-      const link = document.createElement('a');
+      const link = document.createElement("a");
       link.href = selectedEducation.img;
       link.download = `${selectedEducation.degree}-certificate.jpg`;
       link.click();
-      
+
       setTimeout(() => {
         setDownloadStatus("downloaded"); // Set status to downloaded after a delay
         setTimeout(() => {
@@ -107,15 +113,19 @@ const Experience = () => {
       ref={sectionRef} // Reference to the experience section
     >
       <div className="bg-secondary lg:max-w-5xl mx-auto relative">
-
         <div className="my-8 relative text-center">
           <h2 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-8">
-            <strong>My <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">Experience</span></strong> 
+            <strong>
+              My{" "}
+              <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+                Experience
+              </span>
+            </strong>
           </h2>
           <div className="flex justify-center space-x-4 mb-8">
             <button
               onClick={() => setSelectedSection("work")}
-              className={`px-4 py-2 rounded-md cursor-pointer ${
+              className={`px-4 py-2 rounded-lg cursor-pointer ${
                 selectedSection === "work"
                   ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
                   : "bg-transparent border"
@@ -125,7 +135,7 @@ const Experience = () => {
             </button>
             <button
               onClick={() => setSelectedSection("education")}
-              className={`px-4 py-2 rounded-md cursor-pointer ${
+              className={`px-4 py-2 rounded-lg cursor-pointer ${
                 selectedSection === "education"
                   ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
                   : "bg-transparent border"
@@ -135,58 +145,52 @@ const Experience = () => {
             </button>
           </div>
         </div>
-
         <div className="timeline">
           {selectedSection === "work"
             ? experiences.map((experience, index) => (
-              <div
-                key={index}
-                className={`timeline-container ${
-                  index % 2 === 0 ? "left" : "right"
-                }`}
-              >
-                <div className="timeline-icon"></div>
-                <div className="bg-secondary border p-4 rounded-lg">
-                  <h3 className="text-lg font-bold">
-                    {experience.title}
-                  </h3>
-                  <p className="inline-flex space-x-2 py-1 mb-0">
-                    <span className="text-sm">
-                      {experience.organization}&nbsp;-&nbsp;
+                <div
+                  key={index}
+                  className={`timeline-container ${
+                    index % 2 === 0 ? "left" : "right"
+                  }`}
+                >
+                  <div className="timeline-icon"></div>
+                  <div className="bg-secondary border p-4 rounded-lg">
+                    <h3 className="text-lg font-bold">{experience.title}</h3>
+                    <p className="inline-flex space-x-2 py-1 mb-0">
                       <span className="text-sm">
-                        {experience.type}
+                        {experience.organization}&nbsp;-&nbsp;
+                        <span className="text-sm">{experience.type}</span>
                       </span>
+                    </p>
+                    <span className="flex flex-wrap gap-2 items-center">
+                      <span className="text-sm">
+                        {experience.nature}&nbsp;&#45;&nbsp;
+                      </span>
+                      <time className="text-sm" suppressHydrationWarning>
+                        {experience.date}
+                      </time>
                     </span>
-                  </p>
-                  <span className="flex flex-wrap gap-2 items-center">
-                    <span className="text-sm">{experience.nature}&nbsp;&#45;&nbsp;</span>
-                    <time
-                      className="text-sm"
-                      suppressHydrationWarning
-                    >
-                      {experience.date}
-                    </time>
-                    
-                  </span>
-                 
-                  <p className="text-sm py-1 mb-0">
-                    {experience.location}
-                  </p>
-                  <div className="text-base leading-6">
-                    {truncateDescription(experience.description, MAX_DESCRIPTION_LENGTH)}&nbsp;
-                    <a
-                      href="#"
-                      onClick={() => openModal(experience)}
-                      className="font-medium cursor-pointer text-base bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:text-indigo-600"
-                    >
-                      <span aria-hidden="true" className="absolute inset-0" />
-                      Read more{" "}
-                      <span aria-hidden="true">&rarr;</span>
-                    </a>
+
+                    <p className="text-sm py-1 mb-0">{experience.location}</p>
+                    <div className="text-base leading-6">
+                      {truncateDescription(
+                        experience.description,
+                        MAX_DESCRIPTION_LENGTH
+                      )}
+                      &nbsp;
+                      <a
+                        href="#"
+                        onClick={() => openModal(experience)}
+                        className="font-medium cursor-pointer text-base bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:text-indigo-600"
+                      >
+                        <span aria-hidden="true" className="absolute inset-0" />
+                        Read more <span aria-hidden="true">&rarr;</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))
+              ))
             : education.map((edu, index) => (
                 <div
                   key={index}
@@ -207,32 +211,33 @@ const Experience = () => {
                       </span>
                     </p>
                     <p className="text-white-200 text-sm py-1 mb-0">
-                      {edu.status} 
+                      {edu.status}
                     </p>
                     <time
                       className="block text-sm mb-1"
                       suppressHydrationWarning
                     >
-                      {edu.date} 
+                      {edu.date}
                     </time>
                     <div className="text-base leading-6">
-                      {truncateDescription(edu.description, MAX_DESCRIPTION_LENGTH)}&nbsp;
+                      {truncateDescription(
+                        edu.description,
+                        MAX_DESCRIPTION_LENGTH
+                      )}
+                      &nbsp;
                       <a
                         href="#"
                         onClick={() => openModal(edu)}
                         className="font-medium cursor-pointer text-base bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:text-indigo-600"
                       >
                         <span aria-hidden="true" className="absolute inset-0" />
-                        View credentials{" "}
-                        <span aria-hidden="true">&rarr;</span>
+                        View credentials <span aria-hidden="true">&rarr;</span>
                       </a>
                     </div>
                   </div>
                 </div>
-              ))
-            }
+              ))}
         </div>
-    
         {/* Modal */}
         <Modal isOpen={isModalOpen} onClose={closeModal}>
           <div
@@ -240,8 +245,7 @@ const Experience = () => {
             className="p-4 max-h-[80vh] overflow-y-auto no-scrollbar relative"
           >
             {isLoading ? (
-              <Loader /> 
-            
+              <Loader />
             ) : (
               <div>
                 {selectedEducation && (
@@ -250,18 +254,36 @@ const Experience = () => {
                       {selectedEducation?.degree}
                     </h3>
                     <p className="mb-4">
-                      <span className="font-medium text-base">Institution:</span>&nbsp;<span className="text-base">{selectedEducation?.institution}</span>
+                      <span className="font-medium text-base">
+                        Institution:
+                      </span>
+                      &nbsp;
+                      <span className="text-base">
+                        {selectedEducation?.institution}
+                      </span>
                     </p>
                     <p className="mb-4">
-                      <span className="font-medium text-base">Type:</span>&nbsp;<span className="text-base">{selectedEducation?.type}</span>
+                      <span className="font-medium text-base">Type:</span>&nbsp;
+                      <span className="text-base">
+                        {selectedEducation?.type}
+                      </span>
                     </p>
                     <p className="mb-4">
-                      <span className="font-medium text-base">Status:</span>&nbsp;<span className="text-base">{selectedEducation?.status}</span>
+                      <span className="font-medium text-base">Status:</span>
+                      &nbsp;
+                      <span className="text-base">
+                        {selectedEducation?.status}
+                      </span>
                     </p>
                     <p className="mb-4">
-                      <span className="font-medium text-base">Date:</span>&nbsp;<span className="text-base">{selectedEducation?.date}</span>
+                      <span className="font-medium text-base">Date:</span>&nbsp;
+                      <span className="text-base">
+                        {selectedEducation?.date}
+                      </span>
                     </p>
-                    <p className="mb-6 text-base text-medium leading-6">{selectedEducation?.description}</p>
+                    <p className="mb-6 text-base text-medium leading-6">
+                      {selectedEducation?.description}
+                    </p>
                     <div className=" relative flex justify-center text-center w-full mb-4">
                       <Image
                         src={selectedEducation?.img || "/certificates/cert.png"}
@@ -270,13 +292,13 @@ const Experience = () => {
                         width={600}
                         height={300}
                         objectFit="cover"
-                        style={{ width: 'auto', height: 'auto' }}
+                        style={{ width: "auto", height: "auto" }}
                       />
                     </div>
                     <div className="mt-6 flex items-center justify-center">
                       <button
                         onClick={handleDownload}
-                        className={`px-4 py-2 flex items-center bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white text-base cursor-pointer justify-center space-x-2 rounded-md ${
+                        className={`px-4 py-2 flex items-center bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white text-base cursor-pointer justify-center space-x-2 rounded-lg ${
                           downloadStatus === "downloaded"
                             ? "bg-gradient-to-r from-green-500 via-indigo-600 to-green-800"
                             : "bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600"
@@ -290,7 +312,7 @@ const Experience = () => {
                     </div>
                   </>
                 )}
-                  
+
                 {selectedWorkExperience && (
                   <>
                     <div className="flex flex-col justify-center flex-wrap lg:flex-nowrap md:flex-row md:justify-between gap-4 md:gap-6 lg:gap-8 space-x-2 md:space-x-6">
@@ -299,49 +321,78 @@ const Experience = () => {
                           {selectedWorkExperience.title}
                         </h3>
                         <p className="mb-4">
-                          <span className="font-medium text-base">Organization:</span>&nbsp;<span className="text-base">{selectedWorkExperience.organization}</span>
+                          <span className="font-medium text-base">
+                            Organization:
+                          </span>
+                          &nbsp;
+                          <span className="text-base">
+                            {selectedWorkExperience.organization}
+                          </span>
                         </p>
                         <p className="mb-4">
-                          <span className="font-medium text-base">Type:</span>&nbsp;<span className="text-base">{selectedWorkExperience.type}</span>
+                          <span className="font-medium text-base">Type:</span>
+                          &nbsp;
+                          <span className="text-base">
+                            {selectedWorkExperience.type}
+                          </span>
                         </p>
                         <p className="mb-4">
-                          <span className="font-medium text-base">Nature:</span>&nbsp;<span className="text-base">{selectedWorkExperience.nature}</span>
+                          <span className="font-medium text-base">Nature:</span>
+                          &nbsp;
+                          <span className="text-base">
+                            {selectedWorkExperience.nature}
+                          </span>
                         </p>
                         <p className="mb-4">
-                          <span className="font-medium text-base">Location:</span>&nbsp;<span className="text-base">{selectedWorkExperience.location}</span>
+                          <span className="font-medium text-base">
+                            Location:
+                          </span>
+                          &nbsp;
+                          <span className="text-base">
+                            {selectedWorkExperience.location}
+                          </span>
                         </p>
                         <p className="mb-4">
-                          <span className="font-medium text-base">Date:</span>&nbsp;<span className="text-base">{selectedWorkExperience.date}</span>
+                          <span className="font-medium text-base">Date:</span>
+                          &nbsp;
+                          <span className="text-base">
+                            {selectedWorkExperience.date}
+                          </span>
                         </p>
-                        
                       </div>
                       <div>
-                        <Image 
-                        src={selectedWorkExperience.img || "/profile.jpg" }
-                        alt={selectedWorkExperience.title || "profile image" }
-                        className="rounded-md w-full"
-                        width={200}
-                        height={200}
-                        objectFit="cover"
-                        style={{ width: 'auto', height: 'auto' }}
+                        <Image
+                          src={selectedWorkExperience.img || "/profile.jpg"}
+                          alt={selectedWorkExperience.title || "profile image"}
+                          className="rounded-md w-full"
+                          width={200}
+                          height={200}
+                          objectFit="cover"
+                          style={{ width: "auto", height: "auto" }}
                         />
                       </div>
                     </div>
                     <div className="relative py-4">
-                      <h4 className="font-bold tracking-wider text-lg my-4">Job description</h4> 
-                      <p className="text-base text-medium leading-7">{selectedWorkExperience.fullDesc}</p>
+                      <h4 className="font-bold tracking-wider text-lg my-4">
+                        Job description
+                      </h4>
+                      <p className="text-base text-medium leading-7">
+                        {selectedWorkExperience.fullDesc}
+                      </p>
                     </div>
                     <div className="py-4 relative overflow-hidden">
                       <h4 className="font-bold text-lg my-4">Technologies</h4>
                       <ul className="flex flex-wrap gap-4">
-                        {selectedWorkExperience.technologies.map((tech, index) => (
-                          <li
-                            key={index}
-                            className="px-3 py-2 border rounded-lg bg-transparent text-base leading-6"
-                          >
-                            {tech}
-                          </li>
-                        ))}
+                        {selectedWorkExperience.technologies.map(
+                          (tech, index) => (
+                            <li
+                              key={index}
+                              className="px-3 py-2 border rounded-lg bg-transparent text-base leading-6"
+                            >
+                              {tech}
+                            </li>
+                          )
+                        )}
                       </ul>
                     </div>
                   </>
@@ -350,7 +401,6 @@ const Experience = () => {
             )}
           </div>
         </Modal>
-  
         {/* Loading animation */}
         {isLoading && <Loader />} {/* Show loader */}
       </div>
@@ -359,4 +409,3 @@ const Experience = () => {
 };
 
 export default Experience;
-
