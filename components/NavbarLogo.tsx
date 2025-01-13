@@ -11,13 +11,13 @@ export const Logo: React.FC<LogoProps> = ({ src, alt, title }) => (
     <Image
       src={src || "/Logo.png"}
       alt={alt}
-      width={30}
-      height={30}
+      width={25}
+      height={25}
       style={{ width: "auto", height: "auto" }}
       priority={true}
     />
     {/* <span className='self-center mx-1 py-1 px-3 bg-gradient-to-r from-indigo-800 via-blue-500 to-purple-800 rounded-lg text-white'> */}
-    <span className="text-base font-semibold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+    <span className="self-center text-base font-semibold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
       {title}
     </span>
   </a>

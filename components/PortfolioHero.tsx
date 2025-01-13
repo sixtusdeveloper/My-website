@@ -1,14 +1,13 @@
-
-'use client';
+"use client";
 
 import Link from "next/link";
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
 import MagicButton from "@/components/ui/MagicButton";
 import { GoArrowRight } from "react-icons/go";
 import { useUser } from "@clerk/nextjs";
 import { useState } from "react";
 import HireMeModal from "@/components/ui/HireMeModal";
-import ReadMoreModal from "@/components/ui/ReadMoreModal"; 
+import ReadMoreModal from "@/components/ui/ReadMoreModal";
 import Image from "next/image";
 import Loader from "@/components/ui/Loader";
 
@@ -26,7 +25,7 @@ const Hero = () => {
       setModalOpen(true);
     }, 2000); // Simulate loading time (2 seconds)
   };
-  
+
   // Read more logic
   const handleReadMoreClick = () => {
     setIsReadMoreLoading(true);
@@ -41,11 +40,9 @@ const Hero = () => {
     setModalOpen(!isModalOpen);
   };
 
-
   const handleReadMoreModalToggle = () => {
     setReadMoreModalOpen(!isReadMoreModalOpen);
   };
-
 
   return (
     <div className="bg-secondary pb-2 pt-36" id="hero">
@@ -69,7 +66,10 @@ const Hero = () => {
           <h3 className="text-[1rem] font-bold tracking-wider sm:text-[1.2rem]">
             {isSignedIn && user ? (
               <>
-                👋 Hey <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">{user.firstName}</span>
+                👋 Hey{" "}
+                <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+                  {`${user.firstName || ""} ${user.lastName || ""}`.trim()}
+                </span>
               </>
             ) : (
               "👋 Hi there!"
@@ -78,7 +78,11 @@ const Hero = () => {
 
           <h1 className="text-[2rem] font-extrabold tracking-wide text-center lg:text-[3rem]">
             <strong>
-              Explore <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">Innovation and Creativity</span> in My Portfolio
+              Explore{" "}
+              <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+                Innovation and Creativity
+              </span>{" "}
+              in My Portfolio
             </strong>
           </h1>
 
@@ -92,34 +96,27 @@ const Hero = () => {
             something amazing together!
           </p>
           <div className="flex flex-row justify-center items-center my-3 space-x-4 md:space-y-0 md:space-x-4">
-            
             <a onClick={handleHireMeClick}>
-              <Button
-                className="h-12 px-8 lg:px-8 py-3 tracking-wide cursor-pointer text-base rounded-md hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white" 
-              >Hire Me
+              <Button className="h-12 px-8 lg:px-8 py-3 tracking-wide cursor-pointer text-base rounded-md hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
+                Hire Me
               </Button>
             </a>
-            <a onClick={handleReadMoreClick} >
+            <a onClick={handleReadMoreClick}>
               <MagicButton
                 title="Read More"
-                icon={
-                  <GoArrowRight className="text-lg" />
-                }
+                icon={<GoArrowRight className="text-lg" />}
                 otherClasses="text-[1.4rem] flex justify-center items-center text-center"
               />
             </a>
-          
           </div>
         </div>
       </div>
 
       {/* Loading Overlay */}
-      {isLoading && <Loader />} 
+      {isLoading && <Loader />}
 
       {/* Loading Overlay for Read More */}
-      {isReadMoreLoading && (
-        <Loader />
-      )}
+      {isReadMoreLoading && <Loader />}
 
       {/* Modal for Hire Me */}
       <HireMeModal isOpen={isModalOpen} onClose={handleModalToggle}>
@@ -146,24 +143,24 @@ const Hero = () => {
         </div>
       </HireMeModal>
 
-      
       {/* Modal for Read More */}
-      <ReadMoreModal isOpen={isReadMoreModalOpen} onClose={handleReadMoreModalToggle}>
+      <ReadMoreModal
+        isOpen={isReadMoreModalOpen}
+        onClose={handleReadMoreModalToggle}
+      >
         <div className="p-4 max-h-[80vh] overflow-auto no-scrollbar">
-          <Image 
+          <Image
             src="/profile-img.png"
             alt="Sixtus Aondoakaa"
             width={200}
             height={200}
             className="rounded-full border-2 mx-auto profile_img"
-            style={{ width: 'auto', height: 'auto' }}
+            style={{ width: "auto", height: "auto" }}
           />
           <h2 className="text-lg lg:text-xl mb-1 font-semibold tracking-wide text-center">
             Sixtus Aondoakaa
-          </h2> 
-          <p className="text-base font-medium text-center">
-            Software Engineer
-          </p>
+          </h2>
+          <p className="text-base font-medium text-center">Software Engineer</p>
         </div>
       </ReadMoreModal>
     </div>
@@ -171,13 +168,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-
-
-
-
-
-
-
-
-

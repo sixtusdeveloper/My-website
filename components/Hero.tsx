@@ -57,7 +57,7 @@ const Home = () => {
             <>
               👋 Hi{" "}
               <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-                {user.firstName}
+                {`${user.firstName || ""} ${user.lastName || ""}`.trim()}
               </span>
             </>
           ) : (

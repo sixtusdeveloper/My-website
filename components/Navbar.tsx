@@ -1,18 +1,18 @@
-'use client';
+"use client";
 
-import React, { useState, useEffect } from 'react';
-import { Dialog, DialogPanel } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon, UserIcon } from '@heroicons/react/24/outline';
+import React, { useState, useEffect } from "react";
+import { Dialog, DialogPanel } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon, UserIcon } from "@heroicons/react/24/outline";
 import {
   SignedIn,
   SignedOut,
   SignInButton,
   UserButton,
   useUser,
-} from '@clerk/nextjs';
-import { Logo } from '@/components/NavbarLogo';
-import Image from 'next/image';
-import ToggleMode from '@/components/toggleMode';
+} from "@clerk/nextjs";
+import { Logo } from "@/components/NavbarLogo";
+import Image from "next/image";
+import ToggleMode from "@/components/toggleMode";
 
 interface NavbarProps {
   LogoImg?: string;
@@ -23,20 +23,20 @@ interface NavbarProps {
 
 export default function Navbar({
   LogoImg,
-  title = 'Sixtusdev', // Default title if none provided
+  title = "Sixtusdev", // Default title if none provided
   navigation,
 }: NavbarProps) {
   const { user } = useUser();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
-  const [activeSection, setActiveSection] = useState('');
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolling(window.scrollY > 0);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
@@ -51,16 +51,16 @@ export default function Navbar({
         }
       }
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [navigation]);
 
   const handleClick = (href: string) => {
     setActiveSection(href.substring(1));
     const section = document.querySelector(href);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
@@ -68,7 +68,7 @@ export default function Navbar({
     <>
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-colors duration-500 ${
-          scrolling ? 'border-b bg-secondary' : 'bg-transparent'
+          scrolling ? "border-b bg-secondary" : "bg-transparent"
         }`}
       >
         <nav
@@ -95,10 +95,10 @@ export default function Navbar({
               <a
                 key={item.name}
                 href={`#${item.href.substring(1)}`}
-                className={`text-base hover:text-purple-800 tracking-wide font-semibold cursor-pointer ${
+                className={`text-base hover:text-purple-800 tracking-wide font-medium cursor-pointer ${
                   activeSection === item.href.substring(1)
-                    ? 'bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent'
-                    : 'text-default'
+                    ? "bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent"
+                    : "text-default"
                 } hover:text-primary`}
                 onClick={(e) => {
                   e.preventDefault();
@@ -124,8 +124,8 @@ export default function Navbar({
             </SignedIn>
             <SignedOut>
               <SignInButton>
-                <button className="inline-flex text-base font-medium px-3 py-2 rounded-md bg-blue-500 hover:bg-indego-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
-                 <UserIcon className="mr-1 h-5 w-5 text-white" /> Sign In
+                <button className="inline-flex text-base font-medium px-3 py-2 rounded-lg bg-blue-500 hover:bg-indego-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
+                  <UserIcon className="mr-1 h-5 w-5 text-white" /> Sign In
                 </button>
               </SignInButton>
             </SignedOut>
@@ -148,7 +148,7 @@ export default function Navbar({
                   width={30}
                   height={30}
                 />
-                <span className='hidden sm:block self-center mx-1 py-1 px-3 bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 rounded-lg text-white'>
+                <span className="hidden sm:block self-center text-base font-semibold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
                   {title}
                 </span>
               </a>
@@ -196,9 +196,9 @@ export default function Navbar({
                   </SignedIn>
                   <SignedOut>
                     <SignInButton>
-                    <button className="inline-flex text-base font-medium px-3 py-2 rounded-md hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
-                      <UserIcon className="mr-1 h-5 w-5 text-white" /> Sign In
-                    </button>
+                      <button className="inline-flex text-base font-medium px-3 py-2 rounded-lg hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
+                        <UserIcon className="mr-1 h-5 w-5 text-white" /> Sign In
+                      </button>
                     </SignInButton>
                   </SignedOut>
                 </div>
@@ -210,20 +210,3 @@ export default function Navbar({
     </>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
