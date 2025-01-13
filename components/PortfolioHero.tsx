@@ -97,7 +97,7 @@ const Hero = () => {
           </p>
           <div className="flex flex-row justify-center items-center my-3 space-x-4 md:space-y-0 md:space-x-4">
             <a onClick={handleHireMeClick}>
-              <Button className="h-12 px-8 lg:px-8 py-3 tracking-wide cursor-pointer text-base rounded-md hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
+              <Button className="h-12 px-8 lg:px-8 py-3 tracking-wide cursor-pointer text-base rounded-lg hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
                 Hire Me
               </Button>
             </a>
