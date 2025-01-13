@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 interface LogoProps {
   src?: string;
@@ -9,14 +9,15 @@ interface LogoProps {
 export const Logo: React.FC<LogoProps> = ({ src, alt, title }) => (
   <a href="/" className="-m-1.5 p-1.5 flex justify-center items-center">
     <Image
-      src={src || '/Logo.png'}
+      src={src || "/Logo.png"}
       alt={alt}
       width={30}
       height={30}
-      style={{ width: 'auto', height: 'auto' }}
+      style={{ width: "auto", height: "auto" }}
       priority={true}
     />
-    <span className='self-center mx-1 py-1 px-3 bg-gradient-to-r from-indigo-800 via-blue-500 to-purple-800 rounded-lg text-white'>
+    {/* <span className='self-center mx-1 py-1 px-3 bg-gradient-to-r from-indigo-800 via-blue-500 to-purple-800 rounded-lg text-white'> */}
+    <span className="text-base font-semibold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
       {title}
     </span>
   </a>
