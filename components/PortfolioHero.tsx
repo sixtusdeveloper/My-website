@@ -52,7 +52,7 @@ const Hero = () => {
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 hover:text-indigo-600 border bg-gradient-to-r from-indigo-800 via-blue-500 to-purple-800 bg-clip-text text-transparent">
               Engineering excellence in every line of code.{" "}
               <a
-                href="https://github.com/sixtusdeveloper/My-website/"
+                href="https://github.com/sixtusdeveloper/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold text-purple cursor-pointer"
