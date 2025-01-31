@@ -751,7 +751,7 @@ export const projects = [
   des: "Convert currencies with ease using MoniWalet. Stay updated with the latest exchange rates and trends.",
   img: "/moniwalet.jpg",
   iconLists: [FaJsSquare, FaHtml5, FaCss3Alt],
-  link: "https://ratechange.netlify.app/",
+  link: "https://moniwalet.vercel.app/",
   category: "Frontend",
   githubLink: "https://github.com/sixtusdeveloper/Currency-converter-application/",
   },
