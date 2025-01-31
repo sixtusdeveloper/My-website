@@ -6,6 +6,7 @@ import { projects } from "@/data";
 import Image from "next/image";
 import Loader from "@/components/ui/Loader";
 import { FiArrowRight } from "react-icons/fi"; // Feather Icons
+// import { Icon } from "lucide-react";
 
 // Truncate the Project title to a maximum length
 const MAX_TITLE_LENGTH = 30;
@@ -109,7 +110,7 @@ const Projects = () => {
         </div>
 
         {/* Project Cards */}
-        <div className="grid gap-x-2 gap-y-8 lg:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-2 lg:py-8 mt-4">
+        <div className="grid gap-x-2 gap-y-8 lg:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-2 lg:py-8 mt-4">
           {currentProjects.map(
             ({ id, title, des, img, githubLink, iconLists, link }) => (
               <div
@@ -151,14 +152,11 @@ const Projects = () => {
                             zIndex: iconLists.length - index,
                           }}
                         >
-                          <Image
-                            src={icon}
-                            alt="icon"
-                            width={8}
-                            height={8}
-                            className="p-2"
-                            style={{ width: "auto", height: "auto" }}
-                          />
+                          {/* Directly render the Icon component with the required props */}
+                          {React.createElement(icon, {
+                            size: 18,
+                            className: "icon",
+                          })}
                         </div>
                       ))}
                     </div>
