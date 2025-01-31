@@ -76,9 +76,7 @@ export default function Navbar({
           className="flex items-center justify-between p-4 lg:px-8"
         >
           <div className="flex lg:flex-1">
-            <a href="/">
-              <Logo src={LogoImg} alt="Logo" title={title} />
-            </a>
+            <Logo src={LogoImg} alt="Logo" title={title} />
           </div>
           <div className="flex lg:hidden">
             <button

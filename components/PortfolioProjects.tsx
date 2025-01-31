@@ -25,6 +25,7 @@ const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("Frontend");
   const [currentPage, setCurrentPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false); // Add loading state
+  const [showModal, setShowModal] = useState(false);
 
   const projectsPerPage = 3;
 
@@ -42,13 +43,21 @@ const Projects = () => {
   const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
 
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
-  const handleLinkClick = (url: string) => {
+
+  interface HandleLinkClick {
+    (url: string): void;
+  }
+
+  const handleLinkClick: HandleLinkClick = (url) => {
+    if (!url) {
+      setShowModal(true);
+      return;
+    }
     setIsLoading(true);
-    // Set a timeout to simulate loading before redirecting
     setTimeout(() => {
       window.open(url, "_blank");
       setIsLoading(false);
-    }, 2000); // Adjust timeout as needed
+    }, 2000);
   };
 
   return (
@@ -190,6 +199,23 @@ const Projects = () => {
             )
           )}
         </div>
+        {showModal && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div className="bg-secondary p-8 border rounded-lg shadow-lg max-w-sm text-center">
+              <h2 className="text-lg font-bold">Site Under Deployment</h2>
+              <p className="text-sm mt-2">
+                This site is currently being deployed. Please check back later,
+                or explore the project codebase.
+              </p>
+              <button
+                onClick={() => setShowModal(false)}
+                className="mt-4 px-4 py-2 bg-indigo-600 text-white rounded-lg"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

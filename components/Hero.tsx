@@ -51,8 +51,8 @@ const Home = () => {
       id="portfolio"
       className="relative py-8 md:py-10 flex items-center justify-center bg-secondary"
     >
-      <div className="relative p-4 lg:py-8 mt-20 max-w-3xl lg:max-w-4xl text-center">
-        <h3 className="text-[1rem] py-6 font-bold tracking-wide sm:text-[1.2rem]">
+      <div className="relative p-4 lg:py-8 mt-16 max-w-3xl lg:max-w-4xl text-center">
+        <h3 className="text-[1rem] py-4 font-bold tracking-wide sm:text-[1.2rem]">
           {isSignedIn && user ? (
             <>
               👋 Hi{" "}

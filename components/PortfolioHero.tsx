@@ -45,10 +45,23 @@ const Hero = () => {
   };
 
   return (
-    <div className="bg-secondary pb-2 pt-36" id="hero">
+    <div className="bg-secondary pb-2 pt-20" id="hero">
       <div className="flex justify-center relative my-16 lg:px-10 px-8 lg:my-20 z-10">
         <div className="max-w-[90vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+          <h3 className="text-[1rem] font-bold tracking-wider sm:text-[1.2rem]">
+            {isSignedIn && user ? (
+              <>
+                👋 Hey{" "}
+                <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+                  {`${user.firstName || ""} ${user.lastName || ""}`.trim()}
+                </span>
+              </>
+            ) : (
+              "👋 Hi there!"
+            )}
+          </h3>
+
+          <div className="hidden sm:mt-6 sm:mb-2 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 hover:text-indigo-600 border bg-gradient-to-r from-indigo-800 via-blue-500 to-purple-800 bg-clip-text text-transparent">
               Engineering excellence in every line of code.{" "}
               <a
@@ -62,19 +75,6 @@ const Hero = () => {
               </a>
             </div>
           </div>
-
-          <h3 className="text-[1rem] font-bold tracking-wider sm:text-[1.2rem]">
-            {isSignedIn && user ? (
-              <>
-                👋 Hey{" "}
-                <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-                  {`${user.firstName || ""} ${user.lastName || ""}`.trim()}
-                </span>
-              </>
-            ) : (
-              "👋 Hi there!"
-            )}
-          </h3>
 
           <h1 className="text-[2rem] font-extrabold tracking-wide text-center lg:text-[3rem]">
             <strong>
