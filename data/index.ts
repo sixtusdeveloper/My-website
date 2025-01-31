@@ -502,7 +502,7 @@ export const projects = [
   },
   {
     id: 8,
-    title: "TaskMater - An Task Management Application",
+    title: "TaskMater - A Task Management Application",
     des: "Manage your team's tasks efficiently with TaskMaster. Assign, track, and complete tasks with ease.",
     img: "/taskmaster.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
