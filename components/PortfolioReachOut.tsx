@@ -12,7 +12,7 @@ const ReachOut = () => {
         <h1 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide">
           <strong>
             Ready to take your{" "}
-            <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-yellow-600 via-blue-500 to-purple-600 bg-clip-text text-transparent">
               Digital Presence
             </span>{" "}
             to the Next Level?

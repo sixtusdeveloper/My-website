@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
@@ -42,11 +42,16 @@ const Collaboration = ({
   return (
     <div className="relative mx-auto max-w-7xl bg-secondary px-6 lg:px-8 py-10 lg:py-16">
       <h1 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider">
-        <strong>Trusted <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">By Companies</span></strong>
+        <strong>
+          Trusted{" "}
+          <span className="bg-gradient-to-r font-sans from-yellow-600 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+            By Companies
+          </span>
+        </strong>
       </h1>
       <div className="bg-black-100 py-14 sm:py-12">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h3 className="text-center text-md font-semibold leading-2 tracking-wide">
+          <h3 className="text-center font-sans text-md font-semibold leading-2 tracking-wide">
             Trusted by the world&apos;s most innovative teams
           </h3>
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-8 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
@@ -57,7 +62,7 @@ const Collaboration = ({
                 src={CompanyImgOne || "/kropmann-logo.png"}
                 width={200}
                 height={200}
-                style={{ width: 'auto', height: 'auto' }}
+                style={{ width: "auto", height: "auto" }}
                 className="col-span-2 max-h-45 w-full object-contain lg:col-span-1 collaborator-logo"
               />
             </span>
@@ -67,7 +72,7 @@ const Collaboration = ({
                 src={CompanyImgTwo || "/upwork-logo.png"}
                 width={200}
                 height={200}
-                style={{ width: 'auto', height: 'auto' }}
+                style={{ width: "auto", height: "auto" }}
                 className="col-span-2 max-h-45 w-full object-contain lg:col-span-1 collaborator-logo"
               />
             </span>
@@ -77,7 +82,7 @@ const Collaboration = ({
                 src={CompanyImgThree || "/altschool-logo.png"}
                 width={200}
                 height={200}
-                style={{ width: 'auto', height: 'auto' }}
+                style={{ width: "auto", height: "auto" }}
                 className="col-span-2 max-h-45 w-full object-contain lg:col-span-1 collaborator-logo"
               />
             </span>
@@ -87,10 +92,12 @@ const Collaboration = ({
                 src={CompanyImgFour || "/freelancer-logo.png"}
                 width={200}
                 height={200}
-                style={{ width: 'auto', height: 'auto' }}
+                style={{ width: "auto", height: "auto" }}
                 className="col-span-2 max-h-45 w-full object-contain sm:col-start-2 lg:col-span-1 collaborator-logo"
               />
-              <span className="text-sm lg:text-xl font-bold ml-1">freelancer</span>
+              <span className="text-sm lg:text-xl font-bold ml-1">
+                freelancer
+              </span>
             </span>
             <span>
               <Image
@@ -98,7 +105,7 @@ const Collaboration = ({
                 src={CompanyImgFive || "/skilledup-life-logo.png"}
                 width={150}
                 height={100}
-                style={{ width: 'auto', height: 'auto' }}
+                style={{ width: "auto", height: "auto" }}
                 className="col-span-2 col-start-2 max-h-45 w-full object-contain sm:col-start-auto lg:col-span-1 collaborator-logo"
               />
             </span>
@@ -106,10 +113,13 @@ const Collaboration = ({
           <div className="hidden sm:mt-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-4 my-1 text-sm leading-6 hover:text-indigo-600 border bg-gradient-to-r from-indigo-800 via-blue-500 to-purple-800 bg-clip-text text-transparent">
               Over 35 companies use my solutions to better their business.{" "}
-              <a href="#" onClick={toggleModal} className="font-semibold text-purple cursor-pointer">
+              <a
+                href="#"
+                onClick={toggleModal}
+                className="font-semibold text-purple cursor-pointer"
+              >
                 <span aria-hidden="true" className="absolute inset-0" />
-                Read my customer stories{" "}
-                <span aria-hidden="true">&rarr;</span>
+                Read my customer stories <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>
@@ -117,9 +127,7 @@ const Collaboration = ({
       </div>
 
       {/* Modal with Loader */}
-      {isLoading && (
-        <Loader />
-      )}
+      {isLoading && <Loader />}
 
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-85">
@@ -137,7 +145,7 @@ const Collaboration = ({
               height={400}
               className="mx-auto text-center opacity-50 overflow-hidden"
               objectFit="cover"
-              style={{ width: 'auto', height: 'auto' }}
+              style={{ width: "auto", height: "auto" }}
             />
             <p className="text-center text-sm mt-4">
               Customer&apos;s stories not yet uploaded, check back later.
@@ -150,13 +158,3 @@ const Collaboration = ({
 };
 
 export default Collaboration;
-
-
-
-
-
-
-
-
-
-

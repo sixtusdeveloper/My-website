@@ -68,7 +68,7 @@ export default function Navbar({
     <>
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-colors duration-500 ${
-          scrolling ? "border-b bg-secondary" : "bg-transparent"
+          scrolling ? "border-b bg-secondary" : "bg-black/50 text-white"
         }`}
       >
         <nav
@@ -93,9 +93,9 @@ export default function Navbar({
               <a
                 key={item.name}
                 href={`#${item.href.substring(1)}`}
-                className={`text-base hover:text-purple-800 tracking-wide font-medium cursor-pointer ${
+                className={`text-base hover:text-purple-800 tracking-wide font-semibold font-sans cursor-pointer ${
                   activeSection === item.href.substring(1)
-                    ? "bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent"
+                    ? "bg-gradient-to-r from-yellow-500 via-blue-500 to-yellow-600 bg-clip-text text-transparent"
                     : "text-default"
                 } hover:text-primary`}
                 onClick={(e) => {
@@ -113,7 +113,7 @@ export default function Navbar({
             <SignedIn>
               <div className="flex items-center gap-4">
                 {user && (
-                  <span className="hidden lg:block text-sm font-semibold bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+                  <span className="hidden lg:block text-sm font-semibold bg-gradient-to-r from-yellow-600 via-blue-500 to-purple-500 bg-clip-text text-transparent">
                     {user.firstName}
                   </span>
                 )}
@@ -146,7 +146,7 @@ export default function Navbar({
                   width={30}
                   height={30}
                 />
-                <span className="hidden sm:block self-center text-base font-semibold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+                <span className="hidden font-sans sm:block self-center text-base font-semibold bg-gradient-to-r from-yellow-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
                   {title}
                 </span>
               </a>
@@ -170,7 +170,7 @@ export default function Navbar({
                     <a
                       key={item.name}
                       href={`#${item.href.substring(1)}`}
-                      className="-mx-3 block text-white rounded-lg px-3 py-2 text-base font-medium leading-7 hover:text-blue-600"
+                      className="-mx-3 block text-white font-sans rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-blue-600"
                       onClick={() => {
                         handleClick(item.href);
                         setMobileMenuOpen(false);
@@ -186,7 +186,7 @@ export default function Navbar({
                       <UserButton />
 
                       {user && (
-                        <span className="text-sm font-semibold bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+                        <span className="text-sm font-semibold bg-gradient-to-r from-yellow-500 via-blue-500 to-purple-500 bg-clip-text text-transparent">
                           {user.firstName}
                         </span>
                       )}

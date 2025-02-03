@@ -67,13 +67,13 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="bg-secondary relative md:pt-10 px-6 lg:px-10 pb-20"
+      className="bg-secondary relative pt-8 md:pt-10 px-6 lg:px-10 pb-20"
     >
       <div className="mx-auto max-w-6xl relative">
         <h1 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide">
           <strong>
             My&nbsp;
-            <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r font-sans from-yellow-600 via-blue-500 to-purple-600 bg-clip-text text-transparent">
               Services
             </span>
           </strong>
@@ -96,10 +96,10 @@ const Services = () => {
                   className="lg:w-32 md:w-20 w-16 services-img"
                 />
                 <div className="lg:ms-5">
-                  <h1 className="text-start text-xl md:text-2xl font-bold">
+                  <h1 className="text-start leading-tight font-sans text-lg md:text-xl font-bold">
                     {service.title}
                   </h1>
-                  <p className="text-base text-start leading-6 mt-1">
+                  <p className="text-base text-start leading-snug font-sans font-normal mt-1">
                     {truncateDescription(service.desc, MAX_DESCRIPTION_LENGTH)}
                     &nbsp;
                     <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:text-indigo-600 text-sm text-end font-medium">

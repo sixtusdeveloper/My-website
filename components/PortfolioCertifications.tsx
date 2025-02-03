@@ -116,7 +116,7 @@ const Certifications = () => {
         <h1 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide">
           <strong>
             My Currently{" "}
-            <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-yellow-600 via-blue-500 to-purple-600 bg-clip-text text-transparent">
               Verified Certifications
             </span>
           </strong>
@@ -137,24 +137,22 @@ const Certifications = () => {
                   width={200}
                   height={200}
                   className="lg:w-32 md:w-20 w-16 services-img"
-                  // style={{ width: 'auto', height: 'autp' }}
-                  // className="w-full py-2 certs-img relative overflow-hidden object-cover rounded-full mb-1"
                 />
 
                 <div className="lg:ms-5">
-                  <h2 className="text-start text-xl md:text-2xl font-bold">
+                  <h2 className="text-start leading-tight font-sans text-lg md:text-xl font-bold">
                     {certification.title}
                   </h2>
-                  <p className="text-base py-1 text-start leading-6 font-medium">
+                  <p className="text-sm font-semibold py-1 text-start leading-snug font-sans">
                     {certification.institution}&nbsp;-&nbsp;{certification.year}
                   </p>
-                  <p className="text-base text-start leading-6 font-normal">
+                  <p className="text-base text-start leading-snug font-sans font-normal">
                     {truncateDescription(
                       certification.desc ?? "",
                       MAX_DESCRIPTION_LENGTH
                     )}
                     &nbsp;
-                    <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent text-sm text-end font-medium">
+                    <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent font-size text-sm text-end font-medium">
                       View Credentials
                     </span>
                   </p>

@@ -5,10 +5,10 @@ const Projects = () => {
   return (
     <section id="projects" className="py-10 px-4 lg:px-10 bg-secondary">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-8">
+        <h2 className="font-extrabold font-sans text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-8">
           <strong>
             Some of my{" "}
-            <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-yellow-600 via-blue-500 to-purple-600 bg-clip-text text-transparent">
               Personal Projects
             </span>
           </strong>

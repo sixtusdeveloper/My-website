@@ -61,12 +61,12 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 lg:px-8 bg-secondary">
-      <div className="max-w-5xl mx-auto text-center">
+    <section id="contact" className="py-20 px-4 lg:px-14 bg-secondary">
+      <div className="max-w-6xl mx-auto text-center">
         <h2 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-8">
           <strong>
             Let’s{" "}
-            <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-yellow-600 bg-clip-text text-transparent">
               Connect
             </span>
           </strong>
@@ -76,7 +76,7 @@ const Contact = () => {
           to say hi!
         </p>
         <div className="flex flex-col md:flex-row justify-between items-start md:gap-6 lg:gap-8 gap-2">
-          <div className="p-4 md:py-8 text-start relative md:w-1/2">
+          <div className="border rounded-lg p-6 md:py-8 text-start relative md:w-1/2">
             <Image
               src="/profile.jpg"
               alt="profile image"
@@ -92,7 +92,7 @@ const Contact = () => {
                 <h4 className="py-2 text-lg font-bold">
                   <strong>Contact Me</strong>
                 </h4>
-                <div className="inline-flex py-1 items-center">
+                <div className="inline-flex py-2 items-center border rounded-lg p-2 w-full my-1">
                   <Image
                     src="/location.webp"
                     alt="Location"
@@ -100,12 +100,12 @@ const Contact = () => {
                     height={20}
                     className="mr-2"
                   />
-                  <p className="text-base py-1 mb-0">
-                    Awolowo Road, Ikoyi, Lagos
+                  <p className="text-sm py-1 mb-0">
+                    Plot 39, Awolowo Road, Ikoyi, Lagos
                   </p>
                 </div>
                 <br />
-                <div className="inline-flex py-1 items-center">
+                <div className="inline-flex py-2 items-center border rounded-lg p-2 w-full my-1">
                   <Image
                     src="/phone.png"
                     alt="Phone"
@@ -113,12 +113,12 @@ const Contact = () => {
                     height={20}
                     className="mr-2"
                   />
-                  <p className="text-base py-1 mb-0">
+                  <p className="text-sm py-1 mb-0">
                     +234&nbsp;902&nbsp;2048&nbsp;105
                   </p>
                 </div>
                 <br />
-                <div className="inline-flex items-center">
+                <div className="inline-flex items-center border rounded-lg p-2 w-full my-1">
                   <Image
                     src="/Gmail.png"
                     alt="Mail"
@@ -126,14 +126,14 @@ const Contact = () => {
                     height={20}
                     className="mr-2"
                   />
-                  <p className="text-base tracking-wide py-1 mb-0">
+                  <p className="text-sm tracking-wide py-1 mb-0">
                     contact@sixtusdev.net
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="p-4 justify-start items-start space-y-4 w-full">
+          <div className="border p-4 sm:p-8 lg:p-14 lg:py-8 rounded-lg justify-start items-start space-y-4 w-full">
             {/* Contact form component imported here */}
             <ContactForm />
           </div>

@@ -84,12 +84,12 @@ const Blog = () => {
   };
 
   return (
-    <section id="blog" className="py-20 px-4 lg:px-4 bg-secondary">
-      <div className="lg:max-w-6xl max-w-6xl mx-auto">
-        <h2 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-8">
+    <section id="blog" className="py-20 px-4 lg:px-8 bg-secondary">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="font-extrabold font-sans text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-8">
           <strong>
             Few Selection of{" "}
-            <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-yellow-600 bg-clip-text text-transparent">
               My Blog
             </span>
           </strong>
@@ -120,13 +120,13 @@ const Blog = () => {
                 <div className="flex mt-4 gap-4 justify-between items-center">
                   <button
                     onClick={() => openModal(post)}
-                    className="py-2 px-3 text-center bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-lg text-white text-sm tracking-wide block"
+                    className="py-2 px-3 text-center font-sans bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-lg text-white text-sm tracking-wide block"
                   >
                     Read More
                   </button>
                   <button
                     onClick={handleBlogClick} // Trigger the blog modal
-                    className="py-2 px-3 bg-gradient-to-r from-indigo-600 via-green-500 to-pink-800 rounded-lg text-white flex items-center cursor-pointer text-sm tracking-wide"
+                    className="py-2 px-3 bg-gradient-to-r from-indigo-600 via-green-500 to-yellow-600 rounded-lg text-white font-sans flex items-center cursor-pointer text-sm tracking-wide"
                   >
                     Visit my Blog <FaLocationArrow className="ml-1" />
                   </button>

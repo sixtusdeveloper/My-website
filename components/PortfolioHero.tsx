@@ -45,72 +45,79 @@ const Hero = () => {
   };
 
   return (
-    <div className="bg-secondary pb-2 pt-20" id="hero">
-      <div className="flex justify-center relative my-16 lg:px-10 px-8 lg:my-20 z-10">
-        <div className="max-w-[90vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h3 className="text-[1rem] font-bold tracking-wider sm:text-[1.2rem]">
-            {isSignedIn && user ? (
-              <>
-                👋 Hey{" "}
-                <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-                  {`${user.firstName || ""} ${user.lastName || ""}`.trim()}
-                </span>
-              </>
-            ) : (
-              "👋 Hi there!"
-            )}
-          </h3>
+    <section
+      id="hero"
+      className="relative py-8 lg:px-10 px-0 md:px-4 md:py-10 text-white flex items-center flex-wrap justify-start md:justify-center w-full min-h-screen lg:min-h-[500px] bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: "url('/blog06.avif')",
+      }}
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
-          <div className="hidden sm:mt-6 sm:mb-2 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 hover:text-indigo-600 border bg-gradient-to-r from-indigo-800 via-blue-500 to-purple-800 bg-clip-text text-transparent">
-              Engineering excellence in every line of code.{" "}
-              <a
-                href="https://github.com/sixtusdeveloper/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-semibold text-purple cursor-pointer"
-              >
-                <span aria-hidden="true" className="absolute inset-0" />
-                Check my codebase&nbsp;<span aria-hidden="true">&rarr;</span>
-              </a>
-            </div>
-          </div>
-
-          <h1 className="text-[2rem] font-extrabold tracking-wide text-center lg:text-[3rem]">
-            <strong>
-              Explore{" "}
+      <div className="relative p-4 lg:py-8 mt-16 max-w-3xl lg:max-w-4xl">
+        <h3 className="text-[1rem] font-bold tracking-wider sm:text-[1.2rem] md:mt-8">
+          {isSignedIn && user ? (
+            <>
+              👋 Hey{" "}
               <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-                Innovation and Creativity
-              </span>{" "}
-              in My Portfolio
-            </strong>
-          </h1>
+                {`${user.firstName || ""} ${user.lastName || ""}`.trim()}
+              </span>
+            </>
+          ) : (
+            "👋 Hi there!"
+          )}
+        </h3>
 
-          <p className="py-4 text-center leading-6 text-[16px]">
-            Hello, I'm Sixtus Aondoakaa, a dedicated software engineer with a
-            passion for crafting efficient and scalable solutions. Here, you'll
-            find a showcase of my work, ranging from innovative web applications
-            to complex backend systems. Whether you're a potential employer,
-            collaborator, or just curious about my work, I invite you to explore
-            my projects and see how I turn ideas into reality. Let's create
-            something amazing together!
-          </p>
-          <div className="flex flex-row justify-center items-center my-3 space-x-4 md:space-y-0 md:space-x-4">
-            <a onClick={handleHireMeClick}>
-              <Button className="h-12 px-8 lg:px-8 py-3 tracking-wide cursor-pointer text-base rounded-lg hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
-                Hire Me
-              </Button>
-            </a>
-            <a onClick={handleReadMoreClick}>
-              <MagicButton
-                title="Read More"
-                icon={<GoArrowRight className="text-lg" />}
-                otherClasses="text-[1.4rem] flex justify-center items-center text-center"
-              />
+        <div className="hidden sm:mt-6 sm:mb-2 sm:flex sm:justify-start">
+          <div className="relative rounded-full px-3 py-1 text-sm leading-tight font-semibold hover:text-indigo-600 border border-gray-700 bg-gradient-to-r from-yellow-600 via-blue-600 to-pink-600 bg-clip-text text-transparent">
+            Engineering excellence in every line of code.{" "}
+            <a
+              href="https://github.com/sixtusdeveloper/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold font-sans text-purple cursor-pointer"
+            >
+              <span aria-hidden="true" className="absolute inset-0" />
+              Check my codebase&nbsp;<span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </div>
+
+        <h1 className="text-[2rem] leading-tight lg:text-[3rem] font-extrabold font-sans">
+          <strong>
+            Explore{" "}
+            <span className="bg-gradient-to-r from-purple-600 via-blue-500 to-yellow-600 bg-clip-text text-transparent">
+              Innovation and Creativity
+            </span>{" "}
+            in My Portfolio
+          </strong>
+        </h1>
+
+        <p className="py-4 leading-6 font-sans text-base">
+          Hello, I'm Sixtus Aondoakaa, a dedicated software engineer with a
+          passion for crafting efficient and scalable solutions. Here, you'll
+          find a showcase of my work, ranging from innovative web applications
+          to complex backend systems. Whether you're a potential employer,
+          collaborator, or just curious about my work, I invite you to explore
+          my projects and see how I turn ideas into reality. Let's create
+          something amazing together!
+        </p>
+        <div className="flex flex-row justify-start items-center my-3 space-x-4 md:space-y-0 md:space-x-4">
+          <a onClick={handleHireMeClick}>
+            <Button className="h-12 px-8 lg:px-8 py-3 tracking-wide cursor-pointer text-base rounded-lg hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
+              Hire Me
+            </Button>
+          </a>
+          <a onClick={handleReadMoreClick}>
+            <MagicButton
+              title="Read More"
+              icon={<GoArrowRight className="text-lg" />}
+              otherClasses="text-[1.4rem] flex justify-center items-center text-center"
+            />
+          </a>
+        </div>
       </div>
+      {/* </div> */}
 
       {/* Loading Overlay */}
       {isLoading && <Loader />}
@@ -163,7 +170,7 @@ const Hero = () => {
           <p className="text-base font-medium text-center">Software Engineer</p>
         </div>
       </ReadMoreModal>
-    </div>
+    </section>
   );
 };
 

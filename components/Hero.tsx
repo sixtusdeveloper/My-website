@@ -49,10 +49,14 @@ const Home = () => {
   return (
     <section
       id="portfolio"
-      className="relative py-8 md:py-10 flex items-center justify-center bg-secondary"
+      className="relative py-8 lg:px-10 px-0 md:px-4 md:py-10 text-white flex items-center flex-wrap justify-start md:justify-center w-full min-h-screen lg:min-h-[500px] bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: "url('/blog03.avif')",
+      }}
     >
-      <div className="relative p-4 lg:py-8 mt-16 max-w-3xl lg:max-w-4xl text-center">
-        <h3 className="text-[1rem] py-4 font-bold tracking-wide sm:text-[1.2rem]">
+      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div className="relative p-4 lg:py-8 mt-16 max-w-3xl lg:max-w-4xl">
+        <h3 className="text-[1rem] py-4 font-bold font-sans tracking-wide sm:text-[1.2rem]">
           {isSignedIn && user ? (
             <>
               👋 Hi{" "}
@@ -64,29 +68,30 @@ const Home = () => {
             "👋 Hi there!"
           )}
         </h3>
-        <h1 className="text-[2rem] lg:text-[3rem] font-extrabold">
+        <h1 className="text-[2rem] leading-tight lg:text-[3rem] font-extrabold font-sans">
           <strong>
             I&apos;m{" "}
-            <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-yellow-500 bg-clip-text text-transparent">
               Sixtus
             </span>
             , a Passionate{" "}
-            <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-yellow-600 via-blue-500 to-yellow-600 bg-clip-text text-transparent">
               Software Engineer
             </span>{" "}
             Crafting Innovative Solutions
           </strong>
         </h1>
-        <p className="p-2 lg:px-8 lg:pt-8 leading-6 text-[1rem]">
-          Here is my space, where technology, creativity, and innovation
-          converge. I craft elegant solutions through clean code, innovative
-          design, and engaging tech content. Whether building applications or
-          sharing insights, this is where ideas come to life.
+        <p className="lg:pt-4 pt-2 font-sans leading-6 text-base">
+          As a software engineer, I specialize in creating tailored software
+          solutions to meet your specific business needs. This includes
+          developing applications, managing databases, and ensuring seamless
+          integration across various platforms. My goal is to deliver efficient
+          and scalable solutions that enhance your operations and drive success.
         </p>
 
-        <div className="flex flex-row justify-center items-center my-3 space-x-4 md:space-y-0 md:space-x-4">
+        <div className="my-6 space-x-4 md:space-y-0 md:space-x-4">
           <a onClick={openHeroModal}>
-            <Button className="h-12 px-4 py-3 cursor-pointer text-base rounded-lg hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
+            <Button className="h-12 px-4 py-3 cursor-pointer text-base rounded-lg hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white font-sans">
               Visit My Portfolio
             </Button>
           </a>
@@ -94,7 +99,7 @@ const Home = () => {
           <a onClick={openBlogModal}>
             <MagicButton
               title={isBlogLoading ? "Loading..." : "Visit My Blog"}
-              otherClasses="text-[1.4rem] flex justify-center rounded-full items-center text-base text-center"
+              otherClasses="text-[1.4rem] flex justify-center rounded-full items-center text-base font-sans text-center"
             />
           </a>
         </div>

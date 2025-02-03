@@ -73,7 +73,7 @@ const Projects = () => {
         <h1 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide">
           <strong>
             My&nbsp;
-            <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-yellow-600 via-blue-500 to-purple-600 bg-clip-text text-transparent">
               Recent Projects
             </span>
           </strong>
@@ -86,7 +86,7 @@ const Projects = () => {
               setSelectedCategory("Frontend");
               setCurrentPage(1);
             }}
-            className={`px-4 py-2 mx-2 text-sm md:text-base rounded-lg tracking-wide cursor-pointer transition-all duration-300 ${
+            className={`px-4 py-2 mx-2 text-sm font-semibold font-sans rounded-lg tracking-wide cursor-pointer transition-all duration-300 ${
               selectedCategory === "Frontend"
                 ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
                 : "bg-transparent border"
@@ -99,7 +99,7 @@ const Projects = () => {
               setSelectedCategory("Fullstack");
               setCurrentPage(1);
             }}
-            className={`px-4 py-2 text-sm md:text-base mx-2 rounded-lg tracking-wide transition-all duration-300 ${
+            className={`px-4 py-2 text-sm md:text-sm font-semibold font-sans mx-2 rounded-lg tracking-wide transition-all duration-300 ${
               selectedCategory === "Fullstack"
                 ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
                 : "bg-transparent border"
@@ -126,20 +126,29 @@ const Projects = () => {
                   className="w-full h-48 object-cover transition-opacity duration-300 group-hover:opacity-75"
                 />
                 <div className="p-4">
-                  <h1 className="font-bold text-xl truncate">
+                  <h1 className="font-bold text-lg truncate font-sans">
                     {truncateTitle(title, MAX_TITLE_LENGTH)}
                   </h1>
-                  <p className="mt-2 mb-1 text-sm line-clamp-2">
+                  <p className="mt-2 mb-1 text-sm font-sans line-clamp-2">
                     {truncateDescription(des, MAX_DESCRIPTION_LENGTH)}
                   </p>
 
-                  <a
-                    href={githubLink}
-                    target="_blank"
-                    className="inline-flex items-center atfont-semibold py-2 px-3 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-lg text-white text-sm tracking-wide cursor-pointer"
-                  >
-                    Project codebase <FiArrowRight className="ml-2" />
-                  </a>
+                  <div className="flex justify-between mt-2 items-center">
+                    <a
+                      href={githubLink}
+                      target="_blank"
+                      className="inline-flex items-center font-semibold py-2 px-3 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-lg text-white text-sm font-sans tracking-wide cursor-pointer"
+                    >
+                      Project codebase <FiArrowRight className="ml-2" />
+                    </a>
+
+                    <button
+                      className="outline-none text-sm font-sans font-semibold text-indigo-600 hover:text-indigo-800"
+                      type="button"
+                    >
+                      Read more &#8594;
+                    </button>
+                  </div>
 
                   <div className="flex items-center justify-between mt-4">
                     <div className="relative flex">
@@ -167,7 +176,7 @@ const Projects = () => {
                     >
                       <button
                         type="button"
-                        className="py-2 px-3 bg-gradient-to-r from-indigo-600 via-green-500 to-pink-800 rounded-lg text-white flex items-center cursor-pointer text-sm tracking-wide"
+                        className="py-2 px-3 bg-gradient-to-r from-indigo-600 via-green-600 to-yellow-600 rounded-lg text-white flex items-center cursor-pointer text-sm tracking-wide"
                       >
                         Live Site <FaLocationArrow className="ml-2" />
                       </button>

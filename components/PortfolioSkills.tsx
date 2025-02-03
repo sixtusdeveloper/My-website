@@ -77,7 +77,7 @@ const PortfolioSkills = () => {
         <h2 className="py-10 font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide">
           <strong>
             My Current{" "}
-            <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-yellow-600 via-blue-500 to-purple-600 bg-clip-text text-transparent">
               Skills & Tools
             </span>
           </strong>

@@ -117,7 +117,7 @@ const Experience = () => {
           <h2 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-8">
             <strong>
               My{" "}
-              <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-yellow-600 bg-clip-text text-transparent">
                 Experience
               </span>
             </strong>
