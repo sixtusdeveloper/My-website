@@ -47,12 +47,12 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative py-4 lg:px-10 px-0 md:px-4 md:py-10 flex items-center flex-wrap justify-start md:justify-center w-full min-h-screen lg:min-h-[500px] bg-cover bg-center bg-no-repeat"
+      className="relative py-2 lg:px-10 px-0 md:px-4 md:py-10 flex items-center flex-wrap justify-start md:justify-center w-full min-h-screen lg:min-h-[500px] bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: "url('/blog06.avif')",
       }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
       <div className="text-white relative p-4 lg:py-8 mt-16 max-w-3xl lg:max-w-4xl">
         <h3 className="text-[1rem] font-bold tracking-wider sm:text-[1.2rem] md:mt-8">
