@@ -68,7 +68,7 @@ export default function Navbar({
     <>
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-colors duration-500 ${
-          scrolling ? "border-b bg-secondary" : "bg-black/50 text-white"
+          scrolling ? "bg-secondary" : "bg-black/50 text-white"
         }`}
       >
         <nav
