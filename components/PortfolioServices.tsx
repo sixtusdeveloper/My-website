@@ -99,10 +99,10 @@ const Services = () => {
                   <h1 className="text-start leading-tight font-sans text-lg md:text-xl font-bold">
                     {service.title}
                   </h1>
-                  <p className="text-base text-start leading-snug font-sans font-normal mt-1">
+                  <p className="text-sm text-start leading-snug font-sans font-medium mt-1">
                     {truncateDescription(service.desc, MAX_DESCRIPTION_LENGTH)}
                     &nbsp;
-                    <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:text-indigo-600 text-sm text-end font-medium">
+                    <span className="font-sans bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:text-indigo-600 text-sm text-end font-medium">
                       Read more
                     </span>
                   </p>
