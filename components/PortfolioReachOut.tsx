@@ -25,10 +25,10 @@ const ReachOut = () => {
 
         <div className="flex justify-center items-center space-x-4 lg:space-x-8 mt-8">
           <a href="mailto:contact@sixtusdev.net?subject=Let's%20connect!">
-            <button className="relative p-[2px] rounded-md bg-gradient-to-r from-purple-800 via-blue-500 to-green-600">
-              <div className="flex items-center space-x-2 bg-transparent rounded-lg px-4 py-2">
+            <button className="relative p-[2px] rounded-md border">
+              <div className="flex items-center space-x-2 bg-transparent px-4 py-2">
                 <Image src="/Gmail.png" alt="Mail" width={20} height={20} />
-                <span className="text-base text-white font-bold">Email me</span>
+                <span className="text-base font-sans font-bold">Email me</span>
               </div>
             </button>
           </a>
@@ -37,15 +37,15 @@ const ReachOut = () => {
           <div className="h-8 w-[2px] bg-gradient-to-b from-blue-500 via-green-500 to-purple-800"></div>
 
           <a href="https://wa.me/+2349022048105" target="_blank">
-            <button className="relative p-[2px] rounded-lg bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-800">
-              <div className="flex items-center space-x-2 bg-transparent rounded-md px-2 py-2">
+            <button className="relative p-[2px] rounded-md border">
+              <div className="flex items-center space-x-2 bg-transparent px-2 py-2">
                 <Image
                   src="/whatsapp-icon.png"
                   alt="WhatsApp"
                   width={20}
                   height={20}
                 />
-                <span className="text-base text-white font-bold">Chat me</span>
+                <span className="text-base font-bold">Chat me</span>
               </div>
             </button>
           </a>

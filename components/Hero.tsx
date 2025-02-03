@@ -54,9 +54,9 @@ const Home = () => {
         backgroundImage: "url('/blog03.avif')",
       }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
       <div className="relative text-white p-4 lg:py-8 mt-16 max-w-3xl lg:max-w-4xl">
-        <h3 className="text-[1rem] py-4 text-white tracking-wide sm:text-[1.2rem]">
+        <h3 className="text-[1rem] py-2 text-white tracking-wide sm:text-[1.2rem]">
           {isSignedIn && user ? (
             <>
               👋 Hi{" "}
@@ -71,7 +71,7 @@ const Home = () => {
         <h1 className="text-[2rem] leading-tight lg:text-[3rem] font-extrabold font-sans">
           <strong>
             I&apos;m{" "}
-            <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-yellow-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-white via-blue-500 to-white bg-clip-text text-transparent">
               Sixtus
             </span>
             , a Passionate{" "}
