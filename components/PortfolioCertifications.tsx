@@ -130,7 +130,7 @@ const Certifications = () => {
               className="flex-1 border bg-secondary"
               onClick={() => openModal(certification)}
             >
-              <div className="flex lg:flex-row flex-col lg:items-center px-2 py-4 md:p-4 lg:p-4 gap-2">
+              <div className="flex lg:flex-row flex-col lg:items-center px-2 py-8 md:p-8 lg:p-8 gap-2">
                 <Image
                   src={certification.imageUrl}
                   alt={certification.title}
@@ -143,16 +143,16 @@ const Certifications = () => {
                   <h2 className="text-start leading-tight font-sans text-lg md:text-xl font-bold">
                     {certification.title}
                   </h2>
-                  <p className="text-sm font-semibold py-1 text-start leading-snug font-sans">
+                  <p className="text-sm font-medium py-1 text-start leading-snug font-sans">
                     {certification.institution}&nbsp;-&nbsp;{certification.year}
                   </p>
-                  <p className="text-base text-start leading-snug font-sans font-normal">
+                  <p className="text-sm text-start leading-snug py-1 font-sans font-medium">
                     {truncateDescription(
                       certification.desc ?? "",
                       MAX_DESCRIPTION_LENGTH
                     )}
                     &nbsp;
-                    <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent font-size text-sm text-end font-medium">
+                    <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent font-sans text-sm text-end font-medium">
                       View Credentials
                     </span>
                   </p>
@@ -166,22 +166,25 @@ const Certifications = () => {
           <button
             onClick={() => handlePageChange("previous")}
             disabled={currentPage === 1}
-            className={`px-4 py-2 rounded ${
+            className={`px-4 py-1 mx-1 rounded cursor-pointer transition-all duration-300 ${
               currentPage === 1
-                ? "bg-transparent border"
-                : "bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-lg text-white text-sm tracking-wide block"
+                ? "bg-transparent border cursor-not-allowed"
+                : "bg-indigo-600 hover:bg-indigo-700 text-white"
             } focus:outline-none`}
           >
             Previous
           </button>
+          <span className="px-4 py-1 mx-1">
+            Page {currentPage} of {totalPages}
+          </span>
           <button
             onClick={() => handlePageChange("next")}
             disabled={currentPage === totalPages}
-            className={`px-4 py-2 rounded ${
+            className={`px-4 py-1 mx-1 rounded cursor-pointer transition-all duration-300 ${
               currentPage === totalPages
-                ? "bg-transparent border"
-                : "bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-lg text-white text-sm tracking-wide block"
-            } focus:outline-none`}
+                ? "bg-transparent border cursor-not-allowed"
+                : "bg-indigo-600 hover:bg-indigo-700 text-white"
+            } `}
           >
             Next
           </button>
