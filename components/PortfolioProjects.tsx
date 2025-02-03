@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import Image from "next/image";
 import Loader from "@/components/ui/Loader";
-import { FiArrowRight } from "react-icons/fi"; // Feather Icons
-// import { Icon } from "lucide-react";
+import { FiArrowRight } from "react-icons/fi";
+import { IoClose } from "react-icons/io5";
 
 // Truncate the Project title to a maximum length
 const MAX_TITLE_LENGTH = 30;
@@ -25,11 +25,22 @@ const truncateDescription = (text: string, maxLength: number): string => {
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("Frontend");
   const [currentPage, setCurrentPage] = useState(1);
-  const [isLoading, setIsLoading] = useState(false); // Add loading state
-  const [showModal, setShowModal] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [showLiveModal, setShowLiveModal] = useState(false);
+  const [showReadMoreModal, setShowReadMoreModal] = useState(false);
+  interface Project {
+    id: number;
+    title: string;
+    des: string;
+    img: string;
+    githubLink: string;
+    iconLists: React.ElementType[];
+    link: string;
+  }
+
+  const [currentProject, setCurrentProject] = useState<Project | null>(null);
 
   const projectsPerPage = 3;
-
   const filteredProjects = projects.filter(
     (project) => project.category === selectedCategory
   );
@@ -43,15 +54,17 @@ const Projects = () => {
 
   const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
 
-  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
+  const handlePagination = (direction: "next" | "prev") => {
+    if (direction === "next" && currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    } else if (direction === "prev" && currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
 
-  interface HandleLinkClick {
-    (url: string): void;
-  }
-
-  const handleLinkClick: HandleLinkClick = (url) => {
+  const handleLinkClick = (url: string) => {
     if (!url) {
-      setShowModal(true);
+      setShowLiveModal(true);
       return;
     }
     setIsLoading(true);
@@ -60,6 +73,29 @@ const Projects = () => {
       setIsLoading(false);
     }, 2000);
   };
+
+  const openReadMoreModal = (project: any) => {
+    setCurrentProject(project);
+    setShowReadMoreModal(true);
+  };
+
+  const closeModal = () => {
+    setShowLiveModal(false);
+    setShowReadMoreModal(false);
+    setCurrentProject(null);
+  };
+
+  // Disable page scroll when modal is open
+  useEffect(() => {
+    if (showLiveModal || showReadMoreModal) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [showLiveModal, showReadMoreModal]);
 
   return (
     <div
@@ -143,8 +179,17 @@ const Projects = () => {
                     </a>
 
                     <button
+                      onClick={() =>
+                        openReadMoreModal({
+                          title,
+                          des,
+                          img,
+                          githubLink,
+                          iconLists,
+                          link,
+                        })
+                      }
                       className="outline-none text-sm font-sans font-semibold text-indigo-600 hover:text-indigo-800"
-                      type="button"
                     >
                       Read more &#8594;
                     </button>
@@ -161,7 +206,6 @@ const Projects = () => {
                             zIndex: iconLists.length - index,
                           }}
                         >
-                          {/* Directly render the Icon component with the required props */}
                           {React.createElement(icon, {
                             size: 18,
                             className: "icon",
@@ -190,23 +234,35 @@ const Projects = () => {
 
         {/* Pagination */}
         <div className="flex justify-center mt-4">
-          {Array.from({ length: totalPages }, (_, index) => index + 1).map(
-            (pageNumber) => (
-              <button
-                key={pageNumber}
-                onClick={() => paginate(pageNumber)}
-                className={`px-4 py-1 mx-1 rounded cursor-pointer transition-all duration-300 ${
-                  currentPage === pageNumber
-                    ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
-                    : "bg-transparent border"
-                }`}
-              >
-                {pageNumber}
-              </button>
-            )
-          )}
+          <button
+            onClick={() => handlePagination("prev")}
+            disabled={currentPage === 1}
+            className={`px-4 py-1 mx-1 rounded cursor-pointer transition-all duration-300 ${
+              currentPage === 1
+                ? "bg-transparent border cursor-not-allowed"
+                : "bg-indigo-600 hover:bg-indigo-700 text-white"
+            }`}
+          >
+            Previous
+          </button>
+          <span className="px-4 py-1 mx-1">
+            Page {currentPage} of {totalPages}
+          </span>
+          <button
+            onClick={() => handlePagination("next")}
+            disabled={currentPage === totalPages}
+            className={`px-4 py-1 mx-1 rounded cursor-pointer transition-all duration-300 ${
+              currentPage === totalPages
+                ? "bg-transparent border cursor-not-allowed"
+                : "bg-indigo-600 hover:bg-indigo-700 text-white"
+            }`}
+          >
+            Next
+          </button>
         </div>
-        {showModal && (
+
+        {/* Live Site Modal */}
+        {showLiveModal && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
             <div className="bg-secondary p-8 border rounded-lg shadow-lg max-w-sm text-center">
               <h2 className="text-lg font-bold">Site Under Deployment</h2>
@@ -215,11 +271,59 @@ const Projects = () => {
                 or explore the project codebase.
               </p>
               <button
-                onClick={() => setShowModal(false)}
+                onClick={closeModal}
                 className="mt-4 px-4 py-2 bg-indigo-600 text-white rounded-lg"
               >
                 Close
               </button>
+            </div>
+          </div>
+        )}
+
+        {/* Read More Modal */}
+        {showReadMoreModal && currentProject && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+            onClick={closeModal}
+          >
+            <div
+              className="relative bg-secondary p-4 border rounded-lg shadow-lg max-w-md w-[90%] md:w-[600px] h-[80vh] overflow-y-auto no-scrollbar"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={closeModal}
+                className="absolute top-4 right-4 z-50 p-1 bg-secondary border rounded-full hover:text-red-500 text-2xl"
+                style={{ position: "absolute" }}
+              >
+                <IoClose size={18} />
+              </button>
+              <Image
+                src={currentProject.img}
+                alt={currentProject.title}
+                className="w-full h-64 object-cover rounded-lg"
+                width={600}
+                height={300}
+                style={{ objectFit: "cover" }}
+              />
+              <h2 className="text-xl font-sans font-bold my-4">
+                {currentProject.title}
+              </h2>
+              <p className="text-sm leading-snug font-sans">
+                {currentProject.des}
+              </p>
+              <div className="my-6">
+                <p className="font-semibold mb-2 font-sans">Technologies:</p>
+                <div className="flex flex-wrap gap-2">
+                  {currentProject.iconLists.map((IconComponent, index) => (
+                    <div
+                      key={index}
+                      className="border rounded-full bg-secondary w-10 h-10 flex justify-center items-center"
+                    >
+                      <IconComponent className="icon" size={20} />
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         )}
