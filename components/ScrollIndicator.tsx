@@ -7,7 +7,6 @@ const ScrollIndicator = () => {
   const [scrollDirection, setScrollDirection] = useState<"down" | "up">("down");
   const [atTop, setAtTop] = useState(true);
   const [atBottom, setAtBottom] = useState(false);
-  const sectionHeight = 600; // Adjust based on your sections' average height
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,31 +34,35 @@ const ScrollIndicator = () => {
     };
   }, []);
 
-  const scrollStep = (direction: "down" | "up") => {
-    const currentScroll = window.scrollY || document.documentElement.scrollTop;
-    const targetScroll =
-      direction === "down"
-        ? currentScroll + sectionHeight
-        : currentScroll - sectionHeight;
+  const smoothScroll = (target: number, duration: number) => {
+    const start = window.scrollY || document.documentElement.scrollTop;
+    const distance = target - start;
+    const startTime = performance.now();
 
-    window.scrollTo({ top: targetScroll, behavior: "smooth" });
+    const scroll = (currentTime: number) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
 
-    // Continue scrolling until reaching the top or bottom
-    setTimeout(() => {
-      const newScroll = window.scrollY || document.documentElement.scrollTop;
-      if (
-        direction === "down" &&
-        newScroll < document.documentElement.scrollHeight - window.innerHeight
-      ) {
-        scrollStep(direction);
-      } else if (direction === "up" && newScroll > 0) {
-        scrollStep(direction);
+      window.scrollTo(0, start + distance * progress);
+
+      if (elapsed < duration) {
+        requestAnimationFrame(scroll);
       }
-    }, 500); // Adjust delay for smoother experience
+    };
+
+    requestAnimationFrame(scroll);
+  };
+
+  const scrollToPosition = (direction: "down" | "up") => {
+    if (direction === "down") {
+      smoothScroll(document.documentElement.scrollHeight, 1200); // 1500ms for smooth scroll to bottom
+    } else if (direction === "up") {
+      smoothScroll(0, 1200); // 1500ms for smooth scroll to top
+    }
   };
 
   const handleClick = () => {
-    scrollStep(scrollDirection);
+    scrollToPosition(scrollDirection);
   };
 
   return (
