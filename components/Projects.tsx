@@ -26,7 +26,7 @@ const Projects = () => {
             </div>
             <div>
               <h3 className="text-xl font-bold">Open Source Contribution</h3>
-              <p className="py-2 leading-6 mb-0 text-base">
+              <p className="py-2 leading-6 mb-0 text-sm font-medium">
                 Actively contributed to the{" "}
                 <span className="font-semibold">OptiFrame project</span>, an
                 open-source initiative, by improving the codebase, refining the
@@ -49,7 +49,7 @@ const Projects = () => {
             </div>
             <div>
               <h3 className="text-xl font-bold">Full-Stack Web Application</h3>
-              <p className="py-2 leading-6 mb-0 text-base">
+              <p className="py-2 leading-6 mb-0 text-sm font-medium">
                 Developed a full-stack web application called{" "}
                 <span className="font-semibold">TaskMaster</span>, designed to
                 streamline task management for teams. The app features real-time
@@ -71,7 +71,7 @@ const Projects = () => {
             </div>
             <div>
               <h3 className="text-xl font-bold">Personal Blog Platform</h3>
-              <p className="py-2 leading-6 mb-0 text-base">
+              <p className="py-2 leading-6 mb-0 text-sm font-medium">
                 Built a personal blog platform named{" "}
                 <span className="font-semibold">DevJourney</span>, where I share
                 articles on web development and programming. The platform
@@ -100,7 +100,7 @@ const Projects = () => {
             </div>
             <div>
               <h3 className="text-xl font-bold">E-Commerce Website</h3>
-              <p className="py-2 leading-6 mb-0 text-base">
+              <p className="py-2 leading-6 mb-0 text-sm font-medium">
                 Designed and developed an e-commerce website named{" "}
                 <span className="font-semibold">ShopEasy</span>, featuring a
                 user-friendly interface, secure payment integration, and
