@@ -133,7 +133,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="border p-4 sm:p-8 lg:p-14 lg:py-8 rounded-lg justify-start items-start space-y-4 w-full">
+          <div className="border p-4 sm:p-8 lg:p-14 rounded-lg justify-start items-start space-y-4 w-full">
             {/* Contact form component imported here */}
             <ContactForm />
           </div>
