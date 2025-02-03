@@ -90,7 +90,7 @@ const Blog = () => {
           <strong>
             Few Selection of{" "}
             <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-yellow-600 bg-clip-text text-transparent">
-              My Blog
+              My Blog Posts
             </span>
           </strong>
         </h2>

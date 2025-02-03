@@ -184,7 +184,7 @@ const About = () => {
                 </span>
               </strong>{" "}
             </h2>
-            <p className="text-base leading-relaxed mb-4">
+            <p className="text-base leading-relaxed mb-4 md:pr-2">
               Hi, I’m Sixtus Aondoakaa, a passionate Software Engineer, DevOps
               Engineer and a tech Educator dedicated to crafting scalable and
               innovative web solutions. My journey in tech began with a
