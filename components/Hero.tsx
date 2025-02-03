@@ -49,7 +49,7 @@ const Home = () => {
   return (
     <section
       id="portfolio"
-      className="relative py-8 lg:px-10 px-0 md:px-4 md:py-10 flex items-center flex-wrap justify-start md:justify-center w-full min-h-screen lg:min-h-[500px] bg-cover bg-center bg-no-repeat"
+      className="relative py-4 lg:px-10 px-0 md:px-4 md:py-10 flex items-center flex-wrap justify-start md:justify-center w-full min-h-screen lg:min-h-[500px] bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: "url('/blog03.avif')",
       }}
