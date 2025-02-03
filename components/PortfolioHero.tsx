@@ -55,11 +55,11 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
       <div className="text-white relative p-4 lg:py-8 mt-16 max-w-3xl lg:max-w-4xl">
-        <h3 className="text-[1rem] font-bold tracking-wider sm:text-[1.2rem] md:mt-8">
+        <h3 className="text-[1rem] text-white tracking-wider sm:text-[1.2rem] md:mt-8">
           {isSignedIn && user ? (
             <>
               👋 Hey{" "}
-              <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+              <span className="font-sans font-bold">
                 {`${user.firstName || ""} ${user.lastName || ""}`.trim()}
               </span>
             </>
