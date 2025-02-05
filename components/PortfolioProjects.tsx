@@ -287,7 +287,7 @@ const Projects = () => {
             onClick={closeModal}
           >
             <div
-              className="relative bg-secondary p-4 border rounded-lg shadow-lg max-w-md w-[90%] md:w-[700px] h-[80vh] overflow-y-auto no-scrollbar"
+              className="relative bg-secondary md:p-4 p-2 border rounded-lg shadow-lg max-w-md w-[98%] md:w-[700px] h-[80vh] overflow-y-auto no-scrollbar"
               onClick={(e) => e.stopPropagation()}
             >
               <button
