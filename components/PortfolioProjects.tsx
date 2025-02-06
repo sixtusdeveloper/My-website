@@ -105,7 +105,7 @@ const Projects = () => {
       className="relative bg-secondary w-full mx-auto md:pt-8 px-4 lg:px-8 pb-10"
       id="projects"
     >
-      <div className="mx-auto max-w-6xl relative">
+      <div className="mx-auto max-w-7xl relative">
         {/* Loader Overlay */}
         {isLoading && <Loader />}
 
@@ -149,7 +149,7 @@ const Projects = () => {
         </div>
 
         {/* Project Cards */}
-        <div className="grid gap-x-2 gap-y-8 lg:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-2 lg:py-8 mt-4">
+        <div className="grid gap-x-2 gap-y-8 lg:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-2 lg:py-8 mt-4">
           {currentProjects.map(
             ({ id, title, des, img, githubLink, iconLists, link }) => (
               <div
