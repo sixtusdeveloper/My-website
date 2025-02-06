@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import MagicButton from "@/components/ui/MagicButton";
 import { GoArrowRight } from "react-icons/go";

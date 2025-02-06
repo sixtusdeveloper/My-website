@@ -498,9 +498,9 @@ export const services: Service[] = [
 export const cvImages = 
 [
 
-  "/certificates/new-resume-page1.jpg",
-  "/certificates/new-resume-page2.jpg",
-  "/certificates/new-resume-page3.jpg",
+  "/certificates/sixtus-resume-page1.jpg",
+  "/certificates/sixtus-resume-page2.jpg",
+  "/certificates/sixtus-resume-page3.jpg",
 
 ];
 

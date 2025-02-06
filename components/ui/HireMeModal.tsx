@@ -70,11 +70,19 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
   };
 
   const handleDownloadPDFClick = () => {
-    downloadFile("/certificates/New-resume.pdf", "New-resume.pdf", "pdf");
+    downloadFile(
+      "/certificates/Sixtus_Aondoakaa_Resume.pdf",
+      "Sixtus_Aondoakaa_Resume.pdf",
+      "pdf"
+    );
   };
 
   const handleDownloadDOCXClick = () => {
-    downloadFile("/certificates/New-resume.docx", "New-resume.docx", "docx");
+    downloadFile(
+      "/certificates/Sixtus_Aondoakaa_Resume.docx",
+      "Sixtus_Aondoakaa_Resume.docx",
+      "docx"
+    );
   };
 
   if (!isOpen) return null;
