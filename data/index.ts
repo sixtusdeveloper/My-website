@@ -494,7 +494,7 @@ export const services: Service[] = [
   }
 ];
 
-// Resume Data
+//=========================  Resume Data ================================//
 export const cvImages = 
 [
 
@@ -503,6 +503,20 @@ export const cvImages =
   "/certificates/sixtus-resume-page3.jpg",
 
 ];
+
+//=========================== Hero Background Images Transitions ==================//
+export const backgroundImages = [
+  "/blog06.avif",
+  "/blog03.avif",
+  "/blog04.avif",
+  "/blog05.avif",
+  "/herobg-transition.avif",
+  "/herobg-transition2.avif",
+  "/herobg-transition3.webp",
+  "/herobg-transition4.avif",
+  "/herobg-transition5.avif",
+  "/blog01.avif",
+]; // Add as many images as needed
 
 //============================= Project data ====================================//
 
