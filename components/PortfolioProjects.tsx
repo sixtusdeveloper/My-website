@@ -8,6 +8,9 @@ import Loader from "@/components/ui/Loader";
 import { FiArrowRight } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
 
+// Truncate project technologies
+const MAX_ICONS_DISPLAY = 3; // Limit for icons in project card
+
 // Truncate the Project title to a maximum length
 const MAX_TITLE_LENGTH = 30;
 const truncateTitle = (text: string, maxLength: number): string => {
@@ -196,23 +199,24 @@ const Projects = () => {
                   </div>
 
                   <div className="flex items-center justify-between mt-4">
-                    <div className="relative flex">
-                      {iconLists.map((icon, index) => (
-                        <div
-                          key={index}
-                          className="border rounded-full bg-secondary w-8 h-8 flex justify-center items-center"
-                          style={{
-                            transform: `translateX(-${index * 8}px)`,
-                            zIndex: iconLists.length - index,
-                          }}
-                        >
-                          {React.createElement(icon, {
-                            size: 18,
-                            className: "icon",
-                          })}
-                        </div>
-                      ))}
+                    <div className="flex items-center mt-3">
+                      {iconLists
+                        .slice(0, MAX_ICONS_DISPLAY)
+                        .map((IconComponent, index) => (
+                          <div
+                            key={index}
+                            className="border rounded-full bg-secondary w-8 h-8 flex justify-center items-center"
+                          >
+                            <IconComponent size={18} className="icon" />
+                          </div>
+                        ))}
+                      {iconLists.length > MAX_ICONS_DISPLAY && (
+                        <span className="ml-2 text-xs font-semibold text-gray-500">
+                          +{iconLists.length - MAX_ICONS_DISPLAY} more
+                        </span>
+                      )}
                     </div>
+
                     <a
                       onClick={() => handleLinkClick(link)}
                       target="_blank"
