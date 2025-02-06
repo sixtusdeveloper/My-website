@@ -322,7 +322,7 @@ export const education = [
     institution: "AltSchool Africa",
     date: "August 2023 - August 2024",
     type: "Full-time",
-    description: "Specialized in Software Engineering - MEAN stack, MERN stack, and more...",
+    description: "Specialized in Software Engineering - MEAN stack, MERN stack, and more... Relevant Coursework: Data Structures & Algorithms, Operating Systems, Artificial Intelligence, Agile Development, Cloud Computing, Software Security, and Web Development.",
     status: "Graduated - Certified",
     img: '/certificates/altschool-software-engineering-cert.jpg'
   },
@@ -331,7 +331,7 @@ export const education = [
     institution: "Alison Institute",
     date: "2021 - 2022",
     type: "Full-time",
-    description: "Specialized in DevOps engineering - Kubernetes, Docker, Google-cloud CI/CD pipelines and automation.",
+    description: "Specialized in DevOps engineering - Kubernetes, Docker, Google-cloud CI/CD pipelines and automation. Relevant Coursework: Docker, Kubernetes, Google Cloud Platform, Agile Project Management, CI/CD Pipelines, Microservices, Infrastructure as Code (IaC), and DevSecOps.",
     status: "Graduated - Certified",
     img: '/certificates/cert01.jpg'
   },
@@ -340,7 +340,7 @@ export const education = [
     institution: "Alison Institute",  
     date: "2019 - 2020",
     type: "Full-time",
-    description: "Specialized in software development project management - Agile, Scrum, Kanban, and more...",
+    description: "Specialized in software development project management - Agile, Scrum, Kanban, and more... Relevant Coursework: Agile Project Development, Software Development Life Cycle (SDLC), Risk Management, Scrum Methodology, Software Estimation Techniques, and IT Governance.",
     status: "Graduated - Certified",
     img: '/certificates/cert02.png'
   },
