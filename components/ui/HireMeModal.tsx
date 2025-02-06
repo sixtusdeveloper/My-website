@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import React, { useEffect, useState } from 'react';
-import { IoClose } from 'react-icons/io5';
-import { AiOutlineDownload } from 'react-icons/ai';
+import React, { useEffect, useState } from "react";
+import { IoClose } from "react-icons/io5";
+import { AiOutlineDownload } from "react-icons/ai";
 
 interface ModalProps {
   isOpen: boolean;
@@ -15,21 +15,25 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
     [key: string]: string;
   }>({
     pdf: "Download PDF",
-    docx: "Download Docx"
+    docx: "Download Docx",
   });
 
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
     }
   }, [isOpen]);
 
-  const downloadFile = (fileUrl: string, fileName: string, fileType: 'pdf' | 'docx'): void => {
-    setDownloadStatus(prevStatus => ({
+  const downloadFile = (
+    fileUrl: string,
+    fileName: string,
+    fileType: "pdf" | "docx"
+  ): void => {
+    setDownloadStatus((prevStatus) => ({
       ...prevStatus,
-      [fileType]: `Downloading ${fileType.toUpperCase()}...`
+      [fileType]: `Downloading ${fileType.toUpperCase()}...`,
     }));
 
     fetch(fileUrl)
@@ -44,33 +48,33 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
         a.click();
         window.URL.revokeObjectURL(url);
 
-        setDownloadStatus(prevStatus => ({
+        setDownloadStatus((prevStatus) => ({
           ...prevStatus,
-          [fileType]: "Downloaded"
+          [fileType]: "Downloaded",
         }));
 
         setTimeout(() => {
-          setDownloadStatus(prevStatus => ({
+          setDownloadStatus((prevStatus) => ({
             ...prevStatus,
-            [fileType]: fileType === 'pdf' ? "Download PDF" : "Download Docx"
+            [fileType]: fileType === "pdf" ? "Download PDF" : "Download Docx",
           }));
         }, 5000);
       })
       .catch(() => {
         console.error("Failed to download the file");
-        setDownloadStatus(prevStatus => ({
+        setDownloadStatus((prevStatus) => ({
           ...prevStatus,
-          [fileType]: fileType === 'pdf' ? "Download PDF" : "Download Docx"
+          [fileType]: fileType === "pdf" ? "Download PDF" : "Download Docx",
         }));
       });
   };
 
   const handleDownloadPDFClick = () => {
-    downloadFile("/certificates/My-Resume.pdf", "My-Resume.pdf", 'pdf');
+    downloadFile("/certificates/my-resume.pdf", "my-resume.pdf", "pdf");
   };
 
   const handleDownloadDOCXClick = () => {
-    downloadFile("/certificates/My-Resume.docx", "My-Resume.docx", 'docx');
+    downloadFile("/certificates/my-resume.docx", "my-resume.docx", "docx");
   };
 
   if (!isOpen) return null;
@@ -111,14 +115,3 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
 };
 
 export default Modal;
-
-
-
-
-
-
-
-
-
-
-
