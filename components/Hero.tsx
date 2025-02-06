@@ -47,7 +47,7 @@ const Home = () => {
           setFade(true); // Start fade-in
         }, 2000);
       }
-    }, 10000); // Change background every 10 seconds
+    }, 6000); // Change background every 10 seconds
 
     return () => {
       clearTimeout(transitionTimeout);
@@ -90,7 +90,7 @@ const Home = () => {
       className="relative py-2 lg:px-10 px-0 md:px-4 md:py-10 flex items-center flex-wrap justify-start md:justify-center w-full min-h-screen lg:min-h-[500px] bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `url(${backgroundImages[backgroundIndex]})`,
-        opacity: fade ? 1 : 0.3, // Smooth fade-in & fade-out effect
+        opacity: fade ? 1 : 0.66, // Smooth fade-in & fade-out effect
         transition: isPaused ? "none" : "opacity 3s ease-in-out", // Stop transition when paused
       }}
     >
