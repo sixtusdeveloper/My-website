@@ -495,10 +495,13 @@ export const services: Service[] = [
 ];
 
 // Resume Data
-export const cvImages = [
-  "/certificates/my-resume.jpg",
-  "/certificates/my-resume-page2.jpg",
-  // "/certificates/my-resume-page3.jpg",
+export const cvImages = 
+[
+
+  "/certificates/new-resume-page1.jpg",
+  "/certificates/new-resume-page2.jpg",
+  "/certificates/new-resume-page3.jpg",
+
 ];
 
 //============================= Project data ====================================//

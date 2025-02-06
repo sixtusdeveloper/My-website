@@ -70,11 +70,11 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
   };
 
   const handleDownloadPDFClick = () => {
-    downloadFile("/certificates/my-resume.pdf", "my-resume.pdf", "pdf");
+    downloadFile("/certificates/New-resume.pdf", "New-resume.pdf", "pdf");
   };
 
   const handleDownloadDOCXClick = () => {
-    downloadFile("/certificates/my-resume.docx", "my-resume.docx", "docx");
+    downloadFile("/certificates/New-resume.docx", "New-resume.docx", "docx");
   };
 
   if (!isOpen) return null;

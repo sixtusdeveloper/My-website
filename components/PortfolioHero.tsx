@@ -20,6 +20,9 @@ const Hero = () => {
   const [isReadMoreLoading, setIsReadMoreLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
 
+  const totalPages = cvImages.length; // Total number of images (pages)
+  const currentPageNumber = currentPage + 1; // Current page number (starting from 1)
+
   const handleHireMeClick = () => {
     setIsLoading(true);
     setTimeout(() => {
@@ -138,7 +141,7 @@ const Hero = () => {
               style={{ width: "auto", height: "auto" }}
             />
           </div>
-          <div className="flex justify-center space-x-4 mt-2">
+          <div className="flex items-center justify-center space-x-4 mt-4">
             <button
               onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 0))}
               className="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600"
@@ -146,13 +149,18 @@ const Hero = () => {
             >
               Prev
             </button>
+            <span className="text-white items-center">{`Page ${currentPageNumber} of ${totalPages}`}</span>
             <button
               onClick={() =>
                 setCurrentPage((prev) =>
                   Math.min(prev + 1, cvImages.length - 1)
                 )
               }
-              className="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600"
+              className={`px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 ${
+                currentPage === cvImages.length - 1
+                  ? "opacity-50 cursor-not-allowed"
+                  : ""
+              }`}
               disabled={currentPage === cvImages.length - 1}
             >
               Next
@@ -186,7 +194,7 @@ const Hero = () => {
 
 export default Hero;
 
-// Original code
+// Logic working good but not included the pagination count
 
 // "use client";
 
@@ -199,33 +207,33 @@ export default Hero;
 // import HireMeModal from "@/components/ui/HireMeModal";
 // import ReadMoreModal from "@/components/ui/ReadMoreModal";
 // import Image from "next/image";
+// import { cvImages } from "@/data";
 // import Loader from "@/components/ui/Loader";
 
 // const Hero = () => {
 //   const { user, isSignedIn } = useUser();
 //   const [isModalOpen, setModalOpen] = useState(false);
-//   const [isReadMoreModalOpen, setReadMoreModalOpen] = useState(false); // State for Read More modal
+//   const [isReadMoreModalOpen, setReadMoreModalOpen] = useState(false);
 //   const [isLoading, setIsLoading] = useState(false);
 //   const [isReadMoreLoading, setIsReadMoreLoading] = useState(false);
+//   const [currentPage, setCurrentPage] = useState(0);
 
 //   const handleHireMeClick = () => {
 //     setIsLoading(true);
 //     setTimeout(() => {
 //       setIsLoading(false);
 //       setModalOpen(true);
-//     }, 2000); // Simulate loading time (2 seconds)
+//     }, 2000);
 //   };
 
-//   // Read more logic
 //   const handleReadMoreClick = () => {
 //     setIsReadMoreLoading(true);
 //     setTimeout(() => {
 //       setIsReadMoreLoading(false);
 //       setReadMoreModalOpen(true);
-//     }, 2000); // Simulate loading time (2 seconds)
+//     }, 2000);
 //   };
 
-//   // Read more logic
 //   const handleModalToggle = () => {
 //     setModalOpen(!isModalOpen);
 //   };
@@ -238,9 +246,7 @@ export default Hero;
 //     <section
 //       id="hero"
 //       className="relative py-2 lg:px-10 px-0 md:px-4 md:py-10 flex items-center flex-wrap justify-start md:justify-center w-full min-h-screen lg:min-h-[500px] bg-cover bg-center bg-no-repeat"
-//       style={{
-//         backgroundImage: "url('/blog06.avif')",
-//       }}
+//       style={{ backgroundImage: "url('/blog06.avif')" }}
 //     >
 //       <div className="absolute inset-0 bg-black bg-opacity-70"></div>
 
@@ -307,15 +313,10 @@ export default Hero;
 //           </a>
 //         </div>
 //       </div>
-//       {/* </div> */}
 
-//       {/* Loading Overlay */}
 //       {isLoading && <Loader />}
-
-//       {/* Loading Overlay for Read More */}
 //       {isReadMoreLoading && <Loader />}
 
-//       {/* Modal for Hire Me */}
 //       <HireMeModal isOpen={isModalOpen} onClose={handleModalToggle}>
 //         <div className="p-4 bg-secondary max-h-[80vh] overflow-auto no-scrollbar">
 //           <h2 className="text-2xl font-bold tracking-wide text-center">
@@ -325,11 +326,9 @@ export default Hero;
 //             Thank you for considering me for your project! I'm eager to work
 //             with you and bring your ideas to life. Below you can preview my CV:
 //           </p>
-
-//           {/* CV Preview */}
 //           <div className="flex justify-center my-2">
 //             <Image
-//               src="/certificates/my-resume.jpg"
+//               src={cvImages[currentPage]}
 //               alt="CV Preview"
 //               width={500}
 //               height={600}
@@ -337,10 +336,29 @@ export default Hero;
 //               style={{ width: "auto", height: "auto" }}
 //             />
 //           </div>
+//           <div className="flex justify-center space-x-4 mt-2">
+//             <button
+//               onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 0))}
+//               className="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600"
+//               disabled={currentPage === 0}
+//             >
+//               Prev
+//             </button>
+//             <button
+//               onClick={() =>
+//                 setCurrentPage((prev) =>
+//                   Math.min(prev + 1, cvImages.length - 1)
+//                 )
+//               }
+//               className="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600"
+//               disabled={currentPage === cvImages.length - 1}
+//             >
+//               Next
+//             </button>
+//           </div>
 //         </div>
 //       </HireMeModal>
 
-//       {/* Modal for Read More */}
 //       <ReadMoreModal
 //         isOpen={isReadMoreModalOpen}
 //         onClose={handleReadMoreModalToggle}
