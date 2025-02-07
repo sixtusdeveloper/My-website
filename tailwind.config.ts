@@ -5,15 +5,16 @@ import colors from "tailwindcss/colors";
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
-
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{js,ts,jsx,tsx,mdx,css}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx,css}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx,css}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx,css}",
+    "./styles/**/*.{css}", // ✅ If you have other styles inside /styles
+    "./globals.css", // ✅ Explicitly include globals.css since it's outside /styles
+  ],
   prefix: "",
   theme: {
     container: {
@@ -149,6 +150,9 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate"),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
     function addVariablesForColors({ addBase, theme }: any) {
       let allColors = flattenColorPalette(theme("colors"));
       let newVars = Object.fromEntries(
@@ -159,7 +163,6 @@ const config = {
         ":root": newVars,
       });
     },
-
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {
@@ -184,13 +187,11 @@ const config = {
     },
   ],
 } satisfies Config
-
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
-
   addBase({
     ":root": newVars,
   });
