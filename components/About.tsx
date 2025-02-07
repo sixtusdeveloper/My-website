@@ -106,7 +106,7 @@ const About = () => {
                     className="btn-github-follow"
                     rel="noopener noreferrer"
                   >
-                    Follow me
+                    follow me
                   </a>
                 </div>
               </div>
