@@ -70,17 +70,8 @@ const About = () => {
               </div>
             </div>
             <div className="mb-10 p-2 items-center">
-              <div className="sub-title">
-                <h3 className="text-base lg:text-lg font-semibold font-sans">
-                  Sixtus Aondoakaa
-                </h3>
-                <h4 className="text-base font-sans font-medium">
-                  Software Engineer
-                </h4>
-              </div>
-
               {/* Social Follow Buttons on larger devices */}
-              <div className="hidden md:flex items-center justify-center gap-4 mt-4">
+              <div className="hidden md:flex items-center justify-center gap-4 mt-2">
                 {/* Twitter Follow Button */}
                 <div
                   className={`flex items-center text-sm space-x-2 py-2 px-4 rounded-lg ${
@@ -96,7 +87,7 @@ const About = () => {
                     data-show-count="false"
                     data-size="large"
                   >
-                    Follow @sixtusdev
+                    @sixtusdev
                   </a>
                 </div>
 
@@ -115,7 +106,7 @@ const About = () => {
                     className="btn-github-follow"
                     rel="noopener noreferrer"
                   >
-                    Follow on GitHub
+                    Follow me
                   </a>
                 </div>
               </div>
