@@ -83,9 +83,9 @@ const About = () => {
                   <FaTwitter />
                   <a
                     href="https://twitter.com/sixtusdev?ref_src=twsrc%5Etfw"
-                    className="twitter-follow-button"
-                    data-show-count="false"
-                    data-size="large"
+                    // className="twitter-follow-button"
+                    // data-show-count="false"
+                    // data-size="large"
                   >
                     @sixtusdev
                   </a>

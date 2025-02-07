@@ -80,7 +80,6 @@ html {
   h4,
   h5,
   h6 {
-    /* font-family: "Sans", sans-serif; */
     font-family: "Sans", sans-serif !important;
     font-weight: 700;
   }
@@ -386,13 +385,6 @@ button a {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
-/* Apply grayscale filter to the logo */
-/* .collaborator-logo {
-  filter: grayscale(100%);
-  opacity: 0.8; 
-  transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
-} */
 
 /* Optional: Add hover effect to remove grayscale on hover */
 .collaborator-logo:hover {

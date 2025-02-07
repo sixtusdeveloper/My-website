@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss"
-const svgToDataUri = require("mini-svg-data-uri");
-const colors = require("tailwindcss/colors");
+import svgToDataUri from "mini-svg-data-uri";
+import colors from "tailwindcss/colors";
 // const defaultTheme = require("tailwindcss/defaultTheme");
 const {
   default: flattenColorPalette,
@@ -25,7 +25,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'], // Add your font here
+        poppins: ['Sans', 'sans-serif'], // Add your font here
       },
       colors: {
         border: "hsl(var(--border))",
