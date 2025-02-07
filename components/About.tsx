@@ -71,7 +71,7 @@ const About = () => {
             </div>
             <div className="mb-10 p-2 items-center">
               {/* Social Follow Buttons on larger devices */}
-              <div className="hidden md:flex items-center justify-center gap-4 mt-2">
+              <div className="hidden md:flex items-center justify-center gap-4 mt-1">
                 {/* Twitter Follow Button */}
                 <div
                   className={`flex items-center text-sm space-x-2 py-2 px-4 rounded-lg ${
@@ -81,12 +81,7 @@ const About = () => {
                   } transition`}
                 >
                   <FaTwitter />
-                  <a
-                    href="https://twitter.com/sixtusdev?ref_src=twsrc%5Etfw"
-                    // className="twitter-follow-button"
-                    // data-show-count="false"
-                    // data-size="large"
-                  >
+                  <a href="https://twitter.com/sixtusdev?ref_src=twsrc%5Etfw">
                     @sixtusdev
                   </a>
                 </div>
