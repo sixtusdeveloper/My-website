@@ -84,7 +84,7 @@ const Blog = () => {
   };
 
   return (
-    <section id="blog" className="py-20 px-4 lg:px-8 bg-secondary">
+    <section id="blog" className="py-20 px-4 lg:px-10 bg-secondary">
       <div className="max-w-7xl mx-auto">
         <h2 className="font-extrabold font-sans text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-8">
           <strong>

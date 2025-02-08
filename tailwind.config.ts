@@ -12,7 +12,7 @@ const config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx,css}",
     "./app/**/*.{js,ts,jsx,tsx,mdx,css}",
     "./src/**/*.{js,ts,jsx,tsx,mdx,css}",
-    "./styles/**/*.{css}", // ✅ If you have other styles inside /styles
+    "./styles/**/*.css",
     "./globals.css", // ✅ Explicitly include globals.css since it's outside /styles
   ],
   prefix: "",
@@ -150,9 +150,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate"),
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/aspect-ratio'),
     function addVariablesForColors({ addBase, theme }: any) {
       let allColors = flattenColorPalette(theme("colors"));
       let newVars = Object.fromEntries(
