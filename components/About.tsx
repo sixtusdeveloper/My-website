@@ -71,7 +71,7 @@ const About = () => {
             </div>
             <div className="mb-10 p-2 items-center">
               {/* Social Follow Buttons on larger devices */}
-              <div className="hidden md:flex items-center justify-center gap-4 mt-1">
+              <div className="hidden md:flex items-center justify-center gap-4">
                 {/* Twitter Follow Button */}
                 <div
                   className={`flex items-center text-sm space-x-2 py-2 px-4 rounded-lg ${
