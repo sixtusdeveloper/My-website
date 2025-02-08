@@ -615,7 +615,7 @@ export const projects = [
     id: 10,
     title: "FodyCafe - An Online Food Delivery Website",
     des: "Order your favorite meals with ease using this food delivery website. Discover new cuisines and flavors.",
-    img: "/project07.avif",
+    img: "/project20.avif",
     iconLists:  [FaJsSquare, FaHtml5, FaCss3Alt],
     link: "https://restaurant-website-jet-kappa.vercel.app/",
     category: "Frontend",
