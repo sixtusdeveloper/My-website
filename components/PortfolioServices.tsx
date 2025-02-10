@@ -67,7 +67,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="bg-secondary relative pt-8 md:pt-10 px-6 lg:px-10 pb-20"
+      className="bg-secondary relative pt-8 md:pt-10 px-4 sm:px-6 lg:px-10 pb-20"
     >
       <div className="mx-auto max-w-6xl relative">
         <h1 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide">
@@ -84,7 +84,7 @@ const Services = () => {
               key={index}
               borderRadius="1.75rem"
               duration={Math.floor(Math.random() * 10000) + 10000}
-              className="flex-1 border bg-secondary"
+              className="flex-1 border bg-secondary shadow-md px-4"
               onClick={() => openModal(service)}
             >
               <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
@@ -96,7 +96,7 @@ const Services = () => {
                   className="lg:w-32 md:w-20 w-16 services-img"
                 />
                 <div className="lg:ms-5">
-                  <h1 className="text-start leading-tight font-sans text-lg md:text-xl font-bold">
+                  <h1 className="text-start leading-tight py-2 font-sans text-lg md:text-xl font-bold">
                     {service.title}
                   </h1>
                   <p className="text-sm text-start leading-snug font-sans font-medium mt-1">

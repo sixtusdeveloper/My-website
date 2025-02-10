@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-10 px-4 lg:px-10 bg-secondary">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-extrabold font-sans text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-8">
+        <h2 className="font-extrabold font-sans text-start md:text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-8">
           <strong>
             Some of my{" "}
             <span className="bg-gradient-to-r from-yellow-600 via-blue-500 to-purple-600 bg-clip-text text-transparent">
@@ -13,7 +13,7 @@ const Projects = () => {
             </span>
           </strong>
         </h2>
-        <div className="grid gap-4 md:gap-6 lg:gap-8 md:grid-cols-2">
+        <div className="grid gap-4 md:gap-6 lg:gap-8 space-y-6 md:space-y-0 md:grid-cols-2">
           {/* Project 1 */}
           <div className="flex relative shadow-md justify-center gap-4 p-4 bg-secondary border rounded-[1.75rem]">
             <div className="lg:text-start text-center lg:items-start items-center relative">

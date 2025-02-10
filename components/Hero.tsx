@@ -181,7 +181,7 @@ const Home = () => {
 
         {/* Right: Animated Laptop */}
         <motion.div
-          className="hidden lg:flex w-full lg:w-1/2 justify-center items-center"
+          className="hidden lg:flex w-full lg:w-1/2 justify-center items-center mt-16"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.9, ease: "easeOut" }}

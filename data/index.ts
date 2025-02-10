@@ -332,24 +332,27 @@ export const education = [
     institution: "AltSchool Africa",
     date: "August 2023 - August 2024",
     type: "Full-time",
+    location: "Lagos, Nigeria",
     description: "Specialized in Software Engineering - MEAN stack, MERN stack, and more... Relevant Coursework: Data Structures & Algorithms, Operating Systems, Artificial Intelligence, Agile Development, Cloud Computing, Software Security, and Web Development.",
     status: "Graduated - Certified",
     img: '/certificates/altschool-software-engineering-cert.jpg'
   },
   {
     degree: "Diploma in DevOps Engineering",
-    institution: "Alison Institute",
+    institution: "Alison Institute of Technology",
     date: "2021 - 2022",
     type: "Full-time",
+    location: "Galway, Ireland",
     description: "Specialized in DevOps engineering - Kubernetes, Docker, Google-cloud CI/CD pipelines and automation. Relevant Coursework: Docker, Kubernetes, Google Cloud Platform, Agile Project Management, CI/CD Pipelines, Microservices, Infrastructure as Code (IaC), and DevSecOps.",
     status: "Graduated - Certified",
     img: '/certificates/cert01.jpg'
   },
   {
     degree: "Diploma in Software Project Management", 
-    institution: "Alison Institute",  
+    institution: "Alison Institute of Technology",  
     date: "2019 - 2020",
     type: "Full-time",
+    location: "Galway, Ireland",
     description: "Specialized in software development project management - Agile, Scrum, Kanban, and more... Relevant Coursework: Agile Project Development, Software Development Life Cycle (SDLC), Risk Management, Scrum Methodology, Software Estimation Techniques, and IT Governance.",
     status: "Graduated - Certified",
     img: '/certificates/cert02.png'
@@ -359,6 +362,7 @@ export const education = [
     institution: "Christ the King College (CKC)",  
     date: "2011 - 2016",
     type: "Full-time",
+    location: "Benue, Nigeria",
     description: "Specialized in Sciences - Physics, Chemistry, Biology, Mathematics, and more...",
     status: "Graduated - Certified",
     img: '/certificates/ckc-cert.jpg'
@@ -368,6 +372,7 @@ export const education = [
     institution: "Unity Nursery and Primary School",  
     date: "2000 - 2009",
     type: "Full-time",
+    location: "Benue, Nigeria",
     description: "Specialized in Sciences - Computer Science, Physical Health Education, , Quantitative Reasoning, Verbal Reasoning and more...",
     status: "Graduated - Certified",
     img: '/certificates/cert.png'

@@ -62,8 +62,8 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-20 px-4 lg:px-14 bg-secondary">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-8">
+      <div className="max-w-6xl mx-auto text-start md:text-center">
+        <h2 className="font-bold text-start md:text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-8">
           <strong>
             Let’s{" "}
             <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-yellow-600 bg-clip-text text-transparent">
@@ -75,14 +75,14 @@ const Contact = () => {
           Feel free to reach out for collaborations, job opportunities, or just
           to say hi!
         </p>
-        <div className="flex flex-col md:flex-row justify-between items-start md:gap-6 lg:gap-8 gap-2">
-          <div className="border rounded-lg p-6 md:py-8 text-start relative md:w-1/2">
+        <div className="flex flex-col md:flex-row justify-between items-start md:gap-6 lg:gap-8 gap-2 w-full">
+          <div className="border shadow-md rounded-lg p-4 md:p-4 w-full md:text-start relative md:w-1/2">
             <Image
               src="/profile.jpg"
               alt="profile image"
               width={300}
               height={200}
-              className="rounded-lg border"
+              className="rounded-lg border shadow-md contact-img"
               style={{ width: "auto", height: "auto" }}
             />
             <div className="mt-2">
@@ -133,7 +133,8 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="border p-4 sm:p-8 lg:p-14 rounded-lg justify-start items-start space-y-4 w-full">
+
+          <div className="border shadow-md p-4 sm:p-8 lg:p-16 rounded-lg justify-start items-start space-y-4 w-full">
             {/* Contact form component imported here */}
             <ContactForm />
           </div>

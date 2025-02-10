@@ -51,7 +51,7 @@ const Collaboration = ({
       </h1>
       <div className="bg-black-100 py-14 sm:py-12">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h3 className="text-center font-sans text-md font-semibold leading-2 tracking-wide">
+          <h3 className="text-center font-sans text-md font-medium leading-2 tracking-wide">
             Trusted by the world&apos;s most innovative teams
           </h3>
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-8 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
@@ -110,8 +110,8 @@ const Collaboration = ({
               />
             </span>
           </div>
-          <div className="hidden sm:mt-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-4 my-1 text-sm leading-6 hover:text-indigo-600 border bg-gradient-to-r from-indigo-800 via-blue-500 to-purple-800 bg-clip-text text-transparent">
+          <div className="hidden sm:mt-2 sm:flex sm:justify-center">
+            <div className="relative rounded-full px-4 text-sm leading-6 hover:text-indigo-600 border bg-gradient-to-r from-indigo-800 via-blue-500 to-purple-800 bg-clip-text text-transparent">
               Over 35 companies use my solutions to better their business.{" "}
               <a
                 href="#"

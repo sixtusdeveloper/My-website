@@ -69,7 +69,7 @@ const About = () => {
                 />
               </div>
             </div>
-            <div className="mb-10 p-2 items-center">
+            <div className="mb-4 md:mb-10 p-2 items-center">
               {/* Social Follow Buttons on larger devices */}
               <div className="hidden md:flex items-center justify-center gap-4">
                 {/* Twitter Follow Button */}
@@ -107,7 +107,7 @@ const About = () => {
               </div>
 
               {/* Social Follow Buttons on mobile */}
-              <div className="flex md:hidden items-center justify-center gap-4 mt-4">
+              <div className="flex md:hidden items-center justify-center gap-4 mt-0">
                 {/* Twitter Follow Button */}
                 <div
                   className={`flex items-center space-x-2 p-2 rounded-full ${

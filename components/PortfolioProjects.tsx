@@ -128,7 +128,7 @@ const Projects = () => {
             className={`px-4 py-2 mx-2 text-sm font-semibold font-sans rounded-lg tracking-wide cursor-pointer transition-all duration-300 ${
               selectedCategory === "Frontend"
                 ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
-                : "bg-transparent border"
+                : "bg-transparent border shadow-md"
             }`}
           >
             Frontend Projects
@@ -141,7 +141,7 @@ const Projects = () => {
             className={`px-4 py-2 text-sm md:text-sm font-semibold font-sans mx-2 rounded-lg tracking-wide transition-all duration-300 ${
               selectedCategory === "Fullstack"
                 ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
-                : "bg-transparent border"
+                : "bg-transparent border shadow-md"
             }`}
           >
             Fullstack Projects
@@ -149,11 +149,11 @@ const Projects = () => {
         </div>
 
         {/* Project Cards */}
-        <div className="grid gap-x-2 gap-y-8 lg:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-2 lg:py-8 mt-4">
+        <div className="grid gap-x-2 gap-y-8 lg:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:p-2 p-0 lg:py-8 mt-4">
           {currentProjects.map(
             ({ id, title, des, img, githubLink, iconLists, link }) => (
               <div
-                className="relative group overflow-hidden border rounded-3xl transition-transform transform hover:scale-105"
+                className="space-y-6 md:space-y-0 relative group overflow-hidden border shadow-md rounded-3xl transition-transform transform hover:scale-105"
                 key={id}
                 style={{ width: "100%", height: "100%" }}
               >
@@ -243,7 +243,7 @@ const Projects = () => {
             disabled={currentPage === 1}
             className={`px-4 py-1 mx-1 rounded cursor-pointer transition-all duration-300 ${
               currentPage === 1
-                ? "bg-transparent border cursor-not-allowed"
+                ? "bg-transparent border cursor-not-allowed shadow-md"
                 : "bg-indigo-600 hover:bg-indigo-700 text-white"
             }`}
           >
@@ -257,7 +257,7 @@ const Projects = () => {
             disabled={currentPage === totalPages}
             className={`px-4 py-1 mx-1 rounded cursor-pointer transition-all duration-300 ${
               currentPage === totalPages
-                ? "bg-transparent border cursor-not-allowed"
+                ? "bg-transparent border cursor-not-allowed shadow-md"
                 : "bg-indigo-600 hover:bg-indigo-700 text-white"
             }`}
           >

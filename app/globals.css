@@ -158,9 +158,8 @@ button a {
   align-items: center !important;
 }
 .profile_image {
-  width: 300px !important;
-  height: 300px !important;
-  /* border-radius: 50% !important; */
+  width: 400px !important;
+  height: 400px !important;
   object-fit: cover !important;
   position: relative !important;
   overflow: hidden;
@@ -171,7 +170,13 @@ button a {
   border-radius: 50% !important;
   object-fit: cover !important;
   position: relative !important;
-  /* padding: 10px; */
+  overflow: hidden;
+}
+
+.contact-img {
+  width: 100% !important;
+  height: 270px !important;
+  object-fit: cover !important;
   overflow: hidden;
 }
 .project-img {
@@ -309,7 +314,7 @@ button a {
 }
 
 /* Circle in the center */
-.timeline-container .timeline-icon {
+/* .timeline-container .timeline-icon {
   width: 20px;
   height: 20px;
   background-color: darkslategrey;
@@ -318,35 +323,7 @@ button a {
   top: 15px;
   left: -11px;
   z-index: 1;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .timeline-container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-
-  .timeline-container.left::after,
-  .timeline-container.right::after {
-    left: 60px;
-    border: none;
-  }
-
-  .timeline::after {
-    left: 30px;
-  }
-
-  .timeline-container.left,
-  .timeline-container.right {
-    left: 0;
-  }
-
-  .timeline-container .timeline-icon {
-    left: 20px;
-  }
-}
+} */
 
 /* Current styles for the timeline */
 .timeline-container .timeline-icon {
@@ -356,23 +333,52 @@ button a {
   border-radius: 50%;
   position: absolute;
   top: 15px;
-  z-index: 3; /* Ensure this is in front of the card content */
+  z-index: 3;
+  /* Ensure this is in front of the card content */
 }
 
 /* Circle icon on the left-side containers */
 .timeline-container.left .timeline-icon {
-  left: calc(100% - 11px); /* Adjusts icon to the right of the left container */
+  left: calc(100% - 11px);
+  /* Adjusts icon to the right of the left container */
 }
 
 /* Circle icon on the right-side containers */
 .timeline-container.right .timeline-icon {
-  left: -11px; /* Positions icon to the left of the right container */
+  left: -11px;
+  /* Positions icon to the left of the right container */
 }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+  .timeline-container {
+    width: 100%;
+    /* padding-left: 70px;
+    padding-right: 25px;  previous styles */
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+
+  .timeline-container.left::after,
+  .timeline-container.right::after {
+    left: 60px;
+    /* left: 30px; */
+    border: none;
+  }
+
+  .timeline::after {
+    /* left: 30px; /* this works /* */
+    left: 15px;
+  }
+
+  .timeline-container.left,
+  .timeline-container.right {
+    left: 0;
+  }
+
+  /* Responsive Design */
   .timeline-container .timeline-icon {
-    left: 20px !important; /* Adjust position for smaller screens */
+    left: 4px !important; /* Adjust position for smaller screens origin size was 20px */
   }
 }
 

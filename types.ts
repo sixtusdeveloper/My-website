@@ -43,6 +43,7 @@ interface EducationItem {
 degree: string;
 institution: string;
 type: string;
+location: string;
 status: string;
 date: string;
 description: string;

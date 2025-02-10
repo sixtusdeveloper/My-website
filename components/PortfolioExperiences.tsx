@@ -128,7 +128,7 @@ const Experience = () => {
               className={`px-4 py-2 rounded-lg cursor-pointer ${
                 selectedSection === "work"
                   ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
-                  : "bg-transparent border"
+                  : "bg-transparent border shadow-md"
               }`}
             >
               Work Experience
@@ -138,7 +138,7 @@ const Experience = () => {
               className={`px-4 py-2 rounded-lg cursor-pointer ${
                 selectedSection === "education"
                   ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
-                  : "bg-transparent border"
+                  : "bg-transparent border shadow-md"
               }`}
             >
               Education
@@ -155,7 +155,7 @@ const Experience = () => {
                   }`}
                 >
                   <div className="timeline-icon"></div>
-                  <div className="bg-secondary border p-4 rounded-lg">
+                  <div className="bg-secondary border p-4 rounded-lg shadow-md">
                     <h3 className="text-lg font-bold">{experience.title}</h3>
                     <p className="inline-flex space-x-2 py-1 mb-0">
                       <span className="text-sm">
@@ -200,25 +200,28 @@ const Experience = () => {
                 >
                   <div className="timeline-icon"></div>
 
-                  <div className="bg-secondary border p-4 rounded-lg">
+                  <div className="bg-secondary border p-4 rounded-lg shadow-md">
                     <h3 className="text-lg font-bold mb-1">
                       {truncateCourse(edu.degree, MAX_COURSE_LENGTH)}
                     </h3>
-                    <p className="inline-flex space-x-2 py-1 mb-0">
-                      <span className="text-sm">
-                        {edu.institution}&nbsp;-&nbsp;
-                        <span className="text-sm text-purple">{edu.type}</span>
-                      </span>
-                    </p>
+                    <span className="flex flex-wrap gap-2 items-center py-1 mb-0 font-bold">
+                      <p className="text-sm">{edu.institution}&nbsp;-&nbsp;</p>
+                      <p className="text-sm">{edu.type}</p>
+                    </span>
                     <p className="text-white-200 text-sm py-1 mb-0">
                       {edu.status}
                     </p>
-                    <time
-                      className="block text-sm mb-1"
-                      suppressHydrationWarning
-                    >
-                      {edu.date}
-                    </time>
+                    <span className="flex flex-wrap gap-2 items-center">
+                      <p className="text-sm items-center py-1 mb-0">
+                        {edu.location}
+                      </p>
+                      <time
+                        className="text-sm items-center"
+                        suppressHydrationWarning
+                      >
+                        {edu.date}
+                      </time>
+                    </span>
                     <div className="text-base leading-6">
                       {truncateDescription(
                         edu.description,
@@ -242,7 +245,7 @@ const Experience = () => {
         <Modal isOpen={isModalOpen} onClose={closeModal}>
           <div
             ref={modalRef}
-            className="p-4 max-h-[80vh] overflow-y-auto no-scrollbar relative"
+            className="p-2 md:p-4 max-h-[80vh] overflow-y-auto no-scrollbar relative"
           >
             {isLoading ? (
               <Loader />
@@ -254,7 +257,7 @@ const Experience = () => {
                       {selectedEducation?.degree}
                     </h3>
                     <p className="mb-4">
-                      <span className="font-medium text-base">
+                      <span className="font-semimedium text-base">
                         Institution:
                       </span>
                       &nbsp;
@@ -273,6 +276,13 @@ const Experience = () => {
                       &nbsp;
                       <span className="text-base">
                         {selectedEducation?.status}
+                      </span>
+                    </p>
+                    <p className="mb-4">
+                      <span className="font-medium text-base">Location:</span>
+                      &nbsp;
+                      <span className="text-base">
+                        {selectedEducation?.location}
                       </span>
                     </p>
                     <p className="mb-4">

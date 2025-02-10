@@ -25,7 +25,7 @@ const ReachOut = () => {
 
         <div className="flex justify-center items-center space-x-4 lg:space-x-8 mt-8">
           <a href="mailto:contact@sixtusdev.net?subject=Let's%20connect!">
-            <button className="relative p-[2px] rounded-md border">
+            <button className="relative p-[2px] rounded-md border shadow-md">
               <div className="flex items-center space-x-2 bg-transparent px-4 py-2">
                 <Image src="/Gmail.png" alt="Mail" width={20} height={20} />
                 <span className="text-base font-sans font-bold">Email me</span>
@@ -37,7 +37,7 @@ const ReachOut = () => {
           <div className="h-8 w-[2px] bg-gradient-to-b from-blue-500 via-green-500 to-purple-800"></div>
 
           <a href="https://wa.me/+2349022048105" target="_blank">
-            <button className="relative p-[2px] rounded-md border">
+            <button className="relative p-[2px] rounded-md border shadow-md">
               <div className="flex items-center space-x-2 bg-transparent px-2 py-2">
                 <Image
                   src="/whatsapp-icon.png"

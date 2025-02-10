@@ -110,7 +110,7 @@ const Certifications = () => {
   return (
     <section
       id="certifications"
-      className="bg-secondary relative md:pt-10 px-6 lg:px-10 pb-20"
+      className="bg-secondary relative md:pt-10 px-4 sm:px-6 lg:px-10 pb-20"
     >
       <div className="mx-auto max-w-6xl relative">
         <h1 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide">
@@ -127,7 +127,7 @@ const Certifications = () => {
               key={index}
               borderRadius="1.75rem"
               duration={Math.floor(Math.random() * 10000) + 10000}
-              className="flex-1 border bg-secondary"
+              className="flex-1 border bg-secondary shadow-md px-4"
               onClick={() => openModal(certification)}
             >
               <div className="flex lg:flex-row flex-col lg:items-center px-2 py-8 md:p-8 lg:p-8 gap-2">
@@ -140,7 +140,7 @@ const Certifications = () => {
                 />
 
                 <div className="lg:ms-5">
-                  <h2 className="text-start leading-tight font-sans text-lg md:text-xl font-bold">
+                  <h2 className="text-start py-2 leading-tight font-sans text-lg md:text-xl font-bold">
                     {certification.title}
                   </h2>
                   <p className="text-sm font-medium py-1 text-start leading-snug font-sans">
@@ -168,7 +168,7 @@ const Certifications = () => {
             disabled={currentPage === 1}
             className={`px-4 py-1 mx-1 rounded cursor-pointer transition-all duration-300 ${
               currentPage === 1
-                ? "bg-transparent border cursor-not-allowed"
+                ? "bg-transparent border cursor-not-allowed shadow-md"
                 : "bg-indigo-600 hover:bg-indigo-700 text-white"
             } focus:outline-none`}
           >
@@ -182,7 +182,7 @@ const Certifications = () => {
             disabled={currentPage === totalPages}
             className={`px-4 py-1 mx-1 rounded cursor-pointer transition-all duration-300 ${
               currentPage === totalPages
-                ? "bg-transparent border cursor-not-allowed"
+                ? "bg-transparent border cursor-not-allowed shadow-md"
                 : "bg-indigo-600 hover:bg-indigo-700 text-white"
             } `}
           >
