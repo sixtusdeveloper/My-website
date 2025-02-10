@@ -2,10 +2,19 @@
 
 import React, { useState, useEffect } from "react";
 import { FaTimes, FaExclamationCircle } from "react-icons/fa";
-import { useUser, useClerk, SignedIn } from "@clerk/nextjs";
+import {
+  useUser,
+  useClerk,
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
+import { UserIcon } from "lucide-react";
 
 export default function CallToAction() {
+  const { redirectToSignUp } = useClerk();
   const { user, isSignedIn } = useUser();
   const { openSignIn } = useClerk();
   const router = useRouter();
@@ -95,7 +104,7 @@ export default function CallToAction() {
 
               {/* <SignedIn> */}
               <button
-                onClick={() => router.push("/auth/sign-up")}
+                onClick={() => router.push("/sign-up")}
                 className="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-md w-[48%]"
               >
                 Let me log in
@@ -125,8 +134,10 @@ export default function CallToAction() {
               <p className="mb-4 text-center">
                 Please sign in to access the free programming books.
               </p>
+
               <button
-                onClick={() => router.push("/auth/sign-up")}
+                // onClick={() => router.push("/auth/sign-up")}
+                onClick={() => redirectToSignUp()}
                 className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md w-full text-center"
               >
                 Log in Now
