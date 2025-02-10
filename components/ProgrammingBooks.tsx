@@ -52,7 +52,7 @@ const ProgrammingBooks = () => {
               <h2 className="text-lg font-semibold">{material.title}</h2>
               <p className="text-sm py-2">Category: {material.category}</p>
               <Link href={material.url} target="_blank">
-                <Button className="mt-4 w-full text-center font-sans bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-lg text-white ">
+                <Button className="mt-4 w-full text-center font-sans bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-lg text-white">
                   Download
                 </Button>
               </Link>

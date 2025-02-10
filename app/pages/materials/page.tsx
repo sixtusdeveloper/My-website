@@ -6,6 +6,9 @@ import { MaterialsNavLinks } from "@/data";
 import { useRouter } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import ProgrammingBooks from "@/components/ProgrammingBooks";
+import MaterialsHero from "@/components/MaterialHero";
+import MaterialsResources from "@/components/MaterialsResources";
+import Footer from "@/components/Footer";
 
 const Materialspage = () => {
   const { user, isSignedIn } = useUser();
@@ -24,7 +27,10 @@ const Materialspage = () => {
       <main className="relative bg-secondary-foreground flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
         <div className="max-w-7xl w-screen">
           <Navbar navigation={MaterialsNavLinks} />
+          <MaterialsHero />
           <ProgrammingBooks />
+          <MaterialsResources />
+          <Footer />
         </div>
       </main>
     </>

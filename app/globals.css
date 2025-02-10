@@ -157,6 +157,12 @@ button a {
   justify-content: center !important;
   align-items: center !important;
 }
+.material-hero-img {
+  width: 100% !important;
+  /* height: 400px !important; */
+  object-fit: cover !important;
+  overflow: hidden;
+}
 .profile_image {
   width: 400px !important;
   height: 400px !important;
