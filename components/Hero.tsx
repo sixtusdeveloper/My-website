@@ -98,7 +98,7 @@ const Home = () => {
       <div className="absolute inset-0 bg-black bg-opacity-70"></div>
 
       {/* <div className="relative flex flex-col-reverse lg:flex-row items-center justify-center w-full gap-8 px-4 lg:px-16"> */}
-      <div className="relative flex flex-row lg:flex-row items-center justify-start lg:justify-center w-full gap-8 px-4 lg:px-16">
+      <div className="relative flex flex-row lg:flex-row items-center justify-start lg:justify-center w-full gap-8 px-4 lg:px-14">
         {/* Left: Text Section */}
         <motion.div
           className="text-white max-w-3xl p-0 lg:py-8 mt-16 text-start lg:text-left"

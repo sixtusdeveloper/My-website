@@ -98,7 +98,7 @@ const Blog = () => {
           {currentPosts.map((post) => (
             <article
               key={post.id}
-              className="p-4 bg-secondary border rounded-lg"
+              className="p-4 bg-secondary border shadow-md rounded-lg"
             >
               <Image
                 src={post.imageUrl}

@@ -85,10 +85,14 @@ export const InfiniteMovingCards = ({
     const hasHalfStar = rating % 1 >= 0.5;
 
     for (let i = 0; i < fullStars; i++) {
-      stars.push(<FaStar key={`full-${i}`} className="text-yellow-500 text-lg" />);
+      stars.push(
+        <FaStar key={`full-${i}`} className="text-yellow-500 text-lg" />
+      );
     }
     if (hasHalfStar) {
-      stars.push(<FaStarHalfAlt key="half" className="text-yellow-500 text-lg" />);
+      stars.push(
+        <FaStarHalfAlt key="half" className="text-yellow-500 text-lg" />
+      );
     }
     return stars;
   };
@@ -145,13 +149,9 @@ export const InfiniteMovingCards = ({
                   </div>
                   <div className="text-base">
                     <p className="font-semibold mb-1 text-base">
-                      <a href="#">
-                        {item.name}
-                      </a>
+                      <a href="#">{item.name}</a>
                     </p>
-                    <p className="text-sm mb-0">
-                      {item.title}
-                    </p>
+                    <p className="text-sm mb-0">{item.title}</p>
                   </div>
                 </span>
               </div>
@@ -162,6 +162,5 @@ export const InfiniteMovingCards = ({
     </div>
   );
 };
-
 
 export default InfiniteMovingCards;

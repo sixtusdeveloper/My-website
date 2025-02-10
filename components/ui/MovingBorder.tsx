@@ -138,12 +138,3 @@ export const MovingBorder = ({
     </>
   );
 };
-
-
-
-
-
-
-
-
-
