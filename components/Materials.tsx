@@ -12,6 +12,7 @@ import {
 } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { UserIcon } from "lucide-react";
+import { redirectToSignIn } from "@clerk/nextjs/server";
 
 export default function CallToAction() {
   const { redirectToSignUp } = useClerk();
@@ -46,7 +47,7 @@ export default function CallToAction() {
 
   return (
     <>
-      <div className="flex flex-col sm:flex-row p-2 md:p-6 border justify-center items-center bg-gradient-to-r from-yellow-800 via-green-800 to-green-900 shadow-lg">
+      <div className="flex flex-col sm:flex-row p-2 md:p-6 border justify-center items-center bg-gradient-to-r from-yellow-600 via-green-800 to-purple-600 shadow-lg">
         <div className="flex-1 flex flex-col justify-center p-4 order-last sm:order-first">
           <h2 className="text-3xl font-bold text-white mb-3">
             Expand Your Programming Knowledge for Free!
@@ -104,7 +105,7 @@ export default function CallToAction() {
 
               {/* <SignedIn> */}
               <button
-                onClick={() => router.push("/sign-up")}
+                onClick={() => router.push("/sign-in")}
                 className="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-md w-[48%]"
               >
                 Let me log in
@@ -136,8 +137,7 @@ export default function CallToAction() {
               </p>
 
               <button
-                // onClick={() => router.push("/auth/sign-up")}
-                onClick={() => redirectToSignUp()}
+                onClick={() => router.push("/auth/sign-in")}
                 className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md w-full text-center"
               >
                 Log in Now
