@@ -88,7 +88,7 @@ const Home = () => {
   return (
     <section
       id="portfolio"
-      className="relative py-2 lg:px-1 px-0 md:px-4 md:py-10 flex items-center flex-wrap justify-start md:justify-center w-full min-h-screen lg:min-h-[500px] bg-cover bg-center bg-no-repeat"
+      className="relative py-2 lg:px-0 px-0 md:px-4 md:py-10 flex items-center flex-wrap justify-start md:justify-center w-full min-h-screen lg:min-h-[500px] bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `url(${backgroundImages[backgroundIndex]})`,
         opacity: fade ? 1 : 0.95, // Smooth fade-in & fade-out effect
@@ -97,10 +97,11 @@ const Home = () => {
     >
       <div className="absolute inset-0 bg-black bg-opacity-70"></div>
 
-      <div className="relative flex flex-col-reverse lg:flex-row items-center justify-center w-full gap-8 px-4 lg:px-16">
+      {/* <div className="relative flex flex-col-reverse lg:flex-row items-center justify-center w-full gap-8 px-4 lg:px-16"> */}
+      <div className="relative flex flex-row lg:flex-row items-center justify-start lg:justify-center w-full gap-8 px-4 lg:px-16">
         {/* Left: Text Section */}
         <motion.div
-          className="text-white max-w-2xl p-0 lg:py-8 mt-16 text-center lg:text-left"
+          className="text-white max-w-3xl p-0 lg:py-8 mt-16 text-start lg:text-left"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}

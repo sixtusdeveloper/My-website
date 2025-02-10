@@ -78,6 +78,7 @@ export const navigation = [
     { name: 'Contact', href: '#contact' },
   ];
   
+// Portfolio Nav Links
 export const portfolioNavLinks = [
     { name: 'Services', href: '#services' },
     { name: 'Experience', href: '#experience' },
@@ -86,6 +87,15 @@ export const portfolioNavLinks = [
     { name: 'Projects', href: '#projects' },
     { name: 'Clients', href: '#clients' },
   ]; 
+
+// Materials Nav Links
+export const MaterialsNavLinks = [
+    { name: 'Appointment', href: '#appointment' },
+    { name: 'Tutorials', href: '#tutorials' },
+    { name: 'Library', href: '#library' },
+  ]; 
+
+
 //======================= Blog Posts ==========================//
   export const blogPosts = [
     {
@@ -710,5 +720,69 @@ export const projects = [
     link: "https://login-system-app-vz4r.vercel.app/",
     category: "Frontend",
     githubLink: "https://github.com/sixtusdeveloper/Login-System-App/",
+  },
+];
+
+// Materials data 
+export const materials = [
+  {
+    id: 1,
+    title: "JavaScript Fundamentals",
+    category: "JavaScript",
+    url: "https://example.com/js",
+  },
+  {
+    id: 2,
+    title: "React Advanced Guide",
+    category: "React",
+    url: "https://example.com/react",
+  },
+  {
+    id: 3,
+    title: "Mastering TypeScript",
+    category: "TypeScript",
+    url: "https://example.com/ts",
+  },
+  {
+    id: 4,
+    title: "Mastering Next.js",
+    category: "Next.js",
+    url: "https://example.com/nextjs",
+  },
+  {
+    id: 5,
+    title: "Mastering Java",
+    category: "Java",
+    url: "https://example.com/java",
+  },
+  {
+    id: 6,
+    title: "Full-Stack Development",
+    category: "General",
+    url: "https://example.com/fullstack",
+  },
+  {
+    id: 7,
+    title: "Data Structures & Algorithms",
+    category: "CS Fundamentals",
+    url: "https://example.com/dsa",
+  },
+  {
+    id: 8,
+    title: "Python for Beginners",
+    category: "Python",
+    url: "https://example.com/python",
+  },
+  {
+    id: 9,
+    title: "Node.js in Depth",
+    category: "Node.js",
+    url: "https://example.com/nodejs",
+  },
+  {
+    id: 10,
+    title: "Advanced CSS Tricks",
+    category: "CSS",
+    url: "https://example.com/css",
   },
 ];
