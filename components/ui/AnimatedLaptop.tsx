@@ -56,7 +56,7 @@ export default function AnimatedLaptop(): JSX.Element {
           />
 
           {/* Animated Code Overlay */}
-          <div className="absolute top-2 left-[4.3rem] w-[19rem] h-[11.8rem] bg-black bg-opacity-80 p-6 rounded-lg text-green-400 font-mono text-sm">
+          <div className="absolute top-2 left-[4.3rem] w-[19rem] h-[11.8rem] bg-black bg-opacity-80 p-4 rounded-lg text-green-400 font-mono text-xs">
             <motion.pre
               animate={{ opacity: [0, 1] }}
               className="whitespace-pre-wrap"
