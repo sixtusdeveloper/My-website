@@ -120,6 +120,7 @@ export default function Navbar({
                 <UserButton />
               </div>
             </SignedIn>
+
             <SignedOut>
               <SignInButton>
                 <button className="inline-flex text-base font-medium px-3 py-2 rounded-lg bg-blue-500 hover:bg-indego-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">

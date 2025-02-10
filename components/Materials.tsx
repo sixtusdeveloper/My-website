@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { FaTimes, FaExclamationCircle } from "react-icons/fa";
-import { useUser, useClerk } from "@clerk/nextjs";
+import { useUser, useClerk, SignedIn } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 
 export default function CallToAction() {
@@ -37,8 +37,8 @@ export default function CallToAction() {
 
   return (
     <>
-      <div className="flex flex-col sm:flex-row p-2 md:p-6 border border-green-300 justify-center items-center rounded-tl-3xl rounded-br-3xl bg-gradient-to-r from-gray-800 via-gray-900 to-black shadow-lg">
-        <div className="flex-1 flex flex-col justify-center p-4">
+      <div className="flex flex-col sm:flex-row p-2 md:p-6 border border-green-300 justify-center items-center rounded-tl-3xl rounded-br-3xl bg-gradient-to-r from-yellow-800 via-green-800 to-green-900 shadow-lg">
+        <div className="flex-1 flex flex-col justify-center p-4 order-last sm:order-first">
           <h2 className="text-3xl font-bold text-white mb-3">
             Expand Your Programming Knowledge for Free!
           </h2>
@@ -58,11 +58,13 @@ export default function CallToAction() {
             Access Free E-Books
           </button>
         </div>
-        <div className="p-4 flex-1">
+        <div className="p-4 flex-1 order-first sm:order-last">
           <img
             src="/materials.png"
             alt="Programming Books"
             className="rounded-3xl"
+            width={500}
+            height={500}
           />
         </div>
       </div>
@@ -70,7 +72,7 @@ export default function CallToAction() {
       {/* Main Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-secondary p-6 rounded-lg shadow-lg w-[90%] max-w-md relative">
+          <div className="bg-secondary p-6 border rounded-lg shadow-lg w-[90%] max-w-md relative">
             <button onClick={closeModal} className="absolute top-3 right-3">
               <FaTimes className="hover:text-red-500" size={20} />
             </button>
@@ -90,12 +92,15 @@ export default function CallToAction() {
               >
                 I've Logged in
               </button>
+
+              {/* <SignedIn> */}
               <button
-                onClick={() => router.push("/signup")}
+                onClick={() => router.push("/auth/sign-up")}
                 className="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-md w-[48%]"
               >
                 Let me log in
               </button>
+              {/* </SignedIn> */}
             </div>
           </div>
         </div>
@@ -121,7 +126,7 @@ export default function CallToAction() {
                 Please sign in to access the free programming books.
               </p>
               <button
-                onClick={() => router.push("/signup")}
+                onClick={() => router.push("/auth/sign-up")}
                 className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md w-full text-center"
               >
                 Log in Now
