@@ -37,7 +37,7 @@ export default function CallToAction() {
 
   return (
     <>
-      <div className="flex flex-col sm:flex-row p-2 md:p-6 border border-green-300 justify-center items-center rounded-tl-3xl rounded-br-3xl bg-gradient-to-r from-yellow-800 via-green-800 to-green-900 shadow-lg">
+      <div className="flex flex-col sm:flex-row p-2 md:p-6 border justify-center items-center bg-gradient-to-r from-yellow-800 via-green-800 to-green-900 shadow-lg">
         <div className="flex-1 flex flex-col justify-center p-4 order-last sm:order-first">
           <h2 className="text-3xl font-bold text-white mb-3">
             Expand Your Programming Knowledge for Free!
