@@ -12,7 +12,6 @@ import {
 } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { UserIcon } from "lucide-react";
-import { redirectToSignIn } from "@clerk/nextjs/server";
 
 export default function CallToAction() {
   const { redirectToSignUp } = useClerk();
@@ -137,7 +136,7 @@ export default function CallToAction() {
               </p>
 
               <button
-                onClick={() => router.push("/auth/sign-in")}
+                onClick={() => router.push("/sign-in")}
                 className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md w-full text-center"
               >
                 Log in Now
