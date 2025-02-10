@@ -1,29 +1,9 @@
 import React from "react";
 
+import { resources } from "@/data/resources";
 const MaterialsResources = () => {
-  const resources = [
-    {
-      title: "JavaScript Mastery",
-      category: "Web Development",
-      desc: "An in-depth guide to JavaScript for all levels.",
-      rating: "⭐⭐⭐⭐⭐",
-    },
-    {
-      title: "Python for Data Science",
-      category: "Data Science",
-      desc: "Learn Python for data analysis and visualization.",
-      rating: "⭐⭐⭐⭐",
-    },
-    {
-      title: "React.js Guide",
-      category: "Frontend Development",
-      desc: "Learn React.js from scratch.",
-      rating: "⭐⭐⭐⭐⭐",
-    },
-  ];
-
   return (
-    <section id="resources" className="w-full py-16 px-8 bg-secondary">
+    <section id="featured-resources" className="w-full py-16 px-8 bg-secondary">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-8">Featured Resources</h2>
         <div className="grid md:grid-cols-3 gap-6">

@@ -90,9 +90,9 @@ export const portfolioNavLinks = [
 
 // Materials Nav Links
 export const MaterialsNavLinks = [
-    { name: 'Appointment', href: '#appointment' },
-    { name: 'Tutorials', href: '#tutorials' },
     { name: 'Library', href: '#library' },
+    { name: 'Tutorials', href: '#tutorials' },
+    { name: 'Featured Resources', href: '#featured-resources' },
   ]; 
 
 
