@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { tutorials } from "@/data/tutorials";
 
@@ -53,7 +55,7 @@ const Tutorials = () => {
           >
             Previous
           </button>
-          <span className="text-lg font-medium">
+          <span className="text-sm font-medium">
             Page {currentPage} of {totalPages}
           </span>
           <button

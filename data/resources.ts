@@ -17,4 +17,16 @@ export const resources = [
       desc: "Learn React.js from scratch.",
       rating: "⭐⭐⭐⭐⭐",
     },
+    {
+      title: "Next.js Crash Course",
+      category: "Frontend Development",
+      desc: "A quick guide to building websites with Next.js.",
+      rating: "⭐⭐⭐⭐⭐",
+    },
+    {
+      title: "Angular.js Guide",
+      category: "Frontend Development",
+      desc: "Learn Angular.js from scratch.",
+      rating: "⭐⭐⭐⭐⭐",
+    },
   ];

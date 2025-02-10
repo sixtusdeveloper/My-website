@@ -1,13 +1,24 @@
-import React from "react";
+"use client";
 
+import React, { useState } from "react";
 import { resources } from "@/data/resources";
+
+const ITEMS_PER_PAGE = 3;
+
 const MaterialsResources = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const totalPages = Math.ceil(resources.length / ITEMS_PER_PAGE);
+
+  const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
+  const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
+  const currentResources = resources.slice(indexOfFirstItem, indexOfLastItem);
+
   return (
     <section id="featured-resources" className="w-full py-16 px-8 bg-secondary">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-8">Featured Resources</h2>
         <div className="grid md:grid-cols-3 gap-6">
-          {resources.map((resource, index) => (
+          {currentResources.map((resource, index) => (
             <div key={index} className="p-6 border rounded-lg shadow-md">
               <h3 className="text-xl font-semibold">{resource.title}</h3>
               <p className="text-sm py-2">Category: {resource.category}</p>
@@ -17,6 +28,22 @@ const MaterialsResources = () => {
                 Check Out
               </button>
             </div>
+          ))}
+        </div>
+        {/* Pagination */}
+        <div className="flex justify-center mt-6 space-x-2">
+          {Array.from({ length: totalPages }, (_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentPage(index + 1)}
+              className={`px-4 py-2 rounded-full transition ${
+                currentPage === index + 1
+                  ? "bg-blue-600 text-white rounded-full border shadow-md"
+                  : "bg-gray-300 text-black hover:bg-gray-400 rounded-full border shadow-sm"
+              }`}
+            >
+              {index + 1}
+            </button>
           ))}
         </div>
       </div>

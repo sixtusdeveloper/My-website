@@ -18,11 +18,11 @@ const Materialspage = () => {
 
   //   TODO: Implement a redirect to the sign-in page if the user is not signed in
 
-  //   useEffect(() => {
-  //     if (!isSignedIn) {
-  //       router.push("/sign-in");
-  //     }
-  //   }, [isSignedIn, router]);
+  useEffect(() => {
+    if (!isSignedIn) {
+      router.push("/sign-in");
+    }
+  }, [isSignedIn, router]);
 
   return (
     <>
