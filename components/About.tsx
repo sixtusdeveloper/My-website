@@ -56,10 +56,10 @@ const About = () => {
   return (
     <section id="about" className="px-4 lg:py-10 bg-secondary w-full">
       <div className="max-w-6xl relative flex gap-6 align-center justify-center flex-wrap lg:flex-nowrap pt-8 lg:mt-2 mx-auto">
-        <div className="left-side-content flex justify-center mx-auto items-start w-full">
+        <div className="left-side-content flex justify-start mx-auto items-start w-full">
           <div className="w-full">
             <div className="flex justify-center items-center p-2 w-full relative">
-              <div className="rounded-lg bg-gradient-to-b from-purple-600 via-blue-500 to-yellow-600 p-[1px]">
+              <div className="rounded-lg shadow-md bg-gradient-to-b from-purple-600 via-blue-500 to-yellow-600 p-[1px]">
                 <Image
                   src="/profile-img.png"
                   alt="Profile image"
@@ -74,7 +74,7 @@ const About = () => {
               <div className="hidden md:flex items-center justify-center gap-4">
                 {/* Twitter Follow Button */}
                 <div
-                  className={`flex items-center text-sm space-x-2 py-2 px-4 rounded-lg ${
+                  className={`flex items-center text-sm space-x-2 py-2 px-4 rounded-lg shadow-md ${
                     isTwitterFollowed
                       ? "bg-secondary border"
                       : "bg-transparent border"
@@ -88,7 +88,7 @@ const About = () => {
 
                 {/* GitHub Follow Button */}
                 <div
-                  className={`flex items-center text-sm space-x-2 py-2 px-4 rounded-lg ${
+                  className={`flex items-center text-sm space-x-2 py-2 px-4 rounded-lg shadow-md ${
                     isGithubFollowed
                       ? "bg-secondary border"
                       : "bg-transparent border"
@@ -160,7 +160,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="right-side-content flex justify-center items-start w-full">
+        <div className="right-side-content flex justify-start items-start w-full">
           <div className="content-wrapper">
             <h2 className="font-extrabold font-sans justify-center items-center text-[2rem] lg:text-[2.6rem] leading-tight tracking-wide mb-4">
               <strong>
