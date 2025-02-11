@@ -163,6 +163,12 @@ button a {
   object-fit: cover !important;
   overflow: hidden;
 }
+.call-to-action-img {
+  width: 100% !important;
+  height: 400px !important;
+  object-fit: cover !important;
+  overflow: hidden;
+}
 .profile_image {
   width: 400px !important;
   height: 400px !important;

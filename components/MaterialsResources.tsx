@@ -39,10 +39,10 @@ const MaterialsResources = () => {
             <button
               key={index}
               onClick={() => setCurrentPage(index + 1)}
-              className={`px-4 py-2 rounded-full transition ${
+              className={`px-4 py-2 border shadow-md rounded-full transition ${
                 currentPage === index + 1
-                  ? "bg-blue-600 text-white rounded-full border shadow-md"
-                  : "bg-gray-300 text-black hover:bg-gray-400 rounded-full border shadow-sm"
+                  ? "hover:bg-indego-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
+                  : "bg-secondary"
               }`}
             >
               {index + 1}

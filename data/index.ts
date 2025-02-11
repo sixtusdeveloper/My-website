@@ -92,6 +92,7 @@ export const portfolioNavLinks = [
 export const MaterialsNavLinks = [
     { name: 'Library', href: '#library' },
     { name: 'Tutorials', href: '#tutorials' },
+    { name: 'My Blog', href: '#my-blog' },
     { name: 'Featured Resources', href: '#featured-resources' },
   ]; 
 

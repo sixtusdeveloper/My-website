@@ -5,11 +5,12 @@ import codingGuyImage from "@/public/coding-guy.png";
 
 const CallToAction = () => {
   return (
-    <section className="py-12 bg-secondary">
+    <section id="my-blog" className="py-12 bg-secondary">
       <div className="container mx-auto px-4 lg:px-6 flex flex-col-reverse md:flex-row items-center gap-8">
-        <div className="w-full md:w-1/2">
-          <h2 className="text-2xl sm:text-4xl font-extrabold font-sans text-start md:text-left mb-4">
-            Learn the Best Way by Sharing and Collaborating with Others
+        <div className="w-full md:w-1/2  pl-0 lg:pl-2 ">
+          <h2 className="font-extrabold font-sans text-start text-[2rem] lg:text-[2.5rem] leading-tight mb-4">
+            Learn Through One of the Most Effective Ways by Sharing and
+            Collaborating with Others
           </h2>
           <p className="text-base leading-snug mb-6">
             Sharing your knowledge not only helps others grow but also
@@ -26,8 +27,10 @@ const CallToAction = () => {
         <div className="w-full md:w-1/2 flex justify-center">
           <Image
             src={codingGuyImage}
+            width={600}
+            height={400}
             alt="A young man learning to code while sitting on a field"
-            className="rounded-lg shadow-lg w-full max-w-sm md:max-w-md"
+            className="call-to-action-img rounded-lg shadow-lg w-full max-w-sm md:max-w-md"
           />
         </div>
       </div>

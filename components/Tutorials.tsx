@@ -1,12 +1,24 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { tutorials } from "@/data/tutorials";
+import { AiOutlineClose } from "react-icons/ai";
+import Loader from "@/components/ui/Loader";
+
+interface Tutorial {
+  videoUrl: string;
+  title: string;
+  description: string;
+}
 
 const Tutorials = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const tutorialsPerPage = 3; // Adjust this based on your design
+  const [selectedTutorial, setSelectedTutorial] = useState<Tutorial | null>(
+    null
+  );
+  const [isLoading, setIsLoading] = useState(false);
 
+  const tutorialsPerPage = 3;
   const totalPages = Math.ceil(tutorials.length / tutorialsPerPage);
   const startIndex = (currentPage - 1) * tutorialsPerPage;
   const currentTutorials = tutorials.slice(
@@ -14,9 +26,34 @@ const Tutorials = () => {
     startIndex + tutorialsPerPage
   );
 
+  const openModal = (tutorial: Tutorial) => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setSelectedTutorial(tutorial);
+      setIsLoading(false);
+    }, 2000);
+  };
+
+  const closeModal = () => {
+    setSelectedTutorial(null);
+  };
+
+  // Disable page scroll when modal is open
+  useEffect(() => {
+    if (selectedTutorial) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [selectedTutorial]);
+
   return (
     <section id="tutorials" className="py-12 bg-secondary">
       <div className="container mx-auto px-4 lg:px-6">
+        {isLoading && <Loader />}
         <h2 className="text-3xl font-bold text-start md:text-center mb-8">
           Tutorials
         </h2>
@@ -30,19 +67,42 @@ const Tutorials = () => {
                 <iframe
                   src={tutorial.videoUrl}
                   title={tutorial.title}
-                  frameBorder="0"
+                  // frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className="w-full h-full rounded-lg"
                 ></iframe>
               </div>
               <h3 className="mt-4 px-2 text-lg font-semibold">
-                {tutorial.title}
+                {tutorial.title.length > 30
+                  ? tutorial.title.slice(0, 30) + "..."
+                  : tutorial.title}
               </h3>
+              <div className="flex justify-between mt-4 px-2">
+                <button
+                  onClick={() =>
+                    openModal({
+                      ...tutorial,
+                      description: tutorial.description || "",
+                    })
+                  }
+                  className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition"
+                >
+                  Watch Video
+                </button>
+                <a
+                  href="https://www.youtube.com/channel/YOUR_CHANNEL_ID?sub_confirmation=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition"
+                >
+                  Subscribe
+                </a>
+              </div>
             </div>
           ))}
         </div>
-        {/* Pagination Controls */}
+
         <div className="flex justify-center items-center gap-4 mt-8">
           <button
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
@@ -73,6 +133,48 @@ const Tutorials = () => {
           </button>
         </div>
       </div>
+
+      {/* Modal */}
+      {selectedTutorial && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-2 lg:p-4 z-50"
+          onClick={closeModal}
+        >
+          <div
+            className="bg-secondary p-4 lg:p-6 rounded-lg shadow-lg max-w-2xl w-full relative overflow-y-auto max-h-[90vh] no-scrollbar"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="absolute top-0 shadow-md right-0 text-base border rounded-full p-[2px] hover:text-red-500 z-40"
+              onClick={closeModal}
+            >
+              <AiOutlineClose size={16} />
+            </button>
+            {isLoading ? (
+              <div className="flex justify-center items-center h-64">
+                <div className="loader"></div>
+              </div>
+            ) : (
+              <>
+                <div className="relative w-full aspect-video">
+                  <iframe
+                    src={selectedTutorial.videoUrl + "?autoplay=1"}
+                    title={selectedTutorial.title}
+                    // frameBorder="0"  this is deplcated
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full rounded-lg"
+                  ></iframe>
+                </div>
+                <h3 className="mt-4 text-lg font-semibold">
+                  {selectedTutorial.title}
+                </h3>
+                <p className="mt-2">{selectedTutorial.description}</p>
+              </>
+            )}
+          </div>
+        </div>
+      )}
     </section>
   );
 };
