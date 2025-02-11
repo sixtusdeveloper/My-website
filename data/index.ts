@@ -15,6 +15,7 @@ import {
   FaServer,
   FaFeather,
 } from "react-icons/fa";
+import { FaCode } from "react-icons/fa6";
 import {
   SiTailwindcss,
   SiMongodb,
@@ -737,6 +738,9 @@ export const materials = [
     category: "JavaScript",
     pdfUrl: "/JavaScript-Fundamentals.pdf",
     docxUrl: "/JavaScript-Fundamentals.docx",
+    icon: [FaJsSquare],
+    desc: "An in-depth guide to JavaScript fundamentals.",
+    rating: "⭐⭐⭐⭐⭐",
   },
   {
     id: 2,
@@ -744,6 +748,9 @@ export const materials = [
     category: "React",
     pdfUrl: "",
     docxUrl: "",
+    icon: [FaReact],
+    desc: "Advanced tips and tricks for mastering React.",
+    rating: "⭐⭐⭐⭐⭐",
   },
   {
     id: 3,
@@ -751,6 +758,9 @@ export const materials = [
     category: "TypeScript",
     pdfUrl: "",
     docxUrl: "",
+    icon: [SiTypescript],
+    desc: "Best practices and tips for mastering TypeScript.",
+    rating: "⭐⭐⭐⭐⭐",
   },
   {
     id: 4,
@@ -758,6 +768,9 @@ export const materials = [
     category: "Next.js",
     pdfUrl: "",
     docxUrl: "",
+    icon: [SiNextdotjs],
+    desc: "Best practices and tips for mastering Next.js.",
+    rating: "⭐⭐⭐⭐⭐",
   },
   {
     id: 5,
@@ -765,13 +778,19 @@ export const materials = [
     category: "Java",
     pdfUrl: "",
     docxUrl: "",
+    icon: [FaJava],
+    desc: "An in-depth guide to mastering Java for all levels.",
+    rating: "⭐⭐⭐⭐⭐",
   },
   {
     id: 6,
     title: "Full-Stack Development",
-    category: "General",
+    category: "Fullstack",
     pdfUrl: "",
     docxUrl: "",
+    icon: [FaJsSquare, FaNodeJs, FaReact],
+    desc: "An in-depth guide to Full-stack development for all levels.",
+    rating: "⭐⭐⭐⭐⭐",
   },
   {
     id: 7,
@@ -779,6 +798,9 @@ export const materials = [
     category: "CS Fundamentals",
     pdfUrl: "",
     docxUrl: "",
+    icon: [FaCode],
+    desc: "Data Structures and Algorithms for all levels.",
+    rating: "⭐⭐⭐⭐⭐",
   },
   {
     id: 8,
@@ -786,6 +808,9 @@ export const materials = [
     category: "Python",
     pdfUrl: "",
     docxUrl: "",
+    icon: [ SiPython],
+    desc: "An in-depth guide to Python for all levels.",
+    rating: "⭐⭐⭐⭐⭐",
   },
   {
     id: 9,
@@ -793,6 +818,9 @@ export const materials = [
     category: "Node.js",
     pdfUrl: "",
     docxUrl: "",
+    icon: [FaNodeJs],
+    desc: "An in-depth guide to Node.js for all levels.",
+    rating: "⭐⭐⭐⭐⭐",
   },
   {
     id: 10,
@@ -800,5 +828,8 @@ export const materials = [
     category: "CSS",
     pdfUrl: "",
     docxUrl: "",
+    icon: [FaCss3Alt],
+    desc: "CSS tricks and tips for all levels.",
+    rating: "⭐⭐⭐⭐⭐",
   },
 ];

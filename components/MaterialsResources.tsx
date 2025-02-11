@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaFilePdf, FaFileWord, FaTimes } from "react-icons/fa";
 import { resources } from "@/data/resources";
 import { Button } from "@/components/ui/button";
@@ -59,6 +59,16 @@ const MaterialsResources = () => {
     document.body.removeChild(link);
     setTimeout(() => setDownloading(""), 2000);
   };
+  useEffect(() => {
+    if (showModal) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [showModal]);
 
   return (
     <section
@@ -69,12 +79,12 @@ const MaterialsResources = () => {
         <h2 className="text-3xl font-bold mb-8">Featured Resources</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {currentResources.map((resource, index) => (
-            <div key={index} className="p-6 border rounded-lg shadow-md">
+            <div key={index} className="p-4 border rounded-lg shadow-md">
               <div className="flex mx-auto justify-center items-center text-center p-2 mb-2">
                 {resource.icon.map((IconComponent, index) => (
                   <div
                     key={index}
-                    className="border shadow-md rounded-full bg-secondary w-20 h-20 flex justify-center items-center"
+                    className="border shadow-md rounded-full bg-secondary w-14 h-14 flex justify-center items-center"
                   >
                     <IconComponent className="icon text-yellow-400" size={34} />
                   </div>
@@ -117,7 +127,7 @@ const MaterialsResources = () => {
           onClick={() => setShowModal(false)}
         >
           <div
-            className="bg-secondary p-6 rounded-lg border shadow-lg max-w-md w-full text-center relative md:w-[700px] h-[70vh] overflow-y-auto no-scrollbar"
+            className="bg-secondary p-6 rounded-lg border shadow-lg max-w-md w-full text-center relative md:w-[700px] max-h-[70vh] overflow-y-auto no-scrollbar"
             onClick={(e) => e.stopPropagation()}
           >
             <FaTimes

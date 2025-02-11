@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const MaterialsHero = () => {
   return (
@@ -28,12 +29,14 @@ const MaterialsHero = () => {
             high-quality materials at no cost.
           </p>
           <button className="px-6 py-3 text-center font-sans bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-lg text-white shadow-lg hover:bg-purple-700 transition">
-            Browse Materials
+            <a href="#library" className="">
+              Browse Materials
+            </a>
           </button>
         </div>
 
         {/* Right Side - Hero Image */}
-        <div className="flex justify-center lg:justify-end mt-16">
+        <div className="flex justify-center lg:justify-end mt-10 md:mt-16">
           <Image
             src="/materials-hero-img.png"
             alt="Woman reading a programming book"
