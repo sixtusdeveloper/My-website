@@ -16,7 +16,7 @@ const Tutorials = () => {
 
   return (
     <section id="tutorials" className="py-12 bg-secondary">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 lg:px-6">
         <h2 className="text-3xl font-bold text-start md:text-center mb-8">
           Tutorials
         </h2>

@@ -31,7 +31,7 @@ const ProgrammingBooks = () => {
   return (
     <section id="library" className="py-10 bg-secondary w-full">
       <div className="relative mx-auto max-w-6xl w-screen lg:px-10 p-4">
-        <div className="my-10">
+        <div className="mt-6 md:my-8">
           <h1 className="text-3xl font-bold mb-4">Materials Library</h1>
           <p className="mb-4">Browse and download free programming e-books.</p>
 

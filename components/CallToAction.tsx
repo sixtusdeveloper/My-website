@@ -6,7 +6,7 @@ import codingGuyImage from "@/public/coding-guy.png";
 const CallToAction = () => {
   return (
     <section className="py-12 bg-secondary">
-      <div className="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-8">
+      <div className="container mx-auto px-4 lg:px-6 flex flex-col-reverse md:flex-row items-center gap-8">
         <div className="w-full md:w-1/2">
           <h2 className="text-2xl sm:text-4xl font-extrabold font-sans text-start md:text-left mb-4">
             Learn the Best Way by Sharing and Collaborating with Others
