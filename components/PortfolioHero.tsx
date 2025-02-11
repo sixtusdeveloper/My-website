@@ -350,7 +350,7 @@ const Hero = () => {
     <section
       id="hero"
       // className="relative py-10 px-6 lg:px-12 flex items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat"
-      className="relative py-2 lg:px-0 px-0 md:px-4 md:py-10 flex items-center flex-wrap justify-start md:justify-center w-full min-h-screen lg:min-h-[500px] bg-cover bg-center bg-no-repeat"
+      className="relative pt-8 lg:px-0 px-0 md:px-4 md:py-10 flex items-center flex-wrap justify-start md:justify-center w-full min-h-[85vh] lg:min-h-[500px] bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `url(${backgroundImages[backgroundIndex]})`,
         opacity: fade ? 1 : 0.95,
@@ -471,7 +471,7 @@ const Hero = () => {
       {isReadMoreLoading && <Loader />}
 
       <HireMeModal isOpen={isModalOpen} onClose={handleModalToggle}>
-        <div className="p-4 bg-secondary max-h-[80vh] overflow-auto no-scrollbar">
+        <div className="p-2 bg-secondary max-h-[80vh] overflow-auto no-scrollbar">
           <h2 className="text-2xl font-bold tracking-wide text-center">
             Hire Me Let's Work Together
           </h2>
@@ -521,7 +521,7 @@ const Hero = () => {
         isOpen={isReadMoreModalOpen}
         onClose={handleReadMoreModalToggle}
       >
-        <div className="p-4 max-h-[80vh] overflow-auto no-scrollbar">
+        <div className="p-2 max-h-[80vh] overflow-auto no-scrollbar">
           <Image
             src="/profile-img.png"
             alt="Sixtus Aondoakaa"

@@ -56,7 +56,7 @@ const HeroModal: React.FC<ModalProps> = ({
         <div className="flex flex-col items-center">
           <AiOutlineQuestionCircle className="text-yellow-600 text-4xl mb-4" />{" "}
           {/* Question icon */}
-          <p className="text-center tracking-wide leading-6 text-lg font-semibold mb-4">
+          <p className="text-center leading-6 text-base font-semibold mb-4">
             {message}
           </p>
           {children} {/* Render the buttons passed as children */}
