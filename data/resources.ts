@@ -16,6 +16,8 @@ export const resources = [
       category: "Web Development",
       desc: "An in-depth guide to JavaScript for all levels.",
       rating: "⭐⭐⭐⭐⭐",
+      pdfUrl: "/JavaScript-Fundamentals.pdf",
+      docxUrl: "/JavaScript-Fundamentals.docx",
     },
     {
       icon: [SiPython],
@@ -23,6 +25,8 @@ export const resources = [
       category: "Data Science",
       desc: "Learn Python for data analysis and visualization.",
       rating: "⭐⭐⭐⭐",
+      pdfUrl: "",
+      docxUrl: "",
     },
     {
       icon: [FaReact],
@@ -30,6 +34,8 @@ export const resources = [
       category: "Frontend Development",
       desc: "Learn React.js from scratch.",
       rating: "⭐⭐⭐⭐⭐",
+      pdfUrl: "",
+      docxUrl: "",
     },
     {
       icon: [SiNextdotjs],
@@ -37,6 +43,8 @@ export const resources = [
       category: "Frontend Development",
       desc: "A quick guide to building websites with Next.js.",
       rating: "⭐⭐⭐⭐⭐",
+      pdfUrl: "",
+      docxUrl: "",
     },
     {
       icon: [SiAngular],
@@ -44,5 +52,7 @@ export const resources = [
       category: "Frontend Development",
       desc: "Learn Angular.js from scratch.",
       rating: "⭐⭐⭐⭐⭐",
+      pdfUrl: "",
+      docxUrl: "",
     },
   ];

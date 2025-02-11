@@ -5,16 +5,19 @@ import { FaFilePdf, FaFileWord, FaTimes } from "react-icons/fa";
 import { resources } from "@/data/resources";
 import { Button } from "@/components/ui/button";
 import { FiFile } from "react-icons/fi";
-
 const ITEMS_PER_PAGE = 3;
 
 const MaterialsResources = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [showModal, setShowModal] = useState(false);
   const [selectedResource, setSelectedResource] = useState<{
+    icon?: any[];
+    title?: string;
+    category?: string;
+    desc?: string;
+    rating?: string;
     pdfUrl?: string;
     docxUrl?: string;
-    [key: string]: any;
   } | null>(null);
   const [downloading, setDownloading] = useState("");
 
@@ -36,9 +39,13 @@ const MaterialsResources = () => {
   };
 
   interface Resource {
+    icon?: any[];
+    title?: string;
+    category?: string;
+    desc?: string;
+    rating?: string;
     pdfUrl?: string;
     docxUrl?: string;
-    [key: string]: any;
   }
 
   const initiateDownload = (url: string | undefined, type: string) => {
@@ -110,7 +117,7 @@ const MaterialsResources = () => {
           onClick={() => setShowModal(false)}
         >
           <div
-            className="bg-secondary p-6 rounded-lg border shadow-lg max-w-md w-full text-center relative"
+            className="bg-secondary p-6 rounded-lg border shadow-lg max-w-md w-full text-center relative md:w-[700px] h-[70vh] overflow-y-auto no-scrollbar"
             onClick={(e) => e.stopPropagation()}
           >
             <FaTimes
@@ -119,10 +126,34 @@ const MaterialsResources = () => {
             />
             {selectedResource ? (
               <>
-                <h2 className="text-lg font-semibold mb-4">
+                <div className="flex justify-center items-center gap-4">
+                  {selectedResource.icon &&
+                    selectedResource.icon.map((IconComponent, index) => (
+                      <div
+                        key={index}
+                        className="border shadow-md rounded-full bg-secondary w-20 h-20 flex justify-center items-center"
+                      >
+                        <IconComponent
+                          className="icon text-yellow-400"
+                          size={34}
+                        />
+                      </div>
+                    ))}
+                </div>
+                <h3 className="text-xl font-semibold mt-4">
+                  {selectedResource.title}
+                </h3>
+                <p className="text-sm py-2">
+                  Category: {selectedResource.category}
+                </p>
+                <p className="text-sm leading-snug">{selectedResource.desc}</p>
+                <p className="text-yellow-500 text-lg">
+                  {selectedResource.rating}
+                </p>
+                <h2 className="text-sm font-semibold mb-2">
                   Below are two different ways you could download the document.
                 </h2>
-                <div className="flex justify-center gap-6">
+                <div className="flex justify-center gap-6 py-8">
                   <FaFilePdf className="text-red-600 text-6xl" />
                   <FaFileWord className="text-blue-600 text-6xl" />
                 </div>

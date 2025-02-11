@@ -93,7 +93,7 @@ const Tutorials = () => {
                   ? tutorial.title.slice(0, 80) + "..."
                   : tutorial.title}
               </h3>
-              <div className="flex justify-between mt-4 px-2">
+              <div className="flex justify-between mt-2 p-2">
                 <button
                   onClick={() =>
                     openModal({
