@@ -8,7 +8,7 @@ const CallToAction = () => {
     <section id="my-blog" className="py-12 bg-secondary">
       <div className="container mx-auto px-4 lg:px-6 flex flex-col-reverse md:flex-row items-center gap-8">
         <div className="w-full md:w-1/2  pl-0 lg:pl-2 ">
-          <h2 className="font-extrabold font-sans text-start text-[2rem] lg:text-[2.5rem] leading-tight mb-4">
+          <h2 className="font-bold font-sans text-start text-[1.5rem] lg:text-[2rem] leading-tight mb-4">
             Learn Through One of the Most Effective Ways by Sharing and
             Collaborating with Others
           </h2>
@@ -18,7 +18,11 @@ const CallToAction = () => {
             about your experiences, and collaborate with fellow learners. Start
             your blogging journey today!
           </p>
-          <Link href="/blog">
+          <Link
+            href="https://devjourney-blog-khaki.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="px-6 py-3 text-center font-sans bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-lg text-white">
               Visit My Blog
             </button>

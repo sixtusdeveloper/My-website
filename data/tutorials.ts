@@ -6,7 +6,7 @@ interface Tutorial {
 
 export const tutorials: Tutorial[] = [
     {
-      title: "Moniwalet - A currency conversion application",
+      title: "Moniwalet - A currency conversion application for converting between different currencies",
       videoUrl: "https://www.youtube.com/embed/5pC1cvSvK8g?si=oKZ2kzgigHPCm8j4",
       description: "Moniwalet is a currency conversion application that allows users to convert between different currencies. It is built with React, Tailwind CSS, and the ExchangeRate-API.",
     },

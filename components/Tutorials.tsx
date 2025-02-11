@@ -50,12 +50,28 @@ const Tutorials = () => {
     };
   }, [selectedTutorial]);
 
+  // Subscribe user
+  const handleSubscribe = () => {
+    const youtubeChannelUrl =
+      "https://www.youtube.com/channel/UC6SUbtunN-oA-ZRLvGdJvLw?sub_confirmation=1"; // Replace with your actual Channel ID
+    const popup = window.open(
+      youtubeChannelUrl,
+      "Subscribe",
+      "width=500,height=600"
+    );
+
+    if (!popup) {
+      // Fallback if popup is blocked
+      window.location.href = youtubeChannelUrl;
+    }
+  };
+
   return (
     <section id="tutorials" className="py-12 bg-secondary">
       <div className="container mx-auto px-4 lg:px-6">
         {isLoading && <Loader />}
         <h2 className="text-3xl font-bold text-start md:text-center mb-8">
-          Tutorials
+          YouTube Tutorials
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {currentTutorials.map((tutorial, index) => (
@@ -67,15 +83,14 @@ const Tutorials = () => {
                 <iframe
                   src={tutorial.videoUrl}
                   title={tutorial.title}
-                  // frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className="w-full h-full rounded-lg"
                 ></iframe>
               </div>
-              <h3 className="mt-4 px-2 text-lg font-semibold">
-                {tutorial.title.length > 30
-                  ? tutorial.title.slice(0, 30) + "..."
+              <h3 className="mt-4 px-2 text-base font-semibold">
+                {tutorial.title.length > 80
+                  ? tutorial.title.slice(0, 80) + "..."
                   : tutorial.title}
               </h3>
               <div className="flex justify-between mt-4 px-2">
@@ -90,14 +105,12 @@ const Tutorials = () => {
                 >
                   Watch Video
                 </button>
-                <a
-                  href="https://www.youtube.com/channel/YOUR_CHANNEL_ID?sub_confirmation=1"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  onClick={handleSubscribe}
                   className="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition"
                 >
                   Subscribe
-                </a>
+                </button>
               </div>
             </div>
           ))}
