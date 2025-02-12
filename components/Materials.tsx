@@ -151,7 +151,7 @@
 // }
 
 // Enhancing the User Experience with Modals
-("use client");
+"use client";
 
 import React, { useState, useEffect } from "react";
 import { FaTimes, FaExclamationCircle } from "react-icons/fa";
