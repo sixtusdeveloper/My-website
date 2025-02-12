@@ -223,6 +223,11 @@ button a {
     max-width: 600px;
   }
 }
+@media (min-width: 468px) {
+  .profile_image {
+    height: 370px !important;
+  }
+}
 
 .modal-img {
   width: 300px !important;
