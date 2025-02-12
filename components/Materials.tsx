@@ -362,7 +362,7 @@ export default function CallToAction() {
                 No, You Haven't Logged In!
               </h3>
               <p className="mb-4 text-center">
-                Please sign in to access the free programming books.
+                Please sign in to access the free programming e-books.
               </p>
               <button
                 onClick={() => router.push("/sign-in")}
