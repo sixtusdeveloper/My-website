@@ -76,6 +76,7 @@ export const navigation = [
     { name: 'Blog', href: '#blog' },
     { name: 'Testimonials', href: '#clients' },
     { name: 'Projects', href: '#projects' },
+    { name: 'E-Books', href: '#e-books' },
     { name: 'Contact', href: '#contact' },
   ];
   
