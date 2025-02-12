@@ -110,7 +110,7 @@ const About = () => {
               <div className="flex md:hidden items-center justify-center gap-4 mt-0">
                 {/* Twitter Follow Button */}
                 <div
-                  className={`flex items-center space-x-2 p-2 rounded-full ${
+                  className={`flex items-center space-x-2 p-2 rounded-full shadow-md transition ${
                     isTwitterFollowed
                       ? "bg-secondary border"
                       : "bg-transparent border"
@@ -120,13 +120,13 @@ const About = () => {
                     href="https://twitter.com/sixtusdev?ref_src=twsrc%5Etfw"
                     className="relative"
                   >
-                    <FaTwitter />
+                    <FaTwitter size={20} />
                   </a>
                 </div>
 
                 {/* GitHub Follow Button */}
                 <div
-                  className={`flex items-center space-x-2 p-2 rounded-full ${
+                  className={`flex items-center space-x-2 p-2 rounded-full shadow-md transition${
                     isGithubFollowed
                       ? "bg-secondary border"
                       : "bg-transparent border"
@@ -138,21 +138,19 @@ const About = () => {
                     className="relative"
                     rel="noopener noreferrer"
                   >
-                    <FaGithub />
+                    <FaGithub size={20} />
                   </a>
                 </div>
 
                 {/* Linked Follow Button */}
-                <div className="flex items-center space-x-2 p-2 rounded-full transition">
+                <div className="flex items-center space-x-2 p-2 rounded-full shadow-md transition">
                   <a
                     href="https://linkedin.com/in/sixtusushrey"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="border hover:transform rounded-full hover:scale-110"
+                    className="relative"
                   >
-                    <span className="flex items-center justify-center w-10 h-10 bg-secondary rounded-full">
-                      <FaLinkedin size={20} />
-                    </span>
+                    <FaLinkedin size={20} />
                   </a>
                 </div>
               </div>

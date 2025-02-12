@@ -223,9 +223,9 @@ button a {
     max-width: 600px;
   }
 }
-@media (min-width: 568px) {
+@media (max-width: 568px) {
   .profile_image {
-    height: 370px !important;
+    height: 360px !important;
   }
 }
 
