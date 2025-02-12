@@ -295,14 +295,14 @@ export default function CallToAction() {
               <div className="flex justify-between">
                 <button
                   onClick={handleLoggedInClick}
-                  className="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-md w-[48%]"
+                  className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md w-[48%]"
                 >
                   I've Logged in
                 </button>
 
                 <button
+                  className="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-md w-[48%]"
                   onClick={handleLoginClick}
-                  className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md w-[48%]"
                 >
                   Let me log in
                 </button>
