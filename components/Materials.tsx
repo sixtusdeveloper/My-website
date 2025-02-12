@@ -182,29 +182,56 @@ export default function CallToAction() {
     document.body.style.overflow = "auto";
   };
 
+  // When "Let me log in" is clicked
   const handleLoginClick = () => {
-    if (isSignedIn) {
-      setLoadingState("Please wait...");
+    setLoadingState("Please wait...");
+    setTimeout(() => {
+      setLoadingState("Checking user existence...");
       setTimeout(() => {
-        setLoadingState("Checking user existence...");
-        setTimeout(() => {
-          setLoadingState(null);
+        setLoadingState(null);
+        if (isSignedIn) {
           alert(
             `Hey ${user?.firstName} ${user?.lastName}, you're already logged in!`
           );
-        }, 2000);
-      }, 2000);
-    } else {
-      setLoadingState("Please wait...");
-      setTimeout(() => {
-        setLoadingState("Checking user existence...");
-        setTimeout(() => {
-          setLoadingState(null);
+        } else {
           router.push("/sign-in");
-        }, 2000);
+        }
       }, 2000);
+    }, 2000);
+  };
+
+  // When "I've Logged in" is clicked (Instant Redirect for Signed-in Users)
+  const handleLoggedInClick = () => {
+    if (isSignedIn) {
+      router.push("/pages/materials");
+    } else {
+      setShowErrorModal(true);
     }
   };
+
+  // const handleLoginClick = () => {
+  //   if (isSignedIn) {
+  //     setLoadingState("Please wait...");
+  //     setTimeout(() => {
+  //       setLoadingState("Checking user existence...");
+  //       setTimeout(() => {
+  //         setLoadingState(null);
+  //         alert(
+  //           `Hey ${user?.firstName} ${user?.lastName}, you're already logged in!`
+  //         );
+  //       }, 2000);
+  //     }, 2000);
+  //   } else {
+  //     setLoadingState("Please wait...");
+  //     setTimeout(() => {
+  //       setLoadingState("Checking user existence...");
+  //       setTimeout(() => {
+  //         setLoadingState(null);
+  //         router.push("/sign-in");
+  //       }, 2000);
+  //     }, 2000);
+  //   }
+  // };
 
   return (
     <>
@@ -241,8 +268,14 @@ export default function CallToAction() {
       </div>
 
       {isModalOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-secondary p-6 rounded-lg shadow-lg w-[90%] max-w-md relative">
+        <div
+          className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
+          onClick={closeModal}
+        >
+          <div
+            className="bg-secondary p-6 rounded-lg shadow-lg w-[90%] max-w-md relative"
+            onClick={(e) => e.stopPropagation()}
+          >
             <button onClick={closeModal} className="absolute top-2 right-2">
               <FaTimes className="hover:text-red-500" size={20} />
             </button>
@@ -283,7 +316,10 @@ export default function CallToAction() {
           className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
           onClick={closeErrorModal}
         >
-          <div className="bg-secondary p-6 rounded-lg shadow-lg w-[90%] max-w-md relative">
+          <div
+            className="bg-secondary p-6 rounded-lg shadow-lg w-[90%] max-w-md relative"
+            onClick={(e) => e.stopPropagation()}
+          >
             <button
               onClick={closeErrorModal}
               className="absolute top-2 right-2"
