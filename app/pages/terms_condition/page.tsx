@@ -5,7 +5,7 @@ const TermsCondition: React.FC = () => {
     <main className="bg-secondary lg:p-8 p-2">
       <div className="container mx-auto lg:px-10 p-2">
         <h1 className="text-2xl font-bold mb-4">Terms and Conditions</h1>
-        <p className="text-sm">Last updated: January 13, 2025</p>
+        <p className="text-sm">Last updated: Feb 12, 2025</p>
         <h2 className="text-lg font-bold mt-4">Introduction</h2>
         <p>
           I value your privacy and am committed to protecting your personal
