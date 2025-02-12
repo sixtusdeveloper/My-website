@@ -84,7 +84,7 @@ export default function CallToAction() {
             E-book Guide!
           </h2>
           <p className="text-gray-300 mb-5">
-            Join our learning community and access a vast collection of{" "}
+            Join my learning community and access a vast collection of{" "}
             <strong>free programming e-books</strong> designed to help you
             master coding. Whether you’re a beginner or an advanced developer,
             there's something here for everyone. Start your learning journey
@@ -116,7 +116,7 @@ export default function CallToAction() {
           onClick={closeModal}
         >
           <div
-            className="bg-secondary p-6 rounded-lg shadow-lg w-[90%] max-w-md relative"
+            className="bg-secondary p-6 rounded-lg shadow-lg w-[95%] max-w-md relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button onClick={closeModal} className="absolute top-2 right-2">
@@ -161,7 +161,7 @@ export default function CallToAction() {
           onClick={closeErrorModal}
         >
           <div
-            className="bg-secondary p-6 rounded-lg shadow-lg w-[90%] max-w-md relative"
+            className="bg-secondary p-6 rounded-lg shadow-lg w-[95%] max-w-md relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -194,7 +194,7 @@ export default function CallToAction() {
           className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
           onClick={closeSuccessModal}
         >
-          <div className="bg-secondary p-6 rounded-lg shadow-lg w-[90%] max-w-md relative">
+          <div className="bg-secondary p-6 rounded-lg shadow-lg w-[95%] max-w-md relative">
             <button
               onClick={closeSuccessModal}
               className="absolute top-2 right-2"
