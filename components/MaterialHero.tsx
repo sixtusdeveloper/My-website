@@ -1,9 +1,21 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
+import { useUser } from "@clerk/nextjs";
 
 const MaterialsHero = () => {
+  const { user, isSignedIn } = useUser();
+
+  // Get current hour
+  const currentHour = new Date().getHours();
+  let greeting = "Good evening";
+
+  if (currentHour < 12) {
+    greeting = "Good morning";
+  } else if (currentHour < 18) {
+    greeting = "Good afternoon";
+  }
+
   return (
-    // <section className="relative w-full bg-gray-100 dark:bg-black py-20 px-6 lg:px-10 flex items-center justify-center">
     <section
       className="relative py-2 lg:px-0 px-0 md:px-4 md:py-10 flex items-center flex-wrap justify-start md:justify-center w-full min-h-screen lg:min-h-[500px]"
       style={{
@@ -13,7 +25,25 @@ const MaterialsHero = () => {
       <div className="absolute inset-0 bg-black bg-opacity-70"></div>
       <div className="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
         {/* Left Side - Hero Content */}
-        <div className="text-left pt-8 space-y-6 text-white max-w-3xl p-4 md:p-8  lg:py-8 mt-16 lg:text-left">
+        <div className="text-left pt-8 space-y-6 text-white max-w-3xl p-4 md:p-8 lg:py-8 mt-16 lg:text-left">
+          {/* Dynamic Greeting */}
+          <motion.h3
+            className="text-sm py-2 tracking-wide sm:text-base"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+          >
+            {isSignedIn && user ? (
+              <>
+                👋 {greeting},{" "}
+                <span className="font-sans font-bold">
+                  {`${user.firstName || ""} ${user.lastName || ""}`.trim()}
+                </span>
+              </>
+            ) : (
+              "👋 Hi there!"
+            )}
+          </motion.h3>
           <h1 className="text-4xl lg:text-5xl font-sans font-extrabold text-white">
             Explore and Unlock Free Access To&nbsp;
             <span className="bg-gradient-to-r from-white via-blue-500 to-white bg-clip-text text-transparent">
