@@ -154,11 +154,11 @@ const Tutorials = () => {
           onClick={closeModal}
         >
           <div
-            className="bg-secondary p-2 lg:p-6 rounded-lg shadow-lg max-w-2xl w-full relative overflow-y-auto max-h-[90vh] no-scrollbar"
+            className="bg-secondary p-4 lg:p-6 rounded-lg shadow-lg max-w-2xl w-full relative overflow-y-auto max-h-[90vh] no-scrollbar"
             onClick={(e) => e.stopPropagation()}
           >
             <button
-              className="absolute top-1 right-1 md:top-2 md:right-2 text-base rounded-full hover:text-red-500 z-40"
+              className="absolute top-2 right-2 md:top-2 md:right-2 text-base rounded-full hover:text-red-500 z-50"
               onClick={closeModal}
             >
               <AiOutlineClose size={18} />

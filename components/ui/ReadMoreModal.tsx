@@ -26,7 +26,7 @@ const ReadMoreModal: React.FC<ReadMoreModalProps> = ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center">
+    <div className="fixed inset-0 z-50 flex items-center justify-center px-2">
       <div
         className="absolute inset-0 bg-black bg-opacity-75 backdrop-filter backdrop-blur-md"
         onClick={onClose}

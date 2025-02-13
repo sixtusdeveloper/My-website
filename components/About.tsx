@@ -54,8 +54,8 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="px-4 lg:py-10 bg-secondary w-full">
-      <div className="border rounded-lg shadow-sm max-w-6xl relative flex gap-6 align-center justify-center flex-wrap lg:flex-nowrap py-8 lg:my-2 mx-auto">
+    <section id="about" className="p-2 lg:py-10 bg-secondary w-full">
+      <div className="border rounded-lg shadow-sm max-w-6xl relative flex gap-6 align-center justify-center flex-wrap lg:flex-nowrap p-4 lg:p-6 lg:my-2 mx-auto">
         <div className="left-side-content flex justify-start mx-auto items-start w-full">
           <div className="w-full">
             <div className="flex justify-center items-center p-2 w-full relative">
