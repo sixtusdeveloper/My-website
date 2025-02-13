@@ -26,6 +26,16 @@ const Hero = () => {
 
   const totalPages = cvImages.length;
   const currentPageNumber = currentPage + 1;
+  // Get current hour
+  const currentHour = new Date().getHours();
+
+  let greeting = "Good evening";
+
+  if (currentHour < 12) {
+    greeting = "Good morning";
+  } else if (currentHour < 18) {
+    greeting = "Good afternoon";
+  }
 
   useEffect(() => {
     if (isModalOpen || isReadMoreModalOpen) {
@@ -103,15 +113,15 @@ const Hero = () => {
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <motion.h3
-            className="text-sm tracking-wider sm:text-base md:mt-8"
+            className="text-sm py-2 tracking-wide sm:text-base"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
             {isSignedIn && user ? (
               <>
-                👋 Welcome{" "}
-                <span className="font-bold">
+                👋 {greeting},{" "}
+                <span className="font-sans font-bold">
                   {`${user.firstName || ""} ${user.lastName || ""}`.trim()}
                 </span>
               </>
