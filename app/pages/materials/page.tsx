@@ -14,32 +14,34 @@ import CallToAction from "@/components/CallToAction";
 import ScrollIndicator from "@/components/ScrollIndicator";
 
 const Materialspage = () => {
-  const { user, isSignedIn } = useUser();
+  const { user, isSignedIn, isLoaded } = useUser();
   const router = useRouter();
 
-  //   TODO: Implement a redirect to the sign-in page if the user is not signed in
-
   useEffect(() => {
-    if (!isSignedIn) {
+    // Only redirect if authentication has fully loaded and the user is NOT signed in
+    if (isLoaded && !isSignedIn) {
       router.push("/sign-in");
     }
-  }, [isSignedIn, router]);
+  }, [isSignedIn, isLoaded, router]);
+
+  // Prevent rendering the page while auth status is still loading
+  if (!isLoaded) {
+    return null;
+  }
 
   return (
-    <>
-      <main className="relative bg-secondary-foreground flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
-        <div className="max-w-7xl w-screen">
-          <Navbar navigation={MaterialsNavLinks} />
-          <MaterialsHero />
-          <ProgrammingBooks />
-          <Tutorials />
-          <CallToAction />
-          <MaterialsResources />
-          <Footer />
-          <ScrollIndicator />
-        </div>
-      </main>
-    </>
+    <main className="relative bg-secondary-foreground flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
+      <div className="max-w-7xl w-screen">
+        <Navbar navigation={MaterialsNavLinks} />
+        <MaterialsHero />
+        <ProgrammingBooks />
+        <Tutorials />
+        <CallToAction />
+        <MaterialsResources />
+        <Footer />
+        <ScrollIndicator />
+      </div>
+    </main>
   );
 };
 
