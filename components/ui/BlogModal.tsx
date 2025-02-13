@@ -44,9 +44,9 @@ const HeroModal: React.FC<ModalProps> = ({
     <div
       ref={modalRef}
       onClick={handleOverlayClick}
-      className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-2 lg:p-4 z-50" // Darker overlay effect
+      className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-2 z-50" // Darker overlay effect
     >
-      <div className="bg-secondary border rounded-lg shadow-lg p-6 w-full max-w-sm mx-auto relative">
+      <div className="bg-secondary border rounded-lg shadow-lg p-4 w-full max-w-sm mx-auto relative">
         <button
           onClick={onClose}
           className="absolute top-2 right-2 z-40 border rounded-full p-2 cursor-pointer bg-secondary hover:text-red-600"

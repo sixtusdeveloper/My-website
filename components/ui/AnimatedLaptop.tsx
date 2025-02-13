@@ -323,6 +323,7 @@ export default function AnimatedLaptop(): JSX.Element {
             width={500}
             height={300}
             className="mx-auto"
+            priority // ✅ This tells Next.js to preload the image
           />
 
           {/* Animated Code Overlay */}
