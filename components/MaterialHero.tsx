@@ -44,7 +44,12 @@ const MaterialsHero = () => {
               "👋 Hi there!"
             )}
           </motion.h3>
-          <h1 className="text-4xl lg:text-5xl font-sans font-extrabold text-white">
+          <motion.h1
+            className="text-4xl lg:text-5xl font-sans font-extrabold text-white"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut" }}
+          >
             Explore and Unlock Free Access To&nbsp;
             <span className="bg-gradient-to-r from-white via-blue-500 to-white bg-clip-text text-transparent">
               Programming
@@ -52,17 +57,27 @@ const MaterialsHero = () => {
             <span className="bg-gradient-to-r from-yellow-600 via-blue-500 to-yellow-600 bg-clip-text text-transparent">
               E-Books
             </span>
-          </h1>
-          <p className="text-base md:text-lg text-gray-200 max-w-3xl">
+          </motion.h1>
+          <motion.p
+            className="text-base md:text-lg text-gray-200 max-w-3xl"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
             Discover a vast collection of programming resources, curated to help
             you master coding and technology. Enhance your skills with
             high-quality materials at no cost.
-          </p>
-          <button className="px-6 py-3 text-center font-sans bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-lg text-white shadow-lg hover:bg-purple-700 transition">
+          </motion.p>
+          <motion.button
+            className="px-6 py-3 text-center font-sans bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-lg text-white shadow-lg hover:bg-purple-700 transition"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.1, ease: "easeOut" }}
+          >
             <a href="#library" className="">
               Browse Materials
             </a>
-          </button>
+          </motion.button>
         </div>
 
         {/* Right Side - Hero Image */}
