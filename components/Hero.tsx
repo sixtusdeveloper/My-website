@@ -91,7 +91,7 @@ const Home = () => {
       className="relative pt-8 lg:px-0 px-0 md:px-4 md:py-10 flex items-center flex-wrap justify-start md:justify-center w-full min-h-[80vh] lg:min-h-[500px] bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `url(${backgroundImages[backgroundIndex]})`,
-        opacity: fade ? 1 : 0.99, // Smooth fade-in & fade-out effect
+        opacity: fade ? 1 : 1, // Smooth fade-in & fade-out effect
         transition: isPaused ? "none" : "opacity 3s ease-in-out", // Stop transition when paused
       }}
     >

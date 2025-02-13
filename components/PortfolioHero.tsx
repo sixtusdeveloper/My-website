@@ -94,11 +94,10 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      // className="relative py-10 px-6 lg:px-12 flex items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat"
       className="relative pt-8 lg:px-0 px-0 md:px-4 md:py-10 flex items-center flex-wrap justify-start md:justify-center w-full min-h-[80vh] lg:min-h-[500px] bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `url(${backgroundImages[backgroundIndex]})`,
-        opacity: fade ? 1 : 0.99,
+        opacity: fade ? 1 : 1,
         transition: isPaused ? "none" : "opacity 3s ease-in-out",
       }}
     >
