@@ -11,6 +11,7 @@ import MaterialsResources from "@/components/MaterialsResources";
 import Footer from "@/components/Footer";
 import Tutorials from "@/components/Tutorials";
 import CallToAction from "@/components/CallToAction";
+import ScrollIndicator from "@/components/ScrollIndicator";
 
 const Materialspage = () => {
   const { user, isSignedIn } = useUser();
@@ -35,6 +36,7 @@ const Materialspage = () => {
           <CallToAction />
           <MaterialsResources />
           <Footer />
+          <ScrollIndicator />
         </div>
       </main>
     </>
