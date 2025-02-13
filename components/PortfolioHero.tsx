@@ -113,7 +113,7 @@ const Hero = () => {
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <motion.h3
-            className="text-sm p-2 tracking-wide sm:text-base"
+            className="text-sm py-2 tracking-wide sm:text-base"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
