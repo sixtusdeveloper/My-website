@@ -193,7 +193,7 @@ const Blog = () => {
       {selectedPost && !isLoading && (
         <div
           onClick={handleModalClick}
-          className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50 px-2"
+          className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
           style={{ pointerEvents: "auto" }}
         >
           <div className="bg-secondary border p-2 rounded-lg shadow-lg max-w-2xl w-full max-h-[90vh] relative overflow-y-auto no-scrollbar">

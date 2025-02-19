@@ -274,7 +274,7 @@ const Hero = () => {
             className="rounded-full border-2 mx-auto profile_img"
             style={{ width: "auto", height: "auto" }}
           />
-          <h2 className="text-base lg:text-lg mb-1 font-semibold tracking-wide text-center">
+          <h2 className="mt-2 text-base lg:text-lg sm:mb-1 font-semibold tracking-wide text-center">
             Sixtus Aondoakaa
           </h2>
           <p className="text-sm font-medium text-center">Software Engineer</p>
