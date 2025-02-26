@@ -276,7 +276,7 @@ export const experiences = [
     location: "Online and Locally",
     description: "Creating educational content on software development and programming.",
     fullDesc: "Creating educational content on software development and programming, with a focus on web development, front-end and back-end technologies, and best practices. Developing tutorials, courses, and live streams to help learners build practical skills and advance their careers. Covering a wide range of topics, including JavaScript, React, Node.js, TypeScript, and more. Engaging with the community through live Q&A sessions, code reviews, and collaboration on open-source projects.",
-    technologies: ["Angular", "JavaScript", "Java, Spring Boot, PostgreSQL, React", "Node.js", "TypeScript", "HTML", "CSS", "Git", "GitHub", "VS Code", "Figma", "Adobe XD", "Netlify", "Vercel", "Heroku", "Firebase", "MongoDB", "MySQL", "RESTful APIs", "GraphQL", "WebSockets", "PWA", "SEO", "Google Analytics", "Google Tag Manager", "Google Optimize", "Hotjar", "Figma", "Sketch", "InVision", "Jira", "Trello", "Slack", "Microsoft Teams", "Zoom", "Google Meet", "Discord", "Notion", "Google Workspace", "Microsoft Office", "Adobe Creative Cloud", "Canva"],
+    technologies: ["Angular", "JavaScript", "Java", "Spring", "Boot", "PostgreSQL", "React", "Node.js", "TypeScript", "HTML", "CSS", "Git", "GitHub", "VS Code", "Figma", "Adobe XD", "Netlify", "Vercel", "Heroku", "Firebase", "MongoDB", "MySQL", "RESTful APIs", "GraphQL", "WebSockets", "PWA", "SEO", "Google Optimize", "Hotjar", "Figma", "Canva"],
   },  
   {
     date: "March 2023 - November 2024",
@@ -288,7 +288,7 @@ export const experiences = [
     location: "United Kingdom",
     description: "Led the Design and implementation of software applications and APIs for clients across diverse industries.",
     fullDesc: "Led the Design and implementation of software applications and APIs for clients across diverse industries, including e-commerce, healthcare, and education. Collaborated with cross-functional teams to deliver high-quality products and services, leveraging agile methodologies and best practices. Conducted code reviews, implemented automated testing, and optimized application performance to ensure scalability and reliability. Contributed to the design and architecture of web applications, APIs, and databases, utilized modern technologies such as Java, Spring Boot, React, TypeScript, Node.js, MongoDB, Express, Apwrite and TypeScript.",
-    technologies: ["Java", "Angular", "Spring Boot", "PostgreSQL", "React", "TypeScript", "Next.js", "Node.js", "PHP", "MySQL", "Express", "Docker", "AWS", "Stripe", "OAuth", "RESTful APIs", "WebSockets", "Shadcn", "Framer-motion", "GitLab CI/CD", "GutHub", "Google Analytics", "Google Optimize", "Slack", "Microsoft Teams", "Zoom", "Google Meet", "Discord", "Figma", "Aceternity UI", "Tailwindcss", "Appwrite", "Clerk"],
+    technologies: ["Java", "Angular", "Spring Boot", "PostgreSQL", "React", "TypeScript", "Next.js", "Node.js", "PHP", "MySQL", "Express", "Docker", "AWS", "Stripe", "OAuth", "RESTful APIs", "WebSockets", "Shadcn", "Framer-motion", "GitLab CI/CD", "GutHub", "Slack", "Microsoft Teams", "Zoom", "Google Meet", "Discord", "Figma", "Aceternity UI", "Tailwindcss", "Appwrite", "Clerk"],
   },  
   {
     date: "June 2024 - September 2024",
