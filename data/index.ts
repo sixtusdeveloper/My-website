@@ -276,56 +276,21 @@ export const experiences = [
     location: "Online and Locally",
     description: "Creating educational content on software development and programming.",
     fullDesc: "Creating educational content on software development and programming, with a focus on web development, front-end and back-end technologies, and best practices. Developing tutorials, courses, and live streams to help learners build practical skills and advance their careers. Covering a wide range of topics, including JavaScript, React, Node.js, TypeScript, and more. Engaging with the community through live Q&A sessions, code reviews, and collaboration on open-source projects.",
-    technologies: ["Angular", "JavaScript", "Java", "Spring", "Boot", "PostgreSQL", "React", "Node.js", "TypeScript", "HTML", "CSS", "Git", "GitHub", "VS Code", "Figma", "Adobe XD", "Netlify", "Vercel", "Heroku", "Firebase", "MongoDB", "MySQL", "RESTful APIs", "GraphQL", "WebSockets", "PWA", "SEO", "Google Optimize", "Hotjar", "Figma", "Canva"],
+    technologies: ["React", "Nextjs", "TypeScript", "Angular", "JavaScript", "HTML", "CSS", "Java", "Spring Boot", "PostgreSQL", "React", "Node.js", "Git", "GitHub", "VS Code", "Netlify", "Vercel", "Firebase", "MongoDB", "MySQL", "RESTful APIs", "GraphQL", "WebSockets"],
   },  
   {
-    date: "March 2023 - November 2024",
+    date: "March 2023 - Present",
     title: "Software Engineer",
     img: "/profile.jpg",
-    organization: "Upwork",
+    organization: "Self-employed",
     type: "Remote",
     nature: "Contract",
-    location: "United Kingdom",
-    description: "Led the Design and implementation of software applications and APIs for clients across diverse industries.",
-    fullDesc: "Led the Design and implementation of software applications and APIs for clients across diverse industries, including e-commerce, healthcare, and education. Collaborated with cross-functional teams to deliver high-quality products and services, leveraging agile methodologies and best practices. Conducted code reviews, implemented automated testing, and optimized application performance to ensure scalability and reliability. Contributed to the design and architecture of web applications, APIs, and databases, utilized modern technologies such as Java, Spring Boot, React, TypeScript, Node.js, MongoDB, Express, Apwrite and TypeScript.",
-    technologies: ["Java", "Angular", "Spring Boot", "PostgreSQL", "React", "TypeScript", "Next.js", "Node.js", "PHP", "MySQL", "Express", "Docker", "AWS", "Stripe", "OAuth", "RESTful APIs", "WebSockets", "Shadcn", "Framer-motion", "GitLab CI/CD", "GutHub", "Slack", "Microsoft Teams", "Zoom", "Google Meet", "Discord", "Figma", "Aceternity UI", "Tailwindcss", "Appwrite", "Clerk"],
+    location: "Lagos, Nigeria",
+    description: "Develop custom, scalable and modern software web applications for clients both local and internation that serves their business and personal purposes",
+    fullDesc: "Develop custom, scalable and modern software web applications for clients both local and internation that serves their business and personal purposes.",
+    technologies: ["React", "TypeScript", "Next.js", "Node.js", "PHP", "Java", "Angular", "Spring Boot", "PostgreSQL", "MySQL", "Express", "Docker", "AWS", "Stripe", "OAuth", "RESTful APIs", "WebSockets", "Shadcn", "Framer-motion", "GitLab CI/CD", "GutHub", "Material UI", "Bootstrap", "Flowbite", "Aceternity UI", "Tailwindcss", "Appwrite", "Clerk"],
   },  
-  {
-    date: "June 2024 - September 2024",
-    title: "Software Engineer",
-    img: "/profile.jpg",
-    organization: "SkilledUp Life",
-    type: "Remote",
-    nature: "Volunteer",
-    location: "Ontario, Canada",  
-    description: "Assisted in the implementation and development of enterprise ready software solutions for clients across various industries",
-    fullDesc: "Assisted in developing enterprise-ready software solutions for clients across various industries, including e-commerce, healthcare, and education. Collaborated with cross-functional teams to deliver high-quality products and services, leveraging agile methodologies and best practices. Conducted code reviews, implemented automated testing, and optimized application performance to ensure scalability and reliability. Contributed to the design and architecture of web applications, APIs, and databases, utilized modern technologies such as Java, Spring Boot, Angular, Postgresql, React, Next.js, Node.js, MongoDB, Clerk, Appwrite and TypeScript.",
-    technologies: ["Java", "Spring Boot", "PostgreSQL", "Angular", "React", "Next.js", "Node.js", "MongoDB", "PHP", "MySQL", "Express", "TypeScript", "Tailwind CSS", "Firebase", "Clerk", "Appwrite", "Vercel", "AWS", "Aceternity UI", "Chakra", "RESTful APIs", "GraphQL", "WebSockets", "GitHub", "GitLab CI/CD", "OAuth",  "Google Analytics", "Google Tag Manager", "Google Optimize", "Hotjar", "Figma", "Adobe XD", "Sketch", "InVision", "Jira", "Trello", "Slack", "Microsoft Teams", "Zoom", "Google Meet", "Discord", "Notion", "Google Workspace", "Microsoft Office", "Adobe Creative Cloud", "Canva", "Stripe", "tawk to"],
-  },
-  {
-    date: "Feb 2020 - Feb 2023",
-    title: "Full-stack Developer",
-    img: "/profile.jpg",
-    organization: "Upwork",
-    type: "Remote",
-    nature: "Contract",
-    location: "United Kingdom",
-    description: "Worked on web applications and APIs for clients across various industries",
-    fullDesc: "Led the development of software solutions for clients across various industries, including e-commerce, healthcare, and education. Collaborated with cross-functional teams to deliver high-quality products and services, leveraging agile methodologies and best practices. Conducted code reviews, implemented automated testing, and optimized application performance to ensure scalability and reliability. Contributed to the design and architecture of web applications, APIs, and databases, utilizing modern technologies such as React, Next.js, Node.js, MongoDB, Clerk, Appwrite, Stripe, TypeScript and many more...",
-    technologies: ["React", "Next.js", "Node.js", "MongoDB", "Express", "TypeScript", "Tailwind CSS", "Firebase", "Clerk", "Appwrite", "Vercel", "AWS", "MySQL", "Aceternity UI", "Chakra", "RESTful APIs", "GraphQL", "WebSockets", "GitHub", "GitLab CI/CD", "OAuth",  "Google Analytics", "Google Tag Manager", "Google Optimize", "Hotjar", "Figma", "Adobe XD", "Sketch", "InVision", "Jira", "Trello", "Slack", "Microsoft Teams", "Zoom", "Google Meet", "Discord", "Notion", "Google Workspace", "Microsoft Office", "Adobe Creative Cloud", "Canva"],
-  },
-  {
-    date: "Jan 2022 - Aug 2023",
-    title: "Software Specialist",
-    img: "/profile.jpg",
-    organization: "Freelancer",
-    type: "Remote",
-    nature: "Contract",
-    location: "Stockholm County, Sweden",
-    description: "Contributed to the development and maintenance of software solutions for clients across diverse industries",
-    fullDesc: "Assisted in performing software development tasks, including coding, testing, debugging, and maintenance. Collaborated with team members to design and implement software solutions that met client requirements and specifications. Utilized agile methodologies to deliver high-quality products within project timelines. Conducted code reviews, identified bugs and issues, and implemented fixes to ensure optimal performance. Developed web applications, APIs, and databases using modern technologies such as React, Node.js, MongoDB and TypeScript.",
-    technologies: ["React", "Next.js", "Node.js", "MongoDB", "TypeScript", "Tailwind CSS", "Firebase", "Aceternity UI", "Vercel", "AWS", "Docker", "Kubernetes", "Jenkins", "GitHub", "GitLab CI/CD", "OAuth", "JWT", "RESTful APIs", "PostgreSQL", "GraphQL", "WebSockets", "Oracle", "PWA", "SEO", "Google Analytics", "Google Tag Manager", "Google Optimize", "Hotjar", "Figma", "Adobe XD", "Sketch", "InVision", "Zeplin", "Jira", "Trello", "Slack", "Microsoft Teams", "Zoom", "Google Meet", "Discord", "Notion", "Asana", "Monday.com", "Airtable", "Google Workspace", "Microsoft Office", "Adobe Creative Cloud", "Canva", "Trello", "Slack", "Microsoft Teams", "Zoom", "Google Meet", "Discord", "Notion", "Asana", "Monday.com", "Airtable", "Google Workspace", "Microsoft Office", "Adobe Creative Cloud", "Canva"],
-  },
+
 ];
 
 //================================== Education data ==============================//
@@ -518,7 +483,6 @@ export const cvImages =
 
   "/certificates/sixtus-resume-page1.jpg",
   "/certificates/sixtus-resume-page2.jpg",
-  "/certificates/sixtus-resume-page3.jpg",
 
 ];
 
