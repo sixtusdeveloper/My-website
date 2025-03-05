@@ -116,7 +116,7 @@ export default function Navbar({
             <SignedIn>
               <div className="flex items-center gap-4">
                 {user && (
-                  <span className="hidden lg:block text-sm font-semibold bg-gradient-to-r from-yellow-600 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+                  <span className="hidden lg:block text-sm font-semibold bg-gradient-to-r from-pink-600 via-blue-500 to-yellow-600 bg-clip-text text-transparent">
                     {user.firstName}
                   </span>
                 )}
@@ -126,7 +126,7 @@ export default function Navbar({
 
             <SignedOut>
               <SignInButton>
-                <button className="inline-flex text-base font-medium px-3 py-2 rounded-lg bg-blue-500 hover:bg-indego-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
+                <button className="inline-flex text-base font-medium px-3 py-2 rounded-none bg-blue-500 hover:bg-indego-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
                   <UserIcon className="mr-1 h-5 w-5 text-white" /> Sign In
                 </button>
               </SignInButton>
@@ -190,7 +190,7 @@ export default function Navbar({
                       <UserButton />
 
                       {user && (
-                        <span className="text-sm font-semibold bg-gradient-to-r from-yellow-500 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+                        <span className="text-sm font-semibold bg-gradient-to-r from-pink-600 via-blue-500 to-yellow-600 bg-clip-text text-transparent">
                           {user.firstName}
                         </span>
                       )}
@@ -198,7 +198,7 @@ export default function Navbar({
                   </SignedIn>
                   <SignedOut>
                     <SignInButton>
-                      <button className="inline-flex text-base font-medium px-3 py-2 rounded-lg hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
+                      <button className="inline-flex text-base font-medium px-3 py-2 rounded-none hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
                         <UserIcon className="mr-1 h-5 w-5 text-white" /> Sign In
                       </button>
                     </SignInButton>
