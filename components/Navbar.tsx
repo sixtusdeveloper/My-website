@@ -68,7 +68,10 @@ export default function Navbar({
     <>
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-colors duration-500 ${
-          scrolling ? "bg-secondary" : "bg-black/50 text-white"
+          // scrolling ? "bg-secondary" : "bg-black/50 text-white"
+          scrolling
+            ? "bg-secondary dark:bg-gray-900 border-b"
+            : "bg-black/50 text-white"
         }`}
       >
         <nav
@@ -93,11 +96,11 @@ export default function Navbar({
               <a
                 key={item.name}
                 href={`#${item.href.substring(1)}`}
-                className={`text-base hover:text-purple-800 tracking-wide font-semibold font-sans cursor-pointer ${
+                className={`text-sm hover:text-pink-700 tracking-wide font-semibold cursor-pointer ${
                   activeSection === item.href.substring(1)
-                    ? "bg-gradient-to-r from-yellow-500 via-blue-500 to-yellow-600 bg-clip-text text-transparent"
-                    : "text-default"
-                } hover:text-primary`}
+                    ? "hover:text-pink-700 bg-gradient-to-r from-pink-600 via-pink-500 to-yellow-600 font-semibold bg-clip-text text-transparent"
+                    : "text-default hover:text-pink-700"
+                } hover:text-pink-700`}
                 onClick={(e) => {
                   e.preventDefault();
                   handleClick(item.href);

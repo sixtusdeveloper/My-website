@@ -6,14 +6,9 @@ import React from "react";
 const Clients = () => {
   return (
     <div className="py-8 bg-secondary" id="clients">
-      <h1 className="font-extrabold font-sans text-start md:text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider p-8 lg:p-4">
-        <strong>
-          Kind words from
-          <span className="bg-gradient-to-r from-yellow-600 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-            &nbsp;Satisfied Clients
-          </span>
-        </strong>
-      </h1>
+      <h2 className="p-8 lg:p-4 text-3xl md:text-4xl mb-8 text-center font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
+        Kind words from Satisfied Clients
+      </h2>
       <div className="flex flex-col items-center mt-8 lg:mt-10">
         <InfiniteMovingCards
           items={testimonials}

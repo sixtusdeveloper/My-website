@@ -134,14 +134,16 @@ const Home = () => {
           >
             <strong>
               I&apos;m{" "}
-              <span className="bg-gradient-to-r from-white via-blue-500 to-white bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-white via-yellow-300 to-white bg-clip-text text-transparent">
                 Sixtus
               </span>
               , a Passionate{" "}
-              <span className="bg-gradient-to-r from-yellow-600 via-blue-500 to-yellow-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">
                 Software Engineer
               </span>{" "}
-              Crafting Innovative Solutions
+              <span className="bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">
+                Crafting Innovative Solutions
+              </span>
             </strong>
           </motion.h1>
 
@@ -166,14 +168,14 @@ const Home = () => {
             transition={{ duration: 1.1, ease: "easeOut" }}
           >
             <a onClick={openHeroModal}>
-              <Button className="h-12 px-4 py-3 cursor-pointer text-base rounded-lg hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white font-sans">
+              <Button className="h-12 px-6 py-3 rounded-none bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
                 Visit My Portfolio
               </Button>
             </a>
             <a onClick={openBlogModal}>
               <MagicButton
                 title={isBlogLoading ? "Loading..." : "Visit My Blog"}
-                otherClasses="text-[1.4rem] flex justify-center rounded-full items-center text-base font-sans text-center"
+                otherClasses="text-[1.4rem] flex justify-center rounded-none items-center text-base font-sans text-center"
               />
             </a>
           </motion.div>

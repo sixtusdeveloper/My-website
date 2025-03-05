@@ -12,6 +12,9 @@ import Testimonials from "@/components/PortfolioClients";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Materials from "@/components/Materials";
+import Services from "@/components/Services";
+import FAQ from "@/components/FAQ";
+import ExploreMoreCallToAction from "@/components/ExploreMoreCallToAction";
 
 export default function Home() {
   return (
@@ -20,11 +23,14 @@ export default function Home() {
         <NavBar navigation={navigation} />
         <Hero />
         <About />
+        <Services />
         <Blog />
         <Testimonials />
         <Projects />
         <Materials />
+        <FAQ />
         <Contact />
+        <ExploreMoreCallToAction />
         <Footer />
         <ScrollIndicator />
       </div>

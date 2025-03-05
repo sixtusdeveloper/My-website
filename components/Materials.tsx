@@ -76,7 +76,7 @@ export default function CallToAction() {
     <>
       <div
         id="e-books"
-        className="flex flex-col sm:flex-row p-2 md:p-6 border justify-center items-center bg-gradient-to-r from-yellow-800 via-green-800 to-purple-800 shadow-lg"
+        className="flex flex-col sm:flex-row p-2 md:p-6 border justify-center items-center bg-gradient-to-r from-yellow-700 via-green-800 to-purple-800 shadow-lg"
       >
         <div className="flex-1 flex flex-col justify-center p-4 order-last sm:order-first">
           <h2 className="text-3xl font-bold text-white mb-3">

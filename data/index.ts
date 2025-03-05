@@ -72,11 +72,12 @@ import {
 //============================= Home Page Navigation links ============================//
 export const navigation = [
     { name: 'About', href: '#about' },
-    { name: 'Portfolio', href: '#portfolio' },
+    { name: 'Services', href: '#services' },
     { name: 'Blog', href: '#blog' },
     { name: 'Testimonials', href: '#clients' },
     { name: 'Projects', href: '#projects' },
     { name: 'E-Books', href: '#e-books' },
+    { name: 'FAQ', href: '#faq' },
     { name: 'Contact', href: '#contact' },
   ];
   

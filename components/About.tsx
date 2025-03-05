@@ -54,8 +54,8 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="p-2 lg:py-10 bg-secondary w-full">
-      <div className="border rounded-lg shadow-sm max-w-6xl relative flex gap-6 align-center justify-center flex-wrap lg:flex-nowrap p-4 lg:p-6 lg:my-2 mx-auto">
+    <section id="about" className="p-2 lg:py-2 bg-secondary w-full">
+      <div className="border bg-secondar dark:bg-gray-900 rounded-lg shadow-sm max-w-6xl relative flex gap-6 align-center justify-center flex-wrap lg:flex-nowrap p-4 lg:p-6 lg:my-2 mx-auto">
         <div className="left-side-content flex justify-start mx-auto items-start w-full">
           <div className="w-full">
             <div className="flex justify-center items-center p-2 w-full relative">
@@ -65,7 +65,7 @@ const About = () => {
                   alt="Profile image"
                   width={300}
                   height={300}
-                  className="rounded-lg profile_image"
+                  className="rounded-sm shadow-md profile_image"
                 />
               </div>
             </div>
@@ -76,7 +76,7 @@ const About = () => {
                 <div
                   className={`flex items-center text-sm space-x-2 py-2 px-4 rounded-lg shadow-md ${
                     isTwitterFollowed
-                      ? "bg-secondary border"
+                      ? "bg-secondary dark:bg-gray-800 border"
                       : "bg-transparent border"
                   } transition`}
                 >
@@ -90,7 +90,7 @@ const About = () => {
                 <div
                   className={`flex items-center text-sm space-x-2 py-2 px-4 rounded-lg shadow-md ${
                     isGithubFollowed
-                      ? "bg-secondary border"
+                      ? "bg-secondary dark:bg-gray-800 border"
                       : "bg-transparent border"
                   } transition`}
                 >
@@ -112,7 +112,7 @@ const About = () => {
                 <div
                   className={`flex items-center space-x-2 p-2 rounded-full shadow-md transition ${
                     isTwitterFollowed
-                      ? "bg-secondary border"
+                      ? "bg-secondary dark:bg-gray-800 border"
                       : "bg-transparent border"
                   } transition`}
                 >
@@ -128,7 +128,7 @@ const About = () => {
                 <div
                   className={`flex items-center space-x-2 p-2 rounded-full shadow-md transition${
                     isGithubFollowed
-                      ? "bg-secondary border"
+                      ? "bg-secondary dark:bg-gray-800 border"
                       : "bg-transparent border"
                   } transition`}
                 >
@@ -160,22 +160,17 @@ const About = () => {
 
         <div className="right-side-content lg:p-2 flex justify-start items-start w-full">
           <div className="content-wrapper">
-            <h2 className="font-extrabold font-sans justify-center items-center text-[2rem] lg:text-[2.6rem] leading-tight tracking-wide mb-4">
-              <strong>
-                Few words{" "}
-                <span className="bg-gradient-to-r from-yellow-600 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-                  About Me
-                </span>
-              </strong>{" "}
+            <h2 className="text-3xl mb-4 md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
+              Few words About Me
             </h2>
             <p className="text-base leading-relaxed mb-4 md:pr-2">
               Hi, I’m Sixtus Aondoakaa, a passionate Software Engineer, DevOps
-              Engineer and a tech Educator dedicated to crafting scalable and
-              innovative web solutions. My journey in tech began with a
-              fascination for how technology shapes our world. Over the years, I
-              have navigated the complexities of full-stack development,
-              embracing both front-end and back-end technologies to build robust
-              applications.
+              Engineer, UI/UX Designer and a Tech Educator dedicated to crafting
+              scalable and innovative web solutions. My journey in tech began
+              with a fascination for how technology shapes our world. Over the
+              years, I have navigated the complexities of full-stack
+              development, embracing both front-end and back-end technologies to
+              build robust applications.
             </p>
             {isExpanded && (
               <>
@@ -218,6 +213,15 @@ const About = () => {
       </div>
 
       {/* YouTube Video */}
+
+      <div className="hidden lg:block my-4 text-center">
+        <h3 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
+          Wish to Join me in the tech space?
+        </h3>
+        <p className="text-base py-2">
+          Watch this short video below for some clue 👇
+        </p>
+      </div>
       <div className="hidden md:flex justify-center items-center w-full mx-auto mt-8 lg:mt-10 relative">
         <div className="border items-center mt-2 mx-auto overflow-hidden relative rounded-lg p-2 shadow-lg">
           <iframe

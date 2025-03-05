@@ -86,24 +86,19 @@ const Blog = () => {
   return (
     <section id="blog" className="py-20 px-4 lg:px-10 bg-secondary">
       <div className="max-w-7xl mx-auto">
-        <h2 className="font-extrabold font-sans text-start md:text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-8">
-          <strong>
-            Few Selection of{" "}
-            <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-yellow-600 bg-clip-text text-transparent">
-              My Blog Posts
-            </span>
-          </strong>
+        <h2 className="text-3xl md:text-4xl mb-8 text-center font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
+          Few Selection of My Blog Posts
         </h2>
         <div className="grid gap-2 lg:gap-6 md:grid-cols-3 space-y-6 md:space-y-0">
           {currentPosts.map((post) => (
             <article
               key={post.id}
-              className="p-4 bg-secondary border shadow-md rounded-lg"
+              className="p-4 bg-secondary dark:bg-gray-900 border shadow-md rounded-none"
             >
               <Image
                 src={post.imageUrl}
                 alt={post.title}
-                className="w-full h-54 object-cover rounded-lg"
+                className="w-full h-54 object-cover rounded-sm"
                 width={300}
                 height={200}
               />
@@ -120,15 +115,15 @@ const Blog = () => {
                 <div className="flex mt-4 gap-4 justify-between items-center">
                   <button
                     onClick={() => openModal(post)}
-                    className="py-2 px-3 text-center font-sans bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-lg text-white text-sm tracking-wide block"
+                    className="py-2 px-3 text-center bg-gradient-to-r from-blue-500 via-purple-500 to-green-600 hover:bg-blue-600 rounded-none text-white text-sm tracking-wide block hover:ease-in-out hover:scale-105 transition-all duration-300"
                   >
                     Read More
                   </button>
                   <button
                     onClick={handleBlogClick} // Trigger the blog modal
-                    className="py-2 px-3 bg-gradient-to-r from-indigo-600 via-green-500 to-yellow-600 rounded-lg text-white font-sans flex items-center cursor-pointer text-sm tracking-wide"
+                    className="py-2 px-3 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 rounded-none text-white flex items-center cursor-pointer text-sm tracking-wide hover:ease-in-out hover:scale-105 transition-all duration-300"
                   >
-                    Visit my Blog <FaLocationArrow className="ml-1" />
+                    Visit My Blog <FaLocationArrow className="ml-1" />
                   </button>
                 </div>
               </div>
@@ -142,10 +137,10 @@ const Blog = () => {
             <button
               key={index + 1}
               onClick={() => paginate(index + 1)}
-              className={`mx-1 px-4 py-1 border shadow-md rounded ${
+              className={`mx-1 px-4 py-1 border shadow-md rounded-none ${
                 currentPage === index + 1
-                  ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
-                  : "bg-secondary"
+                  ? "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white hover:ease-in-out hover:scale-105 transition-all duration-300"
+                  : "bg-secondary dark:bg-gray-900"
               }`}
             >
               {index + 1}
@@ -196,7 +191,7 @@ const Blog = () => {
           className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
           style={{ pointerEvents: "auto" }}
         >
-          <div className="bg-secondary border p-2 rounded-lg shadow-lg max-w-2xl w-full max-h-[90vh] relative overflow-y-auto no-scrollbar">
+          <div className="bg-secondary dark:bg-gray-900 border p-2 rounded-lg shadow-lg max-w-2xl w-full max-h-[90vh] relative overflow-y-auto no-scrollbar">
             {/* Adjusted Close Button - Positioned at top-right */}
             <button
               onClick={closeModal}

@@ -61,28 +61,23 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 lg:px-14 bg-secondary">
+    <section id="contact" className="py-10 px-4 lg:px-14 bg-secondary">
       <div className="max-w-6xl mx-auto text-start md:text-center">
-        <h2 className="font-bold text-start md:text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-8">
-          <strong>
-            Let’s{" "}
-            <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-yellow-600 bg-clip-text text-transparent">
-              Connect
-            </span>
-          </strong>
+        <h2 className="text-3xl md:text-4xl font-extrabold mb-6 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
+          Let’s Connect
         </h2>
         <p className="mb-8 text-md leading-relaxed tracking-wide">
           Feel free to reach out for collaborations, job opportunities, or just
           to say hi!
         </p>
         <div className="flex flex-col md:flex-row justify-between items-start md:gap-6 lg:gap-8 gap-2 w-full">
-          <div className="border shadow-md rounded-lg p-4 md:p-4 w-full md:text-start relative md:w-1/2">
+          <div className="border bg-secondary dark:bg-gray-900 shadow-md rounded-lg p-4 md:p-4 w-full md:text-start relative md:w-1/2">
             <Image
               src="/profile.jpg"
               alt="profile image"
               width={300}
               height={200}
-              className="rounded-lg border shadow-md contact-img"
+              className="rounded-md border shadow-md contact-img"
               style={{ width: "auto", height: "auto" }}
             />
             <div className="mt-2">
@@ -92,7 +87,7 @@ const Contact = () => {
                 <h4 className="py-2 text-lg font-bold">
                   <strong>Contact Me</strong>
                 </h4>
-                <div className="inline-flex py-2 items-center border rounded-lg p-2 w-full my-1">
+                <div className="inline-flex py-2 items-center border rounded-none p-2 w-full my-1">
                   <Image
                     src="/location.webp"
                     alt="Location"
@@ -105,7 +100,11 @@ const Contact = () => {
                   </p>
                 </div>
                 <br />
-                <div className="inline-flex py-2 items-center border rounded-lg p-2 w-full my-1">
+                <a
+                  href="https://wa.me/+2349022048105"
+                  target="_blank"
+                  className="inline-flex py-2 items-center border rounded-none hover:underline hover:text-yellow-500 p-2 w-full my-1"
+                >
                   <Image
                     src="/phone.png"
                     alt="Phone"
@@ -116,9 +115,12 @@ const Contact = () => {
                   <p className="text-sm py-1 mb-0">
                     +234&nbsp;902&nbsp;2048&nbsp;105
                   </p>
-                </div>
+                </a>
                 <br />
-                <div className="inline-flex items-center border rounded-lg p-2 w-full my-1">
+                <a
+                  href="mailto:contact@sixtusdev.net?subject=Let's%20connect!"
+                  className="inline-flex items-center border hover:underline hover:text-yellow-500 rounded-none p-2 w-full my-1"
+                >
                   <Image
                     src="/Gmail.png"
                     alt="Mail"
@@ -129,12 +131,12 @@ const Contact = () => {
                   <p className="text-sm tracking-wide py-1 mb-0">
                     contact@sixtusdev.net
                   </p>
-                </div>
+                </a>
               </div>
             </div>
           </div>
 
-          <div className="border shadow-md p-4 sm:p-8 lg:p-16 rounded-lg justify-start items-start space-y-4 w-full">
+          <div className="border bg-secondary dark:bg-gray-900 shadow-md p-4 sm:p-8 lg:p-16 rounded-lg justify-start items-start space-y-4 w-full">
             {/* Contact form component imported here */}
             <ContactForm />
           </div>
