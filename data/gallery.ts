@@ -13,5 +13,8 @@ export const galleryImages = [
     { id: 12, src: "/gallery/gallery12.png", alt: "Me at Good Beach, Landmark, Lekki, LAG", category: "Cherished Memories" },
     { id: 13, src: "/gallery/gallery13.png", alt: "Me at Good Beach, Landmark, Lekki, LAG", category: "Cherished Memories" },
     { id: 14, src: "/gallery/gallery14.png", alt: "Me in Park, Parkmore, Galway, Ireland", category: "Cherished Memories" },
+    { id: 15, src: "/gallery/gallery15.png", alt: "Me in my Humble office", category: "Personal Milestones" },
+    { id: 16, src: "/gallery/gallery16.png", alt: "Me at Tech event, Techpoint, Land mark, Lagos", category: "Personal Milestones" },
+    { id: 17, src: "/gallery/gallery17.png", alt: "Me at Tech event, Techpoint, Land mark, Lagos", category: "Personal Milestones" },
   ];
   
