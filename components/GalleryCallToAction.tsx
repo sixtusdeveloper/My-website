@@ -34,7 +34,7 @@ const ExploreMoreCallToAction = () => {
         {/* Fixed Background */}
         <div
           className="absolute inset-0 bg-fixed bg-cover bg-center"
-          style={{ backgroundImage: "url('/Blog04.avif')" }}
+          style={{ backgroundImage: "url('/blog04.avif')" }}
         />
         <div className="absolute inset-0 bg-black bg-opacity-50" />
 
