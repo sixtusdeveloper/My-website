@@ -330,17 +330,11 @@ button a {
   border-color: transparent darkslategrey transparent transparent;
 }
 
-/* Circle in the center */
-/* .timeline-container .timeline-icon {
-  width: 20px;
-  height: 20px;
-  background-color: darkslategrey;
-  border-radius: 50%;
-  position: absolute;
-  top: 15px;
-  left: -11px;
-  z-index: 1;
-} */
+.gallery-img {
+  width: 400px !important;
+  height: 400px !important;
+  object-fit: cover !important;
+}
 
 /* Current styles for the timeline */
 .timeline-container .timeline-icon {

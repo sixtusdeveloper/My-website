@@ -81,6 +81,13 @@ export const navigation = [
     { name: 'Contact', href: '#contact' },
   ];
   
+//============================= Gallery Page Navigation links ============================//
+export const GallerysNavLinks = [
+  { name: 'Personal Life', href: '#personal-life' },
+    { name: 'Tech Events', href: '#tech-events' },
+    { name: 'Public Meetings', href: '#public-meetings' },
+  ];
+  
 // Portfolio Nav Links
 export const portfolioNavLinks = [
     { name: 'Services', href: '#services' },
