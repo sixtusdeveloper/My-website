@@ -68,7 +68,7 @@ export default function PortfolioProgress() {
                   textColor: "#fff",
                   pathColor: `url(#gradient-${index})`, // Unique gradient applied
                   trailColor: "rgba(255, 255, 255, 0.2)",
-                  textSize: "16px",
+                  textSize: "18px",
                 })}
               />
             </motion.div>
