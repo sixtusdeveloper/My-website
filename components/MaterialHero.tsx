@@ -28,7 +28,7 @@ const MaterialsHero = () => {
         <div className="text-left pt-8 space-y-6 text-white max-w-3xl p-4 md:p-8 lg:py-8 mt-16 lg:text-left">
           {/* Dynamic Greeting */}
           <motion.h3
-            className="text-sm tracking-wide py-2 sm:text-base"
+            className="text-sm tracking-wide sm:text-base"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
@@ -45,7 +45,7 @@ const MaterialsHero = () => {
             )}
           </motion.h3>
           <motion.h1
-            className="text-4xl lg:text-5xl font-sans font-extrabold text-white"
+            className="text-4xl lg:text-5xl font-extrabold text-white"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, ease: "easeOut" }}

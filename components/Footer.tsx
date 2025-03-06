@@ -6,6 +6,7 @@ import {
   FaFacebook,
   FaYoutube,
 } from "react-icons/fa";
+import Image from "next/image";
 
 const Footer: React.FC = () => {
   return (
@@ -78,7 +79,13 @@ const Footer: React.FC = () => {
         </a>
       </span>
 
-      <div className="flex justify-center items-center py-2">
+      <div className="flex justify-center items-center py-2 gap-2">
+        <a href="/" className="flex items-center">
+          <Image src="/Logo.png" alt="Sixtusdev Logo" width={35} height={35} />
+          <span className="font-sans sm:block self-center text-base font-semibold bg-gradient-to-r from-yellow-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+            SIXTUSDEV
+          </span>
+        </a>
         <span className="w-full flex flex-col text-center text-sm p-2">
           Copyright&copy; {new Date().getFullYear()} developed by Sixtusdev |
           all rights reserved | contact@sixtusdev.net | version 0.1.0
