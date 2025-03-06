@@ -16,7 +16,7 @@ export const Logo: React.FC<LogoProps> = ({ src, alt, title }) => (
       style={{ width: "auto", height: "auto" }}
       priority={true}
     />
-    <span className="self-center text-sm font-bold bg-gradient-to-r from-blue-500 via-yellow-600 to-pink-500 uppercase text-transparent bg-clip-text">
+    <span className="self-center text-sm font-bold bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 uppercase text-transparent bg-clip-text">
       {title}
     </span>
   </a>
