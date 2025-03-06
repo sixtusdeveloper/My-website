@@ -30,7 +30,7 @@ const ExploreMoreCallToAction = () => {
   };
   return (
     <>
-      <section className="relative w-full h-[350px] flex items-center md:justify-center justify-start text-center text-white overflow-hidden">
+      <section className="relative w-full h-[350px] flex items-center md:justify-center justify-start text-center overflow-hidden">
         {/* Fixed Background */}
         <div
           className="absolute inset-0 bg-fixed bg-cover bg-center"
@@ -40,10 +40,10 @@ const ExploreMoreCallToAction = () => {
 
         {/* Content */}
         <div className="relative z-10 max-w-3xl px-4 lg:pl-20 lg:pr-8 md:text-center text-left">
-          <h1 className="text-4xl font-extrabold md:text-5xl">
+          <h1 className="text-4xl font-extrabold md:text-5xl text-white">
             See how I transform ideas into reality!
           </h1>
-          <p className="mt-4 text-base opacity-95">
+          <p className="mt-4 text-base opacity-95 text-gray-100">
             Explore my portfolio page and see how I turn ideas into reality.
           </p>
           <a onClick={openHeroModal}>
