@@ -163,7 +163,7 @@ const Certifications = () => {
             disabled={currentPage === 1}
             className={`px-4 py-2 mx-1 rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === 1
-                ? "bg-transparent dark:bg-gray-900 border cursor-not-allowed shadow-md"
+                ? "bg-secondary dark:bg-gray-900 border cursor-not-allowed shadow-md"
                 : "bg-pink-600 hover:bg-purple-600 text-white"
             }`}
           >
@@ -177,7 +177,7 @@ const Certifications = () => {
             disabled={currentPage === totalPages}
             className={`px-4 py-1 mx-1 rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === totalPages
-                ? "bg-transparent bg-gray-900 border cursor-not-allowed shadow-md"
+                ? "bg-secondary dark:bg-gray-900 border cursor-not-allowed shadow-md"
                 : "bg-pink-600 hover:bg-purple-600 text-white"
             }`}
           >
