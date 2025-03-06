@@ -107,7 +107,10 @@ const ProgrammingBooks = () => {
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {displayedMaterials.map((material) => (
-            <div key={material.id} className="border p-4 rounded-lg shadow-md">
+            <div
+              key={material.id}
+              className="border p-4 bg-secondary dark:bg-gray-900 rounded-md shadow-sm"
+            >
               <div className="flex justify-center mx-auto items-center text-center mb-2">
                 {material.icon.map((IconComponent, index) => (
                   <div
@@ -144,7 +147,7 @@ const ProgrammingBooks = () => {
               className={`px-4 py-2 border shadow-md rounded-full transition ${
                 currentPage === index + 1
                   ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
-                  : "bg-secondary"
+                  : "bg-secondary dark:bg-gray-900"
               }`}
             >
               {index + 1}
@@ -158,7 +161,7 @@ const ProgrammingBooks = () => {
           onClick={() => setShowModal(false)}
         >
           <div
-            className="bg-secondary p-6 rounded-lg border shadow-lg max-w-md w-full relative text-center overflow-y-auto max-h-[70vh] no-scrollbar"
+            className="bg-secondary p-6 dark:bg-gray-900 rounded-lg border shadow-sm max-w-md w-full relative text-center overflow-y-auto max-h-[70vh] no-scrollbar"
             onClick={(e) => e.stopPropagation()}
           >
             <button

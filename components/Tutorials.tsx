@@ -77,7 +77,7 @@ const Tutorials = () => {
           {currentTutorials.map((tutorial, index) => (
             <div
               key={index}
-              className="bg-secondary p-2 rounded-lg shadow-md border"
+              className="bg-secondary dark:bg-gray-900 p-2 rounded-md shadow-sm border"
             >
               <div className="relative w-full aspect-video">
                 <iframe
@@ -122,7 +122,7 @@ const Tutorials = () => {
             disabled={currentPage === 1}
             className={`px-4 py-1 mx-1 rounded cursor-pointer transition-all duration-300 ${
               currentPage === 1
-                ? "bg-transparent border cursor-not-allowed shadow-md"
+                ? "bg-secondary dark:bg-gray-900 border cursor-not-allowed shadow-md"
                 : "bg-indigo-600 hover:bg-indigo-700 text-white"
             }`}
           >
@@ -154,7 +154,7 @@ const Tutorials = () => {
           onClick={closeModal}
         >
           <div
-            className="bg-secondary p-4 lg:p-6 rounded-lg shadow-lg max-w-2xl w-full relative overflow-y-auto max-h-[90vh] no-scrollbar"
+            className="bg-secondary dark:bg-gray-900 p-4 lg:p-6 rounded-md shadow-sm border max-w-2xl w-full relative overflow-y-auto max-h-[90vh] no-scrollbar"
             onClick={(e) => e.stopPropagation()}
           >
             <button
