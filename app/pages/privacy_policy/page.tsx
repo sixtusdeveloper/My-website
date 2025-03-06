@@ -5,7 +5,7 @@ const PrivacyPolicy: React.FC = () => {
     <main className="bg-secondary p-2 lg:p-8">
       <div className="container relative mx-auto lg:px-10 p-2">
         <h1 className="text-2xl font-bold mb-4">Privacy Policy</h1>
-        <p className="text-sm">Last updated: Feb 12, 2025</p>
+        <p className="text-sm">Last updated: March 05, 2025</p>
         <h2 className="text-lg font-bold mt-4">Introduction</h2>
         <p>
           I value your privacy and am committed to protecting your personal
@@ -104,7 +104,7 @@ const PrivacyPolicy: React.FC = () => {
           please contact me at{" "}
           <a
             href="mailto:contact@sixtusdev.net"
-            className="hover:text-blue-600 bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:underline"
+            className="hover:text-blue-600 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text hover:underline"
           >
             contact@sixtusdev.net
           </a>
@@ -116,7 +116,7 @@ const PrivacyPolicy: React.FC = () => {
             You may as well read the terms and conditions of this application{" "}
             <a
               href="https://www.sixtusdev.net/pages/terms_condition"
-              className="hover:text-blue-600 bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:underline"
+              className="hover:text-blue-600 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text hover:underline"
             >
               Terms and Conditions
             </a>
@@ -125,7 +125,7 @@ const PrivacyPolicy: React.FC = () => {
             &nbsp;OR go back to the website{" "}
             <a
               href="https://www.sixtusdev.net/"
-              className="hover:text-blue-600 bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:underline"
+              className="hover:text-blue-600 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text hover:underline"
             >
               Home Page
             </a>

@@ -7,6 +7,7 @@ import Image from "next/image";
 import Loader from "@/components/ui/Loader";
 import { FiArrowRight } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
+import { FaTimes } from "react-icons/fa";
 
 // Truncate project technologies
 const MAX_ICONS_DISPLAY = 3; // Limit for icons in project card
@@ -109,14 +110,9 @@ const Projects = () => {
         {/* Loader Overlay */}
         {isLoading && <Loader />}
 
-        <h1 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide">
-          <strong>
-            My&nbsp;
-            <span className="bg-gradient-to-r from-yellow-600 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-              Recent Projects
-            </span>
-          </strong>
-        </h1>
+        <h2 className="p-4 lg:p-2 text-3xl md:text-4xl text-center font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
+          My&nbsp; Recent Projects
+        </h2>
 
         {/* Category Buttons */}
         <div className="flex justify-center my-4">
@@ -125,10 +121,10 @@ const Projects = () => {
               setSelectedCategory("Frontend");
               setCurrentPage(1);
             }}
-            className={`px-4 py-2 mx-2 text-sm font-semibold font-sans rounded-lg tracking-wide cursor-pointer transition-all duration-300 ${
+            className={`px-4 py-2 mx-2 text-sm font-semibold font-sans rounded-md tracking-wide cursor-pointer transition-all duration-300 ${
               selectedCategory === "Frontend"
-                ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
-                : "bg-transparent border shadow-md"
+                ? "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300"
+                : "bg-transparent dark:bg-gray-900 border shadow-md hover:ease-in-out hover:scale-105 transition-all duration-300"
             }`}
           >
             Frontend Projects
@@ -138,10 +134,10 @@ const Projects = () => {
               setSelectedCategory("Fullstack");
               setCurrentPage(1);
             }}
-            className={`px-4 py-2 text-sm md:text-sm font-semibold font-sans mx-2 rounded-lg tracking-wide transition-all duration-300 ${
+            className={`px-4 py-2 text-sm md:text-sm font-semibold font-sans mx-2 rounded-md tracking-wide transition-all duration-300 ${
               selectedCategory === "Fullstack"
-                ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
-                : "bg-transparent border shadow-md"
+                ? "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300"
+                : "bg-transparent dark:bg-gray-900 border shadow-md hover:ease-in-out hover:scale-105 transition-all duration-300"
             }`}
           >
             Fullstack Projects
@@ -153,7 +149,7 @@ const Projects = () => {
           {currentProjects.map(
             ({ id, title, des, img, githubLink, iconLists, link }) => (
               <div
-                className="space-y-6 md:space-y-0 relative group overflow-hidden border shadow-md rounded-3xl transition-transform transform hover:scale-105"
+                className="bg-secondary dark:bg-gray-900 space-y-6 md:space-y-0 relative group overflow-hidden border shadow-sm rounded-3xl transition-transform transform hover:scale-105"
                 key={id}
                 style={{ width: "100%", height: "100%" }}
               >
@@ -176,7 +172,7 @@ const Projects = () => {
                     <a
                       href={githubLink}
                       target="_blank"
-                      className="inline-flex items-center font-semibold py-2 px-3 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-lg text-white text-sm font-sans tracking-wide cursor-pointer"
+                      className="inline-flex rounded-md items-center py-2 px-3 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300"
                     >
                       Project codebase <FiArrowRight className="ml-2" />
                     </a>
@@ -192,7 +188,7 @@ const Projects = () => {
                           link,
                         })
                       }
-                      className="outline-none text-sm font-sans font-semibold text-indigo-600 hover:text-indigo-800"
+                      className="bg-gradient-to-r from-pink-600 via-yellow-500 to-pink-600 hover:text-pink-600 bg-clip-text text-transparent text-sm text-end font-semibold"
                     >
                       Read more &#8594;
                     </button>
@@ -224,7 +220,7 @@ const Projects = () => {
                     >
                       <button
                         type="button"
-                        className="py-2 px-3 bg-gradient-to-r from-indigo-600 via-green-600 to-yellow-600 rounded-lg text-white flex items-center cursor-pointer text-sm tracking-wide"
+                        className="py-2 px-3 bg-gradient-to-r from-blue-600 via-green-600 to-yellow-600 rounded-md text-white flex items-center cursor-pointer text-sm tracking-wide"
                       >
                         Live Site <FaLocationArrow className="ml-2" />
                       </button>
@@ -241,10 +237,10 @@ const Projects = () => {
           <button
             onClick={() => handlePagination("prev")}
             disabled={currentPage === 1}
-            className={`px-4 py-1 mx-1 rounded cursor-pointer transition-all duration-300 ${
+            className={`px-4 py-2 mx-1 rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === 1
-                ? "bg-transparent border cursor-not-allowed shadow-md"
-                : "bg-indigo-600 hover:bg-indigo-700 text-white"
+                ? "bg-transparent dark:bg-gray-900 border cursor-not-allowed shadow-md"
+                : "bg-pink-600 hover:bg-purple-600 text-white"
             }`}
           >
             Previous
@@ -255,10 +251,10 @@ const Projects = () => {
           <button
             onClick={() => handlePagination("next")}
             disabled={currentPage === totalPages}
-            className={`px-4 py-1 mx-1 rounded cursor-pointer transition-all duration-300 ${
+            className={`px-4 py-1 mx-1 rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === totalPages
-                ? "bg-transparent border cursor-not-allowed shadow-md"
-                : "bg-indigo-600 hover:bg-indigo-700 text-white"
+                ? "bg-transparent bg-gray-900 border cursor-not-allowed shadow-md"
+                : "bg-pink-600 hover:bg-purple-600 text-white"
             }`}
           >
             Next
@@ -268,7 +264,7 @@ const Projects = () => {
         {/* Live Site Modal */}
         {showLiveModal && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-            <div className="bg-secondary p-8 border rounded-lg shadow-lg max-w-sm text-center">
+            <div className="bg-secondary dark:-bg-gray-900 p-8 border rounded-lg shadow-md max-w-sm text-center">
               <h2 className="text-lg font-bold">Site Under Deployment</h2>
               <p className="text-sm mt-2">
                 This site is currently being deployed. Please check back later,
@@ -291,15 +287,15 @@ const Projects = () => {
             onClick={closeModal}
           >
             <div
-              className="relative bg-secondary md:p-4 p-2 border rounded-lg shadow-lg max-w-md w-[98%] md:w-[700px] h-[60vh] md:h-[80vh] overflow-y-auto no-scrollbar"
+              className="relative bg-secondary dark:bg-gray-900 md:p-4 p-2 border rounded-lg shadow-md max-w-md w-[98%] md:w-[700px] h-[60vh] md:h-[80vh] overflow-y-auto no-scrollbar"
               onClick={(e) => e.stopPropagation()}
             >
               <button
                 onClick={closeModal}
-                className="absolute top-2 right-2 z-50 p-1 bg-secondary border rounded-full hover:text-red-500 text-2xl"
+                className="absolute top-1 right-1 z-50 hover:text-red-500"
                 style={{ position: "absolute" }}
               >
-                <IoClose size={18} />
+                <FaTimes size={18} />
               </button>
               <Image
                 src={currentProject.img}

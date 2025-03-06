@@ -44,7 +44,7 @@ const services = [
 const ServicesSection = () => {
   const router = useRouter();
   const navigateToServices = () => {
-    router.push("/pages/services");
+    router.push("/pages/portfolio/#services");
   };
   return (
     <section id="services" className="py-10 bg-secondary relative">
@@ -76,13 +76,14 @@ const ServicesSection = () => {
 
         {/* CTA Button */}
         <div className="mt-12">
-          <button
-            type="button"
-            onClick={navigateToServices}
-            className="bg-gradient-to-r from-blue-500 via-purple-500 to-green-600 hover:bg-blue-600 text-white font-semibold text-base h-12 px-6 py-3 rounded-none hover:ease-in-out hover:scale-105 transition-all duration-300"
-          >
-            Learn more &#8594;
-          </button>
+          <a onClick={navigateToServices}>
+            <button
+              type="button"
+              className="bg-gradient-to-r from-blue-500 via-purple-500 to-green-600 hover:bg-blue-600 text-white font-semibold text-base h-12 px-6 py-3 rounded-none hover:ease-in-out hover:scale-105 transition-all duration-300"
+            >
+              Learn more &#8594;
+            </button>
+          </a>
         </div>
       </div>
     </section>

@@ -41,19 +41,15 @@ const Collaboration = ({
 
   return (
     <div className="relative mx-auto max-w-7xl bg-secondary px-6 lg:px-8 py-10 lg:py-16">
-      <h1 className="font-bold text-center text-[2rem] lg:text-[2.4rem] leading-snug tracking-wider">
-        <strong>
-          Trusted{" "}
-          <span className="bg-gradient-to-r font-sans from-yellow-600 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-            By Companies
-          </span>
-        </strong>
-      </h1>
+      <h2 className="p-4 lg:p-2 text-3xl md:text-4xl text-center font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
+        Trusted By Companies
+      </h2>
+      <p className="text-center text-base font-medium leading-2 tracking-wide">
+        Trusted by the world&apos;s most innovative teams
+      </p>
+
       <div className="bg-black-100 py-14 sm:py-12">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h3 className="text-center font-sans text-md font-medium leading-2 tracking-wide">
-            Trusted by the world&apos;s most innovative teams
-          </h3>
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-8 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
             {/* Company Logos */}
             <span>
@@ -131,7 +127,7 @@ const Collaboration = ({
 
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-85">
-          <div className="relative bg-secondary border rounded-lg p-8 max-w-lg mx-auto animate-fadeIn">
+          <div className="relative bg-secondary dark:bg-gray-900 border rounded-lg p-8 max-w-lg mx-auto animate-fadeIn">
             <button
               className="absolute top-3 right-3 p-2 z-40 cursor-pointer rounded-full border bg-secondary hover:text-red-600"
               onClick={closeModal}

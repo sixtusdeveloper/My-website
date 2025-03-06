@@ -79,7 +79,7 @@ export default function CallToAction() {
         className="flex flex-col sm:flex-row p-2 md:p-6 border justify-center items-center bg-gradient-to-r from-yellow-700 via-green-800 to-purple-800 shadow-lg"
       >
         <div className="flex-1 flex flex-col justify-center p-4 order-last sm:order-first">
-          <h2 className="text-3xl font-bold text-white mb-3">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
             Expand Your Programming Knowledge for Free with My Comprehensive
             E-book Guide!
           </h2>
@@ -94,7 +94,7 @@ export default function CallToAction() {
           <button
             type="button"
             onClick={openModal}
-            className="rounded-tl-xl text-base rounded-bl-none px-6 py-3 mx-auto bg-gradient-to-r from-green-600 via-indigo-500 to-purple-700 hover:scale-95 text-white w-full rounded-md"
+            className="rounded-tl-xl text-base rounded-bl-none px-6 py-3 mx-auto bg-gradient-to-r from-green-600 via-indigo-500 to-purple-700 hover:scale-95 text-white w-full rounded-none"
           >
             Access Free E-Books
           </button>
@@ -116,7 +116,7 @@ export default function CallToAction() {
           onClick={closeModal}
         >
           <div
-            className="bg-secondary p-6 rounded-lg shadow-lg w-[95%] max-w-md relative"
+            className="bg-secondary dark:bg-gray-900 p-6 rounded-lg shadow-lg w-[95%] max-w-md relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button onClick={closeModal} className="absolute top-2 right-2">
@@ -161,7 +161,7 @@ export default function CallToAction() {
           onClick={closeErrorModal}
         >
           <div
-            className="bg-secondary p-6 rounded-lg shadow-lg w-[95%] max-w-md relative"
+            className="bg-secondary dark:bg-gray-900 p-6 rounded-lg shadow-lg w-[95%] max-w-md relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -194,7 +194,7 @@ export default function CallToAction() {
           className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
           onClick={closeSuccessModal}
         >
-          <div className="bg-secondary p-6 rounded-lg shadow-lg w-[95%] max-w-md relative">
+          <div className="bg-secondary dark:bg-gray-900 p-6 rounded-lg shadow-lg w-[95%] max-w-md relative">
             <button
               onClick={closeSuccessModal}
               className="absolute top-2 right-2"

@@ -74,19 +74,14 @@ const PortfolioSkills = () => {
       className="bg-secondary relative md:pt-10 px-4 sm:px-6 lg:px-10 pb-20"
     >
       <div className="mx-auto max-w-6xl relative">
-        <h2 className="py-10 font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide">
-          <strong>
-            My Current{" "}
-            <span className="bg-gradient-to-r from-yellow-600 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-              Skills & Tools
-            </span>
-          </strong>
+        <h2 className="p-8 lg:p-4 text-3xl md:text-4xl mb-8 text-center font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
+          My Current Skills & Tools
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Frontend Section */}
-          <div className="skill-category bg-secondary p-6 rounded-lg border shadow-md">
+          <div className="skill-category bg-secondary  dark:bg-gray-900 p-6 rounded-md border shadow-sm">
             <h3 className="text-2xl font-semibold mb-4">Frontend</h3>
-            <ul className="flex flex-wrap gap-8 list-none items-center">
+            <ul className="flex flex-wrap gap-8 list-none items-center text-sm">
               <li className="flex items-center space-x-2">
                 <FaHtml5 className="text-orange-600" size={20} />
                 &nbsp;<span>HTML</span>
@@ -153,9 +148,9 @@ const PortfolioSkills = () => {
           </div>
 
           {/* Backend Section */}
-          <div className="skill-category bg-secondary p-6 rounded-lg border shadow-md">
+          <div className="skill-category bg-secondary dark:bg-gray-900 p-6 rounded-md border shadow-sm">
             <h3 className="text-2xl font-semibold mb-4">Backend</h3>
-            <ul className="flex flex-wrap gap-4 list-none items-center">
+            <ul className="flex flex-wrap gap-4 list-none items-center text-sm">
               <li className="flex items-center space-x-2">
                 <FaNodeJs className="text-green-500" size={20} />
                 &nbsp;<span>Node.js</span>
@@ -210,9 +205,9 @@ const PortfolioSkills = () => {
           </div>
 
           {/* Databases Section */}
-          <div className="skill-category bg-secondary p-6 rounded-lg border shadow-md">
+          <div className="skill-category bg-secondary dark:bg-gray-900 p-6 rounded-md border shadow-sm">
             <h3 className="text-2xl font-semibold mb-4">Databases</h3>
-            <ul className="flex flex-wrap gap-4 list-none items-center">
+            <ul className="flex flex-wrap gap-4 list-none items-center text-sm">
               <li className="flex items-center space-x-2">
                 <SiMongodb className="text-green-500" size={20} />
                 &nbsp;<span>MongoDB</span>
@@ -241,9 +236,9 @@ const PortfolioSkills = () => {
           </div>
 
           {/* DevOps Section */}
-          <div className="skill-category bg-secondary p-6 rounded-lg border shadow-md">
+          <div className="skill-category bg-secondary dark:bg-gray-900 p-6 rounded-md border shadow-sm">
             <h3 className="text-2xl font-semibold mb-4">DevOps</h3>
-            <ul className="list-none space-y-4">
+            <ul className="list-none space-y-4 text-sm">
               <li className="flex items-center space-x-2">
                 <FaDocker className="text-blue-600" size={20} />
                 &nbsp;<span>Docker</span>
@@ -260,11 +255,11 @@ const PortfolioSkills = () => {
           </div>
 
           {/* Version control and Tools Section */}
-          <div className="skill-category bg-secondary border p-6 rounded-lg shadow-md">
+          <div className="skill-category bg-secondary dark:bg-gray-900 border p-6 rounded-md shadow-sm">
             <h3 className="text-2xl font-semibold mb-4">
               Version Control & Tools
             </h3>
-            <ul className="flex flex-wrap items-center gap-4 list-none">
+            <ul className="flex flex-wrap items-center gap-4 list-none text-sm">
               <li className="flex items-center space-x-2">
                 <FaGitAlt className="text-orange-600" size={20} />
                 &nbsp;<span>Git</span>
@@ -324,11 +319,11 @@ const PortfolioSkills = () => {
           </div>
 
           {/* APIs Section */}
-          <div className="skill-category bg-secondary border p-6 rounded-lg shadow-md">
+          <div className="skill-category bg-secondary dark:bg-gray-900 border p-6 rounded-md shadow-sm">
             <h3 className="text-2xl font-semibold mb-4">
               My Frequently Used APIs
             </h3>
-            <ul className="flex flex-wrap items-center gap-4 list-none">
+            <ul className="flex flex-wrap items-center gap-4 list-none text-sm">
               <li className="flex items-center space-x-2">
                 <SiJsonwebtokens className="text-red-500" size={20} />
                 &nbsp;<span>JWT</span>
@@ -369,9 +364,9 @@ const PortfolioSkills = () => {
           </div>
 
           {/* Hosting services */}
-          <div className="skill-category bg-secondary border shadow-md p-6 rounded-lg col-span-1 lg:col-span-3 lg:row-span-1">
+          <div className="skill-category bg-secondary dark:bg-gray-900 border shadow-sm p-6 rounded-md col-span-1 lg:col-span-3 lg:row-span-1">
             <h3 className="text-2xl font-semibold mb-4">My Hosting Services</h3>
-            <ul className="flex flex-wrap items-center gap-4 list-none">
+            <ul className="flex flex-wrap items-center gap-4 list-none text-sm">
               <li className="flex items-center space-x-4">
                 <FaAws className="text-orange-400" size={20} />
                 <span>
@@ -441,9 +436,9 @@ const PortfolioSkills = () => {
           </div>
 
           {/* Certifications Section */}
-          <div className="skill-category bg-secondary border shadow-md p-6 rounded-lg col-span-1 lg:col-span-3 lg:row-span-1">
+          <div className="skill-category bg-secondary dark:bg-gray-900 border shadow-md p-6 rounded-md col-span-1 lg:col-span-3 lg:row-span-1">
             <h3 className="text-2xl font-semibold mb-4">My Certifications</h3>
-            <ul className="flex flex-wrap items-center gap-4 list-none">
+            <ul className="flex flex-wrap items-center gap-4 list-none text-sm">
               <li className="flex items-center space-x-4">
                 <FaAws className="text-yellow-500" size={20} />
                 &nbsp;<span>AWS Certified Developer</span>

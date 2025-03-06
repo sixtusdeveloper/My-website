@@ -71,46 +71,12 @@ const About = () => {
             </div>
             <div className="mb-4 md:mb-10 p-2 items-center">
               {/* Social Follow Buttons on larger devices */}
-              <div className="hidden md:flex items-center justify-center gap-4">
-                {/* Twitter Follow Button */}
-                <div
-                  className={`flex items-center text-sm space-x-2 py-2 px-4 rounded-lg shadow-md ${
-                    isTwitterFollowed
-                      ? "bg-secondary dark:bg-gray-800 border"
-                      : "bg-transparent border"
-                  } transition`}
-                >
-                  <FaTwitter />
-                  <a href="https://twitter.com/sixtusdev?ref_src=twsrc%5Etfw">
-                    @sixtusdev
-                  </a>
-                </div>
-
-                {/* GitHub Follow Button */}
-                <div
-                  className={`flex items-center text-sm space-x-2 py-2 px-4 rounded-lg shadow-md ${
-                    isGithubFollowed
-                      ? "bg-secondary dark:bg-gray-800 border"
-                      : "bg-transparent border"
-                  } transition`}
-                >
-                  <FaGithub />
-                  <a
-                    href="https://github.com/sixtusdeveloper"
-                    target="_blank"
-                    className="btn-github-follow"
-                    rel="noopener noreferrer"
-                  >
-                    follow me
-                  </a>
-                </div>
-              </div>
 
               {/* Social Follow Buttons on mobile */}
-              <div className="flex md:hidden items-center justify-center gap-4 mt-0">
+              <div className="flex items-center justify-center gap-4 mt-0">
                 {/* Twitter Follow Button */}
                 <div
-                  className={`flex items-center space-x-2 p-2 rounded-full shadow-md transition ${
+                  className={`flex items-center space-x-2 p-2 rounded-full shadow-sm border transition ${
                     isTwitterFollowed
                       ? "bg-secondary dark:bg-gray-800 border"
                       : "bg-transparent border"
@@ -126,7 +92,7 @@ const About = () => {
 
                 {/* GitHub Follow Button */}
                 <div
-                  className={`flex items-center space-x-2 p-2 rounded-full shadow-md transition${
+                  className={`flex items-center space-x-2 p-2 rounded-full shadow-sm border transition${
                     isGithubFollowed
                       ? "bg-secondary dark:bg-gray-800 border"
                       : "bg-transparent border"
@@ -143,7 +109,7 @@ const About = () => {
                 </div>
 
                 {/* Linked Follow Button */}
-                <div className="flex items-center space-x-2 p-2 rounded-full shadow-md transition">
+                <div className="flex items-center space-x-2 p-2 rounded-full shadow-sm border transition">
                   <a
                     href="https://linkedin.com/in/sixtusushrey"
                     target="_blank"

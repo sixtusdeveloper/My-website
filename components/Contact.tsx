@@ -71,7 +71,7 @@ const Contact = () => {
           to say hi!
         </p>
         <div className="flex flex-col md:flex-row justify-between items-start md:gap-6 lg:gap-8 gap-2 w-full">
-          <div className="border bg-secondary dark:bg-gray-900 shadow-md rounded-lg p-4 md:p-4 w-full md:text-start relative md:w-1/2">
+          <div className="border bg-secondary dark:bg-gray-900 shadow-sm rounded-lg p-4 md:p-4 w-full md:text-start relative md:w-1/2">
             <Image
               src="/profile.jpg"
               alt="profile image"
@@ -136,7 +136,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="border bg-secondary dark:bg-gray-900 shadow-md p-4 sm:p-8 lg:p-16 rounded-lg justify-start items-start space-y-4 w-full">
+          <div className="border bg-secondary dark:bg-gray-900 shadow-sm p-4 sm:p-8 lg:p-16 rounded-lg justify-start items-start space-y-4 w-full">
             {/* Contact form component imported here */}
             <ContactForm />
           </div>

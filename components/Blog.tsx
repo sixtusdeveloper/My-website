@@ -93,12 +93,12 @@ const Blog = () => {
           {currentPosts.map((post) => (
             <article
               key={post.id}
-              className="p-4 bg-secondary dark:bg-gray-900 border shadow-md rounded-none"
+              className="p-4 bg-secondary dark:bg-gray-900 border shadow-sm rounded-lg"
             >
               <Image
                 src={post.imageUrl}
                 alt={post.title}
-                className="w-full h-54 object-cover rounded-sm"
+                className="w-full h-54 object-cover rounded-md"
                 width={300}
                 height={200}
               />

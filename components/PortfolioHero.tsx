@@ -150,17 +150,19 @@ const Hero = () => {
           </motion.div>
 
           <motion.h1
-            className="text-[2rem] leading-tight lg:text-[3rem] font-extrabold font-sans"
+            className="text-[2.5rem] leading-tight lg:text-[3rem] font-extrabold"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, ease: "easeOut" }}
           >
             <strong>
               Explore{" "}
-              <span className="bg-gradient-to-r from-purple-600 via-blue-500 to-yellow-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">
                 Innovation and Creativity
               </span>{" "}
-              in My Portfolio
+              <span className="bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">
+                in My Portfolio
+              </span>
             </strong>
           </motion.h1>
 
@@ -186,7 +188,7 @@ const Hero = () => {
             transition={{ duration: 1.1, ease: "easeOut" }}
           >
             <a onClick={handleHireMeClick}>
-              <Button className="h-12 px-8 py-3 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
+              <Button className="h-12 px-6 py-3 rounded-none bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
                 Hire Me
               </Button>
             </a>
@@ -215,7 +217,7 @@ const Hero = () => {
       {isReadMoreLoading && <Loader />}
 
       <HireMeModal isOpen={isModalOpen} onClose={handleModalToggle}>
-        <div className="p-2 bg-secondary max-h-[80vh] overflow-auto no-scrollbar">
+        <div className="p-2 max-h-[80vh] overflow-auto no-scrollbar">
           <h2 className="text-2xl font-bold tracking-wide text-center">
             Hire Me Let's Work Together
           </h2>

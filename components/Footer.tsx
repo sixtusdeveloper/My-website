@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
           rel="noopener noreferrer"
           className="border hover:transform rounded-full hover:scale-110"
         >
-          <span className="flex shadow-md items-center justify-center w-10 h-10 bg-secondary dark:bg-gray-950 rounded-full">
+          <span className="flex shadow-sm items-center justify-center w-10 h-10 bg-secondary dark:bg-gray-950 rounded-full">
             <FaGithub size={20} />
           </span>
         </a>
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
           rel="noopener noreferrer"
           className="border hover:transform rounded-full hover:scale-110"
         >
-          <span className="flex shadow-md items-center justify-center w-10 h-10 bg-secondary dark:bg-gray-950 rounded-full">
+          <span className="flex shadow-sm items-center justify-center w-10 h-10 bg-secondary dark:bg-gray-950 rounded-full">
             <FaTwitter size={20} />
           </span>
         </a>
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
           rel="noopener noreferrer"
           className="border hover:transform rounded-full hover:scale-110"
         >
-          <span className="flex shadow-md items-center justify-center w-10 h-10 bg-secondary dark:bg-gray-950 rounded-full">
+          <span className="flex shadow-sm items-center justify-center w-10 h-10 bg-secondary dark:bg-gray-950 rounded-full">
             <FaYoutube size={20} />
           </span>
         </a>
@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
           rel="noopener noreferrer"
           className="border hover:transform rounded-full hover:scale-110"
         >
-          <span className="flex shadow-md items-center justify-center w-10 h-10 bg-secondary dark:bg-gray-950 rounded-full">
+          <span className="flex shadow-sm items-center justify-center w-10 h-10 bg-secondary dark:bg-gray-950 rounded-full">
             <FaLinkedin size={20} />
           </span>
         </a>
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
           rel="noopener noreferrer"
           className="border hover:transform rounded-full hover:scale-110"
         >
-          <span className="flex shadow-md items-center justify-center w-10 h-10 bg-secondary dark:bg-gray-950 rounded-full">
+          <span className="flex shadow-sm items-center justify-center w-10 h-10 bg-secondary dark:bg-gray-950 rounded-full">
             <FaFacebook size={20} />
           </span>
         </a>
@@ -66,13 +66,13 @@ const Footer: React.FC = () => {
       <span className="flex justify-center items-center py-6 space-x-4">
         <a
           href="/pages/privacy_policy"
-          className="text-base hover:underline hover:text-blue-600 bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent"
+          className="text-base hover:underline hover:text-yellow-500 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text"
         >
           Privacy Policy
         </a>
         <a
           href="/pages/terms_condition"
-          className="text-base hover:underline hover:text-blue-600 bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent"
+          className="text-base hover:underline hover:text-yellow-500 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text"
         >
           Terms and conditions
         </a>

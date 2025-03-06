@@ -70,24 +70,19 @@ const Services = () => {
       className="bg-secondary relative pt-8 md:pt-10 px-4 sm:px-6 lg:px-10 pb-20"
     >
       <div className="mx-auto max-w-6xl relative">
-        <h1 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide">
-          <strong>
-            My&nbsp;
-            <span className="bg-gradient-to-r font-sans from-yellow-600 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-              Services
-            </span>
-          </strong>
-        </h1>
+        <h2 className="text-center text-3xl md:text-4xl font-extrabold mb-6 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
+          My Services
+        </h2>
         <div className="w-full mt-12 grid md:grid-cols-4 grid-cols-1 md:gap-4 gap-8">
           {services.map((service, index) => (
             <Button
               key={index}
               borderRadius="1.75rem"
               duration={Math.floor(Math.random() * 10000) + 10000}
-              className="flex-1 border bg-secondary shadow-md px-4"
+              className="flex-1 border bg-secondary dark:bg-gray-900 shadow-sm px-4"
               onClick={() => openModal(service)}
             >
-              <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
+              <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-8">
                 <Image
                   src={service.thumbnail}
                   alt={service.thumbnail}
@@ -102,8 +97,8 @@ const Services = () => {
                   <p className="text-sm text-start leading-snug font-sans font-medium mt-1">
                     {truncateDescription(service.desc, MAX_DESCRIPTION_LENGTH)}
                     &nbsp;
-                    <span className="font-sans bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:text-indigo-600 text-sm text-end font-medium">
-                      Read more
+                    <span className="block bg-gradient-to-r from-pink-600 via-yellow-500 to-pink-600 hover:text-pink-600 bg-clip-text text-transparent text-sm text-end font-semibold">
+                      Read More &#8594;
                     </span>
                   </p>
                 </div>

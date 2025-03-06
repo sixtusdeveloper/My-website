@@ -109,36 +109,31 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="relative bg-secondary w-full pt-8 lg:pt-10 px-2 lg:px-8 pb-20"
+      className="relative bg-secondary w-full pt-8 lg:pt-8 px-2 lg:px-8 pb-20"
       ref={sectionRef} // Reference to the experience section
     >
       <div className="bg-secondary lg:max-w-5xl mx-auto relative">
         <div className="my-8 relative text-center">
-          <h2 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide mb-8">
-            <strong>
-              My{" "}
-              <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-yellow-600 bg-clip-text text-transparent">
-                Experience
-              </span>
-            </strong>
+          <h2 className="p-8 lg:p-4 text-3xl md:text-4xl mb-8 text-center font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
+            My Experience
           </h2>
           <div className="flex justify-center space-x-4 mb-8">
             <button
               onClick={() => setSelectedSection("work")}
-              className={`px-4 py-2 rounded-lg cursor-pointer ${
+              className={`px-4 py-2 rounded-md cursor-pointer text-sm md:text-base lg:text-base ${
                 selectedSection === "work"
-                  ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
-                  : "bg-transparent border shadow-md"
+                  ? "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300"
+                  : "bg-transparent dark:bg-gray-900 border shadow-md hover:ease-in-out hover:scale-105 transition-all duration-300"
               }`}
             >
               Work Experience
             </button>
             <button
               onClick={() => setSelectedSection("education")}
-              className={`px-4 py-2 rounded-lg cursor-pointer ${
+              className={`px-4 py-2 rounded-md cursor-pointer text-sm md:text-base lg:text-base ${
                 selectedSection === "education"
-                  ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
-                  : "bg-transparent border shadow-md"
+                  ? "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300"
+                  : "bg-transparent dark:bg-gray-900 border shadow-md hover:ease-in-out hover:scale-105 transition-all duration-300"
               }`}
             >
               Education
@@ -155,7 +150,7 @@ const Experience = () => {
                   }`}
                 >
                   <div className="timeline-icon"></div>
-                  <div className="bg-secondary border p-4 rounded-lg shadow-md">
+                  <div className="bg-secondary dark:bg-gray-900 border p-4 rounded-lg shadow-sm">
                     <h3 className="text-lg font-bold">{experience.title}</h3>
                     <p className="inline-flex space-x-2 py-1 mb-0">
                       <span className="text-sm">
@@ -182,10 +177,9 @@ const Experience = () => {
                       <a
                         href="#"
                         onClick={() => openModal(experience)}
-                        className="font-medium cursor-pointer text-base bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:text-indigo-600"
+                        className="block bg-gradient-to-r from-pink-600 via-yellow-500 to-pink-600 hover:text-pink-600 bg-clip-text text-transparent text-sm text-end font-semibold"
                       >
-                        <span aria-hidden="true" className="absolute inset-0" />
-                        Read more <span aria-hidden="true">&rarr;</span>
+                        Read More &#8594;
                       </a>
                     </div>
                   </div>
@@ -200,7 +194,7 @@ const Experience = () => {
                 >
                   <div className="timeline-icon"></div>
 
-                  <div className="bg-secondary border p-4 rounded-lg shadow-md">
+                  <div className="bg-secondary dark:bg-gray-900 border p-4 rounded-lg shadow-sm">
                     <h3 className="text-lg font-bold mb-1">
                       {truncateCourse(edu.degree, MAX_COURSE_LENGTH)}
                     </h3>
@@ -231,10 +225,9 @@ const Experience = () => {
                       <a
                         href="#"
                         onClick={() => openModal(edu)}
-                        className="font-medium cursor-pointer text-base bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent hover:text-indigo-600"
+                        className="block bg-gradient-to-r from-pink-600 via-yellow-500 to-pink-600 hover:text-pink-600 bg-clip-text text-transparent text-sm text-end font-semibold"
                       >
-                        <span aria-hidden="true" className="absolute inset-0" />
-                        View credentials <span aria-hidden="true">&rarr;</span>
+                        View Credentials &#8594;
                       </a>
                     </div>
                   </div>
@@ -308,7 +301,7 @@ const Experience = () => {
                     <div className="mt-6 flex items-center justify-center">
                       <button
                         onClick={handleDownload}
-                        className={`px-4 py-2 flex items-center bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white text-base cursor-pointer justify-center space-x-2 rounded-lg ${
+                        className={`px-4 py-2 flex items-center bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white text-base cursor-pointer justify-center space-x-2 rounded-md ${
                           downloadStatus === "downloaded"
                             ? "bg-gradient-to-r from-green-500 via-indigo-600 to-green-800"
                             : "bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600"
@@ -391,7 +384,9 @@ const Experience = () => {
                       </p>
                     </div>
                     <div className="py-4 relative overflow-hidden">
-                      <h4 className="font-bold text-lg my-4">Technologies</h4>
+                      <h4 className="font-bold text-lg my-4">
+                        Technologies & Softwares Used
+                      </h4>
                       <ul className="flex flex-wrap gap-4">
                         {selectedWorkExperience.technologies.map(
                           (tech, index) => (

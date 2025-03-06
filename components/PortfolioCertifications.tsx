@@ -113,29 +113,24 @@ const Certifications = () => {
       className="bg-secondary relative md:pt-10 px-4 sm:px-6 lg:px-10 pb-20"
     >
       <div className="mx-auto max-w-6xl relative">
-        <h1 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-snug tracking-wide">
-          <strong>
-            My Currently{" "}
-            <span className="bg-gradient-to-r from-yellow-600 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-              Verified Certifications
-            </span>
-          </strong>
-        </h1>
+        <h2 className="p-8 lg:p-4 text-3xl md:text-4xl mb-8 text-center font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
+          My Currently Verified Certifications
+        </h2>
         <div className="w-full mt-12 grid md:grid-cols-4 grid-cols-1 md:gap-4 gap-8">
           {paginatedCertifications.map((certification, index) => (
             <Button
               key={index}
               borderRadius="1.75rem"
               duration={Math.floor(Math.random() * 10000) + 10000}
-              className="flex-1 border bg-secondary shadow-md px-4"
+              className="flex-1 border bg-secondary dark:bg-gray-900 shadow-sm px-4"
               onClick={() => openModal(certification)}
             >
-              <div className="flex lg:flex-row flex-col lg:items-center px-2 py-8 md:p-8 lg:p-8 gap-2">
+              <div className="flex lg:flex-row flex-col lg:items-center px-2 py-6 md:p-8 lg:p-8 gap-8">
                 <Image
                   src={certification.imageUrl}
                   alt={certification.title}
-                  width={200}
-                  height={200}
+                  width={180}
+                  height={180}
                   className="lg:w-32 md:w-20 w-16 services-img"
                 />
 
@@ -152,8 +147,8 @@ const Certifications = () => {
                       MAX_DESCRIPTION_LENGTH
                     )}
                     &nbsp;
-                    <span className="bg-gradient-to-r from-purple-800 via-blue-500 to-indigo-800 bg-clip-text text-transparent font-sans text-sm text-end font-medium">
-                      View Credentials
+                    <span className="block bg-gradient-to-r from-pink-600 via-yellow-500 to-pink-600 hover:text-pink-600 bg-clip-text text-transparent text-sm text-end font-semibold">
+                      View Credentials &#8594;
                     </span>
                   </p>
                 </div>
@@ -166,11 +161,11 @@ const Certifications = () => {
           <button
             onClick={() => handlePageChange("previous")}
             disabled={currentPage === 1}
-            className={`px-4 py-1 mx-1 rounded cursor-pointer transition-all duration-300 ${
+            className={`px-4 py-2 mx-1 rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === 1
-                ? "bg-transparent border cursor-not-allowed shadow-md"
-                : "bg-indigo-600 hover:bg-indigo-700 text-white"
-            } focus:outline-none`}
+                ? "bg-transparent dark:bg-gray-900 border cursor-not-allowed shadow-md"
+                : "bg-pink-600 hover:bg-purple-600 text-white"
+            }`}
           >
             Previous
           </button>
@@ -180,11 +175,11 @@ const Certifications = () => {
           <button
             onClick={() => handlePageChange("next")}
             disabled={currentPage === totalPages}
-            className={`px-4 py-1 mx-1 rounded cursor-pointer transition-all duration-300 ${
+            className={`px-4 py-1 mx-1 rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === totalPages
-                ? "bg-transparent border cursor-not-allowed shadow-md"
-                : "bg-indigo-600 hover:bg-indigo-700 text-white"
-            } `}
+                ? "bg-transparent bg-gray-900 border cursor-not-allowed shadow-md"
+                : "bg-pink-600 hover:bg-purple-600 text-white"
+            }`}
           >
             Next
           </button>
@@ -251,10 +246,10 @@ const Certifications = () => {
                     <div className="mt-6 flex items-center justify-center">
                       <button
                         onClick={handleDownload}
-                        className={`px-4 py-2 flex items-center cursor-pointer justify-center space-x-2 rounded-lg shadow-md ${
+                        className={`px-4 py-2 flex items-center cursor-pointer justify-center space-x-2 rounded-md shadow-md ${
                           downloadStatus === "downloaded"
                             ? "bg-gradient-to-r from-green-500 via-indigo-600 to-green-600 text-white"
-                            : "bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-lg text-white text-sm tracking-wide hover:bg-indigo-600"
+                            : "bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-md text-white text-sm tracking-wide hover:bg-indigo-600"
                         } focus:outline-none`}
                       >
                         <AiOutlineDownload className="mr-2" />

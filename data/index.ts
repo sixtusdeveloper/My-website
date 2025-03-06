@@ -280,7 +280,7 @@ export const experiences = [
     technologies: ["React", "Nextjs", "TypeScript", "Angular", "JavaScript", "HTML", "CSS", "Java", "Spring Boot", "PostgreSQL", "React", "Node.js", "Git", "GitHub", "VS Code", "Netlify", "Vercel", "Firebase", "MongoDB", "MySQL", "RESTful APIs", "GraphQL", "WebSockets"],
   },  
   {
-    date: "March 2023 - Present",
+    date: "March 2020 - Present",
     title: "Software Engineer",
     img: "/profile.jpg",
     organization: "Self-employed",
@@ -291,6 +291,31 @@ export const experiences = [
     fullDesc: "Develop custom, scalable and modern software web applications for clients both local and internation that serves their business and personal purposes.",
     technologies: ["React", "TypeScript", "Next.js", "Node.js", "PHP", "Java", "Angular", "Spring Boot", "PostgreSQL", "MySQL", "Express", "Docker", "AWS", "Stripe", "OAuth", "RESTful APIs", "WebSockets", "Shadcn", "Framer-motion", "GitLab CI/CD", "GutHub", "Material UI", "Bootstrap", "Flowbite", "Aceternity UI", "Tailwindcss", "Appwrite", "Clerk"],
   },  
+  
+    {
+      date: "Feb 2022 - 2023",
+      title: "Cashier & Customer Service Representative",
+      img: "/profile.jpg",
+      organization: "Drinks.ng",
+      type: "Remote",
+      nature: "Contract",
+      location: "Lagos, Nigeria",
+      description: "Managed customer transactions, resolved complaints, and ensured smooth payment processing while maintaining excellent customer service.",
+      fullDesc: "Handled daily cash and card transactions, provided support to customers regarding orders and product inquiries, and assisted in inventory tracking. Ensured seamless customer experience through effective communication and problem-solving.",
+      technologies: ["POS Systems", "Vendhq", "Microsoft Excel", "Customer Relationship Management (CRM)", "Google Workspace", "Problem-Solving", "Time Management", "Interpersonal Skills"],
+    },
+    {
+      date: "Jan 2019 - 2020",
+       title: "Administrative Assistant",
+      img: "/profile.jpg",
+      organization: "Kropmann Communications Limited",
+      type: "Onsite",
+      nature: "Contract",
+      location: "Lagos, Nigeria",
+      description: "Provided administrative and clerical support, managed schedules, and facilitated communication within the organization.",
+      fullDesc: "Assisted in office administration, organized files, scheduled meetings, and handled correspondence. Coordinated office operations to enhance efficiency and ensure smooth workflow.",
+      technologies: ["Microsoft Office Suite", "Google Workspace", "Data Entry", "Scheduling", "Communication", "Organizational Skills", "Office Administration"],
+  },
 
 ];
 

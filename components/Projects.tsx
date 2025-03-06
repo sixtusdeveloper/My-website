@@ -31,7 +31,7 @@ const Projects = () => {
         </h2>
         <div className="grid gap-4 md:gap-6 lg:gap-8 space-y-6 md:space-y-0 md:grid-cols-2">
           {/* Project 1 */}
-          <div className="flex relative shadow-md justify-center gap-4 p-4 md:p-6 lg:p-8 bg-secondary dark:bg-gray-900 border rounded-[1.75rem]">
+          <div className="flex relative shadow-sm justify-center gap-4 p-4 md:p-6 lg:p-8 bg-secondary dark:bg-gray-900 border rounded-lg">
             <div className="lg:text-start text-center lg:items-start items-center relative">
               <Image
                 src="/open-source-icon.png"
@@ -54,7 +54,7 @@ const Projects = () => {
           </div>
 
           {/* Project 2 */}
-          <div className="flex justify-center gap-4 p-4 md:p-6 lg:p-8 bg-secondary dark:bg-gray-900 shadow-md border rounded-[1.75rem]">
+          <div className="flex justify-center gap-4 p-4 md:p-6 lg:p-8 bg-secondary dark:bg-gray-900 shadow-sm border rounded-lg">
             <div className="lg:text-start text-center lg:items-start items-center relative">
               <Image
                 src="/app-icon.png"
@@ -76,7 +76,7 @@ const Projects = () => {
           </div>
 
           {/* Project 3 */}
-          <div className="flex justify-center gap-4 p-4 md:p-6 lg:p-8 bg-secondary dark:bg-gray-900 shadow-md border rounded-[1.75rem]">
+          <div className="flex justify-center gap-4 p-4 md:p-6 lg:p-8 bg-secondary dark:bg-gray-900 shadow-sm border rounded-lg">
             <div className="lg:text-start text-center lg:items-start items-center relative">
               <Image
                 src="/blog-icon.png"
@@ -96,7 +96,7 @@ const Projects = () => {
               </p>
               <a
                 href="https://devjourney-blog-khaki.vercel.app/"
-                className="text-purple-600 hover:text-yellow-500 hover:no-underline"
+                className="bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text hover:text-yellow-500 hover:no-underline"
                 target="_blank"
               >
                 See it for yourself &#8594;
@@ -105,7 +105,7 @@ const Projects = () => {
           </div>
 
           {/* Project 4 */}
-          <div className="flex justify-center gap-4 p-4 md:p-6 lg:p-8 bg-secondary dark:bg-gray-900 shadow-md border rounded-[1.75rem]">
+          <div className="flex justify-center gap-4 p-4 md:p-6 lg:p-8 bg-secondary dark:bg-gray-900 shadow-sm border rounded-lg">
             <div className="lg:text-start text-center lg:items-start items-center relative">
               <Image
                 src="/eccomerce-icon.png"
