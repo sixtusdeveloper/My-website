@@ -82,7 +82,7 @@ const Services = () => {
               className="flex-1 border bg-secondary dark:bg-gray-900 shadow-sm px-4"
               onClick={() => openModal(service)}
             >
-              <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-8">
+              <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-6 lg:p-8 gap-2">
                 <Image
                   src={service.thumbnail}
                   alt={service.thumbnail}
