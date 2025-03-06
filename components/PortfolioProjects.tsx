@@ -240,7 +240,7 @@ const Projects = () => {
             className={`px-4 py-2 mx-1 rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === 1
                 ? "bg-secondary dark:bg-gray-900 border cursor-not-allowed shadow-md"
-                : "bg-pink-600 hover:bg-purple-600 text-white"
+                : "bg-purple-600 hover:bg-pink-600 text-white"
             }`}
           >
             Previous
@@ -254,10 +254,10 @@ const Projects = () => {
             className={`px-4 py-1 mx-1 rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === totalPages
                 ? "bg-secondary dark:bg-gray-900 border cursor-not-allowed shadow-md"
-                : "bg-pink-600 hover:bg-purple-600 text-white"
+                : "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white hover:ease-in-out hover:scale-105 transition-all duration-300"
             }`}
           >
-            Next
+            Next &#8594;
           </button>
         </div>
 
