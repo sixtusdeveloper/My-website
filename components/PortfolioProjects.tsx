@@ -172,9 +172,9 @@ const Projects = () => {
                     <a
                       href={githubLink}
                       target="_blank"
-                      className="inline-flex rounded-md items-center py-2 px-3 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300"
+                      className="inline-flex rounded-md items-center py-2 px-3 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-medium text-sm md:text-sm lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300"
                     >
-                      Project codebase <FiArrowRight className="ml-2" />
+                      Project codebase &#8594;
                     </a>
 
                     <button
@@ -243,7 +243,7 @@ const Projects = () => {
                 : "bg-purple-600 hover:bg-pink-600 text-white"
             }`}
           >
-            Previous
+            &#8592;&nbsp;Previous
           </button>
           <span className="px-4 py-1 mx-1">
             Page {currentPage} of {totalPages}
@@ -257,7 +257,7 @@ const Projects = () => {
                 : "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white hover:ease-in-out hover:scale-105 transition-all duration-300"
             }`}
           >
-            Next &#8594;
+            Next&nbsp;&#8594;
           </button>
         </div>
 

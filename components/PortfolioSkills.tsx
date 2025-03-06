@@ -194,7 +194,7 @@ const PortfolioSkills = () => {
                 &nbsp;<span>Stripe</span>
               </li>
               <li className="flex items-center space-x-2">
-                <SiNextdotjs className="text-black" size={20} />
+                <SiNextdotjs className="text-black dark:text-white" size={20} />
                 &nbsp;<span>NextAuth</span>
               </li>
               <li className="flex items-center space-x-2">
