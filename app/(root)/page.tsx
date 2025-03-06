@@ -15,6 +15,7 @@ import Materials from "@/components/Materials";
 import Services from "@/components/Services";
 import FAQ from "@/components/FAQ";
 import ExploreMoreCallToAction from "@/components/ExploreMoreCallToAction";
+import GalleryCallToAction from "@/components/GalleryCallToAction";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <About />
         <Services />
         <Blog />
+        <GalleryCallToAction />
         <Testimonials />
         <Projects />
         <Materials />

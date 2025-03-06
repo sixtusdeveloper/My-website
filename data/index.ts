@@ -264,7 +264,7 @@ export const testimonials = [
   },
 ];
 
-//============================ data/experienceData.js ============================//
+//============================ Work Experience Data ============================//
 
 export const experiences = [
   {
@@ -423,68 +423,6 @@ export const experiences = [
       ],
     },
   
-  
-//   {
-//     date: "July 2024 - Dec 2024",
-//     title: "Customer Service Representative",
-//     img: "/profile.jpg",
-//     organization: "Drinks.ng",
-//     type: "Hybrid",
-//     nature: "Contract",
-//     location: "Lagos, Nigeria",
-//     description: "Managed customer transactions, resolved complaints, and ensured smooth payment processing while maintaining excellent customer service.",
-//     fullDesc: "Handled daily cash and card transactions, provided support to customers regarding orders and product inquiries, and assisted in inventory tracking. Ensured seamless customer experience through effective communication and problem-solving.",
-//     technologies: ["POS Systems", "Vendhq", "Microsoft Excel", "Customer Relationship Management (CRM)", "Google Workspace", "Problem-Solving", "Time Management", "Interpersonal Skills"],
-//   },
-//   {
-//     date: "October 2023 - June 2024",
-//     title: "Store Supervisor",
-//     img: "/profile.jpg",
-//     organization: "Drinks.ng",
-//     type: "Onsite",
-//     nature: "Contract",
-//     location: "Lagos, Nigeria",
-//     description: "Managed customer transactions, resolved complaints, and ensured smooth payment processing while maintaining excellent customer service.",
-//     fullDesc: "Handled daily cash and card transactions, provided support to customers regarding orders and product inquiries, and assisted in inventory tracking. Ensured seamless customer experience through effective communication and problem-solving.",
-//     technologies: ["POS Systems", "Vendhq", "Microsoft Excel", "Customer Relationship Management (CRM)", "Google Workspace", "Problem-Solving", "Time Management", "Interpersonal Skills"],
-//   },
-//   {
-//     date: "April 2023 - Sept 2023",
-//     title: "Store Cashier",
-//     img: "/profile.jpg",
-//     organization: "Drinks.ng",
-//     type: "Onsite",
-//     nature: "Contract",
-//     location: "Lagos, Nigeria",
-//     description: "Managed customer transactions, resolved complaints, and ensured smooth payment processing while maintaining excellent customer service.",
-//     fullDesc: "Handled daily cash and card transactions, provided support to customers regarding orders and product inquiries, and assisted in inventory tracking. Ensured seamless customer experience through effective communication and problem-solving.",
-//     technologies: ["POS Systems", "Vendhq", "Cin7", "Microsoft Excel", "Customer Relationship Management (CRM)", "Google Workspace", "Problem-Solving", "Time Management", "Interpersonal Skills"],
-//   },
-//   {
-//     date: "March 2020 - 2023",
-//     title: "Web Developer",
-//     img: "/profile.jpg",
-//     organization: "Self-employed",
-//     type: "Freelance",
-//     nature: "Contract",
-//     location: "Remote",
-//     description: "Develop custom, scalable and modern software web applications for clients both local and internation that serves their business and personal purposes",
-//     fullDesc: "Develop custom, scalable and modern software web applications for clients both local and internation that serves their business and personal purposes.",
-//     technologies: ["React", "TypeScript", "Next.js", "Node.js", "PHP", "Java", "Angular", "Spring Boot", "PostgreSQL", "MySQL", "Express", "Docker", "AWS", "Stripe", "OAuth", "RESTful APIs", "WebSockets", "Shadcn", "Framer-motion", "GitLab CI/CD", "GutHub", "Material UI", "Bootstrap", "Flowbite", "Aceternity UI", "Tailwindcss", "Appwrite", "Clerk"],
-//   }, 
-//   {
-//     date: "Jan 2019 - March 2023",
-//     title: "Administrative Assistant",
-//     img: "/profile.jpg",
-//     organization: "Kropmann Communications Limited",
-//     type: "Onsite",
-//     nature: "Contract",
-//     location: "Lagos, Nigeria",
-//     description: "Provided administrative and clerical support, managed schedules, and facilitated communication within the organization.",
-//     fullDesc: "Assisted in office administration, organized files, scheduled meetings, and handled correspondence. Coordinated office operations to enhance efficiency and ensure smooth workflow.",
-//     technologies: ["Microsoft Office Suite", "Google Workspace", "Data Entry", "Scheduling", "Communication", "Organizational Skills", "Office Administration"],
-// },
-
 ];
 
 //================================== Education data ==============================//

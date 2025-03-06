@@ -11,7 +11,7 @@ interface ModalProps {
   children?: React.ReactNode;
 }
 
-const BlogModal: React.FC<ModalProps> = ({
+const GalleryModal: React.FC<ModalProps> = ({
   isOpen,
   onClose,
   message,
@@ -44,12 +44,12 @@ const BlogModal: React.FC<ModalProps> = ({
     <div
       ref={modalRef}
       onClick={handleOverlayClick}
-      className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-2 z-50" // Darker overlay effect
+      className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-2 lg:p-4 z-50" // Darker overlay effect
     >
-      <div className="bg-secondary dark:bg-gray-900 border rounded-lg shadow-lg p-4 w-full max-w-sm mx-auto relative">
+      <div className="bg-secondary dark:bg-gray-900 border rounded-lg shadow-lg p-6 max-w-sm w-full mx-auto relative">
         <button
           onClick={onClose}
-          className="absolute top-2 right-2 z-40 border rounded-full p-2 cursor-pointer bg-secondary hover:text-red-600"
+          className="absolute top-2 right-2 p-2 z-40 cursor-pointer border rounded-full bg-secondary hover:text-red-600"
         >
           <IoClose size={18} />
         </button>
@@ -66,4 +66,4 @@ const BlogModal: React.FC<ModalProps> = ({
   );
 };
 
-export default BlogModal;
+export default GalleryModal;

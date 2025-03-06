@@ -4,11 +4,14 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import MagicButton from "@/components/ui/MagicButton";
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa"; // Import icons
+import GalleryModal from "@/components/ui/GalleryModal";
 
 const About = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isTwitterFollowed, setIsTwitterFollowed] = useState(false);
   const [isGithubFollowed, setIsGithubFollowed] = useState(false);
+  const [isGalleryModalOpen, setIsGalleryModalOpen] = useState(false);
+  const [isGalleryLoading, setIsGalleryLoading] = useState(false);
 
   // Handle page refresh or initial load for follow buttons
   useEffect(() => {
@@ -53,6 +56,18 @@ const About = () => {
     localStorage.setItem("isGithubFollowed", JSON.stringify(true));
   };
 
+  const openGalleryModal = () => {
+    setIsGalleryLoading(true);
+    setTimeout(() => {
+      setIsGalleryLoading(false);
+      setIsGalleryModalOpen(true);
+    }, 2000);
+  };
+
+  const handleGalleryRedirect = () => {
+    window.location.href = "/pages/gallery";
+  };
+
   return (
     <section id="about" className="p-2 lg:py-2 bg-secondary w-full">
       <div className="border bg-secondar dark:bg-gray-900 rounded-lg shadow-sm max-w-6xl relative flex gap-6 align-center justify-center flex-wrap lg:flex-nowrap p-4 lg:p-6 lg:my-2 mx-auto">
@@ -76,7 +91,7 @@ const About = () => {
               <div className="flex items-center justify-center gap-4 mt-0">
                 {/* Twitter Follow Button */}
                 <div
-                  className={`flex items-center space-x-2 p-2 rounded-full shadow-sm border transition ${
+                  className={`flex items-center space-x-2 p-2 rounded-full shadow-sm border hover:ease-in-out hover:scale-105 transition-all duration-300 ${
                     isTwitterFollowed
                       ? "bg-secondary dark:bg-gray-800 border"
                       : "bg-transparent border"
@@ -92,7 +107,7 @@ const About = () => {
 
                 {/* GitHub Follow Button */}
                 <div
-                  className={`flex items-center space-x-2 p-2 rounded-full shadow-sm border transition${
+                  className={`flex items-center space-x-2 p-2 rounded-full shadow-sm border hover:ease-in-out hover:scale-105 transition-all duration-300 ${
                     isGithubFollowed
                       ? "bg-secondary dark:bg-gray-800 border"
                       : "bg-transparent border"
@@ -109,7 +124,7 @@ const About = () => {
                 </div>
 
                 {/* Linked Follow Button */}
-                <div className="flex items-center space-x-2 p-2 rounded-full shadow-sm border transition">
+                <div className="flex items-center space-x-2 p-2 rounded-full shadow-sm border hover:ease-in-out hover:scale-105 transition-all duration-300">
                   <a
                     href="https://linkedin.com/in/sixtusushrey"
                     target="_blank"
@@ -167,13 +182,19 @@ const About = () => {
                 </p>
               </>
             )}
-
-            <a onClick={handleToggle}>
-              <MagicButton
-                title={isExpanded ? "Less to read" : "More to read"}
-                otherClasses="text-[1.4rem] flex justify-center rounded-full items-center text-base mt-2 text-center"
-              />
-            </a>
+            <div className="flex gap-4 items-center justify-start text-left">
+              <a onClick={handleToggle}>
+                <MagicButton
+                  title={isExpanded ? "Less to read" : "More to read"}
+                  otherClasses="text-[1.4rem] flex justify-center rounded-full items-center text-base text-center"
+                />
+              </a>
+              <a onClick={openGalleryModal}>
+                <button className="py-3 px-6 text-pink-600 hover:text-white dark:text-white text-base ring-2 ring-yellow-500 hover:bg-gradient-to-r hover:from-pink-500 hover:via-yellow-500 hover:to-pink-500">
+                  {isGalleryLoading ? "Loading..." : "Visit My Gallery"}
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -209,6 +230,35 @@ const About = () => {
           ></iframe>
         </div>
       </div>
+
+      {/* Loader for Blog Modal */}
+      {isGalleryLoading && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
+          <div className="animate-spin rounded-full border-t-4 border-blue-500 h-16 w-16"></div>
+        </div>
+      )}
+
+      {/* Blog Modal */}
+      <GalleryModal
+        isOpen={isGalleryModalOpen}
+        onClose={() => setIsGalleryModalOpen(false)}
+        message="You are about to be navigated to my Gallery page. Do you wish to continue?"
+      >
+        <div className="flex justify-center gap-4 p-4 mt-4">
+          <button
+            onClick={handleGalleryRedirect}
+            className="text-sm lg:text-base font-medium bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-600 text-white py-2 px-4 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300"
+          >
+            Sure, Navigate
+          </button>
+          <button
+            onClick={() => setIsGalleryModalOpen(false)}
+            className="bg-gray-600 hover:bg-gray-800 text-white text-sm lg:text-base font-medium py-2 px-8 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300"
+          >
+            Cancel
+          </button>
+        </div>
+      </GalleryModal>
     </section>
   );
 };

@@ -20,7 +20,8 @@ const Projects = () => {
   };
 
   const handleProjectRedirect = () => {
-    window.location.href = "https://www.sixtusdev.net/pages/portfolio";
+    window.location.href = "/pages/portfolio/#projects";
+    // "https://www.sixtusdev.net/pages/portfolio/#projects";
   };
 
   return (
@@ -143,18 +144,18 @@ const Projects = () => {
       <ProjectModal
         isOpen={isProjectModalOpen}
         onClose={closeProjectModal}
-        message="Are you sure you want to leave the site? You will be redirected to my portfolio."
+        message="Are you sure you want to leave this page? You will be navigated to my portfolio page."
       >
         <div className="flex gap-4 mt-4">
           <button
             onClick={handleProjectRedirect}
-            className="bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-800 text-white py-2 px-8 rounded-full"
+            className="bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-blue-500 text-white py-2 px-8 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300"
           >
             Leave
           </button>
           <button
             onClick={closeProjectModal}
-            className="bg-gray-600 hover:bg-gray-800 text-white py-2 px-8 rounded-full"
+            className="bg-gray-600 hover:bg-gray-800 text-white py-2 px-8 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300"
           >
             Cancel
           </button>

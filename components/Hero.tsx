@@ -69,7 +69,7 @@ const Home = () => {
   };
 
   const handleHeroRedirect = () => {
-    window.location.href = "https://www.sixtusdev.net/pages/portfolio";
+    window.location.href = "/pages/portfolio";
   };
 
   const openBlogModal = () => {
@@ -203,18 +203,18 @@ const Home = () => {
       <BlogModal
         isOpen={isBlogModalOpen}
         onClose={() => setIsBlogModalOpen(false)}
-        message="You are about to visit my full blog website. Do you want to continue?"
+        message="You are about to be redirected to my Blog website. Do you wish to continue?"
       >
         <div className="flex justify-center gap-4 p-4 mt-4">
           <button
             onClick={handleBlogRedirect}
-            className="bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-600 text-white py-2 px-4 rounded-full"
+            className="text-sm lg:text-base font-medium bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-600 text-white py-2 px-4 rounded-full"
           >
-            Yes, Visit Blog
+            Yes, visit blog
           </button>
           <button
             onClick={() => setIsBlogModalOpen(false)}
-            className="bg-gray-600 hover:bg-gray-800 text-white py-2 px-8 rounded-full"
+            className="bg-gray-600 hover:bg-gray-800 text-white text-sm lg:text-base font-medium py-2 px-8 rounded-full"
           >
             Cancel
           </button>
@@ -227,18 +227,18 @@ const Home = () => {
       <HeroModal
         isOpen={isHeroModalOpen}
         onClose={closeHeroModal}
-        message="Are you sure you want to leave the site? You will be redirected to my portfolio."
+        message="Are you sure you want to leave this page? You will be navigated to my portfolio page."
       >
         <div className="flex gap-4 mt-4">
           <button
             onClick={handleHeroRedirect}
-            className="bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-800 text-white py-2 px-8 rounded-full"
+            className="bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-800 text-white text-sm lg:text-base font-medium py-2 px-8 rounded-full"
           >
             Leave
           </button>
           <button
             onClick={closeHeroModal}
-            className="bg-gray-600 hover:bg-gray-800 text-white py-2 px-8 rounded-full"
+            className="bg-gray-600 hover:bg-gray-800 text-white py-2 px-8 rounded-full text-sm lg:text-base font-medium"
           >
             Cancel
           </button>

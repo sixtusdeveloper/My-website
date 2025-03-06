@@ -160,18 +160,18 @@ const Blog = () => {
       <BlogModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        message="You are about to visit my full blog website. Do you want to continue?"
+        message="You are about to be redirected to my Blog website. Do you wish to continue?"
       >
         <div className="flex justify-center gap-4 p-4">
           <button
             onClick={handleBlogRedirect}
-            className="mt-4 rounded-lg px-4 py-2 bg-blue-500 tracking-wide text-sm text-white hover:bg-blue-600"
+            className="mt-4 rounded-full text-sm lg:text-base font-medium px-4 py-2 bg-blue-500 text-white hover:bg-blue-600 hover:ease-in-out hover:scale-105 transition-all duration-300"
           >
-            Yes, Visit Blog
+            Yes, visit blog
           </button>
           <button
             onClick={() => setIsModalOpen(false)}
-            className="mt-4 px-4 py-2 text-sm tracking-wide bg-gray-500 text-white rounded-lg hover:bg-gray-600"
+            className="mt-4 px-4 py-2 text-sm lg:text-base font-medium bg-gray-500 text-white rounded-full hover:bg-gray-600 hover:ease-in-out hover:scale-105 transition-all duration-300"
           >
             Cancel
           </button>

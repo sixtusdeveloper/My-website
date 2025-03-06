@@ -1,8 +1,8 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { CodeIcon, PaintbrushIcon, ServerIcon, RocketIcon } from "lucide-react";
-import { useRouter } from "next/navigation";
+import ServicesModal from "@/components/ui/GalleryModal";
 
 const services = [
   {
@@ -42,10 +42,21 @@ const services = [
 ];
 
 const ServicesSection = () => {
-  const router = useRouter();
-  const navigateToServices = () => {
-    router.push("/pages/portfolio/#services");
+  const [isServicesModalOpen, setIsServicesModalOpen] = useState(false);
+  const [isServicesLoading, setIsServicesLoading] = useState(false);
+
+  const openServicesModal = () => {
+    setIsServicesLoading(true);
+    setTimeout(() => {
+      setIsServicesLoading(false);
+      setIsServicesModalOpen(true);
+    }, 2000);
   };
+
+  const handleServicesRedirect = () => {
+    window.location.href = "/pages/portfolio/#services";
+  };
+
   return (
     <section id="services" className="py-10 bg-secondary relative">
       <div className="max-w-6xl mx-auto px-6 text-left md:text-center">
@@ -76,7 +87,7 @@ const ServicesSection = () => {
 
         {/* CTA Button */}
         <div className="mt-12">
-          <a onClick={navigateToServices}>
+          <a onClick={openServicesModal}>
             <button
               type="button"
               className="bg-gradient-to-r from-blue-500 via-purple-500 to-green-600 hover:bg-blue-600 text-white font-semibold text-base h-12 px-6 py-3 rounded-none hover:ease-in-out hover:scale-105 transition-all duration-300"
@@ -86,6 +97,35 @@ const ServicesSection = () => {
           </a>
         </div>
       </div>
+
+      {/* Loader for Blog Modal */}
+      {isServicesLoading && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
+          <div className="animate-spin rounded-full border-t-4 border-blue-500 h-16 w-16"></div>
+        </div>
+      )}
+
+      {/* Blog Modal */}
+      <ServicesModal
+        isOpen={isServicesModalOpen}
+        onClose={() => setIsServicesModalOpen(false)}
+        message="You are about to be navigated to my Portfolio page. Do you wish to continue?"
+      >
+        <div className="flex justify-center gap-4 p-4 mt-4">
+          <button
+            onClick={handleServicesRedirect}
+            className="text-sm lg:text-base font-medium bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-600 text-white py-2 px-4 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300"
+          >
+            Sure, Navigate
+          </button>
+          <button
+            onClick={() => setIsServicesModalOpen(false)}
+            className="bg-gray-600 hover:bg-gray-800 text-white text-sm lg:text-base font-medium py-2 px-8 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300"
+          >
+            Cancel
+          </button>
+        </div>
+      </ServicesModal>
     </section>
   );
 };
