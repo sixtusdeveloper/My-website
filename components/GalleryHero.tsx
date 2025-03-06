@@ -51,13 +51,13 @@ export default function GalleryHero() {
           transition={{ duration: 1, delay: 0.6 }}
         >
           <a href="#gallery">
-            <Button className="px-6 h-12 hpy-3 text-base font-semibold rounded-md text-white shadow-lg bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 hover:bg-yellow-600 hover:ease-in-out hover:scale-105 transition-all duration-300">
+            <Button className="px-6 h-12 py-3 text-sm lg:text-base font-semibold rounded-md text-white shadow-lg bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 hover:bg-yellow-600 hover:ease-in-out hover:scale-105 transition-all duration-300">
               Explore Gallery
             </Button>
           </a>
           <a href="/#contact">
-            <Button className="px-6 py-3 h-12 text-base font-semibold rounded-md text-white shadow-lg border border-white/40 bg-transparent hover:bg-white/20 hover:ease-in-out hover:scale-105 transition-all duration-300">
-              Contact Me
+            <Button className="px-6 py-3 h-12 text-sm lg:text-base font-semibold rounded-md text-white shadow-lg border border-white/40 bg-transparent hover:bg-white/20 hover:ease-in-out hover:scale-105 transition-all duration-300">
+              Let's Connect
             </Button>
           </a>
         </motion.div>
