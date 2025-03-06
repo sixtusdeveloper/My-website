@@ -15,23 +15,3 @@ export const galleryImages = [
     { id: 14, src: "/gallery/gallery14.png", alt: "Me in Park, Parkmore, Galway, Ireland", category: "Cherished Memories" },
   ];
   
-
-
-
-
-// export const galleryImages = [
-//   { id: 1, src: "/gallery/gallery01.png", alt: "Me at Hennessy Anniversary, Drinks.ng, Vi, LAG" },
-//   { id: 2, src: "/gallery/gallery02.png", alt: "Me at Kropmann Communications Limited, Victoria Island, LAG" },
-//   { id: 3, src: "/gallery/gallery03.png", alt: "Me at Eko Hotels & Suites, Victoria Island, LAG" },
-//   { id: 4, src: "/gallery/gallery04.png", alt: "Me at Beijing Zhongguancun, China for workshop" },
-//   { id: 5, src: "/gallery/gallery05.png", alt: "Me and my bro at Lekki, roof top, Drinks.ng end of the year Party, Lekki, LAG" },
-//   { id: 6, src: "/gallery/gallery06.png", alt: "Me and my guys at Lekki, roof top, Drinks.ng end of the year Party, Lekki, LAG" },
-//   { id: 7, src: "/gallery/gallery07.png", alt: "Me at Moet & Chamdor, Drinks.ng, Victoria island, LAG" },
-//   { id: 8, src: "/gallery/gallery08.png", alt: "Me at Moet & Chamdor, Drinks.ng, Victoria island, LAG" },
-//   { id: 9, src: "/gallery/gallery09.png", alt: "Me at Drinks.ng, Victoria island, LAG" },
-//   { id: 10, src: "/gallery/gallery10.png", alt: "Me at Jameson the Black Barrel Party Lekki, LAG" },
-//   { id: 11, src: "/gallery/gallery11.png", alt: "Me at Altschool africa, Lekki, LAG" },
-//   { id: 12, src: "/gallery/gallery12.png", alt: "Me at Good Beach, Land Mark, Lekki, LAG" },
-//   { id: 13, src: "/gallery/gallery13.png", alt: "Me at Good Beach, Land Mark, Lekki, LAG" },
-//   { id: 14, src: "/gallery/gallery14.png", alt: "Me in Park, Parkmore, Galway, Ireland" },
-// ];
