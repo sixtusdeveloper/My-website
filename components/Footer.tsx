@@ -81,8 +81,8 @@ const Footer: React.FC = () => {
 
       <div className="flex justify-center items-center py-2 gap-2">
         <a href="/" className="flex items-center">
-          <Image src="/Logo.png" alt="Sixtusdev Logo" width={35} height={35} />
-          <span className="font-sans sm:block self-center text-base font-semibold bg-gradient-to-r from-yellow-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+          <Image src="/Logo.png" alt="Sixtusdev Logo" width={30} height={30} />
+          <span className="font-sans sm:block self-center text-sm font-semibold bg-gradient-to-r from-yellow-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
             SIXTUSDEV
           </span>
         </a>
