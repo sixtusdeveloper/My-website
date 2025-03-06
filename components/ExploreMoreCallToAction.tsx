@@ -41,7 +41,7 @@ const ExploreMoreCallToAction = () => {
         {/* Content */}
         <div className="relative z-10 max-w-3xl px-4 lg:pl-20 lg:pr-8 md:text-center text-left">
           <h1 className="text-4xl font-extrabold md:text-5xl">
-            See how I transformed ideas into reality!
+            See how I transform ideas into reality!
           </h1>
           <p className="mt-4 text-base opacity-95">
             Explore my portfolio page and see how I turn ideas into reality.
