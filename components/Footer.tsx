@@ -32,7 +32,6 @@ const Footer: React.FC = () => {
             <FaTwitter size={20} />
           </span>
         </a>
-
         <a
           href="https://www.youtube.com/@sixtusdev"
           target="_blank"
