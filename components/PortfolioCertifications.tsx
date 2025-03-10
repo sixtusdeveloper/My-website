@@ -109,7 +109,7 @@ const Certifications = () => {
 
   return (
     <section
-      id="certifications"
+      id="my-certs"
       className="bg-secondary relative md:pt-10 px-4 sm:px-6 lg:px-10 pb-20"
     >
       <div className="mx-auto max-w-6xl relative">

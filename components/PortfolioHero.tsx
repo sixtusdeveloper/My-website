@@ -188,16 +188,14 @@ const Hero = () => {
             transition={{ duration: 1.1, ease: "easeOut" }}
           >
             <a onClick={handleHireMeClick}>
-              <Button className="h-12 px-6 py-3 rounded-none bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
+              <button className="px-6 py-3 rounded-md bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
                 Hire Me
-              </Button>
+              </button>
             </a>
             <a onClick={handleReadMoreClick}>
-              <MagicButton
-                title="Read More"
-                icon={<GoArrowRight className="text-lg" />}
-                otherClasses="text-[1.4rem]"
-              />
+              <button className="py-3 px-6 font-semibold rounded-md text-white hover:text-white dark:text-white text-sm ring-2 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 md:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
+                Read More&nbsp;&#8594;
+              </button>
             </a>
           </motion.div>
         </motion.div>

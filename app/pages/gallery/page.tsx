@@ -4,6 +4,9 @@ import Navbar from "@/components/Navbar";
 import { GallerysNavLinks } from "@/data";
 import React from "react";
 import GallerySection from "@/components/GallerySection";
+import GalleryTechEventSection from "@/components/GalleryTechEventSection";
+import SocialLife from "@/components/SocialLife";
+import SocialLifeSection from "@/components/SocialLifeSection";
 
 const Gallery = () => {
   return (
@@ -12,6 +15,9 @@ const Gallery = () => {
         <Navbar navigation={GallerysNavLinks} />
         <GalleryHero />
         <GallerySection />
+        {/* <GalleryTechEventSection />
+        <SocialLife />
+        <SocialLifeSection /> */}
         <Footer />
       </div>
     </main>

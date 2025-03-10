@@ -104,7 +104,7 @@ const Projects = () => {
   return (
     <div
       className="relative bg-secondary w-full mx-auto md:pt-8 px-4 lg:px-8 pb-10"
-      id="projects"
+      id="all-projects"
     >
       <div className="mx-auto max-w-7xl relative">
         {/* Loader Overlay */}
@@ -121,7 +121,7 @@ const Projects = () => {
               setSelectedCategory("Frontend");
               setCurrentPage(1);
             }}
-            className={`px-4 py-2 mx-2 text-sm font-semibold font-sans rounded-md tracking-wide cursor-pointer transition-all duration-300 ${
+            className={`px-4 py-2 mx-2 text-sm items-center font-semibold rounded-md tracking-wide cursor-pointer transition-all duration-300 ${
               selectedCategory === "Frontend"
                 ? "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300"
                 : "bg-transparent dark:bg-gray-900 border shadow-md hover:ease-in-out hover:scale-105 transition-all duration-300"
@@ -134,7 +134,7 @@ const Projects = () => {
               setSelectedCategory("Fullstack");
               setCurrentPage(1);
             }}
-            className={`px-4 py-2 text-sm md:text-sm font-semibold font-sans mx-2 rounded-md tracking-wide transition-all duration-300 ${
+            className={`px-4 py-2 text-sm items-center font-semibold mx-2 rounded-md tracking-wide transition-all duration-300 ${
               selectedCategory === "Fullstack"
                 ? "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300"
                 : "bg-transparent dark:bg-gray-900 border shadow-md hover:ease-in-out hover:scale-105 transition-all duration-300"

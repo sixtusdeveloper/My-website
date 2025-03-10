@@ -48,8 +48,8 @@ const FAQPage = () => {
           Frequently Asked Questions (FAQ)
         </h1>
         <p className="text-base lg:text-base mb-8 sm:text-start text-start">
-          Welcome to my FAQ page! Here you can find answers to the most common
-          questions about my platform.
+          Welcome to my FAQ section! Here you can find answers to the most
+          common questions about my profession.
         </p>
         <div className="rounded-lg p-2 md:p-6 shadow-sm border bg-secondary dark:bg-gray-900">
           {faqs.map((faq, index) => (
@@ -73,7 +73,7 @@ const FAQPage = () => {
             </div>
           ))}
         </div>
-        <div className="py-4 text-center mt-2 md:mt-4 lg:mt-4">
+        <div className="py-4 px-2 text-center mt-2 md:mt-4 lg:mt-4">
           <p className="text-sm">
             Could not find what you're looking for?{" "}
             <a href="/#contact" className="text-green-500 hover:underline ml-2">
@@ -83,18 +83,18 @@ const FAQPage = () => {
         </div>
 
         <div className="py-4 text-center mt-2">
-          <h2 className="text-center">
+          <h2 className="text-center text-sm md:text-base">
             Did you find these Questions and Answers helpful?
           </h2>
           <div className="flex py-4 justify-center items-center gap-6">
             <button
-              className="bg-gradient-to-r from-blue-500 via-purple-500 to-purple-600 hover:ease-in-out hover:scale-105 transition-all duration-300 text-white text-base font-semibold h-12 px-6 py-3 rounded-none"
+              className="bg-gradient-to-r from-blue-500 via-purple-500 to-purple-600 hover:ease-in-out hover:scale-105 transition-all duration-300 text-white text-base font-semibold h-12 px-6 py-3 rounded-md"
               onClick={() => handleFeedback("yes")}
             >
               Yes, they were
             </button>
             <button
-              className="bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:ease-in-out hover:scale-105 transition-all duration-300 text-white text-base font-semibold h-12 px-6 py-3 rounded-none"
+              className="bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:ease-in-out hover:scale-105 transition-all duration-300 text-white text-base font-semibold h-12 px-6 py-3 rounded-md"
               onClick={() => handleFeedback("no")}
             >
               No, they weren't
@@ -135,7 +135,7 @@ const FAQPage = () => {
                 </p>
                 <button
                   onClick={handleChatDirectly}
-                  className="h-11 py-2 px-6 items-center w-full mt-4 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white rounded-lg"
+                  className="h-11 py-2 px-6 items-center mt-4 bg-gradient-to-r from-blue-500 via-purple-500 to-purple-600 text-white rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300"
                 >
                   Chat me directly
                 </button>
@@ -154,7 +154,7 @@ const FAQPage = () => {
                 </p>
                 <button
                   onClick={handleChatDirectly}
-                  className="h-11 py-2 px-6 items-center w-full mt-4 bg-gradient-to-r from-indigo-500 via-blue-500 to-purple-600 text-white rounded-lg"
+                  className="h-11 py-2 px-6 items-center mt-4 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-white rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300"
                 >
                   Reach out to me
                 </button>

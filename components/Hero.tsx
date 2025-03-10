@@ -168,15 +168,14 @@ const Home = () => {
             transition={{ duration: 1.1, ease: "easeOut" }}
           >
             <a onClick={openHeroModal}>
-              <Button className="h-12 px-6 py-3 rounded-none bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
-                Visit My Portfolio
-              </Button>
+              <button className="h-12 px-6 py-3 rounded-md bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
+                Visit Portfolio
+              </button>
             </a>
             <a onClick={openBlogModal}>
-              <MagicButton
-                title={isBlogLoading ? "Loading..." : "Visit My Blog"}
-                otherClasses="text-[1.4rem] flex justify-center rounded-none items-center text-base font-sans text-center"
-              />
+              <button className="py-3 px-6 h-12 font-semibold rounded-md text-white hover:text-white dark:text-white text-sm ring-2 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 md:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
+                {isBlogLoading ? "Loading..." : "Visit My Blog"}
+              </button>
             </a>
           </motion.div>
         </motion.div>

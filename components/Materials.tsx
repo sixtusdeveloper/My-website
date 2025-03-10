@@ -94,7 +94,7 @@ export default function CallToAction() {
           <button
             type="button"
             onClick={openModal}
-            className="rounded-tl-xl text-base rounded-bl-none px-6 py-3 mx-auto bg-gradient-to-r from-green-600 via-indigo-500 to-purple-700 hover:scale-95 text-white w-full rounded-none"
+            className="rounded-tl-xl text-base rounded-bl-none px-6 py-3 mx-auto bg-gradient-to-r from-green-600 via-indigo-500 to-purple-700 hover:scale-95 text-white w-full rounded-md"
           >
             Access Free E-Books
           </button>
@@ -116,7 +116,7 @@ export default function CallToAction() {
           onClick={closeModal}
         >
           <div
-            className="bg-secondary dark:bg-gray-900 p-6 rounded-lg shadow-lg w-[95%] max-w-md relative"
+            className="bg-secondary dark:bg-gray-900 py-8 px-6 border rounded-lg shadow-lg w-[95%] max-w-md relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button onClick={closeModal} className="absolute top-2 right-2">
@@ -138,7 +138,7 @@ export default function CallToAction() {
               <div className="flex justify-between">
                 <button
                   onClick={handleLoggedInClick}
-                  className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md w-[48%]"
+                  className="bg-gradient-to-r from-green-600 via-indigo-500 to-purple-700 hover:bg-green-700 text-white px-4 py-2 rounded-md w-[48%]"
                 >
                   I've Logged in
                 </button>
@@ -161,7 +161,7 @@ export default function CallToAction() {
           onClick={closeErrorModal}
         >
           <div
-            className="bg-secondary dark:bg-gray-900 p-6 rounded-lg shadow-lg w-[95%] max-w-md relative"
+            className="bg-secondary dark:bg-gray-900 py-8 px-6 rounded-lg border shadow-lg w-[95%] max-w-md relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -180,7 +180,7 @@ export default function CallToAction() {
               </p>
               <button
                 onClick={() => router.push("/sign-in")}
-                className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md w-full"
+                className="bg-gradient-to-r from-red-500 via-yellow-500 to-purple-700 hover:bg-yellow-500 text-white px-4 py-2 rounded-md w-full"
               >
                 Log in Now
               </button>
@@ -194,7 +194,7 @@ export default function CallToAction() {
           className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
           onClick={closeSuccessModal}
         >
-          <div className="bg-secondary dark:bg-gray-900 p-6 rounded-lg shadow-lg w-[95%] max-w-md relative">
+          <div className="bg-secondary dark:bg-gray-900 py-8 px-6 border rounded-lg shadow-lg w-[95%] max-w-md relative">
             <button
               onClick={closeSuccessModal}
               className="absolute top-2 right-2"

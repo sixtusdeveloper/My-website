@@ -87,7 +87,7 @@ const Contact = () => {
                 <h4 className="py-2 text-lg font-bold">
                   <strong>Contact Me</strong>
                 </h4>
-                <div className="inline-flex py-2 items-center border rounded-none p-2 w-full my-1">
+                <div className="inline-flex py-2 items-center border rounded-md p-2 w-full my-1">
                   <Image
                     src="/location.webp"
                     alt="Location"
@@ -103,7 +103,7 @@ const Contact = () => {
                 <a
                   href="https://wa.me/+2349022048105"
                   target="_blank"
-                  className="inline-flex py-2 items-center border rounded-none hover:underline hover:text-yellow-500 p-2 w-full my-1"
+                  className="inline-flex py-2 items-center border rounded-md hover:underline hover:text-yellow-500 p-2 w-full my-1"
                 >
                   <Image
                     src="/phone.png"
@@ -119,7 +119,7 @@ const Contact = () => {
                 <br />
                 <a
                   href="mailto:contact@sixtusdev.net?subject=Let's%20connect!"
-                  className="inline-flex items-center border hover:underline hover:text-yellow-500 rounded-none p-2 w-full my-1"
+                  className="inline-flex items-center border hover:underline hover:text-yellow-500 rounded-md p-2 w-full my-1"
                 >
                   <Image
                     src="/Gmail.png"

@@ -336,6 +336,12 @@ button a {
   object-fit: cover !important;
 }
 
+.tech_event_img {
+  width: 400px !important;
+  height: 200px !important;
+  object-fit: cover !important;
+}
+
 /* Current styles for the timeline */
 .timeline-container .timeline-icon {
   width: 20px;

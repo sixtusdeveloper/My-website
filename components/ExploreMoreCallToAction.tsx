@@ -49,7 +49,7 @@ const ExploreMoreCallToAction = () => {
           <a onClick={openHeroModal}>
             <button
               type="button"
-              className="mt-6 py-3 px-6 text-base font-semibold rounded-none inline-block bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white shadow-lg hover:ease-in-out hover:scale-105 transition-all duration-300"
+              className="mt-6 py-3 px-6 text-base font-semibold rounded-md inline-block bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white shadow-lg hover:ease-in-out hover:scale-105 transition-all duration-300"
             >
               Visit My Portfolio
             </button>
@@ -62,7 +62,7 @@ const ExploreMoreCallToAction = () => {
         <HeroModal
           isOpen={isHeroModalOpen}
           onClose={closeHeroModal}
-          message="Are you sure you want to leave the site? You will be redirected to my portfolio."
+          message="Are you sure you want to leave this page? You will be navigated to my portfolio page."
         >
           <div className="flex gap-4 mt-4">
             <button

@@ -85,7 +85,7 @@ export const navigation = [
 export const GallerysNavLinks = [
   { name: 'Personal Life', href: '#personal-life' },
     { name: 'Tech Events', href: '#tech-events' },
-    { name: 'Public Meetings', href: '#public-meetings' },
+    { name: 'Social Life', href: '#social-life' },
   ];
   
 // Portfolio Nav Links
@@ -581,6 +581,8 @@ export const cvImages =
 
 //=========================== Hero Background Images Transitions ==================//
 export const backgroundImages = [
+  "/skillsbg.avif",
+  "/skilbg.avif",
   "/blog06.avif",
   "/blog03.avif",
   "/blog04.avif",

@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import MagicButton from "@/components/ui/MagicButton";
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa"; // Import icons
 import GalleryModal from "@/components/ui/GalleryModal";
+import { Button } from "./ui/button";
 
 const About = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -184,13 +184,12 @@ const About = () => {
             )}
             <div className="flex gap-4 items-center justify-start text-left">
               <a onClick={handleToggle}>
-                <MagicButton
-                  title={isExpanded ? "Less to read" : "More to read"}
-                  otherClasses="text-[1.4rem] flex justify-center rounded-full items-center text-base text-center"
-                />
+                <button className="py-3 px-6 h-12 rounded-md text-purple-600 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-2 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 hover:ease-in-out hover:scale-105 transition-all duration-300">
+                  {isExpanded ? "Less to read" : "More to read"}
+                </button>
               </a>
               <a onClick={openGalleryModal}>
-                <button className="py-3 px-6 text-pink-600 hover:text-white dark:text-white text-base ring-2 ring-yellow-500 hover:bg-gradient-to-r hover:from-pink-500 hover:via-yellow-500 hover:to-pink-500">
+                <button className="py-3 h-12 px-6 rounded-md text-white text-sm md:text-base font-semibold bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 hover:ease-in-out hover:scale-105 transition-all duration-300">
                   {isGalleryLoading ? "Loading..." : "Visit My Gallery"}
                 </button>
               </a>

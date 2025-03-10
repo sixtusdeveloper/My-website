@@ -93,7 +93,7 @@ const Blog = () => {
           {currentPosts.map((post) => (
             <article
               key={post.id}
-              className="p-4 bg-secondary dark:bg-gray-900 border shadow-sm rounded-lg"
+              className="p-4 bg-secondary dark:bg-gray-900 border shadow-sm rounded-lg transition-transform transform hover:scale-105"
             >
               <Image
                 src={post.imageUrl}
@@ -106,7 +106,7 @@ const Blog = () => {
                 <h3 className="text-lg font-bold">
                   {truncateTitle(post.title, MAX_TITLE_LENGTH)}
                 </h3>
-                <p className="mt-2 text-base leading-relaxed">
+                <p className="mt-2 text-sm leading-relaxed">
                   {truncateDescription(
                     post.description,
                     MAX_DESCRIPTION_LENGTH
@@ -115,15 +115,15 @@ const Blog = () => {
                 <div className="flex mt-4 gap-4 justify-between items-center">
                   <button
                     onClick={() => openModal(post)}
-                    className="py-2 px-3 text-center bg-gradient-to-r from-blue-500 via-purple-500 to-green-600 hover:bg-blue-600 rounded-none text-white text-sm tracking-wide block hover:ease-in-out hover:scale-105 transition-all duration-300"
+                    className="py-2 px-6 items-center rounded-md text-purple-600 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-2 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300"
                   >
                     Read More
                   </button>
                   <button
                     onClick={handleBlogClick} // Trigger the blog modal
-                    className="py-2 px-3 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 rounded-none text-white flex items-center cursor-pointer text-sm tracking-wide hover:ease-in-out hover:scale-105 transition-all duration-300"
+                    className="py-2 px-6 items-center bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 rounded-md text-white flex cursor-pointer text-sm md:text-base font-medium tracking-wide hover:ease-in-out hover:scale-105 transition-all duration-300"
                   >
-                    Visit My Blog <FaLocationArrow className="ml-1" />
+                    Visit Blog <FaLocationArrow className="ml-1" />
                   </button>
                 </div>
               </div>
@@ -137,7 +137,7 @@ const Blog = () => {
             <button
               key={index + 1}
               onClick={() => paginate(index + 1)}
-              className={`mx-1 px-4 py-1 border shadow-md rounded-none ${
+              className={`mx-1 px-4 py-1 border shadow-md rounded-sm ${
                 currentPage === index + 1
                   ? "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white hover:ease-in-out hover:scale-105 transition-all duration-300"
                   : "bg-secondary dark:bg-gray-900"

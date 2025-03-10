@@ -50,9 +50,9 @@ export default function GalleryHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
         >
-          <a href="#gallery">
+          <a href="/pages/materials">
             <Button className="px-6 h-12 py-3 text-sm lg:text-base font-semibold rounded-md text-white shadow-lg bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 hover:bg-yellow-600 hover:ease-in-out hover:scale-105 transition-all duration-300">
-              Explore Gallery
+              Free E-books
             </Button>
           </a>
           <a href="/#contact">

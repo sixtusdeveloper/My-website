@@ -39,7 +39,7 @@ export default function GallerySection() {
   );
 
   return (
-    <section id="gallery" className="bg-secondary py-14 px-6 md:px-12">
+    <section id="personal-life" className="bg-secondary py-14 px-6 md:px-12">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl mb-8 text-center md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
           My Gallery
