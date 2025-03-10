@@ -336,6 +336,13 @@ button a {
   object-fit: cover !important;
 }
 
+.project-detail-img {
+  width: 100% !important;
+  height: 300px !important;
+  overflow: hidden !important;
+  object-fit: fill !important;
+}
+
 .tech_event_img {
   width: 400px !important;
   height: 200px !important;

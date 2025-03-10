@@ -189,7 +189,7 @@ const Hero = () => {
           >
             <a onClick={handleHireMeClick}>
               <button className="px-6 py-3 rounded-md bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
-                Hire Me
+                Let's work together
               </button>
             </a>
             <a onClick={handleReadMoreClick}>

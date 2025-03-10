@@ -237,7 +237,7 @@ const Projects = () => {
           <button
             onClick={() => handlePagination("prev")}
             disabled={currentPage === 1}
-            className={`px-4 py-2 mx-1 rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+            className={`px-4 py-2 mx-1 items-center rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === 1
                 ? "bg-secondary dark:bg-gray-900 border cursor-not-allowed shadow-md"
                 : "bg-purple-600 hover:bg-pink-600 text-white"
@@ -251,7 +251,7 @@ const Projects = () => {
           <button
             onClick={() => handlePagination("next")}
             disabled={currentPage === totalPages}
-            className={`px-4 py-1 mx-1 rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+            className={`px-4 py-1 mx-1 rounded items-center cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === totalPages
                 ? "bg-secondary dark:bg-gray-900 border cursor-not-allowed shadow-md"
                 : "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white hover:ease-in-out hover:scale-105 transition-all duration-300"
@@ -283,47 +283,48 @@ const Projects = () => {
         {/* Read More Modal */}
         {showReadMoreModal && currentProject && (
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 px-2"
             onClick={closeModal}
           >
             <div
-              className="relative bg-secondary dark:bg-gray-900 md:p-4 p-2 border rounded-lg shadow-md max-w-md w-[98%] md:w-[700px] h-[60vh] md:h-[80vh] overflow-y-auto no-scrollbar"
+              className="relative bg-secondary dark:bg-gray-900 border rounded-lg shadow-md max-w-lg w-[100%] md:w-[800px] h-[65vh] md:h-[80vh] overflow-y-auto no-scrollbar"
               onClick={(e) => e.stopPropagation()}
             >
-              <button
-                onClick={closeModal}
-                className="absolute top-1 right-1 z-50 hover:text-red-500"
-                style={{ position: "absolute" }}
-              >
-                <FaTimes size={18} />
-              </button>
               <Image
                 src={currentProject.img}
                 alt={currentProject.title}
-                className="w-full h-64 object-cover rounded-lg"
+                className="w-full h-64 object-cover rounded-tl-md  rounded-tr-md project-detail-img"
                 width={600}
                 height={300}
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "fill" }}
               />
-              <h2 className="text-xl font-sans font-bold my-4">
-                {currentProject.title}
-              </h2>
-              <p className="text-sm leading-snug font-sans">
-                {currentProject.des}
-              </p>
-              <div className="my-6">
-                <p className="font-semibold mb-2 font-sans">
-                  Technologies used:
+              <div className="p-4">
+                <h2 className="text-xl font-sans font-bold my-4">
+                  {currentProject.title}
+                </h2>
+                <p className="text-sm leading-snug font-sans">
+                  {currentProject.des}
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  {currentProject.iconLists.map((IconComponent, index) => (
-                    <div
-                      key={index}
-                      className="border rounded-full bg-secondary w-10 h-10 flex justify-center items-center"
-                    >
-                      <IconComponent className="icon" size={20} />
-                    </div>
-                  ))}
+                <div className="my-4">
+                  <p className="font-semibold mb-2 font-sans">
+                    Technologies used:
+                  </p>
+                  <div className="flex flex-wrap gap-2 py-4">
+                    {currentProject.iconLists.map((IconComponent, index) => (
+                      <div
+                        key={index}
+                        className="border rounded-full bg-secondary w-10 h-10 flex justify-center items-center"
+                      >
+                        <IconComponent className="icon" size={20} />
+                      </div>
+                    ))}
+                  </div>
+                  <button
+                    onClick={closeModal}
+                    className="w-full mt-4 rounded-md py-3 px-6 text-white text-center font-medium text-base hover:bg-pink-600 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600"
+                  >
+                    Close Modal
+                  </button>
                 </div>
               </div>
             </div>
