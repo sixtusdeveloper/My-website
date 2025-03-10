@@ -582,7 +582,7 @@ export const cvImages =
 //=========================== Hero Background Images Transitions ==================//
 export const backgroundImages = [
   "/skillsbg.avif",
-  "/skilbg.avif",
+  "/skillbg.avif",
   "/blog06.avif",
   "/blog03.avif",
   "/blog04.avif",
