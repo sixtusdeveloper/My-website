@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import { tutorials } from "@/data/tutorials";
-import { AiOutlineClose } from "react-icons/ai";
 import Loader from "@/components/ui/Loader";
 
 interface Tutorial {
@@ -101,13 +100,13 @@ const Tutorials = () => {
                       description: tutorial.description || "",
                     })
                   }
-                  className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition"
+                  className="py-2 px-6 items-center rounded-md text-purple-600 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-2 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300"
                 >
                   Watch Video
                 </button>
                 <button
                   onClick={handleSubscribe}
-                  className="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition"
+                  className="py-2 px-6 items-center rounded-md text-pink-600 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-2 ring-pink-500 hover:bg-gradient-to-r hover:from-pink-500 hover:via-purple-500 hover:to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300"
                 >
                   Subscribe
                 </button>
@@ -120,7 +119,7 @@ const Tutorials = () => {
           <button
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
             disabled={currentPage === 1}
-            className={`px-4 py-1 mx-1 rounded cursor-pointer transition-all duration-300 ${
+            className={`px-4 py-2 mx-1 rounded cursor-pointer transition-all duration-300 ${
               currentPage === 1
                 ? "bg-secondary dark:bg-gray-900 border cursor-not-allowed shadow-md"
                 : "bg-indigo-600 hover:bg-indigo-700 text-white"
@@ -136,7 +135,7 @@ const Tutorials = () => {
               setCurrentPage((prev) => Math.min(prev + 1, totalPages))
             }
             disabled={currentPage === totalPages}
-            className={`px-4 py-1 mx-1 rounded cursor-pointer transition-all duration-300 ${
+            className={`px-4 py-2 mx-1 rounded cursor-pointer transition-all duration-300 ${
               currentPage === totalPages
                 ? "bg-transparent border cursor-not-allowed shadow-md"
                 : "bg-indigo-600 hover:bg-indigo-700 text-white"
@@ -150,19 +149,13 @@ const Tutorials = () => {
       {/* Modal */}
       {selectedTutorial && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-2 lg:p-4 z-50"
+          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
           onClick={closeModal}
         >
           <div
-            className="bg-secondary dark:bg-gray-900 p-4 lg:p-6 rounded-md shadow-sm border max-w-2xl w-full relative overflow-y-auto max-h-[90vh] no-scrollbar"
+            className="bg-secondary dark:bg-gray-900 rounded-md shadow-sm border max-w-2xl w-full relative overflow-y-auto max-h-[90vh] no-scrollbar"
             onClick={(e) => e.stopPropagation()}
           >
-            <button
-              className="absolute top-2 right-2 md:top-2 md:right-2 text-base rounded-full hover:text-red-500 z-50"
-              onClick={closeModal}
-            >
-              <AiOutlineClose size={18} />
-            </button>
             {isLoading ? (
               <div className="flex justify-center items-center h-64">
                 <div className="loader"></div>
@@ -173,16 +166,23 @@ const Tutorials = () => {
                   <iframe
                     src={selectedTutorial.videoUrl + "?autoplay=1"}
                     title={selectedTutorial.title}
-                    // frameBorder="0"  this is deplcated
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     className="w-full h-full rounded-lg"
                   ></iframe>
                 </div>
-                <h3 className="mt-4 text-lg font-semibold">
-                  {selectedTutorial.title}
-                </h3>
-                <p className="mt-2">{selectedTutorial.description}</p>
+                <div className="p-4 lg:p-6">
+                  <h3 className="mt-4 text-lg font-semibold">
+                    {selectedTutorial.title}
+                  </h3>
+                  <p className="mt-2">{selectedTutorial.description}</p>
+                  <button
+                    onClick={closeModal}
+                    className="w-full mt-4 rounded-md py-3 px-6 text-white text-center font-medium text-base hover:bg-pink-600 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600"
+                  >
+                    Close Modal
+                  </button>
+                </div>
               </>
             )}
           </div>

@@ -274,7 +274,7 @@ const Projects = () => {
                 onClick={closeModal}
                 className="mt-4 px-4 py-2 bg-indigo-600 text-white rounded-lg"
               >
-                Close
+                Close Modal
               </button>
             </div>
           </div>
