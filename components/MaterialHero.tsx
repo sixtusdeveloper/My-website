@@ -68,16 +68,25 @@ const MaterialsHero = () => {
             you master coding and technology. Enhance your skills with
             high-quality materials at no cost.
           </motion.p>
-          <motion.button
-            className="px-6 py-3 text-center font-sans bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-lg text-white shadow-lg hover:bg-purple-700 transition"
+
+          <motion.div
+            className="my-6 space-x-4"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.1, ease: "easeOut" }}
           >
-            <a href="#library" className="">
-              Browse Materials
+            <a href="#library" className="block">
+              <button className="px-6 py-3 text-center font-sans bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-lg text-white shadow-lg hover:bg-purple-700 transition">
+                Browse Materials
+              </button>
             </a>
-          </motion.button>
+
+            <a href="/">
+              <button className="py-3 px-6 font-semibold rounded-md text-white hover:text-white dark:text-white text-sm ring-2 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 md:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
+                About Me
+              </button>
+            </a>
+          </motion.div>
         </div>
 
         {/* Right Side - Hero Image */}

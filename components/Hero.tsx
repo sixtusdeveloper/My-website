@@ -3,9 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { useUser } from "@clerk/nextjs";
 import HeroModal from "@/components/ui/HeroModal";
-import MagicButton from "@/components/ui/MagicButton";
 import Loader from "@/components/ui/Loader";
-import { Button } from "@/components/ui/button";
 import BlogModal from "@/components/ui/BlogModal";
 import { motion } from "framer-motion";
 import { backgroundImages } from "@/data";
