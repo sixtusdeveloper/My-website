@@ -2,7 +2,7 @@ const TutorialCallToAction = () => {
   return (
     <>
       <section
-        id="projects"
+        id="tutorials"
         className="relative w-full h-[400px] flex items-center md:justify-center justify-start text-center overflow-hidden"
       >
         {/* Fixed Background */}
@@ -21,7 +21,7 @@ const TutorialCallToAction = () => {
             Dive into my tutorials to see how I transform ideas into functional
             projects, step by step.
           </p>
-          <a href="#all-projects">
+          <a href="#explore-tutorials">
             <button
               type="button"
               className="flex justify-start items-center lg:mx-auto lg:justify-center text-left lg:text-center mt-6 py-3 px-6 text-base font-semibold rounded-md ring-2 ring-blue-100 hover:bg-gradient-to-r hover:from-yellow-500 hover:via-pink-500 hover:to-purple-600 hover:bg-yellow-600 text-white shadow-lg hover:ease-in-out hover:scale-105 transition-all duration-300"

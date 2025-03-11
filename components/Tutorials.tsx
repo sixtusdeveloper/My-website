@@ -66,7 +66,7 @@ const Tutorials = () => {
   };
 
   return (
-    <section id="tutorials" className="py-12 bg-secondary">
+    <section id="explore-tutorials" className="py-12 bg-secondary">
       <div className="container mx-auto px-4 lg:px-6">
         {isLoading && <Loader />}
 
