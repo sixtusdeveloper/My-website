@@ -180,7 +180,7 @@ const Tutorials = () => {
                   <p className="mt-2">{selectedTutorial.description}</p>
                   <button
                     onClick={closeModal}
-                    className="w-full mt-4 rounded-md py-3 px-6 text-white text-center font-medium text-base hover:bg-pink-600 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600"
+                    className="w-full mt-6 rounded-md py-3 px-6 text-white text-center font-medium text-base hover:bg-pink-600 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600"
                   >
                     Close Modal
                   </button>
