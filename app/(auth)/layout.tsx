@@ -30,9 +30,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               priority={true}
               style={{ width: "auto", height: "auto" }} // Maintain aspect ratio
             />
-            {/* <span className='self-center mx-1 py-1 px-3 bg-gradient-to-r from-indigo-800 via-blue-500 to-purple-800 rounded-lg text-white text-base'>Sixtusdev</span> */}
-            <span className="self-center text-base font-semibold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
-              Sixtusdev
+
+            <span className="tracking-wide sm:block items-center self-center text-sm font-semibold bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 text-transparent bg-clip-text">
+              SIXTUSDEV
             </span>
           </a>
 
