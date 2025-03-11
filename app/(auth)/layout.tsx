@@ -44,7 +44,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 width={25}
                 height={25}
                 style={{ width: "auto", height: "auto" }}
-                className="overflow-hidden"
+                className="overflow-hidden lg:items-center items-start"
               />
               <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
                 Crafting seamless and responsive user experiences on the web
@@ -57,7 +57,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 width={25}
                 height={25}
                 style={{ width: "auto", height: "auto" }}
-                className="overflow-hidden"
+                className="overflow-hidden lg:items-center items-start"
               />
               <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
                 Engineering robust and scalable software solutions
@@ -70,7 +70,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 width={25}
                 height={25}
                 style={{ width: "auto", height: "auto" }}
-                className="overflow-hidden"
+                className="overflow-hidden lg:items-center items-start"
               />
               <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
                 Managing full-cycle software projects from inception to delivery
@@ -83,7 +83,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 width={25}
                 height={25}
                 style={{ width: "auto", height: "auto" }}
-                className="overflow-hidden"
+                className="overflow-hidden lg:items-center items-start"
               />
               <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
                 Collaborating with teams to deliver impactful digital solutions
@@ -96,7 +96,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 width={25}
                 height={25}
                 style={{ width: "auto", height: "auto" }}
-                className="overflow-hidden"
+                className="overflow-hidden lg:items-center items-start"
               />
               <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
                 Innovating through continuous learning and creative
@@ -110,7 +110,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 width={25}
                 height={25}
                 style={{ width: "auto", height: "auto" }}
-                className="overflow-hidden"
+                className="overflow-hidden lg:items-center items-start"
               />
               <a
                 href="https://www.sixtusdev.net/pages/privacy_policy"
@@ -127,7 +127,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 width={25}
                 height={25}
                 style={{ width: "auto", height: "auto" }}
-                className="overflow-hidden"
+                className="overflow-hidden lg:items-center items-start"
               />
               <a
                 href="https://www.sixtusdev.net/pages/terms_condition"
@@ -139,7 +139,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             </li>
           </ul>
         </div>
-        <div className="w-full bg-black-100 overflow-y-auto shadow-md flex items-center justify-center md:py-10 lg:py-20 p-6 sm:p-10 lg:w-1/2">
+        <div className="order-1 lg:order-2 w-full bg-black-100 overflow-y-auto shadow-md flex items-center justify-center md:py-10 lg:py-20 p-6 sm:p-10 lg:w-1/2">
           {children}
         </div>
       </div>
