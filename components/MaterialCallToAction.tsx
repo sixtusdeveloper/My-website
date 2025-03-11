@@ -5,7 +5,7 @@ const MaterialCallToAction = () => {
         {/* Fixed Background */}
         <div
           className="absolute inset-0 bg-fixed bg-cover bg-center"
-          style={{ backgroundImage: "url('/coding-guy.png')" }}
+          style={{ backgroundImage: "url('/skillsbg.avif')" }}
         />
         <div className="absolute inset-0 bg-black bg-opacity-50" />
 
