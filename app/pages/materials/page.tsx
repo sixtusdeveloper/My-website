@@ -12,6 +12,8 @@ import Footer from "@/components/Footer";
 import Tutorials from "@/components/Tutorials";
 import CallToAction from "@/components/CallToAction";
 import ScrollIndicator from "@/components/ScrollIndicator";
+import TutorialCallToAction from "@/components/TutorialCallToAction";
+import MaterialCallToAction from "@/components/MaterialCallToAction";
 
 const Materialspage = () => {
   const { user, isSignedIn, isLoaded } = useUser();
@@ -35,9 +37,11 @@ const Materialspage = () => {
         <Navbar navigation={MaterialsNavLinks} />
         <MaterialsHero />
         <ProgrammingBooks />
+        <TutorialCallToAction />
         <Tutorials />
         <CallToAction />
         <MaterialsResources />
+        <MaterialCallToAction />
         <Footer />
         <ScrollIndicator />
       </div>
