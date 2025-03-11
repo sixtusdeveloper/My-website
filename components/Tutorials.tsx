@@ -77,7 +77,7 @@ const Tutorials = () => {
           {currentTutorials.map((tutorial, index) => (
             <div
               key={index}
-              className="bg-secondary dark:bg-gray-900 p-2 rounded-md shadow-sm border"
+              className="bg-secondary dark:bg-gray-900 rounded-md shadow-sm border"
             >
               <div className="relative w-full aspect-video">
                 <iframe
@@ -85,11 +85,11 @@ const Tutorials = () => {
                   title={tutorial.title}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                  className="w-full h-full rounded-tr-lg rounded-tl-lg rounded-none"
+                  className="w-full h-full rounded-tr-md rounded-tl-md rounded-none"
                   style={{ aspectRatio: "16/9" }}
                 ></iframe>
               </div>
-              <h3 className="mt-4 px-2 text-base font-semibold">
+              <h3 className="mt-4 p-2 text-base font-semibold">
                 {tutorial.title.length > 80
                   ? tutorial.title.slice(0, 80) + "..."
                   : tutorial.title}
@@ -170,7 +170,7 @@ const Tutorials = () => {
                     title={selectedTutorial.title}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    className="w-full h-full rounded-lg"
+                    className="w-full h-full rounded-tr-md rounded-tl-md rounded-none"
                   ></iframe>
                 </div>
                 <div className="p-4 lg:p-6">
