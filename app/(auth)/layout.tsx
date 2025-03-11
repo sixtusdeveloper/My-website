@@ -139,7 +139,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             </li>
           </ul>
         </div>
-        <div className="order-1 lg:order-2 w-full bg-black-100 overflow-y-auto shadow-md flex items-center justify-center md:py-10 lg:py-20 p-4 sm:p-10 lg:w-1/2">
+        <div className="w-full bg-black-100 overflow-y-auto shadow-md flex items-center justify-center md:py-10 lg:py-20 p-4 sm:p-10 lg:w-1/2">
           {children}
         </div>
       </div>
