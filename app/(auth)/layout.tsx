@@ -19,7 +19,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       </div>
 
       <div className="flex flex-col lg:flex-row min-h-screen h-full w-full">
-        <div className="w-full lg:w-1/2 flex flex-col items-center justify-center md:py-6 p-6 sm:p-10 text-white z-10">
+        <div className="w-full lg:w-1/2 flex flex-col items-center justify-center md:py-6 p-4 sm:p-10 text-white z-10">
           <a href="/" className="flex justify-start items-center gap-1">
             <Image
               src="/Logo.png"
@@ -139,7 +139,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             </li>
           </ul>
         </div>
-        <div className="order-1 lg:order-2 w-full bg-black-100 overflow-y-auto shadow-md flex items-center justify-center md:py-10 lg:py-20 p-6 sm:p-10 lg:w-1/2">
+        <div className="order-1 lg:order-2 w-full bg-black-100 overflow-y-auto shadow-md flex items-center justify-center md:py-10 lg:py-20 p-4 sm:p-10 lg:w-1/2">
           {children}
         </div>
       </div>
