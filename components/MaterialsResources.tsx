@@ -76,7 +76,9 @@ const MaterialsResources = () => {
       className="w-full py-16 px-4 lg:px-8 bg-secondary"
     >
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8">Featured Resources</h2>
+        <h2 className="text-3xl mb-8 text-center md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
+          Featured Resources
+        </h2>
         <div className="grid md:grid-cols-3 gap-6">
           {currentResources.map((resource, index) => (
             <div
