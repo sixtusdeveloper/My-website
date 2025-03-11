@@ -8,9 +8,17 @@ const CallToAction = () => {
     <section id="my-blog" className="py-12 bg-secondary">
       <div className="container mx-auto px-4 lg:px-6 flex flex-col-reverse md:flex-row items-center gap-8">
         <div className="w-full md:w-1/2  pl-0 lg:pl-2 ">
-          <h2 className="font-bold font-sans text-start text-[1.5rem] lg:text-[2rem] leading-tight mb-4">
-            Learn Through One of the Most Effective Ways by Sharing and
-            Collaborating with Others
+          <h2 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-tight tracking-wide">
+            <strong>
+              Learn Through Some of the Most{" "}
+              <span className="bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">
+                Effective Ways
+              </span>{" "}
+              by Sharing and
+              <span className="bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">
+                Collaborating with Others
+              </span>{" "}
+            </strong>
           </h2>
           <p className="text-base leading-snug mb-6">
             Sharing your knowledge not only helps others grow but also
