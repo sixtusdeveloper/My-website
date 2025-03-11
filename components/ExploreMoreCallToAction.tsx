@@ -1,11 +1,7 @@
 "use client";
 
-import { FaCheckCircle, FaExclamationCircle, FaTimes } from "react-icons/fa";
+import React from "react";
 import { useState } from "react";
-import CircularProgress from "@mui/material/CircularProgress";
-import { useUser, useClerk } from "@clerk/nextjs";
-import { motion } from "framer-motion";
-import { useRouter } from "next/navigation";
 import Loader from "./ui/Loader";
 import HeroModal from "./ui/HeroModal";
 
@@ -26,7 +22,7 @@ const ExploreMoreCallToAction = () => {
   };
 
   const handleHeroRedirect = () => {
-    window.location.href = "https://www.sixtusdev.net/pages/portfolio";
+    window.location.href = "/pages/portfolio";
   };
   return (
     <>

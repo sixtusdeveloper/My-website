@@ -126,7 +126,7 @@ export default function Navbar({
 
             <SignedOut>
               <SignInButton>
-                <button className="inline-flex text-base font-medium px-3 py-2 rounded-none bg-blue-500 hover:bg-indego-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
+                <button className="inline-flex text-base font-medium px-3 py-2 rounded-md hover:bg-indego-800 bg-gradient-to-r from-indigo-500 via-blue-500 to-purple-600 text-white hover:ease-in-out hover:scale-105 transition-all duration-300">
                   <UserIcon className="mr-1 h-5 w-5 text-white" /> Sign In
                 </button>
               </SignInButton>
@@ -198,7 +198,7 @@ export default function Navbar({
                   </SignedIn>
                   <SignedOut>
                     <SignInButton>
-                      <button className="inline-flex text-base font-medium px-3 py-2 rounded-none hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white">
+                      <button className="inline-flex text-base font-medium px-3 py-2 rounded-md hover:bg-indigo-800 bg-gradient-to-r from-indigo-500 via-blue-500 to-purple-600 text-white hover:ease-in-out hover:scale-105 transition-all duration-300">
                         <UserIcon className="mr-1 h-5 w-5 text-white" /> Sign In
                       </button>
                     </SignInButton>
