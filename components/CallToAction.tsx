@@ -7,8 +7,8 @@ const CallToAction = () => {
   return (
     <section id="my-blog" className="py-12 bg-secondary">
       <div className="container mx-auto px-4 lg:px-6 flex flex-col-reverse md:flex-row items-center gap-8">
-        <div className="w-full md:w-1/2  pl-0 lg:pl-2 ">
-          <h2 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-tight tracking-wide">
+        <div className="text-left w-full md:w-1/2  pl-0 lg:pl-2 ">
+          <h2 className="font-bold text-left text-[2rem] lg:text-[2.5rem] leading-tight tracking-wide">
             <strong>
               Learn Through Some of the Most{" "}
               <span className="bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">
@@ -31,7 +31,7 @@ const CallToAction = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="px-6 py-3 text-center font-sans bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 rounded-lg text-white">
+            <button className="h-12 px-6 py-3 rounded-md bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
               Visit My Blog
             </button>
           </Link>
