@@ -84,7 +84,8 @@ const Tutorials = () => {
                   title={tutorial.title}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                  className="w-full h-full rounded-lg"
+                  className="w-full h-full rounded-tr-lg rounded-tl-lg"
+                  style={{ aspectRatio: "16/9" }}
                 ></iframe>
               </div>
               <h3 className="mt-4 px-2 text-base font-semibold">
