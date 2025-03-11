@@ -338,9 +338,9 @@ button a {
 
 .project-detail-img {
   width: 100% !important;
-  height: 300px !important;
+  height: auto !important;
+  object-fit: cover !important;
   overflow: hidden !important;
-  object-fit: fill !important;
 }
 
 .tech_event_img {
