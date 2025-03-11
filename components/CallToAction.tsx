@@ -12,7 +12,7 @@ const CallToAction = () => {
             <strong>
               Learn Through Some of the Most{" "}
               <span className="bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">
-                Effective Ways
+                Effective Ways{" "}
               </span>
               by Sharing and{" "}
               <span className="bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">

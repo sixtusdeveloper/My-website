@@ -89,12 +89,12 @@ const Tutorials = () => {
                   style={{ aspectRatio: "16/9" }}
                 ></iframe>
               </div>
-              <h3 className="mt-4 p-2 text-base font-semibold">
+              <h3 className="mt-4 px-4 py-2 text-base font-semibold">
                 {tutorial.title.length > 80
                   ? tutorial.title.slice(0, 80) + "..."
                   : tutorial.title}
               </h3>
-              <div className="flex justify-between my-4 p-4">
+              <div className="flex justify-between my-4 px-4 py-2">
                 <button
                   onClick={() =>
                     openModal({
