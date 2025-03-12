@@ -5,10 +5,7 @@ import { motion } from "framer-motion";
 
 const ServicesHero = () => {
   return (
-    <section
-      id="social-life"
-      className="text-white pt-0 lg:pt-0 text-center min-h-[50vh] lg:min-h-[75vh]"
-    >
+    <section className="text-white pt-0 lg:pt-0 text-center min-h-[50vh] lg:min-h-[75vh]">
       {/* Hero Section */}
       <div className="relative bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white py-20 z-10">
         <div className="max-w-6xl p-4 lg:py-8 lg:px-20 text-left lg:mx-auto lg:flex lg:flex-col items-center lg:text-center relative z-20">
@@ -31,17 +28,17 @@ const ServicesHero = () => {
             Well, that's not too hard to do. I balance both, watch me &#8594;
             learn how below.
           </motion.p>
-          <a href="#learn-how">
+          <a href="#social-life">
             <button
               type="button"
-              className="mt-6 bg-white text-purple-600 text-base px-6 py-3 rounded-none shadow-lg font-semibold hover:ease-in-out hover:scale-105 transition-all duration-300"
+              className="mt-6 bg-white text-purple-600 text-base px-6 py-3 rounded-md shadow-lg font-semibold hover:ease-in-out hover:scale-105 transition-all duration-300"
             >
               Learn how below
             </button>
           </a>
         </div>
         <Image
-          src="/blog04.avif"
+          src="/social-bg.webp"
           alt="Courses Hero"
           layout="fill"
           objectFit="cover"

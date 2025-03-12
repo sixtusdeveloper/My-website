@@ -31,6 +31,7 @@ export default function GallerySection() {
   }, [searchTerm, selectedCategory]);
 
   // Pagination Logic
+  const totalPages = Math.ceil(filteredImages.length / imagesPerPage);
   const indexOfLastImage = currentPage * imagesPerPage;
   const indexOfFirstImage = indexOfLastImage - imagesPerPage;
   const currentImages = filteredImages.slice(
@@ -119,23 +120,34 @@ export default function GallerySection() {
 
       {/* Pagination */}
       {filteredImages.length > imagesPerPage && (
-        <div className="flex justify-center mt-8 space-x-2">
-          {Array.from(
-            { length: Math.ceil(filteredImages.length / imagesPerPage) },
-            (_, i) => (
-              <button
-                key={i + 1}
-                onClick={() => setCurrentPage(i + 1)}
-                className={`px-4 py-2 text-sm rounded-sm shadow-sm font-semibold hover:ease-in-out hover:scale-105 transition-all duration-300 ${
-                  currentPage === i + 1
-                    ? "text-white bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 hover:bg-yellow-600"
-                    : "bg-secondary dark:bg-gray-900 border"
-                }`}
-              >
-                {i + 1}
-              </button>
-            )
-          )}
+        <div className="flex justify-center items-center mt-8 space-x-4">
+          <button
+            onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+            disabled={currentPage === 1}
+            className={`px-4 py-2 text-sm rounded-sm shadow-sm font-semibold hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+              currentPage === 1
+                ? "opacity-50 cursor-not-allowed bg-secondary dark:bg-gray-900 border"
+                : "text-white bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 hover:bg-yellow-600"
+            }`}
+          >
+            Previous
+          </button>
+
+          <span className="text-sm font-semibold">{`Page ${currentPage} of ${totalPages}`}</span>
+
+          <button
+            onClick={() =>
+              setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+            }
+            disabled={currentPage === totalPages}
+            className={`px-4 py-2 text-sm rounded-sm shadow-sm font-semibold hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+              currentPage === totalPages
+                ? "opacity-50 cursor-not-allowed bg-secondary dark:bg-gray-900 border"
+                : "text-white bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 hover:bg-yellow-600"
+            }`}
+          >
+            Next
+          </button>
         </div>
       )}
     </section>

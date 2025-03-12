@@ -584,6 +584,7 @@ export const backgroundImages = [
   "/skillsbg.avif",
   "/skillbg.avif",
   "/blog06.avif",
+  "/tech-event-bg.avif",
   "/blog03.avif",
   "/blog04.avif",
   "/blog05.avif",
@@ -593,6 +594,7 @@ export const backgroundImages = [
   "/herobg-transition4.avif",
   "/herobg-transition5.avif",
   "/blog01.avif",
+  "/social-bg.webp",
 ]; // Add as many images as needed
 
 //============================= Project data ====================================//

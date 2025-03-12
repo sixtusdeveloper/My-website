@@ -1,165 +1,242 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { Input } from "@/components/ui/input";
-import { TechEvents } from "@/data/tech-events";
+import { blogPosts } from "@/data";
+import { FaLocationArrow } from "react-icons/fa";
+import BlogModal from "@/components/ui/BlogModal"; // Import the BlogModal component
+import { IoClose } from "react-icons/io5";
 
-export default function GallerySection() {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("All");
-  const [filteredImages, setFilteredImages] = useState(TechEvents);
-  const [currentPage, setCurrentPage] = useState(1);
-  const imagesPerPage = 6;
+// Truncate the Project title to a maximum length
+const MAX_TITLE_LENGTH = 50;
+const truncateTitle = (text: string, maxLength: number): string => {
+  if (text.length <= maxLength) return text;
+  return `${text.slice(0, maxLength)}...`;
+};
 
-  useEffect(() => {
-    let images = TechEvents;
+// Truncate the Project Description to a maximum length
+const MAX_DESCRIPTION_LENGTH = 86;
+const truncateDescription = (text: string, maxLength: number): string => {
+  if (text.length <= maxLength) return text;
+  return `${text.slice(0, maxLength)}...`;
+};
 
-    if (selectedCategory !== "All") {
-      images = images.filter((image) => image.category === selectedCategory);
+// Type definitions
+type BlogPost = {
+  id: number;
+  title: string;
+  description: string;
+  imageUrl: string;
+  diagramImageUrl: string;
+};
+
+const GalleryTechEventSection = () => {
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const postsPerPage = 3;
+  const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(false); // State for loading
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false); // State for modal
+  const [isBlogLoading, setIsBlogLoading] = useState<boolean>(false); // State for blog loading
+
+  // Pagination logic
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = blogPosts.slice(indexOfFirstPost, indexOfLastPost);
+  const totalPages = Math.ceil(blogPosts.length / postsPerPage);
+
+  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
+
+  const openModal = (post: BlogPost) => {
+    setIsLoading(true); // Start loading
+    setSelectedPost(post);
+    document.body.style.overflow = "hidden"; // Prevent body scroll when modal is open
+
+    // Simulate loading delay
+    setTimeout(() => {
+      setIsLoading(false); // Stop loading
+    }, 2000); // 2 seconds delay for demonstration
+  };
+
+  const closeModal = () => {
+    setSelectedPost(null);
+    document.body.style.overflow = ""; // Re-enable body scroll when modal is closed
+  };
+
+  const handleModalClick = (e: React.MouseEvent) => {
+    if (e.target === e.currentTarget) {
+      closeModal();
     }
+  };
 
-    if (searchTerm) {
-      images = images.filter((image) =>
-        image.alt.toLowerCase().includes(searchTerm.toLowerCase())
-      );
-    }
+  // Logic for "Visit my Blog" button
+  const handleBlogClick = () => {
+    setIsBlogLoading(true); // Start loading
 
-    setFilteredImages(images);
-    setCurrentPage(1); // Reset to first page on new filter/search
-  }, [searchTerm, selectedCategory]);
+    setTimeout(() => {
+      setIsBlogLoading(false); // Stop loading
+      setIsModalOpen(true); // Open the modal
+    }, 1000); // 1 second delay for demonstration
+  };
 
-  // Pagination Logic
-  const indexOfLastImage = currentPage * imagesPerPage;
-  const indexOfFirstImage = indexOfLastImage - imagesPerPage;
-  const currentImages = filteredImages.slice(
-    indexOfFirstImage,
-    indexOfLastImage
-  );
+  const handleBlogRedirect = () => {
+    window.open("https://devjourney-blog-khaki.vercel.app/", "_blank"); // Open the URL in a new tab
+    setIsModalOpen(false); // Close the modal
+  };
 
   return (
-    <>
-      <section
-        id="tech-events"
-        className="relative w-full h-[350px] flex items-center md:justify-center justify-start text-center overflow-hidden"
-      >
-        {/* Fixed Background */}
-        <div
-          className="absolute inset-0 bg-fixed bg-cover bg-center"
-          style={{ backgroundImage: "url('/blog05.avif')" }}
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-50" />
-
-        {/* Content */}
-        <div className="relative z-10 max-w-3xl px-4 lg:pl-20 lg:pr-8 md:text-center text-left">
-          <h1 className="text-4xl font-extrabold md:text-5xl text-white">
-            Unforgettable Events
-          </h1>
-          <p className="mt-4 text-base opacity-95 text-gray-100">
-            Explore memories behind my software engineering and tech journey at
-            large.
-          </p>
-          <a href="#tech_events">
-            <button className="my-6 py-3 px-6 rounded-md font-semibold text-white hover:text-white dark:text-white text-base ring-2 ring-pink-500 hover:bg-gradient-to-r hover:from-pink-500 hover:via-yellow-500 hover:to-pink-500 hover:ease-in-out hover:scale-105 transition-all duration-300">
-              Explore Events
-            </button>
-          </a>
-        </div>
-      </section>
-      <section
-        id="tech_events"
-        className="bg-secondary pb-8 lg:pb-12 pt-4 px-6 md:px-12"
-      >
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Search Input */}
-          <div className="mt-6 max-w-3xl mx-auto">
-            <Input
-              type="text"
-              placeholder="Search events..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="p-3 rounded-md border w-full focus:ring-2 focus:ring-yellow-500"
-            />
-          </div>
-
-          {/* Category Filter Buttons */}
-          <div className="flex justify-center lg:flex-nowrap flex-wrap gap-4 mt-6">
-            {["All", "Tech Meetings", "Tech Associates", "Tech Awards"].map(
-              (category) => (
-                <button
-                  key={category}
-                  onClick={() => setSelectedCategory(category)}
-                  className={`px-6 py-2 rounded-md text-sm font-semibold shadow-sm hover:ease-in-out hover:scale-105 transition-all duration-300 ${
-                    selectedCategory === category
-                      ? "text-white bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 hover:bg-yellow-600"
-                      : "bg-secondary dark:bg-gray-900 border"
-                  }`}
-                >
-                  {category}
-                </button>
-              )
-            )}
-          </div>
-        </div>
-
-        {/* Gallery Grid */}
-        <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-        >
-          {currentImages.length > 0 ? (
-            currentImages.map((image) => (
-              <motion.div
-                key={image.id}
-                className="relative group overflow-hidden rounded-md shadow-md"
-                whileHover={{ scale: 1.05 }}
-              >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  width={400}
-                  height={300}
-                  className="w-full tech_event_img h-64 object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-                  <span className="text-white text-sm lg:text-base text-center p-4 font-semibold">
-                    {image.alt}
-                  </span>
+    <section id="tech-events" className="py-20 px-4 lg:px-10 bg-secondary">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl md:text-4xl mb-8 text-center font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
+          Tech Events & Meetings
+        </h2>
+        <div className="grid gap-2 lg:gap-6 md:grid-cols-3 space-y-6 md:space-y-0">
+          {currentPosts.map((post) => (
+            <article
+              key={post.id}
+              className="bg-secondary dark:bg-gray-900 border shadow-sm rounded-lg transition-transform transform hover:scale-105"
+            >
+              <Image
+                src={post.imageUrl}
+                alt={post.title}
+                className="w-full h-54 object-cover rounded-none rounded-tl-lg rounded-tr-lg"
+                width={300}
+                height={200}
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-bold">
+                  {truncateTitle(post.title, MAX_TITLE_LENGTH)}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed">
+                  {truncateDescription(
+                    post.description,
+                    MAX_DESCRIPTION_LENGTH
+                  )}
+                </p>
+                <div className="flex mt-4 gap-4 justify-between items-center">
+                  <button
+                    onClick={() => openModal(post)}
+                    className="py-2 px-6 items-center rounded-md text-purple-600 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-2 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300"
+                  >
+                    Read More
+                  </button>
+                  <button
+                    onClick={handleBlogClick} // Trigger the blog modal
+                    className="py-2 px-6 ring-2 ring-blue-500 items-center bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 rounded-md text-white flex cursor-pointer text-sm md:text-base font-medium tracking-wide hover:ease-in-out hover:scale-105 transition-all duration-300"
+                  >
+                    Visit Blog <FaLocationArrow className="ml-1" />
+                  </button>
                 </div>
-              </motion.div>
-            ))
-          ) : (
-            <p className="text-center col-span-3 text-gray-500">
-              No images found
-            </p>
-          )}
-        </motion.div>
+              </div>
+            </article>
+          ))}
+        </div>
 
         {/* Pagination */}
-        {filteredImages.length > imagesPerPage && (
-          <div className="flex justify-center mt-8 space-x-2">
-            {Array.from(
-              { length: Math.ceil(filteredImages.length / imagesPerPage) },
-              (_, i) => (
-                <button
-                  key={i + 1}
-                  onClick={() => setCurrentPage(i + 1)}
-                  className={`px-4 py-2 text-sm rounded-sm shadow-sm font-semibold hover:ease-in-out hover:scale-105 transition-all duration-300 ${
-                    currentPage === i + 1
-                      ? "text-white bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 hover:bg-yellow-600"
-                      : "bg-secondary dark:bg-gray-900 border"
-                  }`}
-                >
-                  {i + 1}
-                </button>
-              )
-            )}
+        <div className="flex justify-center mt-8">
+          {Array.from({ length: totalPages }, (_, index) => (
+            <button
+              key={index + 1}
+              onClick={() => paginate(index + 1)}
+              className={`mx-1 px-4 py-1 border shadow-md rounded-sm ${
+                currentPage === index + 1
+                  ? "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white hover:ease-in-out hover:scale-105 transition-all duration-300"
+                  : "bg-secondary dark:bg-gray-900"
+              }`}
+            >
+              {index + 1}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Loader for Blog Modal */}
+      {isBlogLoading && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
+          <div className="animate-spin rounded-full border-t-4 border-blue-500 h-16 w-16"></div>
+        </div>
+      )}
+
+      {/* Blog Modal */}
+      <BlogModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        message="You are about to be redirected to my Blog website. Do you wish to continue?"
+      >
+        <div className="flex justify-center gap-4 p-4">
+          <button
+            onClick={handleBlogRedirect}
+            className="mt-4 rounded-full text-sm lg:text-base font-medium px-4 py-2 bg-blue-500 text-white hover:bg-blue-600 hover:ease-in-out hover:scale-105 transition-all duration-300"
+          >
+            Yes, visit blog
+          </button>
+          <button
+            onClick={() => setIsModalOpen(false)}
+            className="mt-4 px-4 py-2 text-sm lg:text-base font-medium bg-gray-500 text-white rounded-full hover:bg-gray-600 hover:ease-in-out hover:scale-105 transition-all duration-300"
+          >
+            Cancel
+          </button>
+        </div>
+      </BlogModal>
+
+      {/* Loader for Read More Modal */}
+      {isLoading && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
+          <div className="animate-spin rounded-full border-t-4 border-blue-500 h-16 w-16"></div>
+        </div>
+      )}
+      {/* Read More Modal */}
+      {selectedPost && !isLoading && (
+        <div
+          onClick={handleModalClick}
+          className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
+          style={{ pointerEvents: "auto" }}
+        >
+          <div className="bg-secondary dark:bg-gray-900 border p-2 rounded-lg shadow-lg max-w-2xl w-full max-h-[90vh] relative overflow-y-auto no-scrollbar">
+            {/* Adjusted Close Button - Positioned at top-right */}
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 z-50 p-1 bg-secondary border rounded-full hover:text-red-500 text-2xl"
+              style={{ position: "absolute" }}
+            >
+              <IoClose size={18} />
+            </button>
+
+            {/* Modal Content */}
+            <div
+              className="p-2 h-full overflow-y-auto no-scrollbar"
+              style={{ scrollbarWidth: "thin", scrollBehavior: "smooth" }}
+            >
+              <h3 className="text-2xl font-bold mb-4">{selectedPost.title}</h3>
+              <Image
+                src={selectedPost.imageUrl}
+                alt={selectedPost.title}
+                className="w-full h-64 object-cover rounded-lg"
+                width={500}
+                height={300}
+                style={{ objectFit: "cover" }}
+              />
+              <p className="mt-4 text-base leading-relaxed">
+                {selectedPost.description}
+              </p>
+              <div className="py-8">
+                <Image
+                  src={selectedPost.diagramImageUrl}
+                  alt="javascript closure diagram"
+                  width={300}
+                  height={200}
+                  style={{
+                    objectFit: "contain",
+                    width: "auto",
+                    height: "auto",
+                  }}
+                />
+              </div>
+            </div>
           </div>
-        )}
-      </section>
-    </>
+        </div>
+      )}
+    </section>
   );
-}
+};
+
+export default GalleryTechEventSection;
