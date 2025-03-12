@@ -5,6 +5,7 @@ export const SocialVideos = [
     videoUrl: "/videos/social-video1.mp4", 
     title: "Me at Drinks.ng end of the year party, Roof top, Lekki, LAG, Nigeria", 
     description: "A fun moment at Lekki roof top for Drinks.ng end of the year party.", 
+     category: "Social Events",
   },
   { 
     id: 2, 
@@ -12,6 +13,7 @@ export const SocialVideos = [
     videoUrl: "/videos/social-video2.mp4", 
     title: "Me at Drinks.ng end of the year party, Roof top, Lekki, LAG, Nigeria", 
     description: "A fun moment at Lekki roof top for Drinks.ng end of the year party.", 
+    category: "Social Events",
   },
   { 
     id: 3, 
@@ -19,6 +21,7 @@ export const SocialVideos = [
     videoUrl: "/videos/social-video3.mp4", 
     title: "Me at Drinks.ng end of the year party, Roof top, Lekki, LAG, Nigeria", 
     description: "A fun moment at Lekki roof top for Drinks.ng end of the year party.",
+    category: "Social Events",
   },
   { 
     id: 4, 
@@ -26,5 +29,31 @@ export const SocialVideos = [
     videoUrl: "/videos/social-video4.mp4", 
     title: "Getting massive hipping from a Hip man, Godwino, at Victoria island, LAG, Nigeria", 
     description: " Getting massive hipping from a Hip man Godwino at Victoria island, LAG, Nigeria.", 
+    category: "Social Events",
   },
+  {
+    id: 5, 
+    src: "youtube-video",
+    title: "Moniwalet - A currency conversion application for converting between different currencies",
+    videoUrl: "https://www.youtube.com/embed/5pC1cvSvK8g?si=oKZ2kzgigHPCm8j4",
+    description: "Moniwalet is a currency conversion application that allows users to convert between different currencies. It is built with React, Tailwind CSS, and the ExchangeRate-API.",
+    category: "Youtube Tutorials",
+  },
+  {
+    id: 6, 
+    src: "youtube-video",
+    title: "From Tech Enthusiast to Tech Educator: Step-by-Step Guide",
+    videoUrl: "https://www.youtube.com/embed/KDdQAngnSmI?si=TFXr3u3QiOK_chLE",
+    description: "In this video, I share my journey from being a tech enthusiast to becoming a tech educator. I also provide a step-by-step guide on how you can start your own tech education journey.",
+    category: "Youtube Tutorials",
+  },
+  {
+    id: 7, 
+    src: "youtube-video",
+    title: "Building a Tech Career Without a Degree: Your Journey Starts Here",
+    videoUrl: "https://www.youtube.com/embed/XsWgiTAAroo?si=WhDOJwIXOlNwQQPv",
+    description: "In this video, I discuss how you can build a successful tech career without a degree. I share my own experience and provide tips and resources to help you get started on your journey.",
+    category: "Youtube Tutorials",
+  },
+
 ];
