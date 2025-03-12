@@ -93,16 +93,16 @@ const Blog = () => {
           {currentPosts.map((post) => (
             <article
               key={post.id}
-              className="p-4 bg-secondary dark:bg-gray-900 border shadow-sm rounded-lg transition-transform transform hover:scale-105"
+              className="bg-secondary dark:bg-gray-900 border shadow-sm rounded-lg transition-transform transform hover:scale-105"
             >
               <Image
                 src={post.imageUrl}
                 alt={post.title}
-                className="w-full h-54 object-cover rounded-md"
+                className="w-full h-54 object-cover rounded-none rounded-tl-lg rounded-tr-lg"
                 width={300}
                 height={200}
               />
-              <div className="pt-2">
+              <div className="p-4">
                 <h3 className="text-lg font-bold">
                   {truncateTitle(post.title, MAX_TITLE_LENGTH)}
                 </h3>
