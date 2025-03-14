@@ -367,7 +367,7 @@ const Experience = () => {
                         <Image
                           src={selectedWorkExperience.img || "/profile.jpg"}
                           alt={selectedWorkExperience.title || "profile image"}
-                          className="rounded-md w-full"
+                          className="rounded-md w-full expi-image"
                           width={200}
                           height={200}
                           objectFit="cover"

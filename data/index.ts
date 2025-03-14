@@ -106,7 +106,6 @@ export const MaterialsNavLinks = [
     { name: 'Featured Resources', href: '#featured-resources' },
   ]; 
 
-
 //======================= Blog Posts ==========================//
   export const blogPosts = [
     {
@@ -212,8 +211,8 @@ export const MaterialsNavLinks = [
       imageUrl: "/blog06.avif",
     },
   ];
-  
-  //============================= Testimonials Section Data =======================//
+
+//============================= Testimonials Section Data =======================//
 export const testimonials = [
   {
     quote: "Sixtus’s portfolio has been instrumental in showcasing our projects. The design and functionality he implemented have enhanced our online presence and effectively communicated our brand message. His attention to detail and responsiveness have truly made a difference.",
@@ -277,7 +276,7 @@ export const experiences = [
   {
     date: "October 2024 - Present",
     title: "Tech Educator | Software Engineer",
-    img: "/profile.jpg",
+    img: "/profile-img.png",
     organization: "Youtube",
     type: "Remote",
     nature: "Self Employed",
@@ -301,7 +300,7 @@ export const experiences = [
   {
     date: "April 2023 - June 2024",
     title: "Store Cashier",
-    img: "/profile.jpg",
+    img: "/store-cashier.jpg",
     organization: "Drinks.ng",
     type: "Onsite",
     nature: "Contract",
@@ -363,7 +362,7 @@ export const experiences = [
   {
     date: "Jan 2019 - March 2023",
     title: "Administrative Assistant",
-    img: "/profile.jpg",
+    img: "/office-assistant.jpg",
     organization: "Kropmann Communications Limited",
     type: "Onsite",
     nature: "Contract",
@@ -595,7 +594,7 @@ export const backgroundImages = [
   "/herobg-transition5.avif",
   "/blog01.avif",
   "/social-bg.webp",
-]; // Add as many images as needed
+]; 
 
 //============================= Project data ====================================//
 

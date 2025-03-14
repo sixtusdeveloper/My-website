@@ -336,6 +336,13 @@ button a {
   object-fit: cover !important;
 }
 
+.expi-image {
+  width: 400px !important;
+  height: 350px !important;
+  object-fit: cover !important;
+  overflow: hidden !important;
+}
+
 .project-detail-img {
   width: 100% !important;
   height: auto !important;
