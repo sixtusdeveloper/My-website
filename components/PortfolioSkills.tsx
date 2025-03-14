@@ -63,6 +63,8 @@ import {
   SiSpringboot,
   SiAngular,
   SiIntellijidea,
+  SiOpenai,
+  SiDeepnote,
 } from "react-icons/si";
 import { AiFillApi } from "react-icons/ai";
 import { FiBox } from "react-icons/fi";
@@ -314,6 +316,14 @@ const PortfolioSkills = () => {
               <li className="flex items-center space-x-2">
                 <SiIntellijidea className="text-purple-600" size={20} />
                 &nbsp;<span>IntelliJ IDEA</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiOpenai className="text-blue-600" size={20} />
+                &nbsp;<span>ChatGPT</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <SiDeepnote className="text-purple-600" size={20} />
+                &nbsp;<span>Deepseek AI</span>
               </li>
             </ul>
           </div>

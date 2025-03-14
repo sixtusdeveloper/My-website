@@ -124,9 +124,9 @@ export default function GalleryHero() {
                 Free E-books
               </Button>
             </a>
-            <a href="/#contact">
+            <a href="/pages/portfolio">
               <Button className="px-6 py-3 h-12 text-sm lg:text-base font-semibold rounded-md text-white shadow-lg border border-white/40 bg-transparent hover:bg-white/20 hover:ease-in-out hover:scale-105 transition-all duration-300">
-                Let's Connect
+                My Portfolio
               </Button>
             </a>
           </motion.div>
