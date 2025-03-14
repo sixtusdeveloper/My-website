@@ -102,13 +102,13 @@ const Tutorials = () => {
                       description: tutorial.description || "",
                     })
                   }
-                  className="py-2 px-6 items-center rounded-md text-purple-600 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-2 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300"
+                  className="py-2 px-6 items-center rounded-md text-purple-600 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-1 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300"
                 >
                   Watch Video
                 </button>
                 <button
                   onClick={handleSubscribe}
-                  className="py-2 px-6 items-center rounded-md text-pink-600 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-2 ring-pink-500 hover:bg-gradient-to-r hover:from-pink-500 hover:via-purple-500 hover:to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300"
+                  className="py-2 px-6 items-center rounded-md text-pink-600 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-1 ring-pink-500 hover:bg-gradient-to-r hover:from-pink-500 hover:via-purple-500 hover:to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300"
                 >
                   Subscribe
                 </button>

@@ -184,7 +184,7 @@ const About = () => {
             )}
             <div className="flex gap-4 items-center justify-start text-left">
               <a onClick={handleToggle}>
-                <button className="py-3 px-6 h-12 rounded-md text-purple-600 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-2 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 hover:ease-in-out hover:scale-105 transition-all duration-300">
+                <button className="py-3 px-6 h-12 rounded-md text-purple-600 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-1 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 hover:ease-in-out hover:scale-105 transition-all duration-300">
                   {isExpanded ? "Less to read" : "More to read"}
                 </button>
               </a>

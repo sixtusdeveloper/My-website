@@ -115,13 +115,13 @@ const Blog = () => {
                 <div className="flex mt-4 gap-4 justify-between items-center">
                   <button
                     onClick={() => openModal(post)}
-                    className="py-2 px-6 items-center rounded-md text-purple-600 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-2 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300"
+                    className="py-2 px-6 items-center rounded-md text-purple-600 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-1 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300"
                   >
                     Read More
                   </button>
                   <button
                     onClick={handleBlogClick} // Trigger the blog modal
-                    className="py-2 px-6 ring-2 ring-blue-500 items-center bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 rounded-md text-white flex cursor-pointer text-sm md:text-base font-medium tracking-wide hover:ease-in-out hover:scale-105 transition-all duration-300"
+                    className="py-2 px-6 items-center bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 rounded-md text-white flex cursor-pointer text-sm md:text-base font-medium tracking-wide hover:ease-in-out hover:scale-105 transition-all duration-300"
                   >
                     Visit Blog <FaLocationArrow className="ml-1" />
                   </button>

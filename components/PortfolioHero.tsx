@@ -193,7 +193,7 @@ const Hero = () => {
               </button>
             </a>
             <a onClick={handleReadMoreClick}>
-              <button className="py-3 px-6 font-semibold rounded-md text-white hover:text-white dark:text-white text-sm ring-2 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 md:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
+              <button className="py-3 px-6 font-semibold rounded-md text-white hover:text-white dark:text-white text-sm ring-1 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 md:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
                 Read More&nbsp;&#8594;
               </button>
             </a>

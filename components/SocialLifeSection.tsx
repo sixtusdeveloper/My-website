@@ -158,7 +158,7 @@ const Tutorials = () => {
                     category: video.category,
                   })
                 }
-                className="py-2 px-6 items-center rounded-md text-purple-600 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-2 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300"
+                className="py-2 px-6 items-center rounded-md text-purple-600 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-1 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300"
               >
                 Watch Video
               </button>
@@ -166,7 +166,7 @@ const Tutorials = () => {
                 href="https://devjourney-blog-khaki.vercel.app/"
                 target="_blank"
               >
-                <button className="py-2 px-6 items-center rounded-md text-white text-sm md:text-base font-semibold ring-2 ring-blue-500 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300">
+                <button className="py-2 px-6 items-center rounded-md text-white text-sm md:text-base font-semibold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300">
                   Visit My Blog
                 </button>
               </a>
