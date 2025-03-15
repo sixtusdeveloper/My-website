@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { SocialVideos as socialVideosData } from "@/data/social-videos";
 import Loader from "@/components/ui/Loader";
 import { Input } from "@/components/ui/input";
+import Link from "next/link";
 
 interface SocialVideo {
   src: string;
@@ -162,14 +163,14 @@ const Tutorials = () => {
               >
                 Watch Video
               </button>
-              <a
+              <Link
                 href="https://devjourney-blog-khaki.vercel.app/"
                 target="_blank"
               >
                 <button className="py-2 px-6 items-center rounded-md text-white text-sm md:text-base font-semibold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300">
                   Visit My Blog
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         ))}

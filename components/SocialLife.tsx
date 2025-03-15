@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const ServicesHero = () => {
   return (
@@ -28,14 +29,14 @@ const ServicesHero = () => {
             Well, that's not too hard to do. I balance both, watch me &#8594;
             learn how below.
           </motion.p>
-          <a href="#social-life">
+          <Link href="#social-life">
             <button
               type="button"
               className="mt-6 bg-transparent ring-1 ring-blue-50 text-white text-base px-6 py-3 rounded-md shadow-lg font-semibold hover:ease-in-out hover:scale-105 transition-all duration-300"
             >
               Learn how below
             </button>
-          </a>
+          </Link>
         </div>
         <Image
           src="/social-bg.webp"

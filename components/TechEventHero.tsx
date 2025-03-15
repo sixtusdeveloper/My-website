@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function TechEventHero() {
   return (
     <>
@@ -18,11 +20,11 @@ export default function TechEventHero() {
             Explore memories behind my software engineering and tech journey at
             large.
           </p>
-          <a href="#tech-events">
+          <Link href="#tech-events">
             <button className="my-6 py-3 px-6 rounded-md font-semibold text-white hover:text-white dark:text-white text-base ring-1 ring-pink-500 hover:bg-gradient-to-r hover:from-pink-500 hover:via-yellow-500 hover:to-pink-500 hover:ease-in-out hover:scale-105 transition-all duration-300">
               Explore Events
             </button>
-          </a>
+          </Link>
         </div>
       </section>
     </>
