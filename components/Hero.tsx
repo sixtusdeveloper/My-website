@@ -187,7 +187,7 @@ const Home = () => {
                 openBlogModal();
               }}
             >
-              <button className="py-3 px-6 h-12 font-semibold rounded-md text-white hover:text-white dark:text-white text-sm ring-1 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 md:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
+              <button className="py-3 px-6 h-12 font-semibold rounded-md text-white hover:text-white dark:text-white text-sm ring-1 ring-indigo-500 hover:ring-0 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 md:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
                 {isBlogLoading ? "Loading..." : "Visit My Blog"}
               </button>
             </Link>
