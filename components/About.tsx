@@ -173,7 +173,7 @@ const About = () => {
                 </p>
               </>
             )}
-            <div className="flex gap-4 items-center justify-start text-left">
+            <div className="flex gap-4 py-2 items-center justify-start text-left">
               <Link
                 href="#"
                 onClick={(e) => {
