@@ -8,6 +8,7 @@ import { useUser, useClerk } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { CircularProgress } from "@mui/material";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function GalleryHero() {
   const { redirectToSignUp, openSignIn } = useClerk();
@@ -17,13 +18,24 @@ export default function GalleryHero() {
   const [showErrorModal, setShowErrorModal] = useState(false);
   const [loadingState, setLoadingState] = useState<string | null>(null);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [isGalleryLoading, setIsGalleryLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const openModal = () => {
-    setIsModalOpen(true);
-    document.body.style.overflow = "hidden";
+    setTimeout(() => {
+      setIsLoading(false);
+      setIsGalleryLoading(false);
+      document.body.style.overflow = "hidden";
+      setTimeout(() => {
+        setIsModalOpen(true);
+        setIsLoading(false);
+        setIsGalleryLoading(false);
+      }, 2000);
+    });
   };
 
   const closeModal = () => {
+    setIsGalleryLoading(false);
     setIsModalOpen(false);
     document.body.style.overflow = "auto";
   };
@@ -119,16 +131,22 @@ export default function GalleryHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
           >
-            <a onClick={openModal}>
+            <Link
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                openModal();
+              }}
+            >
               <Button className="px-6 h-12 py-3 text-sm lg:text-base font-semibold rounded-md text-white shadow-lg bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 hover:bg-yellow-600 hover:ease-in-out hover:scale-105 transition-all duration-300">
                 Free E-books
               </Button>
-            </a>
-            <a href="/pages/portfolio">
+            </Link>
+            <Link href="/pages/portfolio">
               <Button className="px-6 py-3 h-12 text-sm lg:text-base font-semibold rounded-md text-white shadow-lg border border-white/40 bg-transparent hover:bg-white/20 hover:ease-in-out hover:scale-105 transition-all duration-300">
                 My Portfolio
               </Button>
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
       </section>
