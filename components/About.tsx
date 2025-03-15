@@ -82,7 +82,7 @@ const About = () => {
               <div className="flex items-center justify-center gap-4 mt-0">
                 {/* Twitter Follow Button */}
                 <div
-                  className={`flex items-center space-x-2 p-2 rounded-full shadow-sm border hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+                  className={`flex items-center space-x-2 p-2 bg-secondary text-gray-700 dark:text-gray-200 dark:bg-gray-800 rounded-full shadow-sm border hover:ease-in-out hover:scale-105 transition-all duration-300 ${
                     isTwitterFollowed
                       ? "bg-secondary dark:bg-gray-800 border"
                       : "bg-transparent border"
@@ -98,7 +98,7 @@ const About = () => {
 
                 {/* GitHub Follow Button */}
                 <div
-                  className={`flex items-center space-x-2 p-2 rounded-full shadow-sm border hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+                  className={`flex items-center space-x-2 p-2 bg-secondary text-gray-700 dark:text-gray-200 dark:bg-gray-800 rounded-full shadow-sm border hover:ease-in-out hover:scale-105 transition-all duration-300 ${
                     isGithubFollowed
                       ? "bg-secondary dark:bg-gray-800 border"
                       : "bg-transparent border"
@@ -115,7 +115,7 @@ const About = () => {
                 </div>
 
                 {/* Linked Follow Button */}
-                <div className="flex items-center space-x-2 p-2 rounded-full shadow-sm border hover:ease-in-out hover:scale-105 transition-all duration-300">
+                <div className="flex items-center bg-secondary text-gray-700 dark:text-gray-200 dark:bg-gray-800 space-x-2 p-2 rounded-full shadow-sm border hover:ease-in-out hover:scale-105 transition-all duration-300">
                   <Link
                     href="https://linkedin.com/in/sixtusushrey"
                     target="_blank"
