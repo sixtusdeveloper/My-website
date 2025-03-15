@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { backgroundImages } from "@/data";
 import AnimatedLaptop from "@/components/ui/AnimatedLaptop";
+import { useRouter } from "next/navigation";
 
 const Home = () => {
   const { user, isSignedIn } = useUser();
@@ -19,6 +20,8 @@ const Home = () => {
   const [backgroundIndex, setBackgroundIndex] = useState(0);
   const [fade, setFade] = useState(true); // Controls fade-in & fade-out effect
   const [isPaused, setIsPaused] = useState(false);
+
+  const router = useRouter(); // ✅ Hook inside function body
 
   // Auto-change background every 10 seconds with fade effect
   useEffect(() => {
@@ -68,7 +71,7 @@ const Home = () => {
   };
 
   const handleHeroRedirect = () => {
-    window.location.href = "/pages/portfolio";
+    router.push("/pages/portfolio");
   };
 
   const openBlogModal = () => {
@@ -96,7 +99,6 @@ const Home = () => {
     >
       <div className="absolute inset-0 bg-black bg-opacity-70"></div>
 
-      {/* <div className="relative flex flex-col-reverse lg:flex-row items-center justify-center w-full gap-8 px-4 lg:px-16"> */}
       <div className="relative flex flex-row lg:flex-row items-center justify-start lg:justify-center w-full gap-8 px-4 lg:px-14">
         {/* Left: Text Section */}
         <motion.div
@@ -241,12 +243,18 @@ const Home = () => {
         message="Are you sure you want to leave this page? You will be navigated to my portfolio page."
       >
         <div className="flex gap-4 mt-4">
-          <button
-            onClick={handleHeroRedirect}
-            className="bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-800 text-white text-sm lg:text-base font-medium py-2 px-8 rounded-full"
+          <Link
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              handleHeroRedirect();
+            }}
           >
-            Leave
-          </button>
+            <button className="bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-800 text-white text-sm lg:text-base font-medium py-2 px-8 rounded-full">
+              Leave
+            </button>
+          </Link>
+
           <button
             onClick={closeHeroModal}
             className="bg-gray-600 hover:bg-gray-800 text-white py-2 px-8 rounded-full text-sm lg:text-base font-medium"

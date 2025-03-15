@@ -1,6 +1,8 @@
 // ReadMoreModal.tsx
 "use client";
 
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React, { useEffect } from "react";
 import { IoClose } from "react-icons/io5";
 
@@ -22,6 +24,11 @@ const ReadMoreModal: React.FC<ReadMoreModalProps> = ({
       document.body.style.overflow = "";
     }
   }, [isOpen]);
+
+  const router = useRouter();
+  const navigateToAboutSection = () => {
+    router.push("/#about");
+  };
 
   if (!isOpen) return null;
 
@@ -47,13 +54,17 @@ const ReadMoreModal: React.FC<ReadMoreModalProps> = ({
             to stay here.
           </p>
           <div className="flex justify-center mt-6 space-x-4">
-            <a
-              href="/#about"
+            <Link
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                navigateToAboutSection();
+              }}
               rel="noopener noreferrer"
               className="py-2 px-4 flex items-center text-sm lg:text-base font-medium rounded-full bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white hover:bg-indigo-600 hover:ease-in-out hover:scale-105 transition-all duration-300"
             >
               Continue
-            </a>
+            </Link>
             <button
               onClick={onClose}
               className="py-2 px-4 flex cursor-pointer items-center text-sm lg:text-base font-medium rounded-full bg-gradient-to-r from-indigo-600 via-green-500 to-pink-800 text-white tracking-wide hover:bg-red-800 hover:ease-in-out hover:scale-105 transition-all duration-300"

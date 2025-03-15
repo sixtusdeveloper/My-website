@@ -4,7 +4,8 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa"; // Import icons
 import GalleryModal from "@/components/ui/GalleryModal";
-import { Button } from "./ui/button";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const About = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -12,6 +13,8 @@ const About = () => {
   const [isGithubFollowed, setIsGithubFollowed] = useState(false);
   const [isGalleryModalOpen, setIsGalleryModalOpen] = useState(false);
   const [isGalleryLoading, setIsGalleryLoading] = useState(false);
+
+  const router = useRouter();
 
   // Handle page refresh or initial load for follow buttons
   useEffect(() => {
@@ -44,18 +47,6 @@ const About = () => {
     setIsExpanded((prev) => !prev);
   };
 
-  // Handle Twitter follow button click (Now functional via Twitter widget)
-  const handleTwitterFollow = () => {
-    setIsTwitterFollowed(true);
-    localStorage.setItem("isTwitterFollowed", JSON.stringify(true));
-  };
-
-  // Handle GitHub follow button click (Now functional via GitHub link)
-  const handleGithubFollow = () => {
-    setIsGithubFollowed(true);
-    localStorage.setItem("isGithubFollowed", JSON.stringify(true));
-  };
-
   const openGalleryModal = () => {
     setIsGalleryLoading(true);
     setTimeout(() => {
@@ -65,7 +56,7 @@ const About = () => {
   };
 
   const handleGalleryRedirect = () => {
-    window.location.href = "/pages/gallery";
+    router.push("/pages/gallery");
   };
 
   return (
@@ -183,16 +174,29 @@ const About = () => {
               </>
             )}
             <div className="flex gap-4 items-center justify-start text-left">
-              <a onClick={handleToggle}>
+              <Link
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleToggle();
+                }}
+              >
                 <button className="py-3 px-6 h-12 rounded-md text-purple-600 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-1 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 hover:ease-in-out hover:scale-105 transition-all duration-300">
                   {isExpanded ? "Less to read" : "More to read"}
                 </button>
-              </a>
-              <a onClick={openGalleryModal}>
+              </Link>
+
+              <Link
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  openGalleryModal();
+                }}
+              >
                 <button className="py-3 h-12 px-6 rounded-md text-white text-sm md:text-base font-semibold bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 hover:ease-in-out hover:scale-105 transition-all duration-300">
                   {isGalleryLoading ? "Loading..." : "Visit My Gallery"}
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -244,12 +248,18 @@ const About = () => {
         message="You are about to be navigated to my Gallery page. Do you wish to continue?"
       >
         <div className="flex justify-center gap-4 p-4 mt-4">
-          <button
-            onClick={handleGalleryRedirect}
-            className="text-sm lg:text-base font-medium bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-600 text-white py-2 px-4 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300"
+          <Link
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              handleGalleryRedirect();
+            }}
           >
-            Sure, Navigate
-          </button>
+            <button className="text-sm lg:text-base font-medium bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-600 text-white py-2 px-4 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300">
+              Sure, Navigate
+            </button>
+          </Link>
+
           <button
             onClick={() => setIsGalleryModalOpen(false)}
             className="bg-gray-600 hover:bg-gray-800 text-white text-sm lg:text-base font-medium py-2 px-8 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300"

@@ -12,6 +12,7 @@ import { cvImages, backgroundImages } from "@/data";
 import Loader from "@/components/ui/Loader";
 import { motion } from "framer-motion";
 import ProgressBar from "@/components/ui/ProgressBar"; // Import the Progress Bar
+import Link from "next/link";
 
 const Hero = () => {
   const { user, isSignedIn } = useUser();
@@ -135,9 +136,9 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
-            <div className="relative rounded-full px-3 py-1 text-sm leading-tight font-semibold hover:text-indigo-600 border shadow-xl border-gray-800 bg-gradient-to-r from-yellow-600 via-blue-600 to-pink-600 bg-clip-text text-transparent">
+            <div className="relative rounded-full px-3 py-1 text-sm leading-tight font-semibold hover:text-indigo-600 border shadow-xl border-gray-700 bg-gradient-to-r from-yellow-600 via-blue-600 to-pink-600 bg-clip-text text-transparent">
               Engineering excellence in every line of code.{" "}
-              <a
+              <Link
                 href="https://github.com/sixtusdeveloper/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -145,7 +146,7 @@ const Hero = () => {
               >
                 <span aria-hidden="true" className="absolute inset-0" />
                 Check my codebase&nbsp;<span aria-hidden="true">&rarr;</span>
-              </a>
+              </Link>
             </div>
           </motion.div>
 
@@ -187,16 +188,29 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.1, ease: "easeOut" }}
           >
-            <a onClick={handleHireMeClick}>
+            <Link
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                handleHireMeClick();
+              }}
+            >
               <button className="px-6 py-3 rounded-md bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
                 Let's work together
               </button>
-            </a>
-            <a onClick={handleReadMoreClick}>
+            </Link>
+
+            <Link
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                handleReadMoreClick();
+              }}
+            >
               <button className="py-3 px-6 font-semibold rounded-md text-white hover:text-white dark:text-white text-sm ring-1 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 md:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
                 Read More&nbsp;&#8594;
               </button>
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
 
