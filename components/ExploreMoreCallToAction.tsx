@@ -4,10 +4,14 @@ import React from "react";
 import { useState } from "react";
 import Loader from "./ui/Loader";
 import HeroModal from "./ui/HeroModal";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const ExploreMoreCallToAction = () => {
   const [isHeroModalOpen, setIsHeroModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+
+  const router = useRouter();
 
   const openHeroModal = () => {
     setIsLoading(true);
@@ -22,7 +26,7 @@ const ExploreMoreCallToAction = () => {
   };
 
   const handleHeroRedirect = () => {
-    window.location.href = "/pages/portfolio";
+    router.push("/pages/portfolio/#projects");
   };
   return (
     <>
@@ -30,7 +34,7 @@ const ExploreMoreCallToAction = () => {
         {/* Fixed Background */}
         <div
           className="absolute inset-0 bg-fixed bg-cover bg-center"
-          style={{ backgroundImage: "url('/coding-guy.png')" }}
+          style={{ backgroundImage: "url('/skillsbg.avif')" }}
         />
         <div className="absolute inset-0 bg-black bg-opacity-50" />
 
@@ -42,14 +46,21 @@ const ExploreMoreCallToAction = () => {
           <p className="mt-4 text-base opacity-95 text-gray-100">
             Explore my portfolio page and see how I turn ideas into reality.
           </p>
-          <a onClick={openHeroModal}>
+
+          <Link
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              openHeroModal();
+            }}
+          >
             <button
               type="button"
-              className="mt-6 py-3 px-6 text-base font-semibold rounded-md inline-block bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white shadow-lg hover:ease-in-out hover:scale-105 transition-all duration-300"
+              className="lg:my-8 mt-6 py-3 px-6 text-base font-semibold ring-1 ring-blue-500 hover:ring-0 text-white rounded-md inline-block hover:bg-gradient-to-r hover:from-yellow-500 hover:via-pink-500 hover:to-purple-600 shadow-sm hover:ease-in-out hover:scale-105 transition-all duration-300"
             >
               Visit My Portfolio
             </button>
-          </a>
+          </Link>
         </div>
 
         {isLoading && <Loader />}
@@ -61,12 +72,18 @@ const ExploreMoreCallToAction = () => {
           message="Are you sure you want to leave this page? You will be navigated to my portfolio page."
         >
           <div className="flex gap-4 mt-4">
-            <button
-              onClick={handleHeroRedirect}
-              className="bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-800 text-white py-2 px-8 rounded-full"
+            <Link
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                handleHeroRedirect();
+              }}
             >
-              Leave
-            </button>
+              <button className="bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-800 text-white py-2 px-8 rounded-full">
+                Leave
+              </button>
+            </Link>
+
             <button
               onClick={closeHeroModal}
               className="bg-gray-600 hover:bg-gray-800 text-white py-2 px-8 rounded-full"

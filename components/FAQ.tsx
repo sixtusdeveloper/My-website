@@ -3,11 +3,19 @@
 import React, { useState, useEffect } from "react";
 import { faqs } from "@/data/faq-data"; // Import FAQs data
 import { FaTimes } from "react-icons/fa";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const FAQPage = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [showModal, setShowModal] = useState(false);
   const [feedback, setFeedback] = useState<string | null>(null);
+
+  const router = useRouter();
+
+  const handleChatDirectly = () => {
+    router.push("/pages/portfolio/#get-in-touch");
+  };
 
   const toggleAccordion = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -31,7 +39,7 @@ const FAQPage = () => {
   }, [showModal]);
 
   // Handles smooth scrolling to the contact section and closes modal
-  const handleChatDirectly = () => {
+  const handleMsgDirectly = () => {
     setShowModal(false); // Close modal
     setTimeout(() => {
       document.getElementById("contact")?.scrollIntoView({
@@ -76,9 +84,12 @@ const FAQPage = () => {
         <div className="py-4 px-2 text-center mt-2 md:mt-4 lg:mt-4">
           <p className="text-sm">
             Could not find what you're looking for?{" "}
-            <a href="/#contact" className="text-green-500 hover:underline ml-2">
+            <Link
+              href="/#contact"
+              className="text-green-500 hover:underline ml-2"
+            >
               Send me a message and I'll respond to your concern or discussion.
-            </a>
+            </Link>
           </p>
         </div>
 
@@ -133,12 +144,17 @@ const FAQPage = () => {
                   clicking the WhatsApp or email link within the contact section
                   of this page or at the bottom of my portfolio page.
                 </p>
-                <button
-                  onClick={handleChatDirectly}
-                  className="h-11 py-2 px-6 items-center mt-4 bg-gradient-to-r from-blue-500 via-purple-500 to-purple-600 text-white rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300"
+                <Link
+                  href="/#contact"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleMsgDirectly();
+                  }}
                 >
-                  Chat me directly
-                </button>
+                  <button className="h-11 py-2 px-6 items-center mt-4 bg-gradient-to-r from-blue-500 via-purple-500 to-purple-600 text-white rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300">
+                    Chat me directly
+                  </button>
+                </Link>
               </>
             ) : (
               <>
@@ -152,12 +168,18 @@ const FAQPage = () => {
                   direct using the WhatsApp or email link within the contact
                   section of this page or at the bottom of my portfolio page.
                 </p>
-                <button
-                  onClick={handleChatDirectly}
-                  className="h-11 py-2 px-6 items-center mt-4 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-white rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300"
+
+                <Link
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleChatDirectly();
+                  }}
                 >
-                  Reach out to me
-                </button>
+                  <button className="h-11 py-2 px-6 items-center mt-4 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-white rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300">
+                    Reach out to me
+                  </button>
+                </Link>
               </>
             )}
           </div>

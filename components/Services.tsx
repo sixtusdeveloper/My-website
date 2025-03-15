@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { CodeIcon, PaintbrushIcon, ServerIcon, RocketIcon } from "lucide-react";
 import ServicesModal from "@/components/ui/GalleryModal";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const services = [
   {
@@ -45,6 +47,8 @@ const ServicesSection = () => {
   const [isServicesModalOpen, setIsServicesModalOpen] = useState(false);
   const [isServicesLoading, setIsServicesLoading] = useState(false);
 
+  const router = useRouter();
+
   const openServicesModal = () => {
     setIsServicesLoading(true);
     setTimeout(() => {
@@ -54,7 +58,7 @@ const ServicesSection = () => {
   };
 
   const handleServicesRedirect = () => {
-    window.location.href = "/pages/portfolio/#services";
+    router.push("/pages/portfolio/#services");
   };
 
   return (
@@ -87,14 +91,20 @@ const ServicesSection = () => {
 
         {/* CTA Button */}
         <div className="mt-12">
-          <a onClick={openServicesModal}>
+          <Link
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              openServicesModal();
+            }}
+          >
             <button
               type="button"
-              className="bg-gradient-to-r from-blue-500 via-purple-500 to-green-600 hover:bg-blue-600 text-white text-sm md:text-base font-semibold h-12 px-6 py-3 rounded-md hover:ease-in-out hover:scale-105 transition-all duration-300"
+              className="ring-1 ring-blue-500 text-blue-500 hover:bg-gradient-to-r hover:from-blue-500 hover:via-purple-500 hover:to-green-600 hover:bg-blue-600 hover:text-white text-sm md:text-base font-semibold h-12 px-6 py-3 rounded-md hover:ease-in-out hover:scale-105 transition-all duration-300"
             >
-              Learn more &#8594;
+              {isServicesLoading ? "Loading..." : "Learn more"}
             </button>
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -112,12 +122,20 @@ const ServicesSection = () => {
         message="You are about to be navigated to my Portfolio page. Do you wish to continue?"
       >
         <div className="flex justify-center gap-4 p-4 mt-4">
-          <button
-            onClick={handleServicesRedirect}
-            className="text-sm lg:text-base font-medium bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-600 text-white py-2 px-4 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300"
+          <Link
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              handleServicesRedirect();
+            }}
           >
-            Sure, Navigate
-          </button>
+            <button
+              onClick={handleServicesRedirect}
+              className="text-sm lg:text-base font-medium bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-600 text-white py-2 px-4 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300"
+            >
+              Sure, Navigate
+            </button>
+          </Link>
           <button
             onClick={() => setIsServicesModalOpen(false)}
             className="bg-gray-600 hover:bg-gray-800 text-white text-sm lg:text-base font-medium py-2 px-8 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300"

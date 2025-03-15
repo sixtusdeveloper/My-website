@@ -53,7 +53,7 @@ const ReadMoreModal: React.FC<ReadMoreModalProps> = ({
             website. If you wish to explore further, click continue, or cancel
             to stay here.
           </p>
-          <div className="flex justify-center mt-6 space-x-4">
+          <div className="flex justify-center my-4 space-x-4">
             <Link
               href="#"
               onClick={(e) => {
@@ -61,13 +61,13 @@ const ReadMoreModal: React.FC<ReadMoreModalProps> = ({
                 navigateToAboutSection();
               }}
               rel="noopener noreferrer"
-              className="py-2 px-4 flex items-center text-sm lg:text-base font-medium rounded-full bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white hover:bg-indigo-600 hover:ease-in-out hover:scale-105 transition-all duration-300"
+              className="py-2 px-6 flex items-center text-sm lg:text-base font-medium rounded-full bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white hover:bg-indigo-600 hover:ease-in-out hover:scale-105 transition-all duration-300"
             >
               Continue
             </Link>
             <button
               onClick={onClose}
-              className="py-2 px-4 flex cursor-pointer items-center text-sm lg:text-base font-medium rounded-full bg-gradient-to-r from-indigo-600 via-green-500 to-pink-800 text-white tracking-wide hover:bg-red-800 hover:ease-in-out hover:scale-105 transition-all duration-300"
+              className="py-2 px-6 flex cursor-pointer items-center text-sm lg:text-base font-medium rounded-full bg-gradient-to-r from-indigo-600 via-green-500 to-pink-800 text-white tracking-wide hover:bg-red-800 hover:ease-in-out hover:scale-105 transition-all duration-300"
             >
               Cancel
             </button>

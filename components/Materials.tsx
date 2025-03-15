@@ -6,6 +6,7 @@ import { FaTimes, FaExclamationCircle, FaCheckCircle } from "react-icons/fa";
 import { useUser, useClerk } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { CircularProgress } from "@mui/material";
+import Loader from "@/components/ui/Loader";
 
 export default function CallToAction() {
   const { redirectToSignUp, openSignIn } = useClerk();
@@ -15,13 +16,19 @@ export default function CallToAction() {
   const [showErrorModal, setShowErrorModal] = useState(false);
   const [loadingState, setLoadingState] = useState<string | null>(null);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const openModal = () => {
-    setIsModalOpen(true);
+    setIsLoading(true);
     document.body.style.overflow = "hidden";
+    setTimeout(() => {
+      setIsLoading(false);
+      setIsModalOpen(true);
+    }, 2000);
   };
 
   const closeModal = () => {
+    setIsLoading(false);
     setIsModalOpen(false);
     document.body.style.overflow = "auto";
   };
@@ -154,6 +161,8 @@ export default function CallToAction() {
           </div>
         </div>
       )}
+
+      {isLoading && <Loader />}
 
       {showErrorModal && (
         <div

@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
+import Link from "next/link";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -100,7 +101,7 @@ const Contact = () => {
                   </p>
                 </div>
                 <br />
-                <a
+                <Link
                   href="https://wa.me/+2349022048105"
                   target="_blank"
                   className="inline-flex py-2 items-center border rounded-md hover:underline hover:text-yellow-500 p-2 w-full my-1"
@@ -115,9 +116,9 @@ const Contact = () => {
                   <p className="text-sm py-1 mb-0">
                     +234&nbsp;902&nbsp;2048&nbsp;105
                   </p>
-                </a>
+                </Link>
                 <br />
-                <a
+                <Link
                   href="mailto:contact@sixtusdev.net?subject=Let's%20connect!"
                   className="inline-flex items-center border hover:underline hover:text-yellow-500 rounded-md p-2 w-full my-1"
                 >
@@ -131,7 +132,7 @@ const Contact = () => {
                   <p className="text-sm tracking-wide py-1 mb-0">
                     contact@sixtusdev.net
                   </p>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

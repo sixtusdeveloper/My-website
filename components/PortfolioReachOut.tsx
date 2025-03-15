@@ -6,7 +6,7 @@ const ReachOut = () => {
   return (
     <div
       className="bg-secondary relative lg:pt-10 mx-auto w-full px-6 lg:px-16 pb-20"
-      id="ReachOut"
+      id="get-in-touch"
     >
       <div className="max-w-2xl mx-auto relative">
         <h1 className="font-bold text-center text-[2rem] lg:text-[2.5rem] leading-tight tracking-wide">

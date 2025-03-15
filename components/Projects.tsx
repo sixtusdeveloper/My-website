@@ -2,25 +2,32 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Loader from "@/components/ui/Loader";
 import ProjectModal from "./ui/HeroModal";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Projects = () => {
   const [isProjectModalOpen, setIsProjectModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isProjectsLoading, setIsProjectsLoading] = useState(false);
+  const router = useRouter();
 
   const openProjectModal = () => {
     setIsLoading(true);
+    setIsProjectsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
+      setIsProjectsLoading(true);
       setIsProjectModalOpen(true);
     }, 2000);
   };
 
   const closeProjectModal = () => {
     setIsProjectModalOpen(false);
+    setIsProjectsLoading(false);
   };
 
   const handleProjectRedirect = () => {
-    window.location.href = "/pages/portfolio/#projects";
+    router.push("/pages/portfolio/#projects");
   };
 
   return (
@@ -127,13 +134,20 @@ const Projects = () => {
           </div>
         </div>
         <div className="text-center mt-10">
-          <button
-            type="button"
-            onClick={openProjectModal}
-            className="bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-base h-12 px-6 py-3 rounded-md shadow-lg hover:ease-in-out hover:scale-105 transition-all duration-300"
+          <Link
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              openProjectModal();
+            }}
           >
-            See All Projects
-          </button>
+            <button
+              type="button"
+              className="ring-1 ring-blue-500 hover:ring-0 text-blue-500 hover:bg-gradient-to-r hover:from-yellow-500 hover:via-pink-500 hover:to-purple-600 hover:text-white font-semibold text-base h-12 px-6 py-3 rounded-md shadow-sm hover:ease-in-out hover:scale-105 transition-all duration-300"
+            >
+              {isProjectsLoading ? "Loading..." : "See All Projects"}
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -146,12 +160,17 @@ const Projects = () => {
         message="Are you sure you want to leave this page? You will be navigated to my portfolio page."
       >
         <div className="flex gap-4 mt-4">
-          <button
-            onClick={handleProjectRedirect}
-            className="bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-blue-500 text-white py-2 px-8 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300"
+          <Link
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              handleProjectRedirect();
+            }}
           >
-            Leave
-          </button>
+            <button className="bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-blue-500 text-white py-2 px-8 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300">
+              Leave
+            </button>
+          </Link>
           <button
             onClick={closeProjectModal}
             className="bg-gray-600 hover:bg-gray-800 text-white py-2 px-8 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300"

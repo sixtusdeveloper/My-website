@@ -88,12 +88,12 @@ const About = () => {
                       : "bg-transparent border"
                   } transition`}
                 >
-                  <a
+                  <Link
                     href="https://twitter.com/sixtusdev?ref_src=twsrc%5Etfw"
                     className="relative"
                   >
                     <FaTwitter size={20} />
-                  </a>
+                  </Link>
                 </div>
 
                 {/* GitHub Follow Button */}
@@ -104,26 +104,26 @@ const About = () => {
                       : "bg-transparent border"
                   } transition`}
                 >
-                  <a
+                  <Link
                     href="https://github.com/sixtusdeveloper"
                     target="_blank"
                     className="relative"
                     rel="noopener noreferrer"
                   >
                     <FaGithub size={20} />
-                  </a>
+                  </Link>
                 </div>
 
                 {/* Linked Follow Button */}
                 <div className="flex items-center space-x-2 p-2 rounded-full shadow-sm border hover:ease-in-out hover:scale-105 transition-all duration-300">
-                  <a
+                  <Link
                     href="https://linkedin.com/in/sixtusushrey"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="relative"
                   >
                     <FaLinkedin size={20} />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -181,7 +181,7 @@ const About = () => {
                   handleToggle();
                 }}
               >
-                <button className="py-3 px-6 h-12 rounded-md text-purple-600 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-1 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 hover:ease-in-out hover:scale-105 transition-all duration-300">
+                <button className="py-3 px-6 h-12 rounded-md text-blue-500 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-1 ring-blue-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 hover:ease-in-out hover:scale-105 transition-all duration-300">
                   {isExpanded ? "Less to read" : "More to read"}
                 </button>
               </Link>
