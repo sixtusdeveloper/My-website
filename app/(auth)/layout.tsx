@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import "./auth-styles.css";
 import { SparklesCore } from "./ui/sparkles";
+import Link from "next/link";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -20,7 +21,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
       <div className="flex flex-col lg:flex-row min-h-screen h-full w-full">
         <div className="w-full lg:w-1/2 flex flex-col items-center justify-center md:py-6 p-4 sm:p-10 text-white z-10">
-          <a href="/" className="flex justify-start items-center gap-1">
+          <Link href="/" className="flex justify-start items-center gap-1">
             <Image
               src="/Logo.png"
               alt="Sixtusdev Logo"
@@ -34,7 +35,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <span className="tracking-wide sm:block items-center self-center text-sm font-semibold bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 text-transparent bg-clip-text">
               SIXTUSDEV
             </span>
-          </a>
+          </Link>
 
           <ul className="mt-5 space-y-2 p-2 lg:p-8">
             <li className="flex items-center py-1 sm:py-2">
@@ -43,6 +44,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 alt="Laptop Code icon"
                 width={25}
                 height={25}
+                loading="lazy"
                 style={{ width: "auto", height: "auto" }}
                 className="overflow-hidden lg:items-center items-start"
               />
@@ -56,6 +58,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 alt="Code icon"
                 width={25}
                 height={25}
+                loading="lazy"
                 style={{ width: "auto", height: "auto" }}
                 className="overflow-hidden lg:items-center items-start"
               />
@@ -69,6 +72,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 alt="Project icon"
                 width={25}
                 height={25}
+                loading="lazy"
                 style={{ width: "auto", height: "auto" }}
                 className="overflow-hidden lg:items-center items-start"
               />
@@ -82,6 +86,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 alt="Collaboration icon"
                 width={25}
                 height={25}
+                loading="lazy"
                 style={{ width: "auto", height: "auto" }}
                 className="overflow-hidden lg:items-center items-start"
               />
@@ -95,6 +100,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 alt="Innovation icon"
                 width={25}
                 height={25}
+                loading="lazy"
                 style={{ width: "auto", height: "auto" }}
                 className="overflow-hidden lg:items-center items-start"
               />
@@ -109,16 +115,17 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 alt="Privacy policy icon"
                 width={25}
                 height={25}
+                loading="lazy"
                 style={{ width: "auto", height: "auto" }}
                 className="overflow-hidden lg:items-center items-start"
               />
-              <a
+              <Link
                 href="https://www.sixtusdev.net/pages/privacy_policy"
                 className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200 hover:underline no-underline hover:text-green-600"
               >
                 Privacy policy - Read more about the privacy policy of this
                 application.
-              </a>
+              </Link>
             </li>
             <li className="flex items-center py-1 sm:py-2">
               <Image
@@ -126,16 +133,17 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 alt="terms and condition icon"
                 width={25}
                 height={25}
+                loading="lazy"
                 style={{ width: "auto", height: "auto" }}
                 className="overflow-hidden lg:items-center items-start"
               />
-              <a
+              <Link
                 href="https://www.sixtusdev.net/pages/terms_condition"
                 className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200 no-underline hover:underline hover:text-green-600"
               >
                 Terms and Condition - Read more about the terms and condition of
                 this application.
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

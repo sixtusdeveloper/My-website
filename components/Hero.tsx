@@ -6,6 +6,7 @@ import HeroModal from "@/components/ui/HeroModal";
 import Loader from "@/components/ui/Loader";
 import BlogModal from "@/components/ui/BlogModal";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { backgroundImages } from "@/data";
 import AnimatedLaptop from "@/components/ui/AnimatedLaptop";
 
@@ -165,16 +166,29 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.1, ease: "easeOut" }}
           >
-            <a onClick={openHeroModal}>
+            <Link
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                openHeroModal();
+              }}
+            >
               <button className="h-12 px-6 py-3 rounded-md bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
                 Visit Portfolio
               </button>
-            </a>
-            <a onClick={openBlogModal}>
+            </Link>
+
+            <Link
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                openBlogModal();
+              }}
+            >
               <button className="py-3 px-6 h-12 font-semibold rounded-md text-white hover:text-white dark:text-white text-sm ring-1 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 md:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
                 {isBlogLoading ? "Loading..." : "Visit My Blog"}
               </button>
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
 

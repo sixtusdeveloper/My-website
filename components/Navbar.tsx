@@ -13,6 +13,7 @@ import {
 import { Logo } from "@/components/NavbarLogo";
 import Image from "next/image";
 import ToggleMode from "@/components/toggleMode";
+import Link from "next/link";
 
 interface NavbarProps {
   LogoImg?: string;
@@ -68,7 +69,6 @@ export default function Navbar({
     <>
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-colors duration-500 ${
-          // scrolling ? "bg-secondary" : "bg-black/50 text-white"
           scrolling
             ? "bg-secondary dark:bg-gray-900 border-b"
             : "bg-black/50 text-white"
@@ -93,7 +93,7 @@ export default function Navbar({
           </div>
           <div className="hidden lg:flex lg:gap-x-8">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.name}
                 href={`#${item.href.substring(1)}`}
                 className={`text-sm hover:text-pink-700 tracking-wide font-semibold cursor-pointer ${
@@ -107,7 +107,7 @@ export default function Navbar({
                 }}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-5 items-center">
@@ -143,7 +143,7 @@ export default function Navbar({
           <div className="fixed inset-0 z-40" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="/" className="flex items-center">
+              <Link href="/" className="flex items-center">
                 <Image
                   src="/Logo.png"
                   alt="Sixtusdev Logo"
@@ -153,7 +153,7 @@ export default function Navbar({
                 <span className="hidden font-sans sm:block self-center text-base font-semibold bg-gradient-to-r from-yellow-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
                   {title}
                 </span>
-              </a>
+              </Link>
               <ToggleMode />
               <button
                 type="button"
@@ -171,7 +171,7 @@ export default function Navbar({
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
                       href={`#${item.href.substring(1)}`}
                       className="-mx-3 block text-white font-sans rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-blue-600"
@@ -181,7 +181,7 @@ export default function Navbar({
                       }}
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
                 <div className="py-3">
