@@ -32,7 +32,7 @@ const ServicesHero = () => {
           <Link href="#social-life">
             <button
               type="button"
-              className="mt-6 bg-transparent ring-1 ring-blue-50 text-white text-base px-6 py-3 rounded-md shadow-lg font-semibold hover:ease-in-out hover:scale-105 transition-all duration-300"
+              className="mt-6 bg-transparent ring-1 ring-blue-50 text-white text-base px-6 py-3 rounded-md shadow-sm font-semibold hover:ease-in-out hover:scale-105 transition-all duration-300"
             >
               Learn how below
             </button>

@@ -7,6 +7,7 @@ import Image from "next/image";
 import Loader from "@/components/ui/Loader";
 import Link from "next/link";
 import { Project } from "@/types";
+import { useRouter } from "next/navigation";
 
 // Truncate project technologies
 const MAX_ICONS_DISPLAY = 3; // Limit for icons in project card
@@ -31,6 +32,9 @@ const Projects = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [showLiveModal, setShowLiveModal] = useState(false);
   const [showReadMoreModal, setShowReadMoreModal] = useState(false);
+  const [isTutorialLoading, setIsTutorialLoading] = useState(false);
+
+  const router = useRouter();
 
   const [currentProject, setCurrentProject] = useState<Project | null>(null);
 
@@ -54,6 +58,14 @@ const Projects = () => {
     } else if (direction === "prev" && currentPage > 1) {
       setCurrentPage(currentPage - 1);
     }
+  };
+
+  const navigateToTutorial = () => {
+    setIsTutorialLoading(true);
+    setTimeout(() => {
+      setIsTutorialLoading(false);
+      router.push("/pages/gallery/#social-life");
+    }, 2000);
   };
 
   const handleLinkClick = (url: string) => {
@@ -353,19 +365,32 @@ const Projects = () => {
                 </div>
               </div>
 
-              <div className="flex justify-between gap-4 lg:gap-4 px-4 lg:px-4 mb-6 lg:mb-8">
-                <button
-                  onClick={closeModal}
-                  className="w-full mt-4 rounded-md py-3 px-4 text-white text-center font-semibold text-sm lg:text-base hover:bg-pink-600 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600"
+              <div className="w-full flex justify-center items-center gap-4 lg:gap-4 px-4 lg:px-4 my-6 lg:my-8">
+                <Link
+                  className="w-full"
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    closeModal();
+                  }}
                 >
-                  Close Modal
-                </button>
-                <button
-                  onClick={closeModal}
-                  className="w-full mt-4 hover:ring-0 rounded-md py-3 px-4 ring-1 ring-blue-500 hover:text-white text-blue-500 dark:text-white text-center font-semibold text-sm lg:text-base hover:bg-gradient-to-r hover:from-yellow-500 hover:via-pink-500 hover:to-purple-600"
+                  <button className="relative w-full rounded-md py-3 px-4 md:px-6 text-white text-center font-semibold text-sm lg:text-base hover:bg-pink-600 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:ease-in-out hover:scale-105 transition-all duration-300">
+                    Close Modal
+                  </button>
+                </Link>
+
+                <Link
+                  className="w-full"
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigateToTutorial();
+                  }}
                 >
-                  My Tutorials
-                </button>
+                  <button className="relative w-full hover:ring-0 rounded-md py-3 px-4 md:px-6 ring-1 ring-blue-500 hover:text-white text-blue-500 dark:text-white text-center font-semibold text-sm lg:text-base hover:bg-gradient-to-r hover:from-yellow-500 hover:via-pink-500 hover:to-purple-600 hover:ease-in-out hover:scale-105 transition-all duration-300">
+                    {isTutorialLoading ? "Loading..." : "Watch Tutorials"}
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

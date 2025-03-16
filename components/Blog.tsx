@@ -10,15 +10,8 @@ import { IoClose } from "react-icons/io5";
 import Link from "next/link";
 
 // Truncate the Project title to a maximum length
-const MAX_TITLE_LENGTH = 50;
+const MAX_TITLE_LENGTH = 60;
 const truncateTitle = (text: string, maxLength: number): string => {
-  if (text.length <= maxLength) return text;
-  return `${text.slice(0, maxLength)}...`;
-};
-
-// Truncate the Project Description to a maximum length
-const MAX_DESCRIPTION_LENGTH = 86;
-const truncateDescription = (text: string, maxLength: number): string => {
   if (text.length <= maxLength) return text;
   return `${text.slice(0, maxLength)}...`;
 };
@@ -101,13 +94,8 @@ const Blog = () => {
                 <h3 className="text-lg font-bold">
                   {truncateTitle(post.title, MAX_TITLE_LENGTH)}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed">
-                  {truncateDescription(
-                    post.description,
-                    MAX_DESCRIPTION_LENGTH
-                  )}
-                </p>
-                <div className="flex mt-4 gap-4 justify-between items-center">
+
+                <div className="flex my-6 gap-4 justify-between items-center">
                   <button
                     onClick={() => openModal(post)}
                     className="py-2 px-6 items-center rounded-md text-blue-500 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-1 ring-blue-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300"
@@ -116,7 +104,7 @@ const Blog = () => {
                   </button>
                   <button
                     onClick={handleBlogClick} // Trigger the blog modal
-                    className="py-2 px-4 items-center bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 rounded-md text-white flex cursor-pointer text-sm md:text-base font-medium tracking-wide hover:ease-in-out hover:scale-105 transition-all duration-300"
+                    className="py-2 px-4 items-center bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 rounded-md text-white flex cursor-pointer text-sm md:text-base font-semibold tracking-wide hover:ease-in-out hover:scale-105 transition-all duration-300"
                   >
                     Visit Blog <FaLocationArrow className="ml-1" />
                   </button>
