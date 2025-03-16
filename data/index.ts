@@ -111,20 +111,26 @@ export const MaterialsNavLinks = [
   export const blogPosts = [
     {
       id: 1,
-      title: "Understanding JavaScript Closures and Scope",
+      title: "Introduction to React: Building Modern Web Applications",
       description: `
-        **JavaScript closures** are a foundational concept in JavaScript that enable functions to access variables from an outer scope even after the outer function has finished executing. This feature is crucial for creating private variables and managing asynchronous code effectively.
+        React is a popular JavaScript library used for building dynamic and interactive user interfaces.
   
-        **In this article, we explore:**
+        React is a popular JavaScript library used for building dynamic and interactive user interfaces. Created by Facebook in 2013, React has become a go-to tool for developers worldwide, thanks to its flexibility, efficiency, and developer-friendly features.
+
+        **Why React? React stands out for several reasons:**
   
-        - **Definition and Syntax:** A clear explanation of what closures are, how they are created, and their syntax. This section provides code examples to illustrate how closures capture and retain access to the outer function's variables.
+        - Component-Based Architecture React applications are built using reusable components, which makes code easier to manage, debug, and scale.
   
-        - **Use Cases:** We delve into practical applications of closures, such as data encapsulation and implementing private variables. Examples will show how closures can be utilized in real-world scenarios.
+        - Virtual DOM React uses a Virtual DOM to efficiently update and render changes to the user interface, improving performance.
   
-        - **Common Patterns:** The article discusses common patterns and best practices involving closures, including their role in asynchronous programming and handling callbacks.
+        - Rich Ecosystem **With a vast community, React offers numerous libraries, tools, and integrations to enhance development workflows.
+        - JSX Syntax React uses JSX, a syntax that allows you to write HTML-like code within JavaScript, making UI development intuitive and clean.
+        - Getting Started with React To start building with React, you’ll need Node.js installed. You can create a React app using the following command:
       `,
       diagramImageUrl: "/javascript-closure-diagram.png",
+      iconLists: [SiAngular, FaHtml5, SiTypescript, FaCss3Alt],
       imageUrl: "/blog01.avif",
+      url: "https://devjourney-blog-khaki.vercel.app/post/sn5Y802DZciFXniDNzEdWS",
     },
     {
       id: 2,
@@ -142,6 +148,7 @@ export const MaterialsNavLinks = [
       `,
       diagramImageUrl: "/react-evolution-timeline.jpg",
       imageUrl: "/blog02.avif",
+      url: "https://devjourney-blog-khaki.vercel.app/post/sn5Y802DZciFXniDNzEdWS",
     },
     {
       id: 3,
@@ -159,6 +166,7 @@ export const MaterialsNavLinks = [
       `,
       diagramImageUrl: "/css-grid-vs-flexbox.avif",
       imageUrl: "/blog03.avif",
+      url: "https://devjourney-blog-khaki.vercel.app/post/sn5Y802DZciFXniDNzEdWS",
     },
     {
       id: 4,
@@ -176,6 +184,7 @@ export const MaterialsNavLinks = [
       `,
       diagramImageUrl: "/web-performance-metrics.png",
       imageUrl: "/blog04.avif",
+      url: "https://devjourney-blog-khaki.vercel.app/post/sn5Y802DZciFXniDNzEdWS",
     },
     {
       id: 5,
@@ -193,6 +202,7 @@ export const MaterialsNavLinks = [
       `,
       diagramImageUrl: "/redux-vs-context-api.png",
       imageUrl: "/blog05.avif",
+      url: "https://devjourney-blog-khaki.vercel.app/post/sn5Y802DZciFXniDNzEdWS",
     },
     {
       id: 6,
@@ -210,6 +220,7 @@ export const MaterialsNavLinks = [
       `,
       diagramImageUrl: "/typescript-vs-javascript.webp",
       imageUrl: "/blog06.avif",
+      url: "https://devjourney-blog-khaki.vercel.app/post/sn5Y802DZciFXniDNzEdWS",
     },
   ];
 
@@ -440,6 +451,20 @@ export const education = [
 ];
 
 //================================= Services data  ================================//
+export interface Service {
+  id: number;
+  title: string;
+  desc: string;
+  detailedDesc: {
+    paragraphs: string[];
+    images: { src: string; alt: string }[];
+    textDesc: string[];
+    icons?: { src: string; alt: string }[];
+  };
+  className: string;
+  thumbnail: string;
+}
+
 export const services: Service[] = [
   {
     id: 1,

@@ -17,11 +17,15 @@ export default function CallToAction() {
   const [loadingState, setLoadingState] = useState<string | null>(null);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isMaterialContentLoading, setIsMaterialContentLoading] =
+    useState(false);
 
   const openModal = () => {
     setIsLoading(true);
+    setIsMaterialContentLoading(true);
     document.body.style.overflow = "hidden";
     setTimeout(() => {
+      setIsMaterialContentLoading(false);
       setIsLoading(false);
       setIsModalOpen(true);
     }, 2000);
@@ -85,7 +89,7 @@ export default function CallToAction() {
         id="e-books"
         className="flex flex-col sm:flex-row p-2 md:p-6 border justify-center items-center bg-gradient-to-r from-yellow-700 via-green-800 to-purple-800 shadow-lg"
       >
-        <div className="flex-1 flex flex-col justify-center p-4 order-last sm:order-first">
+        <div className="flex-1 flex flex-col justify-center p-2 lg:p-4 order-last sm:order-first">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
             Expand Your Programming Knowledge for Free with My Comprehensive
             E-book Guide!
@@ -103,7 +107,9 @@ export default function CallToAction() {
             onClick={openModal}
             className="rounded-tl-xl text-base rounded-bl-none px-6 py-3 mx-auto bg-gradient-to-r from-green-600 via-indigo-500 to-purple-700 hover:scale-95 text-white w-full rounded-md"
           >
-            Access Free E-Books
+            {isMaterialContentLoading
+              ? "Please wait..."
+              : "Access Free E-Books"}
           </button>
         </div>
         <div className="p-4 flex-1 order-first sm:order-last">

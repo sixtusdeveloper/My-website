@@ -1,6 +1,6 @@
 // Types data for Services
 
-interface Service {
+export interface Service {
 id: number;
 title: string;
 desc: string;
@@ -23,7 +23,7 @@ thumbnail: string;
 
 
 // Types data for work experience
-interface WorkExperienceItem {
+export interface WorkExperienceItem {
 title: string;
 organization: string;
 type: string;
@@ -39,7 +39,7 @@ nature: string;
   
 // Type data for Education
 // Define the type for education items
-interface EducationItem {
+export interface EducationItem {
 degree: string;
 institution: string;
 type: string;
@@ -50,5 +50,11 @@ description: string;
 img: string;
 };
 
-
-  
+export interface BlogPost { 
+    id: number;
+    title: string;
+    description: string;
+    imageUrl: string;
+    diagramImageUrl: string;
+    url: string;
+}

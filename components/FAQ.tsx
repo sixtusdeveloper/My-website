@@ -10,6 +10,7 @@ const FAQPage = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [showModal, setShowModal] = useState(false);
   const [feedback, setFeedback] = useState<string | null>(null);
+  const [loadingButton, setLoadingButton] = useState<string | null>(null);
 
   const router = useRouter();
 
@@ -21,9 +22,13 @@ const FAQPage = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  const handleFeedback = (response: string) => {
-    setFeedback(response);
-    setShowModal(true);
+  const handleFeedback = (response: string, buttonType: "yes" | "no") => {
+    setLoadingButton(buttonType);
+    setTimeout(() => {
+      setLoadingButton(null);
+      setFeedback(response);
+      setShowModal(true);
+    }, 2000);
   };
 
   // Prevent background scrolling when modal is open
@@ -50,15 +55,17 @@ const FAQPage = () => {
   };
 
   return (
-    <div id="faq" className="w-full px-4 pt-10 bg-secondary">
+    <div id="faq" className="w-full pt-10 bg-secondary">
       <div className="px-0 md:px-10 max-w-4xl mx-auto py-10">
-        <h1 className="text-left text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text mb-4 md:mb-6">
-          Frequently Asked Questions (FAQ)
-        </h1>
-        <p className="text-base lg:text-base mb-8 sm:text-start text-start">
-          Welcome to my FAQ section! Here you can find answers to the most
-          common questions about my profession.
-        </p>
+        <div className="px-4">
+          <h1 className="text-left text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text mb-4 md:mb-6">
+            Frequently Asked Questions (FAQ)
+          </h1>
+          <p className="text-base lg:text-base mb-8 sm:text-start text-start">
+            Welcome to my FAQ section! Here you can find answers to the most
+            common questions about my profession.
+          </p>
+        </div>
         <div className="rounded-lg p-2 md:p-6 shadow-sm border bg-secondary dark:bg-gray-900">
           {faqs.map((faq, index) => (
             <div key={index} className="border-b">
@@ -99,16 +106,17 @@ const FAQPage = () => {
           </h2>
           <div className="flex py-4 justify-center items-center gap-6">
             <button
-              className="bg-gradient-to-r from-blue-500 via-purple-500 to-purple-600 hover:ease-in-out hover:scale-105 transition-all duration-300 text-white text-base font-semibold h-12 px-6 py-3 rounded-md"
-              onClick={() => handleFeedback("yes")}
+              className="ring-1 ring-blue-500 text-blue-500 hover:ring-0 hover:bg-gradient-to-r hover:from-blue-500 hover:via-purple-500 hover:to-purple-600 hover:ease-in-out hover:scale-105 transition-all duration-300 dark:text-white text-base font-semibold h-12 px-6 py-3 rounded-md"
+              onClick={() => handleFeedback("yes", "yes")}
             >
-              Yes, they were
+              {loadingButton === "yes" ? "Responding..." : "Yes, they were"}
             </button>
+
             <button
-              className="bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:ease-in-out hover:scale-105 transition-all duration-300 text-white text-base font-semibold h-12 px-6 py-3 rounded-md"
-              onClick={() => handleFeedback("no")}
+              className="ring-1 ring-blue-500 text-blue-500 hover:ring-0 hover:bg-gradient-to-r hover:from-yellow-500 hover:via-pink-500 hover:to-purple-600 hover:ease-in-out hover:scale-105 transition-all duration-300 dark:text-white text-base font-semibold h-12 px-6 py-3 rounded-md"
+              onClick={() => handleFeedback("no", "no")}
             >
-              No, they weren't
+              {loadingButton === "no" ? "Responding..." : "No, they weren't"}
             </button>
           </div>
         </div>

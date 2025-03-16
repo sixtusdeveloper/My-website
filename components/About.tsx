@@ -204,7 +204,7 @@ const About = () => {
 
       {/* YouTube Video */}
 
-      <div className="hidden lg:block my-4 text-center">
+      <div className="hidden lg:block my-16 text-center">
         <h3 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
           Wish to Join me in the tech space?
         </h3>

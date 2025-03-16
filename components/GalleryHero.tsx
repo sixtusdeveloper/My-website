@@ -9,6 +9,7 @@ import { useRouter } from "next/navigation";
 import { CircularProgress } from "@mui/material";
 import { useState } from "react";
 import Link from "next/link";
+import Loader from "./ui/Loader";
 
 export default function GalleryHero() {
   const { redirectToSignUp, openSignIn } = useClerk();
@@ -21,10 +22,14 @@ export default function GalleryHero() {
   const [isGalleryLoading, setIsGalleryLoading] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
+  const navigateToPortfolio = () => {
+    router.push("/pages/portfolio");
+  };
+
   const openModal = () => {
     setTimeout(() => {
-      setIsLoading(false);
-      setIsGalleryLoading(false);
+      setIsLoading(true);
+      setIsGalleryLoading(true);
       document.body.style.overflow = "hidden";
       setTimeout(() => {
         setIsModalOpen(true);
@@ -139,10 +144,16 @@ export default function GalleryHero() {
               }}
             >
               <Button className="px-6 h-12 py-3 text-sm lg:text-base font-semibold rounded-md text-white shadow-lg bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 hover:bg-yellow-600 hover:ease-in-out hover:scale-105 transition-all duration-300">
-                Free E-books
+                {isGalleryLoading ? "Loading..." : "Free E-books"}
               </Button>
             </Link>
-            <Link href="/pages/portfolio">
+            <Link
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                navigateToPortfolio();
+              }}
+            >
               <Button className="px-6 py-3 h-12 text-sm lg:text-base font-semibold rounded-md text-white shadow-lg border border-white/40 bg-transparent hover:bg-white/20 hover:ease-in-out hover:scale-105 transition-all duration-300">
                 My Portfolio
               </Button>
@@ -150,6 +161,9 @@ export default function GalleryHero() {
           </motion.div>
         </motion.div>
       </section>
+
+      {isLoading && <Loader />}
+
       {isModalOpen && (
         <div
           className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"

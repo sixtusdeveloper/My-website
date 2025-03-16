@@ -8,6 +8,7 @@ import GalleryTechEventSection from "@/components/GalleryTechEventSection";
 import SocialLife from "@/components/SocialLife";
 import SocialLifeSection from "@/components/SocialLifeSection";
 import TechEventHero from "@/components/TechEventHero";
+import ExploreMoreCallToAction from "@/components/ExploreMoreCallToAction";
 
 const Gallery = () => {
   return (
@@ -20,6 +21,7 @@ const Gallery = () => {
         <GalleryTechEventSection />
         <SocialLife />
         <SocialLifeSection />
+        <ExploreMoreCallToAction />
         <Footer />
       </div>
     </main>

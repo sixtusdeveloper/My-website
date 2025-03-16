@@ -6,6 +6,7 @@ import { blogPosts } from "@/data";
 import { FaLocationArrow } from "react-icons/fa";
 import BlogModal from "@/components/ui/BlogModal"; // Import the BlogModal component
 import { IoClose } from "react-icons/io5";
+import Link from "next/link";
 
 // Truncate the Project title to a maximum length
 const MAX_TITLE_LENGTH = 50;
@@ -28,6 +29,8 @@ type BlogPost = {
   description: string;
   imageUrl: string;
   diagramImageUrl: string;
+  iconLists?: React.ElementType[];
+  url: string;
 };
 
 const Blog = () => {
@@ -37,6 +40,7 @@ const Blog = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false); // State for loading
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false); // State for modal
   const [isBlogLoading, setIsBlogLoading] = useState<boolean>(false); // State for blog loading
+  const [isBlogDetailLoading, setIsBlogDetailLoading] = useState(false);
 
   // Pagination logic
   const indexOfLastPost = currentPage * postsPerPage;
@@ -47,12 +51,14 @@ const Blog = () => {
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   const openModal = (post: BlogPost) => {
+    setIsBlogDetailLoading(true); // Start loading
     setIsLoading(true); // Start loading
     setSelectedPost(post);
     document.body.style.overflow = "hidden"; // Prevent body scroll when modal is open
 
     // Simulate loading delay
     setTimeout(() => {
+      setIsBlogDetailLoading(false); // Start loading
       setIsLoading(false); // Stop loading
     }, 2000); // 2 seconds delay for demonstration
   };
@@ -68,7 +74,6 @@ const Blog = () => {
     }
   };
 
-  // Logic for "Visit my Blog" button
   const handleBlogClick = () => {
     setIsBlogLoading(true); // Start loading
 
@@ -89,7 +94,7 @@ const Blog = () => {
         <h2 className="text-3xl md:text-4xl mb-8 text-center font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
           Few Selection of My Blog Posts
         </h2>
-        <div className="grid gap-2 lg:gap-6 md:grid-cols-3 space-y-6 md:space-y-0">
+        <div className="grid gap-2 lg:gap-6 md:grid-cols-3 space-y-6 py-4 md:space-y-0">
           {currentPosts.map((post) => (
             <article
               key={post.id}
@@ -117,13 +122,13 @@ const Blog = () => {
                     onClick={() => openModal(post)}
                     className="py-2 px-6 items-center rounded-md text-blue-500 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-1 ring-blue-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300"
                   >
-                    Read More
+                    {isBlogDetailLoading ? "Loading blog..." : "Read More"}
                   </button>
                   <button
                     onClick={handleBlogClick} // Trigger the blog modal
-                    className="py-2 px-6 items-center bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 rounded-md text-white flex cursor-pointer text-sm md:text-base font-medium tracking-wide hover:ease-in-out hover:scale-105 transition-all duration-300"
+                    className="py-2 px-4 items-center bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 rounded-md text-white flex cursor-pointer text-sm md:text-base font-medium tracking-wide hover:ease-in-out hover:scale-105 transition-all duration-300"
                   >
-                    Read In Blog <FaLocationArrow className="ml-1" />
+                    Visit Blog <FaLocationArrow className="ml-1" />
                   </button>
                 </div>
               </div>
@@ -218,6 +223,26 @@ const Blog = () => {
               <p className="mt-4 text-base leading-relaxed">
                 {selectedPost.description}
               </p>
+
+              <Link
+                href={selectedPost.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 block text-blue-500 hover:underline"
+              >
+                Read full blog post&nbsp;&#8594;
+              </Link>
+              <div className="flex flex-wrap gap-2 py-4">
+                {selectedPost.iconLists?.map((IconComponent, index) => (
+                  <div
+                    key={index}
+                    className="border rounded-full bg-secondary w-10 h-10 flex justify-center items-center"
+                  >
+                    <IconComponent className="icon" size={30} />
+                  </div>
+                ))}
+              </div>
+
               <div className="py-8">
                 <Image
                   src={selectedPost.diagramImageUrl}

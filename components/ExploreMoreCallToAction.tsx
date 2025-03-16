@@ -10,12 +10,15 @@ import { useRouter } from "next/navigation";
 const ExploreMoreCallToAction = () => {
   const [isHeroModalOpen, setIsHeroModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isPortfolioLoading, setIsPortfolioLoading] = useState(false);
 
   const router = useRouter();
 
   const openHeroModal = () => {
+    setIsPortfolioLoading(true);
     setIsLoading(true);
     setTimeout(() => {
+      setIsPortfolioLoading(false);
       setIsLoading(false);
       setIsHeroModalOpen(true);
     }, 2000);
@@ -58,7 +61,7 @@ const ExploreMoreCallToAction = () => {
               type="button"
               className="lg:my-8 mt-6 py-3 px-6 text-base font-semibold ring-1 ring-blue-500 hover:ring-0 text-white rounded-md inline-block hover:bg-gradient-to-r hover:from-yellow-500 hover:via-pink-500 hover:to-purple-600 shadow-sm hover:ease-in-out hover:scale-105 transition-all duration-300"
             >
-              Visit My Portfolio
+              {isPortfolioLoading ? "Please wait..." : "Visit My Portfolio"}
             </button>
           </Link>
         </div>

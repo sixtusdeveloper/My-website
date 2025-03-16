@@ -143,7 +143,7 @@ const Projects = () => {
           >
             <button
               type="button"
-              className="ring-1 ring-blue-500 hover:ring-0 text-blue-500 hover:bg-gradient-to-r hover:from-yellow-500 hover:via-pink-500 hover:to-purple-600 hover:text-white font-semibold text-base h-12 px-6 py-3 rounded-md shadow-sm hover:ease-in-out hover:scale-105 transition-all duration-300"
+              className="ring-1 ring-blue-500 hover:ring-0 text-blue-500 dark:text-white hover:bg-gradient-to-r hover:from-yellow-500 hover:via-pink-500 hover:to-purple-600 hover:text-white font-semibold text-base h-12 px-6 py-3 rounded-md shadow-sm hover:ease-in-out hover:scale-105 transition-all duration-300"
             >
               {isProjectsLoading ? "Loading..." : "See All Projects"}
             </button>

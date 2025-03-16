@@ -20,6 +20,7 @@ const Home = () => {
   const [backgroundIndex, setBackgroundIndex] = useState(0);
   const [fade, setFade] = useState(true); // Controls fade-in & fade-out effect
   const [isPaused, setIsPaused] = useState(false);
+  const [isPortfolioLoading, setIsPortfolioLoading] = useState(false);
 
   const router = useRouter(); // ✅ Hook inside function body
 
@@ -60,8 +61,10 @@ const Home = () => {
 
   const openHeroModal = () => {
     setIsLoading(true);
+    setIsPortfolioLoading(true);
     setTimeout(() => {
       setIsLoading(false);
+      setIsPortfolioLoading(false);
       setIsHeroModalOpen(true);
     }, 2000);
   };
@@ -143,7 +146,10 @@ const Home = () => {
                 Software Engineer
               </span>{" "}
               <span className="bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">
-                Crafting Innovative Solutions
+                Crafting Innovative{" "}
+              </span>
+              <span className="bg-gradient-to-r from-white via-yellow-300 to-white bg-clip-text text-transparent">
+                Solutions
               </span>
             </strong>
           </motion.h1>
@@ -176,7 +182,7 @@ const Home = () => {
               }}
             >
               <button className="h-12 px-6 py-3 rounded-md bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
-                Visit Portfolio
+                {isPortfolioLoading ? "Please wait..." : "Visit Portfolio"}
               </button>
             </Link>
 
