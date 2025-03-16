@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { blogPosts } from "@/data";
+import { BlogPost } from "@/types";
 import { FaLocationArrow } from "react-icons/fa";
 import BlogModal from "@/components/ui/BlogModal"; // Import the BlogModal component
 import { IoClose } from "react-icons/io5";
@@ -20,17 +21,6 @@ const MAX_DESCRIPTION_LENGTH = 86;
 const truncateDescription = (text: string, maxLength: number): string => {
   if (text.length <= maxLength) return text;
   return `${text.slice(0, maxLength)}...`;
-};
-
-// Type definitions
-type BlogPost = {
-  id: number;
-  title: string;
-  description: string;
-  imageUrl: string;
-  diagramImageUrl: string;
-  iconLists?: React.ElementType[];
-  url: string;
 };
 
 const Blog = () => {

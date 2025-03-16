@@ -50,10 +50,11 @@ img: string;
 };
 
 export interface BlogPost { 
-    id: number;
-    title: string;
-    description: string;
-    imageUrl: string;
-    diagramImageUrl: string;
-    url: string;
-}
+  id: number;
+  title: string;
+  description: string;
+  imageUrl: string;
+  diagramImageUrl: string;
+  iconLists?: React.ElementType[];
+  url: string;
+};

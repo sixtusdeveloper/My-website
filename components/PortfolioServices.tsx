@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Modal from "@/components/ui/ServicesModal";
 import { services } from "@/data";
+import { Service } from "@/types";
 import { Button } from "@/components/ui/MovingBorder";
 import Image from "next/image";
 import Loader from "@/components/ui/Loader";
