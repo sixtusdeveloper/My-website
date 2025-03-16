@@ -139,7 +139,7 @@ const Contact = () => {
 
           <div className="border bg-secondary dark:bg-gray-900 shadow-sm p-2 md:p-4 lg:px-16 lg:py-8 rounded-lg justify-start items-start space-y-4 w-full">
             {/* Contact form component imported here */}
-            <h2 className="text-xl py-2 md:text-2xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
+            <h2 className="text-xl py-2 lg:text-3xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
               Contact Form
             </h2>
             <ContactForm />

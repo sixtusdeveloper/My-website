@@ -181,7 +181,7 @@ const About = () => {
                   handleToggle();
                 }}
               >
-                <button className="py-3 px-6 h-12 rounded-md text-blue-500 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-1 ring-blue-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 hover:ease-in-out hover:scale-105 transition-all duration-300">
+                <button className="py-3 px-6 h-12 rounded-md text-blue-500 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-1 ring-blue-500 hover:ring-0 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 hover:ease-in-out hover:scale-105 transition-all duration-300">
                   {isExpanded ? "Less to read" : "More to read"}
                 </button>
               </Link>
@@ -203,7 +203,6 @@ const About = () => {
       </div>
 
       {/* YouTube Video */}
-
       <div className="hidden lg:block my-16 text-center">
         <h3 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
           Wish to Join me in the tech space?
