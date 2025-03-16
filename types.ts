@@ -58,3 +58,16 @@ export interface BlogPost {
   iconLists?: React.ElementType[];
   url: string;
 };
+
+export interface Project {
+  id: number;
+  title: string;
+  src?: string;
+  des: string;
+  category: string;
+  img: string;
+  githubLink: string;
+  iconLists: React.ElementType[];
+  link: string;
+  videoUrl?: string;
+}

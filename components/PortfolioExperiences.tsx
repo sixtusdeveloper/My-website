@@ -7,6 +7,7 @@ import Image from "next/image";
 import { EducationItem, WorkExperienceItem } from "@/types";
 import { AiOutlineDownload } from "react-icons/ai";
 import Loader from "@/components/ui/Loader";
+import Link from "next/link";
 
 // Truncate the course to a maximum length
 const MAX_COURSE_LENGTH = 40;
@@ -175,13 +176,16 @@ const Experience = () => {
                         MAX_DESCRIPTION_LENGTH
                       )}
                       &nbsp;
-                      <a
+                      <Link
                         href="#"
-                        onClick={() => openModal(experience)}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          openModal(experience);
+                        }}
                         className="block bg-gradient-to-r from-pink-600 via-yellow-500 to-pink-600 hover:text-pink-600 bg-clip-text text-transparent text-sm text-end font-semibold"
                       >
                         Read More &#8594;
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -223,13 +227,16 @@ const Experience = () => {
                         MAX_DESCRIPTION_LENGTH
                       )}
                       &nbsp;
-                      <a
+                      <Link
                         href="#"
-                        onClick={() => openModal(edu)}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          openModal(edu);
+                        }}
                         className="block bg-gradient-to-r from-pink-600 via-yellow-500 to-pink-600 hover:text-pink-600 bg-clip-text text-transparent text-sm text-end font-semibold"
                       >
                         View Credentials &#8594;
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -408,7 +415,7 @@ const Experience = () => {
           </div>
         </Modal>
         {/* Loading animation */}
-        {isLoading && <Loader />} {/* Show loader */}
+        {isLoading && <Loader />}
       </div>
     </section>
   );

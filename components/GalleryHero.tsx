@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { FaTimes, FaExclamationCircle, FaCheckCircle } from "react-icons/fa";
 import { useUser, useClerk } from "@clerk/nextjs";
+import HeroModal from "@/components/ui/HeroModal";
 import { useRouter } from "next/navigation";
 import { CircularProgress } from "@mui/material";
 import { useState } from "react";
@@ -21,9 +22,25 @@ export default function GalleryHero() {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [isGalleryLoading, setIsGalleryLoading] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isHeroModalOpen, setIsHeroModalOpen] = useState(false);
+  const [isPortfolioLoading, setIsPortfolioLoading] = useState(false);
 
-  const navigateToPortfolio = () => {
+  const openHeroModal = () => {
+    setIsLoading(true);
+    setIsPortfolioLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+      setIsPortfolioLoading(false);
+      setIsHeroModalOpen(true);
+    }, 2000);
+  };
+
+  const handleHeroRedirect = () => {
     router.push("/pages/portfolio");
+  };
+
+  const closeHeroModal = () => {
+    setIsHeroModalOpen(false);
   };
 
   const openModal = () => {
@@ -144,18 +161,18 @@ export default function GalleryHero() {
               }}
             >
               <Button className="px-6 h-12 py-3 text-sm lg:text-base font-semibold rounded-md text-white shadow-lg bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 hover:bg-yellow-600 hover:ease-in-out hover:scale-105 transition-all duration-300">
-                {isGalleryLoading ? "Loading..." : "Free E-books"}
+                {isGalleryLoading ? "Please wait..." : "Free E-books"}
               </Button>
             </Link>
             <Link
               href="#"
               onClick={(e) => {
                 e.preventDefault();
-                navigateToPortfolio();
+                openHeroModal();
               }}
             >
               <Button className="px-6 py-3 h-12 text-sm lg:text-base font-semibold rounded-md text-white shadow-lg border border-white/40 bg-transparent hover:bg-white/20 hover:ease-in-out hover:scale-105 transition-all duration-300">
-                My Portfolio
+                {isPortfolioLoading ? "Please wait..." : "Visit Portfolio"}
               </Button>
             </Link>
           </motion.div>
@@ -163,6 +180,34 @@ export default function GalleryHero() {
       </section>
 
       {isLoading && <Loader />}
+
+      {/* Hero Modal */}
+      <HeroModal
+        isOpen={isHeroModalOpen}
+        onClose={closeHeroModal}
+        message="Are you sure you want to leave this page? You will be navigated to my portfolio page."
+      >
+        <div className="flex gap-4 mt-4">
+          <Link
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              handleHeroRedirect();
+            }}
+          >
+            <button className="bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-800 text-white text-sm lg:text-base font-medium py-2 px-8 rounded-full">
+              Leave
+            </button>
+          </Link>
+
+          <button
+            onClick={closeHeroModal}
+            className="bg-gray-600 hover:bg-gray-800 text-white py-2 px-8 rounded-full text-sm lg:text-base font-medium"
+          >
+            Cancel
+          </button>
+        </div>
+      </HeroModal>
 
       {isModalOpen && (
         <div

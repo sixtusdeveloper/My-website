@@ -5,9 +5,8 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import Image from "next/image";
 import Loader from "@/components/ui/Loader";
-import { FiArrowRight } from "react-icons/fi";
-import { IoClose } from "react-icons/io5";
-import { FaTimes } from "react-icons/fa";
+import Link from "next/link";
+import { Project } from "@/types";
 
 // Truncate project technologies
 const MAX_ICONS_DISPLAY = 3; // Limit for icons in project card
@@ -32,15 +31,6 @@ const Projects = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [showLiveModal, setShowLiveModal] = useState(false);
   const [showReadMoreModal, setShowReadMoreModal] = useState(false);
-  interface Project {
-    id: number;
-    title: string;
-    des: string;
-    img: string;
-    githubLink: string;
-    iconLists: React.ElementType[];
-    link: string;
-  }
 
   const [currentProject, setCurrentProject] = useState<Project | null>(null);
 
@@ -169,13 +159,13 @@ const Projects = () => {
                   </p>
 
                   <div className="flex justify-between mt-2 items-center">
-                    <a
+                    <Link
                       href={githubLink}
                       target="_blank"
                       className="inline-flex rounded-md items-center py-2 px-3 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-medium text-sm md:text-sm lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300"
                     >
                       Project codebase &#8594;
-                    </a>
+                    </Link>
 
                     <button
                       onClick={() =>
@@ -213,10 +203,11 @@ const Projects = () => {
                       )}
                     </div>
 
-                    <a
+                    <Link
                       onClick={() => handleLinkClick(link)}
                       target="_blank"
                       rel="noopener noreferrer"
+                      href={""}
                     >
                       <button
                         type="button"
@@ -224,7 +215,7 @@ const Projects = () => {
                       >
                         Live Site <FaLocationArrow className="ml-2" />
                       </button>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -283,11 +274,11 @@ const Projects = () => {
         {/* Read More Modal */}
         {showReadMoreModal && currentProject && (
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 px-2"
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 px-1"
             onClick={closeModal}
           >
             <div
-              className="relative bg-secondary dark:bg-gray-900 border rounded-lg shadow-md max-w-lg w-[100%] md:w-[800px] h-[65vh] md:h-[80vh] overflow-y-auto no-scrollbar"
+              className="relative px-2 bg-secondary dark:bg-gray-900 border rounded-lg shadow-md max-w-2xl w-[100%] md:w-[70%] h-[65vh] md:h-[80vh] overflow-y-auto no-scrollbar"
               onClick={(e) => e.stopPropagation()}
             >
               <Image
@@ -298,17 +289,23 @@ const Projects = () => {
                 height={300}
                 style={{ objectFit: "fill" }}
               />
+
               <div className="p-4">
-                <h2 className="text-xl font-sans font-bold my-4">
+                <h2 className="text-lg mb-4 md:text-xl font-extrabold my-4">
                   {currentProject.title}
                 </h2>
-                <p className="text-sm leading-snug font-sans">
-                  {currentProject.des}
-                </p>
+                <p className="text-sm leading-snug">{currentProject.des}</p>
                 <div className="my-4">
-                  <p className="font-semibold mb-2 font-sans">
-                    Technologies used:
-                  </p>
+                  <div className="pt-4">
+                    <h2 className="text-lg mb-4 md:text-xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
+                      Technologies used
+                    </h2>
+                    <p className="text-sm font-medium leading-snug">
+                      Below are the main programming languages used for
+                      developing this web application.
+                    </p>
+                  </div>
+
                   <div className="flex flex-wrap gap-2 py-4">
                     {currentProject.iconLists.map((IconComponent, index) => (
                       <div
@@ -319,13 +316,56 @@ const Projects = () => {
                       </div>
                     ))}
                   </div>
-                  <button
-                    onClick={closeModal}
-                    className="w-full mt-4 rounded-md py-3 px-6 text-white text-center font-medium text-base hover:bg-pink-600 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600"
-                  >
-                    Close Modal
-                  </button>
                 </div>
+              </div>
+
+              {/* I Need to include a project Demo video here it should support iframes elements and video elements. Meaning the video could be added through an embedded url or via it local file */}
+              <div className="py-2">
+                <div className="px-4 text-left">
+                  <h2 className="text-lg mb-4 md:text-xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
+                    Watch Project Demo
+                  </h2>
+                  <p className="text-sm font-medium leading-snug">
+                    Below is a full project demonstration video that could guide
+                    and enlighten you on how the web application works through a
+                    pratical approach.
+                  </p>
+                </div>
+
+                <div className="my-6 p-2 rounded-sm border lg:my-8 mx-auto w-full relative aspect-video">
+                  {currentProject.videoUrl?.includes("youtube.com") ||
+                  currentProject.videoUrl?.includes("youtu.be") ? (
+                    <iframe
+                      src={currentProject.videoUrl}
+                      title={currentProject.title}
+                      className="w-full h-full rounded-sm"
+                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  ) : (
+                    <video
+                      src={currentProject.videoUrl + "?autoplay=1"}
+                      title={currentProject.title}
+                      controls
+                      className="w-full h-full rounded-none"
+                    ></video>
+                  )}
+                </div>
+              </div>
+
+              <div className="flex justify-between gap-4 lg:gap-4 px-4 lg:px-4 mb-6 lg:mb-8">
+                <button
+                  onClick={closeModal}
+                  className="w-full mt-4 rounded-md py-3 px-4 text-white text-center font-semibold text-sm lg:text-base hover:bg-pink-600 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600"
+                >
+                  Close Modal
+                </button>
+                <button
+                  onClick={closeModal}
+                  className="w-full mt-4 hover:ring-0 rounded-md py-3 px-4 ring-1 ring-blue-500 hover:text-white text-blue-500 dark:text-white text-center font-semibold text-sm lg:text-base hover:bg-gradient-to-r hover:from-yellow-500 hover:via-pink-500 hover:to-purple-600"
+                >
+                  My Tutorials
+                </button>
               </div>
             </div>
           </div>

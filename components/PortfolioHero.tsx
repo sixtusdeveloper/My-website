@@ -131,12 +131,12 @@ const Hero = () => {
           </motion.h3>
 
           <motion.div
-            className="hidden sm:mt-4 sm:mb-2 sm:flex sm:justify-start"
+            className="hidden sm:mt-2 sm:mb-2 sm:flex sm:justify-start"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
-            <div className="relative rounded-full px-3 py-1 text-sm leading-tight font-semibold hover:text-indigo-600 border shadow-xl border-gray-700 bg-gradient-to-r from-yellow-600 via-blue-600 to-pink-600 bg-clip-text text-transparent">
+            <div className="relative rounded-full px-4 text-sm leading-6 hover:text-pink-500 border shadow-xl border-gray-700 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
               Engineering excellence in every line of code.{" "}
               <Link
                 href="https://github.com/sixtusdeveloper/"

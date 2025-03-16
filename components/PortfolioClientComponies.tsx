@@ -107,16 +107,19 @@ const Collaboration = ({
             </span>
           </div>
           <div className="hidden sm:mt-2 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-4 text-sm leading-6 hover:text-indigo-600 border bg-gradient-to-r from-indigo-800 via-blue-500 to-purple-800 bg-clip-text text-transparent">
+            <div className="relative rounded-full px-4 text-sm leading-6 hover:text-pink-500 border bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
               Over 35 companies use my solutions to better their business.{" "}
-              <a
+              <Link
                 href="#"
-                onClick={toggleModal}
+                onClick={(e) => {
+                  e.preventDefault();
+                  toggleModal();
+                }}
                 className="font-semibold text-purple cursor-pointer"
               >
                 <span aria-hidden="true" className="absolute inset-0" />
                 Read my customer stories <span aria-hidden="true">&rarr;</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -129,7 +132,7 @@ const Collaboration = ({
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-85">
           <div className="relative bg-secondary dark:bg-gray-900 border rounded-lg p-8 max-w-lg mx-auto animate-fadeIn">
             <button
-              className="absolute top-3 right-3 p-2 z-40 cursor-pointer rounded-full border bg-secondary hover:text-red-600"
+              className="absolute top-2 right-2 p-2 z-40 cursor-pointer rounded-full border bg-secondary hover:text-red-600"
               onClick={closeModal}
             >
               <IoClose size={18} />

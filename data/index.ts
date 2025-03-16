@@ -634,6 +634,7 @@ export const projects = [
     link: "https://angular-housing-website.vercel.app/",
     category: "Frontend",
     githubLink: "https://github.com/sixtusdeveloper/Angular-housing-website",
+    videoUrl: "https://www.youtube.com/embed/KDdQAngnSmI?si=TFXr3u3QiOK_chLE",
   },
   {
     id: 2,
@@ -644,6 +645,7 @@ export const projects = [
     link: "https://moniwalet.vercel.app/",
     category: "Frontend",
     githubLink: "https://github.com/sixtusdeveloper/Currency-converter-application/",
+    videoUrl: "videos/social-video1.mp4",
   },
   {
     id: 3,
@@ -654,6 +656,7 @@ export const projects = [
     link: "https://landing-page-zeta-orpin.vercel.app",
     category: "Frontend",
     githubLink: "https://github.com/sixtusdeveloper/Shopping-website",
+    videoUrl: "/videos/social-video2.mp4",
   },
   {
     id: 4,
@@ -664,6 +667,7 @@ export const projects = [
     link: "https://microsoft-home.vercel.app",
     category: "Frontend",
     githubLink: "https://github.com/sixtusdeveloper/Microsoft-home",
+    videoUrl: "",
   },
   {
     id: 5,
@@ -674,6 +678,7 @@ export const projects = [
     link: "https://devjourney-blog-khaki.vercel.app/",
     category: "Fullstack",
     githubLink: "https://github.com/sixtusdeveloper/Devjourney-blog-application",
+    videoUrl: "",
   },
   {
   id: 6,
