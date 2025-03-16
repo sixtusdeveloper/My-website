@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { experiences, education } from "@/data";
 import Modal from "@/components/ui/ExpiModal";
 import Image from "next/image";
+import { EducationItem, WorkExperienceItem } from "@/types";
 import { AiOutlineDownload } from "react-icons/ai";
 import Loader from "@/components/ui/Loader";
 

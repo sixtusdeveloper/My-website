@@ -38,7 +38,6 @@ nature: string;
 
   
 // Type data for Education
-// Define the type for education items
 export interface EducationItem {
 degree: string;
 institution: string;
