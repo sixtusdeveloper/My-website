@@ -33,7 +33,7 @@ const ExploreMoreCallToAction = () => {
 
   return (
     <>
-      <section className="relative w-full h-[350px] flex items-center md:justify-center justify-start text-center overflow-hidden">
+      <section className="relative w-full h-[400px] flex items-center md:justify-center justify-start text-center overflow-hidden">
         {/* Fixed Background */}
         <div
           className="absolute inset-0 bg-fixed bg-cover bg-center"
@@ -43,10 +43,11 @@ const ExploreMoreCallToAction = () => {
 
         {/* Content */}
         <div className="relative z-10 max-w-3xl px-4 lg:pl-20 lg:pr-8 md:text-center text-left">
-          <h1 className="text-4xl font-extrabold md:text-5xl text-white">
-            Want to See More of Me? Explore My Gallery.
+          <h1 className="text-3xl font-extrabold md:text-4xl text-white opacity-95">
+            Want to See More About Me? Explore My Gallery And See My Life Style
+            Behind Code
           </h1>
-          <p className="mt-4 text-base opacity-95 text-gray-100">
+          <p className="mt-4 text-base text-gray-100 opacity-90">
             Explore my gallery page and see what I look like in reality.
           </p>
           <Link

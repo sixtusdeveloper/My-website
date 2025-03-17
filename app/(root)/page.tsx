@@ -16,6 +16,7 @@ import Services from "@/components/Services";
 import FAQ from "@/components/FAQ";
 import ExploreMoreCallToAction from "@/components/ExploreMoreCallToAction";
 import GalleryCallToAction from "@/components/GalleryCallToAction";
+// import StaticGoogleMap from "@/components/StaticGoogleMap";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
         <Materials />
         <FAQ />
         <Contact />
+        {/* <StaticGoogleMap /> */}
         <ExploreMoreCallToAction />
         <Footer />
         <ScrollIndicator />

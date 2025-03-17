@@ -92,7 +92,7 @@ const Tutorials = () => {
         </h2>
 
         <div className="mt-8 max-w-3xl mx-auto">
-          <p className="text-base py-4">
+          <p className="text-base py-4 text-gray-600 dark:text-gray-200">
             Search videos by their title, category or keyword!
           </p>
           <Input
@@ -100,7 +100,7 @@ const Tutorials = () => {
             placeholder="Search videos..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="p-3 rounded-md border w-full focus:ring-2 focus:ring-yellow-500"
+            className="p-3 text-gray-700 dark:text-gray-200 rounded-md border w-full focus:ring-2 focus:ring-yellow-500"
           />
         </div>
 
@@ -109,7 +109,7 @@ const Tutorials = () => {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-6 py-2 rounded-md text-sm font-semibold shadow-sm hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+              className={`px-6 py-2 text-gray-700 dark:text-gray-200 rounded-md text-sm font-semibold shadow-sm hover:ease-in-out hover:scale-105 transition-all duration-300 ${
                 selectedCategory === category
                   ? "text-white bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 hover:bg-yellow-600"
                   : "bg-secondary dark:bg-gray-900 border"
@@ -143,7 +143,7 @@ const Tutorials = () => {
                 ></video>
               )}
             </div>
-            <h3 className="mt-4 px-4 py-2 text-base font-semibold">
+            <h3 className="mt-4 px-4 py-2 text-base font-extrabold text-gray-700 dark:text-gray-200">
               {video.title.length > 80
                 ? video.title.slice(0, 80) + "..."
                 : video.title}
@@ -240,7 +240,7 @@ const Tutorials = () => {
                   )}
                 </div>
                 <div className="p-4 lg:p-6">
-                  <h3 className="mt-4 text-lg font-semibold">
+                  <h3 className="mt-4 text-lg font-semibold text-gray-700 dark:text-gray-200">
                     {selectedSocialVideo.title}
                   </h3>
                   <p className="mt-2">{selectedSocialVideo.description}</p>

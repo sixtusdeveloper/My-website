@@ -103,15 +103,9 @@ const GalleryTechEventSection = () => {
                 height={200}
               />
               <div className="p-4">
-                <h3 className="text-lg font-bold">
+                <h3 className="text-lg font-extrabold text-gray-700 dark:text-gray-200">
                   {truncateTitle(post.title, MAX_TITLE_LENGTH)}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed">
-                  {truncateDescription(
-                    post.description,
-                    MAX_DESCRIPTION_LENGTH
-                  )}
-                </p>
                 <div className="flex mt-4 gap-4 justify-between items-center">
                   <button
                     onClick={() => openModal(post)}

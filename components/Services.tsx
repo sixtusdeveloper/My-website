@@ -68,7 +68,7 @@ const ServicesSection = () => {
         <h2 className="text-3xl md:text-4xl font-extrabold mb-6 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
           My Services
         </h2>
-        <p className="text-base max-w-2xl mx-auto mb-12">
+        <p className="text-base max-w-2xl mx-auto mb-12 text-gray-600 dark:text-gray-200">
           I specialize in crafting high-quality digital solutions with a focus
           on performance, scalability, and user experience.
         </p>
@@ -81,10 +81,12 @@ const ServicesSection = () => {
               className={`p-6 rounded-lg shadow-sm border text-left transition-transform transform hover:scale-105 ${service.bg}`}
             >
               <div className="flex justify-start mb-4">{service.icon}</div>
-              <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+              <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-100">
                 {service.title}
               </h3>
-              <p className="mt-2 text-sm opacity-90">{service.description}</p>
+              <p className="mt-2 text-sm text-gray-600 dark:text-gray-200">
+                {service.description}
+              </p>
             </div>
           ))}
         </div>

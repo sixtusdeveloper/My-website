@@ -230,10 +230,10 @@ const Hero = () => {
 
       <HireMeModal isOpen={isModalOpen} onClose={handleModalToggle}>
         <div className="p-2 max-h-[80vh] overflow-auto no-scrollbar">
-          <h2 className="text-2xl font-bold tracking-wide text-center">
+          <h2 className="text-2xl font-bold tracking-wide text-center text-gray-700 dark:text-gray-200">
             Hire Me Let's Work Together
           </h2>
-          <p className="text-center text-base px-6 py-2 leading-6">
+          <p className="text-center text-base px-4 py-2 leading-6 text-gray-600 dark:text-gray-200">
             Thank you for considering me for your project! I'm eager to work
             with you and bring your ideas to life. Below you can preview my CV:
           </p>
@@ -288,10 +288,12 @@ const Hero = () => {
             className="rounded-full border-2 mx-auto profile_img"
             style={{ width: "auto", height: "auto" }}
           />
-          <h2 className="mt-2 text-base lg:text-lg sm:mb-1 font-semibold tracking-wide text-center">
+          <h2 className="mt-2 text-base lg:text-lg sm:mb-1 font-semibold tracking-wide text-center text-gray-700 dark:text-gray-200">
             Sixtus Aondoakaa
           </h2>
-          <p className="text-sm font-medium text-center">Software Engineer</p>
+          <p className="text-sm font-medium text-center text-gray-600 dark:text-gray-200">
+            Software Engineer
+          </p>
         </div>
       </ReadMoreModal>
     </section>

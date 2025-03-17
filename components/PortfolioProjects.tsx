@@ -123,7 +123,7 @@ const Projects = () => {
               setSelectedCategory("Frontend");
               setCurrentPage(1);
             }}
-            className={`px-4 py-2 mx-2 text-sm items-center font-semibold rounded-md tracking-wide cursor-pointer transition-all duration-300 ${
+            className={`px-4 py-2 text-gray-700 dark:text-gray-200 mx-2 text-sm items-center font-semibold rounded-md tracking-wide cursor-pointer transition-all duration-300 ${
               selectedCategory === "Frontend"
                 ? "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300"
                 : "bg-transparent dark:bg-gray-900 border shadow-md hover:ease-in-out hover:scale-105 transition-all duration-300"
@@ -136,7 +136,7 @@ const Projects = () => {
               setSelectedCategory("Fullstack");
               setCurrentPage(1);
             }}
-            className={`px-4 py-2 text-sm items-center font-semibold mx-2 rounded-md tracking-wide transition-all duration-300 ${
+            className={`px-4 py-2 text-gray-700 dark:text-gray-200 text-sm items-center font-semibold mx-2 rounded-md tracking-wide transition-all duration-300 ${
               selectedCategory === "Fullstack"
                 ? "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300"
                 : "bg-transparent dark:bg-gray-900 border shadow-md hover:ease-in-out hover:scale-105 transition-all duration-300"
@@ -163,10 +163,10 @@ const Projects = () => {
                   className="w-full h-48 object-cover transition-opacity duration-300 group-hover:opacity-75"
                 />
                 <div className="p-4">
-                  <h1 className="font-bold text-lg truncate font-sans">
+                  <h1 className="font-bold text-lg truncate text-gray-700 dark:text-gray-200">
                     {truncateTitle(title, MAX_TITLE_LENGTH)}
                   </h1>
-                  <p className="mt-2 mb-1 text-sm font-sans line-clamp-2">
+                  <p className="mt-2 mb-1 text-sm font-sans line-clamp-2 text-gray-600 dark:text-gray-200">
                     {truncateDescription(des, MAX_DESCRIPTION_LENGTH)}
                   </p>
 
@@ -240,7 +240,7 @@ const Projects = () => {
           <button
             onClick={() => handlePagination("prev")}
             disabled={currentPage === 1}
-            className={`px-4 py-2 mx-1 items-center rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+            className={`px-4 text-gray-700 dark:text-gray-200 py-2 mx-1 items-center rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === 1
                 ? "bg-secondary dark:bg-gray-900 border cursor-not-allowed shadow-md"
                 : "bg-purple-600 hover:bg-pink-600 text-white"
@@ -248,13 +248,13 @@ const Projects = () => {
           >
             &#8592;&nbsp;Previous
           </button>
-          <span className="px-4 py-1 mx-1">
+          <span className="px-4 py-1 mx-1 items-center">
             Page {currentPage} of {totalPages}
           </span>
           <button
             onClick={() => handlePagination("next")}
             disabled={currentPage === totalPages}
-            className={`px-4 py-1 mx-1 rounded items-center cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+            className={`px-4 py-1 text-gray-700 dark:text-gray-200 mx-1 rounded items-center cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === totalPages
                 ? "bg-secondary dark:bg-gray-900 border cursor-not-allowed shadow-md"
                 : "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white hover:ease-in-out hover:scale-105 transition-all duration-300"
@@ -268,8 +268,10 @@ const Projects = () => {
         {showLiveModal && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
             <div className="bg-secondary dark:-bg-gray-900 p-8 border rounded-lg shadow-md max-w-sm text-center">
-              <h2 className="text-lg font-bold">Site Under Deployment</h2>
-              <p className="text-sm mt-2">
+              <h2 className="text-lg font-bold text-gray-700 dark:text-gray-200">
+                Site Under Deployment
+              </h2>
+              <p className="text-sm mt-2 text-gray-600 dark:text-gray-200">
                 This site is currently being deployed. Please check back later,
                 or explore the project codebase.
               </p>
@@ -290,29 +292,31 @@ const Projects = () => {
             onClick={closeModal}
           >
             <div
-              className="relative px-2 bg-secondary dark:bg-gray-900 border rounded-lg shadow-md max-w-2xl w-[100%] md:w-[70%] h-[65vh] md:h-[80vh] overflow-y-auto no-scrollbar"
+              className="relative bg-secondary dark:bg-gray-900 border rounded-lg shadow-md max-w-2xl w-[100%] md:w-[70%] h-[65vh] md:h-[80vh] overflow-y-auto no-scrollbar"
               onClick={(e) => e.stopPropagation()}
             >
               <Image
                 src={currentProject.img}
                 alt={currentProject.title}
-                className="w-full h-64 object-cover rounded-tl-md  rounded-tr-md project-detail-img"
+                className="w-full h-64 object-cover rounded-tl-md rounded-tr-md project-detail-img"
                 width={600}
                 height={300}
                 style={{ objectFit: "fill" }}
               />
 
               <div className="p-4">
-                <h2 className="text-lg mb-4 md:text-xl font-extrabold my-4">
+                <h2 className="text-lg mb-4 md:text-xl font-extrabold my-4 text-gray-700 dark:text-gray-200">
                   {currentProject.title}
                 </h2>
-                <p className="text-sm leading-snug">{currentProject.des}</p>
+                <p className="text-sm lg:text-base leading-snug">
+                  {currentProject.des}
+                </p>
                 <div className="my-4">
                   <div className="pt-4">
                     <h2 className="text-lg mb-4 md:text-xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
                       Technologies used
                     </h2>
-                    <p className="text-sm font-medium leading-snug">
+                    <p className="text-sm lg:text-base font-medium leading-snug text-gray-600 dark:text-gray-200">
                       Below are the main programming languages used for
                       developing this web application.
                     </p>
@@ -337,7 +341,7 @@ const Projects = () => {
                   <h2 className="text-lg mb-4 md:text-xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
                     Watch Project Demo
                   </h2>
-                  <p className="text-sm font-medium leading-snug">
+                  <p className="text-sm lg:text-base font-medium leading-snug text-gray-600 dark:text-gray-200">
                     Below is a full project demonstration video that could guide
                     and enlighten you on how the web application works through a
                     pratical approach.

@@ -135,7 +135,7 @@ const About = () => {
             <h2 className="text-3xl mb-4 md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
               Few words About Me
             </h2>
-            <p className="text-base leading-relaxed mb-4 md:pr-2">
+            <p className="text-base leading-relaxed mb-4 md:pr-2 text-gray-600 dark:text-gray-200">
               Hello, I’m Sixtus Aondoakaa, a passionate Software Engineer,
               DevOps Engineer, UI/UX Designer and a Tech Educator dedicated to
               crafting scalable and innovative web solutions. My journey in tech
@@ -146,7 +146,7 @@ const About = () => {
             </p>
             {isExpanded && (
               <>
-                <p className="text-base leading-relaxed mb-4">
+                <p className="text-base leading-relaxed mb-4 text-gray-600 dark:text-gray-200">
                   The path has not always been smooth. The tech industry is
                   dynamic and ever-evolving, and staying ahead requires more
                   than just technical skills—it demands resilience and a
@@ -155,7 +155,7 @@ const About = () => {
                   debugging intricate issues. Each obstacle has been a stepping
                   stone, contributing to my growth as a software engineer.
                 </p>
-                <p className="text-base leading-relaxed mb-4">
+                <p className="text-base leading-relaxed mb-4 text-gray-600 dark:text-gray-200">
                   My journey is marked by a dedication to excellence and an
                   insatiable curiosity. Whether it's developing complex systems
                   or simplifying user interfaces, I approach each project with
@@ -163,7 +163,7 @@ const About = () => {
                   believe that technology should not only solve problems but
                   also create seamless and delightful user experiences.
                 </p>
-                <p className="text-base leading-relaxed mb-4">
+                <p className="text-base leading-relaxed mb-4 text-gray-600 dark:text-gray-200">
                   Today, I am proud of the work I have accomplished and the
                   professional growth I have achieved. I am excited about the
                   future and eager to continue pushing the boundaries of what is
@@ -207,7 +207,7 @@ const About = () => {
         <h3 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
           Wish to Join me in the tech space?
         </h3>
-        <p className="text-base py-2">
+        <p className="text-base py-2 text-gray-600 dark:text-gray-200">
           Watch this short video below for some clue 👇
         </p>
       </div>

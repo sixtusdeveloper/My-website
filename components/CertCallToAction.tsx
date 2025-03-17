@@ -98,7 +98,7 @@ const ExploreMoreCallToAction = () => {
 
         {/* Content */}
         <div className="relative z-10 max-w-3xl px-4 lg:pl-10 lg:pr-8 md:text-center text-left">
-          <h1 className="text-4xl font-extrabold md:text-5xl text-white">
+          <h1 className="text-3xl font-extrabold md:text-4xl text-white">
             🚀 Continuous Learning Drives Innovation in Tech!
           </h1>
           <p className="mt-4 text-base opacity-95 text-gray-100">

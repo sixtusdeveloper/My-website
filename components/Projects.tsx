@@ -34,7 +34,7 @@ const Projects = () => {
     <section id="projects" className="py-10 px-4 lg:px-10 bg-secondary">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl mb-8 text-center md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
-          Personal Blog Platform
+          Some Of My Personal Projects
         </h2>
         <div className="grid gap-4 md:gap-6 lg:gap-8 space-y-6 md:space-y-0 md:grid-cols-2">
           {/* Project 1 */}
@@ -48,8 +48,10 @@ const Projects = () => {
               />
             </div>
             <div>
-              <h3 className="text-xl font-bold">Open Source Contribution</h3>
-              <p className="py-2 leading-6 mb-0 text-sm font-medium">
+              <h3 className="text-xl font-bold text-gray-700 dark:text-gray-100">
+                Open Source Contribution
+              </h3>
+              <p className="py-2 leading-6 mb-0 text-sm font-medium text-gray-600 dark:text-gray-200">
                 Actively contributed to the{" "}
                 <span className="font-semibold">OptiFrame project</span>, an
                 open-source initiative, by improving the codebase, refining the
@@ -71,8 +73,10 @@ const Projects = () => {
               />
             </div>
             <div>
-              <h3 className="text-xl font-bold">Full-Stack Web Application</h3>
-              <p className="py-2 leading-6 mb-0 text-sm font-medium">
+              <h3 className="text-xl font-bold text-gray-700 dark:text-gray-100">
+                Full-Stack Web Application
+              </h3>
+              <p className="py-2 leading-6 mb-0 text-sm font-medium text-gray-600 dark:text-gray-200">
                 Developed a full-stack web application called{" "}
                 <span className="font-semibold">TaskMaster</span>, designed to
                 streamline task management for teams. The app features real-time
@@ -93,8 +97,10 @@ const Projects = () => {
               />
             </div>
             <div>
-              <h3 className="text-xl font-bold">Personal Blog Platform</h3>
-              <p className="py-2 leading-6 mb-0 text-sm font-medium">
+              <h3 className="text-xl font-bold text-gray-700 dark:text-gray-100">
+                Personal Blog Platform
+              </h3>
+              <p className="py-2 leading-6 mb-0 text-sm font-medium text-gray-600 dark:text-gray-200">
                 Built a personal blog platform named{" "}
                 <span className="font-semibold">DevJourney</span>, where I share
                 articles on web development and programming. The platform
@@ -122,8 +128,10 @@ const Projects = () => {
               />
             </div>
             <div>
-              <h3 className="text-xl font-bold">E-Commerce Website</h3>
-              <p className="py-2 leading-6 mb-0 text-sm font-medium">
+              <h3 className="text-xl font-bold text-gray-700 dark:text-gray-100">
+                E-Commerce Website
+              </h3>
+              <p className="py-2 leading-6 mb-0 text-sm font-medium text-gray-600 dark:text-gray-200">
                 Designed and developed an e-commerce website named{" "}
                 <span className="font-semibold">ShopEasy</span>, featuring a
                 user-friendly interface, secure payment integration, and

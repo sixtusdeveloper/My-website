@@ -49,9 +49,8 @@ const ReadMoreModal: React.FC<ReadMoreModalProps> = ({
           {children}
 
           <p className="text-center text-sm p-2 leading-6">
-            You are about to leave my portfolio site to visit my personal
-            website. If you wish to explore further, click continue, or cancel
-            to stay here.
+            You are about to be navigated to my website page. If you wish to
+            explore further, click continue, else cancel to stay here.
           </p>
           <div className="flex justify-center my-4 space-x-4">
             <Link

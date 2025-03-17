@@ -77,18 +77,18 @@ const Footer: React.FC = () => {
         <span className="flex justify-center items-center py-2 space-x-4">
           <a
             href="/pages/privacy_policy"
-            className="hover:underline hover:text-yellow-500 text-sm lg:text-sm"
+            className="hover:underline hover:text-yellow-500 text-sm lg:text-sm text-gray-600 dark:text-gray-200"
           >
             Privacy Policy
           </a>
           <a
             href="/pages/terms_condition"
-            className="text-sm lg:text-sm hover:underline hover:text-yellow-500"
+            className="text-sm lg:text-sm hover:underline hover:text-yellow-500 text-gray-600 dark:text-gray-200"
           >
             Terms and conditions
           </a>
         </span>
-        <span className="w-full flex flex-col text-center text-sm p-2">
+        <span className="w-full flex flex-col text-center text-sm p-2 text-gray-600 dark:text-gray-200">
           Copyright&copy; {new Date().getFullYear()} developed by Sixtusdev |
           all rights reserved | contact@sixtusdev.net | version 0.1.0
         </span>

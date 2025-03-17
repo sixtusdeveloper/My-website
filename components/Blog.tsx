@@ -91,7 +91,7 @@ const Blog = () => {
                 height={200}
               />
               <div className="p-4">
-                <h3 className="text-lg font-bold">
+                <h3 className="text-base font-extrabold text-gray-700 dark:text-gray-200">
                   {truncateTitle(post.title, MAX_TITLE_LENGTH)}
                 </h3>
 
@@ -189,7 +189,9 @@ const Blog = () => {
               className="p-2 h-full overflow-y-auto no-scrollbar"
               style={{ scrollbarWidth: "thin", scrollBehavior: "smooth" }}
             >
-              <h3 className="text-2xl font-bold mb-4">{selectedPost.title}</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-700 dark:text-gray-200">
+                {selectedPost.title}
+              </h3>
               <Image
                 src={selectedPost.imageUrl}
                 alt={selectedPost.title}
@@ -198,7 +200,7 @@ const Blog = () => {
                 height={300}
                 style={{ objectFit: "cover" }}
               />
-              <p className="mt-4 text-base leading-relaxed">
+              <p className="mt-4 text-base leading-7 text-gray-600 dark:text-gray-300">
                 {selectedPost.description}
               </p>
 
@@ -221,7 +223,7 @@ const Blog = () => {
                 ))}
               </div>
 
-              <div className="py-8">
+              {/* <div className="py-8">
                 <Image
                   src={selectedPost.diagramImageUrl}
                   alt="javascript closure diagram"
@@ -233,7 +235,7 @@ const Blog = () => {
                     height: "auto",
                   }}
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

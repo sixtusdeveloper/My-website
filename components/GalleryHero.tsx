@@ -221,11 +221,11 @@ export default function GalleryHero() {
             <button onClick={closeModal} className="absolute top-2 right-2">
               <FaTimes className="hover:text-red-500" size={20} />
             </button>
-            <h3 className="text-xl font-semibold mb-4">
+            <h3 className="text-xl font-semibold mb-4 text-gray-700 dark:text-gray-200">
               Sign in to Access Free E-Books
             </h3>
-            <p className="mb-4">
-              You need to be signed in to explore and download our programming
+            <p className="mb-4 text-gray-600 dark:text-gray-200">
+              You need to be signed in to explore and download free programming
               e-books.
             </p>
             {loadingState ? (
@@ -271,10 +271,10 @@ export default function GalleryHero() {
             </button>
             <div className="flex flex-col items-center">
               <FaExclamationCircle className="text-red-500 text-4xl mb-3" />
-              <h3 className="text-xl font-semibold mb-4">
+              <h3 className="text-xl font-semibold mb-4 text-gray-700 dark:text-gray-200">
                 No, You Haven't Logged In!
               </h3>
-              <p className="mb-4 text-center">
+              <p className="mb-4 text-center text-gray-600 dark:text-gray-200">
                 Please sign in to access the free programming e-books.
               </p>
               <button
@@ -302,10 +302,10 @@ export default function GalleryHero() {
             </button>
             <div className="flex flex-col items-center">
               <FaCheckCircle className="text-green-500 text-4xl mb-3" />
-              <h3 className="text-xl font-semibold mb-4">
+              <h3 className="text-xl font-semibold mb-4 text-gray-700 dark:text-gray-200">
                 You're Already Logged In!
               </h3>
-              <p className="mb-4 text-center">
+              <p className="mb-4 text-center text-gray-600 dark:text-gray-200">
                 Hey {user?.firstName} {user?.lastName}, you are already signed
                 in.
               </p>

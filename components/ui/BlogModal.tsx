@@ -56,10 +56,10 @@ const BlogModal: React.FC<ModalProps> = ({
         <div className="flex flex-col items-center">
           <AiOutlineQuestionCircle className="text-yellow-600 text-4xl mb-4" />{" "}
           {/* Question icon */}
-          <p className="text-center leading-6 text-base font-semibold mb-4">
+          <p className="text-center leading-6 text-base font-semibold mb-4 text-gray-600 dark:text-gray-200">
             {message}
           </p>
-          {children} {/* Render the buttons passed as children */}
+          {children}
         </div>
       </div>
     </div>

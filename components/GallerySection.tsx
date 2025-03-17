@@ -45,7 +45,7 @@ export default function GallerySection() {
         <h2 className="text-3xl mb-8 text-center md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
           My Gallery
         </h2>
-        <p className="text-base">
+        <p className="text-base text-gray-600 dark:text-gray-200">
           Explore memories beyond my software engineering journey.
         </p>
 
@@ -71,7 +71,7 @@ export default function GallerySection() {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-6 py-2 rounded-md text-sm font-semibold shadow-sm hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+              className={`px-6 py-2 text-gray-700 dark:text-gray-200 rounded-md text-sm font-semibold shadow-sm hover:ease-in-out hover:scale-105 transition-all duration-300 ${
                 selectedCategory === category
                   ? "text-white bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 hover:bg-yellow-600"
                   : "bg-secondary dark:bg-gray-900 border"
@@ -112,7 +112,7 @@ export default function GallerySection() {
             </motion.div>
           ))
         ) : (
-          <p className="text-center col-span-3 text-gray-500">
+          <p className="text-center col-span-3 text-gray-700 dark:text-gray-200">
             No images found
           </p>
         )}
@@ -124,7 +124,7 @@ export default function GallerySection() {
           <button
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
             disabled={currentPage === 1}
-            className={`px-4 py-2 text-sm rounded-sm shadow-sm font-semibold hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+            className={`px-4 py-2 text-sm text-gray-700 dark:text-gray-200 rounded-sm shadow-sm font-semibold hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === 1
                 ? "opacity-50 cursor-not-allowed bg-secondary dark:bg-gray-900 border"
                 : "text-white bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 hover:bg-yellow-600"
@@ -140,7 +140,7 @@ export default function GallerySection() {
               setCurrentPage((prev) => Math.min(prev + 1, totalPages))
             }
             disabled={currentPage === totalPages}
-            className={`px-4 py-2 text-sm rounded-sm shadow-sm font-semibold hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+            className={`px-4 py-2 text-sm text-gray-700 dark:text-gray-200 rounded-sm shadow-sm font-semibold hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === totalPages
                 ? "opacity-50 cursor-not-allowed bg-secondary dark:bg-gray-900 border"
                 : "text-white bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 hover:bg-yellow-600"

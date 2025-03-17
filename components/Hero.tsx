@@ -120,7 +120,7 @@ const Home = () => {
             {isSignedIn && user ? (
               <>
                 👋 Welcome{" "}
-                <span className="font-sans font-bold">
+                <span className="font-bold">
                   {`${user.firstName || ""} ${user.lastName || ""}`.trim()}
                 </span>
               </>
@@ -131,7 +131,7 @@ const Home = () => {
 
           {/* Heading */}
           <motion.h1
-            className="text-[2.5rem] leading-tight lg:text-[3rem] font-extrabold"
+            className="text-[2rem] leading-tight lg:text-[3rem] font-extrabold"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, ease: "easeOut" }}

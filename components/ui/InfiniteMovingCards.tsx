@@ -131,7 +131,7 @@ export const InfiniteMovingCards = ({
                   {renderStars(item.rating)}
                 </span>
               </div>
-              <span className="relative z-20 text-md md:text-md lg:text-md leading-[1.6] text-white-100 font-normal">
+              <span className="relative z-20 text-sm md:text-base lg:text-base leading-[1.6] text-gray-700 dark:text-gray-100 font-normal">
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
@@ -148,10 +148,13 @@ export const InfiniteMovingCards = ({
                     />
                   </div>
                   <div className="text-base">
-                    <p className="font-semibold mb-1 text-base">
+                    <p className="font-semibold mb-1 text-base text-gray-700 dark:text-gray-100">
                       <a href="#">{item.name}</a>
                     </p>
-                    <p className="text-sm mb-0">{item.title}</p>
+
+                    <p className="text-sm text-gray-600 dark:text-gray-200 mb-0">
+                      {item.title}
+                    </p>
                   </div>
                 </span>
               </div>

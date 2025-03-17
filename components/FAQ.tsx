@@ -61,35 +61,37 @@ const FAQPage = () => {
           <h1 className="text-left text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text mb-4 md:mb-6">
             Frequently Asked Questions (FAQ)
           </h1>
-          <p className="text-base lg:text-base mb-8 sm:text-start text-start">
+          <p className="text-base lg:text-base mb-8 sm:text-start text-start text-gray-600 dark:text-gray-200">
             Welcome to my FAQ section! Here you can find answers to the most
             common questions about my profession.
           </p>
         </div>
-        <div className="rounded-lg p-2 md:p-6 shadow-sm border bg-secondary dark:bg-gray-900">
-          {faqs.map((faq, index) => (
-            <div key={index} className="border-b">
-              <div
-                className="flex justify-between items-center p-4 cursor-pointer hover:shadow-md transition-all duration-300"
-                onClick={() => toggleAccordion(index)}
-              >
-                <h2 className="text-base text-bold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
-                  {faq.question}
-                </h2>
-                <span className="text-2xl text-blue-500">
-                  {activeIndex === index ? "−" : "+"}
-                </span>
-              </div>
-              {activeIndex === index && (
-                <div className="p-4 text-sm leading-6">
-                  <p>{faq.answer}</p>
+        <div className="px-2">
+          <div className="rounded-lg p-2 md:p-6 shadow-sm border bg-secondary dark:bg-gray-900">
+            {faqs.map((faq, index) => (
+              <div key={index} className="border-b">
+                <div
+                  className="flex justify-between items-center p-4 cursor-pointer hover:shadow-md transition-all duration-300"
+                  onClick={() => toggleAccordion(index)}
+                >
+                  <h2 className="text-base text-bold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
+                    {faq.question}
+                  </h2>
+                  <span className="text-2xl text-blue-500">
+                    {activeIndex === index ? "−" : "+"}
+                  </span>
                 </div>
-              )}
-            </div>
-          ))}
+                {activeIndex === index && (
+                  <div className="p-4 text-sm leading-6">
+                    <p>{faq.answer}</p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
         <div className="py-4 px-2 text-center mt-2 md:mt-4 lg:mt-4">
-          <p className="text-sm">
+          <p className="text-sm text-gray-600 dark:text-gray-200">
             Could not find what you're looking for?{" "}
             <Link
               href="/#contact"
@@ -101,7 +103,7 @@ const FAQPage = () => {
         </div>
 
         <div className="py-4 text-center mt-2">
-          <h2 className="text-center text-sm md:text-base my-2">
+          <h2 className="text-center text-sm md:text-base my-2 text-gray-600 dark:text-gray-200">
             Did you find these Questions and Answers helpful?
           </h2>
           <div className="flex py-4 justify-center items-center gap-6">
@@ -143,10 +145,10 @@ const FAQPage = () => {
             {feedback === "yes" ? (
               <>
                 <div className="text-4xl text-green-500 mb-4">👍</div>
-                <h3 className="lg:text-lg font-semibold text-base">
+                <h3 className="lg:text-lg font-semibold text-base text-gray-700 dark:text-gray-200">
                   Glad you find it helpful!
                 </h3>
-                <p className="text-sm mt-4">
+                <p className="text-sm mt-4 text-gray-600 dark:text-gray-200">
                   If you need any other concern or discussion, kindly reach out
                   to me via the Contact link below or chat me live and direct by
                   clicking the WhatsApp or email link within the contact section
@@ -167,10 +169,10 @@ const FAQPage = () => {
             ) : (
               <>
                 <div className="text-4xl text-red-500 mb-4">👎</div>
-                <h3 className="lg:text-lg text-base font-semibold">
+                <h3 className="lg:text-lg text-base font-semibold text-gray-700 dark:text-gray-200">
                   Sorry to hear that!
                 </h3>
-                <p className="text-sm mt-4">
+                <p className="text-sm mt-4 text-gray-600 dark:text-gray-200">
                   If you need further concern or discussion, feel free to reach
                   out to me using the Contact link below or chat me live and
                   direct using the WhatsApp or email link within the contact

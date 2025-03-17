@@ -62,17 +62,19 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-10 px-4 lg:px-14 bg-secondary">
+    <section id="contact" className="py-10 px-2 lg:px-14 bg-secondary">
       <div className="max-w-6xl mx-auto text-start md:text-center">
-        <h2 className="text-3xl md:text-4xl font-extrabold mb-6 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
-          Let’s Connect
-        </h2>
-        <p className="mb-8 text-md leading-relaxed tracking-wide">
-          Feel free to reach out for collaborations, job opportunities, or just
-          to say hi!
-        </p>
-        <div className="flex flex-col md:flex-row justify-between items-start md:gap-6 lg:gap-8 gap-6 w-full">
-          <div className="border bg-secondary dark:bg-gray-900 shadow-sm rounded-lg p-2 md:p-4 w-full md:text-start relative md:w-1/2">
+        <div className="px-2">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
+            Let’s Connect
+          </h2>
+          <p className="mb-8 text-md leading-relaxed tracking-wide text-gray-600 dark:text-gray-200">
+            Feel free to reach out for collaborations, job opportunities, or
+            just to say hi!
+          </p>
+        </div>
+        <div className="flex flex-col md:flex-row justify-between items-start md:gap-6 lg:gap-8 gap-4 w-full">
+          <div className="border bg-secondary dark:bg-gray-900 shadow-sm rounded-lg p-4 md:p-4 w-full md:text-start relative md:w-1/2">
             <Image
               src="/profile.jpg"
               alt="profile image"
@@ -82,10 +84,14 @@ const Contact = () => {
               style={{ width: "auto", height: "auto" }}
             />
             <div className="mt-2">
-              <h3 className="text-lg font-bold mt-4">Sixtus Aondoakaa</h3>
-              <p className="text-base font-medium">Software Engineer</p>
+              <h3 className="text-lg font-bold mt-4 text-gray-700 dark:text-gray-200">
+                Sixtus Aondoakaa
+              </h3>
+              <p className="text-base font-medium text-gray-700 dark:text-gray-200">
+                Software Engineer
+              </p>
               <div className="mt-4">
-                <h4 className="py-2 text-lg font-bold">
+                <h4 className="py-2 text-lg font-bold text-gray-700 dark:text-gray-200">
                   <strong>Contact Me</strong>
                 </h4>
                 <div className="inline-flex py-2 items-center border rounded-md p-2 w-full my-1">
@@ -96,7 +102,7 @@ const Contact = () => {
                     height={20}
                     className="mr-2"
                   />
-                  <p className="text-sm py-1 mb-0">
+                  <p className="text-sm py-1 mb-0 text-gray-600 dark:text-gray-200">
                     Plot 39, Awolowo Road, Ikoyi, Lagos
                   </p>
                 </div>
@@ -129,7 +135,7 @@ const Contact = () => {
                     height={20}
                     className="mr-2"
                   />
-                  <p className="text-sm tracking-wide py-1 mb-0">
+                  <p className="text-sm tracking-wide py-1 mb-0 text-gray-600 dark:text-gray-200">
                     contact@sixtusdev.net
                   </p>
                 </Link>
@@ -137,7 +143,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="border bg-secondary dark:bg-gray-900 shadow-sm px-2 md:p-4 lg:px-16 lg:py-8 rounded-lg justify-start items-start space-y-4 w-full">
+          <div className="border bg-secondary dark:bg-gray-900 shadow-sm p-4 md:p-4 lg:px-16 lg:py-8 rounded-lg justify-start items-start space-y-4 w-full">
             {/* Contact form component imported here */}
             <h2 className="text-2xl py-2 lg:text-3xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
               Contact Form
