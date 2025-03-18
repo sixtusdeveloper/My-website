@@ -148,13 +148,13 @@ const Blog = () => {
         <div className="flex justify-center gap-4 p-4">
           <button
             onClick={handleBlogRedirect}
-            className="mt-4 rounded-full text-sm lg:text-base font-medium px-4 py-2 bg-blue-500 text-white hover:bg-blue-600 hover:ease-in-out hover:scale-105 transition-all duration-300"
+            className="mt-4 rounded-full text-base font-medium px-4 py-2 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white hover:bg-blue-600 hover:ease-in-out hover:scale-105 transition-all duration-300"
           >
             Yes, visit blog
           </button>
           <button
             onClick={() => setIsModalOpen(false)}
-            className="mt-4 px-4 py-2 text-sm lg:text-base font-medium bg-gray-500 text-white rounded-full hover:bg-gray-600 hover:ease-in-out hover:scale-105 transition-all duration-300"
+            className="mt-4 px-4 py-2 text-base font-medium bg-gray-500 text-white rounded-full hover:bg-gray-600 hover:ease-in-out hover:scale-105 transition-all duration-300"
           >
             Cancel
           </button>

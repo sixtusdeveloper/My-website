@@ -43,7 +43,7 @@ const ExploreMoreCallToAction = () => {
 
         {/* Content */}
         <div className="relative z-10 max-w-3xl px-4 lg:pl-20 lg:pr-8 md:text-center text-left">
-          <h1 className="text-3xl font-extrabold md:text-4xl text-white">
+          <h1 className="text-2xl font-extrabold md:text-3xl lg:text-4xl text-white">
             See how I transform ideas into reality through code!
           </h1>
           <p className="mt-4 text-base opacity-95 text-gray-100">
@@ -82,14 +82,14 @@ const ExploreMoreCallToAction = () => {
                 handleHeroRedirect();
               }}
             >
-              <button className="bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-800 text-white py-2 px-8 rounded-full">
+              <button className="text-base bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-800 text-white py-2 px-8 rounded-full">
                 Leave
               </button>
             </Link>
 
             <button
               onClick={closeHeroModal}
-              className="bg-gray-600 hover:bg-gray-800 text-white py-2 px-8 rounded-full"
+              className="text-base bg-gray-600 hover:bg-gray-800 text-white py-2 px-8 rounded-full"
             >
               Cancel
             </button>

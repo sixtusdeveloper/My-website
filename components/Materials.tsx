@@ -151,13 +151,13 @@ export default function CallToAction() {
               <div className="flex justify-between">
                 <button
                   onClick={handleLoggedInClick}
-                  className="bg-gradient-to-r from-green-600 via-indigo-500 to-purple-700 hover:bg-green-700 text-white px-4 py-2 rounded-md w-[48%]"
+                  className="text-base bg-gradient-to-r from-green-600 via-indigo-500 to-purple-700 hover:bg-green-700 text-white px-4 py-2 rounded-md w-[48%]"
                 >
                   I've Logged in
                 </button>
 
                 <button
-                  className="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-md w-[48%]"
+                  className="text-base bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-md w-[48%]"
                   onClick={handleLoginClick}
                 >
                   Let me log in
@@ -195,7 +195,7 @@ export default function CallToAction() {
               </p>
               <button
                 onClick={() => router.push("/sign-in")}
-                className="bg-gradient-to-r from-red-500 via-yellow-500 to-purple-700 hover:bg-yellow-500 text-white px-4 py-2 rounded-md w-full"
+                className="text-base bg-gradient-to-r from-red-500 via-yellow-500 to-purple-700 hover:bg-yellow-500 text-white px-4 py-2 rounded-md w-full"
               >
                 Log in Now
               </button>
@@ -227,7 +227,7 @@ export default function CallToAction() {
               </p>
               <button
                 onClick={() => router.push("/pages/materials")}
-                className="font-sans bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white text-sm tracking-wide block px-4 py-2 rounded-md w-full"
+                className="text-base bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white tracking-wide block px-4 py-2 rounded-md w-full"
               >
                 Go to E-Books Page
               </button>

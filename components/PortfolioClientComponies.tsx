@@ -129,13 +129,16 @@ const Collaboration = ({
       {isLoading && <Loader />}
 
       {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-85">
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-85"
+          onClick={closeModal}
+        >
           <div className="relative bg-secondary dark:bg-gray-900 border rounded-lg p-8 max-w-lg mx-auto animate-fadeIn">
             <button
-              className="absolute top-2 right-2 p-2 z-40 cursor-pointer rounded-full border bg-secondary hover:text-red-600"
+              className="absolute top-2 right-2 z-40 cursor-pointer hover:text-red-600"
               onClick={closeModal}
             >
-              <IoClose size={18} />
+              <IoClose size={20} />
             </button>
             <Image
               alt="Not Available"

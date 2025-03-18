@@ -34,7 +34,7 @@ const Projects = () => {
     <section id="projects" className="py-10 px-4 lg:px-10 bg-secondary">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl mb-8 text-center md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
-          Some Of My Personal Projects
+          Some of My Personal Projects
         </h2>
         <div className="grid gap-4 md:gap-6 lg:gap-8 space-y-6 md:space-y-0 md:grid-cols-2">
           {/* Project 1 */}
@@ -175,13 +175,13 @@ const Projects = () => {
               handleProjectRedirect();
             }}
           >
-            <button className="bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-blue-500 text-white py-2 px-8 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300">
+            <button className="text-base bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-blue-500 text-white py-2 px-8 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300">
               Leave
             </button>
           </Link>
           <button
             onClick={closeProjectModal}
-            className="bg-gray-600 hover:bg-gray-800 text-white py-2 px-8 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300"
+            className="text-base bg-gray-600 hover:bg-gray-800 text-white py-2 px-8 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300"
           >
             Cancel
           </button>

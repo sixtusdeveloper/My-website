@@ -227,13 +227,13 @@ const Home = () => {
         <div className="flex justify-center gap-4 p-4 mt-4">
           <button
             onClick={handleBlogRedirect}
-            className="text-sm lg:text-base font-medium bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-600 text-white py-2 px-4 rounded-full"
+            className="text-base font-medium bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-600 text-white py-2 px-4 rounded-full"
           >
             Yes, visit blog
           </button>
           <button
             onClick={() => setIsBlogModalOpen(false)}
-            className="bg-gray-600 hover:bg-gray-800 text-white text-sm lg:text-base font-medium py-2 px-8 rounded-full"
+            className="bg-gray-600 hover:bg-gray-800 text-white text-base font-medium py-2 px-8 rounded-full"
           >
             Cancel
           </button>
@@ -256,14 +256,14 @@ const Home = () => {
               handleHeroRedirect();
             }}
           >
-            <button className="bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-800 text-white text-sm lg:text-base font-medium py-2 px-8 rounded-full">
+            <button className="bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-800 text-white text-base font-medium py-2 px-8 rounded-full">
               Leave
             </button>
           </Link>
 
           <button
             onClick={closeHeroModal}
-            className="bg-gray-600 hover:bg-gray-800 text-white py-2 px-8 rounded-full text-sm lg:text-base font-medium"
+            className="bg-gray-600 hover:bg-gray-800 text-white py-2 px-8 rounded-full text-base font-medium"
           >
             Cancel
           </button>

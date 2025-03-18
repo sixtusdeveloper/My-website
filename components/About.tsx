@@ -254,14 +254,14 @@ const About = () => {
               handleGalleryRedirect();
             }}
           >
-            <button className="text-sm lg:text-base font-medium bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-600 text-white py-2 px-4 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300">
+            <button className="text-base font-medium bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 hover:bg-indigo-600 text-white py-2 px-4 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300">
               Sure, Navigate
             </button>
           </Link>
 
           <button
             onClick={() => setIsGalleryModalOpen(false)}
-            className="bg-gray-600 hover:bg-gray-800 text-white text-sm lg:text-base font-medium py-2 px-8 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300"
+            className="bg-gray-600 hover:bg-gray-800 text-white text-base font-medium py-2 px-8 rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300"
           >
             Cancel
           </button>

@@ -1,7 +1,7 @@
 "use client";
 
 import { FaTimes, FaExclamationCircle, FaCheckCircle } from "react-icons/fa";
-import { useUser, useClerk } from "@clerk/nextjs";
+import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { CircularProgress } from "@mui/material";
 import { useState } from "react";
@@ -9,7 +9,6 @@ import Link from "next/link";
 import Loader from "./ui/Loader";
 
 const ExploreMoreCallToAction = () => {
-  const { redirectToSignUp, openSignIn } = useClerk();
   const { user, isSignedIn } = useUser();
   const router = useRouter();
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -98,7 +97,7 @@ const ExploreMoreCallToAction = () => {
 
         {/* Content */}
         <div className="relative z-10 max-w-3xl px-4 lg:pl-10 lg:pr-8 md:text-center text-left">
-          <h1 className="text-3xl font-extrabold md:text-4xl text-white">
+          <h1 className="font-extrabold text-2xl md:text-3xl lg:text-4xl text-white">
             🚀 Continuous Learning Drives Innovation in Tech!
           </h1>
           <p className="mt-4 text-base opacity-95 text-gray-100">
@@ -138,11 +137,11 @@ const ExploreMoreCallToAction = () => {
             <button onClick={closeModal} className="absolute top-2 right-2">
               <FaTimes className="hover:text-red-500" size={20} />
             </button>
-            <h3 className="text-xl font-semibold mb-4">
+            <h3 className="text-xl font-semibold mb-4 text-gray-700 dark:text-gray-200">
               Sign in to Access Free E-Books
             </h3>
-            <p className="mb-4">
-              You need to be signed in to explore and download our programming
+            <p className="mb-4 text-gray-600 dark:text-gray-200">
+              You need to be signed in to explore and download my programming
               e-books.
             </p>
             {loadingState ? (
@@ -154,13 +153,13 @@ const ExploreMoreCallToAction = () => {
               <div className="flex justify-between">
                 <button
                   onClick={handleLoggedInClick}
-                  className="bg-gradient-to-r from-green-600 via-indigo-500 to-purple-700 hover:bg-green-700 text-white px-4 py-2 rounded-md w-[48%]"
+                  className="text-base bg-gradient-to-r from-green-600 via-indigo-500 to-purple-700 hover:bg-green-700 text-white px-4 py-2 rounded-md w-[48%]"
                 >
                   I've Logged in
                 </button>
 
                 <button
-                  className="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-md w-[48%]"
+                  className="text-base bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-md w-[48%]"
                   onClick={handleLoginClick}
                 >
                   Let me log in
@@ -188,15 +187,15 @@ const ExploreMoreCallToAction = () => {
             </button>
             <div className="flex flex-col items-center">
               <FaExclamationCircle className="text-red-500 text-4xl mb-3" />
-              <h3 className="text-xl font-semibold mb-4">
+              <h3 className="text-xl font-semibold mb-4 text-gray-700 dark:text-gray-200">
                 No, You Haven't Logged In!
               </h3>
-              <p className="mb-4 text-center">
+              <p className="mb-4 text-center text-gray-600 dark:text-gray-200">
                 Please sign in to access the free programming e-books.
               </p>
               <button
                 onClick={() => router.push("/sign-in")}
-                className="bg-gradient-to-r from-red-500 via-yellow-500 to-purple-700 hover:bg-yellow-500 text-white px-4 py-2 rounded-md w-full"
+                className="bg-gradient-to-r from-red-500 via-yellow-500 to-purple-700 hover:bg-yellow-500 text-white text-base px-4 py-2 rounded-md w-full"
               >
                 Log in Now
               </button>
@@ -219,16 +218,16 @@ const ExploreMoreCallToAction = () => {
             </button>
             <div className="flex flex-col items-center">
               <FaCheckCircle className="text-green-500 text-4xl mb-3" />
-              <h3 className="text-xl font-semibold mb-4">
+              <h3 className="text-xl font-semibold mb-4 text-gray-700 dark:text-gray-200">
                 You're Already Logged In!
               </h3>
-              <p className="mb-4 text-center">
+              <p className="mb-4 text-center text-gray-600 dark:text-gray-200">
                 Hey {user?.firstName} {user?.lastName}, you are already signed
                 in.
               </p>
               <button
                 onClick={() => router.push("/pages/materials")}
-                className="font-sans bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white text-sm tracking-wide block px-4 py-2 rounded-md w-full"
+                className="text-base bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white tracking-wide block px-4 py-2 rounded-md w-full"
               >
                 Go to E-Books Page
               </button>

@@ -156,7 +156,7 @@ const PortfolioSkills = () => {
             <h3 className="text-2xl text-gray-700 dark:text-gray-200 font-semibold mb-4">
               Backend
             </h3>
-            <ul className="flex flex-wrap gap-4 list-none items-center text-sm">
+            <ul className="flex flex-wrap gap-8 list-none items-center text-sm">
               <li className="flex text-gray-600 dark:text-gray-200 items-center space-x-2">
                 <FaNodeJs className="text-green-500" size={20} />
                 &nbsp;<span>Node.js</span>
@@ -215,7 +215,7 @@ const PortfolioSkills = () => {
             <h3 className="text-2xl text-gray-700 dark:text-gray-200 font-semibold mb-4">
               Databases
             </h3>
-            <ul className="flex flex-wrap gap-4 list-none items-center text-sm">
+            <ul className="flex flex-wrap gap-8 list-none items-center text-sm">
               <li className="flex text-gray-600 dark:text-gray-200 items-center space-x-2">
                 <SiMongodb className="text-green-500" size={20} />
                 &nbsp;<span>MongoDB</span>
@@ -249,15 +249,15 @@ const PortfolioSkills = () => {
               DevOps
             </h3>
             <ul className="list-none space-y-4 text-sm">
-              <li className="flex text-gray-600 dark:text-gray-200 items-center space-x-2">
+              <li className="flex text-gray-600 dark:text-gray-200 items-center space-y-2 space-x-2">
                 <FaDocker className="text-blue-600" size={20} />
                 &nbsp;<span>Docker</span>
               </li>
-              <li className="flex text-gray-600 dark:text-gray-200 items-center space-x-2">
+              <li className="flex text-gray-600 dark:text-gray-200 items-center space-y-2 space-x-2">
                 <SiKubernetes className="text-blue-500" size={20} />
                 &nbsp;<span>Kubernetes</span>
               </li>
-              <li className="flex text-gray-600 dark:text-gray-200 items-center space-x-2">
+              <li className="flex text-gray-600 dark:text-gray-200 items-center space-y-2 space-x-2">
                 <FaAws className="text-orange-400" size={20} />
                 &nbsp;<span>AWS</span>
               </li>
@@ -269,7 +269,7 @@ const PortfolioSkills = () => {
             <h3 className="text-2xl text-gray-700 dark:text-gray-200 font-semibold mb-4">
               Version Control & Tools
             </h3>
-            <ul className="flex flex-wrap items-center gap-4 list-none text-sm">
+            <ul className="flex flex-wrap items-center gap-8 list-none text-sm">
               <li className="flex text-gray-600 dark:text-gray-200 items-center space-x-2">
                 <FaGitAlt className="text-orange-600" size={20} />
                 &nbsp;<span>Git</span>
@@ -341,7 +341,7 @@ const PortfolioSkills = () => {
             <h3 className="text-2xl text-gray-700 dark:text-gray-200 font-semibold mb-4">
               My Frequently Used APIs
             </h3>
-            <ul className="flex flex-wrap items-center gap-4 list-none text-sm">
+            <ul className="flex flex-wrap items-center gap-8 list-none text-sm">
               <li className="flex text-gray-600 dark:text-gray-200 items-center space-x-2">
                 <SiJsonwebtokens className="text-red-500" size={20} />
                 &nbsp;<span>JWT</span>
@@ -386,7 +386,7 @@ const PortfolioSkills = () => {
             <h3 className="text-2xl text-gray-700 dark:text-gray-200 font-semibold mb-4">
               My Hosting Services
             </h3>
-            <ul className="flex flex-wrap items-center gap-4 list-none text-sm">
+            <ul className="flex flex-wrap items-center gap-8 list-none text-sm">
               <li className="flex text-gray-600 dark:text-gray-200 items-center space-x-4">
                 <FaAws className="text-orange-400" size={20} />
                 <span>
@@ -460,7 +460,7 @@ const PortfolioSkills = () => {
             <h3 className="text-2xl text-gray-700 dark:text-gray-200 font-semibold mb-4">
               My Certifications
             </h3>
-            <ul className="flex flex-wrap items-center gap-4 list-none text-sm">
+            <ul className="flex flex-wrap items-center gap-8 list-none text-sm">
               <li className="flex text-gray-600 dark:text-gray-200 items-center space-x-4">
                 <FaAws className="text-yellow-500" size={20} />
                 &nbsp;<span>AWS Certified Developer</span>
