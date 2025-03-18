@@ -68,17 +68,31 @@ const Projects = () => {
     }, 2000);
   };
 
-  const handleLinkClick = (url: string) => {
+  interface HandleLinkClickParams {
+    url: string | null;
+  }
+
+  const handleLinkClick = (url: HandleLinkClickParams["url"]): void => {
     if (!url) {
       setShowLiveModal(true);
       return;
     }
     setIsLoading(true);
-    setTimeout(() => {
-      window.open(url, "_blank");
-      setIsLoading(false);
-    }, 2000);
+    window.open(url, "_blank", "noopener,noreferrer");
+    setIsLoading(false);
   };
+
+  // const handleLinkClick = (url: string) => {
+  //   if (!url) {
+  //     setShowLiveModal(true);
+  //     return;
+  //   }
+  //   setIsLoading(true);
+  //   setTimeout(() => {
+  //     window.open(url, "_blank");
+  //     setIsLoading(false);
+  //   }, 2000);
+  // };
 
   const openReadMoreModal = (project: any) => {
     setCurrentProject(project);
@@ -215,7 +229,22 @@ const Projects = () => {
                       )}
                     </div>
 
-                    <Link
+                    <button
+                      type="button"
+                      className="py-2 px-3 bg-gradient-to-r from-blue-600 via-green-600 to-yellow-600 rounded-md text-white flex items-center cursor-pointer text-sm tracking-wide"
+                      onClick={() => handleLinkClick(link)}
+                      disabled={isLoading}
+                    >
+                      {isLoading ? (
+                        "Loading..."
+                      ) : (
+                        <>
+                          Live Site <FaLocationArrow className="ml-2" />
+                        </>
+                      )}
+                    </button>
+
+                    {/* <Link
                       onClick={() => handleLinkClick(link)}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -227,7 +256,7 @@ const Projects = () => {
                       >
                         Live Site <FaLocationArrow className="ml-2" />
                       </button>
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>
