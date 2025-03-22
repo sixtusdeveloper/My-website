@@ -15,7 +15,7 @@ const truncateTitle = (text: string, maxLength: number): string => {
   if (text.length <= maxLength) return text;
   return `${text.slice(0, maxLength)}...`;
 };
-// Truncate the Project title to a maximum length
+// Truncate the Project desc to a maximum length
 const MAX_DESC_LENGTH = 100;
 const truncateDesc = (text: string, maxLength: number): string => {
   if (text.length <= maxLength) return text;
