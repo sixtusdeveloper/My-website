@@ -175,15 +175,6 @@ const Blog = () => {
           style={{ pointerEvents: "auto" }}
         >
           <div className="bg-secondary dark:bg-gray-900 border p-2 rounded-lg shadow-lg max-w-2xl w-full max-h-[90vh] relative overflow-y-auto no-scrollbar">
-            {/* Adjusted Close Button - Positioned at top-right */}
-            <button
-              onClick={closeModal}
-              className="absolute top-4 right-4 z-50 p-1 bg-secondary border rounded-full hover:text-red-500 text-2xl"
-              style={{ position: "absolute" }}
-            >
-              <IoClose size={18} />
-            </button>
-
             {/* Modal Content */}
             <div
               className="p-2 h-full overflow-y-auto no-scrollbar"
@@ -204,15 +195,7 @@ const Blog = () => {
                 {selectedPost.description}
               </p>
 
-              <Link
-                href={selectedPost.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 block text-blue-500 hover:underline"
-              >
-                Read full blog post&nbsp;&#8594;
-              </Link>
-              <div className="flex flex-wrap gap-2 py-4">
+              <div className="flex flex-wrap gap-2 py-8">
                 {selectedPost.iconLists?.map((IconComponent, index) => (
                   <div
                     key={index}
@@ -223,19 +206,31 @@ const Blog = () => {
                 ))}
               </div>
 
-              {/* <div className="py-8">
-                <Image
-                  src={selectedPost.diagramImageUrl}
-                  alt="javascript closure diagram"
-                  width={300}
-                  height={200}
-                  style={{
-                    objectFit: "contain",
-                    width: "auto",
-                    height: "auto",
+              <div className="w-full flex justify-center items-center gap-4 lg:gap-4 px-2 lg:px-2 my-6 lg:my-8">
+                <Link
+                  className="w-full"
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    closeModal();
                   }}
-                />
-              </div> */}
+                >
+                  <button className="relative w-full rounded-md py-3 px-4 md:px-6 text-white text-center font-semibold text-sm lg:text-base hover:bg-pink-600 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:ease-in-out hover:scale-105 transition-all duration-300">
+                    Close Modal
+                  </button>
+                </Link>
+
+                <Link
+                  className="w-full"
+                  href={selectedPost.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="relative w-full hover:ring-0 rounded-md py-3 px-4 md:px-6 ring-1 ring-blue-500 hover:text-white text-blue-500 dark:text-white text-center font-semibold text-sm lg:text-base hover:bg-gradient-to-r hover:from-yellow-500 hover:via-pink-500 hover:to-purple-600 hover:ease-in-out hover:scale-105 transition-all duration-300">
+                    Read in detail
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

@@ -127,20 +127,21 @@ export const MaterialsNavLinks = [
         - JSX Syntax React uses JSX, a syntax that allows you to write HTML-like code within JavaScript, making UI development intuitive and clean.
         - Getting Started with React To start building with React, you’ll need Node.js installed. You can create a React app using the following command:
       `,
-      diagramImageUrl: "/javascript-closure-diagram.png",
       iconLists: [SiAngular, FaHtml5, SiTypescript, FaCss3Alt],
       imageUrl: "/blog01.avif",
       url: "https://devjourney-blog-khaki.vercel.app/post/sn5Y802DZciFXniDNzEdWS",
     },
     {
       id: 2,
-      title: "Mastering TypeScript: Why It’s the Future of JavaScript Development",
+      title: "Mastering Next.js Routing: A Comprehensive Guide to Building Dynamic Web Applications",
       description: `
-        In the ever-evolving landscape of web development, TypeScript has emerged as a game-changer. As a superset of JavaScript, TypeScript introduces powerful features that enhance productivity, improve code quality, and make large-scale application development more manageable
+       Routing is a fundamental aspect of web development, determining how users navigate through your application. Next.js, a React-based framework, simplifies routing with its file-based system and dynamic routing capabilities. This guide delves into Next.js routing, from the basics to advanced features, helping you create a seamless user experience.
   
-        **Key points covered include:**
+        **Introduction to File-Based Routing**
   
-        - **History of React:** A historical overview of React's development, from its inception to the present day. This section covers major milestones and how React has evolved over time.
+        - **Next.js automatically generates routes based on the file structure in the pages directory.
+
+        - **Dynamic Routing:** Next.js supports dynamic routes, enabling you to create dynamic pages with URL parameters.
   
         - **Introduction to Hooks:** A detailed explanation of React Hooks, including useState, useEffect, and custom hooks. We discuss how Hooks simplify state management and component logic compared to class-based components.
   
@@ -148,25 +149,18 @@ export const MaterialsNavLinks = [
       `,
       diagramImageUrl: "/react-evolution-timeline.jpg",
       imageUrl: "/blog02.avif",
-      url: "https://devjourney-blog-khaki.vercel.app/post/sn5Y802DZciFXniDNzEdWS",
+      url: "https://devjourney-blog-khaki.vercel.app/post/25fa7b97-7f3f-4b0e-9d27-705ebc0bb28f",
     },
     {
       id: 3,
-      title: "CSS Grid vs Flexbox: Which One Should You Use?",
+      title: "Understanding React Hooks: A Comprehensive Guide to State and Side Effects",
       description: `
-        In this comprehensive article, we compare **CSS Grid** and **Flexbox**, two powerful layout systems in modern web design. We discuss their strengths and limitations and provide guidance on when to use each tool based on specific layout requirements.
+        React Hooks are one of the most powerful and popular features introduced in React 16.8.** Understanding React Hooks: A Comprehensive Guide React Hooks are one of the most powerful and popular features introduced in React 16.8. They allow developers to use state and other React features in functional components without the need for writing class components. Hooks simplify the codebase, enhance reusability, and make React development more intuitive.
   
-        **Topics covered include:**
-  
-        - **Overview of CSS Grid:** An introduction to CSS Grid, explaining how it facilitates the creation of complex layouts using a grid-based system with rows and columns. The section includes practical examples and code snippets.
-  
-        - **Overview of Flexbox:** A review of Flexbox, which simplifies the creation of one-dimensional layouts with flexible boxes. We explore its features and provide examples of common use cases.
-  
-        - **Comparison and Use Cases:** A detailed comparison between Grid and Flexbox, with visual examples and code comparisons to help you decide which layout tool to use for different scenarios.
+        - What Are React Hooks? Hooks are special functions that let you "hook into" React features such as state and lifecycle methods directly in functional components. Commonly used hooks include.useState, useEffect, useContext, and custom hooks.
       `,
-      diagramImageUrl: "/css-grid-vs-flexbox.avif",
       imageUrl: "/blog03.avif",
-      url: "https://devjourney-blog-khaki.vercel.app/post/sn5Y802DZciFXniDNzEdWS",
+      url: "https://devjourney-blog-khaki.vercel.app/post/TWryEU74aunIsETY7eKYVy",
     },
     {
       id: 4,
@@ -182,7 +176,6 @@ export const MaterialsNavLinks = [
   
         - **Future Trends:** Insights into emerging trends and tools for web performance optimization, helping you stay ahead of the curve with the latest advancements.
       `,
-      diagramImageUrl: "/web-performance-metrics.png",
       imageUrl: "/blog04.avif",
       url: "https://devjourney-blog-khaki.vercel.app/post/sn5Y802DZciFXniDNzEdWS",
     },
@@ -200,7 +193,6 @@ export const MaterialsNavLinks = [
   
         - **Context API:** An explanation of how the Context API fits into the state management landscape, with examples demonstrating its use for simpler state management scenarios.
       `,
-      diagramImageUrl: "/redux-vs-context-api.png",
       imageUrl: "/blog05.avif",
       url: "https://devjourney-blog-khaki.vercel.app/post/sn5Y802DZciFXniDNzEdWS",
     },
@@ -218,7 +210,6 @@ export const MaterialsNavLinks = [
   
         - **Getting Started:** A guide to setting up TypeScript in your projects and understanding its key features. This section includes a basic setup guide and tips for new users.
       `,
-      diagramImageUrl: "/typescript-vs-javascript.webp",
       imageUrl: "/blog06.avif",
       url: "https://devjourney-blog-khaki.vercel.app/post/sn5Y802DZciFXniDNzEdWS",
     },
@@ -395,7 +386,6 @@ export const experiences = [
   },
   
 ];
-
 //================================== Education data ==============================//
 export const education = [
   {
@@ -621,7 +611,6 @@ export const backgroundImages = [
   "/blog01.avif",
   "/social-bg.webp",
 ]; 
-
 //============================= Project data ====================================//
 
 export const projects = [

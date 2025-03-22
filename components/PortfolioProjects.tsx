@@ -82,18 +82,6 @@ const Projects = () => {
     setIsLoading(false);
   };
 
-  // const handleLinkClick = (url: string) => {
-  //   if (!url) {
-  //     setShowLiveModal(true);
-  //     return;
-  //   }
-  //   setIsLoading(true);
-  //   setTimeout(() => {
-  //     window.open(url, "_blank");
-  //     setIsLoading(false);
-  //   }, 2000);
-  // };
-
   const openReadMoreModal = (project: any) => {
     setCurrentProject(project);
     setShowReadMoreModal(true);
@@ -243,20 +231,6 @@ const Projects = () => {
                         </>
                       )}
                     </button>
-
-                    {/* <Link
-                      onClick={() => handleLinkClick(link)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={""}
-                    >
-                      <button
-                        type="button"
-                        className="py-2 px-3 bg-gradient-to-r from-blue-600 via-green-600 to-yellow-600 rounded-md text-white flex items-center cursor-pointer text-sm tracking-wide"
-                      >
-                        Live Site <FaLocationArrow className="ml-2" />
-                      </button>
-                    </Link> */}
                   </div>
                 </div>
               </div>
@@ -275,7 +249,7 @@ const Projects = () => {
                 : "bg-purple-600 hover:bg-pink-600 text-white"
             }`}
           >
-            &#8592;&nbsp;Previous
+            &#8592;&nbsp;Prev
           </button>
           <span className="px-4 py-1 mx-1 items-center">
             Page {currentPage} of {totalPages}
@@ -295,8 +269,11 @@ const Projects = () => {
 
         {/* Live Site Modal */}
         {showLiveModal && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-            <div className="bg-secondary dark:-bg-gray-900 p-8 border rounded-lg shadow-md max-w-sm text-center">
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+            onClick={closeModal}
+          >
+            <div className="bg-secondary dark:-bg-gray-900 p-8 border rounded-lg shadow-md max-w-sm text-center px-4">
               <h2 className="text-lg font-bold text-gray-700 dark:text-gray-200">
                 Site Under Deployment
               </h2>
@@ -306,7 +283,7 @@ const Projects = () => {
               </p>
               <button
                 onClick={closeModal}
-                className="mt-4 px-4 py-2 bg-indigo-600 text-white rounded-lg"
+                className="mt-4 px-6 py-2 rounded-lg bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white hover:ease-in-out hover:scale-105 transition-all duration-300"
               >
                 Close Modal
               </button>

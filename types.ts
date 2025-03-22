@@ -54,7 +54,6 @@ export interface BlogPost {
   title: string;
   description: string;
   imageUrl: string;
-  diagramImageUrl: string;
   iconLists?: React.ElementType[];
   url: string;
 };
