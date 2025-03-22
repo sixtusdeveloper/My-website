@@ -61,6 +61,7 @@ export interface BlogPost {
   views: string;
   author_name: string;
   author_profile: string;
+  diagramImageUrl?: string;
 };
 
 export interface Project {

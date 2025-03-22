@@ -252,7 +252,7 @@ const Blog = () => {
               </div>
               <div className="flex justify-between items-center my-3 gap-4">
                 <Image
-                  src={selectedPost.author_profile}
+                  src={selectedPost.author_profile || "/default-avatar.png"}
                   alt="author avatar"
                   width={48}
                   height={48}
