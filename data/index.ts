@@ -205,7 +205,7 @@ export const MaterialsNavLinks = [
         **React is one of the most popular JavaScript libraries for building user interfaces. Developed by Facebook, it has become a go-to tool for developers due to its flexibility, component-based architecture, and efficient rendering. Read mor about this post
   
         **In this article, we cover:**
-  
+
         - React is one of the most popular JavaScript libraries for building user interfaces. Developed by Facebook, it has become a go-to tool for developers due to its flexibility, component-based architecture, and efficient rendering.
   
         - **What is React?** 
