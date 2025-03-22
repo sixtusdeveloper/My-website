@@ -6,12 +6,18 @@ import { blogPosts } from "@/data";
 import { BlogPost } from "@/types";
 import { FaLocationArrow } from "react-icons/fa";
 import BlogModal from "@/components/ui/BlogModal"; // Import the BlogModal component
-import { IoClose } from "react-icons/io5";
+import { ClockIcon, EyeIcon } from "lucide-react";
 import Link from "next/link";
 
 // Truncate the Project title to a maximum length
 const MAX_TITLE_LENGTH = 60;
 const truncateTitle = (text: string, maxLength: number): string => {
+  if (text.length <= maxLength) return text;
+  return `${text.slice(0, maxLength)}...`;
+};
+// Truncate the Project title to a maximum length
+const MAX_DESC_LENGTH = 100;
+const truncateDesc = (text: string, maxLength: number): string => {
   if (text.length <= maxLength) return text;
   return `${text.slice(0, maxLength)}...`;
 };
@@ -32,6 +38,8 @@ const Blog = () => {
   const totalPages = Math.ceil(blogPosts.length / postsPerPage);
 
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
+
+  // const words = (title + " " + excerpt).split(/\s+/).length;
 
   const openModal = (post: BlogPost) => {
     setIsBlogDetailLoading(true); // Start loading
@@ -81,21 +89,61 @@ const Blog = () => {
           {currentPosts.map((post) => (
             <article
               key={post.id}
-              className="bg-secondary dark:bg-gray-900 border shadow-sm rounded-lg transition-transform transform hover:scale-105"
+              className="p-4 bg-secondary dark:bg-gray-900 border shadow-sm rounded-lg transition-transform transform hover:scale-105"
             >
-              <Image
-                src={post.imageUrl}
-                alt={post.title}
-                className="w-full h-54 object-cover rounded-none rounded-tl-lg rounded-tr-lg"
-                width={300}
-                height={200}
-              />
-              <div className="p-4">
-                <h3 className="text-base font-extrabold text-gray-700 dark:text-gray-200">
-                  {truncateTitle(post.title, MAX_TITLE_LENGTH)}
-                </h3>
+              <div className="flex items-center justify-between">
+                <p className="text-sm text-gray-500 dark:text-blue-100">
+                  {post._createdAt}
+                </p>
 
-                <div className="flex my-6 gap-4 justify-between items-center">
+                <div className="flex gap-1.5 items-center">
+                  <ClockIcon className="size-5 text-gray-500 dark:text-blue-300" />
+                  <span className="text-gray-500 text-sm">
+                    {post.readingTime || "N/A"}
+                  </span>
+                </div>
+
+                <div className="flex gap-1.5">
+                  <EyeIcon className="size-6 text-blue-500" />
+                  <span className="text-gray-500 dark:text-blue-200 font-medium">
+                    {post.views}
+                  </span>
+                </div>
+              </div>
+
+              <div className="flex justify-between items-center my-2 gap-4">
+                <div className="flex-1 py-2">
+                  <p className="text-gray-600 dark:text-blue-100 font-medium text-sm py-2 line-clamp-1">
+                    {post.author_name}
+                  </p>
+
+                  <h3 className="text-lg font-bold text-gray-700 dark:text-gray-200 md:text-lg line-clamp-2">
+                    {truncateTitle(post.title, MAX_TITLE_LENGTH)}
+                  </h3>
+                </div>
+
+                <Image
+                  src={post.author_profile}
+                  alt="author avatar"
+                  width={48}
+                  height={48}
+                  className="card-avatar rounded-full cursor-pointer object-cover border"
+                />
+              </div>
+
+              <p className="text-gray-600 dark:text-gray-200 text-[14px]">
+                {truncateDesc(post.description, MAX_DESC_LENGTH)}
+              </p>
+              <Image
+                src={post.imageUrl?.trim() || "/default-img.webp"}
+                alt={post.title || "Post image"}
+                width={400}
+                height={200}
+                className="post-img rounded-lg mt-6 cursor-pointer"
+              />
+
+              <div className="mt-4 py-2">
+                <div className="flex gap-4 justify-between items-center">
                   <button
                     onClick={() => openModal(post)}
                     className="py-2 px-6 items-center rounded-md text-blue-500 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-1 ring-blue-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300"
@@ -174,15 +222,49 @@ const Blog = () => {
           className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
           style={{ pointerEvents: "auto" }}
         >
-          <div className="bg-secondary dark:bg-gray-900 border p-2 rounded-lg shadow-lg max-w-2xl w-full max-h-[90vh] relative overflow-y-auto no-scrollbar">
+          <div className="bg-secondary dark:bg-gray-900 border p-2 lg:p-4 rounded-lg shadow-lg max-w-2xl w-full max-h-[90vh] relative overflow-y-auto no-scrollbar">
             {/* Modal Content */}
             <div
               className="p-2 h-full overflow-y-auto no-scrollbar"
               style={{ scrollbarWidth: "thin", scrollBehavior: "smooth" }}
             >
-              <h3 className="text-2xl font-bold mb-4 text-gray-700 dark:text-gray-200">
+              <h3 className="lg:text-2xl text-xl font-bold mb-4 text-gray-700 dark:text-gray-200">
                 {selectedPost.title}
               </h3>
+              <div className="flex items-center justify-between py-2 px-2">
+                <p className="text-sm text-gray-500 dark:text-blue-100">
+                  {selectedPost._createdAt}
+                </p>
+
+                <div className="flex gap-1.5 items-center">
+                  <ClockIcon className="size-5 text-gray-500 dark:text-blue-300" />
+                  <span className="text-gray-500 text-sm">
+                    {selectedPost.readingTime || "N/A"}
+                  </span>
+                </div>
+
+                <div className="flex gap-1.5">
+                  <EyeIcon className="size-6 text-blue-500" />
+                  <span className="text-gray-500 dark:text-blue-200 font-medium">
+                    {selectedPost.views}
+                  </span>
+                </div>
+              </div>
+              <div className="flex justify-between items-center my-3 gap-4">
+                <Image
+                  src={selectedPost.author_profile}
+                  alt="author avatar"
+                  width={48}
+                  height={48}
+                  className="card-avatar rounded-full cursor-pointer object-cover border"
+                />
+                <div className="flex-1 py-2">
+                  <p className="text-gray-500 dark:text-blue-100 font-medium text-sm line-clamp-1">
+                    Created by: {selectedPost.author_name}
+                  </p>
+                </div>
+              </div>
+
               <Image
                 src={selectedPost.imageUrl}
                 alt={selectedPost.title}

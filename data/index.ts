@@ -7,65 +7,20 @@ import {
   FaJsSquare,
   FaReact,
   FaNodeJs,
-  FaDocker,
-  FaAws,
-  FaGitAlt,
-  FaGithub,
   FaJava,
-  FaServer,
-  FaFeather,
 } from "react-icons/fa";
 import { FaCode } from "react-icons/fa6";
 import {
   SiTailwindcss,
-  SiMongodb,
   SiMysql,
   SiPostgresql,
-  SiFlask,
   SiPython,
-  SiKubernetes,
-  SiPostman,
-  SiVisualstudiocode,
   SiNextdotjs,
   SiTypescript,
-  SiDjango,
-  SiAppwrite,
-  SiClerk,
-  SiVuedotjs,
-  SiSentry,
-  SiFramer,
-  SiFirebase,
-  SiPhp,
-  SiGnubash,
-  SiGooglecloud,
-  SiMicrosoftazure,
-  SiFreecodecamp,
-  SiUdemy,
-  SiBookstack,
-  SiLinkedin,
-  SiUdacity,
-  SiStripe,
   SiGraphql,
-  SiJsonwebtokens,
-  SiInsomnia,
-  SiWebrtc,
-  SiEclipseide,
-  SiXampp,
-  SiPycharm,
-  SiJupyter,
-  SiSublimetext,
-  SiExpress,
-  SiBootstrap,
-  SiVercel,
-  SiNetlify,
-  SiGithub,
   SiSanity,
-  SiHostinger,
-  SiRender,
-  SiWebstorm,
   SiSpringboot,
   SiAngular,
-  SiIntellijidea,
 } from "react-icons/si";
 
 
@@ -127,8 +82,13 @@ export const MaterialsNavLinks = [
         - JSX Syntax React uses JSX, a syntax that allows you to write HTML-like code within JavaScript, making UI development intuitive and clean.
         - Getting Started with React To start building with React, you’ll need Node.js installed. You can create a React app using the following command:
       `,
-      iconLists: [SiAngular, FaHtml5, SiTypescript, FaCss3Alt],
+      iconLists: [FaReact, FaJsSquare, SiNextdotjs, SiTypescript],
       imageUrl: "/blog01.avif",
+      _createdAt: "December 11, 2024",
+      readingTime: "19 sec read",
+      views: "34",
+      author_name: "Sixtus Aondoakaa",
+      author_profile: "/profile-img.png",
       url: "https://devjourney-blog-khaki.vercel.app/post/sn5Y802DZciFXniDNzEdWS",
     },
     {
@@ -147,8 +107,13 @@ export const MaterialsNavLinks = [
   
         - **Future of React:** Insights into upcoming features and advancements in React. This section explores how Hooks and other features will continue to influence React's development.
       `,
-      diagramImageUrl: "/react-evolution-timeline.jpg",
+      iconLists: [SiNextdotjs, FaReact, FaJsSquare, SiTypescript],
       imageUrl: "/blog02.avif",
+      _createdAt: "November 3, 2024",
+      readingTime: "16 sec read",
+      views: "90",
+      author_name: "Sixtus Aondoakaa",
+      author_profile: "/profile-img.png",
       url: "https://devjourney-blog-khaki.vercel.app/post/25fa7b97-7f3f-4b0e-9d27-705ebc0bb28f",
     },
     {
@@ -160,6 +125,11 @@ export const MaterialsNavLinks = [
         - What Are React Hooks? Hooks are special functions that let you "hook into" React features such as state and lifecycle methods directly in functional components. Commonly used hooks include.useState, useEffect, useContext, and custom hooks.
       `,
       imageUrl: "/blog03.avif",
+      _createdAt: "March 9, 2024",
+      readingTime: "18 sec read",
+      views: "77",
+      author_name: "Sixtus Aondoakaa",
+      author_profile: "/profile-img.png",
       url: "https://devjourney-blog-khaki.vercel.app/post/TWryEU74aunIsETY7eKYVy",
     },
     {
@@ -178,7 +148,13 @@ export const MaterialsNavLinks = [
 
         - **Connecting Angular CLI with Spring Boot:** Learn how to connect the Angular front end with the Spring Boot back end. This section covers CORS configuration, RESTful API development, and proxy setup.
       `,
+      iconLists: [SiAngular, SiSpringboot, FaJava, SiTypescript],
       imageUrl: "/blog04.avif",
+      _createdAt: "December 24, 2024",
+      readingTime: "9 sec read",
+      views: "89",
+      author_name: "Sixtus Aondoakaa",
+      author_profile: "/profile-img.png",
       url: "https://devjourney-blog-khaki.vercel.app/post/c620b9c8-b8bb-412c-aa62-f32655116a9a",
     },
     {
@@ -195,7 +171,13 @@ export const MaterialsNavLinks = [
   
         - Leverage Free and Affordable Learning Platforms In 2025, there’s no shortage of high-quality online courses and tutorials. Here are some resources to get you started: FreeCodeCamp: Offers free coding tutorials, projects, and certifications in web development, data science, and more.
       `,
+      iconLists: [SiNextdotjs, FaReact, FaJsSquare, SiTypescript],
       imageUrl: "/blog05.avif",
+      _createdAt: "January 22, 2025",
+      readingTime: "10 sec read",
+      views: "58",
+      author_name: "Sixtus Aondoakaa",
+      author_profile: "/profile-img.png",
       url: "https://devjourney-blog-khaki.vercel.app/post/9800660d-1313-41a3-bce8-e6ee8d9b9f88",
     },
     {
@@ -215,7 +197,13 @@ export const MaterialsNavLinks = [
 
         Component-Based Architecture: Break down your UI into smaller, reusable components, making your code more modular and easier to maintain..
       `,
+      iconLists: [FaReact, FaJsSquare, SiNextdotjs, SiTypescript],
       imageUrl: "/blog06.avif",
+      _createdAt: "Feb 26, 2024",
+      readingTime: "8 sec read",
+      views: "34",
+      author_name: "Sixtus Aondoakaa",
+      author_profile: "/profile-img.png",
       url: "https://devjourney-blog-khaki.vercel.app/post/ccd61d0b-167a-4120-a4e8-4f8251d99365",
     },
   ];

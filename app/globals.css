@@ -445,3 +445,16 @@ button a {
   border-radius: 8px !important;
   overflow: hidden !important;
 }
+
+.post-img {
+  width: 400px !important;
+  height: 200px !important;
+  object-fit: cover !important;
+}
+
+.card-avatar {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+}

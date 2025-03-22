@@ -56,6 +56,11 @@ export interface BlogPost {
   imageUrl: string;
   iconLists?: React.ElementType[];
   url: string;
+  _createdAt: string;
+  readingTime: string;
+  views: string;
+  author_name: string;
+  author_profile: string;
 };
 
 export interface Project {
