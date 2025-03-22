@@ -164,54 +164,59 @@ export const MaterialsNavLinks = [
     },
     {
       id: 4,
-      title: "Optimizing Web Performance for 2024",
+      title: "How to Use Angular CLI with Spring Boot: A Detailed Guide Share Your Thoughts",
       description: `
-        **Web performance optimization** is essential for delivering a fast and responsive user experience. This article covers various strategies and best practices for optimizing web performance, ensuring your site performs well in 2024.
+        **Integrating Angular CLI with Spring Boot allows you to build powerful, full-stack applications efficiently. Angular handles the front end, while Spring Boot takes care of the back end. This guide will walk you through the steps to set up and connect these two technologies seamlessly.
   
-        **Topics include:**
+        - Integrating Angular CLI with Spring Boot allows you to build powerful, full-stack applications efficiently. Angular handles the front end, while Spring Boot takes care of the back end. This guide will walk you through the steps to set up and connect these two technologies seamlessly.
   
-        - **Performance Metrics:** Understanding key web performance metrics such as Largest Contentful Paint (LCP), First Input Delay (FID), and Cumulative Layout Shift (CLS). This section explains what these metrics are and why they matter.
+        - **Why Combine Angular CLI with Spring Boot? Using Angular and Spring Boot together provides a robust solution for web development:
+
+        - **Setting Up Angular CLI:** A step-by-step guide to installing Angular CLI and creating a new Angular project. This section covers the basic commands and project structure.
   
-        - **Optimization Techniques:** Practical techniques for improving website performance, including lazy loading, code splitting, and efficient caching strategies. The article provides actionable tips and code examples.
-  
-        - **Future Trends:** Insights into emerging trends and tools for web performance optimization, helping you stay ahead of the curve with the latest advancements.
+        - **Angular CLI** offers powerful tools for building dynamic, single-page applications. *** Spring Boot** simplifies the development of back-end APIs with Java.
+
+        - **Connecting Angular CLI with Spring Boot:** Learn how to connect the Angular front end with the Spring Boot back end. This section covers CORS configuration, RESTful API development, and proxy setup.
       `,
       imageUrl: "/blog04.avif",
-      url: "https://devjourney-blog-khaki.vercel.app/post/sn5Y802DZciFXniDNzEdWS",
+      url: "https://devjourney-blog-khaki.vercel.app/post/c620b9c8-b8bb-412c-aa62-f32655116a9a",
     },
     {
       id: 5,
-      title: "State Management in Modern JavaScript Apps",
+      title: "How to Kickstart Your Tech Journey in 2025 Without a University Degree",
       description: `
-        This article provides an in-depth look at **state management** in modern JavaScript applications. We explore various state management solutions, including Redux and the Context API, and discuss when to use different strategies based on application needs.
+        Breaking into the tech industry has never been more accessible. In 2025, the path to becoming a tech professional is no longer confined to university degrees. With the abundance of online resources, practical tools, and a thriving community, you can launch your career in tech on your own terms. Here’s a step-by-step guide to getting started:
   
-        **Key points include:**
+        **How to Kickstart Your Tech Journey in 2025 Without a University Degree Breaking into the tech industry has never been more accessible. In 2025, the path to becoming a tech professional is no longer confined to university degrees. With the abundance of online resources, practical tools, and a thriving community, you can launch your career in tech on your own terms. Here’s a step-by-step guide to getting started:**
   
-        - **Introduction to State Management:** An overview of what state management is, why it is important, and the challenges associated with managing state in complex applications.
+        - Choose Your Tech Path The tech industry is vast, offering opportunities in various domains such as web development, data science, cybersecurity, and more. Identify your interests and choose a tech path that aligns with your goals.
   
-        - **Redux:** A comprehensive exploration of Redux, including its core principles, usage patterns, and benefits. The section includes code examples and practical use cases.
+        - Web Development (Frontend, Backend, or Full Stack) Data Science and Analytics Mobile App Development Cybersecurity Cloud Computing UI/UX Design Artificial Intelligence and Machine Learning Start by researching these fields to identify one that aligns with your interests, skills, and long-term goals.
   
-        - **Context API:** An explanation of how the Context API fits into the state management landscape, with examples demonstrating its use for simpler state management scenarios.
+        - Leverage Free and Affordable Learning Platforms In 2025, there’s no shortage of high-quality online courses and tutorials. Here are some resources to get you started: FreeCodeCamp: Offers free coding tutorials, projects, and certifications in web development, data science, and more.
       `,
       imageUrl: "/blog05.avif",
-      url: "https://devjourney-blog-khaki.vercel.app/post/sn5Y802DZciFXniDNzEdWS",
+      url: "https://devjourney-blog-khaki.vercel.app/post/9800660d-1313-41a3-bce8-e6ee8d9b9f88",
     },
     {
       id: 6,
-      title: "Introduction to TypeScript: Why You Should Care",
+      title: "A Beginner's Guide to React: Building Dynamic User Interfaces",
       description: `
-        **TypeScript** enhances JavaScript by adding static types, which can improve code quality and maintainability. This article introduces TypeScript and discusses its benefits for large-scale JavaScript projects.
+        **React is one of the most popular JavaScript libraries for building user interfaces. Developed by Facebook, it has become a go-to tool for developers due to its flexibility, component-based architecture, and efficient rendering. Read mor about this post
   
         **In this article, we cover:**
   
-        - **What is TypeScript?:** An overview of TypeScript, including its core features and how it extends JavaScript. This section introduces the TypeScript syntax and type system.
+        - React is one of the most popular JavaScript libraries for building user interfaces. Developed by Facebook, it has become a go-to tool for developers due to its flexibility, component-based architecture, and efficient rendering.
   
-        - **Benefits of TypeScript:** How static typing can catch errors early, improve code clarity, and enhance the development experience. We provide examples of TypeScript in action.
+        - **What is React?** 
+        React is a library that allows developers to create reusable UI components. It uses a declarative syntax, meaning you describe what you want your UI to look like, and React takes care of updating the DOM to match..
   
-        - **Getting Started:** A guide to setting up TypeScript in your projects and understanding its key features. This section includes a basic setup guide and tips for new users.
+        - **Why Use React?** React offers several advantages for front-end development, including:
+
+        Component-Based Architecture: Break down your UI into smaller, reusable components, making your code more modular and easier to maintain..
       `,
       imageUrl: "/blog06.avif",
-      url: "https://devjourney-blog-khaki.vercel.app/post/sn5Y802DZciFXniDNzEdWS",
+      url: "https://devjourney-blog-khaki.vercel.app/post/ccd61d0b-167a-4120-a4e8-4f8251d99365",
     },
   ];
 
