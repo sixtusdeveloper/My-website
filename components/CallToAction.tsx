@@ -8,7 +8,7 @@ const CallToAction = () => {
     <section id="my-blog" className="py-12 bg-secondary">
       <div className="container mx-auto px-4 lg:px-6 flex flex-col-reverse md:flex-row items-center gap-8">
         <div className="text-left w-full md:w-1/2  pl-0 lg:pl-2 ">
-          <h2 className="mb-4 font-bold text-left text-[2rem] lg:text-[2.5rem] leading-tight tracking-wide">
+          <h2 className="mb-4 font-bold text-left text-[1.9rem] lg:text-[2.5rem] leading-tight tracking-wide">
             <strong>
               Learn Through Some of the Most{" "}
               <span className="bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">
