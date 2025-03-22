@@ -65,6 +65,7 @@ import {
   SiIntellijidea,
   SiOpenai,
   SiDeepnote,
+  SiVite,
 } from "react-icons/si";
 import { AiFillApi } from "react-icons/ai";
 import { FiBox } from "react-icons/fi";
@@ -280,6 +281,10 @@ const PortfolioSkills = () => {
                   size={20}
                 />
                 &nbsp;<span>GitHub</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-gray-200 items-center space-x-2">
+                <SiVite className="text-purple-500" size={20} />
+                &nbsp;<span>Vite</span>
               </li>
               <li className="flex text-gray-600 dark:text-gray-200 items-center space-x-2">
                 <SiPostman className="text-orange-500" size={20} />
