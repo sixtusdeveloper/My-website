@@ -141,7 +141,7 @@ export default function Navbar({
           className="lg:hidden"
         >
           <div className="fixed inset-0 z-40" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-blue-100 dark:bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <Link href="/" className="flex items-center">
                 <Image
@@ -163,7 +163,7 @@ export default function Navbar({
                 <span className="sr-only">Close menu</span>
                 <XMarkIcon
                   aria-hidden="true"
-                  className="h-6 w-6 text-gray-300"
+                  className="h-6 w-6 text-gray-800 dark:text-gray-100"
                 />
               </button>
             </div>
@@ -174,7 +174,7 @@ export default function Navbar({
                     <Link
                       key={item.name}
                       href={`#${item.href.substring(1)}`}
-                      className="-mx-3 block text-white font-sans rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-blue-600"
+                      className="-mx-3 block text-gray-600 dark:text-gray-200 rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-blue-600"
                       onClick={() => {
                         handleClick(item.href);
                         setMobileMenuOpen(false);
