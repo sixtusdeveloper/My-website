@@ -144,10 +144,10 @@ const ProgrammingBooks = () => {
             <button
               key={index}
               onClick={() => setCurrentPage(index + 1)}
-              className={`px-4 py-2 border shadow-md rounded-full transition ${
+              className={`mx-1 px-4 py-1 border shadow-sm text-gray-700 dark:text-gray-200 rounded-sm ${
                 currentPage === index + 1
-                  ? "hover:bg-indigo-800 bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 text-white"
-                  : "bg-secondary dark:bg-gray-900"
+                  ? "hover:bg-purple-800 bg-gradient-to-r from-purple-500 via-purple-800 to-blue-500 text-white"
+                  : "bg-secondary dark:bg-gray-800"
               }`}
             >
               {index + 1}
@@ -185,15 +185,17 @@ const ProgrammingBooks = () => {
                     </div>
                   ))}
                 </div>
-                <h2 className="text-lg font-semibold">
+                <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-100">
                   {selectedMaterial.title}
                 </h2>
-                <p className="text-sm">Category: {selectedMaterial.category}</p>
+                <p className="text-sm text-gray-600 dark:text-gray-200 font-medium">
+                  Category: {selectedMaterial.category}
+                </p>
                 <p className="text-sm leading-snug">{selectedMaterial.desc}</p>
                 <p className="text-yellow-500 text-lg">
                   {selectedMaterial.rating}
                 </p>
-                <p className="mb-4">
+                <p className="mb-4 text-gray-600 dark:text-gray-200 font-normal">
                   Below are two different ways you could download the document.
                 </p>
 
@@ -237,7 +239,7 @@ const ProgrammingBooks = () => {
                 <h2 className="text-lg font-semibold text-red-600">
                   No File Available
                 </h2>
-                <p className="mt-2 text-gray-600">
+                <p className="mt-2 text-gray-600 dark:text-gray-200">
                   Sixtus has not uploaded the document yet, please check back
                   later.
                 </p>

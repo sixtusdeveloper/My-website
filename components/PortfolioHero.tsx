@@ -24,7 +24,7 @@ const Hero = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [fade, setFade] = useState(true);
   const [isPaused, setIsPaused] = useState(false);
-
+  const [isFetchingResumeLoading, setIsFetchingResumeLoading] = useState(false);
   const totalPages = cvImages.length;
   const currentPageNumber = currentPage + 1;
   // Get current hour
@@ -74,8 +74,10 @@ const Hero = () => {
 
   const handleHireMeClick = () => {
     setIsLoading(true);
+    setIsFetchingResumeLoading(true);
     setTimeout(() => {
       setIsLoading(false);
+      setIsFetchingResumeLoading(false);
       setModalOpen(true);
     }, 2000);
   };
@@ -196,7 +198,9 @@ const Hero = () => {
               }}
             >
               <button className="px-6 py-3 rounded-md bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
-                Let's work together
+                {isFetchingResumeLoading
+                  ? "Fetching Resume..."
+                  : "Let's work together"}
               </button>
             </Link>
 

@@ -111,7 +111,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="relative bg-secondary w-full pt-8 lg:pt-8 px-2 lg:px-8 pb-10 lg:pb-20"
+      className="relative bg-secondary w-full pt-8 lg:pt-8 px-2 lg:px-8 pb-8 lg:pb-14"
       ref={sectionRef} // Reference to the experience section
     >
       <div className="bg-secondary lg:max-w-5xl mx-auto relative">

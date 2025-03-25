@@ -29,7 +29,7 @@ const ExploreMoreCallToAction = () => {
   };
 
   const handleHeroRedirect = () => {
-    router.push("/pages/portfolio/#projects");
+    router.push("/pages/portfolio");
   };
   return (
     <>

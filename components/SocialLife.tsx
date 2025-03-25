@@ -11,7 +11,7 @@ const ServicesHero = () => {
       <div className="relative bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white py-20 z-10">
         <div className="max-w-6xl p-4 lg:py-8 lg:px-20 text-left lg:mx-auto lg:flex lg:flex-col items-center lg:text-center relative z-20">
           <motion.h1
-            className="py-2 tracking-wide text-4xl font-extrabold bg-gradient-to-r from-blue-50 via-blue-50 to-blue-100 text-transparent bg-clip-text"
+            className="py-2 tracking-wide text-2xl md:text-3xl lg:text-4xl font-extrabold bg-gradient-to-r from-blue-50 via-blue-50 to-blue-100 text-transparent bg-clip-text"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
@@ -19,7 +19,6 @@ const ServicesHero = () => {
             Wondering How I Balance Tech Life Along Social Life And Physical
             Health?
           </motion.h1>
-          {/* <h1 className="text-4xl font-extrabold mt-2 mb-6 bg-gradient-to-r from-blue-50 via-blue-50 to-blue-100 text-transparent bg-clip-text"></h1> */}
           <motion.p
             className="text-base max-w-3xl mx-auto py-2"
             initial={{ opacity: 0, x: 50 }}

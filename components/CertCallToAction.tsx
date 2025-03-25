@@ -115,7 +115,7 @@ const ExploreMoreCallToAction = () => {
           >
             <button
               type="button"
-              className="flex justify-start items-center lg:mx-auto lg:justify-center text-left lg:text-center mt-6 py-3 px-6 text-base font-semibold rounded-md ring-1 ring-pink-500 hover:ring-0 hover:bg-gradient-to-r hover:from-yellow-500 hover:via-pink-500 hover:to-purple-600 hover:bg-yellow-600 text-white shadow-lg hover:ease-in-out hover:scale-105 transition-all duration-300"
+              className="flex justify-start items-center md:mx-auto md:justify-center text-left md:text-center mt-6 py-3 px-6 text-base font-semibold rounded-md ring-1 ring-pink-500 hover:ring-0 hover:bg-gradient-to-r hover:from-yellow-500 hover:via-pink-500 hover:to-purple-600 hover:bg-yellow-600 text-white shadow-lg hover:ease-in-out hover:scale-105 transition-all duration-300"
             >
               {isGalleryLoading ? "Please wait..." : "Get Free E-books"}
             </button>

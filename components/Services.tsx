@@ -92,7 +92,7 @@ const ServicesSection = () => {
         </div>
 
         {/* CTA Button */}
-        <div className="mt-12">
+        <div className="mt-12 text-center mx-auto">
           <Link
             href="#"
             onClick={(e) => {
@@ -104,7 +104,7 @@ const ServicesSection = () => {
               type="button"
               className="ring-1 ring-blue-500 hover:ring-0 text-blue-500 dark:text-white hover:bg-gradient-to-r hover:from-blue-500 hover:via-purple-500 hover:to-green-600 hover:bg-blue-600 hover:text-white text-sm md:text-base font-semibold h-12 px-6 py-3 rounded-md hover:ease-in-out hover:scale-105 transition-all duration-300"
             >
-              {isServicesLoading ? "Loading..." : "Learn more"}
+              {isServicesLoading ? "Loading..." : "Learn More"}
             </button>
           </Link>
         </div>

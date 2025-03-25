@@ -73,7 +73,7 @@ const Contact = () => {
             just to say hi!
           </p>
         </div>
-        <div className="flex flex-col md:flex-row justify-between items-start md:gap-6 lg:gap-8 gap-4 w-full">
+        <div className="flex flex-col lg:flex-row justify-between items-start md:gap-6 lg:gap-8 gap-4 w-full">
           <div className="border bg-secondary dark:bg-gray-900 shadow-sm rounded-lg p-4 md:p-4 w-full md:text-start relative md:w-1/2">
             <Image
               src="/profile.jpg"

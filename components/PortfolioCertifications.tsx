@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/MovingBorder";
 import Loader from "@/components/ui/Loader";
 import { AiOutlineDownload } from "react-icons/ai";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 const MAX_DESCRIPTION_LENGTH = 80;
 const truncateDescription = (text: string, maxLength: number): string => {
@@ -157,31 +158,39 @@ const Certifications = () => {
           ))}
         </div>
         {/* Pagination controls */}
-        <div className="flex justify-center mt-8 space-x-2">
+        <div className="flex justify-center mt-8 items-center space-x-2">
           <button
             onClick={() => handlePageChange("previous")}
             disabled={currentPage === 1}
-            className={`px-4 py-2 text-gray-700 dark:text-gray-200 mx-1 rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+            className={`px-4 py-2 text-sm text-gray-700 dark:text-gray-200 mx-1 rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === 1
                 ? "bg-secondary dark:bg-gray-900 border cursor-not-allowed shadow-md"
-                : "bg-purple-600 hover:bg-pink-600 text-white"
+                : "text-white bg-gradient-to-r from-purple-500 via-purple-800 to-pink-500 hover:bg-yellow-600"
             }`}
           >
-            &#8592;&nbsp;Previous
+            <span className="inline-flex items-center text-center">
+              <FaArrowLeft className="mr-2" />
+              Prev
+            </span>
+            {/* &#8592;&nbsp;Prev */}
           </button>
-          <span className="px-4 py-1 mx-1">
+          <span className="px-4 py-1 mx-1 items-center">
             Page {currentPage} of {totalPages}
           </span>
           <button
             onClick={() => handlePageChange("next")}
             disabled={currentPage === totalPages}
-            className={`px-4 py-1 text-gray-700 dark:text-gray-200 mx-1 rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+            className={`px-4 py-2 text-gray-700 text-sm dark:text-gray-200 mx-1 rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === totalPages
                 ? "bg-secondary dark:bg-gray-900 border cursor-not-allowed shadow-md"
                 : "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white hover:ease-in-out hover:scale-105 transition-all duration-300"
             }`}
           >
-            Next&nbsp;&#8594;
+            <span className="inline-flex items-center text-center">
+              Next
+              <FaArrowRight className="ml-2" />
+            </span>
+            {/* Next&nbsp;&#8594; */}
           </button>
         </div>
         {/* Full-page loader overlay */}

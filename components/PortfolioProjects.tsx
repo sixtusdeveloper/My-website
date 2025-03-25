@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaArrowLeft, FaArrowRight, FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import Image from "next/image";
 import Loader from "@/components/ui/Loader";
@@ -239,17 +239,20 @@ const Projects = () => {
         </div>
 
         {/* Pagination */}
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center items-center mt-4">
           <button
             onClick={() => handlePagination("prev")}
             disabled={currentPage === 1}
-            className={`px-4 text-gray-700 dark:text-gray-200 py-2 mx-1 items-center rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+            className={`px-4  py-2 mx-1 text-sm text-gray-700 dark:text-gray-200 items-center rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === 1
                 ? "bg-secondary dark:bg-gray-900 border cursor-not-allowed shadow-md"
-                : "bg-purple-600 hover:bg-pink-600 text-white"
+                : "text-white bg-gradient-to-r from-purple-500 via-purple-800 to-pink-500 hover:bg-yellow-600"
             }`}
           >
-            &#8592;&nbsp;Prev
+            <span className="inline-flex items-center text-center">
+              <FaArrowLeft className="mr-2" />
+              Prev
+            </span>
           </button>
           <span className="px-4 py-1 mx-1 items-center">
             Page {currentPage} of {totalPages}
@@ -257,13 +260,16 @@ const Projects = () => {
           <button
             onClick={() => handlePagination("next")}
             disabled={currentPage === totalPages}
-            className={`px-4 py-1 text-gray-700 dark:text-gray-200 mx-1 rounded items-center cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+            className={`px-4 py-2 mx-1 text-sm text-gray-700 dark:text-gray-200 rounded items-center cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === totalPages
                 ? "bg-secondary dark:bg-gray-900 border cursor-not-allowed shadow-md"
                 : "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white hover:ease-in-out hover:scale-105 transition-all duration-300"
             }`}
           >
-            Next&nbsp;&#8594;
+            <span className="inline-flex items-center text-center">
+              Next
+              <FaArrowRight className="ml-2" />
+            </span>
           </button>
         </div>
 

@@ -40,15 +40,15 @@ const Collaboration = ({
   };
 
   return (
-    <div className="relative mx-auto max-w-7xl bg-secondary px-6 lg:px-8 py-10 lg:py-16">
+    <div className="relative mx-auto max-w-7xl bg-secondary px-6 lg:px-8 py-8 lg:py-14">
       <h2 className="p-4 lg:p-2 text-3xl md:text-4xl text-center font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
         Trusted By Companies
       </h2>
-      <p className="text-center text-base font-medium leading-2 tracking-wide">
+      <p className="text-center text-base font-normal text-gray-600 dark:text-gray-200 leading-2 tracking-wide">
         Trusted by the world&apos;s most innovative teams
       </p>
 
-      <div className="bg-black-100 py-14 sm:py-12">
+      <div className="py-8 sm:py-10">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-8 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
             {/* Company Logos */}

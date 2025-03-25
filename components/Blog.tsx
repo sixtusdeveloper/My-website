@@ -85,7 +85,7 @@ const Blog = () => {
         <h2 className="text-3xl md:text-4xl mb-8 text-center font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
           Few Selection of My Blog Posts
         </h2>
-        <div className="grid gap-2 lg:gap-6 md:grid-cols-3 space-y-6 py-4 md:space-y-0">
+        <div className="grid gap-2 lg:gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3 space-y-6 py-4 md:space-y-0">
           {currentPosts.map((post) => (
             <article
               key={post.id}
@@ -168,10 +168,10 @@ const Blog = () => {
             <button
               key={index + 1}
               onClick={() => paginate(index + 1)}
-              className={`mx-1 px-4 py-1 border shadow-md rounded-sm ${
+              className={`mx-1 px-4 py-1 border shadow-sm text-gray-700 dark:text-gray-200 rounded-sm ${
                 currentPage === index + 1
                   ? "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white hover:ease-in-out hover:scale-105 transition-all duration-300"
-                  : "bg-secondary dark:bg-gray-900"
+                  : "bg-secondary dark:bg-gray-800"
               }`}
             >
               {index + 1}

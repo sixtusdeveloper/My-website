@@ -68,7 +68,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="bg-secondary relative pt-8 md:pt-10 px-4 sm:px-6 lg:px-10 pb-10 lg:pb-20"
+      className="bg-secondary relative pt-8 md:pt-10 px-4 sm:px-6 lg:px-10 pb-8 lg:pb-14"
     >
       <div className="mx-auto max-w-6xl relative">
         <h2 className="text-center text-3xl md:text-4xl font-extrabold mb-6 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
@@ -95,7 +95,7 @@ const Services = () => {
                   <h1 className="text-start leading-tight py-2 font-sans text-lg md:text-xl font-bold text-gray-700 dark:text-gray-200">
                     {service.title}
                   </h1>
-                  <p className="text-sm text-start leading-snug font-sans font-medium mt-1 text-gray-600 dark:text-gray-200">
+                  <p className="text-sm text-start leading-snug font-sans font-normal mt-1 text-gray-600 dark:text-gray-200">
                     {truncateDescription(service.desc, MAX_DESCRIPTION_LENGTH)}
                     &nbsp;
                     <span className="block bg-gradient-to-r from-pink-600 via-yellow-500 to-pink-600 hover:text-pink-600 bg-clip-text text-transparent text-sm text-end font-semibold">
@@ -133,7 +133,7 @@ const Services = () => {
                     (paragraph, idx) => (
                       <p
                         key={idx}
-                        className="text-start text-base mt-3 leading-7 font-medium text-gray-600 dark:text-gray-200"
+                        className="text-start text-base mt-3 font-normal leading-7 text-gray-600 dark:text-gray-200"
                       >
                         {paragraph}
                       </p>
@@ -156,7 +156,7 @@ const Services = () => {
                   {selectedService.detailedDesc.textDesc.map((text, idx) => (
                     <p
                       key={idx}
-                      className="text-start text-base mt-3 leading-7 font-medium text-gray-600 dark:text-gray-200"
+                      className="text-start text-base mt-3 leading-7 font-normal text-gray-600 dark:text-gray-200"
                     >
                       {text}
                     </p>

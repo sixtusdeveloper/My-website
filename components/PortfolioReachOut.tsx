@@ -25,10 +25,10 @@ const ReachOut = () => {
 
         <div className="flex justify-center items-center space-x-4 lg:space-x-8 mt-8">
           <a href="mailto:contact@sixtusdev.net?subject=Let's%20connect!">
-            <button className="relative p-[2px] bg-secondary dark:bg-gray-900 rounded-md ring-1 ring-blue-500 shadow-sm hover:ease-in-out hover:scale-105 transition-all duration-300">
+            <button className="relative p-[2px] bg-secondary dark:bg-gray-900 rounded-md ring-1 ring-pink-500 shadow-sm hover:ease-in-out hover:scale-105 transition-all duration-300">
               <div className="flex items-center space-x-2 bg-transparent px-4 py-2">
                 <Image src="/Gmail.png" alt="Mail" width={20} height={20} />
-                <span className="text-base font-sans font-bold text-blue-500 dark:text-gray-200">
+                <span className="text-[15px] font-bold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">
                   Email me
                 </span>
               </div>
@@ -39,7 +39,7 @@ const ReachOut = () => {
           <div className="h-8 w-[2px] bg-gradient-to-b from-pink-500 via-green-500 to-yellow-500"></div>
 
           <a href="https://wa.me/+2349022048105" target="_blank">
-            <button className="relative p-[2px] bg-secondary dark:bg-gray-900 rounded-md ring-1 ring-blue-500 shadow-sm hover:ease-in-out hover:scale-105 transition-all duration-300">
+            <button className="relative p-[2px] bg-secondary dark:bg-gray-900 rounded-md ring-1 ring-pink-500 shadow-sm hover:ease-in-out hover:scale-105 transition-all duration-300">
               <div className="flex items-center space-x-2 bg-transparent px-2 py-2">
                 <Image
                   src="/whatsapp-icon.png"
@@ -47,7 +47,7 @@ const ReachOut = () => {
                   width={20}
                   height={20}
                 />
-                <span className="text-base font-bold text-blue-500 dark:text-gray-200">
+                <span className="text-[15px] font-bold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">
                   Chat me
                 </span>
               </div>
