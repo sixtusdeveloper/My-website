@@ -66,6 +66,12 @@ import {
   SiOpenai,
   SiDeepnote,
   SiVite,
+  SiFlutter,
+  SiSwift,
+  SiXamarin,
+  SiKotlin,
+  SiAndroid,
+  SiSqlite,
 } from "react-icons/si";
 import { AiFillApi } from "react-icons/ai";
 import { FiBox } from "react-icons/fi";
@@ -240,6 +246,47 @@ const PortfolioSkills = () => {
               <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
                 <SiFirebase className="text-yellow-600" size={20} />
                 &nbsp;<span>Firebase</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Mobile Section */}
+          <div className="skill-category bg-secondary dark:bg-gray-900 p-6 rounded-md border shadow-sm">
+            <h3 className="text-2xl text-gray-700 dark:text-blue-50 font-semibold mb-4">
+              Mobile technologies
+            </h3>
+            <ul className="flex flex-wrap gap-8 list-none items-center text-[14px] lg:text-[15px]">
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <FaReact className="text-blue-500" size={20} />
+                &nbsp;<span>React Native</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiFlutter className="text-blue-400" size={20} />
+                &nbsp;<span>Flutter</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiSwift className="text-orange-500" size={20} />
+                &nbsp;<span>Swift</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiKotlin className="text-purple-500" size={20} />
+                &nbsp;<span>Kotlin</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiAndroid className="text-green-500" size={20} />
+                &nbsp;<span>Android Development</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiXamarin className="text-blue-600" size={20} />
+                &nbsp;<span>Xamarin</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiFirebase className="text-yellow-500" size={20} />
+                &nbsp;<span>Firebase</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiSqlite className="text-blue-700" size={20} />
+                &nbsp;<span>SQLite</span>
               </li>
             </ul>
           </div>
