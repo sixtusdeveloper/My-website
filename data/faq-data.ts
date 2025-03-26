@@ -8,7 +8,7 @@ export const faqs = [
     {
       question: "What technologies do you work with?",
       answer:
-        "I have extensive experience with modern technologies, including Next.js, React, Node.js, Appwrite, PostGreSQL, MySQL, React Native, Expo, Sanity, Sentry, TypeScript, Tailwind CSS, Bootstrap, Aceternity UI, Material UI, Shadcn, Framer-motion, Java, Spring Boot, Angular, Vue.js, and various cloud platforms. I also integrate third-party APIs and authentication services like Clerk and Firebase.",
+        "I have extensive experience with modern technologies, including Next.js, React, Node.js, Appwrite, PostGreSQL, MySQL, React Native, Expo, Andriod studio, Flutter, Swift, Kotlin, Sanity, Sentry, TypeScript, Tailwind CSS, Bootstrap, Aceternity UI, Material UI, Shadcn, Framer-motion, Java, Spring Boot, Angular, Vue.js, and various cloud platforms. I also integrate third-party APIs and authentication services like Clerk and Firebase.",
     },
     {
       question: "Do you take on freelance or contract projects?",
