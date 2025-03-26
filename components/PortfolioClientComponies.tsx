@@ -44,7 +44,7 @@ const Collaboration = ({
       <h2 className="p-4 lg:p-2 text-3xl md:text-4xl text-center font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
         Trusted By Companies
       </h2>
-      <p className="text-center text-base font-normal text-gray-600 dark:text-gray-200 leading-2 tracking-wide">
+      <p className="text-center text-base font-normal text-gray-600 dark:text-blue-100 leading-2 tracking-wide">
         Trusted by the world&apos;s most innovative teams
       </p>
 

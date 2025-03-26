@@ -95,9 +95,15 @@ const MaterialsResources = () => {
                   </div>
                 ))}
               </div>
-              <h3 className="text-xl font-semibold">{resource.title}</h3>
-              <p className="text-sm py-2">Category: {resource.category}</p>
-              <p className="text-sm leading-snug">{resource.desc}</p>
+              <h3 className="text-xl font-semibold text-gray-700 dark:text-blue-50">
+                {resource.title}
+              </h3>
+              <p className="text-sm py-2 text-gray-700 dark:text-blue-50">
+                Category: {resource.category}
+              </p>
+              <p className="text-sm leading-snug text-gray-600 dark:text-blue-100">
+                {resource.desc}
+              </p>
               <p className="text-yellow-500 text-lg">{resource.rating}</p>
               <Button
                 onClick={() => handleDownload(resource)}
@@ -155,17 +161,19 @@ const MaterialsResources = () => {
                       </div>
                     ))}
                 </div>
-                <h3 className="text-xl font-semibold mt-4">
+                <h3 className="text-xl font-semibold mt-4 text-gray-700 dark:text-blue-50">
                   {selectedResource.title}
                 </h3>
-                <p className="text-sm py-2">
+                <p className="text-sm py-2 text-gray-700 dark:text-blue-50">
                   Category: {selectedResource.category}
                 </p>
-                <p className="text-sm leading-snug">{selectedResource.desc}</p>
+                <p className="text-sm leading-snug text-gray-600 dark:text-blue-100">
+                  {selectedResource.desc}
+                </p>
                 <p className="text-yellow-500 text-lg">
                   {selectedResource.rating}
                 </p>
-                <h2 className="text-sm font-semibold mb-2">
+                <h2 className="text-sm font-semibold mb-2 text-gray-600 dark:text-blue-100">
                   Below are two different ways you could download the document.
                 </h2>
                 <div className="flex justify-center gap-6 py-8">
@@ -208,7 +216,7 @@ const MaterialsResources = () => {
                 <h2 className="text-lg font-semibold text-red-600">
                   No File Available
                 </h2>
-                <p className="mt-2 text-gray-600">
+                <p className="mt-2 text-gray-600 dark:text-blue-100">
                   Sixtus has not uploaded the document yet, please check back
                   later.
                 </p>

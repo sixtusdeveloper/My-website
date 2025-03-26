@@ -68,7 +68,7 @@ const Contact = () => {
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
             Let’s Connect
           </h2>
-          <p className="mb-8 text-md leading-relaxed tracking-wide text-gray-600 dark:text-gray-200">
+          <p className="mb-8 text-md leading-relaxed tracking-wide text-gray-600 dark:text-blue-100">
             Feel free to reach out for collaborations, job opportunities, or
             just to say hi!
           </p>
@@ -84,10 +84,10 @@ const Contact = () => {
               style={{ width: "auto", height: "auto" }}
             />
             <div className="mt-2">
-              <h3 className="text-lg font-bold mt-4 text-gray-700 dark:text-gray-200">
+              <h3 className="text-lg font-bold mt-4 text-gray-700 dark:text-blue-50">
                 Sixtus Aondoakaa
               </h3>
-              <p className="text-base font-medium text-gray-700 dark:text-gray-200">
+              <p className="text-base font-medium text-gray-700 dark:text-blue-100">
                 Software Engineer
               </p>
               <div className="mt-4">
@@ -102,7 +102,7 @@ const Contact = () => {
                     height={20}
                     className="mr-2"
                   />
-                  <p className="text-sm py-1 mb-0 text-gray-600 dark:text-gray-200">
+                  <p className="text-sm py-1 mb-0 text-gray-600 dark:text-blue-200">
                     Plot 39, Awolowo Road, Ikoyi, Lagos
                   </p>
                 </div>
@@ -110,7 +110,7 @@ const Contact = () => {
                 <Link
                   href="https://wa.me/+2349022048105"
                   target="_blank"
-                  className="inline-flex py-2 items-center border rounded-md hover:underline hover:text-yellow-500 p-2 w-full my-1"
+                  className="inline-flex py-2 items-center border rounded-md hover:underline hover:text-blue-400 p-2 w-full my-1"
                 >
                   <Image
                     src="/phone.png"
@@ -119,14 +119,14 @@ const Contact = () => {
                     height={20}
                     className="mr-2"
                   />
-                  <p className="text-sm py-1 mb-0">
+                  <p className="text-sm py-1 mb-0 text-gray-600 dark:text-blue-200">
                     +234&nbsp;902&nbsp;2048&nbsp;105
                   </p>
                 </Link>
                 <br />
                 <Link
                   href="mailto:contact@sixtusdev.net?subject=Let's%20connect!"
-                  className="inline-flex items-center border hover:underline hover:text-yellow-500 rounded-md p-2 w-full my-1"
+                  className="inline-flex items-center border hover:underline hover:text-blue-400 rounded-md p-2 w-full my-1"
                 >
                   <Image
                     src="/Gmail.png"
@@ -135,7 +135,7 @@ const Contact = () => {
                     height={20}
                     className="mr-2"
                   />
-                  <p className="text-sm tracking-wide py-1 mb-0 text-gray-600 dark:text-gray-200">
+                  <p className="text-sm tracking-wide py-1 mb-0 text-gray-600 dark:text-blue-200">
                     contact@sixtusdev.net
                   </p>
                 </Link>

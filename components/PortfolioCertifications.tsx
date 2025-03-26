@@ -136,13 +136,13 @@ const Certifications = () => {
                 />
 
                 <div className="lg:ms-5">
-                  <h2 className="text-gray-700 dark:text-gray-200 text-start py-2 leading-tight font-sans text-lg md:text-xl font-bold">
+                  <h2 className="text-gray-700 dark:text-blue-50 text-start py-2 leading-tight font-sans text-lg md:text-xl font-bold">
                     {certification.title}
                   </h2>
-                  <p className="text-gray-600 dark:text-gray-200 text-sm font-medium py-1 text-start leading-snug font-sans">
+                  <p className="text-gray-600 dark:text-blue-100 text-[14px] font-medium py-1 text-start leading-snug">
                     {certification.institution}&nbsp;-&nbsp;{certification.year}
                   </p>
-                  <p className="text-gray-600 dark:text-gray-200 text-sm text-start leading-snug py-1 font-sans font-medium">
+                  <p className="text-gray-600 dark:text-blue-100 text-[14px] text-start leading-snug py-1 font-medium">
                     {truncateDescription(
                       certification.desc ?? "",
                       MAX_DESCRIPTION_LENGTH
@@ -162,7 +162,7 @@ const Certifications = () => {
           <button
             onClick={() => handlePageChange("previous")}
             disabled={currentPage === 1}
-            className={`px-4 py-2 text-sm text-gray-700 dark:text-gray-200 mx-1 rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+            className={`px-4 py-2 text-sm text-gray-700 dark:text-blue-50 mx-1 rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === 1
                 ? "bg-secondary dark:bg-gray-900 border cursor-not-allowed shadow-md"
                 : "text-white bg-gradient-to-r from-purple-500 via-purple-800 to-pink-500 hover:bg-yellow-600"
@@ -174,13 +174,13 @@ const Certifications = () => {
             </span>
             {/* &#8592;&nbsp;Prev */}
           </button>
-          <span className="px-4 py-1 mx-1 items-center">
+          <span className="px-4 py-1 mx-1 items-center text-sm text-gray-600 dark:text-blue-200">
             Page {currentPage} of {totalPages}
           </span>
           <button
             onClick={() => handlePageChange("next")}
             disabled={currentPage === totalPages}
-            className={`px-4 py-2 text-gray-700 text-sm dark:text-gray-200 mx-1 rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+            className={`px-4 py-2 text-gray-700 text-sm dark:text-blue-50 mx-1 rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === totalPages
                 ? "bg-secondary dark:bg-gray-900 border cursor-not-allowed shadow-md"
                 : "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white hover:ease-in-out hover:scale-105 transition-all duration-300"
@@ -214,33 +214,33 @@ const Certifications = () => {
                       style={{ width: "auto", height: "auto" }}
                       className="w-full p-1 h-12 certs-img relative overflow-hidden object-cover rounded-full mb-4"
                     />
-                    <h3 className="font-bold text-xl mb-4 text-gray-700 dark:text-gray-200">
+                    <h3 className="font-bold text-xl mb-4 text-gray-700 dark:text-blue-50">
                       {selectedCertification.title}
                     </h3>
                     <p className="mb-4">
-                      <span className="font-medium text-base text-gray-700 dark:text-gray-200">
+                      <span className="font-medium md:text-[15px] text-[14px]  text-gray-700 dark:text-blue-50">
                         Institution:
                       </span>
                       &nbsp;
-                      <span className="text-base text-gray-600 dark:text-gray-200">
+                      <span className="md:text-[15px] text-[14px]  text-gray-600 dark:text-blue-100">
                         {selectedCertification.institution}
                       </span>
                     </p>
                     <p className="mb-4">
-                      <span className="font-medium text-base text-gray-700 dark:text-gray-200">
+                      <span className="font-medium md:text-[15px] text-[14px]  text-gray-700 dark:text-blue-50">
                         Year:
                       </span>
                       &nbsp;
-                      <span className="text-base text-gray-600 dark:text-gray-200">
+                      <span className="md:text-[15px] text-[14px]  text-gray-600 dark:text-blue-100">
                         {selectedCertification.year}
                       </span>
                     </p>
                     <p className="mb-4">
-                      <span className="font-medium text-base text-gray-700 dark:text-gray-200">
+                      <span className="font-medium md:text-[15px] text-[14px]  text-gray-700 dark:text-blue-50">
                         Description:
                       </span>
                       &nbsp;
-                      <span className="text-base text-gray-600 dark:text-gray-200">
+                      <span className="md:text-[15px] text-[14px]  text-gray-600 dark:text-blue-100">
                         {selectedCertification.desc}
                       </span>
                     </p>

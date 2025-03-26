@@ -8,7 +8,7 @@ const CallToAction = () => {
     <section id="my-blog" className="py-12 bg-secondary">
       <div className="container mx-auto px-4 lg:px-6 flex flex-col-reverse md:flex-row items-center gap-8">
         <div className="text-left w-full md:w-1/2  pl-0 lg:pl-2 ">
-          <h2 className="mb-4 font-bold text-left text-[1.9rem] lg:text-[2.5rem] leading-tight tracking-wide">
+          <h2 className="mb-4 font-bold text-left text-[1.6rem] lg:text-[2.3rem] leading-tight tracking-wide">
             <strong>
               Learn Through Some of the Most{" "}
               <span className="bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">
@@ -20,7 +20,7 @@ const CallToAction = () => {
               </span>
             </strong>
           </h2>
-          <p className="text-base leading-snug mb-6">
+          <p className="text-base leading-snug mb-6 text-gray-600 dark:text-blue-100">
             Sharing your knowledge not only helps others grow but also
             reinforces what you have learned. Engage with the community, write
             about your experiences, and collaborate with fellow learners. Start

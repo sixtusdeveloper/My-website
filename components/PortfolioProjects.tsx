@@ -125,7 +125,7 @@ const Projects = () => {
               setSelectedCategory("Frontend");
               setCurrentPage(1);
             }}
-            className={`px-4 py-2 text-gray-700 dark:text-gray-200 mx-2 text-sm items-center font-semibold rounded-md tracking-wide cursor-pointer transition-all duration-300 ${
+            className={`px-4 py-2 text-gray-700 dark:text-blue-50 mx-2 text-sm items-center font-semibold rounded-md tracking-wide cursor-pointer transition-all duration-300 ${
               selectedCategory === "Frontend"
                 ? "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300"
                 : "bg-transparent dark:bg-gray-900 border shadow-md hover:ease-in-out hover:scale-105 transition-all duration-300"
@@ -138,7 +138,7 @@ const Projects = () => {
               setSelectedCategory("Fullstack");
               setCurrentPage(1);
             }}
-            className={`px-4 py-2 text-gray-700 dark:text-gray-200 text-sm items-center font-semibold mx-2 rounded-md tracking-wide transition-all duration-300 ${
+            className={`px-4 py-2 text-gray-700 dark:text-blue-50 text-sm items-center font-semibold mx-2 rounded-md tracking-wide transition-all duration-300 ${
               selectedCategory === "Fullstack"
                 ? "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300"
                 : "bg-transparent dark:bg-gray-900 border shadow-md hover:ease-in-out hover:scale-105 transition-all duration-300"
@@ -165,14 +165,14 @@ const Projects = () => {
                   className="w-full h-48 object-cover transition-opacity duration-300 group-hover:opacity-75"
                 />
                 <div className="p-4">
-                  <h1 className="font-bold text-lg truncate text-gray-700 dark:text-gray-200">
+                  <h1 className="font-bold text-lg truncate text-gray-700 dark:text-blue-50">
                     {truncateTitle(title, MAX_TITLE_LENGTH)}
                   </h1>
-                  <p className="mt-2 mb-1 text-sm font-sans line-clamp-2 text-gray-600 dark:text-gray-200">
+                  <p className="mt-2 mb-1 text-sm font-sans line-clamp-2 text-gray-600 dark:text-blue-100">
                     {truncateDescription(des, MAX_DESCRIPTION_LENGTH)}
                   </p>
 
-                  <div className="flex justify-between mt-2 items-center">
+                  <div className="flex justify-between mt-4 items-center">
                     <Link
                       href={githubLink}
                       target="_blank"
@@ -207,11 +207,14 @@ const Projects = () => {
                             key={index}
                             className="border rounded-full bg-secondary w-8 h-8 flex justify-center items-center"
                           >
-                            <IconComponent size={18} className="icon" />
+                            <IconComponent
+                              size={18}
+                              className="icon text-gray-800 dark:text-blue-200"
+                            />
                           </div>
                         ))}
                       {iconLists.length > MAX_ICONS_DISPLAY && (
-                        <span className="ml-2 text-xs font-semibold text-gray-500">
+                        <span className="ml-2 text-xs font-semibold text-gray-500 dark:text-blue-200">
                           +{iconLists.length - MAX_ICONS_DISPLAY} more
                         </span>
                       )}
@@ -243,7 +246,7 @@ const Projects = () => {
           <button
             onClick={() => handlePagination("prev")}
             disabled={currentPage === 1}
-            className={`px-4  py-2 mx-1 text-sm text-gray-700 dark:text-gray-200 items-center rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+            className={`px-4  py-2 mx-1 text-sm text-gray-700 dark:text-blue-50 items-center rounded cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === 1
                 ? "bg-secondary dark:bg-gray-900 border cursor-not-allowed shadow-md"
                 : "text-white bg-gradient-to-r from-purple-500 via-purple-800 to-pink-500 hover:bg-yellow-600"
@@ -254,13 +257,13 @@ const Projects = () => {
               Prev
             </span>
           </button>
-          <span className="px-4 py-1 mx-1 items-center">
+          <span className="px-4 py-1 mx-1 items-center text-gray-600 dark:text-blue-200 text-sm">
             Page {currentPage} of {totalPages}
           </span>
           <button
             onClick={() => handlePagination("next")}
             disabled={currentPage === totalPages}
-            className={`px-4 py-2 mx-1 text-sm text-gray-700 dark:text-gray-200 rounded items-center cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+            className={`px-4 py-2 mx-1 text-sm text-gray-700 dark:text-blue-50 rounded items-center cursor-pointer hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === totalPages
                 ? "bg-secondary dark:bg-gray-900 border cursor-not-allowed shadow-md"
                 : "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white hover:ease-in-out hover:scale-105 transition-all duration-300"
@@ -280,10 +283,10 @@ const Projects = () => {
             onClick={closeModal}
           >
             <div className="bg-secondary dark:-bg-gray-900 p-8 border rounded-lg shadow-md max-w-sm text-center px-4">
-              <h2 className="text-lg font-bold text-gray-700 dark:text-gray-200">
+              <h2 className="text-lg font-bold text-gray-700 dark:text-blue-50">
                 Site Under Deployment
               </h2>
-              <p className="text-sm mt-2 text-gray-600 dark:text-gray-200">
+              <p className="text-sm mt-2 text-gray-600 dark:text-blue-100">
                 This site is currently being deployed. Please check back later,
                 or explore the project codebase.
               </p>
@@ -317,10 +320,10 @@ const Projects = () => {
               />
 
               <div className="p-4">
-                <h2 className="text-lg mb-4 md:text-xl font-extrabold my-4 text-gray-700 dark:text-gray-200">
+                <h2 className="text-lg mb-4 md:text-xl font-extrabold my-4 text-gray-700 dark:text-blue-50">
                   {currentProject.title}
                 </h2>
-                <p className="text-sm lg:text-base leading-snug">
+                <p className="text-sm lg:text-base leading-snug text-gray-600 dark:text-blue-100">
                   {currentProject.des}
                 </p>
                 <div className="my-4">
@@ -328,7 +331,7 @@ const Projects = () => {
                     <h2 className="text-lg mb-4 md:text-xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
                       Technologies used
                     </h2>
-                    <p className="text-sm lg:text-base font-medium leading-snug text-gray-600 dark:text-gray-200">
+                    <p className="text-sm lg:text-base font-medium leading-snug text-gray-600 dark:text-blue-100">
                       Below are the main programming languages used for
                       developing this web application.
                     </p>
@@ -340,7 +343,10 @@ const Projects = () => {
                         key={index}
                         className="border rounded-full bg-secondary w-10 h-10 flex justify-center items-center"
                       >
-                        <IconComponent className="icon" size={20} />
+                        <IconComponent
+                          className="icon text-gray-800 dark:text-blue-200"
+                          size={20}
+                        />
                       </div>
                     ))}
                   </div>
@@ -353,7 +359,7 @@ const Projects = () => {
                   <h2 className="text-lg mb-4 md:text-xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
                     Watch Project Demo
                   </h2>
-                  <p className="text-sm lg:text-base font-medium leading-snug text-gray-600 dark:text-gray-200">
+                  <p className="text-sm lg:text-base font-medium leading-snug text-gray-600 dark:text-blue-100">
                     Below is a full project demonstration video that could guide
                     and enlighten you on how the web application works through a
                     pratical approach.

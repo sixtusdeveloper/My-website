@@ -14,10 +14,10 @@ const TutorialCallToAction = () => {
 
         {/* Content */}
         <div className="relative z-10 max-w-3xl px-4 lg:pl-16 lg:pr-8 md:text-center text-left">
-          <h1 className="text-3xl font-extrabold md:text-4xl text-white">
+          <h1 className="text-3xl font-extrabold md:text-4xl text-blue-50">
             Build Real-World Solutions with Live, Practical Coding!
           </h1>
-          <p className="mt-4 text-base opacity-95 text-gray-100">
+          <p className="mt-4 text-base text-blue-100">
             Dive into my tutorials to see how I transform ideas into functional
             projects, step by step.
           </p>

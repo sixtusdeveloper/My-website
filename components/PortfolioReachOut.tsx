@@ -9,7 +9,7 @@ const ReachOut = () => {
       id="get-in-touch"
     >
       <div className="max-w-2xl mx-auto relative">
-        <h1 className="font-bold text-gray-700 dark:text-gray-200 text-center text-[2rem] lg:text-[2.5rem] leading-tight tracking-wide">
+        <h1 className="font-bold text-gray-700 dark:text-blue-100 text-center text-[2rem] lg:text-[2.5rem] leading-tight tracking-wide">
           <strong>
             Ready to take your{" "}
             <span className="bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">
@@ -18,7 +18,7 @@ const ReachOut = () => {
             to the Next Level?
           </strong>
         </h1>
-        <p className="lg:mt-6 my-5 text-center text-md text-gray-600 dark:text-gray-200">
+        <p className="lg:mt-6 my-5 text-center text-md text-gray-600 dark:text-blue-100">
           Reach out to me today and let's discuss how I can help you achieve
           your goals. I could be more responsive on these platforms 👇
         </p>
@@ -63,7 +63,7 @@ const ReachOut = () => {
             width={35}
             height={35}
           />
-          <p className="font-medium text-center text-base p-4 text-gray-600 dark:text-gray-200">
+          <p className="font-medium text-center text-base p-4 text-gray-600 dark:text-blue-100">
             Thank you for scrolling this far!
           </p>
         </div>

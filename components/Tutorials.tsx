@@ -129,7 +129,7 @@ const Tutorials = () => {
           >
             Previous
           </button>
-          <span className="text-sm text-gray-500 dark:text-gray-300 items-center font-medium">
+          <span className="text-sm text-gray-500 dark:text-blue-300 items-center font-medium">
             Page {currentPage} of {totalPages}
           </span>
           <button
@@ -174,7 +174,7 @@ const Tutorials = () => {
                   ></iframe>
                 </div>
                 <div className="p-4 lg:p-6">
-                  <h3 className="mt-4 text-lg font-semibold">
+                  <h3 className="mt-4 text-lg font-semibold text-gray-700 dark:text-blue-100">
                     {selectedTutorial.title}
                   </h3>
                   <p className="mt-2">{selectedTutorial.description}</p>

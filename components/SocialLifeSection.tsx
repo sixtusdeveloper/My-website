@@ -92,7 +92,7 @@ const Tutorials = () => {
         </h2>
 
         <div className="mt-8 max-w-3xl mx-auto">
-          <p className="text-base py-4 text-gray-600 dark:text-gray-200">
+          <p className="text-base py-4 text-gray-600 dark:text-blue-100">
             Search videos by their title, category or keyword!
           </p>
           <Input
@@ -109,7 +109,7 @@ const Tutorials = () => {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-6 py-2 text-gray-700 dark:text-gray-200 rounded-md text-sm font-semibold shadow-sm hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+              className={`px-6 py-2 text-gray-700 dark:text-blue-200 rounded-md text-sm font-semibold shadow-sm hover:ease-in-out hover:scale-105 transition-all duration-300 ${
                 selectedCategory === category
                   ? "text-white bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 hover:bg-yellow-600"
                   : "bg-secondary dark:bg-gray-900 border"
@@ -143,7 +143,7 @@ const Tutorials = () => {
                 ></video>
               )}
             </div>
-            <h3 className="mt-4 px-4 py-2 text-base font-extrabold text-gray-700 dark:text-gray-200">
+            <h3 className="mt-4 px-4 py-2 text-base font-extrabold text-gray-700 dark:text-blue-50">
               {video.title.length > 80
                 ? video.title.slice(0, 80) + "..."
                 : video.title}
@@ -159,7 +159,7 @@ const Tutorials = () => {
                     category: video.category,
                   })
                 }
-                className="py-2 px-6 items-center rounded-md text-purple-600 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-1 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300"
+                className="py-2 px-6 items-center rounded-md text-purple-600 hover:text-white dark:text-blue-200 hover:dark:text-white text-sm md:text-base font-semibold ring-1 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300"
               >
                 Watch Video
               </button>
@@ -188,7 +188,7 @@ const Tutorials = () => {
         >
           Previous
         </button>
-        <span className="text-sm text-gray-500 dark:text-gray-300 items-center font-medium">
+        <span className="text-sm text-gray-500 dark:text-blue-300 items-center font-medium">
           Page {currentPage} of {totalPages}
         </span>
         <button
@@ -240,7 +240,7 @@ const Tutorials = () => {
                   )}
                 </div>
                 <div className="p-4 lg:p-6">
-                  <h3 className="mt-4 text-lg font-semibold text-gray-700 dark:text-gray-200">
+                  <h3 className="mt-4 text-lg font-semibold text-gray-700 dark:text-blue-50">
                     {selectedSocialVideo.title}
                   </h3>
                   <p className="mt-2">{selectedSocialVideo.description}</p>

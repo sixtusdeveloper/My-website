@@ -17,13 +17,6 @@ const truncateTitle = (text: string, maxLength: number): string => {
 };
 
 // Truncate the Project Description to a maximum length
-const MAX_DESCRIPTION_LENGTH = 86;
-const truncateDescription = (text: string, maxLength: number): string => {
-  if (text.length <= maxLength) return text;
-  return `${text.slice(0, maxLength)}...`;
-};
-
-// Truncate the Project title to a maximum length
 const MAX_DESC_LENGTH = 100;
 const truncateDesc = (text: string, maxLength: number): string => {
   if (text.length <= maxLength) return text;
@@ -102,7 +95,7 @@ const GalleryTechEventSection = () => {
 
                 <div className="flex gap-1.5 items-center">
                   <ClockIcon className="size-5 text-gray-500 dark:text-blue-300" />
-                  <span className="text-gray-500 text-sm">
+                  <span className="text-gray-500 dark:text-blue-200 text-sm">
                     {post.readingTime || "N/A"}
                   </span>
                 </div>
@@ -117,11 +110,16 @@ const GalleryTechEventSection = () => {
 
               <div className="flex justify-between items-center my-2 gap-4">
                 <div className="flex-1 py-2">
-                  <p className="text-gray-600 dark:text-blue-100 font-medium text-sm py-2 line-clamp-1">
-                    {post.author_name}
-                  </p>
+                  <div className="flex justify-between items-center gap-4 py-2">
+                    <p className="text-gray-600 dark:text-blue-100 font-medium text-sm py-2 line-clamp-1">
+                      {post.author_name}
+                    </p>
+                    <p className="text-gray-600 border rounded-full py-2 px-4 dark:text-blue-100 font-medium text-sm line-clamp-1">
+                      {post.category}
+                    </p>
+                  </div>
 
-                  <h3 className="text-lg font-bold text-gray-700 dark:text-gray-200 md:text-lg line-clamp-2">
+                  <h3 className="text-lg font-bold text-gray-700 dark:text-blue-50 md:text-lg line-clamp-2">
                     {truncateTitle(post.title, MAX_TITLE_LENGTH)}
                   </h3>
                 </div>
@@ -131,11 +129,11 @@ const GalleryTechEventSection = () => {
                   alt="author avatar"
                   width={48}
                   height={48}
-                  className="card-avatar rounded-full cursor-pointer object-cover border"
+                  className="card-avatar rounded-full cursor-pointer object-cover border items-end mt-8"
                 />
               </div>
 
-              <p className="text-gray-600 dark:text-gray-200 text-[14px]">
+              <p className="text-gray-600 dark:text-blue-100 text-[14px]">
                 {truncateDesc(post.description, MAX_DESC_LENGTH)}
               </p>
               <Image
@@ -150,7 +148,7 @@ const GalleryTechEventSection = () => {
                 <div className="flex gap-4 justify-between items-center">
                   <button
                     onClick={() => openModal(post)}
-                    className="py-2 px-6 items-center rounded-md text-blue-500 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-1 ring-blue-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300"
+                    className="py-2 px-6 items-center rounded-md text-blue-500 hover:text-white dark:text-blue-300 hover:dark:text-white text-sm md:text-base font-semibold ring-1 ring-blue-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300"
                   >
                     {isBlogLoading ? "Loading blog..." : "Read More"}
                   </button>
@@ -172,7 +170,7 @@ const GalleryTechEventSection = () => {
             <button
               key={index + 1}
               onClick={() => paginate(index + 1)}
-              className={`mx-1 px-4 py-1 border shadow-md rounded-sm ${
+              className={`mx-1 px-4 py-1 border text-gray-600 dark:text-blue-200 shadow-md rounded-sm ${
                 currentPage === index + 1
                   ? "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white hover:ease-in-out hover:scale-105 transition-all duration-300"
                   : "bg-secondary dark:bg-gray-900"
@@ -232,7 +230,7 @@ const GalleryTechEventSection = () => {
               className="p-2 h-full overflow-y-auto no-scrollbar"
               style={{ scrollbarWidth: "thin", scrollBehavior: "smooth" }}
             >
-              <h3 className="lg:text-2xl text-xl font-bold mb-4 text-gray-700 dark:text-gray-200">
+              <h3 className="lg:text-2xl text-xl font-bold mb-4 text-gray-700 dark:text-blue-50">
                 {selectedPost.title}
               </h3>
               <div className="flex items-center justify-between py-2 px-2">
@@ -242,7 +240,7 @@ const GalleryTechEventSection = () => {
 
                 <div className="flex gap-1.5 items-center">
                   <ClockIcon className="size-5 text-gray-500 dark:text-blue-300" />
-                  <span className="text-gray-500 text-sm">
+                  <span className="text-gray-500 dark:text-blue-200 text-sm">
                     {selectedPost.readingTime || "N/A"}
                   </span>
                 </div>
@@ -255,18 +253,25 @@ const GalleryTechEventSection = () => {
                 </div>
               </div>
               <div className="flex justify-between items-center my-3 gap-4">
-                <Image
-                  src={selectedPost.author_profile || "/default-avatar.png"}
-                  alt="author avatar"
-                  width={48}
-                  height={48}
-                  className="card-avatar rounded-full cursor-pointer object-cover border"
-                />
-                <div className="flex-1 py-2">
-                  <p className="text-gray-500 dark:text-blue-100 font-medium text-sm line-clamp-1">
+                <div className="flex justify-between gap-2 py-2 items-center">
+                  <Image
+                    src={selectedPost.author_profile || "/default-avatar.png"}
+                    alt="author avatar"
+                    width={48}
+                    height={48}
+                    className="card-avatar rounded-full cursor-pointer object-cover border"
+                  />
+
+                  <p className="text-left text-gray-500 dark:text-blue-100 font-medium text-sm">
                     Created by: {selectedPost.author_name}
                   </p>
                 </div>
+                <p
+                  className="text-gray-600 text-right border rounded-full py-2 px-4 dark:text-blue-100 font-medium text-sm line-clamp-1
+"
+                >
+                  {selectedPost.category}
+                </p>
               </div>
 
               <Image
@@ -277,7 +282,7 @@ const GalleryTechEventSection = () => {
                 height={300}
                 style={{ objectFit: "cover" }}
               />
-              <p className="mt-4 text-base leading-7 text-gray-600 dark:text-gray-300">
+              <p className="mt-4 text-[14px] leading-7 text-gray-600 dark:text-blue-100">
                 {selectedPost.description}
               </p>
 
@@ -313,7 +318,7 @@ const GalleryTechEventSection = () => {
                   rel="noopener noreferrer"
                 >
                   <button className="relative w-full hover:ring-0 rounded-md py-3 px-4 md:px-6 ring-1 ring-blue-500 hover:text-white text-blue-500 dark:text-white text-center font-semibold text-sm lg:text-base hover:bg-gradient-to-r hover:from-yellow-500 hover:via-pink-500 hover:to-purple-600 hover:ease-in-out hover:scale-105 transition-all duration-300">
-                    Read in detail
+                    Read full post
                   </button>
                 </Link>
               </div>

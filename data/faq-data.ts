@@ -3,17 +3,17 @@ export const faqs = [
     {
       question: "What services do you offer as a Software Engineer?",
       answer:
-        "I specialize in full-stack web development, UI/UX design, and API development. My expertise includes building scalable web applications, crafting user-friendly interfaces, and optimizing performance for seamless user experiences.",
+        "I specialize in full-stack web and mobile development, UI/UX design, and API development. My expertise includes building scalable web and mobile applications, crafting user-friendly interfaces, and optimizing performance for seamless user experiences.",
     },
     {
       question: "What technologies do you work with?",
       answer:
-        "I have extensive experience with modern technologies, including Next.js, React, Node.js, TypeScript, Tailwind CSS, Java, Spring Boot, Angular, and various cloud platforms. I also integrate third-party APIs and authentication services like Clerk and Firebase.",
+        "I have extensive experience with modern technologies, including Next.js, React, Node.js, Appwrite, PostGreSQL, MySQL, React Native, Expo, Sanity, Sentry, TypeScript, Tailwind CSS, Bootstrap, Aceternity UI, Material UI, Shadcn, Framer-motion, Java, Spring Boot, Angular, Vue.js, and various cloud platforms. I also integrate third-party APIs and authentication services like Clerk and Firebase.",
     },
     {
       question: "Do you take on freelance or contract projects?",
       answer:
-        "Yes! I am available for freelance and contract work. Whether you need a complete web application, UI/UX design, or API integration, I can help bring your project to life with high-quality, scalable solutions.",
+        "Yes! I am available for freelance and contract work. Whether you need a complete web or mobile application, UI/UX design, or API integration, I can help bring your project to life with high-quality, scalable solutions.",
     },
     {
       question: "Can you help improve an existing website or application?",

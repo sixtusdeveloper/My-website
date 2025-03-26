@@ -122,7 +122,7 @@ const Experience = () => {
           <div className="flex justify-center space-x-4 mb-8">
             <button
               onClick={() => setSelectedSection("work")}
-              className={`px-4 py-2 rounded-md cursor-pointer text-sm md:text-base text-gray-700 dark:text-gray-200 lg:text-base ${
+              className={`px-4 py-2 rounded-md cursor-pointer text-sm md:text-base text-gray-700 dark:text-blue-50 lg:text-base ${
                 selectedSection === "work"
                   ? "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300"
                   : "bg-transparent dark:bg-gray-900 border shadow-md hover:ease-in-out hover:scale-105 transition-all duration-300"
@@ -132,7 +132,7 @@ const Experience = () => {
             </button>
             <button
               onClick={() => setSelectedSection("education")}
-              className={`px-4 py-2 rounded-md cursor-pointer text-gray-700 dark:text-gray-200 text-sm md:text-base lg:text-base ${
+              className={`px-4 py-2 rounded-md cursor-pointer text-gray-700 dark:text-blue-50 text-sm md:text-base lg:text-base ${
                 selectedSection === "education"
                   ? "bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base lg:text-base hover:ease-in-out hover:scale-105 transition-all duration-300"
                   : "bg-transparent dark:bg-gray-900 border shadow-md hover:ease-in-out hover:scale-105 transition-all duration-300"
@@ -153,16 +153,16 @@ const Experience = () => {
                 >
                   <div className="timeline-icon"></div>
                   <div className="bg-secondary dark:bg-gray-900 border p-4 rounded-lg shadow-sm">
-                    <h3 className="text-lg font-bold text-gray-700 dark:text-gray-200">
+                    <h3 className="text-lg font-bold text-gray-700 dark:text-blue-50">
                       {experience.title}
                     </h3>
                     <p className="inline-flex space-x-2 py-1 mb-0 ">
-                      <span className="text-sm text-gray-600 dark:text-gray-200">
+                      <span className="text-sm text-gray-600 dark:text-blue-100">
                         {experience.organization}&nbsp;-&nbsp;
                         <span className="text-sm">{experience.type}</span>
                       </span>
                     </p>
-                    <span className="flex flex-wrap gap-2 items-center text-gray-600 dark:text-gray-200">
+                    <span className="flex flex-wrap gap-2 items-center text-gray-600 dark:text-blue-100">
                       <span className="text-sm">
                         {experience.nature}&nbsp;&#45;&nbsp;
                       </span>
@@ -171,10 +171,10 @@ const Experience = () => {
                       </time>
                     </span>
 
-                    <p className="text-sm py-1 mb-0 text-gray-600 dark:text-gray-200">
+                    <p className="text-sm py-1 mb-0 text-gray-600 dark:text-blue-100">
                       {experience.location}
                     </p>
-                    <div className="text-base leading-6 text-gray-600 dark:text-gray-200">
+                    <div className="text-base leading-6 text-gray-600 dark:text-blue-100">
                       {truncateDescription(
                         experience.description,
                         MAX_DESCRIPTION_LENGTH
@@ -204,17 +204,17 @@ const Experience = () => {
                   <div className="timeline-icon"></div>
 
                   <div className="bg-secondary dark:bg-gray-900 border p-4 rounded-lg shadow-sm">
-                    <h3 className="text-lg font-bold mb-1 text-gray-700 dark:text-gray-200">
+                    <h3 className="text-lg font-bold mb-1 text-gray-700 dark:text-blue-100">
                       {truncateCourse(edu.degree, MAX_COURSE_LENGTH)}
                     </h3>
-                    <span className="flex flex-wrap gap-2 items-center py-1 mb-0 font-bold text-gray-600 dark:text-gray-200">
+                    <span className="flex flex-wrap gap-2 items-center py-1 mb-0 font-bold text-gray-600 dark:text-blue-100">
                       <p className="text-sm">{edu.institution}&nbsp;-&nbsp;</p>
                       <p className="text-sm">{edu.type}</p>
                     </span>
-                    <p className="text-white-200 text-sm py-1 mb-0 text-gray-600 dark:text-gray-200">
+                    <p className="text-white-200 text-sm py-1 mb-0 text-gray-600 dark:text-blue-100">
                       {edu.status}
                     </p>
-                    <span className="flex flex-wrap gap-2 items-center text-gray-600 dark:text-gray-200">
+                    <span className="flex flex-wrap gap-2 items-center text-gray-600 dark:text-blue-100">
                       <p className="text-sm items-center py-1 mb-0">
                         {edu.location}
                       </p>
@@ -225,7 +225,7 @@ const Experience = () => {
                         {edu.date}
                       </time>
                     </span>
-                    <div className="text-base leading-6 text-gray-600 dark:text-gray-200">
+                    <div className="text-base leading-6 text-gray-600 dark:text-blue-100">
                       {truncateDescription(
                         edu.description,
                         MAX_DESCRIPTION_LENGTH
@@ -258,55 +258,55 @@ const Experience = () => {
               <div>
                 {selectedEducation && (
                   <>
-                    <h3 className="font-bold text-xl mb-4 text-gray-700 dark:text-gray-200">
+                    <h3 className="font-bold text-xl mb-4 text-gray-700 dark:text-blue-100">
                       {selectedEducation?.degree}
                     </h3>
                     <p className="mb-4">
-                      <span className="font-semimedium text-base text-gray-700 dark:text-gray-200">
+                      <span className="font-semimedium text-[15px] text-gray-700 dark:text-blue-100">
                         Institution:
                       </span>
                       &nbsp;
-                      <span className="text-base text-gray-600 dark:text-gray-200">
+                      <span className="text-[15px] text-gray-600 dark:text-blue-100">
                         {selectedEducation?.institution}
                       </span>
                     </p>
                     <p className="mb-4">
-                      <span className="font-medium text-base text-gray-700 dark:text-gray-200">
+                      <span className="font-medium text-[15px] text-gray-700 dark:text-blue-100">
                         Type:
                       </span>
                       &nbsp;
-                      <span className="text-base text-gray-600 dark:text-gray-200">
+                      <span className="text-[15px] text-gray-600 dark:text-blue-100">
                         {selectedEducation?.type}
                       </span>
                     </p>
                     <p className="mb-4">
-                      <span className="font-medium text-base text-gray-700 dark:text-gray-200">
+                      <span className="font-medium text-[15px] text-gray-700 dark:text-blue-100">
                         Status:
                       </span>
                       &nbsp;
-                      <span className="text-base text-gray-600 dark:text-gray-200">
+                      <span className="text-[15px] text-gray-600 dark:text-blue-100">
                         {selectedEducation?.status}
                       </span>
                     </p>
                     <p className="mb-4">
-                      <span className="font-medium text-base text-gray-700 dark:text-gray-200">
+                      <span className="font-medium text-[15px] text-gray-700 dark:text-blue-100">
                         Location:
                       </span>
                       &nbsp;
-                      <span className="text-base text-gray-600 dark:text-gray-200">
+                      <span className="text-[15px] text-gray-600 dark:text-blue-100">
                         {selectedEducation?.location}
                       </span>
                     </p>
                     <p className="mb-4">
-                      <span className="font-medium text-base text-gray-700 dark:text-gray-200">
+                      <span className="font-medium text-[15px] text-gray-700 dark:text-blue-100">
                         Date:
                       </span>
                       &nbsp;
-                      <span className="text-base text-gray-600 dark:text-gray-200">
+                      <span className="text-[15px] text-gray-600 dark:text-blue-100">
                         {selectedEducation?.date}
                       </span>
                     </p>
-                    <p className="mb-6 text-base text-medium leading-6 text-gray-600 dark:text-gray-200">
+                    <p className="mb-6 text-[15px] text-medium leading-6 text-gray-600 dark:text-blue-100">
                       {selectedEducation?.description}
                     </p>
                     <div className=" relative flex justify-center text-center w-full mb-4">
@@ -342,51 +342,51 @@ const Experience = () => {
                   <>
                     <div className="flex flex-col justify-center flex-wrap lg:flex-nowrap md:flex-row md:justify-between gap-4 md:gap-6 lg:gap-8 space-x-2 md:space-x-6">
                       <div>
-                        <h3 className="font-bold text-xl mb-4 text-gray-700 dark:text-gray-200">
+                        <h3 className="font-bold text-xl mb-4 text-gray-700 dark:text-blue-100">
                           {selectedWorkExperience.title}
                         </h3>
                         <p className="mb-4">
-                          <span className="font-medium text-base text-gray-700 dark:text-gray-200">
+                          <span className="font-medium text-[15px] text-gray-700 dark:text-blue-100">
                             Organization:
                           </span>
                           &nbsp;
-                          <span className="text-base text-gray-600 dark:text-gray-200">
+                          <span className="text-[15px] text-gray-600 dark:text-blue-100">
                             {selectedWorkExperience.organization}
                           </span>
                         </p>
                         <p className="mb-4">
-                          <span className="font-medium text-base text-gray-700 dark:text-gray-200">
+                          <span className="font-medium text-[15px] text-gray-700 dark:text-blue-100">
                             Type:
                           </span>
                           &nbsp;
-                          <span className="text-base text-gray-600 dark:text-gray-200">
+                          <span className="text-[15px] text-gray-600 dark:text-blue-100">
                             {selectedWorkExperience.type}
                           </span>
                         </p>
                         <p className="mb-4">
-                          <span className="font-medium text-base text-gray-700 dark:text-gray-200">
+                          <span className="font-medium text-[15px] text-gray-700 dark:text-blue-100">
                             Nature:
                           </span>
                           &nbsp;
-                          <span className="text-base text-gray-600 dark:text-gray-200">
+                          <span className="text-[15px] text-gray-600 dark:text-blue-100">
                             {selectedWorkExperience.nature}
                           </span>
                         </p>
                         <p className="mb-4">
-                          <span className="font-medium text-base text-gray-700 dark:text-gray-200">
+                          <span className="font-medium text-[15px] text-gray-700 dark:text-blue-100">
                             Location:
                           </span>
                           &nbsp;
-                          <span className="text-base text-gray-600 dark:text-gray-200">
+                          <span className="text-[15px] text-gray-600 dark:text-blue-100">
                             {selectedWorkExperience.location}
                           </span>
                         </p>
                         <p className="mb-4">
-                          <span className="font-medium text-base text-gray-700 dark:text-gray-200">
+                          <span className="font-medium text-[15px] text-gray-700 dark:text-blue-100">
                             Date:
                           </span>
                           &nbsp;
-                          <span className="text-base text-gray-600 dark:text-gray-200">
+                          <span className="text-[15px] text-gray-600 dark:text-blue-100">
                             {selectedWorkExperience.date}
                           </span>
                         </p>
@@ -404,15 +404,15 @@ const Experience = () => {
                       </div>
                     </div>
                     <div className="relative py-4">
-                      <h4 className="font-bold tracking-wider text-lg my-4 text-gray-700 dark:text-gray-200">
+                      <h4 className="font-bold tracking-wider text-lg my-4 text-gray-700 dark:text-blue-100">
                         Job description
                       </h4>
-                      <p className="text-base text-medium leading-7 text-gray-600 dark:text-gray-200">
+                      <p className="text-[15px] text-medium leading-7 text-gray-600 dark:text-blue-100">
                         {selectedWorkExperience.fullDesc}
                       </p>
                     </div>
                     <div className="py-4 relative overflow-hidden">
-                      <h4 className="font-bold text-lg my-4 text-gray-700 dark:text-gray-200">
+                      <h4 className="font-bold text-lg my-4 text-gray-700 dark:text-blue-100">
                         Technologies & Softwares Used
                       </h4>
                       <ul className="flex flex-wrap gap-4">
@@ -420,7 +420,7 @@ const Experience = () => {
                           (tech, index) => (
                             <li
                               key={index}
-                              className="px-3 py-2 border rounded-lg bg-transparent text-base leading-6 text-gray-600 dark:text-gray-200"
+                              className="px-3 py-2 border space-x-6 space-y-6 text-[14px] rounded-lg bg-transparent leading-6 text-gray-600 dark:text-blue-200"
                             >
                               {tech}
                             </li>

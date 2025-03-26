@@ -1,4 +1,13 @@
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+
 const MaterialCallToAction = () => {
+  const router = useRouter();
+
+  const navigateToProjects = () => {
+    router.push("/pages/portfolio");
+  };
+
   return (
     <>
       <section className="relative w-full h-[400px] flex items-center md:justify-center justify-start text-center overflow-hidden">
@@ -11,20 +20,26 @@ const MaterialCallToAction = () => {
 
         {/* Content */}
         <div className="relative z-10 max-w-3xl px-4 lg:pl-16 lg:pr-8 md:text-center text-left">
-          <h1 className="text-3xl font-extrabold md:text-4xl text-white">
+          <h1 className="text-3xl font-extrabold md:text-4xl text-blue-50">
             See how I transform ideas into reality!
           </h1>
-          <p className="mt-4 text-base opacity-95 text-gray-100">
+          <p className="mt-4 text-base text-blue-100">
             Explore my project section and see how I turn ideas into reality.
           </p>
-          <a href="/pages/portfolio/#projects">
+          <Link
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              navigateToProjects();
+            }}
+          >
             <button
               type="button"
               className="flex justify-start items-center lg:mx-auto lg:justify-center text-left lg:text-center mt-6 py-3 px-6 text-base font-semibold rounded-md ring-1 ring-blue-100 hover:bg-gradient-to-r hover:from-yellow-500 hover:via-pink-500 hover:to-purple-600 hover:bg-yellow-600 text-white shadow-lg hover:ease-in-out hover:scale-105 transition-all duration-300"
             >
               Explore projects
             </button>
-          </a>
+          </Link>
         </div>
       </section>
     </>

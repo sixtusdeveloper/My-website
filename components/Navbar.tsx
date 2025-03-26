@@ -96,7 +96,7 @@ export default function Navbar({
               <Link
                 key={item.name}
                 href={`#${item.href.substring(1)}`}
-                className={`text-sm hover:text-pink-700 tracking-wide font-semibold cursor-pointer ${
+                className={`text-sm text-gray-700 dark:text-blue-100 hover:text-pink-700 tracking-wide font-semibold cursor-pointer ${
                   activeSection === item.href.substring(1)
                     ? "hover:text-pink-700 bg-gradient-to-r from-pink-600 via-pink-500 to-yellow-600 font-semibold bg-clip-text text-transparent"
                     : "text-default hover:text-pink-700"
@@ -163,7 +163,7 @@ export default function Navbar({
                 <span className="sr-only">Close menu</span>
                 <XMarkIcon
                   aria-hidden="true"
-                  className="h-6 w-6 text-gray-800 dark:text-gray-100"
+                  className="h-6 w-6 text-gray-800 dark:text-blue-200"
                 />
               </button>
             </div>
@@ -174,7 +174,7 @@ export default function Navbar({
                     <Link
                       key={item.name}
                       href={`#${item.href.substring(1)}`}
-                      className="-mx-3 block text-gray-600 dark:text-gray-200 rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-blue-600"
+                      className="-mx-3 block text-gray-600 dark:text-blue-100 rounded-lg px-3 py-4 space-y-6 text-base font-semibold leading-7 hover:text-blue-600"
                       onClick={() => {
                         handleClick(item.href);
                         setMobileMenuOpen(false);

@@ -109,7 +109,7 @@ const Hero = () => {
       <div className="relative flex flex-row lg:flex-row items-center justify-start lg:justify-center w-full gap-8 px-4 lg:px-14">
         {/* Left Side - Hero Text Content */}
         <motion.div
-          className="text-white max-w-3xl p-0 lg:py-8 mt-16 text-start lg:text-left"
+          className="text-blue-100 max-w-3xl p-0 lg:py-8 mt-16 text-start lg:text-left"
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
@@ -185,7 +185,7 @@ const Hero = () => {
           </motion.p>
 
           <motion.div
-            className="flex flex-row items-center space-x-4"
+            className="flex flex-row items-center space-x-4 mt-2"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.1, ease: "easeOut" }}
@@ -234,10 +234,10 @@ const Hero = () => {
 
       <HireMeModal isOpen={isModalOpen} onClose={handleModalToggle}>
         <div className="p-2 max-h-[80vh] overflow-auto no-scrollbar">
-          <h2 className="text-2xl font-bold tracking-wide text-center text-gray-700 dark:text-gray-200">
+          <h2 className="text-2xl font-bold tracking-wide text-center text-gray-700 dark:text-blue-50">
             Hire Me Let's Work Together
           </h2>
-          <p className="text-center text-base px-4 py-2 leading-6 text-gray-600 dark:text-gray-200">
+          <p className="text-center text-base px-4 py-2 leading-6 text-gray-600 dark:text-blue-100">
             Thank you for considering me for your project! I'm eager to work
             with you and bring your ideas to life. Below you can preview my CV:
           </p>
@@ -254,19 +254,19 @@ const Hero = () => {
           <div className="flex items-center justify-center space-x-4 mt-4">
             <button
               onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 0))}
-              className="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600"
+              className="px-4 py-2 bg-gray-700 text-blue-100 rounded-lg hover:bg-gray-600"
               disabled={currentPage === 0}
             >
               Prev
             </button>
-            <span className="items-center">{`Page ${currentPageNumber} of ${totalPages}`}</span>
+            <span className="items-center text-sm text-gray-600 dark:text-blue-200">{`Page ${currentPageNumber} of ${totalPages}`}</span>
             <button
               onClick={() =>
                 setCurrentPage((prev) =>
                   Math.min(prev + 1, cvImages.length - 1)
                 )
               }
-              className={`px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 ${
+              className={`px-4 py-2 bg-gray-700 text-blue-100 rounded-lg hover:bg-gray-600 ${
                 currentPage === cvImages.length - 1
                   ? "opacity-50 cursor-not-allowed"
                   : ""
@@ -292,10 +292,10 @@ const Hero = () => {
             className="rounded-full border-2 mx-auto profile_img"
             style={{ width: "auto", height: "auto" }}
           />
-          <h2 className="mt-2 text-base lg:text-lg sm:mb-1 font-semibold tracking-wide text-center text-gray-700 dark:text-gray-200">
+          <h2 className="mt-2 text-base lg:text-lg sm:mb-1 font-semibold tracking-wide text-center text-gray-700 dark:text-blue-100">
             Sixtus Aondoakaa
           </h2>
-          <p className="text-sm font-medium text-center text-gray-600 dark:text-gray-200">
+          <p className="text-sm font-medium text-center text-gray-600 dark:text-blue-200">
             Software Engineer
           </p>
         </div>

@@ -97,7 +97,9 @@ const ProgrammingBooks = () => {
     <section id="library" className="py-10 bg-secondary w-full">
       <div className="relative mx-auto max-w-6xl w-screen lg:px-10 p-4">
         <h1 className="text-3xl font-bold mb-4">Materials Library</h1>
-        <p className="mb-4">Browse and download free programming e-books.</p>
+        <p className="mb-4 text-gray-600 dark:text-blue-100">
+          Browse and download free programming e-books.
+        </p>
         <Input
           type="text"
           placeholder="Search materials..."
@@ -117,14 +119,20 @@ const ProgrammingBooks = () => {
                     key={index}
                     className="border shadow-md rounded-full bg-secondary w-14 h-14 flex justify-center items-center"
                   >
-                    <IconComponent className="icon text-green-400" size={34} />
+                    <IconComponent className="icon text-green-400" size={30} />
                   </div>
                 ))}
               </div>
               <div className="text-center mx-auto p-2">
-                <h2 className="text-lg font-semibold">{material.title}</h2>
-                <p className="text-sm py-2">Category: {material.category}</p>
-                <p className="text-sm leading-snug">{material.desc}</p>
+                <h2 className="text-lg font-semibold text-gray-700 dark:text-blue-50">
+                  {material.title}
+                </h2>
+                <p className="text-sm py-2 text-gray-700 dark:text-blue-50">
+                  Category: {material.category}
+                </p>
+                <p className="text-sm leading-snug text-gray-700 dark:text-blue-100">
+                  {material.desc}
+                </p>
                 <p className="text-yellow-500 text-lg">{material.rating}</p>
 
                 <Button
@@ -144,7 +152,7 @@ const ProgrammingBooks = () => {
             <button
               key={index}
               onClick={() => setCurrentPage(index + 1)}
-              className={`mx-1 px-4 py-1 border shadow-sm text-gray-700 dark:text-gray-200 rounded-sm ${
+              className={`mx-1 px-4 py-1 border shadow-sm text-gray-700 dark:text-blue-200 rounded-sm ${
                 currentPage === index + 1
                   ? "hover:bg-purple-800 bg-gradient-to-r from-purple-500 via-purple-800 to-blue-500 text-white"
                   : "bg-secondary dark:bg-gray-800"
@@ -185,17 +193,19 @@ const ProgrammingBooks = () => {
                     </div>
                   ))}
                 </div>
-                <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-100">
+                <h2 className="text-lg font-semibold text-gray-700 dark:text-blue-50">
                   {selectedMaterial.title}
                 </h2>
-                <p className="text-sm text-gray-600 dark:text-gray-200 font-medium">
+                <p className="text-sm text-gray-500 dark:text-blue-50 font-medium">
                   Category: {selectedMaterial.category}
                 </p>
-                <p className="text-sm leading-snug">{selectedMaterial.desc}</p>
+                <p className="text-sm leading-snug text-gray-600 dark:text-blue-100">
+                  {selectedMaterial.desc}
+                </p>
                 <p className="text-yellow-500 text-lg">
                   {selectedMaterial.rating}
                 </p>
-                <p className="mb-4 text-gray-600 dark:text-gray-200 font-normal">
+                <p className="mb-4 text-gray-600 dark:text-blue-100 font-normal">
                   Below are two different ways you could download the document.
                 </p>
 
@@ -239,7 +249,7 @@ const ProgrammingBooks = () => {
                 <h2 className="text-lg font-semibold text-red-600">
                   No File Available
                 </h2>
-                <p className="mt-2 text-gray-600 dark:text-gray-200">
+                <p className="mt-2 text-gray-600 dark:text-blue-200">
                   Sixtus has not uploaded the document yet, please check back
                   later.
                 </p>

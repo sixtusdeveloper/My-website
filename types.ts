@@ -58,6 +58,7 @@ export interface BlogPost {
   url: string;
   _createdAt: string;
   readingTime: string;
+  category: string;
   views: string;
   author_name: string;
   author_profile: string;

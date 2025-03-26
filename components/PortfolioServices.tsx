@@ -92,10 +92,10 @@ const Services = () => {
                   className="lg:w-32 md:w-20 w-16 services-img"
                 />
                 <div className="lg:ms-5">
-                  <h1 className="text-start leading-tight py-2 font-sans text-lg md:text-xl font-bold text-gray-700 dark:text-gray-200">
+                  <h1 className="text-start leading-tight py-2 font-sans text-lg md:text-xl font-bold text-gray-700 dark:text-blue-50">
                     {service.title}
                   </h1>
-                  <p className="text-sm text-start leading-snug font-sans font-normal mt-1 text-gray-600 dark:text-gray-200">
+                  <p className="text-[14px] text-start leading-snug font-normal mt-1 text-gray-600 dark:text-blue-100">
                     {truncateDescription(service.desc, MAX_DESCRIPTION_LENGTH)}
                     &nbsp;
                     <span className="block bg-gradient-to-r from-pink-600 via-yellow-500 to-pink-600 hover:text-pink-600 bg-clip-text text-transparent text-sm text-end font-semibold">
@@ -125,7 +125,7 @@ const Services = () => {
                   style={{ width: "auto", height: "auto" }}
                 />
                 <div className="lg:ms-5">
-                  <h3 className="text-start py-6 text-xl md:text-2xl font-bold text-gray-700 dark:text-gray-200">
+                  <h3 className="text-start py-6 text-xl md:text-2xl font-bold text-gray-700 dark:text-blue-50">
                     {selectedService.title}
                   </h3>
                   {/* Detailed paragraphs */}
@@ -133,7 +133,7 @@ const Services = () => {
                     (paragraph, idx) => (
                       <p
                         key={idx}
-                        className="text-start text-base mt-3 font-normal leading-7 text-gray-600 dark:text-gray-200"
+                        className="text-start md:text-[15px] text-[14px] mt-3 font-normal leading-7 text-gray-600 dark:text-blue-100"
                       >
                         {paragraph}
                       </p>
@@ -156,7 +156,7 @@ const Services = () => {
                   {selectedService.detailedDesc.textDesc.map((text, idx) => (
                     <p
                       key={idx}
-                      className="text-start text-base mt-3 leading-7 font-normal text-gray-600 dark:text-gray-200"
+                      className="text-start md:text-[15px] text-[14px] mt-3 leading-7 font-normal text-gray-600 dark:text-blue-100"
                     >
                       {text}
                     </p>

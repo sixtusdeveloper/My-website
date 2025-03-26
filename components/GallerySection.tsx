@@ -45,7 +45,7 @@ export default function GallerySection() {
         <h2 className="text-3xl mb-8 text-center md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
           My Gallery
         </h2>
-        <p className="text-base text-gray-600 dark:text-gray-200">
+        <p className="text-base text-gray-600 dark:text-blue-100">
           Explore memories beyond my software engineering journey.
         </p>
 
@@ -71,7 +71,7 @@ export default function GallerySection() {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-6 py-2 text-gray-700 dark:text-gray-200 rounded-md text-sm font-semibold shadow-sm hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+              className={`px-6 py-2 text-gray-700 dark:text-blue-200 rounded-md text-sm font-semibold shadow-sm hover:ease-in-out hover:scale-105 transition-all duration-300 ${
                 selectedCategory === category
                   ? "text-white bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 hover:bg-yellow-600"
                   : "bg-secondary dark:bg-gray-900 border"
@@ -105,14 +105,14 @@ export default function GallerySection() {
                 className="w-full gallery-img h-64 object-cover transition-transform duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-                <span className="text-white text-sm lg:text-base text-center p-4 font-semibold">
+                <span className="text-blue-100 text-sm lg:text-base text-center p-4 font-semibold">
                   {image.alt}
                 </span>
               </div>
             </motion.div>
           ))
         ) : (
-          <p className="text-center col-span-3 text-gray-700 dark:text-gray-200">
+          <p className="text-center col-span-3 text-gray-700 dark:text-blue-100">
             No images found
           </p>
         )}
@@ -124,7 +124,7 @@ export default function GallerySection() {
           <button
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
             disabled={currentPage === 1}
-            className={`px-4 py-2 text-sm text-gray-700 dark:text-gray-200 rounded-sm shadow-sm font-semibold hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+            className={`px-4 py-2 text-sm text-gray-700 dark:text-blue-200 rounded-sm shadow-sm font-semibold hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === 1
                 ? "opacity-50 cursor-not-allowed bg-secondary dark:bg-gray-900 border"
                 : "text-white bg-gradient-to-r from-purple-500 via-purple-800 to-pink-500 hover:bg-yellow-600"
@@ -133,14 +133,14 @@ export default function GallerySection() {
             Previous
           </button>
 
-          <span className="text-sm text-gray-500 dark:text-gray-300 items-center font-medium">{`Page ${currentPage} of ${totalPages}`}</span>
+          <span className="text-sm text-gray-500 dark:text-blue-200 items-center font-medium">{`Page ${currentPage} of ${totalPages}`}</span>
 
           <button
             onClick={() =>
               setCurrentPage((prev) => Math.min(prev + 1, totalPages))
             }
             disabled={currentPage === totalPages}
-            className={`px-4 py-2 text-sm text-gray-700 dark:text-gray-200 rounded-sm shadow-sm font-semibold hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+            className={`px-4 py-2 text-sm text-gray-700 dark:text-blue-100 rounded-sm shadow-sm font-semibold hover:ease-in-out hover:scale-105 transition-all duration-300 ${
               currentPage === totalPages
                 ? "opacity-50 cursor-not-allowed bg-secondary dark:bg-gray-900 border"
                 : "text-white bg-gradient-to-r from-pink-500 via-yellow-500 to-pink-500 hover:bg-yellow-600"

@@ -61,7 +61,7 @@ const FAQPage = () => {
           <h1 className="text-left text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text mb-4 md:mb-6">
             Frequently Asked Questions (FAQ)
           </h1>
-          <p className="text-base lg:text-base mb-8 sm:text-start text-start text-gray-600 dark:text-gray-200">
+          <p className="text-base lg:text-base mb-8 sm:text-start text-start text-gray-600 dark:text-blue-100">
             Welcome to my FAQ section! Here you can find answers to the most
             common questions about my profession.
           </p>
@@ -82,7 +82,7 @@ const FAQPage = () => {
                   </span>
                 </div>
                 {activeIndex === index && (
-                  <div className="p-4 text-sm leading-6">
+                  <div className="p-4 text-sm leading-6 text-gray-600 dark:text-blue-100">
                     <p>{faq.answer}</p>
                   </div>
                 )}
@@ -91,7 +91,7 @@ const FAQPage = () => {
           </div>
         </div>
         <div className="py-4 px-2 text-center mt-2 md:mt-4 lg:mt-4">
-          <p className="text-sm text-gray-600 dark:text-gray-200">
+          <p className="text-sm text-gray-600 dark:text-blue-200">
             Could not find what you're looking for?{" "}
             <Link
               href="/#contact"
@@ -103,19 +103,19 @@ const FAQPage = () => {
         </div>
 
         <div className="py-4 text-center mt-2">
-          <h2 className="text-center text-sm md:text-base my-2 text-gray-600 dark:text-gray-200">
+          <h2 className="text-center text-sm md:text-base my-2 text-gray-600 dark:text-blue-100">
             Did you find these Questions and Answers helpful?
           </h2>
           <div className="flex py-4 justify-center items-center gap-6">
             <button
-              className="ring-1 ring-blue-500 text-blue-500 hover:ring-0 hover:text-white hover:bg-gradient-to-r hover:from-blue-500 hover:via-purple-500 hover:to-purple-600 hover:ease-in-out hover:scale-105 transition-all duration-300 dark:text-white text-base font-semibold h-12 px-6 py-3 rounded-md"
+              className="ring-1 ring-blue-500 text-blue-500 hover:ring-0 hover:text-white hover:bg-gradient-to-r hover:from-blue-500 hover:via-purple-500 hover:to-purple-600 hover:ease-in-out hover:scale-105 transition-all duration-300 dark:text-blue-300 hover:dark:text-white text-base font-semibold h-12 px-6 py-3 rounded-md"
               onClick={() => handleFeedback("yes", "yes")}
             >
               {loadingButton === "yes" ? "Responding..." : "Yes, they were"}
             </button>
 
             <button
-              className="ring-1 ring-blue-500 text-blue-500 hover:ring-0 hover:text-white hover:bg-gradient-to-r hover:from-yellow-500 hover:via-pink-500 hover:to-purple-600 hover:ease-in-out hover:scale-105 transition-all duration-300 dark:text-white text-base font-semibold h-12 px-6 py-3 rounded-md"
+              className="ring-1 ring-blue-500 text-blue-500 hover:ring-0 hover:text-white hover:bg-gradient-to-r hover:from-yellow-500 hover:via-pink-500 hover:to-purple-600 hover:ease-in-out hover:scale-105 transition-all duration-300 dark:text-blue-300 hover:dark:text-white text-base font-semibold h-12 px-6 py-3 rounded-md"
               onClick={() => handleFeedback("no", "no")}
             >
               {loadingButton === "no" ? "Responding..." : "No, they weren't"}

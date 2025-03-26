@@ -76,29 +76,23 @@ const About = () => {
               </div>
             </div>
             <div className="mb-4 md:mb-10 p-2 items-center">
-              {/* Social Follow Buttons on larger devices */}
-
               {/* Social Follow Buttons on mobile */}
               <div className="flex items-center justify-center gap-4 mt-0">
-                {/* Twitter Follow Button */}
-                <div
-                  className={`flex items-center space-x-2 p-2 bg-secondary text-gray-700 dark:text-gray-200 dark:bg-gray-800 rounded-full shadow-sm border hover:ease-in-out hover:scale-105 transition-all duration-300 ${
-                    isTwitterFollowed
-                      ? "bg-secondary dark:bg-gray-800 border"
-                      : "bg-transparent border"
-                  } transition`}
-                >
+                {/* Linked Follow Button */}
+                <div className="flex items-center bg-secondary text-gray-700 dark:text-blue-200 dark:bg-gray-800 space-x-2 p-2 rounded-full shadow-sm border hover:ease-in-out hover:scale-105 transition-all duration-300">
                   <Link
-                    href="https://twitter.com/sixtusdev?ref_src=twsrc%5Etfw"
+                    href="https://linkedin.com/in/sixtusushrey"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="relative"
                   >
-                    <FaTwitter size={20} />
+                    <FaLinkedin size={20} />
                   </Link>
                 </div>
 
                 {/* GitHub Follow Button */}
                 <div
-                  className={`flex items-center space-x-2 p-2 bg-secondary text-gray-700 dark:text-gray-200 dark:bg-gray-800 rounded-full shadow-sm border hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+                  className={`flex items-center space-x-2 p-2 bg-secondary text-gray-700 dark:text-blue-200 dark:bg-gray-800 rounded-full shadow-sm border hover:ease-in-out hover:scale-105 transition-all duration-300 ${
                     isGithubFollowed
                       ? "bg-secondary dark:bg-gray-800 border"
                       : "bg-transparent border"
@@ -114,15 +108,19 @@ const About = () => {
                   </Link>
                 </div>
 
-                {/* Linked Follow Button */}
-                <div className="flex items-center bg-secondary text-gray-700 dark:text-gray-200 dark:bg-gray-800 space-x-2 p-2 rounded-full shadow-sm border hover:ease-in-out hover:scale-105 transition-all duration-300">
+                {/* Twitter Follow Button */}
+                <div
+                  className={`flex items-center space-x-2 p-2 bg-secondary text-gray-700 dark:text-blue-200 dark:bg-gray-800 rounded-full shadow-sm border hover:ease-in-out hover:scale-105 transition-all duration-300 ${
+                    isTwitterFollowed
+                      ? "bg-secondary dark:bg-gray-800 border"
+                      : "bg-transparent border"
+                  } transition`}
+                >
                   <Link
-                    href="https://linkedin.com/in/sixtusushrey"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="https://twitter.com/sixtusdev?ref_src=twsrc%5Etfw"
                     className="relative"
                   >
-                    <FaLinkedin size={20} />
+                    <FaTwitter size={20} />
                   </Link>
                 </div>
               </div>
@@ -135,18 +133,18 @@ const About = () => {
             <h2 className="text-3xl mb-4 md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
               Few words About Me
             </h2>
-            <p className="text-base leading-relaxed mb-4 md:pr-2 text-gray-600 dark:text-gray-200">
+            <p className="text-base leading-relaxed mb-4 md:pr-2 text-gray-600 dark:text-blue-100">
               Hello, I’m Sixtus Aondoakaa, a passionate Software Engineer,
               DevOps Engineer, UI/UX Designer and a Tech Educator dedicated to
-              crafting scalable and innovative web solutions. My journey in tech
-              began with a fascination for how technology shapes our world. Over
-              the years, I have navigated the complexities of full-stack
-              development, embracing both front-end and back-end technologies to
-              build robust applications.
+              crafting scalable and innovative web and mobile software
+              solutions. My journey in tech began with a fascination for how
+              technology shapes our world. Over the years, I have navigated the
+              complexities of full-stack development, embracing both front-end
+              and back-end technologies to build robust applications.
             </p>
             {isExpanded && (
               <>
-                <p className="text-base leading-relaxed mb-4 text-gray-600 dark:text-gray-200">
+                <p className="text-base leading-relaxed mb-4 text-gray-600 dark:text-blue-100">
                   The path has not always been smooth. The tech industry is
                   dynamic and ever-evolving, and staying ahead requires more
                   than just technical skills—it demands resilience and a
@@ -155,7 +153,7 @@ const About = () => {
                   debugging intricate issues. Each obstacle has been a stepping
                   stone, contributing to my growth as a software engineer.
                 </p>
-                <p className="text-base leading-relaxed mb-4 text-gray-600 dark:text-gray-200">
+                <p className="text-base leading-relaxed mb-4 text-gray-600 dark:text-blue-100">
                   My journey is marked by a dedication to excellence and an
                   insatiable curiosity. Whether it's developing complex systems
                   or simplifying user interfaces, I approach each project with
@@ -163,7 +161,7 @@ const About = () => {
                   believe that technology should not only solve problems but
                   also create seamless and delightful user experiences.
                 </p>
-                <p className="text-base leading-relaxed mb-4 text-gray-600 dark:text-gray-200">
+                <p className="text-base leading-relaxed mb-4 text-gray-600 dark:text-blue-100">
                   Today, I am proud of the work I have accomplished and the
                   professional growth I have achieved. I am excited about the
                   future and eager to continue pushing the boundaries of what is
@@ -181,7 +179,7 @@ const About = () => {
                   handleToggle();
                 }}
               >
-                <button className="py-3 px-6 h-12 rounded-md text-blue-500 hover:text-white dark:text-white text-sm md:text-base font-semibold ring-1 ring-blue-500 hover:ring-0 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 hover:ease-in-out hover:scale-105 transition-all duration-300">
+                <button className="py-3 px-6 h-12 rounded-md text-blue-500 hover:text-white hover:dark:text-white dark:text-blue-300 text-sm md:text-base font-semibold ring-1 ring-blue-500 hover:ring-0 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 hover:ease-in-out hover:scale-105 transition-all duration-300">
                   {isExpanded ? "Less to read" : "More to read"}
                 </button>
               </Link>
@@ -207,7 +205,7 @@ const About = () => {
         <h3 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
           Wish to Join me in the tech space?
         </h3>
-        <p className="text-base py-2 text-gray-600 dark:text-gray-200">
+        <p className="text-base py-2 text-gray-600 dark:text-blue-100">
           Watch this short video below for some clue 👇
         </p>
       </div>

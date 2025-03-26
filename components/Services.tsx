@@ -10,7 +10,7 @@ const services = [
   {
     title: "Full-Stack Development",
     description:
-      "Building scalable, high-performance web applications with cutting-edge technologies.",
+      "Building scalable, high-performance web and mobile applications with cutting-edge technologies.",
     icon: <CodeIcon className="w-12 h-12 p-2 text-blue-500 overflow-hidden" />,
     bg: "bg-secondary dark:bg-gray-900 shadow-lg rounded-md",
   },
@@ -68,9 +68,10 @@ const ServicesSection = () => {
         <h2 className="text-3xl md:text-4xl font-extrabold mb-6 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
           My Services
         </h2>
-        <p className="text-base max-w-2xl mx-auto mb-12 text-gray-600 dark:text-gray-200">
-          I specialize in crafting high-quality digital solutions with a focus
-          on performance, scalability, and user experience.
+        <p className="text-base max-w-2xl mx-auto mb-12 text-gray-600 dark:text-blue-100">
+          I specialize in crafting high-quality digital solutions for web and
+          mobile devices with a focus on performance, scalability, and user
+          experience.
         </p>
 
         {/* Services Grid */}
@@ -81,10 +82,10 @@ const ServicesSection = () => {
               className={`p-6 rounded-lg shadow-sm border text-left transition-transform transform hover:scale-105 ${service.bg}`}
             >
               <div className="flex justify-start mb-4">{service.icon}</div>
-              <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-100">
+              <h3 className="text-lg font-semibold text-gray-700 dark:text-blue-50">
                 {service.title}
               </h3>
-              <p className="mt-2 text-sm text-gray-600 dark:text-gray-200">
+              <p className="mt-2 text-sm text-gray-600 dark:text-blue-100">
                 {service.description}
               </p>
             </div>
@@ -102,7 +103,7 @@ const ServicesSection = () => {
           >
             <button
               type="button"
-              className="ring-1 ring-blue-500 hover:ring-0 text-blue-500 dark:text-white hover:bg-gradient-to-r hover:from-blue-500 hover:via-purple-500 hover:to-green-600 hover:bg-blue-600 hover:text-white text-sm md:text-base font-semibold h-12 px-6 py-3 rounded-md hover:ease-in-out hover:scale-105 transition-all duration-300"
+              className="ring-1 ring-blue-500 hover:ring-0 text-blue-500 dark:text-blue-300 hover:bg-gradient-to-r hover:from-blue-500 hover:via-purple-500 hover:to-green-600 hover:bg-blue-600 hover:text-white text-sm md:text-base font-semibold h-12 px-6 py-3 rounded-md hover:ease-in-out hover:scale-105 transition-all duration-300"
             >
               {isServicesLoading ? "Loading..." : "Learn More"}
             </button>

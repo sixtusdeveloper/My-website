@@ -48,7 +48,7 @@ const ReadMoreModal: React.FC<ReadMoreModalProps> = ({
         <div className="px-2 lg:px-8 max-h-[80vh] overflow-auto no-scrollbar">
           {children}
 
-          <p className="text-center text-sm p-2 leading-6">
+          <p className="text-center text-sm p-2 leading-6 text-gray-600 dark:text-blue-100">
             You are about to be navigated to my website page. If you wish to
             explore further, click continue, else cancel to stay here.
           </p>

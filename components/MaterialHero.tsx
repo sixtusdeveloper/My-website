@@ -45,7 +45,7 @@ const MaterialsHero = () => {
             )}
           </motion.h3>
           <motion.h1
-            className="text-4xl lg:text-5xl font-extrabold text-white"
+            className="text-4xl lg:text-5xl font-extrabold text-blue-100"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, ease: "easeOut" }}

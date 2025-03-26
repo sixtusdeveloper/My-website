@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
           rel="noopener noreferrer"
           className="border hover:transform rounded-full hover:scale-110"
         >
-          <span className="flex shadow-sm items-center justify-center w-10 h-10 bg-secondary text-gray-700 dark:text-gray-200 dark:bg-gray-800 rounded-full">
+          <span className="flex shadow-sm items-center justify-center w-10 h-10 bg-secondary text-gray-700 dark:text-blue-200 dark:bg-gray-800 rounded-full">
             <FaGithub size={20} />
           </span>
         </a>
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
           rel="noopener noreferrer"
           className="border hover:transform rounded-full hover:scale-110"
         >
-          <span className="flex shadow-sm items-center justify-center w-10 h-10 bg-secondary text-gray-700 dark:text-gray-200 dark:bg-gray-800 rounded-full">
+          <span className="flex shadow-sm items-center justify-center w-10 h-10 bg-secondary text-gray-700 dark:text-blue-200 dark:bg-gray-800 rounded-full">
             <FaTwitter size={20} />
           </span>
         </a>
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
           rel="noopener noreferrer"
           className="border hover:transform rounded-full hover:scale-110"
         >
-          <span className="flex shadow-sm items-center justify-center w-10 h-10 bg-secondary text-gray-700 dark:text-gray-200 dark:bg-gray-800 rounded-full">
+          <span className="flex shadow-sm items-center justify-center w-10 h-10 bg-secondary text-gray-700 dark:text-blue-200 dark:bg-gray-800 rounded-full">
             <FaYoutube size={20} />
           </span>
         </a>
@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
           rel="noopener noreferrer"
           className="border hover:transform rounded-full hover:scale-110"
         >
-          <span className="flex shadow-sm items-center justify-center w-10 h-10 bg-secondary text-gray-700 dark:text-gray-200 dark:bg-gray-800 rounded-full">
+          <span className="flex shadow-sm items-center justify-center w-10 h-10 bg-secondary text-gray-700 dark:text-blue-200 dark:bg-gray-800 rounded-full">
             <FaLinkedin size={20} />
           </span>
         </a>
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
           rel="noopener noreferrer"
           className="border hover:transform rounded-full hover:scale-110"
         >
-          <span className="flex shadow-sm items-center justify-center w-10 h-10 bg-secondary text-gray-700 dark:text-gray-200 dark:bg-gray-800 rounded-full">
+          <span className="flex shadow-sm items-center justify-center w-10 h-10 bg-secondary text-gray-700 dark:text-blue-200 dark:bg-gray-800 rounded-full">
             <FaFacebook size={20} />
           </span>
         </a>
@@ -77,18 +77,18 @@ const Footer: React.FC = () => {
         <span className="flex justify-center items-center py-2 space-x-4">
           <a
             href="/pages/privacy_policy"
-            className="hover:underline hover:text-yellow-500 text-sm lg:text-sm text-gray-600 dark:text-gray-200"
+            className="hover:underline hover:text-blue-400 text-sm lg:text-sm text-gray-600 dark:text-blue-200"
           >
             Privacy Policy
           </a>
           <a
             href="/pages/terms_condition"
-            className="text-sm lg:text-sm hover:underline hover:text-yellow-500 text-gray-600 dark:text-gray-200"
+            className="text-sm lg:text-sm hover:underline hover:text-blue-400 text-gray-600 dark:text-blue-200"
           >
             Terms and conditions
           </a>
         </span>
-        <span className="w-full flex flex-col text-center text-sm p-2 text-gray-600 dark:text-gray-200">
+        <span className="w-full flex flex-col text-center text-sm p-2 text-gray-600 dark:text-blue-100">
           Copyright&copy; {new Date().getFullYear()} developed by Sixtusdev |
           all rights reserved | contact@sixtusdev.net | version 0.1.0
         </span>

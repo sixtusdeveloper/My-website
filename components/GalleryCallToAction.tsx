@@ -43,10 +43,10 @@ const ExploreMoreCallToAction = () => {
 
         {/* Content */}
         <div className="relative z-10 max-w-3xl px-4 lg:pl-20 lg:pr-8 md:text-center text-left">
-          <h1 className="text-2xl font-extrabold md:text-3xl lg:text-4xl text-white">
+          <h1 className="text-2xl font-extrabold md:text-3xl lg:text-4xl text-blue-50">
             Want to See More About Me? Explore My Gallery!
           </h1>
-          <p className="mt-4 text-base text-gray-100 opacity-90">
+          <p className="mt-4 text-base text-blue-100">
             Explore my gallery page and see what I look like in reality.
           </p>
           <Link

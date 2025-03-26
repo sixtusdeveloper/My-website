@@ -48,10 +48,10 @@ const Projects = () => {
               />
             </div>
             <div>
-              <h3 className="text-xl font-bold text-gray-700 dark:text-gray-100">
+              <h3 className="text-xl font-bold text-gray-700 dark:text-gray-50">
                 Open Source Contribution
               </h3>
-              <p className="py-2 leading-6 mb-0 text-sm font-medium text-gray-600 dark:text-gray-200">
+              <p className="py-2 leading-6 mb-0 text-sm font-medium text-gray-600 dark:text-blue-100">
                 Actively contributed to the{" "}
                 <span className="font-semibold">OptiFrame project</span>, an
                 open-source initiative, by improving the codebase, refining the
@@ -73,10 +73,10 @@ const Projects = () => {
               />
             </div>
             <div>
-              <h3 className="text-xl font-bold text-gray-700 dark:text-gray-100">
+              <h3 className="text-xl font-bold text-gray-700 dark:text-blue-100">
                 Full-Stack Web Application
               </h3>
-              <p className="py-2 leading-6 mb-0 text-sm font-medium text-gray-600 dark:text-gray-200">
+              <p className="py-2 leading-6 mb-0 text-sm font-medium text-gray-600 dark:text-blue-100">
                 Developed a full-stack web application called{" "}
                 <span className="font-semibold">TaskMaster</span>, designed to
                 streamline task management for teams. The app features real-time
@@ -97,10 +97,10 @@ const Projects = () => {
               />
             </div>
             <div>
-              <h3 className="text-xl font-bold text-gray-700 dark:text-gray-100">
+              <h3 className="text-xl font-bold text-gray-700 dark:text-blue-100">
                 Personal Blog Platform
               </h3>
-              <p className="py-2 leading-6 mb-0 text-sm font-medium text-gray-600 dark:text-gray-200">
+              <p className="py-2 leading-6 mb-0 text-sm font-medium text-gray-600 dark:text-blue-100">
                 Built a personal blog platform named{" "}
                 <span className="font-semibold">DevJourney</span>, where I share
                 articles on web development and programming. The platform
@@ -128,10 +128,10 @@ const Projects = () => {
               />
             </div>
             <div>
-              <h3 className="text-xl font-bold text-gray-700 dark:text-gray-100">
+              <h3 className="text-xl font-bold text-gray-700 dark:text-blue-100">
                 E-Commerce Website
               </h3>
-              <p className="py-2 leading-6 mb-0 text-sm font-medium text-gray-600 dark:text-gray-200">
+              <p className="py-2 leading-6 mb-0 text-sm font-medium text-gray-600 dark:text-blue-100">
                 Designed and developed an e-commerce website named{" "}
                 <span className="font-semibold">ShopEasy</span>, featuring a
                 user-friendly interface, secure payment integration, and
@@ -151,7 +151,7 @@ const Projects = () => {
           >
             <button
               type="button"
-              className="ring-1 ring-blue-500 hover:ring-0 text-blue-500 dark:text-white hover:bg-gradient-to-r hover:from-yellow-500 hover:via-pink-500 hover:to-purple-600 hover:text-white font-semibold text-base h-12 px-6 py-3 rounded-md shadow-sm hover:ease-in-out hover:scale-105 transition-all duration-300"
+              className="ring-1 ring-blue-500 hover:ring-0 text-blue-500 dark:text-blue-300 hover:dark:text-white hover:bg-gradient-to-r hover:from-yellow-500 hover:via-pink-500 hover:to-purple-600 hover:text-white font-semibold text-base h-12 px-6 py-3 rounded-md shadow-sm hover:ease-in-out hover:scale-105 transition-all duration-300"
             >
               {isProjectsLoading ? "Loading..." : "See All Projects"}
             </button>

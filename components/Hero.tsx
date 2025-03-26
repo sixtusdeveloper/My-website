@@ -105,7 +105,7 @@ const Home = () => {
       <div className="relative flex flex-row lg:flex-row items-center justify-start lg:justify-center w-full gap-8 px-4 lg:px-14">
         {/* Left: Text Section */}
         <motion.div
-          className="text-white max-w-3xl p-0 lg:py-8 mt-16 text-start lg:text-left"
+          className="text-blue-100 max-w-3xl p-0 lg:py-8 mt-16 text-start lg:text-left"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -163,8 +163,8 @@ const Home = () => {
           >
             As a software engineer, I specialize in creating tailored software
             solutions to meet your specific business needs. This includes
-            developing applications, managing databases, and ensuring seamless
-            integration across various platforms.
+            developing web and mobile applications, managing databases, and
+            ensuring seamless integration across various platforms.
           </motion.p>
 
           {/* Buttons */}
@@ -193,7 +193,7 @@ const Home = () => {
                 openBlogModal();
               }}
             >
-              <button className="py-3 px-6 h-12 font-semibold rounded-md text-white hover:text-white dark:text-white text-sm ring-1 ring-indigo-500 hover:ring-0 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 md:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
+              <button className="py-3 px-6 h-12 font-semibold rounded-md text-white hover:text-white hover:dark:text-white dark:text-blue-300 text-sm ring-1 ring-indigo-500 hover:ring-0 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 md:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
                 {isBlogLoading ? "Loading..." : "Visit My Blog"}
               </button>
             </Link>
