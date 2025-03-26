@@ -8,6 +8,7 @@ const nextConfig = {
     ignoreBuildErrors: false,
   },
   images: {
+    domains: ["maps.wikimedia.org"], // ✅ Correctly placed domains
     remotePatterns: [
       {
         protocol: "https",

@@ -1,32 +1,27 @@
 import React from "react";
-import Image from "next/image";
 
 const StaticGoogleMap = () => {
-  const address = "Plot 39, Awolowo Road, Ikoyi, Lagos, Nigeria";
-  const encodedAddress = encodeURIComponent(address);
-  const googleMapUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${encodedAddress}&zoom=15&size=800x400&maptype=roadmap&markers=color:red%7C${encodedAddress}&key=YOUR_GOOGLE_MAPS_API_KEY`;
+  const latitude = 6.448292; // Precise Latitude
+  const longitude = 3.42338; // Precise Longitude
+  const zoom = 10; // Zoom in for better visibility
+  const mapWidth = 650;
+  const mapHeight = 250;
+
+  // Corrected Yandex Static Map URL with English labels and precise coordinates
+  const mapUrl = `https://static-maps.yandex.ru/1.x/?ll=${longitude},${latitude}&z=${zoom}&size=${mapWidth},${mapHeight}&l=map&pt=${longitude},${latitude},pm2rdl&lang=en_US`;
 
   return (
     <section className="w-full bg-gray-100 dark:bg-gray-900 flex flex-col items-center">
-      {/* <h2 className="text-3xl font-bold text-center text-gray-800 dark:text-white mb-6">
-        My Location
-      </h2>
-      <p className="text-gray-600 dark:text-gray-300 text-center mb-8 max-w-2xl">
-        Visit me at my residence located at <strong>{address}</strong>. Below is
-        a map showing my exact location.
-      </p> */}
       <div className="w-full overflow-hidden rounded-lg shadow-lg border border-gray-300 dark:border-gray-700">
-        <Image
-          src={googleMapUrl}
-          alt="Google Map Location"
-          width={800}
-          height={400}
+        <img
+          src={mapUrl}
+          alt="Static Map Location"
           className="w-full h-auto"
-          priority
+          style={{ maxHeight: "550px" }}
         />
       </div>
       <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
-        Map provided by Google Maps. Interactive version coming soon.
+        Map provided by Yandex Maps. Interactive version coming soon.
       </p>
     </section>
   );
