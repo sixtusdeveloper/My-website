@@ -217,6 +217,82 @@ const PortfolioSkills = () => {
             </ul>
           </div>
 
+          {/* Version control and Tools Section */}
+          <div className="skill-category bg-secondary dark:bg-gray-900 border p-6 rounded-md shadow-sm">
+            <h3 className="text-2xl text-gray-700 dark:text-blue-50 font-semibold mb-4">
+              Version Control & Tools
+            </h3>
+            <ul className="flex flex-wrap items-center gap-8 list-none text-[14px] lg:text-[15px]">
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <FaGitAlt className="text-orange-600" size={20} />
+                &nbsp;<span>Git</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <FaGithub
+                  className="text-gray-800 dark:text-blue-100"
+                  size={20}
+                />
+                &nbsp;<span>GitHub</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiVite className="text-purple-500" size={20} />
+                &nbsp;<span>Vite</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiPostman className="text-orange-500" size={20} />
+                &nbsp;<span>Postman</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiInsomnia className="text-purple-500" size={20} />
+                &nbsp;<span>Insomnia</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiVisualstudiocode className="text-blue-500" size={20} />
+                &nbsp;<span>VS Code</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiGnubash className="text-green-600" />
+                &nbsp;<span>Bash</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiEclipseide className="text-purple-500" size={20} />
+                &nbsp;<span>Eclipse IDE</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiXampp className="text-orange-500" size={20} />
+                &nbsp;<span>XAMPP</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiPycharm className="text-green-500" size={20} />
+                &nbsp;<span>PyCharm</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiJupyter className="text-orange-600" size={20} />
+                &nbsp;<span>Jupyter Notebook</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiSublimetext className="text-yellow-600" size={20} />
+                &nbsp;<span>Sublime Text</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiWebstorm className="text-blue-500" size={20} />
+                &nbsp;<span>WebStorm</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiIntellijidea className="text-purple-600" size={20} />
+                &nbsp;<span>IntelliJ IDEA</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiOpenai className="text-blue-600" size={20} />
+                &nbsp;<span>ChatGPT</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiDeepnote className="text-purple-600" size={20} />
+                &nbsp;<span>Deepseek AI</span>
+              </li>
+            </ul>
+          </div>
+
           {/* Databases Section */}
           <div className="skill-category bg-secondary dark:bg-gray-900 p-6 rounded-md border shadow-sm">
             <h3 className="text-2xl text-gray-700 dark:text-blue-50 font-semibold mb-4">
@@ -312,82 +388,6 @@ const PortfolioSkills = () => {
             </ul>
           </div>
 
-          {/* Version control and Tools Section */}
-          <div className="skill-category bg-secondary dark:bg-gray-900 border p-6 rounded-md shadow-sm">
-            <h3 className="text-2xl text-gray-700 dark:text-blue-50 font-semibold mb-4">
-              Version Control & Tools
-            </h3>
-            <ul className="flex flex-wrap items-center gap-8 list-none text-[14px] lg:text-[15px]">
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
-                <FaGitAlt className="text-orange-600" size={20} />
-                &nbsp;<span>Git</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
-                <FaGithub
-                  className="text-gray-800 dark:text-blue-100"
-                  size={20}
-                />
-                &nbsp;<span>GitHub</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
-                <SiVite className="text-purple-500" size={20} />
-                &nbsp;<span>Vite</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
-                <SiPostman className="text-orange-500" size={20} />
-                &nbsp;<span>Postman</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
-                <SiInsomnia className="text-purple-500" size={20} />
-                &nbsp;<span>Insomnia</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
-                <SiVisualstudiocode className="text-blue-500" size={20} />
-                &nbsp;<span>VS Code</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
-                <SiGnubash className="text-green-600" />
-                &nbsp;<span>Bash</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
-                <SiEclipseide className="text-purple-500" size={20} />
-                &nbsp;<span>Eclipse IDE</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
-                <SiXampp className="text-orange-500" size={20} />
-                &nbsp;<span>XAMPP</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
-                <SiPycharm className="text-green-500" size={20} />
-                &nbsp;<span>PyCharm</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
-                <SiJupyter className="text-orange-600" size={20} />
-                &nbsp;<span>Jupyter Notebook</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
-                <SiSublimetext className="text-yellow-600" size={20} />
-                &nbsp;<span>Sublime Text</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
-                <SiWebstorm className="text-blue-500" size={20} />
-                &nbsp;<span>WebStorm</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
-                <SiIntellijidea className="text-purple-600" size={20} />
-                &nbsp;<span>IntelliJ IDEA</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
-                <SiOpenai className="text-blue-600" size={20} />
-                &nbsp;<span>ChatGPT</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
-                <SiDeepnote className="text-purple-600" size={20} />
-                &nbsp;<span>Deepseek AI</span>
-              </li>
-            </ul>
-          </div>
-
           {/* APIs Section */}
           <div className="skill-category bg-secondary dark:bg-gray-900 border p-6 rounded-md shadow-sm">
             <h3 className="text-2xl text-gray-700 dark:text-blue-50 font-semibold mb-4">
@@ -429,6 +429,54 @@ const PortfolioSkills = () => {
               <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
                 <SiSentry className="text-red-500" size={20} />
                 &nbsp;<span>Sentry</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Certifications Section */}
+          <div className="skill-category bg-secondary dark:bg-gray-900 border shadow-md p-6 rounded-md col-span-1 lg:col-span-2 lg:row-span-1">
+            <h3 className="text-2xl text-gray-700 dark:text-blue-50 font-semibold mb-4">
+              My Certifications
+            </h3>
+            <ul className="flex flex-wrap items-center gap-8 list-none text-[14px] lg:text-[15px]">
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-4">
+                <FaAws className="text-yellow-500" size={20} />
+                &nbsp;<span>AWS Certified Developer</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-4">
+                <SiGooglecloud className="text-blue-500" size={20} />
+                &nbsp;<span>Google Cloud Professional</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-4">
+                <SiMicrosoftazure className="text-blue-700" size={20} />
+                &nbsp;<span>Microsoft Azure Fundamentals</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-4">
+                <SiFreecodecamp className="text-green-500" size={20} />
+                &nbsp;<span>FreeCodeCamp - Responsive Web Design</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-4">
+                <SiUdemy className="text-purple-600" size={20} />
+                &nbsp;<span>Udemy - Full-stack Developer</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-4">
+                <SiBookstack className="text-blue-700" size={20} />
+                &nbsp;
+                <span>
+                  Alison Institute - IT Management (Software & Databases)
+                </span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-4">
+                <SiBookstack className="text-green-600" size={20} />
+                &nbsp;<span>Great Learning - Full-stack Developer</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-4">
+                <SiLinkedin className="text-blue-700" size={20} />
+                &nbsp;<span>LinkedIn - Full-stack Developer</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-4">
+                <SiUdacity className="text-purple-600" size={20} />
+                &nbsp;<span>Udacity - Machine Learning</span>
               </li>
             </ul>
           </div>
@@ -503,54 +551,6 @@ const PortfolioSkills = () => {
                 <span>
                   Docker Cloud - Optimized for containerized applications
                 </span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Certifications Section */}
-          <div className="skill-category bg-secondary dark:bg-gray-900 border shadow-md p-6 rounded-md col-span-1 lg:col-span-3 lg:row-span-1">
-            <h3 className="text-2xl text-gray-700 dark:text-blue-50 font-semibold mb-4">
-              My Certifications
-            </h3>
-            <ul className="flex flex-wrap items-center gap-8 list-none text-[14px] lg:text-[15px]">
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-4">
-                <FaAws className="text-yellow-500" size={20} />
-                &nbsp;<span>AWS Certified Developer</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-4">
-                <SiGooglecloud className="text-blue-500" size={20} />
-                &nbsp;<span>Google Cloud Professional</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-4">
-                <SiMicrosoftazure className="text-blue-700" size={20} />
-                &nbsp;<span>Microsoft Azure Fundamentals</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-4">
-                <SiFreecodecamp className="text-green-500" size={20} />
-                &nbsp;<span>FreeCodeCamp - Responsive Web Design</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-4">
-                <SiUdemy className="text-purple-600" size={20} />
-                &nbsp;<span>Udemy - Full-stack Developer</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-4">
-                <SiBookstack className="text-blue-700" size={20} />
-                &nbsp;
-                <span>
-                  Alison Institute - IT Management (Software & Databases)
-                </span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-4">
-                <SiBookstack className="text-green-600" size={20} />
-                &nbsp;<span>Great Learning - Full-stack Developer</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-4">
-                <SiLinkedin className="text-blue-700" size={20} />
-                &nbsp;<span>LinkedIn - Full-stack Developer</span>
-              </li>
-              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-4">
-                <SiUdacity className="text-purple-600" size={20} />
-                &nbsp;<span>Udacity - Machine Learning</span>
               </li>
             </ul>
           </div>

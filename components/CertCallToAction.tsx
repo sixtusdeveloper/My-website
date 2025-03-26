@@ -86,7 +86,7 @@ const ExploreMoreCallToAction = () => {
     <>
       <section
         id="certifications"
-        className="relative w-full h-[450px] flex items-center md:justify-center justify-start text-center overflow-hidden"
+        className="relative w-full h-[420px] flex items-center md:justify-center justify-start text-center overflow-hidden"
       >
         {/* Fixed Background */}
         <div
