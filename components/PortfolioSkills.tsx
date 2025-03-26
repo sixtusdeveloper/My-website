@@ -253,7 +253,7 @@ const PortfolioSkills = () => {
           {/* Mobile Section */}
           <div className="skill-category bg-secondary dark:bg-gray-900 p-6 rounded-md border shadow-sm">
             <h3 className="text-2xl text-gray-700 dark:text-blue-50 font-semibold mb-4">
-              Mobile technologies
+              Mobile Technologies
             </h3>
             <ul className="flex flex-wrap gap-8 list-none items-center text-[14px] lg:text-[15px]">
               <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
