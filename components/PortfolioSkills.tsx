@@ -72,6 +72,9 @@ import {
   SiKotlin,
   SiAndroid,
   SiSqlite,
+  SiExpo,
+  SiAndroidstudio,
+  SiXcode,
 } from "react-icons/si";
 import { AiFillApi } from "react-icons/ai";
 import { FiBox } from "react-icons/fi";
@@ -245,6 +248,21 @@ const PortfolioSkills = () => {
               <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
                 <SiInsomnia className="text-purple-500" size={20} />
                 &nbsp;<span>Insomnia</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiExpo className="text-blue-600" size={20} />
+                &nbsp;<span>Expo</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiAndroidstudio className="text-green-600" size={20} />
+                &nbsp;<span>Android Studio</span>
+              </li>
+              <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
+                <SiXcode
+                  className="text-gray-500 dark:text-gray-400"
+                  size={20}
+                />
+                &nbsp;<span>Xcode</span>
               </li>
               <li className="flex text-gray-600 dark:text-blue-100 items-center space-x-2">
                 <SiVisualstudiocode className="text-blue-500" size={20} />
