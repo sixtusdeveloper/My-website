@@ -33,7 +33,7 @@ const ExploreMoreCallToAction = () => {
   };
   return (
     <>
-      <section className="relative w-full h-[350px] flex items-center md:justify-center justify-start text-center overflow-hidden">
+      <section className="relative w-full h-[420px] flex items-center md:justify-center justify-start text-center overflow-hidden">
         {/* Fixed Background */}
         <div
           className="absolute inset-0 bg-fixed bg-cover bg-center"
