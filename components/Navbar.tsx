@@ -150,7 +150,7 @@ export default function Navbar({
                   width={30}
                   height={30}
                 />
-                <span className="hidden font-sans sm:block self-center text-base font-semibold bg-gradient-to-r from-yellow-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+                <span className="hidden sm:block self-center text-base font-semibold bg-gradient-to-r from-yellow-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
                   {title}
                 </span>
               </Link>
@@ -174,7 +174,7 @@ export default function Navbar({
                     <Link
                       key={item.name}
                       href={`#${item.href.substring(1)}`}
-                      className="-mx-3 block text-gray-600 dark:text-blue-100 rounded-lg px-3 py-4 space-y-6 text-base font-semibold leading-7 hover:text-blue-600"
+                      className="-mx-3 block text-gray-600 dark:text-blue-100 rounded-lg px-3 py-2 space-y-2 text-base font-semibold leading-7 hover:text-blue-600"
                       onClick={() => {
                         handleClick(item.href);
                         setMobileMenuOpen(false);
