@@ -8,7 +8,7 @@ export const faqs = [
     {
       question: "What technologies do you work with?",
       answer:
-        "I have extensive experience with modern technologies, including Next.js, React, Node.js, Appwrite, PostGreSQL, MySQL, React Native, Expo, Andriod studio, Flutter, Swift, Kotlin, Sanity, Sentry, TypeScript, Tailwind CSS, Bootstrap, Aceternity UI, Material UI, Shadcn, Framer-motion, Java, Spring Boot, Angular, Vue.js, and various cloud platforms. I also integrate third-party APIs and authentication services like Clerk and Firebase.",
+        "I have extensive experience with modern technologies, including Next.js, React, Node.js, Appwrite, PostGreSQL, MySQLite, MySQL, React Native, Expo, Andriod studio, Flutter, Swift, Kotlin, Sanity, Sentry, TypeScript, Tailwind CSS, Bootstrap, Aceternity UI, Material UI, Shadcn, Framer-motion, Java, Spring Boot, Angular, Vue.js, and various cloud platforms. I also integrate third-party APIs and authentication services like Clerk and Firebase.",
     },
     {
       question: "Do you take on freelance or contract projects?",
@@ -28,6 +28,6 @@ export const faqs = [
     {
       question: "How can I get in touch for a project or collaboration?",
       answer:
-        "There are multiple ways you could reach out to me, via email or whatsApp for Instant response or via LinkedIn or the contact form below this page 👇. You may find a direct link to my whatsApp or email in my portfolio page. Feel free to send a message detailing your project requirements, and I'll be happy to discuss how we can work together!",
+        "There are multiple ways you could reach out to me, via email or whatsApp for Instant response or via LinkedIn or better still, use the contact form below this page 👇. You may find a direct link to my whatsApp or email in my portfolio page. Feel free to send a message detailing your project requirements, and I'll be happy to discuss how we can work together!",
     }
 ];

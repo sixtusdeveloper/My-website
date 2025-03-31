@@ -88,7 +88,7 @@ const Tutorials = () => {
       <div className="max-w-4xl mx-auto text-center">
         {isLoading && <Loader />}
         <h2 className="text-3xl mb-6 text-center md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
-          Social Videos
+          Social And Educational Content
         </h2>
 
         <div className="mt-8 max-w-3xl mx-auto">

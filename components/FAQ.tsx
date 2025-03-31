@@ -162,7 +162,7 @@ const FAQPage = () => {
                   }}
                 >
                   <button className="h-11 py-2 px-6 items-center mt-4 bg-gradient-to-r from-blue-500 via-purple-500 to-purple-600 text-white rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300">
-                    Chat me directly
+                    Reach out to me
                   </button>
                 </Link>
               </>
@@ -187,7 +187,7 @@ const FAQPage = () => {
                   }}
                 >
                   <button className="h-11 py-2 px-6 items-center mt-4 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-white rounded-full hover:ease-in-out hover:scale-105 transition-all duration-300">
-                    Reach out to me
+                    Chat me directly
                   </button>
                 </Link>
               </>
