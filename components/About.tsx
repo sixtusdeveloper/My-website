@@ -133,7 +133,7 @@ const About = () => {
             <h2 className="text-3xl mb-4 md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
               Few words About Me
             </h2>
-            <p className="text-base leading-relaxed mb-4 md:pr-2 text-gray-600 dark:text-blue-100">
+            <p className="text-base leading-relaxed mb-4 lg:pr-2 text-gray-600 dark:text-blue-100">
               Hello, I’m Sixtus Aondoakaa, a passionate Software Engineer,
               DevOps Engineer, UI/UX Designer and a Tech Educator dedicated to
               crafting scalable and innovative web and mobile software
@@ -201,7 +201,7 @@ const About = () => {
       </div>
 
       {/* YouTube Video */}
-      <div className="hidden lg:block my-16 text-center">
+      <div className="hidden lg:block pt-20 text-center">
         <h3 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
           Wish to Join me in the tech space?
         </h3>
@@ -209,7 +209,7 @@ const About = () => {
           Watch this short video below for some clue 👇
         </p>
       </div>
-      <div className="hidden md:flex justify-center items-center w-full mx-auto mt-8 lg:mt-10 relative">
+      <div className="hidden md:flex justify-center items-center w-full mx-auto mt-8 lg:pb-16 relative">
         <div className="border items-center mt-2 mx-auto overflow-hidden relative rounded-lg p-2 shadow-lg">
           <iframe
             width="560"

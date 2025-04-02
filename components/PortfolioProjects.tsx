@@ -107,7 +107,7 @@ const Projects = () => {
 
   return (
     <div
-      className="relative bg-secondary w-full mx-auto md:pt-8 px-4 lg:px-8 pb-10"
+      className="relative bg-secondary w-full mx-auto lg:py-14 px-4 lg:px-8 pb-10"
       id="all-projects"
     >
       <div className="mx-auto max-w-7xl relative">

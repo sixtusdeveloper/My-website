@@ -5,7 +5,7 @@ import Image from "next/image";
 const ReachOut = () => {
   return (
     <div
-      className="bg-secondary relative lg:pt-10 mx-auto w-full px-6 lg:px-16 pb-20"
+      className="bg-secondary relative lg:py-14 mx-auto w-full px-6 lg:px-16 py-16"
       id="get-in-touch"
     >
       <div className="max-w-2xl mx-auto relative">

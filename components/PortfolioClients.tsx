@@ -5,7 +5,7 @@ import React from "react";
 
 const Clients = () => {
   return (
-    <div className="py-8 bg-secondary" id="clients">
+    <div className="py-8 lg:py-14 bg-secondary" id="clients">
       <h2 className="p-8 lg:p-4 text-3xl md:text-4xl mb-8 text-center font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
         Kind words from Satisfied Clients
       </h2>

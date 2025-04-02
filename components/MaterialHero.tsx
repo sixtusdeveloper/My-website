@@ -70,7 +70,7 @@ const MaterialsHero = () => {
           </motion.p>
 
           <motion.div
-            className="flex gap-2 items-center flex-nowrap my-6 space-x-4"
+            className="flex gap-2 items-center flex-nowrap my-6 space-x-2"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.1, ease: "easeOut" }}

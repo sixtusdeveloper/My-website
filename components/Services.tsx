@@ -62,7 +62,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section id="services" className="py-10 bg-secondary relative">
+    <section id="services" className="py-12 lg:py-20 bg-secondary relative">
       <div className="max-w-6xl mx-auto px-6 text-left md:text-center">
         {/* Section Header */}
         <h2 className="text-3xl md:text-4xl font-extrabold mb-6 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">

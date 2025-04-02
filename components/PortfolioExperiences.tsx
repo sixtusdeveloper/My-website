@@ -391,7 +391,7 @@ const Experience = () => {
                           </span>
                         </p>
                       </div>
-                      <div>
+                      <div className="justify-center flex item-center mx-auto">
                         <Image
                           src={selectedWorkExperience.img || "/profile.jpg"}
                           alt={selectedWorkExperience.title || "profile image"}

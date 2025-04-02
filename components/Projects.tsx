@@ -31,7 +31,10 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-10 px-4 lg:px-10 bg-secondary">
+    <section
+      id="projects"
+      className="py-12 lg:py-20 px-4 lg:px-10 bg-secondary"
+    >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl mb-8 text-center md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
           Some of My Personal Projects
@@ -48,7 +51,7 @@ const Projects = () => {
               />
             </div>
             <div>
-              <h3 className="text-xl font-bold text-gray-700 dark:text-gray-50">
+              <h3 className="text-xl font-bold text-gray-700 dark:text-blue-50">
                 Open Source Contribution
               </h3>
               <p className="py-2 leading-6 mb-0 text-sm font-medium text-gray-600 dark:text-blue-100">
@@ -73,7 +76,7 @@ const Projects = () => {
               />
             </div>
             <div>
-              <h3 className="text-xl font-bold text-gray-700 dark:text-blue-100">
+              <h3 className="text-xl font-bold text-gray-700 dark:text-blue-50">
                 Full-Stack Web Application
               </h3>
               <p className="py-2 leading-6 mb-0 text-sm font-medium text-gray-600 dark:text-blue-100">
@@ -97,7 +100,7 @@ const Projects = () => {
               />
             </div>
             <div>
-              <h3 className="text-xl font-bold text-gray-700 dark:text-blue-100">
+              <h3 className="text-xl font-bold text-gray-700 dark:text-blue-50">
                 Personal Blog Platform
               </h3>
               <p className="py-2 leading-6 mb-0 text-sm font-medium text-gray-600 dark:text-blue-100">
@@ -128,7 +131,7 @@ const Projects = () => {
               />
             </div>
             <div>
-              <h3 className="text-xl font-bold text-gray-700 dark:text-blue-100">
+              <h3 className="text-xl font-bold text-gray-700 dark:text-blue-50">
                 E-Commerce Website
               </h3>
               <p className="py-2 leading-6 mb-0 text-sm font-medium text-gray-600 dark:text-blue-100">
