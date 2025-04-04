@@ -285,7 +285,7 @@ export const experiences = [
     date: "October 2024 - Present",
     title: "Tech Educator | Software Engineer",
     img: "/profile-img.png",
-    organization: "Youtube",
+    organization: "YouTube Channel",
     type: "Remote",
     nature: "Self Employed",
     location: "Online and Locally",
