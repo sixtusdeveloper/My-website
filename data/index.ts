@@ -36,6 +36,12 @@ export const navigation = [
     { name: 'Contact', href: '#contact' },
   ];
   
+//============================= Terms & Consitions Navigation links ============================//
+export const termsConditionsNavigation = [
+    { name: 'About', href: '/pages/terms_condition' },
+    { name: 'Services', href: '/pages/privacy_policy' },
+  ];
+  
 //============================= Gallery Page Navigation links ============================//
 export const GallerysNavLinks = [
   { name: 'Personal Life', href: '#personal-life' },
@@ -291,7 +297,7 @@ export const experiences = [
     date: "March 2020 - Present",
     title: "Software Engineer",
     img: "/profile.jpg",
-    organization: "Self-employed",
+    organization: "Upwork",
     type: "Freelance",
     nature: "Contract",
     location: "Remote",
@@ -329,7 +335,7 @@ export const experiences = [
     date: "March 2020 - Nov 2023",
     title: "Web Developer",
     img: "/profile.jpg",
-    organization: "Self-employed",
+    organization: "Upwork",
     type: "Freelance",
     nature: "Contract",
     location: "Remote",

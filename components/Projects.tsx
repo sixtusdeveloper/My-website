@@ -37,7 +37,7 @@ const Projects = () => {
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl mb-8 text-center md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
-          Some of My Personal Projects
+          Some of My Recent Projects
         </h2>
         <div className="grid gap-4 md:gap-6 lg:gap-8 space-y-6 md:space-y-0 md:grid-cols-2">
           {/* Project 1 */}

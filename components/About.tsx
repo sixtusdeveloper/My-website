@@ -133,9 +133,10 @@ const About = () => {
             <h2 className="text-3xl mb-4 md:text-4xl font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
               Few words About Me
             </h2>
-            <p className="text-base leading-relaxed mb-4 lg:pr-2 text-gray-600 dark:text-blue-100">
+            <p className="text-[15px] leading-relaxed mb-4 lg:pr-2 text-gray-600 dark:text-blue-100">
               Hello, I’m Sixtus Aondoakaa, a passionate Software Engineer,
-              DevOps Engineer, UI/UX Designer and a Tech Educator dedicated to
+              DevOps Engineer, Security Engineer, UI/UX Designer, Virtual
+              Assistant, Database Administrator and a Tech Educator dedicated to
               crafting scalable and innovative web and mobile software
               solutions. My journey in tech began with a fascination for how
               technology shapes our world. Over the years, I have navigated the

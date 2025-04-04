@@ -108,7 +108,7 @@ const GalleryTechEventSection = () => {
                 </div>
               </div>
 
-              <div className="flex justify-between items-center my-2 gap-4">
+              <div className="flex justify-between items-center mt-2 gap-4">
                 <div className="flex-1 py-2">
                   <div className="flex justify-between items-center gap-4 py-2">
                     <p className="text-gray-600 dark:text-blue-100 font-medium text-sm py-2 line-clamp-1">
