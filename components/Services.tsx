@@ -63,16 +63,18 @@ const ServicesSection = () => {
 
   return (
     <section id="services" className="py-12 lg:py-20 bg-secondary relative">
-      <div className="max-w-6xl mx-auto px-6 text-left md:text-center">
+      <div className="max-w-6xl mx-auto md:px-6 px-4 text-left md:text-center">
         {/* Section Header */}
-        <h2 className="text-3xl md:text-4xl font-extrabold mb-6 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
-          My Services
-        </h2>
-        <p className="text-base max-w-2xl mx-auto mb-12 text-gray-600 dark:text-blue-100">
-          I specialize in crafting high-quality digital solutions for web and
-          mobile devices with a focus on performance, scalability, and user
-          experience.
-        </p>
+        <div className="px-2 md:px-0">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6 bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
+            My Services
+          </h2>
+          <p className="text-base max-w-2xl mx-auto mb-12 text-gray-600 dark:text-blue-100">
+            I specialize in crafting high-quality digital solutions for web and
+            mobile devices with a focus on performance, scalability, and user
+            experience.
+          </p>
+        </div>
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

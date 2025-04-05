@@ -77,9 +77,12 @@ const GalleryTechEventSection = () => {
   };
 
   return (
-    <section id="tech-events" className="py-20 px-4 lg:px-10 bg-secondary">
+    <section
+      id="tech-events"
+      className="py-20 md:px-4 px-2 lg:px-10 bg-secondary"
+    >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl mb-8 text-center font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
+        <h2 className="text-3xl md:text-4xl px-2 mb-8 text-center font-extrabold bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
           Tech Events & Meetings
         </h2>
         <div className="grid gap-2 lg:gap-6 md:grid-cols-3 space-y-6 py-4 md:space-y-0">
