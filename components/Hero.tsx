@@ -182,7 +182,7 @@ const Home = () => {
               }}
             >
               <button className="h-12 px-6 py-3 rounded-md bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 text-white font-semibold text-sm md:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
-                {isPortfolioLoading ? "Please wait..." : "Visit Portfolio"}
+                {isPortfolioLoading ? "Please wait..." : "Visit My Portfolio"}
               </button>
             </Link>
 
