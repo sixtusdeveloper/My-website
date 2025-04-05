@@ -1,8 +1,16 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useUser } from "@clerk/nextjs";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const MaterialsHero = () => {
+  const router = useRouter();
+
+  const navigateToGallery = () => {
+    router.push("/pages/gallery");
+  };
+
   const { user, isSignedIn } = useUser();
 
   // Get current hour
@@ -81,11 +89,17 @@ const MaterialsHero = () => {
               </button>
             </a>
 
-            <a href="/">
+            <Link
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                navigateToGallery();
+              }}
+            >
               <button className="py-3 px-6 font-semibold rounded-md text-white hover:text-white dark:text-white text-sm ring-1 ring-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 md:text-base hover:ease-in-out hover:scale-105 transition-all duration-300">
-                More About Me
+                My Gallery
               </button>
-            </a>
+            </Link>
           </motion.div>
         </div>
 

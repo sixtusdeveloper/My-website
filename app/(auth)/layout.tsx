@@ -1,10 +1,26 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import "./auth-styles.css";
 import { SparklesCore } from "./ui/sparkles";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
+  const router = useRouter();
+  const navigateToTerms = () => {
+    router.push("/pages/terms_condition");
+  };
+
+  const navigateToPrivacy = () => {
+    router.push("/pages/privacy_policy");
+  };
+
+  const navigateHome = () => {
+    router.push("/");
+  };
+
   return (
     <main className="auth-page relative min-h-screen h-full bg-black dark:bg-black-100 bg-grid dark:bg-grid-white/[0.03] bg-grid-black/[0.2] overflow-y-auto">
       <div className="w-full absolute inset-0 h-screen">
@@ -21,7 +37,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
       <div className="flex flex-col lg:flex-row min-h-screen h-full w-full">
         <div className="w-full lg:w-1/2 flex flex-col items-center justify-center md:py-6 p-4 sm:p-10 text-white z-10">
-          <Link href="/" className="flex justify-start items-center gap-1">
+          <Link
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              navigateHome();
+            }}
+            className="flex justify-start items-center gap-1"
+          >
             <Image
               src="/Logo.png"
               alt="Sixtusdev Logo"
@@ -48,7 +71,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 style={{ width: "auto", height: "auto" }}
                 className="overflow-hidden lg:items-center items-start"
               />
-              <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
+              <span className="ml-2 sm:ml-2 text-[14px] text-gray-200">
                 Crafting seamless and responsive user experiences on the web
               </span>
             </li>
@@ -62,7 +85,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 style={{ width: "auto", height: "auto" }}
                 className="overflow-hidden lg:items-center items-start"
               />
-              <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
+              <span className="ml-2 sm:ml-2 text-[14px] text-gray-200">
                 Engineering robust and scalable software solutions
               </span>
             </li>
@@ -76,7 +99,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 style={{ width: "auto", height: "auto" }}
                 className="overflow-hidden lg:items-center items-start"
               />
-              <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
+              <span className="ml-2 sm:ml-2 text-[14px] text-gray-200">
                 Managing full-cycle software projects from inception to delivery
               </span>
             </li>
@@ -90,7 +113,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 style={{ width: "auto", height: "auto" }}
                 className="overflow-hidden lg:items-center items-start"
               />
-              <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
+              <span className="ml-2 sm:ml-2 text-[14px] text-gray-200">
                 Collaborating with teams to deliver impactful digital solutions
               </span>
             </li>
@@ -104,7 +127,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 style={{ width: "auto", height: "auto" }}
                 className="overflow-hidden lg:items-center items-start"
               />
-              <span className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200">
+              <span className="ml-2 sm:ml-2 text-[14px] text-gray-200">
                 Innovating through continuous learning and creative
                 problem-solving
               </span>
@@ -120,8 +143,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 className="overflow-hidden lg:items-center items-start"
               />
               <Link
-                href="https://www.sixtusdev.net/pages/privacy_policy"
-                className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200 hover:underline no-underline hover:text-green-600"
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigateToPrivacy();
+                }}
+                className="ml-2 sm:ml-2 text-[14px] text-gray-200 hover:underline no-underline hover:text-green-600"
               >
                 Privacy policy - Read more about the privacy policy of this
                 application.
@@ -138,8 +165,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 className="overflow-hidden lg:items-center items-start"
               />
               <Link
-                href="https://www.sixtusdev.net/pages/terms_condition"
-                className="ml-2 sm:ml-2 text-base sm:text-base text-gray-200 no-underline hover:underline hover:text-green-600"
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigateToTerms();
+                }}
+                className="ml-2 sm:ml-2 text-[14px] text-gray-200 no-underline hover:underline hover:text-green-600"
               >
                 Terms and Condition - Read more about the terms and condition of
                 this application.
