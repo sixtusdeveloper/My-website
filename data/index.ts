@@ -57,7 +57,7 @@ export const portfolioNavLinks = [
     { name: 'Certifications', href: '#certifications' },
     { name: 'Projects', href: '#projects' },
     { name: 'Clients', href: '#clients' },
-    { name: 'React Out', href: '#get-in-touch' },
+    { name: 'Reach Out', href: '#get-in-touch' },
   ]; 
 
 // Materials Nav Links
