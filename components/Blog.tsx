@@ -117,7 +117,7 @@ const Blog = () => {
                     </p>
                   </div>
 
-                  <h3 className="text-lg font-bold text-gray-700 dark:text-blue-50 md:text-lg line-clamp-2">
+                  <h3 className="text-lg font-bold text-gray-700 dark:text-blue-50 md:text-[18px] line-clamp-2">
                     {truncateTitle(post.title, MAX_TITLE_LENGTH)}
                   </h3>
                 </div>
@@ -146,13 +146,13 @@ const Blog = () => {
                 <div className="flex gap-4 justify-between items-center">
                   <button
                     onClick={() => openModal(post)}
-                    className="py-2 px-6 items-center rounded-md text-blue-500 hover:text-white hover:dark:text-white dark:text-blue-300 text-sm md:text-base font-semibold ring-1 ring-blue-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300"
+                    className="py-2 px-6 items-center rounded-md text-blue-500 hover:text-white hover:dark:text-white dark:text-blue-300 text-sm md:text-[14px] font-semibold ring-1 ring-blue-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-blue-500 block hover:ease-in-out hover:scale-105 transition-all duration-300"
                   >
                     Read More
                   </button>
                   <button
                     onClick={handleBlogClick} // Trigger the blog modal
-                    className="py-2 px-4 items-center bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 rounded-md text-white flex cursor-pointer text-sm md:text-base font-semibold tracking-wide hover:ease-in-out hover:scale-105 transition-all duration-300"
+                    className="py-2 px-4 items-center bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 hover:bg-yellow-600 rounded-md text-white flex cursor-pointer text-sm md:text-[14px] font-semibold tracking-wide hover:ease-in-out hover:scale-105 transition-all duration-300"
                   >
                     Visit Blog <FaLocationArrow className="ml-1" />
                   </button>

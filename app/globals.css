@@ -377,6 +377,12 @@ button a {
   left: -11px;
 }
 
+.services-modal-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .timeline-container {
@@ -428,6 +434,10 @@ button a {
 /* Hide scrollbar but keep content scrollable */
 .scrollable-content {
   overflow: auto;
+}
+
+.modal-background::-webkit-scrollbar {
+  display: none;
 }
 
 .scrollable-content::-webkit-scrollbar {
