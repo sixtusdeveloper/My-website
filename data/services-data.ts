@@ -7,7 +7,7 @@ export const Services = [
     image: "/fullstack.webp",
     link: "/services/fullstack",
     fullDetails:
-      "I build production-grade web applications from the ground up using React, Next.js, Node.js, TypeScript, and MongoDB. Whether you're launching a startup, SaaS platform, or internal tool, I handle both frontend and backend development with clean architecture, scalable patterns, and a performance-first approach.",
+      "I specialize in building complete, production-ready web applications using the most reliable and modern technologies, including React, Next.js, Node.js, TypeScript, and MongoDB. From setting up the frontend architecture to building powerful backend services and integrating third-party APIs, I ensure a seamless, performant, and scalable user experience. My approach includes industry-standard practices like modular codebases, reusable components, state management with tools like Redux or Zustand, SEO optimization, server-side rendering, and RESTful or GraphQL APIs. I don’t just build — I future-proof, optimize, and maintain.",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const Services = [
     image: "/uiux.webp",
     link: "/services/uiux",
     fullDetails:
-      "I create user-centric interfaces that are clean, intuitive, and responsive across all devices. With tools like Figma, Adobe XD, and Tailwind CSS, I build design systems that align with your brand and deliver high-fidelity prototypes ready for development or stakeholder reviews.",
+      "I deliver intuitive and visually appealing digital experiences that convert. My UI/UX workflow includes wireframing, prototyping, and building design systems using Figma, Adobe XD, and tools like Tailwind CSS and Radix UI. I focus heavily on accessibility (WCAG compliance), mobile responsiveness, user flows, and micro-interactions that enhance the experience. I bridge the gap between design and development by turning prototypes into pixel-perfect implementations, ensuring consistency, usability, and modern aesthetics that reflect your brand identity.",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const Services = [
     image: "/backend.jpg",
     link: "/services/backend",
     fullDetails:
-      "From database modeling to RESTful and GraphQL APIs, I build powerful and secure backends using Node.js, Express, and Spring Boot. My focus is on performance, security, and maintainability — with clean API documentation and best practices for scaling and future-proofing your infrastructure.",
+      "I develop resilient, scalable backend systems tailored for performance and real-world load. From designing RESTful and GraphQL APIs to building complex middleware pipelines and handling business logic, I ensure your application's core is solid and secure. I use Node.js (Express, NestJS) and Spring Boot for Java backends, along with database integration, caching (Redis), file uploads, authentication layers, rate limiting, background jobs, and logging systems. My services also include API versioning, Swagger documentation, and clean architecture patterns for maintainability.",
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const Services = [
     image: "/devops.jpg",
     link: "/services/devops",
     fullDetails:
-      "I help businesses deploy, monitor, and scale their applications using modern DevOps practices. Whether it's Docker containers, GitHub Actions workflows, or Vercel/Firebase/AWS hosting — I set up automated CI/CD pipelines, manage environments, and optimize uptime and delivery speed.",
+      "I help businesses deploy, host, and scale their applications seamlessly using cloud platforms like Vercel, Firebase, AWS, and DigitalOcean. I configure automated CI/CD pipelines using GitHub Actions or GitLab CI, manage custom domains, SSL certificates, staging/production environments, and Dockerized workflows. I also set up error monitoring (Sentry), performance tracking, and secure environment variable management. My focus is on zero-downtime deployments, version control, and agile-friendly workflows that accelerate development velocity.",
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ export const Services = [
     image: "/database.jpg",
     link: "/services/database",
     fullDetails:
-      "I architect databases tailored to your application's needs using MongoDB, PostgreSQL, and Firebase. From schema design to query optimization and data migrations, I ensure your data layer is fast, reliable, and scalable — with a strong focus on structure, performance, and security.",
+      "I structure robust and scalable databases that handle data efficiently, securely, and at scale. Whether using SQL (PostgreSQL, MySQL) or NoSQL (MongoDB, Firebase), I provide schema design, data modeling, indexing strategies, and real-time data sync setups. I also implement complex queries, normalization, denormalization (when needed), transactional workflows, and backup mechanisms. For analytics, I can integrate with tools like BigQuery, Firebase Analytics, or build custom dashboards. My goal is simple: fast, reliable, and secure data operations.",
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ export const Services = [
     image: "/app-security.jpg",
     link: "/services/security",
     fullDetails:
-      "Security is built into every layer of the applications I develop. I implement authentication (JWT, Clerk, OAuth), authorization, encryption, rate limiting, and secure coding practices to protect against common vulnerabilities. I also ensure compliance with data regulations like GDPR and CCPA where necessary.",
+      "Security is a non-negotiable standard in all solutions I deliver. I implement best practices to protect your application from threats like XSS, CSRF, SQL Injection, and authentication bypasses. My services include integration of secure authentication systems (JWT, Clerk, OAuth2), encrypted data storage, access control (RBAC), HTTPS configuration, rate limiting, and secure headers. I also perform regular code audits and ensure compliance with modern privacy laws like GDPR, CCPA, and implement logging and monitoring systems for ongoing observability and breach detection.",
   },
 ];
 

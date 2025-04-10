@@ -69,7 +69,7 @@ const Modal: React.FC<ModalProps> = ({
 
           {/* Content Area with Vertical Scrolling if Needed */}
           <div
-            className="py-2 overflow-y-auto"
+            className="py-2 overflow-y-auto text-[14px] text-gray-700 dark:text-blue-100"
             style={{ maxHeight: "60vh", scrollbarWidth: "none" }}
           >
             {content}
