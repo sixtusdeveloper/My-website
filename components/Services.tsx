@@ -49,11 +49,11 @@ const Courses = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {paginatedCourses.map((course) => (
             <div
               key={course.id}
-              className="bg-secondary border dark:bg-gray-900 shadow-md rounded-lg overflow-hidden"
+              className="bg-secondary border dark:bg-gray-900 shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105"
             >
               <Image
                 src={course.image}
